@@ -59,6 +59,7 @@ function Dashboard() {
   const [activeGame, setActiveGame] = useState('tts');
   const [randomGames, setRandomGames] = useState(['tts', 'susun-kata-acak', 'family100', 'trivia', 'cari-kata', 'sambung-kata']);
   const [isConnected, setIsConnected] = useState(false);
+  const [activeSoal, setActiveSoal] = useState(null);
   const [statusMsg, setStatusMsg] = useState({ text: '', type: '' });
   const [testUsername, setTestUsername] = useState('');
   const [testComment, setTestComment] = useState('');
@@ -76,6 +77,16 @@ function Dashboard() {
     { id: 'trivia', label: '🧠 Trivia' },
   ];
 
+  const refreshActiveSoal = async (username) => {
+    if (!username) return;
+    try {
+      const res = await axios.get(`/api/sys/game-state/${username}`);
+      setActiveSoal(res.data.state && res.data.state.actualGame ? res.data.state.actualGame : null);
+    } catch (err) {
+      setActiveSoal(null);
+    }
+  };
+
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -85,6 +96,7 @@ function Dashboard() {
         setActiveGame(res.data.user.activeGame || 'tts');
         setRandomGames(res.data.user.randomGames || ['tts', 'susun-kata-acak', 'family100', 'trivia', 'cari-kata', 'sambung-kata']);
         setIsConnected(res.data.isConnected);
+        refreshActiveSoal(res.data.user.username);
       } catch (err) {
         navigate('/login');
       } finally {
@@ -99,6 +111,7 @@ function Dashboard() {
       await axios.post('/api/sys/settings', { tiktokUsername, activeGame, randomGames });
       setStatusMsg({ text: 'Pengaturan berhasil disimpan!', type: 'success' });
       await axios.post('/api/sys/overlay/reload');
+      if (user) await refreshActiveSoal(user.username);
       setTimeout(() => setStatusMsg({text:'', type:''}), 3000);
     } catch (err) {
       setStatusMsg({ text: 'Gagal menyimpan', type: 'error' });
@@ -112,6 +125,7 @@ function Dashboard() {
       const res = await axios.post('/api/sys/tiktok/toggle', { action });
       setIsConnected(res.data.isConnected);
       setStatusMsg({ text: res.data.message, type: 'success' });
+      if (user) await refreshActiveSoal(user.username);
     } catch (err) {
       setStatusMsg({ text: err.response?.data?.error || 'Gagal tersambung', type: 'error' });
     }
@@ -147,7 +161,6 @@ function Dashboard() {
       const res = await axios.post('/api/sys/tiktok/test-connect', { tiktokUsername: testUsername.trim() });
       setStatusMsg({ text: res.data.message, type: 'success' });
       setIsConnected(true);
-      // Simpan sebagai setting aktif
       setTiktokUsername(testUsername.trim());
       await axios.post('/api/sys/settings', { tiktokUsername: testUsername.trim(), activeGame, randomGames });
       setTestHistory(prev => [{ text: `@${testUsername.trim()} - connected!`, sent: false, time: new Date().toLocaleTimeString() }, ...prev].slice(0, 5));
@@ -186,7 +199,6 @@ function Dashboard() {
         )}
 
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
-          {/* Panel TikTok */}
           <div className="space-y-4">
             <div className="p-6 bg-white border border-gray-100 rounded-lg shadow-sm">
               <h2 className="flex items-center gap-2 mb-4 text-lg font-bold">📱 Koneksi TikTok</h2>
@@ -205,54 +217,27 @@ function Dashboard() {
               </button>
             </div>
 
-            {/* Panel Test Komentar */}
             <div className="p-6 bg-white border border-gray-100 rounded-lg shadow-sm">
               <h2 className="flex items-center gap-2 mb-4 text-lg font-bold">🧪 Test & Cek Live</h2>
-
-              {/* Sambung ke streamer untuk test */}
               <div className="mb-4">
                 <label className="block mb-2 text-sm font-medium text-gray-600">Masukkan username streamer yang sedang live:</label>
                 <div className="flex gap-2">
-                  <input
-                    type="text"
-                    value={testUsername}
-                    onChange={e => setTestUsername(e.target.value)}
-                    className="flex-1 px-3 py-2 bg-gray-50 border rounded"
-                    placeholder="windahbasudara"
-                  />
-                  <button onClick={testConnectStreamer} className="px-4 py-2 font-medium text-white bg-purple-600 rounded hover:bg-purple-700">
-                    🔗 Test Koneksi
-                  </button>
+                  <input type="text" value={testUsername} onChange={e => setTestUsername(e.target.value)} className="flex-1 px-3 py-2 bg-gray-50 border rounded" placeholder="windahbasudara" />
+                  <button onClick={testConnectStreamer} className="px-4 py-2 font-medium text-white bg-purple-600 rounded hover:bg-purple-700">🔗 Test Koneksi</button>
                 </div>
-                <p className="mt-1 text-xs text-gray-400">Ketik username streamer terkenal yang sedang live, lalu klik Test Koneksi.</p>
               </div>
-
-              {/* Kirim komentar test manual */}
               <div className="pt-4 border-t border-gray-100">
                 <label className="block mb-2 text-sm font-medium text-gray-600">Atau kirim komentar test manual:</label>
                 <form onSubmit={sendTestComment} className="flex gap-2">
-                  <input
-                    type="text"
-                    value={testComment}
-                    onChange={e => setTestComment(e.target.value)}
-                    className="flex-1 px-3 py-2 bg-gray-50 border rounded"
-                    placeholder="Ketik jawaban..."
-                  />
-                  <button type="submit" className="px-4 py-2 font-medium text-white bg-teal-600 rounded hover:bg-teal-700">
-                    Kirim
-                  </button>
+                  <input type="text" value={testComment} onChange={e => setTestComment(e.target.value)} className="flex-1 px-3 py-2 bg-gray-50 border rounded" placeholder="Ketik jawaban..." />
+                  <button type="submit" className="px-4 py-2 font-medium text-white bg-teal-600 rounded hover:bg-teal-700">Kirim</button>
                 </form>
               </div>
-
-              {/* Riwayat */}
               {testHistory.length > 0 && (
                 <div className="mt-4 pt-3 border-t border-gray-100">
-                  <p className="mb-2 text-xs font-medium text-gray-400">Riwayat:</p>
                   {testHistory.map((h, i) => (
                     <div key={i} className="flex items-center justify-between py-1 text-xs text-gray-600">
-                      <span className={h.sent ? 'text-teal-600' : 'text-purple-600'}>
-                        {h.sent ? '→' : '🔗'} {h.text}
-                      </span>
+                      <span className={h.sent ? 'text-teal-600' : 'text-purple-600'}>{h.sent ? '→' : '🔗'} {h.text}</span>
                       <span className="text-gray-400">{h.time}</span>
                     </div>
                   ))}
@@ -261,9 +246,13 @@ function Dashboard() {
             </div>
           </div>
 
-          {/* Panel Game */}
           <div className="p-6 bg-white border border-gray-100 rounded-lg shadow-sm">
             <h2 className="mb-4 text-lg font-bold">🎮 Pilihan Game Active</h2>
+            <div className={`flex items-center gap-2 px-3 py-2 mb-4 text-sm rounded ${activeSoal ? 'bg-green-50 text-green-700' : 'bg-yellow-50 text-yellow-700'}`}>
+              {activeSoal
+                ? <>✅ Soal aktif: <strong>{allGames.find(g => g.id === activeSoal)?.label || activeSoal}</strong></>
+                : <>⚠️ Belum ada soal aktif — klik Simpan setelah pilih game</>}
+            </div>
             <div className="space-y-2 max-h-48 overflow-y-auto pr-1">
               {allGames.map(game => (
                 <label key={game.id} className="flex items-center gap-3 p-2.5 transition-colors border rounded cursor-pointer hover:bg-blue-50">
@@ -272,7 +261,6 @@ function Dashboard() {
                 </label>
               ))}
             </div>
-
             {activeGame === 'game-random' && (
               <div className="mt-4 pt-4 border-t border-gray-200">
                 <p className="mb-2 text-sm font-medium text-gray-600">Pilih game yang akan diacak:</p>
@@ -284,28 +272,18 @@ function Dashboard() {
                     </label>
                   ))}
                 </div>
-                <p className="mt-2 text-xs text-gray-400">Minimal 1 game harus terpilih.</p>
               </div>
             )}
-
-            <button onClick={saveSettings} className="w-full py-2 mt-4 text-blue-700 bg-blue-100 rounded hover:bg-blue-200">
-              Simpan & Ganti Layar
-            </button>
+            <button onClick={saveSettings} className="w-full py-2 mt-4 text-blue-700 bg-blue-100 rounded hover:bg-blue-200">Simpan & Ganti Layar</button>
           </div>
         </div>
 
-        {/* Link OBS */}
         <div className="p-6 mt-6 text-white bg-gray-800 rounded-lg">
           <h2 className="mb-2 font-bold">🔗 Link OBS Browser Source</h2>
           <div className="flex items-center gap-3">
-            <code className="flex-1 p-3 text-green-400 bg-gray-900 rounded select-all text-sm overflow-x-auto">
-              https://live.albiontools.fun/overlay/{user.username}
-            </code>
-            <a href={'/overlay/' + user.username} target="_blank" rel="noopener noreferrer" className="px-4 py-2 text-white bg-blue-600 rounded hover:bg-blue-700 whitespace-nowrap">
-              Buka di Tab Baru
-            </a>
+            <code className="flex-1 p-3 text-green-400 bg-gray-900 rounded select-all text-sm overflow-x-auto">https://live.albiontools.fun/overlay/{user.username}</code>
+            <a href={'/overlay/' + user.username} target="_blank" rel="noopener noreferrer" className="px-4 py-2 text-white bg-blue-600 rounded hover:bg-blue-700 whitespace-nowrap">Buka di Tab Baru</a>
           </div>
-          <p className="mt-2 text-sm text-gray-400">Buka overlay di tab baru, lalu test koneksi streamer di panel 🧪 Test & Cek Live.</p>
         </div>
       </main>
     </div>
