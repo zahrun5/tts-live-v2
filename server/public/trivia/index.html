@@ -237,7 +237,21 @@
   <script>
     
     
-    const socket = io();
+    const socket = io({
+    path: '/socket.io/',
+    transports: ['polling'],
+    allowUpgrades: false,
+    reconnectionAttempts: 3,
+    reconnectionDelay: 1000,
+    timeout: 15000,
+    withCredentials: false
+  });
+  console.log('[Client] Socket.IO init dengan transports=polling');
+  socket.on('connect', () => console.log('[Client] CONNECTED, id=' + socket.id));
+  socket.on('disconnect', (r) => console.log('[Client] DISCONNECT: ' + r));
+  socket.on('connect_error', (e) => console.error('[Client] CONNECT_ERROR: ' + e.message + ' (code=' + e.code + ')'));
+  socket.on('error', (e) => console.error('[Client] ERROR: ' + e));
+  socket.on('update', (d) => console.log('[Client] UPDATE received!'));
     // V2: join room khusus
     if (window.TTS_LIVE_V2_CONFIG) {
       socket.emit('join-overlay', window.TTS_LIVE_V2_CONFIG.username);

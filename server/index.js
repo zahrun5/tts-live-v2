@@ -83,6 +83,15 @@ app.use((req, res, next) => {
 
 // Socket.IO
 io.on('connection', (socket) => {
+    console.log('[Socket] CONNECTED id=' + socket.id + ' transport=' + (socket.engine ? socket.engine.transport.name : 'unknown'));
+    console.log('[Socket] query=' + JSON.stringify(socket.handshake.query));
+    console.log('[Socket] headers_cookie=' + (socket.handshake.headers.cookie || 'none').slice(0, 80));
+    // Log semua incoming events dari client ini
+    const originalOn = socket.on.bind(socket);
+    socket.on = function(event, fn) {
+      console.log('[Socket] server registered handler for: ' + event);
+      return originalOn(event, fn);
+    };
   socket.on('join-overlay', (username) => {
     socket.join(`room_${username}`);
     console.log(`[Socket] Overlay joined: room_${username}`);
