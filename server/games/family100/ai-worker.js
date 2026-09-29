@@ -2,63 +2,99 @@
  * Background AI Worker - Family 100
  *
  * Worker ini jalan terus di background (di-manage PM2).
- * Tugasnya cuma SATU: pastikan bank soal fallback cukup besar (misal minimal 100 soal).
- * Kalau kurang dari target, dia akan terus-terusan manggil AI sampai tercapai.
- * Kalau API limit, dia akan pause 5 menit lalu coba lagi.
+ * Pakai AI Team pipeline untuk generate bank soal berkualitas tinggi:
+ *   Librarian → Gap Analyst → Question Writer → Dedup Scout → Quality Grader
+ *
+ * AI Team memutuskan apa yang perlu dibuat, bukan asal generate random.
+ * Target: 1000+ pertanyaan Family100 yang bervariasi dan tidak duplikat.
  */
 
-const { callAIGenerator } = require('./ai-question-generator');
-const { saveFallbackQuestion, getTotalCount } = require('./fallback-manager');
+const { generateWithTeam, loadBank } = require('../../ai-team');
+const { saveFallbackQuestion, getTotalCount, clearCache } = require('./fallback-manager');
 
 const TARGET_BANK_SIZE = 1000;
-const RETRY_DELAY_MS = 10000;      // Tunggu 10 detik kalau AI gagal (bukan karena limit)
-const RATE_LIMIT_DELAY_MS = 300000; // Tunggu 5 menit kalau kena rate limit
+const BATCH_SIZE = 3;           // Generate 3 pertanyaan per pipeline run
+const PIPELINE_DELAY_MS = 5000;  // Jeda antar pipeline run
+const RATE_LIMIT_DELAY_MS = 300000; // 5 menit kalau rate limit
+const ERROR_DELAY_MS = 15000;
 
 async function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
 
 async function runWorker() {
-  console.log('👷 [AI Worker] Memulai Family 100 background worker...');
-  
+  console.log('👷 [AI Worker] Memulai Family 100 AI Team worker...');
+  console.log('👷 Target: ' + TARGET_BANK_SIZE + ' pertanyaan berkualitas di bank');
+
   while (true) {
     const currentCount = getTotalCount();
-    
+
     if (currentCount >= TARGET_BANK_SIZE) {
-      console.log(`👷 [AI Worker] Bank soal penuh (${currentCount}/${TARGET_BANK_SIZE}). Tidur 1 jam...`);
+      console.log(`👷 [AI Worker] ✅ Bank soal sudah cukup (${currentCount}/${TARGET_BANK_SIZE}). Tidur 1 jam...`);
       await sleep(60 * 60 * 1000);
       continue;
     }
 
-    console.log(`👷 [AI Worker] Bank soal kurang (${currentCount}/${TARGET_BANK_SIZE}). Memanggil AI...`);
-    
+    console.log(`👷 [AI Worker] Bank kurang (${currentCount}/${TARGET_BANK_SIZE}). Jalankan AI Team pipeline...`);
+
     try {
-      // Kita gak peduli usedQuestions di sini, karena saveFallbackQuestion udah check duplicate
-      const { question, answers } = await callAIGenerator([]);
-      
-      const saved = saveFallbackQuestion(question, answers);
-      if (saved) {
-        console.log(`✅ [AI Worker] Berhasil! Bank soal sekarang: ${getTotalCount()}`);
-      } else {
-        console.log(`⚠️ [AI Worker] Soal duplikat, di-skip.`);
+      // Jalankan AI Team pipeline
+      // generateWithTeam akan:
+      // 1. Librarian: audit bank → kategori apa saja yang ada
+      // 2. Gap Analyst: analisis gaps → kategori apa yang kurang
+      // 3. Question Writer: generate 3 pertanyaan untuk kategori prioritas
+      // 4. Dedup Scout: cek duplikat sebelum save
+      // 5. Quality Grader: validasi kualitas sebelum save
+      // 6. Category Suggester: suggest kategori baru
+      const results = await generateWithTeam('family100', BATCH_SIZE);
+
+      let saved = 0;
+      for (const result of results) {
+        if (!result.draft || !result.draft.question) continue;
+
+        // Quality filter: minimal 60/100 untuk disimpan
+        if (result.quality && result.quality.overall < 60) {
+          console.log(`👷 [AI Worker] ⏭ Skip (quality ${result.quality.overall}/100 < 60): "${result.draft.question.slice(0, 50)}"`);
+          continue;
+        }
+
+        const { question, answers } = result.draft;
+
+        // Normalize answers format for fallback-manager
+        const normalizedAnswers = answers.map((a, i) =>
+          typeof a === 'string' ? a : a.text
+        );
+
+        const didSave = saveFallbackQuestion(question, normalizedAnswers);
+        if (didSave) {
+          saved++;
+          clearCache(); // invalidate gameProxy cache
+        }
       }
-      
-      // Jeda bentar biar gak nyepam API
-      await sleep(2000);
-      
+
+      const newCount = getTotalCount();
+      console.log(`👷 [AI Worker] Pipeline selesai: ${saved}/${results.length} disimpan. Bank: ${currentCount} → ${newCount}`);
+
+      // Kalau 0 berhasil disimpan (mungkin semua dupes/quality rendah), tunggu lebih lama
+      if (saved === 0) {
+        console.log(`👷 [AI Worker] ⚠️ Tidak ada yang berhasil. Tunggu 30 detik...`);
+        await sleep(30000);
+      } else {
+        await sleep(PIPELINE_DELAY_MS);
+      }
+
     } catch (err) {
       const errMsg = err.message || '';
-      console.error(`❌ [AI Worker] Gagal: ${errMsg}`);
-      
-      if (errMsg.includes('429') || errMsg.includes('Rate limit') || errMsg.includes('timeout')) {
-        console.log(`⏳ [AI Worker] Terdeteksi rate limit / timeout. Istirahat 5 menit...`);
+      console.error(`❌ [AI Worker] Pipeline error: ${errMsg}`);
+
+      if (errMsg.includes('429') || errMsg.includes('Rate limit')) {
+        console.log(`⏳ [AI Worker] Rate limit terdeteksi. Istirahat 5 menit...`);
         await sleep(RATE_LIMIT_DELAY_MS);
       } else {
-        console.log(`⏳ [AI Worker] Error lain. Coba lagi dalam 10 detik...`);
-        await sleep(RETRY_DELAY_MS);
+        await sleep(ERROR_DELAY_MS);
       }
     }
   }
 }
 
-runWorker().catch(e => console.error('Worker crash:', e));
+runWorker().catch(e => console.error('❌ [AI Worker] Crash:', e.message));

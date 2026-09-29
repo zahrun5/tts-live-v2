@@ -1,5 +1,143 @@
 [
   {
+    "category": "Geografi",
+    "question": "Apa nama danau terluas di Indonesia?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Danau Singkarak"
+      },
+      {
+        "letter": "B",
+        "text": "Danau Poso"
+      },
+      {
+        "letter": "C",
+        "text": "Danau Toba"
+      },
+      {
+        "letter": "D",
+        "text": "Danau Sentani"
+      }
+    ],
+    "correctLetter": "C"
+  },
+  {
+    "category": "Hewan",
+    "question": "Hewan apa yang menjadi logo resmi organisasi konservasi alam WWF?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Harimau"
+      },
+      {
+        "letter": "B",
+        "text": "Panda"
+      },
+      {
+        "letter": "C",
+        "text": "Badak"
+      },
+      {
+        "letter": "D",
+        "text": "Gajah"
+      }
+    ],
+    "correctLetter": "B"
+  },
+  {
+    "category": "Geografi",
+    "question": "Apa nama danau vulkanik terbesar di Indonesia dan Asia Tenggara?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Danau Singkarak"
+      },
+      {
+        "letter": "B",
+        "text": "Danau Toba"
+      },
+      {
+        "letter": "C",
+        "text": "Danau Poso"
+      },
+      {
+        "letter": "D",
+        "text": "Danau Sentani"
+      }
+    ],
+    "correctLetter": "B"
+  },
+  {
+    "category": "Geografi",
+    "question": "Danau vulkanik terbesar di dunia yang terletak di Indonesia adalah...",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Danau Toba"
+      },
+      {
+        "letter": "B",
+        "text": "Danau Singkarak"
+      },
+      {
+        "letter": "C",
+        "text": "Danau Maninjau"
+      },
+      {
+        "letter": "D",
+        "text": "Danau Poso"
+      }
+    ],
+    "correctLetter": "A"
+  },
+  {
+    "category": "Geografi",
+    "question": "Gunung tertinggi di dunia adalah?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Gunung Kilimanjaro"
+      },
+      {
+        "letter": "B",
+        "text": "Gunung Everest"
+      },
+      {
+        "letter": "C",
+        "text": "Gunung Fuji"
+      },
+      {
+        "letter": "D",
+        "text": "Gunung Elbrus"
+      }
+    ],
+    "correctLetter": "B"
+  },
+  {
+    "category": "Kesehatan & Sains",
+    "question": "Vitamin apa yang dapat diproduksi tubuh secara alami dengan bantuan paparan sinar matahari?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Vitamin A"
+      },
+      {
+        "letter": "B",
+        "text": "Vitamin C"
+      },
+      {
+        "letter": "C",
+        "text": "Vitamin D"
+      },
+      {
+        "letter": "D",
+        "text": "Vitamin K"
+      }
+    ],
+    "correctLetter": "C"
+  },
+  {
     "category": "Sains",
     "question": "Hewan mamalia terbesar di dunia yang masih hidup saat ini adalah?",
     "options": [
@@ -46,29 +184,6 @@
     "correctLetter": "C"
   },
   {
-    "category": "Sains",
-    "question": "Gas apa yang paling banyak terkandung di atmosfer Bumi?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Oksigen"
-      },
-      {
-        "letter": "B",
-        "text": "Nitrogen"
-      },
-      {
-        "letter": "C",
-        "text": "Karbon Dioksida"
-      },
-      {
-        "letter": "D",
-        "text": "Hidrogen"
-      }
-    ],
-    "correctLetter": "B"
-  },
-  {
     "category": "Geografi",
     "question": "Negara manakah yang dijuluki sebagai 'Negeri Kincir Angin'?",
     "options": [
@@ -87,29 +202,6 @@
       {
         "letter": "D",
         "text": "Denmark"
-      }
-    ],
-    "correctLetter": "B"
-  },
-  {
-    "category": "Fauna",
-    "question": "Hewan apa yang dinobatkan sebagai mamalia terbesar di dunia?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Gajah afrika"
-      },
-      {
-        "letter": "B",
-        "text": "Paus biru"
-      },
-      {
-        "letter": "C",
-        "text": "Hiu paus"
-      },
-      {
-        "letter": "D",
-        "text": "Badak putih"
       }
     ],
     "correctLetter": "B"
@@ -139,52 +231,6 @@
   },
   {
     "category": "Geografi",
-    "question": "Apakah ibu kota resmi negara Australia?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Sydney"
-      },
-      {
-        "letter": "B",
-        "text": "Canberra"
-      },
-      {
-        "letter": "C",
-        "text": "Melbourne"
-      },
-      {
-        "letter": "D",
-        "text": "Perth"
-      }
-    ],
-    "correctLetter": "B"
-  },
-  {
-    "category": "Geografi",
-    "question": "Negara manakah yang memiliki wilayah terluas di dunia?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Kanada"
-      },
-      {
-        "letter": "B",
-        "text": "Tiongkok"
-      },
-      {
-        "letter": "C",
-        "text": "Rusia"
-      },
-      {
-        "letter": "D",
-        "text": "Amerika Serikat"
-      }
-    ],
-    "correctLetter": "C"
-  },
-  {
-    "category": "Geografi",
     "question": "Negara manakah yang mendapat julukan 'Negeri Matahari Terbit'?",
     "options": [
       {
@@ -205,98 +251,6 @@
       }
     ],
     "correctLetter": "A"
-  },
-  {
-    "category": "Sains",
-    "question": "Hewan darat apa yang dikenal sebagai yang tercepat di dunia?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Singa"
-      },
-      {
-        "letter": "B",
-        "text": "Cheetah"
-      },
-      {
-        "letter": "C",
-        "text": "Kuda"
-      },
-      {
-        "letter": "D",
-        "text": "Kijang"
-      }
-    ],
-    "correctLetter": "B"
-  },
-  {
-    "category": "Geografi",
-    "question": "Apakah nama danau vulkanik terluas di Indonesia?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Danau Singkarak"
-      },
-      {
-        "letter": "B",
-        "text": "Danau Toba"
-      },
-      {
-        "letter": "C",
-        "text": "Danau Poso"
-      },
-      {
-        "letter": "D",
-        "text": "Danau Sentani"
-      }
-    ],
-    "correctLetter": "B"
-  },
-  {
-    "category": "Geografi",
-    "question": "Danau vulkanik terbesar di dunia yang berada di Indonesia adalah...",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Danau Toba"
-      },
-      {
-        "letter": "B",
-        "text": "Danau Singkarak"
-      },
-      {
-        "letter": "C",
-        "text": "Danau Poso"
-      },
-      {
-        "letter": "D",
-        "text": "Danau Maninjau"
-      }
-    ],
-    "correctLetter": "A"
-  },
-  {
-    "category": "Geografi",
-    "question": "Apakah nama ibu kota resmi dari negara Australia?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Sydney"
-      },
-      {
-        "letter": "B",
-        "text": "Melbourne"
-      },
-      {
-        "letter": "C",
-        "text": "Canberra"
-      },
-      {
-        "letter": "D",
-        "text": "Perth"
-      }
-    ],
-    "correctLetter": "C"
   },
   {
     "category": "Sains",
@@ -345,29 +299,6 @@
     "correctLetter": "C"
   },
   {
-    "category": "Sains",
-    "question": "Gas apa yang kandungannya paling banyak di atmosfer Bumi?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Oksigen"
-      },
-      {
-        "letter": "B",
-        "text": "Nitrogen"
-      },
-      {
-        "letter": "C",
-        "text": "Karbon dioksida"
-      },
-      {
-        "letter": "D",
-        "text": "Hidrogen"
-      }
-    ],
-    "correctLetter": "B"
-  },
-  {
     "category": "Kuliner",
     "question": "Gudeg merupakan makanan tradisional khas dari kota mana?",
     "options": [
@@ -386,190 +317,6 @@
       {
         "letter": "D",
         "text": "Palembang"
-      }
-    ],
-    "correctLetter": "B"
-  },
-  {
-    "category": "Sains",
-    "question": "Hewan mamalia terbesar di dunia adalah?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Gajah afrika"
-      },
-      {
-        "letter": "B",
-        "text": "Paus biru"
-      },
-      {
-        "letter": "C",
-        "text": "Hiu paus"
-      },
-      {
-        "letter": "D",
-        "text": "Gorila"
-      }
-    ],
-    "correctLetter": "B"
-  },
-  {
-    "category": "Kuliner",
-    "question": "Makanan khas Palembang yang terbuat dari olahan ikan dan sagu adalah...",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Gudeg"
-      },
-      {
-        "letter": "B",
-        "text": "Pempek"
-      },
-      {
-        "letter": "C",
-        "text": "Rendang"
-      },
-      {
-        "letter": "D",
-        "text": "Rawon"
-      }
-    ],
-    "correctLetter": "B"
-  },
-  {
-    "category": "Geografi",
-    "question": "Gunung tertinggi di dunia adalah Gunung...?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Kilimanjaro"
-      },
-      {
-        "letter": "B",
-        "text": "Fuji"
-      },
-      {
-        "letter": "C",
-        "text": "Everest"
-      },
-      {
-        "letter": "D",
-        "text": "Elbrus"
-      }
-    ],
-    "correctLetter": "C"
-  },
-  {
-    "category": "Geografi",
-    "question": "Apa nama ibu kota resmi dari negara Australia?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Sydney"
-      },
-      {
-        "letter": "B",
-        "text": "Melbourne"
-      },
-      {
-        "letter": "C",
-        "text": "Canberra"
-      },
-      {
-        "letter": "D",
-        "text": "Brisbane"
-      }
-    ],
-    "correctLetter": "C"
-  },
-  {
-    "category": "Sains",
-    "question": "Gas apa yang paling banyak menyusun atmosfer Bumi?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Oksigen"
-      },
-      {
-        "letter": "B",
-        "text": "Nitrogen"
-      },
-      {
-        "letter": "C",
-        "text": "Karbon Dioksida"
-      },
-      {
-        "letter": "D",
-        "text": "Hidrogen"
-      }
-    ],
-    "correctLetter": "B"
-  },
-  {
-    "category": "Sains",
-    "question": "Hewan mamalia terbesar di dunia saat ini adalah...",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Gajah afrika"
-      },
-      {
-        "letter": "B",
-        "text": "Paus biru"
-      },
-      {
-        "letter": "C",
-        "text": "Hiu paus"
-      },
-      {
-        "letter": "D",
-        "text": "Jerapah"
-      }
-    ],
-    "correctLetter": "B"
-  },
-  {
-    "category": "Geografi",
-    "question": "Gunung tertinggi di dunia adalah...",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Gunung Kilimanjaro"
-      },
-      {
-        "letter": "B",
-        "text": "Gunung Everest"
-      },
-      {
-        "letter": "C",
-        "text": "Gunung Fuji"
-      },
-      {
-        "letter": "D",
-        "text": "Gunung Elbrus"
-      }
-    ],
-    "correctLetter": "B"
-  },
-  {
-    "category": "Geografi",
-    "question": "Benua terluas di dunia berdasarkan luas wilayah adalah...",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Afrika"
-      },
-      {
-        "letter": "B",
-        "text": "Asia"
-      },
-      {
-        "letter": "C",
-        "text": "Amerika"
-      },
-      {
-        "letter": "D",
-        "text": "Eropa"
       }
     ],
     "correctLetter": "B"
@@ -598,190 +345,6 @@
     "correctLetter": "C"
   },
   {
-    "category": "Sains",
-    "question": "Gas apakah yang kandungannya paling banyak di atmosfer Bumi?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Oksigen"
-      },
-      {
-        "letter": "B",
-        "text": "Nitrogen"
-      },
-      {
-        "letter": "C",
-        "text": "Karbon dioksida"
-      },
-      {
-        "letter": "D",
-        "text": "Helium"
-      }
-    ],
-    "correctLetter": "B"
-  },
-  {
-    "category": "Pengetahuan Umum",
-    "question": "Mata uang resmi negara Jepang adalah?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Won"
-      },
-      {
-        "letter": "B",
-        "text": "Yen"
-      },
-      {
-        "letter": "C",
-        "text": "Yuan"
-      },
-      {
-        "letter": "D",
-        "text": "Peso"
-      }
-    ],
-    "correctLetter": "B"
-  },
-  {
-    "category": "Fauna",
-    "question": "Hewan darat apa yang dinobatkan sebagai hewan tercepat di dunia?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Singa"
-      },
-      {
-        "letter": "B",
-        "text": "Cheetah"
-      },
-      {
-        "letter": "C",
-        "text": "Kuda"
-      },
-      {
-        "letter": "D",
-        "text": "Kijang"
-      }
-    ],
-    "correctLetter": "B"
-  },
-  {
-    "category": "Sains",
-    "question": "Hewan apa yang merupakan mamalia terbesar di dunia saat ini?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Gajah Afrika"
-      },
-      {
-        "letter": "B",
-        "text": "Paus Biru"
-      },
-      {
-        "letter": "C",
-        "text": "Hiu Paus"
-      },
-      {
-        "letter": "D",
-        "text": "Jerapah"
-      }
-    ],
-    "correctLetter": "B"
-  },
-  {
-    "category": "Pengetahuan Umum",
-    "question": "Apa mata uang resmi negara Jepang?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Won"
-      },
-      {
-        "letter": "B",
-        "text": "Yen"
-      },
-      {
-        "letter": "C",
-        "text": "Yuan"
-      },
-      {
-        "letter": "D",
-        "text": "Baht"
-      }
-    ],
-    "correctLetter": "B"
-  },
-  {
-    "category": "Geografi",
-    "question": "Apakah ibu kota dari negara Australia?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Sydney"
-      },
-      {
-        "letter": "B",
-        "text": "Melbourne"
-      },
-      {
-        "letter": "C",
-        "text": "Canberra"
-      },
-      {
-        "letter": "D",
-        "text": "Perth"
-      }
-    ],
-    "correctLetter": "C"
-  },
-  {
-    "category": "Sains",
-    "question": "Apa nama hewan mamalia terbesar di dunia?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Gajah afrika"
-      },
-      {
-        "letter": "B",
-        "text": "Paus biru"
-      },
-      {
-        "letter": "C",
-        "text": "Hiu paus"
-      },
-      {
-        "letter": "D",
-        "text": "Beruang kutub"
-      }
-    ],
-    "correctLetter": "B"
-  },
-  {
-    "category": "Sains",
-    "question": "Gas apa yang paling melimpah di atmosfer Bumi?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Oksigen"
-      },
-      {
-        "letter": "B",
-        "text": "Nitrogen"
-      },
-      {
-        "letter": "C",
-        "text": "Karbon Dioksida"
-      },
-      {
-        "letter": "D",
-        "text": "Hidrogen"
-      }
-    ],
-    "correctLetter": "B"
-  },
-  {
     "category": "Geografi",
     "question": "Selat apa yang memisahkan Pulau Jawa dan Pulau Sumatra?",
     "options": [
@@ -800,121 +363,6 @@
       {
         "letter": "D",
         "text": "Selat Makassar"
-      }
-    ],
-    "correctLetter": "B"
-  },
-  {
-    "category": "Kuliner",
-    "question": "Makanan khas Palembang yang terbuat dari campuran daging ikan dan tepung sagu adalah?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Gudeg"
-      },
-      {
-        "letter": "B",
-        "text": "Pempek"
-      },
-      {
-        "letter": "C",
-        "text": "Rendang"
-      },
-      {
-        "letter": "D",
-        "text": "Papeda"
-      }
-    ],
-    "correctLetter": "B"
-  },
-  {
-    "category": "Sains",
-    "question": "Hewan apa yang merupakan mamalia terbesar di dunia?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Gajah Afrika"
-      },
-      {
-        "letter": "B",
-        "text": "Paus Biru"
-      },
-      {
-        "letter": "C",
-        "text": "Hiu Paus"
-      },
-      {
-        "letter": "D",
-        "text": "Jerapah"
-      }
-    ],
-    "correctLetter": "B"
-  },
-  {
-    "category": "Geografi",
-    "question": "Apa gunung tertinggi di Pulau Jawa?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Gunung Merapi"
-      },
-      {
-        "letter": "B",
-        "text": "Gunung Semeru"
-      },
-      {
-        "letter": "C",
-        "text": "Gunung Bromo"
-      },
-      {
-        "letter": "D",
-        "text": "Gunung Slamet"
-      }
-    ],
-    "correctLetter": "B"
-  },
-  {
-    "category": "Geografi",
-    "question": "Ibu kota dari negara Jepang adalah?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Kyoto"
-      },
-      {
-        "letter": "B",
-        "text": "Tokyo"
-      },
-      {
-        "letter": "C",
-        "text": "Osaka"
-      },
-      {
-        "letter": "D",
-        "text": "Hiroshima"
-      }
-    ],
-    "correctLetter": "B"
-  },
-  {
-    "category": "Geografi",
-    "question": "Negara manakah yang dijuluki 'Negeri Matahari Terbit'?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Korea Selatan"
-      },
-      {
-        "letter": "B",
-        "text": "Jepang"
-      },
-      {
-        "letter": "C",
-        "text": "Tiongkok"
-      },
-      {
-        "letter": "D",
-        "text": "Thailand"
       }
     ],
     "correctLetter": "B"
@@ -944,75 +392,6 @@
   },
   {
     "category": "Geografi",
-    "question": "Apakah nama ibu kota negara Australia?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Sydney"
-      },
-      {
-        "letter": "B",
-        "text": "Melbourne"
-      },
-      {
-        "letter": "C",
-        "text": "Canberra"
-      },
-      {
-        "letter": "D",
-        "text": "Brisbane"
-      }
-    ],
-    "correctLetter": "C"
-  },
-  {
-    "category": "Fauna",
-    "question": "Apa hewan mamalia terbesar di dunia?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Gajah Afrika"
-      },
-      {
-        "letter": "B",
-        "text": "Paus Biru"
-      },
-      {
-        "letter": "C",
-        "text": "Hiu Paus"
-      },
-      {
-        "letter": "D",
-        "text": "Badak Putih"
-      }
-    ],
-    "correctLetter": "B"
-  },
-  {
-    "category": "Kuliner",
-    "question": "Makanan khas 'Gudeg' berasal dari kota mana?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Bandung"
-      },
-      {
-        "letter": "B",
-        "text": "Yogyakarta"
-      },
-      {
-        "letter": "C",
-        "text": "Surabaya"
-      },
-      {
-        "letter": "D",
-        "text": "Medan"
-      }
-    ],
-    "correctLetter": "B"
-  },
-  {
-    "category": "Geografi",
     "question": "Apa danau alami terbesar di Indonesia?",
     "options": [
       {
@@ -1036,75 +415,6 @@
   },
   {
     "category": "Geografi",
-    "question": "Apakah nama ibu kota dari negara Australia?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Sydney"
-      },
-      {
-        "letter": "B",
-        "text": "Melbourne"
-      },
-      {
-        "letter": "C",
-        "text": "Canberra"
-      },
-      {
-        "letter": "D",
-        "text": "Brisbane"
-      }
-    ],
-    "correctLetter": "C"
-  },
-  {
-    "category": "Geografi",
-    "question": "Danau terluas di Indonesia adalah Danau...",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Poso"
-      },
-      {
-        "letter": "B",
-        "text": "Toba"
-      },
-      {
-        "letter": "C",
-        "text": "Singkarak"
-      },
-      {
-        "letter": "D",
-        "text": "Sentani"
-      }
-    ],
-    "correctLetter": "B"
-  },
-  {
-    "category": "Kuliner",
-    "question": "Makanan khas gudeg berasal dari kota mana?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Bandung"
-      },
-      {
-        "letter": "B",
-        "text": "Yogyakarta"
-      },
-      {
-        "letter": "C",
-        "text": "Semarang"
-      },
-      {
-        "letter": "D",
-        "text": "Surabaya"
-      }
-    ],
-    "correctLetter": "B"
-  },
-  {
-    "category": "Geografi",
     "question": "Di negara manakah Menara Eiffel berada?",
     "options": [
       {
@@ -1122,52 +432,6 @@
       {
         "letter": "D",
         "text": "Jerman"
-      }
-    ],
-    "correctLetter": "B"
-  },
-  {
-    "category": "Geografi",
-    "question": "Apa nama ibu kota dari negara Jepang?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Kyoto"
-      },
-      {
-        "letter": "B",
-        "text": "Tokyo"
-      },
-      {
-        "letter": "C",
-        "text": "Osaka"
-      },
-      {
-        "letter": "D",
-        "text": "Hiroshima"
-      }
-    ],
-    "correctLetter": "B"
-  },
-  {
-    "category": "Geografi",
-    "question": "Di kota manakah Menara Eiffel berada?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Roma"
-      },
-      {
-        "letter": "B",
-        "text": "Paris"
-      },
-      {
-        "letter": "C",
-        "text": "London"
-      },
-      {
-        "letter": "D",
-        "text": "Berlin"
       }
     ],
     "correctLetter": "B"
@@ -1243,29 +507,6 @@
   },
   {
     "category": "Sains",
-    "question": "Hewan darat tercepat di dunia saat berlari adalah?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Singa"
-      },
-      {
-        "letter": "B",
-        "text": "Cheetah"
-      },
-      {
-        "letter": "C",
-        "text": "Kuda"
-      },
-      {
-        "letter": "D",
-        "text": "Kijang"
-      }
-    ],
-    "correctLetter": "B"
-  },
-  {
-    "category": "Sains",
     "question": "Organ tubuh manusia yang berfungsi utama memompa darah ke seluruh tubuh adalah?",
     "options": [
       {
@@ -1288,52 +529,6 @@
     "correctLetter": "C"
   },
   {
-    "category": "Sains & Alam",
-    "question": "Apa hewan mamalia terbesar di dunia saat ini?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Gajah Afrika"
-      },
-      {
-        "letter": "B",
-        "text": "Paus Biru"
-      },
-      {
-        "letter": "C",
-        "text": "Hiu Paus"
-      },
-      {
-        "letter": "D",
-        "text": "Gorila"
-      }
-    ],
-    "correctLetter": "B"
-  },
-  {
-    "category": "Hewan",
-    "question": "Hewan darat tercepat di dunia saat berlari adalah...",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Singa"
-      },
-      {
-        "letter": "B",
-        "text": "Cheetah"
-      },
-      {
-        "letter": "C",
-        "text": "Kuda"
-      },
-      {
-        "letter": "D",
-        "text": "Kijang"
-      }
-    ],
-    "correctLetter": "B"
-  },
-  {
     "category": "Fauna",
     "question": "Burung terbesar di dunia yang tidak bisa terbang adalah...",
     "options": [
@@ -1352,75 +547,6 @@
       {
         "letter": "D",
         "text": "Kiwi"
-      }
-    ],
-    "correctLetter": "B"
-  },
-  {
-    "category": "Kuliner",
-    "question": "Gudeg merupakan makanan tradisional khas yang berasal dari kota mana?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Bandung"
-      },
-      {
-        "letter": "B",
-        "text": "Yogyakarta"
-      },
-      {
-        "letter": "C",
-        "text": "Surabaya"
-      },
-      {
-        "letter": "D",
-        "text": "Semarang"
-      }
-    ],
-    "correctLetter": "B"
-  },
-  {
-    "category": "Sains",
-    "question": "Organ tubuh manusia yang berfungsi utama memompa darah ke seluruh tubuh adalah...",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Paru-paru"
-      },
-      {
-        "letter": "B",
-        "text": "Jantung"
-      },
-      {
-        "letter": "C",
-        "text": "Ginjal"
-      },
-      {
-        "letter": "D",
-        "text": "Hati"
-      }
-    ],
-    "correctLetter": "B"
-  },
-  {
-    "category": "Fauna",
-    "question": "Hewan mamalia terbesar yang hidup di bumi saat ini adalah...",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Gajah afrika"
-      },
-      {
-        "letter": "B",
-        "text": "Paus biru"
-      },
-      {
-        "letter": "C",
-        "text": "Hiu paus"
-      },
-      {
-        "letter": "D",
-        "text": "Badak putih"
       }
     ],
     "correctLetter": "B"
@@ -1472,144 +598,6 @@
     "correctLetter": "B"
   },
   {
-    "category": "Sains & Alam",
-    "question": "Hewan darat apa yang memegang rekor sebagai yang tercepat di dunia?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Singa"
-      },
-      {
-        "letter": "B",
-        "text": "Cheetah"
-      },
-      {
-        "letter": "C",
-        "text": "Kuda"
-      },
-      {
-        "letter": "D",
-        "text": "Kijang"
-      }
-    ],
-    "correctLetter": "B"
-  },
-  {
-    "category": "Sains",
-    "question": "Hewan terbesar di Bumi yang masih hidup hingga saat ini adalah...",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Gajah afrika"
-      },
-      {
-        "letter": "B",
-        "text": "Hiu paus"
-      },
-      {
-        "letter": "C",
-        "text": "Paus biru"
-      },
-      {
-        "letter": "D",
-        "text": "Cumi-cumi raksasa"
-      }
-    ],
-    "correctLetter": "C"
-  },
-  {
-    "category": "Geografi",
-    "question": "Negara manakah yang memiliki julukan 'Negeri Kincir Angin'?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Jerman"
-      },
-      {
-        "letter": "B",
-        "text": "Belanda"
-      },
-      {
-        "letter": "C",
-        "text": "Swiss"
-      },
-      {
-        "letter": "D",
-        "text": "Denmark"
-      }
-    ],
-    "correctLetter": "B"
-  },
-  {
-    "category": "Geografi",
-    "question": "Ibu kota resmi negara Australia adalah?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Sydney"
-      },
-      {
-        "letter": "B",
-        "text": "Melbourne"
-      },
-      {
-        "letter": "C",
-        "text": "Canberra"
-      },
-      {
-        "letter": "D",
-        "text": "Perth"
-      }
-    ],
-    "correctLetter": "C"
-  },
-  {
-    "category": "Geografi",
-    "question": "Apa nama ibu kota negara Jepang?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Kyoto"
-      },
-      {
-        "letter": "B",
-        "text": "Osaka"
-      },
-      {
-        "letter": "C",
-        "text": "Tokyo"
-      },
-      {
-        "letter": "D",
-        "text": "Hiroshima"
-      }
-    ],
-    "correctLetter": "C"
-  },
-  {
-    "category": "Pengetahuan Umum",
-    "question": "Mata uang resmi negara Jepang adalah...",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Won"
-      },
-      {
-        "letter": "B",
-        "text": "Yuan"
-      },
-      {
-        "letter": "C",
-        "text": "Yen"
-      },
-      {
-        "letter": "D",
-        "text": "Ringgit"
-      }
-    ],
-    "correctLetter": "C"
-  },
-  {
     "category": "Sains",
     "question": "Gas apakah yang paling melimpah di atmosfer Bumi?",
     "options": [
@@ -1628,29 +616,6 @@
       {
         "letter": "D",
         "text": "Helium"
-      }
-    ],
-    "correctLetter": "B"
-  },
-  {
-    "category": "Sains & Alam",
-    "question": "Apakah hewan darat tercepat di dunia?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Singa"
-      },
-      {
-        "letter": "B",
-        "text": "Cheetah"
-      },
-      {
-        "letter": "C",
-        "text": "Kuda"
-      },
-      {
-        "letter": "D",
-        "text": "Serigala"
       }
     ],
     "correctLetter": "B"
@@ -1677,51 +642,5 @@
       }
     ],
     "correctLetter": "B"
-  },
-  {
-    "category": "Geografi",
-    "question": "Apakah ibu kota negara Jepang?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Kyoto"
-      },
-      {
-        "letter": "B",
-        "text": "Tokyo"
-      },
-      {
-        "letter": "C",
-        "text": "Osaka"
-      },
-      {
-        "letter": "D",
-        "text": "Nagoya"
-      }
-    ],
-    "correctLetter": "B"
-  },
-  {
-    "category": "Geografi",
-    "question": "Apa ibu kota dari negara Jepang?",
-    "options": [
-      {
-        "letter": "A",
-        "text": "Beijing"
-      },
-      {
-        "letter": "B",
-        "text": "Seoul"
-      },
-      {
-        "letter": "C",
-        "text": "Tokyo"
-      },
-      {
-        "letter": "D",
-        "text": "Bangkok"
-      }
-    ],
-    "correctLetter": "C"
   }
 ]
