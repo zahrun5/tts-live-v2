@@ -166,14 +166,14 @@ function resetBankCycle() {
   return true;
 }
 
-// Khusus admin/dashboard: semua jawaban soal aktif (termasuk yang belum terjawab).
+// Khusus admin/dashboard: semua jawaban TTS (termasuk yang belum ketemu).
 function getAdminAnswers() {
   if (!puzzle) return { title: 'Belum ada soal', items: [] };
   return {
-    title: 'Teka-Teki Silang',
+    title: 'TTS Grid ' + puzzle.rows + 'x' + puzzle.cols,
     items: puzzle.words.map(w => ({
-      label: `${w.number} ${w.direction === 'across' ? 'Mendatar' : 'Menurun'}`,
-      hint: w.clue,
+      label: '#' + w.number + ' (' + (w.direction === 'across' ? 'Mendatar' : 'Menurun') + ')',
+      hint: w.clue || '',
       answer: w.answer,
       solved: !!state[wordKey(w)]
     }))

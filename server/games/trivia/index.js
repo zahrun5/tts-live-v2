@@ -189,5 +189,35 @@ module.exports = {
   revealRandomAnswer,
   parseComment,
   getBankStats,
-  resetBankCycle
+// Khusus admin/dashboard: jawaban trivia (termasuk yang belum ketemu).
+function getAdminAnswers() {
+  if (!puzzle) return { title: 'Belum ada soal', items: [] };
+  const items = (puzzle.options || []).map((opt, i) => {
+    const letter = String.fromCharCode(65 + i);
+    return {
+      label: letter + '.',
+      hint: '',
+      answer: opt,
+      solved: puzzle.correctLetter === letter
+    };
+  });
+  return { title: (puzzle.category || '') + ' — ' + puzzle.question, items };
+}
+
+module.exports = {
+  id: 'trivia',
+  init: loadPuzzleFromDisk,
+  buildStatePayload,
+  getAdminAnswers,
+  buildClueList,
+  handleAnswer,
+  isComplete,
+  preGenerate,
+  onComplete,
+  reset,
+  revealRandomAnswer,
+  parseComment,
+  getBankStats,
+  resetBankCycle,
+  getAdminAnswers
 };
