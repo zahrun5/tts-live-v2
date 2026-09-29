@@ -1,11 +1,11 @@
 const mongoose = require('mongoose');
 
 const userSchema = new mongoose.Schema({
-  username: { type: String, required: true, unique: true },
+  username: { type: String, required: true, unique: true, match: /^[a-zA-Z0-9_-]{3,32}$/ },
   password: { type: String, required: true },
   tiktokUsername: { type: String, default: '' },
   activeGame: { type: String, default: 'tts' },
-  randomGames: { type: [String], default: ['tts', 'susun-kata-acak', 'family100', 'trivia', 'cari-kata', 'sambung-kata'] },
+  randomGames: { type: [String], default: ['tts', 'susun-kata-acak', 'family100', 'trivia', 'cari-kata', 'sambung-kata', 'susun-kalimat'] },
   role: { type: String, default: 'user' },
   createdAt: { type: Date, default: Date.now }
 });

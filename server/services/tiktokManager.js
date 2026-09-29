@@ -1,70 +1,107 @@
-const { TikTokLiveConnection } = require('tiktok-live-connector');
-const gameService = require('./gameService');
-const connections = new Map();
+// services/tiktokManager.js
+// Satu koneksi TikTok Live per user. Semua urusan game diserahkan ke Room.
+const { TikTokLiveConnection, WebcastEvent, ControlEvent } = require('tiktok-live-connector');
+const roomManager = require('./roomManager');
 
-exports.startLive = async (username, tiktokUsername, io) => {
-  if (connections.has(username)) {
-    try { connections.get(username).disconnect(); } catch (e) {}
-    connections.delete(username);
-    if (global.ioInstance) global.ioInstance.to(`room_${username}`).emit('status', { connected: false });
+const sessions = new Map(); // username -> { conn, tiktokUsername, intentional, retries, timer }
+const MAX_RETRIES = 5;
+
+function extractPlayer(data) {
+  return (data.user && (data.user.nickname || data.user.uniqueId))
+    || data.uniqueId || data.nickname || 'TikTokUser';
+}
+
+function buildConnection(tiktokUsername) {
+  const opts = {};
+  if (process.env.EULER_API_KEY) opts.signApiKey = process.env.EULER_API_KEY;
+  return new TikTokLiveConnection(tiktokUsername.replace(/^@/, ''), opts);
+}
+
+function attachHandlers(username, room, session) {
+  const conn = session.conn;
+
+  conn.on(ControlEvent.ERROR, (err) => {
+    console.error(`[TikTok] ${username} error:`, err && (err.message || err.info || err));
+  });
+
+  conn.on(WebcastEvent.CHAT, (data) => {
+    const text = data.comment || data.content;
+    if (!text) return;
+    room.handleChat({ player: extractPlayer(data), text });
+  });
+
+  const onDown = (reason) => {
+    if (sessions.get(username) !== session) return; // sesi lama, abaikan
+    room.setLiveStatus(false, session.tiktokUsername);
+    if (session.intentional) return;
+    if (reason === 'stream_end') { sessions.delete(username); return; }
+    scheduleReconnect(username, room, session);
+  };
+  conn.on(ControlEvent.DISCONNECTED, () => onDown('disconnected'));
+  conn.on(WebcastEvent.STREAM_END, () => onDown('stream_end'));
+}
+
+function scheduleReconnect(username, room, session) {
+  if (session.retries >= MAX_RETRIES) {
+    console.log(`[TikTok] ${username} menyerah reconnect setelah ${MAX_RETRIES}x`);
+    sessions.delete(username);
+    return;
   }
-
-  const userModel = require('../models/User');
-
-  // Jaga-jaga: kalau ternyata belum ada ronde aktif sama sekali
-  // (misal server baru restart dan belum ada yang klik Simpan), generate sekali
-  // biar overlay gak kosong.
-  if (!gameService.getGameState(username)) {
+  const delay = Math.min(5000 * 2 ** session.retries, 60000);
+  session.retries += 1;
+  console.log(`[TikTok] ${username} reconnect #${session.retries} dalam ${delay / 1000}s`);
+  session.timer = setTimeout(async () => {
+    if (sessions.get(username) !== session || session.intentional) return;
     try {
-      const user = await userModel.findOne({ username });
-      const activeGame = (user.activeGame === 'game-random' && user.randomGames && user.randomGames.length > 0)
-        ? { type: 'game-random', pool: user.randomGames }
-        : user.activeGame;
-      const resolvedGameType = typeof activeGame === 'object' ? activeGame.type : activeGame;
-      const gamePool = typeof activeGame === 'object' ? activeGame.pool : null;
-      gameService.initGame(username, resolvedGameType, io, gamePool);
-    } catch (e) {
-      console.error(`[TikTok] Fallback game init failed for ${username}:`, e.message);
+      try { session.conn.disconnect(); } catch (e) {}
+      session.conn = buildConnection(session.tiktokUsername);
+      attachHandlers(username, room, session);
+      await session.conn.connect();
+      session.retries = 0;
+      room.setLiveStatus(true, session.tiktokUsername);
+      console.log(`[TikTok] ${username} tersambung lagi ke @${session.tiktokUsername}`);
+    } catch (err) {
+      console.log(`[TikTok] ${username} reconnect gagal: ${String(err.message).slice(0, 100)}`);
+      if (sessions.get(username) === session && !session.intentional) scheduleReconnect(username, room, session);
     }
-  }
+  }, delay);
+  if (session.timer.unref) session.timer.unref();
+}
 
-  const connection = new TikTokLiveConnection(tiktokUsername, {});
+exports.startLive = async (username, tiktokUsername) => {
+  const room = await roomManager.getRoom(username);
+  if (!room) throw new Error('User tidak ditemukan');
+  exports.stopLive(username);
+
+  const session = { conn: buildConnection(tiktokUsername), tiktokUsername, intentional: false, retries: 0, timer: null };
+  attachHandlers(username, room, session);
 
   try {
-    await connection.connect();
-    connections.set(username, connection);
-    console.log(`[TikTok] ${username} terhubung ke live @${tiktokUsername}`);
-    io.to(`room_${username}`).emit('status', { connected: true });
-
-    connection.on('chat', data => {
-      io.to(`room_${username}`).emit('chat:comment', { player: data.uniqueId, text: data.comment, avatar: data.profilePictureUrl });
-      gameService.checkAnswer(username, data, io);
-    });
-
-    connection.on('disconnected', () => {
-      console.log(`[TikTok] ${username} terputus dari @${tiktokUsername}`);
-      connections.delete(username);
-      io.to(`room_${username}`).emit('status', { connected: false });
-    });
-
-    return true;
+    await session.conn.connect();
   } catch (err) {
-    console.log(`[TikTok] ${username} connect ke @${tiktokUsername} gagal: ${err.message?.slice(0, 100)}`);
+    console.log(`[TikTok] ${username} connect ke @${tiktokUsername} gagal: ${String(err.message).slice(0, 100)}`);
+    room.setLiveStatus(false, tiktokUsername, err.message);
     if (err.message && err.message.includes('processInitialData')) {
       throw new Error('Gagal melacak Live. Pastikan username benar dan sedang LIVE.');
     }
     throw new Error(err.message || 'Username tidak sedang live atau tidak ditemukan');
   }
+
+  sessions.set(username, session);
+  room.setLiveStatus(true, tiktokUsername);
+  console.log(`[TikTok] ${username} terhubung ke live @${tiktokUsername}`);
+  return true;
 };
 
 exports.stopLive = (username) => {
-  if (connections.has(username)) {
-    try { connections.get(username).disconnect(); } catch (e) {}
-    connections.delete(username);
-  }
-  if (global.ioInstance) {
-    global.ioInstance.to(`room_${username}`).emit('status', { connected: false });
-  }
+  const session = sessions.get(username);
+  if (!session) return;
+  session.intentional = true;
+  if (session.timer) clearTimeout(session.timer);
+  try { session.conn.disconnect(); } catch (e) {}
+  sessions.delete(username);
+  const room = roomManager.peekRoom(username);
+  if (room) room.setLiveStatus(false, session.tiktokUsername);
 };
 
-exports.getStatus = (username) => connections.has(username);
+exports.getStatus = (username) => sessions.has(username) && !sessions.get(username).intentional;

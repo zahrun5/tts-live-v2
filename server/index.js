@@ -1,130 +1,110 @@
+const path = require('path');
+const fs = require('fs');
+
+// Biar file game (yang disalin ke DATA_DIR) tetap bisa require('axios'), dst.
+process.env.NODE_PATH = [path.join(__dirname, 'node_modules'), process.env.NODE_PATH]
+  .filter(Boolean).join(path.delimiter);
+require('module').Module._initPaths();
+
 const express = require('express');
 const cors = require('cors');
 const http = require('http');
 const { Server } = require('socket.io');
 const mongoose = require('mongoose');
-const path = require('path');
-require('dotenv').config();
-
-const authRoutes = require('./routes/auth');
-const apiRoutes = require('./routes/api');
+const config = require('./config');
 
 const app = express();
 const server = http.createServer(app);
-const io = new Server(server, {
-  cors: { origin: '*', methods: ['GET', 'POST'] }
-});
+const io = new Server(server, { cors: { origin: '*', methods: ['GET', 'POST'] } });
 
 app.set('io', io);
-global.ioInstance = io;
-
 app.use(cors());
-app.use(express.json());
+app.use(express.json({ limit: '100kb' }));
 
-mongoose.connect(process.env.MONGO_URI || 'mongodb://127.0.0.1:27017/ttslive')
-  .then(() => console.log('[DB] MongoDB Terhubung!'))
-  .catch(err => console.error('[DB] Gagal:', err));
+const User = require('./models/User');
+const roomManager = require('./services/roomManager');
+const PUBLIC_DIR = path.join(__dirname, 'public');
 
-// API Routes
-app.use('/api/auth', authRoutes);
-app.use('/api/sys', apiRoutes);
-
-// Public game state (no auth - overlay needs this)
-app.get('/api/public/game-state/:username', (req, res) => {
-  const gameService = require('./services/gameService');
-  const state = gameService.getGameState(req.params.username);
-  res.json({ state });
+roomManager.init({
+  io,
+  publicDir: PUBLIC_DIR,
+  // Return setelan user dari DB, atau null kalau user nggak ada.
+  settingsLoader: async (username) => {
+    const u = await User.findOne({ username }).lean();
+    return u ? { activeGame: u.activeGame, randomGames: u.randomGames } : null;
+  }
 });
 
-// Static: React SPA (Dashboard)
+mongoose.connect(config.MONGO_URI)
+  .then(() => console.log('[DB] MongoDB Terhubung!'))
+  .catch(err => console.error('[DB] Gagal:', err.message));
+
+app.use('/api/auth', require('./routes/auth'));
+app.use('/api/sys', require('./routes/api'));
+
+// Script bersama yang dipanggil HTML game dengan path absolut (/shared/...).
+// (Di versi lama ini nggak ke-mount, jadi vote-overlay & watcher 404.)
+app.use('/shared', express.static(path.join(PUBLIC_DIR, 'shared')));
+
+// Dashboard React (hasil `npm run build` di folder client)
 app.use(express.static(path.join(__dirname, '../client/dist')));
 
-// Static: Game V1 UI files
-app.use('/game', express.static(path.join(__dirname, 'public')));
-
-// Rute Overlay Game
-app.use((req, res, next) => {
-  if (req.path.endsWith('.html') || req.path.startsWith('/overlay/')) {
-    res.setHeader('Cache-Control', 'no-store, no-cache, must-revalidate, max-age=0');
-    res.setHeader('Pragma', 'no-cache');
-    res.setHeader('Expires', '0');
-  }
-  next();
-});
-
+// Overlay OBS: HTML game aktif milik user + config ter-inject.
 app.get('/overlay/:username', async (req, res) => {
   res.setHeader('Cache-Control', 'no-store, no-cache, must-revalidate, max-age=0');
   res.setHeader('Pragma', 'no-cache');
   res.setHeader('Expires', '0');
-  const User = require('./models/User');
   try {
-    const user = await User.findOne({ username: req.params.username });
-    if (!user) return res.status(404).send('User tidak ditemukan');
-    const game = user.activeGame || 'tts';
-    const gamePath = path.join(__dirname, 'public', game, 'index.html');
-    if (require('fs').existsSync(gamePath)) {
-      let html = require('fs').readFileSync(gamePath, 'utf8');
-      const injection = `<script>window.TTS_LIVE_V2_CONFIG = { username: "${user.username}", tiktokUsername: "${user.tiktokUsername}" };</script>`;
-      html = html.replace('</head>', injection + '\n</head>');
-      res.send(html);
-    } else {
-      res.status(404).send('Game UI tidak ditemukan');
-    }
+    const room = await roomManager.getRoom(req.params.username);
+    if (!room) return res.status(404).send('User tidak ditemukan');
+
+    const gamePath = path.join(PUBLIC_DIR, room.activeGameId, 'index.html');
+    if (!fs.existsSync(gamePath)) return res.status(404).send('Game UI tidak ditemukan');
+
+    // JSON.stringify + escape "<" supaya nilai apa pun nggak bisa nutup tag <script>.
+    const cfg = JSON.stringify({ username: room.username })
+      .replace(/</g, '\\u003c').replace(/\u2028/g, '\\u2028').replace(/\u2029/g, '\\u2029');
+    const injection = `<script>window.TTS_LIVE_V2_CONFIG = ${cfg};</script>\n`;
+
+    let html = fs.readFileSync(gamePath, 'utf8');
+    html = html.includes('</head>')
+      ? html.replace('</head>', () => injection + '</head>')
+      : injection + html;
+    res.type('html').send(html);
   } catch (err) {
+    console.error('[Overlay] error:', err);
     res.status(500).send('Error loading overlay');
   }
 });
 
-// SPA Fallback - hanya untuk non-API paths
+// Game V1 masih manggil ini buat state awal; di V2 state dikirim lewat socket,
+// jadi jawab kosong (bukan HTML SPA) biar nggak bikin error parse.
+app.get('/api/grid', (req, res) => res.json({}));
+
+// SPA fallback (bukan untuk API / socket.io / file statis yang hilang)
 app.use((req, res, next) => {
-  if (req.path.startsWith('/api') || req.path.startsWith('/socket.io')) return next();
-  res.sendFile(path.join(__dirname, '../client/dist', 'index.html'));
+  if (req.path.startsWith('/api') || req.path.startsWith('/socket.io') || path.extname(req.path)) return next();
+  const indexFile = path.join(__dirname, '../client/dist', 'index.html');
+  if (!fs.existsSync(indexFile)) return res.status(503).send('Dashboard belum di-build: jalankan `npm run build` di folder client.');
+  res.sendFile(indexFile);
 });
 
-// Socket.IO
 io.on('connection', (socket) => {
-    console.log('[Socket] CONNECTED id=' + socket.id + ' transport=' + (socket.engine ? socket.engine.transport.name : 'unknown'));
-    console.log('[Socket] query=' + JSON.stringify(socket.handshake.query));
-    console.log('[Socket] headers_cookie=' + (socket.handshake.headers.cookie || 'none').slice(0, 80));
-    // Log semua incoming events dari client ini
-    const originalOn = socket.on.bind(socket);
-    socket.on = function(event, fn) {
-      console.log('[Socket] server registered handler for: ' + event);
-      return originalOn(event, fn);
-    };
-  socket.on('join-overlay', (username) => {
-    socket.join(`room_${username}`);
-    console.log(`[Socket] Overlay joined: room_${username}`);
-
-    const gameService = require('./services/gameService');
-    const state = gameService.getGameState(username);
-    if (state && state.actualGame) {
-      // Re-emit state sesuai tipe game aktual
-      const g = state.actualGame;
-      let payload = { type: g };
-      if (g === 'tts' || g === 'sambung-kata') {
-        payload = { ...payload, rows: state.rows, cols: state.cols, words: state.words };
-      } else if (g === 'susun-kata-acak') {
-        payload = { ...payload, slots: state.slots };
-      } else if (g === 'family100') {
-        payload = { ...payload, question: state.question, answers: state.answers };
-      } else if (g === 'cari-kata') {
-        payload = { ...payload, theme: state.theme, words: state.words };
-      } else if (g === 'susun-kalimat') {
-        payload = { ...payload, items: state.items };
-      } else if (g === 'trivia') {
-        payload = { ...payload, category: state.category, question: state.question, options: state.options };
-      }
-      socket.emit('update', payload);
-      socket.emit('leaderboard:update', state.leaderboard || []);
+  socket.on('join-overlay', async (username) => {
+    try {
+      const room = await roomManager.getRoom(username);
+      if (!room) return;
+      socket.join(room.roomName);
+      room.sendFullState(socket);
+    } catch (err) {
+      console.error('[Socket] join-overlay gagal:', err.message);
     }
-
-    const tiktokManager = require('./services/tiktokManager');
-    socket.emit('status', { connected: tiktokManager.getStatus(username) });
   });
 });
 
-const PORT = process.env.PORT || 3050;
-server.listen(PORT, () => {
-  console.log(`[TTS-Live-V2] Server di port ${PORT}`);
+// Jangan biarkan satu error liar mematikan overlay semua user.
+process.on('unhandledRejection', (err) => console.error('[unhandledRejection]', err));
+
+server.listen(config.PORT, () => {
+  console.log(`[TTS-Live-V2] Server di port ${config.PORT}`);
 });

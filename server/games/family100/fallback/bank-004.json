@@ -1,0 +1,2002 @@
+[
+  {
+    "question": "Sebutkan jenis cabang olahraga",
+    "answers": [
+      "SEPAKBOLA",
+      "BULUTANGKIS",
+      "BASKET",
+      "VOLI",
+      "RENANG",
+      "LARI",
+      "TENIS",
+      "TINJU",
+      "FUTSAL",
+      "SILAT",
+      "GOLF",
+      "SENAM",
+      "PANAHAN",
+      "CATUR",
+      "KARATE"
+    ]
+  },
+  {
+    "question": "Sebutkan benda yang biasa ada di ruang kelas",
+    "answers": [
+      "MEJA",
+      "KURSI",
+      "PAPAN",
+      "SPIDOL",
+      "PENGHAPUS",
+      "PENGGARIS",
+      "BUKU",
+      "PENSIL",
+      "PULPEN",
+      "PETA",
+      "JAM",
+      "KALENDER",
+      "FOTO",
+      "LEMARI",
+      "KAPUR"
+    ]
+  },
+  {
+    "question": "Sebutkan jenis profesi atau pekerjaan yang kamu ketahui",
+    "answers": [
+      "DOKTER",
+      "GURU",
+      "POLISI",
+      "TENTARA",
+      "PILOT",
+      "PETANI",
+      "NELAYAN",
+      "PERAWAT",
+      "KOKI",
+      "MASINIS",
+      "SOPIR",
+      "ARSITEK",
+      "PRAMUGARI",
+      "HAKIM",
+      "WARTAWAN"
+    ]
+  },
+  {
+    "question": "Sebutkan jenis bahan makanan pokok berkarbohidrat yang biasa dimakan",
+    "answers": [
+      "BERAS",
+      "NASI",
+      "JAGUNG",
+      "SINGKONG",
+      "KENTANG",
+      "GANDUM",
+      "UBI",
+      "SAGU",
+      "ROTI",
+      "MIE",
+      "TALAS",
+      "BIHUN",
+      "MAKARONI",
+      "PASTA",
+      "OAT"
+    ]
+  },
+  {
+    "question": "Sebutkan jenis burung yang sering kamu dengar atau lihat",
+    "answers": [
+      "MERPATI",
+      "GEREJA",
+      "ELANG",
+      "KAKAKTUA",
+      "BEO",
+      "PIPIT",
+      "HANTU",
+      "KENARI",
+      "PERKUTUT",
+      "CENDRAWASIH",
+      "MERAK",
+      "WALET",
+      "KUTILANG",
+      "PELIKAN",
+      "FLAMINGO"
+    ]
+  },
+  {
+    "question": "Sebutkan jenis perasaan atau emosi yang dirasakan manusia",
+    "answers": [
+      "SENANG",
+      "SEDIH",
+      "MARAH",
+      "TAKUT",
+      "KECEWA",
+      "KAGET",
+      "CINTA",
+      "BENCI",
+      "MALU",
+      "IRI",
+      "BINGUNG",
+      "KHAWATIR",
+      "CEMBURU",
+      "HARU",
+      "LEGA"
+    ]
+  },
+  {
+    "question": "Sebutkan nama alat musik yang kamu ketahui",
+    "answers": [
+      "GITAR",
+      "PIANO",
+      "DRUM",
+      "BIOLA",
+      "SERULING",
+      "TEROMPET",
+      "PIANIKA",
+      "HARMONIKA",
+      "KEYBOARD",
+      "ANGKLUNG",
+      "REBANA",
+      "SAKSOFON",
+      "KECAPI",
+      "HARPA",
+      "GAMELAN"
+    ]
+  },
+  {
+    "question": "Sebutkan jenis cuaca atau fenomena atmosfer yang terjadi di bumi",
+    "answers": [
+      "HUJAN",
+      "PANAS",
+      "MENDUNG",
+      "BERAWAN",
+      "CERAH",
+      "SALJU",
+      "BADAI",
+      "ANGIN",
+      "KABUT",
+      "PETIR",
+      "DINGIN",
+      "GERIMIS",
+      "GELAP",
+      "TERIK",
+      "LEMBAP"
+    ]
+  },
+  {
+    "question": "Sebutkan jenis-jenis kendaraan yang sering kamu lihat",
+    "answers": [
+      "MOBIL",
+      "MOTOR",
+      "SEPEDA",
+      "BUS",
+      "TRUK",
+      "KERETA",
+      "PESAWAT",
+      "KAPAL",
+      "BECAK",
+      "BAJAJ",
+      "ANGKOT",
+      "DELMAN",
+      "PERAHU",
+      "SKUTER",
+      "HELIKOPTER"
+    ]
+  },
+  {
+    "question": "Sebutkan jenis cuaca atau fenomena cuaca yang ada di bumi",
+    "answers": [
+      "HUJAN",
+      "PANAS",
+      "BERAWAN",
+      "CERAH",
+      "MENDUNG",
+      "BADAI",
+      "SALJU",
+      "ANGIN",
+      "KABUT",
+      "PETIR",
+      "GERIMIS",
+      "GELAP",
+      "DINGIN",
+      "SEJUK",
+      "KEMARAU"
+    ]
+  },
+  {
+    "question": "Sebutkan bahan atau bumbu yang biasa ada di dapur",
+    "answers": [
+      "GARAM",
+      "GULA",
+      "BERAS",
+      "MINYAK",
+      "BAWANG",
+      "CABAI",
+      "TELUR",
+      "TEPUNG",
+      "KECAP",
+      "MERICA",
+      "JAHE",
+      "KUNYIT",
+      "MENTEGA",
+      "KETUMBAR",
+      "LENGKUAS"
+    ]
+  },
+  {
+    "question": "Sebutkan nama buah yang berawalan huruf M",
+    "answers": [
+      "MANGGA",
+      "MELON",
+      "MANGGIS",
+      "MARKISA",
+      "MENTIMUN",
+      "MENGKUDU",
+      "MURBEI",
+      "MATOA",
+      "MAJAGAWAYA",
+      "MAKADAMIA",
+      "MAJA",
+      "MANISAN",
+      "MEDLAR",
+      "MAHONI",
+      "MUNDU"
+    ]
+  },
+  {
+    "question": "Sebutkan nama makanan khas tradisional Indonesia",
+    "answers": [
+      "RENDANG",
+      "SATE",
+      "BAKSO",
+      "SOTO",
+      "GUDENG",
+      "RAWON",
+      "PEMPEK",
+      "GADO-GADO",
+      "KETOPRAK",
+      "LUMPIA",
+      "SIOMAY",
+      "KERAK-TELOR",
+      "SEBLAK",
+      "RUJAK",
+      "OPOR"
+    ]
+  },
+  {
+    "question": "Sebutkan benda-benda yang ada di dalam kamar mandi",
+    "answers": [
+      "SABUN",
+      "SAMPO",
+      "HANDUK",
+      "GAYUNG",
+      "EMBER",
+      "KLOSET",
+      "ODOL",
+      "SIKAT",
+      "KERAN",
+      "CERMIN",
+      "BAK",
+      "SHOWER",
+      "WASHTAFEL",
+      "KESET",
+      "RAK"
+    ]
+  },
+  {
+    "question": "Sebutkan jenis-jenis buah berkulit tebal atau bersisik",
+    "answers": [
+      "DURIAN",
+      "NANAS",
+      "SEMANGKA",
+      "MELON",
+      "PISANG",
+      "JERUK",
+      "SALAK",
+      "NANGKA",
+      "MANGGIS",
+      "ALPUKAT",
+      "PEPAYA",
+      "RAMBUTAN",
+      "KELAPA",
+      "SAWO",
+      "MARKISA"
+    ]
+  },
+  {
+    "question": "Sebutkan jenis cuaca atau kondisi udara yang ada di bumi",
+    "answers": [
+      "HUJAN",
+      "PANAS",
+      "MENDUNG",
+      "CERAH",
+      "BERAWAN",
+      "DINGIN",
+      "SALJU",
+      "BERANGIN",
+      "KABUT",
+      "GERIMIS",
+      "BADAI",
+      "LEMBAP",
+      "PETIR",
+      "BEKU",
+      "KERING"
+    ]
+  },
+  {
+    "question": "Sebutkan alat pertukangan yang biasa digunakan tukang kayu atau bangunan",
+    "answers": [
+      "PALU",
+      "GERGAJI",
+      "OBENG",
+      "TANG",
+      "METERAN",
+      "PAHAT",
+      "PAKU",
+      "BOR",
+      "SEKROP",
+      "CANGKUL",
+      "WATERPASS",
+      "AMPLAS",
+      "KIKIR",
+      "CATUT",
+      "KETAM"
+    ]
+  },
+  {
+    "question": "Sebutkan alat tulis atau perlengkapan sekolah yang dibawa siswa",
+    "answers": [
+      "BUKU",
+      "PENSIL",
+      "PULPEN",
+      "PENGHAPUS",
+      "PENGGARIS",
+      "TAS",
+      "SERAGAM",
+      "SEPATU",
+      "KOTAK-PENSIL",
+      "RAUTAN",
+      "TIPE-X",
+      "KRAYON",
+      "GUNTING",
+      "SPIDOL",
+      "KAOS-KAKI"
+    ]
+  },
+  {
+    "question": "Sebutkan bahan masakan yang biasa ada di dapur",
+    "answers": [
+      "GARAM",
+      "GULA",
+      "BAWANG",
+      "BERAS",
+      "CABAI",
+      "MINYAK",
+      "TELUR",
+      "KECAP",
+      "TEPUNG",
+      "MERICA",
+      "JAHE",
+      "KUNYIT",
+      "LENGKUAS",
+      "SERAI",
+      "KETUMBAR"
+    ]
+  },
+  {
+    "question": "Sebutkan nama buah yang rasanya manis",
+    "answers": [
+      "PISANG",
+      "MANGGA",
+      "APEL",
+      "SEMANGKA",
+      "MELON",
+      "ANGGUR",
+      "JERUK",
+      "PEPAYA",
+      "DURIAN",
+      "RAMBUTAN",
+      "KELENGKENG",
+      "NANAS",
+      "JAMBU",
+      "SALAK",
+      "SAWO"
+    ]
+  },
+  {
+    "question": "Sebutkan perlengkapan atau barang yang biasa dibawa di dalam tas sekolah",
+    "answers": [
+      "BUKU",
+      "PENSIL",
+      "PENGHAPUS",
+      "PENGGARIS",
+      "PULPEN",
+      "KOTAK-PENSIL",
+      "TIP-EX",
+      "RAUTAN",
+      "SPIDOL",
+      "GUNTING",
+      "STABILO",
+      "LEM",
+      "JANGKA",
+      "BUSUR",
+      "KRAYON"
+    ]
+  },
+  {
+    "question": "Sebutkan jenis alat transportasi atau kendaraan yang kamu ketahui",
+    "answers": [
+      "MOBIL",
+      "MOTOR",
+      "SEPEDA",
+      "BUS",
+      "KERETA",
+      "PESAWAT",
+      "KAPAL",
+      "BECAK",
+      "TRUK",
+      "PERAHU",
+      "ANDONG",
+      "TAKSI",
+      "HELIKOPTER",
+      "DELMAN",
+      "SKUTER"
+    ]
+  },
+  {
+    "question": "Sebutkan jenis bahan makanan atau bumbu pokok yang ada di dapur",
+    "answers": [
+      "BERAS",
+      "GARAM",
+      "GULA",
+      "MINYAK",
+      "BAWANG",
+      "TELUR",
+      "CABAI",
+      "TEPUNG",
+      "KECAP",
+      "MERICA",
+      "KENTANG",
+      "MIE",
+      "MENTEGA",
+      "JAHE",
+      "KUNYIT"
+    ]
+  },
+  {
+    "question": "Sebutkan jenis makanan atau kuliner khas Indonesia",
+    "answers": [
+      "RENDANG",
+      "BAKSO",
+      "SATE",
+      "SOTO",
+      "GADO-GADO",
+      "PEMPEK",
+      "RAWON",
+      "GUDENG",
+      "NASGOR",
+      "KETOPRAK",
+      "LUMPIA",
+      "KERAK-TELOR",
+      "SEBLAK",
+      "SOP-BUNTUT",
+      "CUKO"
+    ]
+  },
+  {
+    "question": "Sebutkan bahan makanan pokok atau memasak di dapur",
+    "answers": [
+      "BERAS",
+      "MINYAK",
+      "TELUR",
+      "TEPUNG",
+      "GULA",
+      "GARAM",
+      "BAWANG",
+      "CABAI",
+      "MIE",
+      "TAHU",
+      "TEMPE",
+      "DAGING",
+      "AYAM",
+      "IKAN",
+      "MENTEGA"
+    ]
+  },
+  {
+    "question": "Sebutkan jenis buah-buahan yang mudah ditemukan di Indonesia",
+    "answers": [
+      "PISANG",
+      "APEL",
+      "JERUK",
+      "MANGGA",
+      "PEPAYA",
+      "SEMANGKA",
+      "MELON",
+      "ANGGUR",
+      "NANAS",
+      "RAMBUTAN",
+      "DURIAN",
+      "SALAK",
+      "ALPUKAT",
+      "JAMBU",
+      "BELIMBING"
+    ]
+  },
+  {
+    "question": "Sebutkan jenis-jenis buah-buahan",
+    "answers": [
+      "PISANG",
+      "APEL",
+      "MANGGA",
+      "JERUK",
+      "SEMANGKA",
+      "MELON",
+      "ANGGUR",
+      "PEPAYA",
+      "NANAS",
+      "DURIAN",
+      "RAMBUTAN",
+      "ALPUKAT",
+      "STROBERI",
+      "JAMBU",
+      "SALAK"
+    ]
+  },
+  {
+    "question": "Sebutkan jenis-jenis cuaca atau kondisi langit yang kamu tahu",
+    "answers": [
+      "HUJAN",
+      "PANAS",
+      "MENDUNG",
+      "CERAH",
+      "BERAWAN",
+      "BERANGIN",
+      "BADAI",
+      "SALJU",
+      "KABUT",
+      "GERIMIS",
+      "PETIR",
+      "LEBAT",
+      "DINGIN",
+      "SEJUK",
+      "KEMARAU"
+    ]
+  },
+  {
+    "question": "Sebutkan jenis serangga yang ada di sekitar kita",
+    "answers": [
+      "NYAMUK",
+      "LALAT",
+      "SEMUT",
+      "KECOA",
+      "KUPU-KUPU",
+      "LEBAH",
+      "BELALANG",
+      "RAYAP",
+      "CAPUNG",
+      "KUMBANG",
+      "KUTU",
+      "KANGKUNG",
+      "KUNANG-KUNANG",
+      "JANGKRIK",
+      "TONGGERET"
+    ]
+  },
+  {
+    "question": "Sebutkan nama cabang olahraga yang kamu ketahui",
+    "answers": [
+      "RENANG",
+      "BASKET",
+      "VOLI",
+      "TENIS",
+      "FUTSAL",
+      "LARI",
+      "CATUR",
+      "TINJU",
+      "SENAM",
+      "SILAT",
+      "KARATE",
+      "GOLF",
+      "PANAHAN",
+      "TAEKWONDO",
+      "DAYUNG"
+    ]
+  },
+  {
+    "question": "Sebutkan jenis cuaca atau kondisi udara yang kamu tahu",
+    "answers": [
+      "HUJAN",
+      "PANAS",
+      "MENDUNG",
+      "CERAH",
+      "BERAWAN",
+      "DINGIN",
+      "SALJU",
+      "BERANGIN",
+      "KABUT",
+      "GERIMIS",
+      "BADAI",
+      "PETIR",
+      "LEMBAP",
+      "SEJUK",
+      "KERING"
+    ]
+  },
+  {
+    "question": "Sebutkan bahan atau bumbu dasar yang ada di dapur",
+    "answers": [
+      "GARAM",
+      "GULA",
+      "BERAS",
+      "MINYAK",
+      "BAWANG",
+      "CABAI",
+      "KECAP",
+      "TELUR",
+      "TEPUNG",
+      "KUNYIT",
+      "JAHE",
+      "LADA",
+      "TERASI",
+      "CUKA",
+      "KETUMBAR"
+    ]
+  },
+  {
+    "question": "Sebutkan jenis-jenis kendaraan yang kamu ketahui",
+    "answers": [
+      "MOBIL",
+      "MOTOR",
+      "SEPEDA",
+      "BUS",
+      "TRUK",
+      "KERETA",
+      "PESAWAT",
+      "KAPAL",
+      "BECAK",
+      "BAJAJ",
+      "PERAHU",
+      "HELIKOPTER",
+      "DELMAN",
+      "KANO",
+      "RAKIT"
+    ]
+  },
+  {
+    "question": "Sebutkan jenis cuaca atau kondisi atmosfer yang kamu tahu",
+    "answers": [
+      "HUJAN",
+      "PANAS",
+      "CERAH",
+      "MENDUNG",
+      "BERAWAN",
+      "BERANGIN",
+      "SALJU",
+      "BADAI",
+      "KABUT",
+      "GERIMIS",
+      "DINGIN",
+      "PETIR",
+      "LEMBAP",
+      "GELAP",
+      "KERING"
+    ]
+  },
+  {
+    "question": "Sebutkan jenis alat pertukangan atau perkakas",
+    "answers": [
+      "PALU",
+      "GERGAJI",
+      "OBENG",
+      "TANG",
+      "PAHAT",
+      "KUNCI",
+      "METERAN",
+      "BOR",
+      "SEKOP",
+      "AMPLAS",
+      "CANGKUL",
+      "GUNTING",
+      "CATUT",
+      "WATERPASS",
+      "SIKU-SIKU"
+    ]
+  },
+  {
+    "question": "Sebutkan nama-nama alat musik yang kamu tahu",
+    "answers": [
+      "GITAR",
+      "DRUM",
+      "PIANO",
+      "BIOLA",
+      "SERULING",
+      "PIANIKA",
+      "TEROMPET",
+      "KEYBOARD",
+      "SAKSOFON",
+      "ANGKLUNG",
+      "HARPA",
+      "GENDANG",
+      "REBANA",
+      "TAMBORIN",
+      "GAMELAN"
+    ]
+  },
+  {
+    "question": "Sebutkan peralatan atau benda yang biasanya ada di dapur",
+    "answers": [
+      "KOMPOR",
+      "PIRING",
+      "SENDOK",
+      "GARPU",
+      "PISAU",
+      "WAJAN",
+      "PANCI",
+      "GELAS",
+      "MANGKUK",
+      "KULKAS",
+      "SPATULA",
+      "TALENAN",
+      "TEKO",
+      "BLENDER",
+      "CENTONG"
+    ]
+  },
+  {
+    "question": "Sebutkan jenis burung yang sering kamu dengar atau ketahui",
+    "answers": [
+      "MERPATI",
+      "ELANG",
+      "GAGAK",
+      "BEO",
+      "KAKAKTUA",
+      "GEREJA",
+      "PIPIT",
+      "HANTU",
+      "CENDRAWASIH",
+      "MERAK",
+      "KUTILANG",
+      "WALET",
+      "KENARI",
+      "PELIKAN",
+      "FLAMINGO"
+    ]
+  },
+  {
+    "question": "Sebutkan benda yang biasanya ada di dapur",
+    "answers": [
+      "KOMPOR",
+      "PISAU",
+      "WAJAN",
+      "PANCI",
+      "PIRING",
+      "SENDOK",
+      "GARPU",
+      "GELAS",
+      "KULKAS",
+      "SPATULA",
+      "TALENAN",
+      "MANGKUK",
+      "BLENDER",
+      "TEKO",
+      "CELEMEK"
+    ]
+  },
+  {
+    "question": "Sebutkan jenis-jenis minuman yang sering diminum orang",
+    "answers": [
+      "AIR",
+      "TEH",
+      "KOPI",
+      "SUSU",
+      "JUS",
+      "SIRUP",
+      "SODA",
+      "COKLAT",
+      "BOBA",
+      "YOGURT",
+      "ESPRESSO",
+      "LEMONADE",
+      "MATCHA",
+      "CINCAU",
+      "CENDOL"
+    ]
+  },
+  {
+    "question": "Sebutkan nama buah-buahan yang umum dijumpai di Indonesia",
+    "answers": [
+      "PISANG",
+      "APEL",
+      "JERUK",
+      "MANGGA",
+      "SEMANGKA",
+      "MELON",
+      "PEPAYA",
+      "NANAS",
+      "ANGGUR",
+      "RAMBUTAN",
+      "DURIAN",
+      "SALAK",
+      "ALPUKAT",
+      "JAMBU",
+      "NANGKA"
+    ]
+  },
+  {
+    "question": "Sebutkan bumbu dapur atau rempah-rempah yang sering ada di masakan",
+    "answers": [
+      "GARAM",
+      "GULA",
+      "BAWANG",
+      "CABAI",
+      "MERICA",
+      "KUNYIT",
+      "JAHE",
+      "LENGKUAS",
+      "KETUMBAR",
+      "KENCUR",
+      "SERAI",
+      "PALA",
+      "KAYUMANIS",
+      "CENGKEH",
+      "KEMIRI"
+    ]
+  },
+  {
+    "question": "Sebutkan jenis-jenis buah yang banyak dijual di pasar",
+    "answers": [
+      "PISANG",
+      "APEL",
+      "JERUK",
+      "MANGGA",
+      "SEMANGKA",
+      "MELON",
+      "ANGGUR",
+      "PEPAYA",
+      "NANAS",
+      "SALAK",
+      "RAMBUTAN",
+      "DURIAN",
+      "ALPUKAT",
+      "BELIMBING",
+      "MANGGIS"
+    ]
+  },
+  {
+    "question": "Sebutkan jenis-jenis emosi atau perasaan manusia",
+    "answers": [
+      "SENANG",
+      "SEDIH",
+      "MARAH",
+      "TAKUT",
+      "KECEWA",
+      "MALU",
+      "KAGET",
+      "BOSAN",
+      "BANGGA",
+      "BINGUNG",
+      "CEMAS",
+      "IRI",
+      "CINTA",
+      "JIJIK",
+      "RINDU"
+    ]
+  },
+  {
+    "question": "Sebutkan bagian dari anggota tubuh manusia",
+    "answers": [
+      "MATA",
+      "HIDUNG",
+      "MULUT",
+      "TELINGA",
+      "TANGAN",
+      "KAKI",
+      "KEPALA",
+      "RAMBUT",
+      "GIGI",
+      "LIDAH",
+      "LEHER",
+      "PERUT",
+      "PIPI",
+      "JARI",
+      "DAGU"
+    ]
+  },
+  {
+    "question": "Sebutkan cabang olahraga yang populer",
+    "answers": [
+      "SEPAKBOLA",
+      "BULUTANGKIS",
+      "BASKET",
+      "VOLI",
+      "RENANG",
+      "LARI",
+      "TENIS",
+      "TINJU",
+      "CATUR",
+      "GOLF",
+      "SENAM",
+      "FUTSAL",
+      "PANAHAN",
+      "KARATE",
+      "DAYUNG"
+    ]
+  },
+  {
+    "question": "Sebutkan jenis buah-buahan yang umum dikonsumsi",
+    "answers": [
+      "PISANG",
+      "APEL",
+      "JERUK",
+      "MANGGA",
+      "SEMANGKA",
+      "MELON",
+      "ANGGUR",
+      "PEPAYA",
+      "NANAS",
+      "STRAWBERI",
+      "ALPUKAT",
+      "RAMBUTAN",
+      "DURIAN",
+      "JAMBU",
+      "SALAK"
+    ]
+  },
+  {
+    "question": "Sebutkan bahan makanan atau bumbu yang biasanya ada di dapur",
+    "answers": [
+      "BERAS",
+      "GARAM",
+      "GULA",
+      "MINYAK",
+      "TELUR",
+      "TEPUNG",
+      "BAWANG",
+      "CABAI",
+      "KECAP",
+      "MIE",
+      "JAHE",
+      "KUNYIT",
+      "MERICA",
+      "KETUMBAR",
+      "MENTEGA"
+    ]
+  },
+  {
+    "question": "Sebutkan jenis cuaca atau keadaan cuaca yang kamu tahu",
+    "answers": [
+      "HUJAN",
+      "PANAS",
+      "CERAH",
+      "MENDUNG",
+      "BERAWAN",
+      "DINGIN",
+      "SALJU",
+      "BADAI",
+      "BERANGIN",
+      "KABUT",
+      "GERIMIS",
+      "PETIR",
+      "LEBAT",
+      "TERIK",
+      "KEMARAU"
+    ]
+  },
+  {
+    "question": "Sebutkan jenis minuman yang sering dikonsumsi",
+    "answers": [
+      "AIR",
+      "TEH",
+      "KOPI",
+      "SUSU",
+      "JUS",
+      "SIRUP",
+      "SODA",
+      "COKLAT",
+      "JAMU",
+      "BOBA",
+      "CENDOL",
+      "SEKOTENG",
+      "BAJIGUR",
+      "BANDREK",
+      "BIR"
+    ]
+  },
+  {
+    "question": "Sebutkan alat tulis atau perlengkapan sekolah yang biasa dibawa murid",
+    "answers": [
+      "BUKU",
+      "PENSIL",
+      "PULPEN",
+      "PENGHAPUS",
+      "PENGGARIS",
+      "TAS",
+      "SERAGAM",
+      "SEPATU",
+      "KOTAK-PENSIL",
+      "RAUTAN",
+      "SPIDOL",
+      "TIPE-X",
+      "GUNTING",
+      "KAUS-KAKI",
+      "TOPI"
+    ]
+  },
+  {
+    "question": "Sebutkan jenis-jenis cuaca atau kondisi langit yang kamu ketahui",
+    "answers": [
+      "HUJAN",
+      "PANAS",
+      "MENDUNG",
+      "CERAH",
+      "BERAWAN",
+      "DINGIN",
+      "SALJU",
+      "BADAI",
+      "BERANGIN",
+      "KABUT",
+      "GERIMIS",
+      "PETIR",
+      "LEBAT",
+      "SEJUK",
+      "KERING"
+    ]
+  },
+  {
+    "question": "Sebutkan benda-benda yang ada di kamar mandi",
+    "answers": [
+      "SABUN",
+      "SAMPO",
+      "HANDUK",
+      "GAYUNG",
+      "EMBER",
+      "SIKAT",
+      "ODOL",
+      "KERAN",
+      "TOILET",
+      "CERMIN",
+      "KLOSET",
+      "SHOWER",
+      "KORSET",
+      "KESET",
+      "RAK"
+    ]
+  },
+  {
+    "question": "Sebutkan jenis-jenis kendaraan transportasi",
+    "answers": [
+      "MOBIL",
+      "MOTOR",
+      "SEPEDA",
+      "BUS",
+      "KERETA",
+      "PESAWAT",
+      "KAPAL",
+      "TRUK",
+      "BECAK",
+      "BAJAJ",
+      "PERAHU",
+      "HELIKOPTER",
+      "DOKAR",
+      "SKUTER",
+      "BAPOR"
+    ]
+  },
+  {
+    "question": "Sebutkan nama-nama makanan khas tradisional Indonesia",
+    "answers": [
+      "RENDANG",
+      "BAKSO",
+      "SATE",
+      "SOTO",
+      "GUDENG",
+      "RAWON",
+      "PEMPEK",
+      "GADO-GADO",
+      "KETOPRAK",
+      "NASI-GORENG",
+      "KERAK-TELOR",
+      "RUJAK",
+      "LUMPIA",
+      "PECEL",
+      "OPOR"
+    ]
+  },
+  {
+    "question": "Sebutkan jenis minuman yang biasa dikonsumsi",
+    "answers": [
+      "AIR",
+      "TEH",
+      "KOPI",
+      "SUSU",
+      "JUS",
+      "SIRUP",
+      "SODA",
+      "COKLAT",
+      "JAMU",
+      "BOBA",
+      "CENDOL",
+      "YOGURT",
+      "MATCHA",
+      "BAJIGUR",
+      "BIR"
+    ]
+  },
+  {
+    "question": "Sebutkan peralatan tukang kayu atau bangunan",
+    "answers": [
+      "PALU",
+      "PAKU",
+      "GERGAJI",
+      "OBENG",
+      "TANG",
+      "METERAN",
+      "SEKOP",
+      "CATUT",
+      "KUAS",
+      "PAHAT",
+      "KIKIR",
+      "BOR",
+      "PISAU",
+      "AMPLAS",
+      "WATERPASS"
+    ]
+  },
+  {
+    "question": "Sebutkan jenis-jenis alat musik yang kamu tahu",
+    "answers": [
+      "GITAR",
+      "DRUM",
+      "PIANO",
+      "BIOLA",
+      "SERULING",
+      "PIANIKA",
+      "TEROMPET",
+      "KEYBOARD",
+      "SAKSOFON",
+      "ANGKLUNG",
+      "HARPA",
+      "GAMELAN",
+      "TAMBORIN",
+      "KENDANG",
+      "REKORDER"
+    ]
+  },
+  {
+    "question": "Sebutkan nama-nama jenis kendaraan",
+    "answers": [
+      "MOBIL",
+      "MOTOR",
+      "SEPEDA",
+      "PESAWAT",
+      "KERETA",
+      "BUS",
+      "KAPAL",
+      "TRUK",
+      "BECAK",
+      "BAJAJ",
+      "HELIKOPTER",
+      "PERAHU",
+      "DELMAN",
+      "ANGKOT",
+      "SKUTER"
+    ]
+  },
+  {
+    "question": "Sebutkan bumbu masak yang biasa ada di dapur",
+    "answers": [
+      "GARAM",
+      "GULA",
+      "BAWANG",
+      "CABAI",
+      "MERICA",
+      "KECAP",
+      "KUNYIT",
+      "JAHE",
+      "LENGKUAS",
+      "KETUMBAR",
+      "TERASI",
+      "SERAI",
+      "KEMIRI",
+      "CUKA",
+      "PALA"
+    ]
+  },
+  {
+    "question": "Sebutkan jenis-jenis cuaca atau fenomena cuaca yang kamu ketahui",
+    "answers": [
+      "HUJAN",
+      "PANAS",
+      "MENDUNG",
+      "CERAH",
+      "BERAWAN",
+      "DINGIN",
+      "SALJU",
+      "ANGIN",
+      "BADAI",
+      "KABUT",
+      "PETIR",
+      "GERIMIS",
+      "GELAP",
+      "TOPAN",
+      "LEMBAP"
+    ]
+  },
+  {
+    "question": "Sebutkan bahan atau bumbu masak yang biasa ada di dapur",
+    "answers": [
+      "GARAM",
+      "GULA",
+      "BERAS",
+      "BAWANG",
+      "MINYAK",
+      "CABAI",
+      "TELUR",
+      "MERICA",
+      "KECAP",
+      "TERIGU",
+      "KUNYIT",
+      "JAHE",
+      "LENGKUAS",
+      "KETUMBAR",
+      "KEMIRI"
+    ]
+  },
+  {
+    "question": "Sebutkan alat pertukangan yang biasa digunakan tukang",
+    "answers": [
+      "PALU",
+      "GERGAJI",
+      "OBENG",
+      "TANG",
+      "METERAN",
+      "PAHAT",
+      "BOR",
+      "CANGKUL",
+      "SEKOP",
+      "SENDOK-SEMEN",
+      "KIKIR",
+      "CATUT",
+      "WATERPASS",
+      "AMPLAS",
+      "PENGGARIS"
+    ]
+  },
+  {
+    "question": "Sebutkan bahan masakan atau bumbu dapur yang umum",
+    "answers": [
+      "BERAS",
+      "GARAM",
+      "GULA",
+      "MINYAK",
+      "BAWANG",
+      "CABAI",
+      "TELUR",
+      "TEPUNG",
+      "KECAP",
+      "MERICA",
+      "KUNYIT",
+      "JAHE",
+      "LENGKUAS",
+      "PENYEDAP",
+      "KETUMBAR"
+    ]
+  },
+  {
+    "question": "Sebutkan jenis-jenis buah berkulit tebal atau berkulit kasar",
+    "answers": [
+      "DURIAN",
+      "NANAS",
+      "SEMANGKA",
+      "PISANG",
+      "MELON",
+      "JERUK",
+      "ALPUKAT",
+      "NANGKA",
+      "RAMBUTAN",
+      "MANGGIS",
+      "SALAK",
+      "KELAPA",
+      "MANGGA",
+      "PEPAYA",
+      "BUAH-NAGA"
+    ]
+  },
+  {
+    "question": "Sebutkan bahan makanan atau bumbu di dapur",
+    "answers": [
+      "BERAS",
+      "GARAM",
+      "GULA",
+      "TELUR",
+      "MINYAK",
+      "CABAI",
+      "TEPUNG",
+      "KECAP",
+      "BAWANG",
+      "MIE",
+      "MENTEGA",
+      "JAHE",
+      "KUNYIT",
+      "MERICA",
+      "CUKA"
+    ]
+  },
+  {
+    "question": "Sebutkan jenis cuaca atau fenomena atmosfer yang sering terjadi",
+    "answers": [
+      "HUJAN",
+      "PANAS",
+      "CERAH",
+      "MENDUNG",
+      "BERAWAN",
+      "ANGIN",
+      "BADAI",
+      "SALJU",
+      "GERIMIS",
+      "PETIR",
+      "KABUT",
+      "DINGIN",
+      "TOPAN",
+      "EMBUN",
+      "GELAP"
+    ]
+  },
+  {
+    "question": "Sebutkan jenis-jenis perasaan atau emosi manusia",
+    "answers": [
+      "SENANG",
+      "SEDIH",
+      "MARAH",
+      "TAKUT",
+      "KECEWA",
+      "MALU",
+      "KAGET",
+      "BINGUNG",
+      "BOSAN",
+      "BANGGA",
+      "IRI",
+      "RINDU",
+      "KHAWATIR",
+      "JIJIK",
+      "HARU"
+    ]
+  },
+  {
+    "question": "Sebutkan jenis cuaca atau keadaan langit yang kamu tahu",
+    "answers": [
+      "HUJAN",
+      "PANAS",
+      "CERAH",
+      "MENDUNG",
+      "BERAWAN",
+      "DINGIN",
+      "SALJU",
+      "BERANGIN",
+      "KEMARAU",
+      "BADAI",
+      "GERIMIS",
+      "KABUT",
+      "PETIR",
+      "SEJUK",
+      "GELAP"
+    ]
+  },
+  {
+    "question": "Sebutkan jenis sayuran yang sering dimasak di Indonesia",
+    "answers": [
+      "BAYAM",
+      "KANGKUNG",
+      "WORTEL",
+      "KUBIS",
+      "BROKOLI",
+      "SAWI",
+      "BUNCIS",
+      "LABU",
+      "KENTANG",
+      "TERONG",
+      "PARE",
+      "KACANG-PANJANG",
+      "TAOGE",
+      "SELEDRI",
+      "MENTIMUN"
+    ]
+  },
+  {
+    "question": "Sebutkan bahan makanan atau bumbu dasar di dapur",
+    "answers": [
+      "BERAS",
+      "GARAM",
+      "GULA",
+      "MINYAK",
+      "BAWANG",
+      "CABAI",
+      "TELUR",
+      "TEPUNG",
+      "KECAP",
+      "MERICA",
+      "KUNYIT",
+      "JAHE",
+      "LENGKUAS",
+      "KETUMBAR",
+      "TERASI"
+    ]
+  },
+  {
+    "question": "Sebutkan bahan atau bumbu masakan yang biasa ada di dapur",
+    "answers": [
+      "BERAS",
+      "GARAM",
+      "GULA",
+      "MINYAK",
+      "TELUR",
+      "BAWANG",
+      "CABAI",
+      "TEPUNG",
+      "KECAP",
+      "TOMAT",
+      "JAHE",
+      "KUNYIT",
+      "MERICA",
+      "KEMIRI",
+      "LENGKUAS"
+    ]
+  },
+  {
+    "question": "Sebutkan benda atau peralatan yang biasa ada di dapur",
+    "answers": [
+      "KOMPOR",
+      "PIRING",
+      "SENDOK",
+      "GARPU",
+      "PISAU",
+      "WAJAN",
+      "PANCI",
+      "GELAS",
+      "KULKAS",
+      "MANGKUK",
+      "SPATULA",
+      "TALENAN",
+      "BLENDER",
+      "CENTONG",
+      "SERBET"
+    ]
+  },
+  {
+    "question": "Sebutkan perlengkapan atau alat tulis yang ada di dalam tas sekolah",
+    "answers": [
+      "BUKU",
+      "PULPEN",
+      "PENSIL",
+      "PENGHAPUS",
+      "PENGGARIS",
+      "TIPE-X",
+      "RAUTAN",
+      "KOTAK-PENSIL",
+      "SPIDOL",
+      "GUNTING",
+      "STABILO",
+      "LEM",
+      "JANGKA",
+      "KRAYON",
+      "BUSUR"
+    ]
+  },
+  {
+    "question": "Sebutkan perlengkapan atau alat tulis yang ada di sekolah",
+    "answers": [
+      "BUKU",
+      "PENSIL",
+      "PENGHAPUS",
+      "PENGGARIS",
+      "PULPEN",
+      "TAS",
+      "SERAGAM",
+      "SEPATU",
+      "KAPUR",
+      "SPIDOL",
+      "GUNTING",
+      "SERUTAN",
+      "TIPIK",
+      "JANGKA",
+      "STABILO"
+    ]
+  },
+  {
+    "question": "Sebutkan jenis minuman yang biasa dikonsumsi orang",
+    "answers": [
+      "AIR",
+      "TEH",
+      "KOPI",
+      "SUSU",
+      "JUS",
+      "SODA",
+      "SIRUP",
+      "BOBA",
+      "YOGHURT",
+      "COKELAT",
+      "ES",
+      "MADU",
+      "SANTAN",
+      "JAHE",
+      "CENDOL"
+    ]
+  },
+  {
+    "question": "Sebutkan bagian atau ruangan di dalam rumah",
+    "answers": [
+      "DAPUR",
+      "KAMAR",
+      "TOILET",
+      "TERAS",
+      "ATAP",
+      "PINTU",
+      "JENDELA",
+      "DINDING",
+      "LANTAI",
+      "PLAFON",
+      "GARASI",
+      "HALAMAN",
+      "TANGGA",
+      "BALKON",
+      "GUDANG"
+    ]
+  },
+  {
+    "question": "Sebutkan bumbu atau bahan makanan dasar yang ada di dapur",
+    "answers": [
+      "BERAS",
+      "GARAM",
+      "GULA",
+      "MINYAK",
+      "BAWANG",
+      "CABAI",
+      "TELUR",
+      "TEPUNG",
+      "MIE",
+      "KECAP",
+      "LADA",
+      "KUNYIT",
+      "JAHE",
+      "KETUMBAR",
+      "TERASI"
+    ]
+  },
+  {
+    "question": "Sebutkan nama-nama buah yang mudah ditemukan di pasar",
+    "answers": [
+      "PISANG",
+      "APEL",
+      "JERUK",
+      "MANGGA",
+      "SEMANGKA",
+      "MELON",
+      "ANGGUR",
+      "PEPAYA",
+      "NANAS",
+      "RAMBUTAN",
+      "DURIAN",
+      "ALPUKAT",
+      "SALAK",
+      "MANGGIS",
+      "BELIMBING"
+    ]
+  },
+  {
+    "question": "Sebutkan jenis cuaca atau keadaan atmosfer bumi",
+    "answers": [
+      "HUJAN",
+      "PANAS",
+      "MENDUNG",
+      "CERAH",
+      "BERAWAN",
+      "DINGIN",
+      "SALJU",
+      "BADAI",
+      "BERANGIN",
+      "KABUT",
+      "PETIR",
+      "LEMBAP",
+      "GERIMIS",
+      "TERIK",
+      "SEJUK"
+    ]
+  },
+  {
+    "question": "Sebutkan jenis-jenis cuaca atau fenomena langit yang umum",
+    "answers": [
+      "HUJAN",
+      "PANAS",
+      "MENDUNG",
+      "CERAH",
+      "BERAWAN",
+      "ANGIN",
+      "BADAI",
+      "SALJU",
+      "PETIR",
+      "KABUT",
+      "GERIMIS",
+      "GELAP",
+      "TORONADO",
+      "HANGAT",
+      "DINGIN"
+    ]
+  },
+  {
+    "question": "Sebutkan nama-nama buah yang sering dimakan di Indonesia",
+    "answers": [
+      "PISANG",
+      "APEL",
+      "JERUK",
+      "MANGGA",
+      "SEMANGKA",
+      "MELON",
+      "ANGGUR",
+      "PEPAYA",
+      "NANAS",
+      "RAMBUTAN",
+      "DURIAN",
+      "SALAK",
+      "JAMBU",
+      "ALPUKAT",
+      "BELIMBING"
+    ]
+  },
+  {
+    "question": "Sebutkan hewan yang berkaki empat",
+    "answers": [
+      "KUCING",
+      "ANJING",
+      "SAPI",
+      "KAMBING",
+      "KUDA",
+      "GAJAH",
+      "SINGA",
+      "HARIMAU",
+      "KELINCI",
+      "JERAPAH",
+      "RUSA",
+      "ZEBRA",
+      "BADAK",
+      "KERBAU",
+      "UNTA"
+    ]
+  },
+  {
+    "question": "Sebutkan jenis-jenis kendaraan yang sering digunakan manusia",
+    "answers": [
+      "MOBIL",
+      "MOTOR",
+      "SEPEDA",
+      "BUS",
+      "TRUK",
+      "KERETA",
+      "PESAWAT",
+      "KAPAL",
+      "BECAK",
+      "BAJAJ",
+      "PERAHU",
+      "HELIKOPTER",
+      "ANDONG",
+      "SKUTER",
+      "SUBWAY"
+    ]
+  },
+  {
+    "question": "Sebutkan bahan atau bumbu yang biasanya ada di dapur",
+    "answers": [
+      "BERAS",
+      "GARAM",
+      "GULA",
+      "MINYAK",
+      "BAWANG",
+      "CABAI",
+      "TELUR",
+      "TEPUNG",
+      "MERICA",
+      "KECAP",
+      "MENTEGA",
+      "KUNYIT",
+      "JAHE",
+      "LENGKUAS",
+      "KETUMBAR"
+    ]
+  },
+  {
+    "question": "Sebutkan jenis serangga yang sering kita temui",
+    "answers": [
+      "NYAMUK",
+      "LALAT",
+      "SEMUT",
+      "KUPU-KUPU",
+      "KECOA",
+      "LEBAH",
+      "BELALANG",
+      "CAPUNG",
+      "LABA-LABA",
+      "RAYAP",
+      "KUMBANG",
+      "KUTU",
+      "KUNANG-KUNANG",
+      "JANGKRIK",
+      "TAWON"
+    ]
+  },
+  {
+    "question": "Sebutkan alat-alat pertukangan atau perkakas tangan",
+    "answers": [
+      "PALU",
+      "GERGAJI",
+      "OBENG",
+      "TANG",
+      "PAHAT",
+      "KIKIR",
+      "METERAN",
+      "KUNCI",
+      "BOR",
+      "PENGGARIS",
+      "CATUT",
+      "SEKOP",
+      "CANGKUL",
+      "AMPLAS",
+      "WATERPASS"
+    ]
+  },
+  {
+    "question": "Sebutkan jenis burung yang sering kamu ketahui",
+    "answers": [
+      "MERPATI",
+      "ELANG",
+      "KAKAKTUA",
+      "BEO",
+      "PIPIT",
+      "GEREJA",
+      "KUTILANG",
+      "GELATIK",
+      "KENARI",
+      "CENDRAWASIH",
+      "MERAK",
+      "PELIKAN",
+      "BANGSAU",
+      "ENGGANG",
+      "PENGUIN"
+    ]
+  },
+  {
+    "question": "Sebutkan nama-nama buah yang mudah ditemukan di Indonesia",
+    "answers": [
+      "PISANG",
+      "APEL",
+      "MANGGA",
+      "JERUK",
+      "SEMANGKA",
+      "PEPAYA",
+      "MELON",
+      "ANGGUR",
+      "NANAS",
+      "RAMBUTAN",
+      "DURIAN",
+      "ALPUKAT",
+      "STROBERI",
+      "JAMBU",
+      "SALAK"
+    ]
+  },
+  {
+    "question": "Sebutkan benda yang biasa ada di dapur",
+    "answers": [
+      "KOMPOR",
+      "PIRING",
+      "SENDOK",
+      "GARPU",
+      "PISAU",
+      "GELAS",
+      "PANCI",
+      "WAJAN",
+      "KULKAS",
+      "MANGKUK",
+      "SPATULA",
+      "TALENAN",
+      "TEKO",
+      "BLENDER",
+      "SERBET"
+    ]
+  },
+  {
+    "question": "Sebutkan macam-macam emosi atau perasaan pada manusia",
+    "answers": [
+      "SENANG",
+      "SEDIH",
+      "MARAH",
+      "TAKUT",
+      "KECEWA",
+      "MALU",
+      "CEMAS",
+      "KAGET",
+      "BANGGA",
+      "JIJIK",
+      "IRI",
+      "BENCI",
+      "RINDU",
+      "BINGUNG",
+      "HARU"
+    ]
+  },
+  {
+    "question": "Sebutkan jenis buah yang ada di Indonesia",
+    "answers": [
+      "PISANG",
+      "MANGGA",
+      "JERUK",
+      "APEL",
+      "PEPAYA",
+      "SEMANGKA",
+      "DURIAN",
+      "RAMBUTAN",
+      "NANAS",
+      "SALAK",
+      "ANGGUR",
+      "MELON",
+      "JAMBU",
+      "ALPUKAT",
+      "MANGGIS"
+    ]
+  },
+  {
+    "question": "Sebutkan nama buah yang populer di Indonesia",
+    "answers": [
+      "PISANG",
+      "APEL",
+      "JERUK",
+      "MANGGA",
+      "SEMANGKA",
+      "MELON",
+      "ANGGUR",
+      "PEPAYA",
+      "NANAS",
+      "DURIAN",
+      "RAMBUTAN",
+      "SALAK",
+      "ALPUKAT",
+      "JAMBU",
+      "BELIMBING"
+    ]
+  },
+  {
+    "question": "Sebutkan bagian-bagian yang ada di dalam rumah",
+    "answers": [
+      "ATAP",
+      "PINTU",
+      "JENDELA",
+      "DINDING",
+      "LANTAI",
+      "DAPUR",
+      "KAMAR",
+      "TOILET",
+      "PLAFON",
+      "TIANG",
+      "TERAS",
+      "PAGAR",
+      "GARASI",
+      "TANGGA",
+      "BALKON"
+    ]
+  },
+  {
+    "question": "Sebutkan alat tulis atau perlengkapan yang dibawa ke sekolah",
+    "answers": [
+      "BUKU",
+      "PENSIL",
+      "PULPEN",
+      "PENGHAPUS",
+      "PENGGARIS",
+      "TAS",
+      "SERAGAM",
+      "SEPATU",
+      "KOTAK-PENSIL",
+      "RAUTAN",
+      "SPIDOL",
+      "TIPE-X",
+      "KAUS-KAKI",
+      "GUNTING",
+      "TOPI"
+    ]
+  },
+  {
+    "question": "Sebutkan alat tulis atau perlengkapan yang ada di dalam tas sekolah",
+    "answers": [
+      "BUKU",
+      "PENSIL",
+      "PULPEN",
+      "PENGHAPUS",
+      "PENGGARIS",
+      "SERUTAN",
+      "KOTAK-PENSIL",
+      "SPIDOL",
+      "TIPE-X",
+      "GUNTING",
+      "LEM",
+      "STABILO",
+      "JANGKA",
+      "CRAYON",
+      "BUSUR"
+    ]
+  },
+  {
+    "question": "Sebutkan benda yang biasa ada di kamar mandi",
+    "answers": [
+      "SABUN",
+      "SAMPO",
+      "HANDUK",
+      "GAYUNG",
+      "EMBER",
+      "SIKAT",
+      "ODOL",
+      "KLOSET",
+      "KERAN",
+      "CERMIN",
+      "SHOWER",
+      "BAK",
+      "KESET",
+      "GANTUNGAN",
+      "SPON"
+    ]
+  },
+  {
+    "question": "Sebutkan bumbu dapur yang sering ada di rumah",
+    "answers": [
+      "GARAM",
+      "GULA",
+      "BAWANG",
+      "CABAI",
+      "MERICA",
+      "KETUMBAR",
+      "KUNYIT",
+      "JAHE",
+      "LENGKUAS",
+      "KENCUR",
+      "KEMIRI",
+      "TERASI",
+      "SERAI",
+      "PALA",
+      "KAYUMANIS"
+    ]
+  },
+  {
+    "question": "Sebutkan nama warna yang kamu ketahui",
+    "answers": [
+      "MERAH",
+      "BIRU",
+      "KUNING",
+      "HIJAU",
+      "HITAM",
+      "PUTIH",
+      "COKELAT",
+      "UNGU",
+      "ORANYE",
+      "ABU-ABU",
+      "MERAH-MUDA",
+      "EMAS",
+      "PERAK",
+      "NILA",
+      "TOSKA"
+    ]
+  },
+  {
+    "question": "Sebutkan jenis cuaca atau fenomena alam di langit yang sering terlihat",
+    "answers": [
+      "HUJAN",
+      "PANAS",
+      "MENDUNG",
+      "CERAH",
+      "BERAWAN",
+      "ANGIN",
+      "BADAI",
+      "SALJU",
+      "PETIR",
+      "KABUT",
+      "GERIMIS",
+      "PELANGI",
+      "GELAP",
+      "DINGIN",
+      "TOPAN"
+    ]
+  }
+]

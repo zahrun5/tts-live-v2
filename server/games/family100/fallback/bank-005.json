@@ -1,0 +1,562 @@
+[
+  {
+    "question": "Sebutkan jenis-jenis buah berkulit",
+    "answers": [
+      "PISANG",
+      "JERUK",
+      "MANGGA",
+      "APEL",
+      "SEMANGKA",
+      "MELON",
+      "DURIAN",
+      "NANAS",
+      "RAMBUTAN",
+      "SALAK",
+      "PEPAYA",
+      "ALPUKAT",
+      "MANGGIS",
+      "NANGKA",
+      "LEMON"
+    ]
+  },
+  {
+    "question": "Sebutkan nama buah-buahan yang memiliki biji",
+    "answers": [
+      "MANGGA",
+      "APEL",
+      "JERUK",
+      "PISANG",
+      "SEMANGKA",
+      "PEPAYA",
+      "MELON",
+      "ANGGUR",
+      "RAMBUTAN",
+      "DURIAN",
+      "ALPUKAT",
+      "SALAK",
+      "JAMBU",
+      "NANGKA",
+      "BELIMBING"
+    ]
+  },
+  {
+    "question": "Sebutkan jenis kendaraan yang sering ditemui di jalan",
+    "answers": [
+      "MOBIL",
+      "MOTOR",
+      "SEPEDA",
+      "BUS",
+      "TRUK",
+      "BECAK",
+      "KERETA",
+      "ANGKOT",
+      "BAJAJ",
+      "TAKSI",
+      "KAPAL",
+      "PESAWAT",
+      "SKUTER",
+      "DELMAN",
+      "BEMO"
+    ]
+  },
+  {
+    "question": "Sebutkan jenis cuaca atau kondisi langit yang sering kita jumpai",
+    "answers": [
+      "HUJAN",
+      "PANAS",
+      "CERAH",
+      "MENDUNG",
+      "BERAWAN",
+      "DINGIN",
+      "BERANGIN",
+      "GERIMIS",
+      "PETIR",
+      "KABUT",
+      "BADAI",
+      "SALJU",
+      "LEBAT",
+      "SEJUK",
+      "TERIK"
+    ]
+  },
+  {
+    "question": "Sebutkan nama-nama profesi atau pekerjaan",
+    "answers": [
+      "GURU",
+      "DOKTER",
+      "POLISI",
+      "TENTARA",
+      "PILOT",
+      "PETANI",
+      "NELAYAN",
+      "KOKI",
+      "PERAWAT",
+      "PENGACARA",
+      "ARSITEK",
+      "MASINIS",
+      "PELUKIS",
+      "SATPAM",
+      "WARTAWAN"
+    ]
+  },
+  {
+    "question": "Sebutkan nama buah-buahan yang manis dan segar",
+    "answers": [
+      "APEL",
+      "PISANG",
+      "JERUK",
+      "MANGGA",
+      "SEMANGKA",
+      "MELON",
+      "ANGGUR",
+      "PEPAYA",
+      "NANAS",
+      "STRAWBERI",
+      "RAMBUTAN",
+      "DURIAN",
+      "JAMBU",
+      "ALPUKAT",
+      "SALAK"
+    ]
+  },
+  {
+    "question": "Sebutkan peralatan yang biasa ada di dapur",
+    "answers": [
+      "KOMPOR",
+      "PISAU",
+      "WAJAN",
+      "PANCI",
+      "SENDOK",
+      "GARPU",
+      "PIRING",
+      "MANGKUK",
+      "GELAS",
+      "SPATULA",
+      "TALENAN",
+      "KULKAS",
+      "BLENDER",
+      "CENTONG",
+      "SERBET"
+    ]
+  },
+  {
+    "question": "Sebutkan jenis cuaca atau keadaan langit yang kamu ketahui",
+    "answers": [
+      "PANAS",
+      "HUJAN",
+      "MENDUNG",
+      "BERAWAN",
+      "CERAH",
+      "DINGIN",
+      "SALJU",
+      "BADAI",
+      "BERANGIN",
+      "GERIMIS",
+      "PETIR",
+      "KABUT",
+      "LEMBAP",
+      "BEKU",
+      "GELAP"
+    ]
+  },
+  {
+    "question": "Sebutkan jenis-jenis minuman yang biasa diminum",
+    "answers": [
+      "AIR",
+      "TEH",
+      "KOPI",
+      "SUSU",
+      "JUS",
+      "SIRUP",
+      "SODA",
+      "COKLAT",
+      "BOBA",
+      "YOGHURT",
+      "ES",
+      "MADU",
+      "JAMU",
+      "CENDOL",
+      "BAJIGUR"
+    ]
+  },
+  {
+    "question": "Sebutkan jenis-jenis buah berkulit yang rasanya manis",
+    "answers": [
+      "PISANG",
+      "JERUK",
+      "MANGGA",
+      "SEMANGKA",
+      "APEL",
+      "MELON",
+      "DURIAN",
+      "RAMBUTAN",
+      "PEPAYA",
+      "NANAS",
+      "ANGGUR",
+      "SALAK",
+      "MANGGIS",
+      "DUKU",
+      "KELENGKENG"
+    ]
+  },
+  {
+    "question": "Sebutkan bumbu dapur atau rempah-rempah yang sering digunakan untuk memasak",
+    "answers": [
+      "GARAM",
+      "GULA",
+      "BAWANG",
+      "CABAI",
+      "MERICA",
+      "KUNYIT",
+      "JAHE",
+      "LENGKUAS",
+      "KETUMBAR",
+      "KEMIRI",
+      "SERAI",
+      "PALA",
+      "KENCUR",
+      "CENGKEH",
+      "KAYUMANIS"
+    ]
+  },
+  {
+    "question": "Sebutkan jenis bahan makanan pokok yang sering disimpan di dapur",
+    "answers": [
+      "BERAS",
+      "TELUR",
+      "MINYAK",
+      "GARAM",
+      "GULA",
+      "TERIGU",
+      "MIE",
+      "BAWANG",
+      "CABAI",
+      "KENTANG",
+      "KECAP",
+      "SUSU",
+      "JAGUNG",
+      "MENTEGA",
+      "UBI"
+    ]
+  },
+  {
+    "question": "Sebutkan benda yang biasanya ada di dalam ruang kelas sekolah",
+    "answers": [
+      "MEJA",
+      "KURSI",
+      "PAPAN",
+      "SPIDOL",
+      "PENGHAPUS",
+      "KAPUR",
+      "BUKU",
+      "PENGGARIS",
+      "JAM",
+      "PETA",
+      "FOTO",
+      "LEMARI",
+      "PULPEN",
+      "PENSIL",
+      "TEMPAT-SAMPAH"
+    ]
+  },
+  {
+    "question": "Sebutkan alat-alat pertukangan atau perkakas yang sering digunakan",
+    "answers": [
+      "PALU",
+      "OBENG",
+      "GERGAJI",
+      "TANG",
+      "PAKU",
+      "METERAN",
+      "KUNCI",
+      "BOR",
+      "SEKROP",
+      "PAHAT",
+      "KIKIR",
+      "CATUT",
+      "PENGGARIS",
+      "WATERPASS",
+      "AMPLAS"
+    ]
+  },
+  {
+    "question": "Sebutkan alat pertukangan atau perkakas kayu yang sering digunakan",
+    "answers": [
+      "PALU",
+      "GERGAJI",
+      "OBENG",
+      "TANG",
+      "METERAN",
+      "PAHAT",
+      "BOR",
+      "PAKU",
+      "AMPLAS",
+      "KUNCI",
+      "SEKROP",
+      "SIKU-SIKU",
+      "PENSIL",
+      "CETOK",
+      "GUNTING"
+    ]
+  },
+  {
+    "question": "Sebutkan jenis-jenis buah berkulit tebal atau berkulit kasar yang ada di Indonesia",
+    "answers": [
+      "DURIAN",
+      "NANAS",
+      "SEMANGKA",
+      "MELON",
+      "PISANG",
+      "JERUK",
+      "SALAK",
+      "MANGGIS",
+      "NANGKA",
+      "ALPUKAT",
+      "PEPAYA",
+      "KELAPA",
+      "RAMBUTAN",
+      "BUAH-NAGA",
+      "SIRSAK"
+    ]
+  },
+  {
+    "question": "Sebutkan bagian-bagian yang ada pada rumah",
+    "answers": [
+      "ATAP",
+      "PINTU",
+      "JENDELA",
+      "DINDING",
+      "LANTAI",
+      "KAMAR",
+      "DAPUR",
+      "TOILET",
+      "TERAS",
+      "PAGAR",
+      "PLAFON",
+      "GUDANG",
+      "GARASI",
+      "TIANG",
+      "TANGGA"
+    ]
+  },
+  {
+    "question": "Sebutkan jenis buah-buahan yang rasanya manis",
+    "answers": [
+      "PISANG",
+      "MANGGA",
+      "APEL",
+      "SEMANGKA",
+      "MELON",
+      "JERUK",
+      "ANGGUR",
+      "PEPAYA",
+      "RAMBUTAN",
+      "DURIAN",
+      "NANAS",
+      "KELENGKENG",
+      "DUKU",
+      "SALAK",
+      "SAWO"
+    ]
+  },
+  {
+    "question": "Sebutkan jenis buah-buahan yang ada di Indonesia",
+    "answers": [
+      "PISANG",
+      "MANGGA",
+      "JERUK",
+      "APEL",
+      "SEMANGKA",
+      "PEPAYA",
+      "DURIAN",
+      "RAMBUTAN",
+      "MELON",
+      "ANGGUR",
+      "NANAS",
+      "SALAK",
+      "JAMBU",
+      "ALPUKAT",
+      "MANGGIS"
+    ]
+  },
+  {
+    "question": "Sebutkan alat-alat pertukangan",
+    "answers": [
+      "PALU",
+      "GERGAJI",
+      "OBENG",
+      "TANG",
+      "METERAN",
+      "PAHAT",
+      "KUNCI",
+      "BOR",
+      "PENGGARIS",
+      "AMPLAS",
+      "CATUT",
+      "WATERPASS",
+      "SIKU-SIKU",
+      "KETAM",
+      "LINGGIS"
+    ]
+  },
+  {
+    "question": "Sebutkan nama buah-buahan yang populer",
+    "answers": [
+      "APEL",
+      "PISANG",
+      "JERUK",
+      "MANGGA",
+      "SEMANGKA",
+      "MELON",
+      "ANGGUR",
+      "PEPAYA",
+      "NANAS",
+      "DURIAN",
+      "RAMBUTAN",
+      "ALPUKAT",
+      "STROBERI",
+      "JAMBU",
+      "SALAK"
+    ]
+  },
+  {
+    "question": "Sebutkan nama jenis kendaraan atau alat transportasi",
+    "answers": [
+      "MOBIL",
+      "MOTOR",
+      "SEPEDA",
+      "BUS",
+      "KERETA",
+      "PESAWAT",
+      "KAPAL",
+      "TRUK",
+      "BECAK",
+      "HELIKOPTER",
+      "BAJAJ",
+      "ANGKOT",
+      "PERAHU",
+      "DELMAN",
+      "SKUTER"
+    ]
+  },
+  {
+    "question": "Sebutkan jenis-jenis buah yang memiliki biji di dalamnya",
+    "answers": [
+      "APEL",
+      "JERUK",
+      "MANGGA",
+      "PISANG",
+      "SEMANGKA",
+      "PEPAYA",
+      "ANGGUR",
+      "MELON",
+      "ALPUKAT",
+      "RAMBUTAN",
+      "DURIAN",
+      "SALAK",
+      "JAMBU",
+      "LEMON",
+      "NANGKA"
+    ]
+  },
+  {
+    "question": "Sebutkan bumbu dapur atau bahan memasak",
+    "answers": [
+      "GARAM",
+      "GULA",
+      "BAWANG",
+      "CABAI",
+      "MERICA",
+      "KECAP",
+      "KUNYIT",
+      "JAHE",
+      "LENGKUAS",
+      "KETUMBAR",
+      "TERASI",
+      "SERAI",
+      "PALA",
+      "CENGKEH",
+      "KEMIRI"
+    ]
+  },
+  {
+    "question": "Sebutkan bumbu dapur atau bahan penyedap rasa untuk memasak",
+    "answers": [
+      "GARAM",
+      "GULA",
+      "BAWANG",
+      "CABAI",
+      "MERICA",
+      "KECAP",
+      "KUNYIT",
+      "JAHE",
+      "LENGKUAS",
+      "KETUMBAR",
+      "TERASI",
+      "CUKA",
+      "KEMIRI",
+      "SERAI",
+      "PALA"
+    ]
+  },
+  {
+    "question": "Sebutkan nama buah-buahan yang umum",
+    "answers": [
+      "APEL",
+      "PISANG",
+      "JERUK",
+      "MANGGA",
+      "SEMANGKA",
+      "PEPAYA",
+      "MELON",
+      "ANGGUR",
+      "NANAS",
+      "DURIAN",
+      "RAMBUTAN",
+      "SALAK",
+      "STRAWBERI",
+      "ALPUKAT",
+      "JAMBU"
+    ]
+  },
+  {
+    "question": "Sebutkan nama-nama buah yang manis rasanya",
+    "answers": [
+      "PISANG",
+      "MANGGA",
+      "APEL",
+      "JERUK",
+      "SEMANGKA",
+      "MELON",
+      "ANGGUR",
+      "PEPAYA",
+      "RAMBUTAN",
+      "DURIAN",
+      "NANAS",
+      "KELENGKENG",
+      "DUKU",
+      "JAMBU",
+      "MANGGIS"
+    ]
+  },
+  {
+    "question": "Sebutkan benda yang ada di dalam kamar mandi",
+    "answers": [
+      "SABUN",
+      "SAMPO",
+      "GAYUNG",
+      "EMBER",
+      "HANDUK",
+      "SIKAT",
+      "ODOL",
+      "KLOSET",
+      "CERMIN",
+      "KERAN",
+      "BAK",
+      "KESET",
+      "GANTUNGAN",
+      "SHOWER",
+      "SPON"
+    ]
+  }
+]
