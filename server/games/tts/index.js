@@ -166,10 +166,25 @@ function resetBankCycle() {
   return true;
 }
 
+// Khusus admin/dashboard: semua jawaban soal aktif (termasuk yang belum terjawab).
+function getAdminAnswers() {
+  if (!puzzle) return { title: 'Belum ada soal', items: [] };
+  return {
+    title: 'Teka-Teki Silang',
+    items: puzzle.words.map(w => ({
+      label: `${w.number} ${w.direction === 'across' ? 'Mendatar' : 'Menurun'}`,
+      hint: w.clue,
+      answer: w.answer,
+      solved: !!state[wordKey(w)]
+    }))
+  };
+}
+
 module.exports = {
   id: 'tts',
   init: loadPuzzleFromDisk,
   buildStatePayload,
+  getAdminAnswers,
   buildClueList,
   handleAnswer,
   isComplete,

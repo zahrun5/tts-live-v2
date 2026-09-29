@@ -481,6 +481,21 @@ class Room {
     return { ok: true, meta: result.meta };
   }
 
+  // ---------- jawaban untuk admin (dashboard) ----------
+
+  // Semua jawaban soal aktif, termasuk yang belum terjawab. HANYA lewat
+  // endpoint ber-auth; jangan pernah di-emit ke socket overlay.
+  getAdminAnswers() {
+    const g = this.activeGame;
+    if (!g || !g.getAdminAnswers) return { ok: false, error: 'Game aktif belum mendukung tampilan jawaban' };
+    try {
+      return { ok: true, gameId: this.activeGameId, ...g.getAdminAnswers() };
+    } catch (err) {
+      console.error(`[Room ${this.username}] getAdminAnswers gagal:`, err.message);
+      return { ok: false, error: 'Gagal membaca jawaban' };
+    }
+  }
+
   // ---------- komentar & jawaban ----------
 
   // Setara alur CHAT di tiktok-connector.js V1: bubble komentar -> vote ->

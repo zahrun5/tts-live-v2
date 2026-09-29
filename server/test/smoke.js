@@ -20,6 +20,7 @@ const users = {
 require('mongoose').connect = async () => {};
 const userPath = require.resolve('../models/User');
 require.cache[userPath] = { id: userPath, filename: userPath, loaded: true, exports: {
+  findById: () => ({ select: async () => null }),
   findOne: (q) => ({ lean: async () => users[q.username] ? { username: q.username, ...users[q.username] } : null })
 } };
 
@@ -158,6 +159,31 @@ function answersFor(game, roomDir) {
   console.log('\n[8] Persistensi');
   const saved = JSON.parse(fs.readFileSync(alice.stateFile, 'utf8'));
   ok(saved.leaderboard.budi > 0 && saved.gameId, 'room-state.json menyimpan leaderboard & game aktif');
+
+  console.log('\n[9] Jawaban untuk admin (dashboard)');
+  const jwt = require('jsonwebtoken');
+  const token = jwt.sign({ id: 'x', username: 'alice' }, require('../config').JWT_SECRET);
+  const getAuth = (p, t) => new Promise((res, rej) => http.get(BASE + p, { headers: t ? { Authorization: 'Bearer ' + t } : {} }, r => {
+    let d = ''; r.on('data', c => d += c); r.on('end', () => res({ status: r.statusCode, body: d }));
+  }).on('error', rej));
+  ok((await getAuth('/api/sys/game/answers')).status === 401, 'tanpa token -> 401 (jawaban tidak publik)');
+  for (const g of ALL) {
+    await alice.performSwitchGame(g);
+    const r = await getAuth('/api/sys/game/answers', token);
+    const j = JSON.parse(r.body);
+    ok(r.status === 200 && j.ok && j.gameId === g && j.items.length > 0 && j.items.every(i => typeof i.answer === 'string' && i.answer.length > 0), `${g}: ${j.items ? j.items.length : 0} jawaban terbaca (${j.items && j.items[0] ? j.items[0].answer : '-'})`);
+    // overlay TIDAK boleh menerima jawaban yang belum terjawab
+    const st = JSON.stringify(alice.activeGame.buildStatePayload());
+    const unsolved = j.items.filter(i => !i.solved).map(i => i.answer);
+    const leaked = g === 'trivia' ? [] : unsolved.filter(a => st.includes('"' + a + '"'));
+    ok(leaked.length === 0, `${g}: payload overlay tidak memuat jawaban yang belum terjawab`);
+  }
+  await alice.performSwitchGame('family100');
+  const a0 = alice.getAdminAnswers();
+  const firstUnsolved = a0.items.find(i => !i.solved);
+  await alice.handleChat({ player: 'tes', text: firstUnsolved.answer });
+  const a1 = alice.getAdminAnswers();
+  ok(a1.items.filter(i => i.solved).length === a0.items.filter(i => i.solved).length + 1, 'family100: status "sudah" ikut berubah setelah terjawab');
 
   console.log(`\nHasil: ${pass} lulus, ${fail} gagal`);
   process.exit(fail ? 1 : 0);

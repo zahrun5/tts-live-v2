@@ -160,10 +160,26 @@ function resetBankCycle() {
   return true;
 }
 
+// Khusus admin/dashboard: jawaban benar soal aktif.
+function getAdminAnswers() {
+  if (!puzzle) return { title: 'Belum ada soal', items: [] };
+  const opt = (puzzle.options || []).find(o => o.letter === puzzle.correctLetter);
+  return {
+    title: puzzle.question,
+    items: [{
+      label: 'Jawaban benar',
+      hint: puzzle.category || null,
+      answer: opt ? `${opt.letter}. ${opt.text}` : String(puzzle.correctLetter),
+      solved: !!puzzle.answered
+    }]
+  };
+}
+
 module.exports = {
   id: 'trivia',
   init: loadPuzzleFromDisk,
   buildStatePayload,
+  getAdminAnswers,
   buildClueList,
   handleAnswer,
   isComplete,

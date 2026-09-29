@@ -247,10 +247,25 @@ function resetBankCycle() {
   return true;
 }
 
+// Khusus admin/dashboard: semua jawaban soal aktif (termasuk yang belum ketemu).
+function getAdminAnswers() {
+  if (!state) return { title: 'Belum ada soal', items: [] };
+  return {
+    title: state.question,
+    items: state.answers.map((a, i) => ({
+      label: `#${i + 1}`,
+      hint: `${a.points} poin`,
+      answer: a.text,
+      solved: !!a.found
+    }))
+  };
+}
+
 module.exports = {
   id: 'family100',
   init: loadFromDisk,
   buildStatePayload,
+  getAdminAnswers,
   buildClueList,
   handleAnswer,
   isComplete,

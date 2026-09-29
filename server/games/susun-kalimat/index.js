@@ -312,10 +312,25 @@ function resetBankCycle() {
   return true;
 }
 
+// Khusus admin/dashboard: semua kalimat asli soal aktif (termasuk yang belum terjawab).
+function getAdminAnswers() {
+  if (!state) return { title: 'Belum ada soal', items: [] };
+  return {
+    title: 'Susun Kalimat',
+    items: state.items.map(it => ({
+      label: `Soal ${it.number}`,
+      hint: it.shuffled.join(' / '),
+      answer: it.sentence,
+      solved: !!it.solved
+    }))
+  };
+}
+
 module.exports = {
   id: 'susun-kalimat',
   init,
   buildStatePayload,
+  getAdminAnswers,
   buildClueList,
   handleAnswer,
   isComplete,

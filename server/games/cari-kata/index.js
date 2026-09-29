@@ -163,10 +163,25 @@ async function parseComment(text) {
   return { answer: cleaned };
 }
 
+// Khusus admin/dashboard: semua kata soal aktif (termasuk yang belum ketemu).
+function getAdminAnswers() {
+  if (!puzzle) return { title: 'Belum ada soal', items: [] };
+  return {
+    title: 'Tema: ' + puzzle.theme,
+    items: puzzle.words.map((w, i) => ({
+      label: `#${i + 1}`,
+      hint: w.direction || null,
+      answer: w.word,
+      solved: !!w.found
+    }))
+  };
+}
+
 module.exports = {
   id: 'cari-kata',
   init: loadPuzzleFromDisk,
   buildStatePayload,
+  getAdminAnswers,
   buildClueList,
   handleAnswer,
   isComplete,

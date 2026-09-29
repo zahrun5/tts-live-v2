@@ -57,7 +57,7 @@ function Dashboard() {
   const [user, setUser] = useState(null);
   const [tiktokUsername, setTiktokUsername] = useState('');
   const [activeGame, setActiveGame] = useState('tts');
-  const [randomGames, setRandomGames] = useState(['tts', 'susun-kata-acak', 'family100', 'trivia', 'cari-kata', 'sambung-kata']);
+  const [randomGames, setRandomGames] = useState(['tts', 'susun-kata-acak', 'family100', 'trivia', 'cari-kata', 'sambung-kata', 'susun-kalimat']);
   const [isConnected, setIsConnected] = useState(false);
   const [activeSoal, setActiveSoal] = useState(null);
   const [statusMsg, setStatusMsg] = useState({ text: '', type: '' });
@@ -65,6 +65,9 @@ function Dashboard() {
   const [testComment, setTestComment] = useState('');
   const [testHistory, setTestHistory] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [showAnswers, setShowAnswers] = useState(false);
+  const [answers, setAnswers] = useState(null);
+  const [answersError, setAnswersError] = useState('');
 
   const allGames = [
     { id: 'game-random', label: '🎲 Game Random (Acak)' },
@@ -87,6 +90,26 @@ function Dashboard() {
     }
   };
 
+  const fetchAnswers = async () => {
+    try {
+      const res = await axios.get('/api/sys/game/answers');
+      setAnswers(res.data);
+      setAnswersError('');
+    } catch (err) {
+      setAnswers(null);
+      setAnswersError(err.response?.data?.error || 'Gagal memuat jawaban');
+    }
+  };
+
+  // Jawaban disembunyikan default (biar aman kalau layar dashboard ikut kelihatan
+  // di live). Kalau dibuka, refresh otomatis tiap 4 detik.
+  useEffect(() => {
+    if (!showAnswers) return;
+    fetchAnswers();
+    const t = setInterval(fetchAnswers, 4000);
+    return () => clearInterval(t);
+  }, [showAnswers]);
+
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -94,7 +117,7 @@ function Dashboard() {
         setUser(res.data.user);
         setTiktokUsername(res.data.user.tiktokUsername || '');
         setActiveGame(res.data.user.activeGame || 'tts');
-        setRandomGames(res.data.user.randomGames || ['tts', 'susun-kata-acak', 'family100', 'trivia', 'cari-kata', 'sambung-kata']);
+        setRandomGames(res.data.user.randomGames || ['tts', 'susun-kata-acak', 'family100', 'trivia', 'cari-kata', 'sambung-kata', 'susun-kalimat']);
         setIsConnected(res.data.isConnected);
         refreshActiveSoal(res.data.user.username);
       } catch (err) {
@@ -276,6 +299,42 @@ function Dashboard() {
             )}
             <button onClick={saveSettings} className="w-full py-2 mt-4 text-blue-700 bg-blue-100 rounded hover:bg-blue-200">Simpan & Ganti Layar</button>
           </div>
+        </div>
+
+        <div className="p-6 mt-6 bg-white border border-gray-100 rounded-lg shadow-sm">
+          <div className="flex items-center justify-between gap-2 mb-2">
+            <h2 className="text-lg font-bold">🔑 Jawaban Soal Aktif (Admin)</h2>
+            <button onClick={() => setShowAnswers(v => !v)} className={`px-3 py-1.5 text-sm font-medium rounded ${showAnswers ? 'bg-gray-100 text-gray-700 hover:bg-gray-200' : 'bg-amber-100 text-amber-800 hover:bg-amber-200'}`}>
+              {showAnswers ? '🙈 Sembunyikan' : '👁 Tampilkan'}
+            </button>
+          </div>
+          {!showAnswers && <p className="text-sm text-gray-500">Disembunyikan supaya aman kalau layar dashboard ikut terlihat. Buka kalau game macet.</p>}
+          {showAnswers && (
+            <div>
+              {answersError && <p className="text-sm text-red-600">{answersError}</p>}
+              {answers && answers.ok && (
+                <div>
+                  <p className="mb-3 text-sm text-gray-600">
+                    <strong>{allGames.find(g => g.id === answers.gameId)?.label || answers.gameId}</strong>
+                    {answers.title ? <> — {answers.title}</> : null}
+                  </p>
+                  <div className="space-y-2">
+                    {answers.items.map((it, i) => (
+                      <div key={i} className={`flex items-start gap-3 p-2.5 text-sm border rounded ${it.solved ? 'bg-green-50 border-green-200 text-gray-500' : 'bg-amber-50 border-amber-200'}`}>
+                        <span className="w-24 shrink-0 text-xs font-medium text-gray-500">{it.label}</span>
+                        <div className="flex-1 min-w-0">
+                          <div className={`font-bold break-words ${it.solved ? 'line-through' : 'text-gray-900'}`}>{it.answer}</div>
+                          {it.hint ? <div className="text-xs text-gray-500 break-words">{it.hint}</div> : null}
+                        </div>
+                        <span className="text-xs shrink-0">{it.solved ? '✅ sudah' : '⏳ belum'}</span>
+                      </div>
+                    ))}
+                  </div>
+                  <p className="mt-3 text-xs text-gray-400">Update otomatis tiap 4 detik. Jawab lewat komentar (atau kolom test di atas).</p>
+                </div>
+              )}
+            </div>
+          )}
         </div>
 
         <div className="p-6 mt-6 text-white bg-gray-800 rounded-lg">

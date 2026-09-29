@@ -92,6 +92,16 @@ router.get('/game-state/:username', auth, wrap(async (req, res) => {
   res.json({ state: { actualGame: room.activeGameId, mode: room.mode } });
 }));
 
+// Daftar semua jawaban soal aktif buat admin (kalau game macet). Ber-auth,
+// cuma balik untuk room milik user yang login.
+router.get('/game/answers', auth, wrap(async (req, res) => {
+  res.setHeader('Cache-Control', 'no-store');
+  const room = await roomManager.getRoom(req.user.username);
+  if (!room) return res.status(404).json({ error: 'Room tidak ditemukan' });
+  const result = room.getAdminAnswers();
+  res.status(result.ok ? 200 : 400).json(result);
+}));
+
 router.post('/game/skip', auth, wrap(async (req, res) => {
   const room = await roomManager.getRoom(req.user.username);
   const result = await room.performForceNext('skip');

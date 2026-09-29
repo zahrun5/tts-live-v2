@@ -182,10 +182,24 @@ function resetBankCycle() {
   return true;
 }
 
+// Khusus admin/dashboard: semua kata soal aktif (termasuk yang belum terjawab).
+function getAdminAnswers() {
+  return {
+    title: 'Susun Kata Acak',
+    items: slots.map(s => ({
+      label: `Slot ${s.id}`,
+      hint: s.scrambled,
+      answer: s.answer,
+      solved: s.status === 'solved'
+    }))
+  };
+}
+
 module.exports = {
   id: 'susun-kata-acak',
   init,
   buildStatePayload,
+  getAdminAnswers,
   handleAnswer,
   isComplete,
   onComplete,
