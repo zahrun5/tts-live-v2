@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const V1 = '/home/harun/tts-live/games';
+const V1 = '/home/harun/tts-live-v2/server/games';
 
 // Track pertanyaan yang sudah dipakai di session ini (per game)
 // Reset ketika semua bank sudah terpakai.
