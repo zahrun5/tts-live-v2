@@ -23,7 +23,7 @@ router.get('/me', auth, wrap(async (req, res) => {
 }));
 
 router.post('/settings', auth, wrap(async (req, res) => {
-  const { activeGame, randomGames } = req.body || {};
+  const { activeGame, randomGames, avatarType } = req.body || {};
   let { tiktokUsername } = req.body || {};
 
   const update = {};
@@ -44,12 +44,15 @@ router.post('/settings', auth, wrap(async (req, res) => {
     const clean = [...new Set(randomGames.filter(g => VALID_GAMES.includes(g)))];
     if (clean.length > 0) update.randomGames = clean;
   }
+  if (typeof avatarType === 'string' && ['emoji', 'tiktok'].includes(avatarType)) {
+    update.avatarType = avatarType;
+  }
 
   const user = await User.findByIdAndUpdate(req.user.id, update, { new: true }).select('-password');
   if (!user) return res.status(401).json({ error: 'User tidak ditemukan' });
 
   const room = await roomManager.getRoom(user.username);
-  const result = await room.applySettings({ activeGame: user.activeGame, randomGames: user.randomGames });
+  const result = await room.applySettings({ activeGame: user.activeGame, randomGames: user.randomGames, avatarType: user.avatarType });
   if (result.switched) room.emit('force-reload'); // fallback kalau game:switched terlewat
 
   res.json({ message: 'Pengaturan disimpan', user, ...result });
@@ -89,7 +92,8 @@ router.post('/overlay/reload', auth, wrap(async (req, res) => {
 router.get('/game-state/:username', auth, wrap(async (req, res) => {
   if (req.params.username !== req.user.username) return res.status(403).json({ error: 'Bukan akun kamu' });
   const room = await roomManager.getRoom(req.user.username);
-  res.json({ state: { actualGame: room.activeGameId, mode: room.mode } });
+  const allStats = room.getAllGameStats();
+  res.json({ state: { actualGame: room.activeGameId, mode: room.mode }, stats: allStats });
 }));
 
 // Daftar semua jawaban soal aktif buat admin (kalau game macet). Ber-auth,

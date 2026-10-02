@@ -7,6 +7,7 @@ const userSchema = new mongoose.Schema({
   activeGame: { type: String, default: 'tts' },
   randomGames: { type: [String], default: ['tts', 'susun-kata-acak', 'family100', 'trivia', 'cari-kata', 'sambung-kata', 'susun-kalimat'] },
   role: { type: String, default: 'user' },
+  avatarType: { type: String, default: 'emoji' },
   createdAt: { type: Date, default: Date.now }
 });
 

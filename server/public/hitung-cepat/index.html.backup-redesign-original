@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hitung Cepat - Multi Question</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #fff;
+            overflow: hidden;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .title {
+            font-size: 3rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: #ffd700;
+            text-shadow: 4px 4px 0 #ff6b6b, -2px -2px 0 #fff;
+            margin-bottom: 10px;
+        }
+
+        .round-badge {
+            display: inline-block;
+            background: #2c3e50;
+            color: #ffd700;
+            padding: 10px 25px;
+            border-radius: 25px;
+            font-size: 1.5rem;
+            font-weight: 700;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+        }
+
+        .progress-info {
+            font-size: 1.2rem;
+            margin-top: 8px;
+            color: #ecf0f1;
+        }
+
+        .grid-container {
+            flex: 1;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            gap: 20px;
+            max-width: 1400px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        .question-slot {
+            background: linear-gradient(135deg, #fff 0%, #f0f0f0 100%);
+            border-radius: 20px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+        .question-slot.solved {
+            background: linear-gradient(135deg, #4CAF50 0%, #45a049 100%);
+            transform: scale(0.98);
+        }
+
+        .question-text {
+            font-size: 3rem;
+            font-weight: 900;
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        .question-slot.solved .question-text {
+            color: #fff;
+            text-decoration: line-through;
+            opacity: 0.7;
+        }
+
+        .avatar-container {
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            animation: bounceIn 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        }
+
+        .question-slot.solved .avatar-container {
+            display: flex;
+        }
+
+        @keyframes bounceIn {
+            0% {
+                transform: scale(0) translateY(-50px);
+                opacity: 0;
+            }
+            50% {
+                transform: scale(1.1) translateY(-10px);
+            }
+            100% {
+                transform: scale(1) translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .avatar-container img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            border: 4px solid #ffd700;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+            object-fit: cover;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        .avatar-container .emoji {
+            font-size: 80px;
+            line-height: 1;
+            filter: drop-shadow(0 5px 10px rgba(0,0,0,0.3));
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0px);
+            }
+            50% {
+                transform: translateY(-15px);
+            }
+        }
+
+        .winner-name {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #fff;
+            margin-top: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            text-align: center;
+            max-width: 150px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .slot-number {
+            position: absolute;
+            top: 10px;
+            left: 15px;
+            background: #2c3e50;
+            color: #ffd700;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: 900;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+        }
+
+        .checkmark {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            font-size: 3rem;
+            display: none;
+            animation: checkPop 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        }
+
+        .question-slot.solved .checkmark {
+            display: block;
+        }
+
+        @keyframes checkPop {
+            0% {
+                transform: scale(0) rotate(-45deg);
+            }
+            100% {
+                transform: scale(1) rotate(0deg);
+            }
+        }
+
+        @media (max-width: 1200px) {
+            .grid-container {
+                gap: 15px;
+            }
+            .question-text {
+                font-size: 2.5rem;
+            }
+            .title {
+                font-size: 2.5rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            .grid-container {
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(3, 1fr);
+                gap: 10px;
+            }
+            .question-text {
+                font-size: 2rem;
+            }
+            .title {
+                font-size: 2rem;
+            }
+            .round-badge {
+                font-size: 1.2rem;
+                padding: 8px 20px;
+            }
+            .avatar-container img,
+            .avatar-container .emoji {
+                width: 60px;
+                height: 60px;
+                font-size: 60px;
+            }
+            .winner-name {
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .question-text {
+                font-size: 1.5rem;
+            }
+            .title {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <h1 class="title">🔢 HITUNG CEPAT 🔢</h1>
+        <div class="round-badge">
+            Ronde <span id="round-number">1</span>
+        </div>
+        <div class="progress-info">
+            <span id="solved-count">0</span>/6 Terjawab
+        </div>
+    </div>
+
+    <div class="grid-container" id="grid">
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+        const socket = io();
+    </script>
+    <script src="/shared/v2-bootstrap.js"></script>
+    
+    <script>
+        const grid = document.getElementById('grid');
+        
+        function renderQuestions(questions, avatarType) {
+            grid.innerHTML = '';
+            
+            questions.forEach((q, index) => {
+                const slot = document.createElement('div');
+                slot.className = 'question-slot' + (q.solved ? ' solved' : '');
+                
+                const slotNumber = document.createElement('div');
+                slotNumber.className = 'slot-number';
+                slotNumber.innerText = index + 1;
+                
+                const checkmark = document.createElement('div');
+                checkmark.className = 'checkmark';
+                checkmark.innerText = '✅';
+                
+                const questionText = document.createElement('div');
+                questionText.className = 'question-text';
+                questionText.innerText = q.question;
+                
+                const avatarContainer = document.createElement('div');
+                avatarContainer.className = 'avatar-container';
+                
+                if (q.solved && q.winner) {
+                    if (avatarType === 'tiktok' && q.winner.profileUrl) {
+                        const img = document.createElement('img');
+                        img.src = q.winner.profileUrl;
+                        img.alt = q.winner.name;
+                        img.onerror = function() {
+                            const emoji = document.createElement('span');
+                            emoji.className = 'emoji';
+                            emoji.innerText = q.winner.emoji;
+                            this.replaceWith(emoji);
+                        };
+                        avatarContainer.appendChild(img);
+                    } else {
+                        const emoji = document.createElement('span');
+                        emoji.className = 'emoji';
+                        emoji.innerText = q.winner.emoji;
+                        avatarContainer.appendChild(emoji);
+                    }
+                    
+                    const winnerName = document.createElement('div');
+                    winnerName.className = 'winner-name';
+                    winnerName.innerText = q.winner.name;
+                    avatarContainer.appendChild(winnerName);
+                }
+                
+                slot.appendChild(slotNumber);
+                slot.appendChild(checkmark);
+                slot.appendChild(questionText);
+                slot.appendChild(avatarContainer);
+                
+                grid.appendChild(slot);
+            });
+        }
+        
+        socket.on('update', (state) => {
+            console.log('Received update:', state);
+            
+            document.getElementById('round-number').innerText = state.roundNumber || 1;
+            document.getElementById('solved-count').innerText = state.solvedCount || 0;
+            
+            if (state.questions && state.questions.length > 0) {
+                renderQuestions(state.questions, state.avatarType);
+            }
+        });
+
+        socket.on('game:switched', () => {
+            console.log('Game switched, reloading...');
+            window.location.reload();
+        });
+    </script>
+</body>
+</html>

@@ -6,9 +6,18 @@ const roomManager = require('./roomManager');
 const sessions = new Map(); // username -> { conn, tiktokUsername, intentional, retries, timer }
 const MAX_RETRIES = 5;
 
-function extractPlayer(data) {
-  return (data.user && (data.user.nickname || data.user.uniqueId))
+function extractPlayerInfo(data) {
+  const name = (data.user && (data.user.nickname || data.user.uniqueId))
     || data.uniqueId || data.nickname || 'TikTokUser';
+  let profileUrl = '';
+  if (data.user) {
+    profileUrl = data.user.profilePictureUrl || (data.user.avatarThumb && data.user.avatarThumb.urlList && data.user.avatarThumb.urlList[0]) || (data.user.avatarLarge && data.user.avatarLarge.urlList && data.user.avatarLarge.urlList[0]);
+  }
+  if (!profileUrl && data.profilePictureUrl) profileUrl = data.profilePictureUrl;
+  if (!profileUrl && data.avatarThumb && data.avatarThumb.urlList) profileUrl = data.avatarThumb.urlList[0];
+  if (!profileUrl && data.userDetails && data.userDetails.profilePictureUrls) profileUrl = data.userDetails.profilePictureUrls[0] || data.userDetails.profilePictureUrls;
+  if (!profileUrl && data.user && data.user.userDetails && data.user.userDetails.profilePictureUrls) profileUrl = data.user.userDetails.profilePictureUrls[0] || data.user.userDetails.profilePictureUrls;
+  return { name, profileUrl };
 }
 
 function buildConnection(tiktokUsername) {
@@ -27,7 +36,10 @@ function attachHandlers(username, room, session) {
   conn.on(WebcastEvent.CHAT, (data) => {
     const text = data.comment || data.content;
     if (!text) return;
-    room.handleChat({ player: extractPlayer(data), text });
+    const info = extractPlayerInfo(data);
+    console.log(`[TikTok] Chat dari ${info.name}, URL profil: ${info.profileUrl ? 'ADA' : 'KOSONG'} (length: ${info.profileUrl?.length})`);
+    if (!info.profileUrl) console.log('[TikTok DEBUG DATA]', JSON.stringify(data.profilePictureUrl || data.user || 'Tidak ada info user', null, 2).slice(0, 500));
+    room.handleChat({ player: info.name, profileUrl: info.profileUrl, text });
   });
 
   const onDown = (reason) => {

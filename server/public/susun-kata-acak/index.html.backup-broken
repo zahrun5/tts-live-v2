@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Susun Kata Acak Live</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="manifest" href="/manifest.json">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="theme-color" content="#0f0a1f">
+<style>
+:root{--bg-start:#0f0a1f;--bg-end:#1a0f2e;--glass-bg:rgba(255,255,255,0.05);--glass-border:rgba(255,255,255,0.1);--accent-purple:#8b5cf6;--accent-blue:#6366f1;--success:#10b981;--gold:#f59e0b;--text-primary:#f3f4f6;--text-muted:#9ca3af;--cell-bg:#f3f4f6}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Poppins',sans-serif;background:linear-gradient(135deg,var(--bg-start) 0%,var(--bg-end) 100%);color:var(--text-primary);overflow:hidden;height:100vh;position:relative}
+body::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 20% 30%,rgba(139,92,246,0.15) 0%,transparent 50%),radial-gradient(circle at 80% 70%,rgba(99,102,241,0.15) 0%,transparent 50%);animation:bgShift 15s ease-in-out infinite;pointer-events:none}
+@keyframes bgShift{0%,100%{opacity:0.8;transform:scale(1)}50%{opacity:1;transform:scale(1.1)}}
+#app{position:fixed;inset:0;display:flex;flex-direction:column;padding:2.4vh 3vw;gap:1.6vh;z-index:1}
+#headerBar{flex:0 0 auto;display:flex;align-items:center;justify-content:center}
+#headerBar .title{font-weight:800;font-size:clamp(1rem,3vw,1.5rem);background:linear-gradient(135deg,var(--accent-purple),var(--accent-blue));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;padding:0.5rem 1.5rem;border-radius:50px;border:1px solid var(--glass-border);letter-spacing:0.5px;animation:fadeInDown 0.8s ease}
+@keyframes fadeInDown{from{opacity:0;transform:translateY(-30px)}to{opacity:1;transform:translateY(0)}}
+#slotGrid{flex:0 0 auto;display:grid;grid-template-columns:repeat(2,1fr);grid-template-rows:repeat(3,auto);gap:1.8vh 3vw;justify-items:stretch;align-items:stretch;animation:fadeInUp 0.8s ease 0.2s both}
+@keyframes fadeInUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
+.slot{background:var(--glass-bg);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border:1px solid var(--glass-border);border-radius:14px;width:100%;min-height:clamp(64px,17vw,90px);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:0.5rem;padding:0.8rem 1rem;position:relative;transition:all 0.3s ease;box-shadow:0 4px 16px rgba(0,0,0,0.2)}
+.slot .num-badge{position:absolute;top:-8px;left:-8px;font-weight:800;font-size:0.8rem;background:linear-gradient(135deg,var(--accent-purple),var(--accent-blue));color:#fff;min-width:22px;height:22px;padding:0 0.4rem;border-radius:50px;display:flex;align-items:center;justify-content:center;box-shadow:0 2px 8px rgba(0,0,0,0.4);flex-shrink:0}
+.slot .letters{display:flex;gap:0.3rem;flex-wrap:wrap;justify-content:center;max-width:100%}
+.slot .letter-tile{background:var(--cell-bg);color:#1a0f2e;font-weight:800;font-size:clamp(1rem,3vw,1.4rem);width:clamp(24px,5.4vw,34px);height:clamp(24px,5.4vw,34px);border-radius:6px;display:flex;align-items:center;justify-content:center;box-shadow:0 3px 8px rgba(0,0,0,0.3)}
+.slot.solved{background:rgba(16,185,129,0.15);border-color:rgba(16,185,129,0.3);box-shadow:0 4px 16px rgba(16,185,129,0.3)}
+.slot.solved .letters{display:none}
+.slot .solved-answer{display:none;font-weight:800;font-size:clamp(1.1rem,3.2vw,1.6rem);color:var(--success);letter-spacing:0.5px}
+.slot.solved .solved-answer{display:block;animation:popIn 0.3s ease}
+.slot .solved-by{display:none;font-size:clamp(0.7rem,1.8vw,0.9rem);color:var(--text-muted);font-weight:600}
+.slot.solved .solved-by{display:block}
+@keyframes popIn{from{transform:scale(0.6);opacity:0}to{transform:scale(1);opacity:1}}
+#toast{position:fixed;top:9vh;left:50%;background:linear-gradient(135deg,var(--accent-purple),var(--accent-blue));color:white;padding:0.9rem 1.6rem;border-radius:50px;font-weight:800;font-size:clamp(1rem,2.8vw,1.4rem);white-space:nowrap;box-shadow:0 8px 32px rgba(139,92,246,0.6);opacity:0;pointer-events:none;z-index:50;transform:translate(-50%,-60%) scale(0.5)}
+#toast.show{animation:toastPop 0.6s cubic-bezier(0.34,1.56,0.64,1) forwards}
+@keyframes toastPop{0%{transform:translate(-50%,-60%) scale(0.4);opacity:0}60%{transform:translate(-50%,5%) scale(1.15);opacity:1}100%{transform:translate(-50%,0%) scale(1);opacity:1}}
+#avatarZone{flex:0 0 auto;height:clamp(60px,13vh,120px);position:relative;background:transparent;overflow:visible}
+.mini-avatar{position:absolute;bottom:4px;display:flex;flex-direction:column;align-items:center;pointer-events:none;will-change:left}
+.mini-avatar .emoji{display:block;font-size:26px;line-height:1;animation:avatarBob 0.5s ease-in-out infinite alternate}
+.mini-avatar.facing-right .emoji{transform:scaleX(-1)}
+.mini-avatar .name-tag{font-weight:700;font-size:0.65rem;color:var(--text-primary);background:rgba(0,0,0,0.5);padding:0.1rem 0.5rem;border-radius:50px;margin-bottom:0.15rem;white-space:nowrap;max-width:84px;overflow:hidden;text-overflow:ellipsis;order:-1}
+.mini-avatar .comment-bubble{font-weight:600;font-size:0.7rem;color:#0f0a1f;background:var(--text-primary);padding:0.25rem 0.6rem;border-radius:10px;margin-bottom:0.3rem;white-space:nowrap;max-width:150px;overflow:hidden;text-overflow:ellipsis;box-shadow:0 2px 6px rgba(0,0,0,0.3);position:relative;order:-2}
+.mini-avatar .comment-bubble::after{content:'';position:absolute;bottom:-4px;left:50%;transform:translateX(-50%);border-width:4px 4px 0 4px;border-style:solid;border-color:var(--text-primary) transparent transparent transparent}
+@keyframes avatarBob{from{transform:translateY(0)}to{transform:translateY(-4px)}}
+#leaderboard{position:absolute;top:8px;right:8px;z-index:10;background:var(--glass-bg);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border:1px solid var(--glass-border);border-radius:16px;padding:1rem;min-width:clamp(120px,16vw,180px);max-width:240px;box-shadow:0 8px 32px rgba(0,0,0,0.3);animation:slideInRight 0.8s ease 0.5s both}
+@keyframes slideInRight{from{opacity:0;transform:translateX(50px)}to{opacity:1;transform:translateX(0)}}
+.label{font-weight:700;font-size:clamp(0.75rem,1.7vw,0.9rem);background:linear-gradient(135deg,var(--gold),#fbbf24);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:0.7rem;display:flex;align-items:center;gap:0.3rem}
+#lbList{display:flex;flex-direction:column;gap:0.4rem}
+.lb-row{display:flex;align-items:center;gap:0.5rem;padding:0.35rem 0.5rem;background:rgba(255,255,255,0.03);border-radius:8px;transition:all 0.3s}
+.lb-row:hover{background:rgba(255,255,255,0.08);transform:translateX(4px)}
+.lb-rank{font-weight:800;font-size:clamp(0.7rem,1.6vw,0.85rem);width:clamp(16px,3.2vw,22px);text-align:center;color:var(--text-muted)}
+.lb-row:nth-child(1) .lb-rank{background:linear-gradient(135deg,#fbbf24,#f59e0b);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.lb-row:nth-child(2) .lb-rank{background:linear-gradient(135deg,#e5e7eb,#9ca3af);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.lb-row:nth-child(3) .lb-rank{background:linear-gradient(135deg,#d97706,#92400e);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.lb-name{flex:1;font-weight:600;font-size:clamp(0.65rem,1.5vw,0.8rem);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:20vw}
+.lb-score{font-weight:700;font-size:clamp(0.65rem,1.5vw,0.8rem);color:var(--accent-purple)}
+.empty-hint{color:var(--text-muted);font-size:clamp(0.8rem,1.8vw,1rem);text-align:center;padding:0.8rem 0}
+</style>
+</head>
+<body>
+<div id="app">
+<div id="headerBar"><div class="title">🔤 SUSUN KATA ACAK</div></div>
+<div id="slotGrid"></div>
+<div id="avatarZone"></div>
+</div>
+<div id="leaderboard">
+<div class="label">🏆 Leaderboard</div>
+<div id="lbList"><div class="empty-hint">Belum ada</div></div>
+</div>
+<div id="toast"></div>
+<script src="/socket.io/socket.io.js"></script>
+<script>const socket=io();</script>
+<script src="/shared/v2-bootstrap.js"></script>
+<script src="/shared/game-switch-watcher.js"></script>
+<script>
+const slotGrid=document.getElementById('slotGrid'),lbList=document.getElementById('lbList');
+let prevSolvedSet=new Set();
+function renderSlots(items){slotGrid.innerHTML='';items.forEach((item,idx)=>{const slot=document.createElement('div');slot.className='slot'+(item.solved?' solved':'');const badge=document.createElement('div');badge.className='num-badge';badge.textContent=idx+1;const letters=document.createElement('div');letters.className='letters';if(!item.solved&&item.scrambled){item.scrambled.split('').forEach(ch=>{const tile=document.createElement('div');tile.className='letter-tile';tile.textContent=ch;letters.appendChild(tile)})}const answer=document.createElement('div');answer.className='solved-answer';answer.textContent=item.answer||'';const by=document.createElement('div');by.className='solved-by';by.textContent=item.solvedBy?`✓ ${item.solvedBy}`:'';slot.appendChild(badge);slot.appendChild(letters);slot.appendChild(answer);slot.appendChild(by);slotGrid.appendChild(slot);if(item.solved&&!prevSolvedSet.has(idx)){slot.style.animation='flashGreen 0.5s ease, slotBounce 0.5s ease';prevSolvedSet.add(idx)}})}
+function showToast(data){const toast=document.getElementById('toast');toast.textContent='🎉 '+data.player+' BENAR! "'+data.answer+'"';toast.classList.remove('show');void toast.offsetWidth;toast.classList.add('show');clearTimeout(showToast._hideT);showToast._hideT=setTimeout(()=>toast.classList.remove('show'),2400)}
+function renderLeaderboard(list){if(!list||list.length===0){lbList.innerHTML='<div class="empty-hint">Belum ada</div>';return}lbList.innerHTML=list.map((row,i)=>{const name=String(row.player).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));return`<div class="lb-row"><span class="lb-rank">${i+1}</span><span class="lb-name">${name}</span><span class="lb-score">${row.score}</span></div>`}).join('')}
+const avatarZone=document.getElementById('avatarZone'),activeAvatars={};
+function spawnAvatar(player,emoji,profileUrl,avatarType){if(activeAvatars[player])return;const el=document.createElement('div');el.className='mini-avatar';let avatarHtml='<span class="emoji">'+emoji+'</span>';if(avatarType==='tiktok'&&profileUrl){avatarHtml='<img src="'+profileUrl+'" onerror="this.outerHTML='<span class=\'emoji\'>'+emoji+'</span>'" style="width:24px;height:24px;border-radius:50%;object-fit:cover;margin-right:2px;border:1px solid #fff;display:inline-block;vertical-align:middle;" />'}el.innerHTML=avatarHtml+'<span class="name-tag">'+player+'</span>';avatarZone.appendChild(el);const startLeft=Math.random()*Math.max(0,avatarZone.clientWidth-40);el.style.left=startLeft+'px';activeAvatars[player]={el,timer:null};walkRandomly(player)}
+function walkRandomly(player){const entry=activeAvatars[player];if(!entry)return;const zoneWidth=avatarZone.clientWidth||300,avatarWidth=entry.el.offsetWidth||40,maxLeft=Math.max(0,zoneWidth-avatarWidth),currentLeft=parseFloat(entry.el.style.left)||0,targetLeft=Math.random()*maxLeft,duration=2.5+Math.random()*3;entry.el.classList.toggle('facing-right',targetLeft>currentLeft);entry.el.style.transition=`left ${duration}s linear`;entry.el.style.left=targetLeft+'px';entry.timer=setTimeout(()=>walkRandomly(player),duration*1000)}
+function showComment(player,text){const entry=activeAvatars[player];if(!entry)return;let bubble=entry.el.querySelector('.comment-bubble');if(!bubble){bubble=document.createElement('span');bubble.className='comment-bubble';entry.el.appendChild(bubble)}bubble.textContent=text;clearTimeout(entry.commentTimer);entry.commentTimer=setTimeout(()=>bubble.remove(),4000)}
+function clearAllAvatars(){Object.values(activeAvatars).forEach(({el,timer,commentTimer})=>{clearTimeout(timer);clearTimeout(commentTimer);el.remove()});for(const key in activeAvatars)delete activeAvatars[key]}
+function removeAvatar(player){const entry=activeAvatars[player];if(!entry)return;clearTimeout(entry.timer);clearTimeout(entry.commentTimer);entry.el.remove();delete activeAvatars[player]}
+socket.on('game:switched',()=>window.location.reload());
+socket.on('update',data=>{renderSlots(data.items);if(data.leaderboard)renderLeaderboard(data.leaderboard)});
+socket.on('answer:correct',data=>showToast(data));
+socket.on('leaderboard:update',list=>renderLeaderboard(list));
+socket.on('round:new',()=>{prevSolvedSet.clear()});
+socket.on('avatar:spawn',data=>spawnAvatar(data.player,data.emoji,data.profileUrl,data.avatarType));
+socket.on('avatar:sync',list=>{clearAllAvatars();list.forEach(d=>spawnAvatar(d.player,d.emoji,d.profileUrl,d.avatarType))});
+socket.on('avatar:reset',clearAllAvatars);
+socket.on('avatar:remove',({player})=>removeAvatar(player));
+socket.on('chat:comment',({player,text})=>showComment(player,text));
+let wakeLock=null;
+async function requestWakeLock(){if('wakeLock'in navigator){try{wakeLock=await navigator.wakeLock.request('screen');wakeLock.addEventListener('release',()=>{wakeLock=null})}catch(e){}}}
+document.addEventListener('visibilitychange',()=>{if(document.visibilityState==='visible'&&wakeLock===null)requestWakeLock()});
+requestWakeLock();
+document.body.addEventListener('click',function goFullscreen(){document.documentElement.requestFullscreen().catch(()=>{});requestWakeLock();document.body.removeEventListener('click',goFullscreen)},{once:true});
+</script>
+</body>
+</html>

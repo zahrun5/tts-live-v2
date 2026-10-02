@@ -31,7 +31,7 @@ roomManager.init({
   // Return setelan user dari DB, atau null kalau user nggak ada.
   settingsLoader: async (username) => {
     const u = await User.findOne({ username }).lean();
-    return u ? { activeGame: u.activeGame, randomGames: u.randomGames } : null;
+    return u ? { activeGame: u.activeGame, randomGames: u.randomGames, avatarType: u.avatarType || 'emoji' } : null;
   }
 });
 

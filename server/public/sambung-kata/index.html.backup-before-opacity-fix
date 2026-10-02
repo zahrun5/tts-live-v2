@@ -13,7 +13,7 @@
 :root {
   --bg-start: #0f0a1f;
   --bg-end: #1a0f2e;
-  --glass-bg: rgba(255, 255, 255, 0.25);
+  --glass-bg: rgba(255, 255, 255, 0.05);
   --glass-border: rgba(255, 255, 255, 0.1);
   --accent-purple: #8b5cf6;
   --accent-blue: #6366f1;

@@ -5,8 +5,8 @@ module.exports = {
   tts: require('./tts'),
   'sambung-kata': require('./sambung-kata'),
   'cari-kata': require('./cari-kata'),
-  trivia: require('./trivia'),
   family100: require('./family100'),
   'susun-kata-acak': require('./susun-kata-acak'),
   'susun-kalimat': require('./susun-kalimat'),
+  "hitung-cepat": require("./hitung-cepat"),
 };

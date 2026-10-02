@@ -5,57 +5,275 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Susun Kata Acak Live</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;800&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 <link rel="manifest" href="/manifest.json">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="theme-color" content="#14101f">
 <style>
-:root{--bg-start:#0f0a1f;--bg-end:#1a0f2e;--glass-bg:rgba(26,15,46,0.1);--glass-border:rgba(26,15,46,0.1);--accent-purple:#8b5cf6;--accent-blue:#6366f1;--success:#10b981;--gold:#f59e0b;--text-primary:#f3f4f6;--text-muted:#9ca3af;--cell-bg:#f3f4f6}
-*{margin:0;padding:0;box-sizing:border-box}
-body{font-family:'Poppins',sans-serif;background:linear-gradient(135deg,var(--bg-start) 0%,var(--bg-end) 100%);color:var(--text-primary);overflow:hidden;height:100vh;position:relative}
-body::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 20% 30%,rgba(26,15,46,0.1) 0%,transparent 50%),radial-gradient(circle at 80% 70%,rgba(26,15,46,0.1) 0%,transparent 50%);animation:bgShift 15s ease-in-out infinite;pointer-events:none}
-@keyframes bgShift{0%,100%{opacity:0.8;transform:scale(1)}50%{opacity:1;transform:scale(1.1)}}
-#app{position:fixed;inset:0;display:flex;flex-direction:column;padding:2.4vh 3vw;gap:1.6vh;z-index:1}
-#headerBar{flex:0 0 auto;display:flex;align-items:center;justify-content:center}
-#headerBar .title{font-weight:800;font-size:clamp(1rem,3vw,1.5rem);background:linear-gradient(135deg,var(--accent-purple),var(--accent-blue));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;padding:0.5rem 1.5rem;border-radius:50px;border:1px solid var(--glass-border);letter-spacing:0.5px;animation:fadeInDown 0.8s ease}
-@keyframes fadeInDown{from{opacity:0;transform:translateY(-30px)}to{opacity:1;transform:translateY(0)}}
-#slotGrid{flex:0 0 auto;display:grid;grid-template-columns:repeat(2,1fr);grid-template-rows:repeat(3,auto);gap:1.8vh 3vw;justify-items:stretch;align-items:stretch;animation:fadeInUp 0.8s ease 0.2s both}
-@keyframes fadeInUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
-.slot{background:var(--glass-bg);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border:1px solid var(--glass-border);border-radius:14px;width:100%;min-height:clamp(64px,17vw,90px);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:0.5rem;padding:0.8rem 1rem;position:relative;transition:all 0.3s ease;box-shadow:0 4px 16px rgba(26,15,46,0.1)}
-.slot .num-badge{position:absolute;top:-8px;left:-8px;font-weight:800;font-size:0.8rem;background:linear-gradient(135deg,var(--accent-purple),var(--accent-blue));color:#fff;min-width:22px;height:22px;padding:0 0.4rem;border-radius:50px;display:flex;align-items:center;justify-content:center;box-shadow:0 2px 8px rgba(26,15,46,0.1);flex-shrink:0}
-.slot .letters{display:flex;gap:0.3rem;flex-wrap:wrap;justify-content:center;max-width:100%}
-.slot .letter-tile{background:var(--cell-bg);color:#1a0f2e;font-weight:800;font-size:clamp(1rem,3vw,1.4rem);width:clamp(24px,5.4vw,34px);height:clamp(24px,5.4vw,34px);border-radius:6px;display:flex;align-items:center;justify-content:center;box-shadow:0 3px 8px rgba(26,15,46,0.1)}
-.slot.solved{background:rgba(26,15,46,0.1);border-color:rgba(26,15,46,0.1);box-shadow:0 4px 16px rgba(26,15,46,0.1)}
-.slot.solved .letters{display:none}
-.slot .solved-answer{display:none;font-weight:800;font-size:clamp(1.1rem,3.2vw,1.6rem);color:var(--success);letter-spacing:0.5px}
-.slot.solved .solved-answer{display:block;animation:popIn 0.3s ease}
-.slot .solved-by{display:none;font-size:clamp(0.7rem,1.8vw,0.9rem);color:var(--text-muted);font-weight:600}
-.slot.solved .solved-by{display:block}
-@keyframes popIn{from{transform:scale(0.6);opacity:0}to{transform:scale(1);opacity:1}}
-#toast{position:fixed;top:9vh;left:50%;background:linear-gradient(135deg,var(--accent-purple),var(--accent-blue));color:white;padding:0.9rem 1.6rem;border-radius:50px;font-weight:800;font-size:clamp(1rem,2.8vw,1.4rem);white-space:nowrap;box-shadow:0 8px 32px rgba(26,15,46,0.1);opacity:0;pointer-events:none;z-index:50;transform:translate(-50%,-60%) scale(0.5)}
-#toast.show{animation:toastPop 0.6s cubic-bezier(0.34,1.56,0.64,1) forwards}
-@keyframes toastPop{0%{transform:translate(-50%,-60%) scale(0.4);opacity:0}60%{transform:translate(-50%,5%) scale(1.15);opacity:1}100%{transform:translate(-50%,0%) scale(1);opacity:1}}
-#avatarZone{flex:0 0 auto;height:clamp(60px,13vh,120px);position:relative;background:transparent;overflow:visible}
-.mini-avatar{position:absolute;bottom:4px;display:flex;flex-direction:column;align-items:center;pointer-events:none;will-change:left}
-.mini-avatar .emoji{display:block;font-size:26px;line-height:1;animation:avatarBob 0.5s ease-in-out infinite alternate}
-.mini-avatar.facing-right .emoji{transform:scaleX(-1)}
-.mini-avatar .name-tag{font-weight:700;font-size:0.65rem;color:var(--text-primary);background:rgba(26,15,46,0.1);padding:0.1rem 0.5rem;border-radius:50px;margin-bottom:0.15rem;white-space:nowrap;max-width:84px;overflow:hidden;text-overflow:ellipsis;order:-1}
-.mini-avatar .comment-bubble{font-weight:600;font-size:0.7rem;color:#0f0a1f;background:var(--text-primary);padding:0.25rem 0.6rem;border-radius:10px;margin-bottom:0.3rem;white-space:nowrap;max-width:150px;overflow:hidden;text-overflow:ellipsis;box-shadow:0 2px 6px rgba(26,15,46,0.1);position:relative;order:-2}
-.mini-avatar .comment-bubble::after{content:'';position:absolute;bottom:-4px;left:50%;transform:translateX(-50%);border-width:4px 4px 0 4px;border-style:solid;border-color:var(--text-primary) transparent transparent transparent}
-@keyframes avatarBob{from{transform:translateY(0)}to{transform:translateY(-4px)}}
-#leaderboard{position:absolute;top:8px;right:8px;z-index:10;background:var(--glass-bg);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border:1px solid var(--glass-border);border-radius:16px;padding:1rem;min-width:clamp(120px,16vw,180px);max-width:240px;box-shadow:0 8px 32px rgba(26,15,46,0.1);animation:slideInRight 0.8s ease 0.5s both}
-@keyframes slideInRight{from{opacity:0;transform:translateX(50px)}to{opacity:1;transform:translateX(0)}}
-.label{font-weight:700;font-size:clamp(0.75rem,1.7vw,0.9rem);background:linear-gradient(135deg,var(--gold),#fbbf24);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:0.7rem;display:flex;align-items:center;gap:0.3rem}
-#lbList{display:flex;flex-direction:column;gap:0.4rem}
-.lb-row{display:flex;align-items:center;gap:0.5rem;padding:0.35rem 0.5rem;background:rgba(26,15,46,0.1);border-radius:8px;transition:all 0.3s}
-.lb-row:hover{background:rgba(26,15,46,0.1);transform:translateX(4px)}
-.lb-rank{font-weight:800;text-shadow:0 2px 8px rgba(26,15,46,0.1), 0 0 4px rgba(26,15,46,0.1);text-shadow:0 2px 8px rgba(26,15,46,0.1), 0 0 4px rgba(26,15,46,0.1);font-size:clamp(0.7rem,1.6vw,0.85rem);width:clamp(16px,3.2vw,22px);text-align:center;color:var(--text-muted)}
-.lb-row:nth-child(1) .lb-rank{background:linear-gradient(135deg,#fbbf24,#f59e0b);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
-.lb-row:nth-child(2) .lb-rank{background:linear-gradient(135deg,#e5e7eb,#9ca3af);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
-.lb-row:nth-child(3) .lb-rank{background:linear-gradient(135deg,#d97706,#92400e);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
-.lb-name{flex:1;font-weight:600;text-shadow:0 2px 8px rgba(26,15,46,0.1), 0 0 4px rgba(26,15,46,0.1);text-shadow:0 2px 8px rgba(26,15,46,0.1), 0 0 4px rgba(26,15,46,0.1);font-size:clamp(0.65rem,1.5vw,0.8rem);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:20vw}
-.lb-score{font-weight:700;text-shadow:0 2px 8px rgba(26,15,46,0.1), 0 0 4px rgba(26,15,46,0.1);font-size;text-shadow:0 2px 8px rgba(26,15,46,0.1), 0 0 4px rgba(26,15,46,0.1):clamp(0.65rem,1.5vw,0.8rem);color:var(--accent-purple)}
-.empty-hint{color:var(--text-muted);font-size:clamp(0.8rem,1.8vw,1rem);text-align:center;padding:0.8rem 0}
+  :root {
+    --bg-deep: #14101f;
+    --panel: #1f1a33;
+    --panel-light: #2a2340;
+    --accent: #8b6ef5;
+    --accent-soft: rgba(139, 110, 245, 0.25);
+    --gold: #f5b942;
+    --silver: #c9c9d4;
+    --bronze: #d08a5b;
+    --green: #4ade80;
+    --text-primary: #f5f3fb;
+    --text-muted: #9b93b8;
+    --cell-bg: #f5f3fb;
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0; padding: 0;
+    width: 100%; height: 100%;
+    background: var(--bg-deep);
+    color: var(--text-primary);
+    font-family: 'Inter', sans-serif;
+    overflow: hidden;
+  }
+  /* position:fixed + inset:0 dipilih SENGAJA, bukan 100vh/100vw.
+     100vh itu ngukur "layout viewport" yang TETEP gede penuh walau
+     keyboard Android lagi muncul -- makanya konten di bawah ketutup
+     keyboard tapi tetep dianggap "ada" sama browser (makanya nggak keliatan).
+     position:fixed ngikutin "visual viewport" yang beneran keliatan di
+     layar, jadi otomatis ngecil pas keyboard muncul dan seluruh isinya
+     tetep ada di area yang keliatan. Ditambah JS di bawah
+     sebagai jaga-jaga buat WebView Android yang nggak sepenuhnya nurut. */
+  #app {
+    position: fixed; inset: 0;
+    display: flex; flex-direction: column;
+    padding: 2.4vh 3vw;
+    gap: 1.6vh;
+  }
+  #headerBar {
+    flex: 0 0 auto;
+    display: flex; align-items: center; justify-content: center;
+  }
+  #headerBar .title {
+    font-family: 'Baloo 2', sans-serif; font-weight: 800;
+    font-size: clamp(14px, 3.6vw, 20px);
+    background: rgba(139, 110, 245, 0.18);
+    color: var(--accent);
+    padding: 6px 16px; border-radius: 999px;
+    letter-spacing: 0.3px;
+  }
+
+  #slotGrid {
+    flex: 0 0 auto; display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    gap: 1.8vh 3vw;
+    justify-items: stretch;
+    align-items: stretch;
+  }
+  .slot {
+    background: var(--panel);
+    border-radius: 14px;
+    width: 100%;
+    min-height: clamp(64px, 17vw, 90px);
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    gap: 6px; padding: 10px 12px;
+    position: relative;
+    transition: background .25s ease, transform .25s ease;
+  }
+  .slot .num-badge {
+    position: absolute; top: -8px; left: -8px;
+    font-family: 'Baloo 2', sans-serif; font-weight: 800;
+    font-size: 11px;
+    background: var(--accent); color: #fff;
+    min-width: 20px; height: 20px; padding: 0 5px;
+    border-radius: 999px;
+    display: flex; align-items: center; justify-content: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+    flex-shrink: 0;
+  }
+  .slot .letters {
+    display: flex; gap: 4px; flex-wrap: wrap; justify-content: center; max-width: 100%;
+  }
+  .slot .letter-tile {
+    background: var(--cell-bg); color: #241c3a;
+    font-family: 'Baloo 2', sans-serif; font-weight: 800;
+    font-size: clamp(14px, 3.4vw, 20px);
+    width: clamp(22px, 5.4vw, 32px); height: clamp(22px, 5.4vw, 32px);
+    border-radius: 6px;
+    display: flex; align-items: center; justify-content: center;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.3);
+  }
+
+  /* Status "solved" -- kejawab, tampilin jawaban + siapa yang jawab.
+     (Dulu namanya "cooldown"; server sekarang ngirim status "solved", jadi
+     selector lama nggak pernah kena dan slot yang kejawab nggak berubah.) */
+  .slot.solved { background: #1c3a24; }
+  .slot.solved .letters { display: none; }
+  .slot .solved-answer {
+    display: none;
+    font-family: 'Baloo 2', sans-serif; font-weight: 800;
+    font-size: clamp(15px, 3.6vw, 22px);
+    color: var(--green); letter-spacing: 1px;
+  }
+  .slot.solved .solved-answer { display: block; animation: popIn .3s ease; }
+  .slot .solved-by {
+    display: none;
+    font-size: clamp(9px, 2vw, 11px); color: var(--text-muted); font-weight: 600;
+  }
+  .slot.solved .solved-by { display: block; }
+
+  @keyframes popIn { from { transform: scale(0.6); opacity: 0; } to { transform: scale(1); opacity: 1; } }
+  @keyframes flashGreen {
+    0% { background: var(--panel); }
+    40% { background: #234a2c; }
+    100% { background: #1c3a24; }
+  }
+  @keyframes slotBounce {
+    0%   { transform: scale(1); }
+    35%  { transform: scale(1.09); }
+    65%  { transform: scale(0.97); }
+    100% { transform: scale(1); }
+  }
+  .slot.just-solved { animation: flashGreen .5s ease, slotBounce .5s ease; }
+
+  /* Toast + confetti pas ada yang jawab benar (pola sama kayak family100) */
+  #toast {
+    position: fixed; top: 9vh; left: 50%;
+    background: var(--accent); color: #14101f;
+    padding: 12px 22px; border-radius: 999px; font-weight: 800;
+    font-family: 'Baloo 2', sans-serif;
+    font-size: clamp(14px, 3.6vw, 19px); white-space: nowrap;
+    box-shadow: 0 0 0 rgba(0,0,0,0);
+    opacity: 0; pointer-events: none; z-index: 50;
+    transform: translate(-50%, -60%) scale(0.5);
+  }
+  #toast.show {
+    animation: toastPop 0.55s cubic-bezier(.34,1.56,.64,1) forwards,
+               toastGlow 0.55s ease-out forwards;
+  }
+  @keyframes toastPop {
+    0%   { transform: translate(-50%, -60%) scale(0.4) rotate(-4deg); opacity: 0; }
+    55%  { transform: translate(-50%, 12%) scale(1.22) rotate(2deg); opacity: 1; }
+    75%  { transform: translate(-50%, -6%) scale(0.94) rotate(-1deg); }
+    100% { transform: translate(-50%, 0%) scale(1) rotate(0deg); opacity: 1; }
+  }
+  @keyframes toastGlow {
+    0% { box-shadow: 0 0 0 rgba(0,0,0,0); }
+    50% { box-shadow: 0 0 32px 6px var(--toast-glow, rgba(139,110,245,0.7)); }
+    100% { box-shadow: 0 0 14px 2px var(--toast-glow, rgba(139,110,245,0.4)); }
+  }
+  .confetti-piece {
+    position: absolute; top: 50%; left: 50%;
+    width: 7px; height: 7px; border-radius: 2px;
+    pointer-events: none; z-index: 7;
+    animation: confettiBurst 0.85s cubic-bezier(.25,.8,.35,1) forwards;
+  }
+  @keyframes confettiBurst {
+    0%   { transform: translate(-50%, -50%) translate(0, 0) rotate(0deg) scale(1); opacity: 1; }
+    100% { transform: translate(-50%, -50%) translate(var(--tx), var(--ty)) rotate(var(--rot)) scale(0.4); opacity: 0; }
+  }
+
+  /* Avatar zone (viewer TikTok yang lagi komen) -- pola sama kayak
+     sambung-kata/family100. Ngisi ruang yang dulu kepake sama kartu
+     slot pas masih gede, sekarang jadi arena avatar jalan-jalan. */
+  #avatarZone {
+    flex: 0 0 auto;
+    height: clamp(60px, 13vh, 120px);
+    position: relative;
+    background: transparent;
+    overflow: visible;
+  }
+  .mini-avatar {
+    position: absolute;
+    bottom: 4px;
+    display: flex; flex-direction: column; align-items: center;
+    pointer-events: none;
+    will-change: left;
+  }
+  .mini-avatar .emoji {
+    display: block; font-size: 26px; line-height: 1;
+    animation: avatarBob 0.5s ease-in-out infinite alternate;
+  }
+  .mini-avatar.facing-right .emoji { transform: scaleX(-1); }
+  .mini-avatar .name-tag {
+    font-family: 'Baloo 2', sans-serif; font-weight: 700; font-size: 8px;
+    color: var(--text-primary); background: rgba(0,0,0,0.45);
+    padding: 1px 6px; border-radius: 999px; margin-bottom: 2px;
+    white-space: nowrap; max-width: 84px; overflow: hidden; text-overflow: ellipsis;
+    order: -1;
+  }
+  .mini-avatar .comment-bubble {
+    font-family: 'Inter', sans-serif; font-weight: 600; font-size: 9.5px;
+    color: #14101f; background: var(--text-primary);
+    padding: 3px 9px; border-radius: 10px; margin-bottom: 4px;
+    white-space: nowrap; max-width: 150px; overflow: hidden; text-overflow: ellipsis;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    position: relative; order: -2;
+  }
+  .mini-avatar .comment-bubble::after {
+    content: '';
+    position: absolute; bottom: -4px; left: 50%; transform: translateX(-50%);
+    border-width: 4px 4px 0 4px; border-style: solid;
+    border-color: var(--text-primary) transparent transparent transparent;
+  }
+  @keyframes avatarBob {
+    from { transform: translateY(0); }
+    to   { transform: translateY(-4px); }
+  }
+
+  #leaderboard {
+    position: absolute; top: 8px; right: 8px; z-index: 4;
+    background: rgba(31, 26, 51, 0.82); border-radius: 12px;
+    padding: 8px 10px; display: flex; flex-direction: column;
+    min-width: 120px; max-width: 44vw;
+  }
+  #leaderboard .label {
+    font-family: 'Baloo 2', sans-serif; font-weight: 600;
+    font-size: 10px; color: var(--gold);
+    margin-bottom: 5px; display: flex; align-items: center; gap: 4px;
+  }
+  #lbList { display: flex; flex-direction: column; gap: 3px; }
+  .lb-row { display: flex; align-items: center; gap: 6px; }
+  .lb-rank {
+    font-family: 'Baloo 2', sans-serif; font-weight: 800;
+    font-size: 10px; width: 12px; text-align: center; color: var(--text-muted);
+  }
+  .lb-row:nth-child(1) .lb-rank { color: var(--gold); }
+  .lb-row:nth-child(2) .lb-rank { color: var(--silver); }
+  .lb-row:nth-child(3) .lb-rank { color: var(--bronze); }
+  .lb-name { font-size: 10px; font-weight: 600; flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 90px; }
+  .lb-score { font-size: 10px; font-weight: 800; color: var(--text-primary); }
+  .empty-hint { font-size: 10px; color: var(--text-muted); }
+
+  #hint {
+    flex: 0 0 auto; text-align: center;
+    font-size: clamp(11px, 2.6vw, 14px); color: var(--text-muted); font-weight: 600;
+  }
+  #hint b { color: var(--gold); font-weight: 800; }
+
+  /* Hint fitur vote ganti/skip, running text 1 baris -- pola sama kayak
+     Family 100 & Sambung Kata */
+  #voteHintInline {
+    flex: 0 0 auto;
+    overflow: hidden;
+    white-space: nowrap;
+    font-family: 'Inter', sans-serif;
+    font-size: clamp(12px, 3vw, 15px);
+    font-weight: 600;
+    color: var(--text-muted);
+    text-shadow: 0 2px 6px rgba(0,0,0,0.6);
+    padding: 2px 0;
+    -webkit-mask-image: linear-gradient(90deg, transparent, black 4%, black 96%, transparent);
+    mask-image: linear-gradient(90deg, transparent, black 4%, black 96%, transparent);
+  }
+  #voteHintInline b { color: var(--gold); font-weight: 800; }
+  #voteHintInline .marquee-track {
+    display: inline-block;
+    padding-left: 100%;
+    animation: marqueeScroll 20s linear infinite;
+  }
+  @keyframes marqueeScroll {
+    0%   { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+  }
 </style>
 </head>
 <body>

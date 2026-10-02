@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cari Kata Live</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="manifest" href="/manifest.json">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="theme-color" content="#0f0a1f">
+<style>
+:root{--bg-start:#0f0a1f;--bg-end:#1a0f2e;--glass-bg:rgba(255,255,255,0.05);--glass-border:rgba(255,255,255,0.1);--accent-purple:#8b5cf6;--accent-blue:#6366f1;--success:#10b981;--gold:#f59e0b;--text-primary:#f3f4f6;--text-muted:#9ca3af;--cell-bg:#f3f4f6}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Poppins',sans-serif;background:linear-gradient(135deg,var(--bg-start) 0%,var(--bg-end) 100%);color:var(--text-primary);overflow:hidden;height:100vh;position:relative}
+body::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 20% 30%,rgba(139,92,246,0.15) 0%,transparent 50%),radial-gradient(circle at 80% 70%,rgba(99,102,241,0.15) 0%,transparent 50%);animation:bgShift 15s ease-in-out infinite;pointer-events:none}
+@keyframes bgShift{0%,100%{opacity:0.8;transform:scale(1)}50%{opacity:1;transform:scale(1.1)}}
+#app{height:100vh;display:flex;flex-direction:column;padding:2vh 2vw;gap:1.5vh;position:relative;z-index:1}
+#themeBar{flex:0 0 auto;background:var(--glass-bg);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border:1px solid var(--glass-border);border-radius:16px;padding:0.7rem 1.2rem;display:flex;align-items:center;justify-content:space-between;box-shadow:0 8px 32px rgba(0,0,0,0.3);animation:fadeInDown 0.8s ease}
+@keyframes fadeInDown{from{opacity:0;transform:translateY(-30px)}to{opacity:1;transform:translateY(0)}}
+.themeBar-label{font-weight:800;font-size:clamp(0.65rem,1.6vw,0.85rem);background:linear-gradient(135deg,var(--gold),#fbbf24);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;padding:0.25rem 0.7rem;border-radius:50px;border:1px solid rgba(245,158,11,0.3);letter-spacing:0.5px;white-space:nowrap}
+.themeBar-text{font-weight:700;font-size:clamp(0.95rem,2.6vw,1.4rem);color:var(--text-primary);flex:1;text-align:center;padding:0 0.8rem}
+.themeBar-progress{font-weight:800;font-size:clamp(0.85rem,2.2vw,1.2rem);color:var(--text-muted);white-space:nowrap}
+#gridWrap{flex:2;display:flex;align-items:center;justify-content:center;min-height:0;position:relative}
+#gridBox{position:relative}
+#grid{display:grid;gap:2px;background:rgba(0,0,0,0.2);padding:6px;border-radius:12px;box-shadow:0 8px 32px rgba(0,0,0,0.3);animation:fadeInUp 0.8s ease 0.2s both}
+@keyframes fadeInUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
+.cell{background:var(--cell-bg);border-radius:3px;display:flex;align-items:center;justify-content:center;font-weight:700;color:#1a0f2e;font-size:0.78em;position:relative;box-shadow:0 2px 8px rgba(0,0,0,0.2)}
+#lineLayer{position:absolute;top:6px;left:6px;pointer-events:none}
+#toast{position:absolute;top:-6px;left:50%;background:linear-gradient(135deg,var(--accent-purple),var(--accent-blue));color:white;padding:0.9rem 1.6rem;border-radius:50px;font-weight:800;font-size:clamp(1rem,2.8vw,1.4rem);white-space:nowrap;box-shadow:0 8px 32px rgba(139,92,246,0.6);opacity:0;pointer-events:none;z-index:6;transform:translate(-50%,-60%) scale(0.5)}
+#toast.show{animation:toastPop 0.6s cubic-bezier(0.34,1.56,0.64,1) forwards}
+@keyframes toastPop{0%{transform:translate(-50%,-60%) scale(0.4);opacity:0}60%{transform:translate(-50%,5%) scale(1.15);opacity:1}100%{transform:translate(-50%,0%) scale(1);opacity:1}}
+#wordCard{flex:1.2;background:var(--glass-bg);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border:1px solid var(--glass-border);border-radius:16px;padding:1rem;display:flex;flex-direction:column;min-height:0;overflow:hidden;box-shadow:0 8px 32px rgba(0,0,0,0.3)}
+#wordCard .label{font-weight:700;font-size:clamp(0.8rem,2vw,1rem);background:linear-gradient(135deg,var(--accent-purple),var(--accent-blue));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:0.7rem;display:flex;align-items:center;gap:0.4rem}
+#wordList{flex:1;display:flex;flex-wrap:wrap;align-content:flex-start;gap:0.6rem;overflow:hidden}
+.word-chip{border-radius:8px;padding:0.5rem 0.8rem;font-weight:700;font-size:clamp(0.8rem,2vw,1rem);letter-spacing:1px;transition:all 0.3s}
+.word-chip.pending{background:rgba(255,255,255,0.08);color:var(--text-muted);border:1px solid var(--glass-border)}
+.word-chip.found{color:#1a0f2e;animation:chipReveal 0.5s cubic-bezier(0.34,1.56,0.64,1)}
+@keyframes chipReveal{0%{transform:scale(0.5);opacity:0}60%{transform:scale(1.1)}100%{transform:scale(1);opacity:1}}
+#avatarZone{flex:0 0 70px;position:relative;background:transparent;overflow:visible;min-height:70px}
+.mini-avatar{position:absolute;bottom:4px;display:flex;flex-direction:column;align-items:center;pointer-events:none;will-change:left}
+.mini-avatar .emoji{display:block;font-size:26px;line-height:1;animation:avatarBob 0.5s ease-in-out infinite alternate}
+.mini-avatar.facing-left .emoji{transform:scaleX(-1)}
+.mini-avatar .name-tag{font-weight:700;font-size:0.65rem;color:var(--text-primary);background:rgba(0,0,0,0.5);padding:0.1rem 0.5rem;border-radius:50px;margin-bottom:0.15rem;white-space:nowrap;max-width:84px;overflow:hidden;text-overflow:ellipsis;order:-1}
+.mini-avatar .comment-bubble{font-weight:600;font-size:0.7rem;color:#0f0a1f;background:var(--text-primary);padding:0.25rem 0.6rem;border-radius:10px;margin-bottom:0.3rem;white-space:nowrap;max-width:150px;overflow:hidden;text-overflow:ellipsis;box-shadow:0 2px 6px rgba(0,0,0,0.3);position:relative;order:-2}
+.mini-avatar .comment-bubble::after{content:'';position:absolute;bottom:-4px;left:50%;transform:translateX(-50%);border-width:4px 4px 0 4px;border-style:solid;border-color:var(--text-primary) transparent transparent transparent}
+@keyframes avatarBob{from{transform:translateY(0)}to{transform:translateY(-4px)}}
+#leaderboard{position:absolute;top:8px;right:8px;z-index:10;background:var(--glass-bg);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border:1px solid var(--glass-border);border-radius:16px;padding:1rem;min-width:clamp(120px,16vw,180px);max-width:240px;box-shadow:0 8px 32px rgba(0,0,0,0.3);animation:slideInRight 0.8s ease 0.5s both}
+@keyframes slideInRight{from{opacity:0;transform:translateX(50px)}to{opacity:1;transform:translateX(0)}}
+.label{font-weight:700;font-size:clamp(0.75rem,1.7vw,0.9rem);background:linear-gradient(135deg,var(--gold),#fbbf24);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:0.7rem;display:flex;align-items:center;gap:0.3rem}
+#lbList{display:flex;flex-direction:column;gap:0.4rem}
+.lb-row{display:flex;align-items:center;gap:0.5rem;padding:0.35rem 0.5rem;background:rgba(255,255,255,0.03);border-radius:8px;transition:all 0.3s}
+.lb-row:hover{background:rgba(255,255,255,0.08);transform:translateX(4px)}
+.lb-rank{font-weight:800;font-size:clamp(0.7rem,1.6vw,0.85rem);width:clamp(16px,3.2vw,22px);text-align:center;color:var(--text-muted)}
+.lb-row:nth-child(1) .lb-rank{background:linear-gradient(135deg,#fbbf24,#f59e0b);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.lb-row:nth-child(2) .lb-rank{background:linear-gradient(135deg,#e5e7eb,#9ca3af);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.lb-row:nth-child(3) .lb-rank{background:linear-gradient(135deg,#d97706,#92400e);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.lb-name{flex:1;font-weight:600;font-size:clamp(0.65rem,1.5vw,0.8rem);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:20vw}
+.lb-score{font-weight:700;font-size:clamp(0.65rem,1.5vw,0.8rem);color:var(--accent-purple)}
+.empty-hint{color:var(--text-muted);font-size:clamp(0.8rem,1.8vw,1rem);text-align:center;padding:0.8rem 0}
+#banner{position:fixed;bottom:2vh;left:50%;transform:translateX(-50%);background:var(--glass-bg);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border:1px solid var(--glass-border);color:var(--text-primary);padding:0.8rem 1.5rem;border-radius:50px;font-size:clamp(0.85rem,2vw,1.1rem);font-weight:600;display:none;z-index:10;box-shadow:0 8px 32px rgba(0,0,0,0.3)}
+#banner.show{display:block}
+@media(orientation:landscape){#app{display:grid;grid-template-columns:1fr minmax(240px,32%);grid-template-rows:auto 1fr auto;grid-template-areas:"theme theme" "grid words" "avatars avatars";gap:1.4vh 1.6vw;padding:2vh 2.4vw}#themeBar{grid-area:theme}#gridWrap{grid-area:grid;min-width:0}#wordCard{grid-area:words;flex:unset;min-height:0}#avatarZone{grid-area:avatars}}
+</style>
+</head>
+<body>
+<div id="app">
+<div id="themeBar">
+<span class="themeBar-label">TEMA</span>
+<span class="themeBar-text">Menunggu soal...</span>
+<span class="themeBar-progress">0/0</span>
+</div>
+<div id="gridWrap">
+<div id="toast"></div>
+<div id="gridBox">
+<div id="grid"></div>
+<svg id="lineLayer"></svg>
+</div>
+</div>
+<div id="avatarZone"></div>
+<div id="wordCard">
+<div class="label">📝 Daftar Kata</div>
+<div id="wordList"></div>
+</div>
+</div>
+<div id="leaderboard">
+<div class="label">🏆 Leaderboard</div>
+<div id="lbList"><div class="empty-hint">Belum ada</div></div>
+</div>
+<div id="banner"></div>
+<script src="/socket.io/socket.io.js"></script>
+<script>const socket=io();</script>
+<script src="/shared/v2-bootstrap.js"></script>
+<script src="/shared/game-switch-watcher.js"></script>
+<script src="/shared/vote-overlay.js"></script>
+<script>
+const gridEl=document.getElementById('grid'),gridBox=document.getElementById('gridBox'),lineLayer=document.getElementById('lineLayer'),themeText=document.querySelector('.themeBar-text'),themeProgress=document.querySelector('.themeBar-progress'),wordListEl=document.getElementById('wordList');
+let lastState=null;
+function renderGrid(data){lastState=data;const{rows,cols,grid}=data,wrap=document.getElementById('gridWrap'),cellSize=Math.floor(Math.min(wrap.clientWidth/cols,wrap.clientHeight/rows))-2;gridEl.style.gridTemplateColumns=`repeat(${cols}, ${cellSize}px)`;gridEl.style.gridTemplateRows=`repeat(${rows}, ${cellSize}px)`;gridEl.style.fontSize=`${cellSize}px`;gridEl.innerHTML='';for(let r=0;r<rows;r++){for(let c=0;c<cols;c++){const div=document.createElement('div');div.className='cell';div.textContent=grid[r][c];gridEl.appendChild(div)}}const gap=2,boxW=cols*cellSize+(cols-1)*gap,boxH=rows*cellSize+(rows-1)*gap;lineLayer.setAttribute('width',boxW);lineLayer.setAttribute('height',boxH);lineLayer.setAttribute('viewBox',`0 0 ${boxW} ${boxH}`);drawFoundLines(data,cellSize,gap);renderThemeBar(data);renderWordList(data)}
+function cellCenter(row,col,cellSize,gap){return{x:col*(cellSize+gap)+cellSize/2,y:row*(cellSize+gap)+cellSize/2}}
+function drawFoundLines(data,cellSize,gap){lineLayer.innerHTML='';data.words.filter(w=>w.found).forEach(w=>{const start=cellCenter(w.row,w.col,cellSize,gap);let endRow=w.row,endCol=w.col;if(w.direction==='horizontal'){endCol=w.col+w.length-1}else if(w.direction==='vertical'){endRow=w.row+w.length-1}else if(w.direction==='diagonal-down'){endRow=w.row+w.length-1;endCol=w.col+w.length-1}else if(w.direction==='diagonal-up'){endRow=w.row-(w.length-1);endCol=w.col+w.length-1}const end=cellCenter(endRow,endCol,cellSize,gap),line=document.createElementNS('http://www.w3.org/2000/svg','line');line.setAttribute('x1',start.x);line.setAttribute('y1',start.y);line.setAttribute('x2',end.x);line.setAttribute('y2',end.y);line.setAttribute('stroke',w.color);line.setAttribute('stroke-width',Math.max(2,cellSize*0.1));line.setAttribute('stroke-linecap','round');line.setAttribute('opacity','0.78');lineLayer.appendChild(line)})}
+function renderThemeBar(data){themeText.textContent=data.theme||'Menunggu soal...';themeProgress.textContent=`${data.foundCount}/${data.totalCount}`}
+function renderWordList(data){wordListEl.innerHTML='';data.words.forEach(w=>{const chip=document.createElement('div');if(w.found){chip.className='word-chip found';chip.style.background=w.color;chip.textContent=w.word||'???'}else{chip.className='word-chip pending';chip.textContent='*'.repeat(w.length)}wordListEl.appendChild(chip)})}
+function showToast(data){const toast=document.getElementById('toast'),color=data.color||'var(--accent-purple)';toast.textContent='🎉 '+data.player+' BENAR! "'+data.word+'" +'+data.points;toast.style.background=`linear-gradient(135deg, ${color}, var(--accent-blue))`;toast.classList.remove('show');void toast.offsetWidth;toast.classList.add('show');clearTimeout(showToast._hideT);showToast._hideT=setTimeout(()=>toast.classList.remove('show'),2400)}
+function renderLeaderboard(list){const lb=document.getElementById('lbList');if(!list.length){lb.innerHTML='<div class="empty-hint">Belum ada</div>';return}lb.innerHTML=list.map((row,i)=>{const name=String(row.player).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));return`<div class="lb-row"><span class="lb-rank">${i+1}</span><span class="lb-name">${name}</span><span class="lb-score">${row.score}</span></div>`}).join('')}
+function showBanner(msg){const banner=document.getElementById('banner');banner.textContent=msg;banner.classList.add('show')}
+function hideBanner(){document.getElementById('banner').classList.remove('show')}
+const avatarZone=document.getElementById('avatarZone'),activeAvatars={};
+function spawnAvatar(player,emoji,profileUrl,avatarType){if(activeAvatars[player])return;const el=document.createElement('div');el.className='mini-avatar';let avatarHtml='<span class="emoji">'+emoji+'</span>';if(avatarType==='tiktok'&&profileUrl){avatarHtml='<img src="'+profileUrl+'" onerror="this.outerHTML='<span class=\'emoji\'>'+emoji+'</span>'" style="width:24px;height:24px;border-radius:50%;object-fit:cover;margin-right:2px;border:1px solid #fff;display:inline-block;vertical-align:middle;" />'}el.innerHTML=avatarHtml+'<span class="name-tag">'+player+'</span>';avatarZone.appendChild(el);el.style.left=(Math.random()*Math.max(0,avatarZone.clientWidth-40))+'px';activeAvatars[player]={el,timer:null};walkRandomly(player)}
+function walkRandomly(player){const entry=activeAvatars[player];if(!entry)return;const zoneWidth=avatarZone.clientWidth||300,avatarWidth=entry.el.offsetWidth||40,maxLeft=Math.max(0,zoneWidth-avatarWidth),currentLeft=parseFloat(entry.el.style.left)||0,targetLeft=Math.random()*maxLeft,duration=2.5+Math.random()*3;entry.el.classList.toggle('facing-left',targetLeft<currentLeft);entry.el.style.transition=`left ${duration}s linear`;entry.el.style.left=targetLeft+'px';entry.timer=setTimeout(()=>walkRandomly(player),duration*1000)}
+function showComment(player,text){const entry=activeAvatars[player];if(!entry)return;let bubble=entry.el.querySelector('.comment-bubble');if(!bubble){bubble=document.createElement('span');bubble.className='comment-bubble';entry.el.appendChild(bubble)}bubble.textContent=text;clearTimeout(entry.commentTimer);entry.commentTimer=setTimeout(()=>bubble.remove(),4000)}
+function clearAllAvatars(){Object.values(activeAvatars).forEach(({el,timer,commentTimer})=>{clearTimeout(timer);clearTimeout(commentTimer);el.remove()});for(const key in activeAvatars)delete activeAvatars[key]}
+function removeAvatar(player){const entry=activeAvatars[player];if(!entry)return;clearTimeout(entry.timer);clearTimeout(entry.commentTimer);entry.el.remove();delete activeAvatars[player]}
+socket.on('avatar:spawn',data=>spawnAvatar(data.player,data.emoji,data.profileUrl,data.avatarType));
+socket.on('avatar:sync',list=>{clearAllAvatars();list.forEach(d=>spawnAvatar(d.player,d.emoji,d.profileUrl,d.avatarType))});
+socket.on('avatar:reset',clearAllAvatars);
+socket.on('avatar:remove',({player})=>removeAvatar(player));
+socket.on('chat:comment',({player,text})=>showComment(player,text));
+socket.on('update',data=>renderGrid(data));
+socket.on('answer:correct',data=>showToast(data));
+socket.on('leaderboard:update',list=>renderLeaderboard(list));
+socket.on('puzzle:completed',()=>showBanner('🎉 Semua kata ketemu! Sedang bikin tema baru...'));
+socket.on('puzzle:new',()=>hideBanner());
+socket.on('puzzle:error',data=>{showBanner('⚠️ '+data.message);setTimeout(hideBanner,4000)});
+window.addEventListener('resize',()=>{if(lastState)renderGrid(lastState)});
+let wakeLock=null;
+async function requestWakeLock(){if('wakeLock'in navigator){try{wakeLock=await navigator.wakeLock.request('screen');wakeLock.addEventListener('release',()=>{wakeLock=null})}catch(e){}}}
+document.addEventListener('visibilitychange',()=>{if(document.visibilityState==='visible'&&wakeLock===null)requestWakeLock()});
+requestWakeLock();
+document.body.addEventListener('click',function goFullscreen(){document.documentElement.requestFullscreen().catch(()=>{});requestWakeLock();document.body.removeEventListener('click',goFullscreen)},{once:true});
+</script>
+</body>
+</html>

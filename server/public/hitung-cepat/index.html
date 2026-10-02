@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hitung Cepat Live</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="manifest" href="/manifest.json">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="theme-color" content="#0f0a1f">
+<style>
+:root {
+  --bg-start: #0f0a1f;
+  --bg-end: #1a0f2e;
+  --glass-bg: rgba(255, 255, 255, 0.25);
+  --glass-border: rgba(255, 255, 255, 0.1);
+  --accent-purple: #8b5cf6;
+  --accent-blue: #6366f1;
+  --success: #10b981;
+  --gold: #f59e0b;
+  --text-primary: #f3f4f6;
+  --text-muted: #9ca3af;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, var(--bg-start) 0%, var(--bg-end) 100%);
+  color: var(--text-primary);
+  overflow: hidden;
+  height: 100vh;
+  position: relative;
+}
+
+body::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: 
+    radial-gradient(circle at 20% 30%, rgba(139, 92, 246, 0.15) 0%, transparent 50%),
+    radial-gradient(circle at 80% 70%, rgba(99, 102, 241, 0.15) 0%, transparent 50%);
+  animation: bgShift 15s ease-in-out infinite;
+  pointer-events: none;
+}
+
+@keyframes bgShift {
+  0%, 100% { opacity: 0.8; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.1); }
+}
+
+#app {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 2vh 2vw;
+  gap: 2vh;
+  position: relative;
+  z-index: 1;
+}
+
+.header {
+  text-align: center;
+  animation: fadeInDown 0.8s ease;
+}
+
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.title {
+  font-size: clamp(1.8rem, 5vw, 3rem);
+  font-weight: 900;
+  background: linear-gradient(135deg, var(--accent-purple) 0%, var(--accent-blue) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  letter-spacing: 2px;
+  margin-bottom: 0.8rem;
+  text-shadow: 0 0 30px rgba(139, 92, 246, 0.3);
+}
+
+.round-badge {
+  display: inline-block;
+  background: var(--glass-bg);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid var(--glass-border);
+  color: var(--gold);
+  padding: 0.5rem 1.5rem;
+  border-radius: 50px;
+  font-size: clamp(1rem, 2.5vw, 1.4rem);
+  font-weight: 700;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.progress-info {
+  font-size: clamp(0.9rem, 2vw, 1.1rem);
+  margin-top: 0.5rem;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.progress-info span {
+  color: var(--success);
+  font-weight: 700;
+}
+
+.grid-container {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: clamp(12px, 2vh, 24px);
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+  animation: fadeInUp 0.8s ease 0.2s both;
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.question-slot {
+  background: var(--glass-bg);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid var(--glass-border);
+  border-radius: 20px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 
+    0 8px 32px rgba(0, 0, 0, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.question-slot::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(139, 92, 246, 0.1) 0%, transparent 100%);
+  opacity: 0;
+  transition: opacity 0.4s;
+}
+
+.question-slot:hover::before {
+  opacity: 1;
+}
+
+.question-slot.solved {
+  background: rgba(16, 185, 129, 0.15);
+  border-color: rgba(16, 185, 129, 0.3);
+  box-shadow: 
+    0 8px 32px rgba(16, 185, 129, 0.3),
+    inset 0 1px 0 rgba(16, 185, 129, 0.2);
+}
+
+.question-text {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 900;
+  color: var(--text-primary);
+  text-align: center;
+  margin-bottom: 1rem;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s;
+}
+
+.question-slot.solved .question-text {
+  color: var(--text-muted);
+  text-decoration: line-through;
+  opacity: 0.5;
+  transform: scale(0.9);
+}
+
+.slot-number {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: linear-gradient(135deg, var(--accent-purple), var(--accent-blue));
+  color: white;
+  width: clamp(32px, 6vw, 48px);
+  height: clamp(32px, 6vw, 48px);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: clamp(1rem, 2.5vw, 1.6rem);
+  font-weight: 900;
+  box-shadow: 0 4px 16px rgba(139, 92, 246, 0.4);
+}
+
+.checkmark {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  display: none;
+  filter: drop-shadow(0 4px 8px rgba(16, 185, 129, 0.5));
+  animation: checkPop 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.question-slot.solved .checkmark {
+  display: block;
+}
+
+@keyframes checkPop {
+  0% { transform: scale(0) rotate(-45deg); opacity: 0; }
+  60% { transform: scale(1.2) rotate(10deg); }
+  100% { transform: scale(1) rotate(0deg); opacity: 1; }
+}
+
+.avatar-container {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  animation: avatarBounceIn 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.question-slot.solved .avatar-container {
+  display: flex;
+}
+
+@keyframes avatarBounceIn {
+  0% { transform: scale(0) translateY(-50px); opacity: 0; }
+  50% { transform: scale(1.15) translateY(-5px); }
+  100% { transform: scale(1) translateY(0); opacity: 1; }
+}
+
+.avatar-container img,
+.avatar-container .emoji {
+  width: clamp(60px, 12vw, 90px);
+  height: clamp(60px, 12vw, 90px);
+  border-radius: 50%;
+  border: 3px solid var(--gold);
+  box-shadow: 
+    0 8px 24px rgba(245, 158, 11, 0.4),
+    0 0 20px rgba(245, 158, 11, 0.3);
+  object-fit: cover;
+  animation: avatarFloat 3s ease-in-out infinite;
+}
+
+.avatar-container .emoji {
+  font-size: clamp(60px, 12vw, 90px);
+  line-height: 1;
+  border: none;
+  filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.4));
+}
+
+@keyframes avatarFloat {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-12px); }
+}
+
+.winner-name {
+  font-size: clamp(0.9rem, 2vw, 1.3rem);
+  font-weight: 700;
+  color: var(--gold);
+  margin-top: 0.8rem;
+  text-shadow: 0 2px 8px rgba(245, 158, 11, 0.5);
+  text-align: center;
+  max-width: 150px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+#leaderboard {
+  position: absolute;
+  top: 2vh;
+  right: 2vw;
+  background: var(--glass-bg);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid var(--glass-border);
+  border-radius: 16px;
+  padding: 1rem;
+  min-width: clamp(140px, 20vw, 220px);
+  max-width: 280px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  animation: slideInRight 0.8s ease 0.4s both;
+  z-index: 10;
+}
+
+@keyframes slideInRight {
+  from { opacity: 0; transform: translateX(50px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+#leaderboard .label {
+  font-weight: 700;
+  font-size: clamp(0.8rem, 1.8vw, 1rem);
+  background: linear-gradient(135deg, var(--gold), #fbbf24);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 0.8rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+#lbList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  max-height: 70vh;
+  overflow-y: auto;
+}
+
+#lbList::-webkit-scrollbar { width: 4px; }
+#lbList::-webkit-scrollbar-track { background: rgba(255, 255, 255, 0.05); border-radius: 2px; }
+#lbList::-webkit-scrollbar-thumb { background: var(--accent-purple); border-radius: 2px; }
+
+.lb-row {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.4rem 0.6rem;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 8px;
+  transition: all 0.3s;
+}
+
+.lb-row:hover {
+  background: rgba(255, 255, 255, 0.08);
+  transform: translateX(4px);
+}
+
+.lb-rank {
+  font-weight: 800;
+  font-size: clamp(0.8rem, 1.8vw, 1rem);
+  width: clamp(20px, 4vw, 28px);
+  text-align: center;
+  color: var(--text-muted);
+}
+
+.lb-row:nth-child(1) .lb-rank {
+  background: linear-gradient(135deg, #fbbf24, #f59e0b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.lb-row:nth-child(2) .lb-rank {
+  background: linear-gradient(135deg, #e5e7eb, #9ca3af);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.lb-row:nth-child(3) .lb-rank {
+  background: linear-gradient(135deg, #d97706, #92400e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.lb-name {
+  flex: 1;
+  font-weight: 600;
+  font-size: clamp(0.75rem, 1.6vw, 0.95rem);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: var(--text-primary);
+}
+
+.lb-score {
+  font-weight: 700;
+  font-size: clamp(0.75rem, 1.6vw, 0.95rem);
+  color: var(--accent-purple);
+  text-shadow: 0 2px 8px rgba(26,15,46,0.1), 0 0 4px rgba(26,15,46,0.1);
+}
+
+.empty-hint {
+  color: var(--text-muted);
+  font-size: clamp(0.8rem, 1.8vw, 1rem);
+  text-align: center;
+  padding: 1rem 0;
+}
+
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+  #leaderboard { min-width: 120px; padding: 0.8rem; }
+}
+
+@media (max-width: 480px) {
+  .title { font-size: 1.5rem; }
+  .question-text { font-size: 1.8rem; }
+}
+</style>
+</head>
+<body>
+<div id="app">
+  <div class="header">
+    <h1 class="title">🔢 HITUNG CEPAT 🔢</h1>
+    <div class="round-badge">Ronde <span id="round-number">1</span></div>
+    <div class="progress-info"><span id="solved-count">0</span>/6 Terjawab</div>
+  </div>
+  <div class="grid-container" id="grid"></div>
+</div>
+<div id="leaderboard">
+  <div class="label">🏆 Leaderboard</div>
+  <div id="lbList"><div class="empty-hint">Belum ada yang jawab</div></div>
+</div>
+<script src="/socket.io/socket.io.js"></script>
+<script>const socket = io();</script>
+<script src="/shared/v2-bootstrap.js"></script>
+<script>
+const grid = document.getElementById('grid');
+const lbList = document.getElementById('lbList');
+function renderQuestions(questions, avatarType) {
+  grid.innerHTML = '';
+  questions.forEach((q, index) => {
+    const slot = document.createElement('div');
+    slot.className = 'question-slot' + (q.solved ? ' solved' : '');
+    const slotNumber = document.createElement('div');
+    slotNumber.className = 'slot-number';
+    slotNumber.innerText = index + 1;
+    const checkmark = document.createElement('div');
+    checkmark.className = 'checkmark';
+    checkmark.innerText = '✅';
+    const questionText = document.createElement('div');
+    questionText.className = 'question-text';
+    questionText.innerText = q.question;
+    const avatarContainer = document.createElement('div');
+    avatarContainer.className = 'avatar-container';
+    if (q.solved && q.winner) {
+      if (avatarType === 'tiktok' && q.winner.profileUrl) {
+        const img = document.createElement('img');
+        img.src = q.winner.profileUrl;
+        img.alt = q.winner.name;
+        img.onerror = function() {
+          const emoji = document.createElement('span');
+          emoji.className = 'emoji';
+          emoji.innerText = q.winner.emoji;
+          this.replaceWith(emoji);
+        };
+        avatarContainer.appendChild(img);
+      } else {
+        const emoji = document.createElement('span');
+        emoji.className = 'emoji';
+        emoji.innerText = q.winner.emoji;
+        avatarContainer.appendChild(emoji);
+      }
+      const winnerName = document.createElement('div');
+      winnerName.className = 'winner-name';
+      winnerName.innerText = q.winner.name;
+      avatarContainer.appendChild(winnerName);
+    }
+    slot.appendChild(slotNumber);
+    slot.appendChild(checkmark);
+    slot.appendChild(questionText);
+    slot.appendChild(avatarContainer);
+    grid.appendChild(slot);
+  });
+}
+function renderLeaderboard(leaderboard) {
+  if (!leaderboard || leaderboard.length === 0) {
+    lbList.innerHTML = '<div class="empty-hint">Belum ada yang jawab</div>';
+    return;
+  }
+  lbList.innerHTML = leaderboard.slice(0, 10).map((entry, index) => {
+    const name = String(entry.player).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+    return '<div class="lb-row"><div class="lb-rank">' + (index + 1) + '</div><div class="lb-name">' + name + '</div><div class="lb-score">' + entry.score + '</div></div>';
+  }).join('');
+}
+socket.on('update', (state) => {
+  document.getElementById('round-number').innerText = state.roundNumber || 1;
+  document.getElementById('solved-count').innerText = state.solvedCount || 0;
+  if (state.questions && state.questions.length > 0) {
+    renderQuestions(state.questions, state.avatarType);
+  }
+  if (state.leaderboard) {
+    renderLeaderboard(state.leaderboard);
+  }
+});
+socket.on('game:switched', () => { window.location.reload(); });
+let wakeLock = null;
+async function requestWakeLock() {
+  if ('wakeLock' in navigator) {
+    try {
+      wakeLock = await navigator.wakeLock.request('screen');
+      wakeLock.addEventListener('release', () => { wakeLock = null; });
+    } catch (e) {}
+  }
+}
+document.addEventListener('visibilitychange', () => {
+  if (document.visibilityState === 'visible' && wakeLock === null) requestWakeLock();
+});
+requestWakeLock();
+document.body.addEventListener('click', function goFullscreen() {
+  document.documentElement.requestFullscreen().catch(() => {});
+  requestWakeLock();
+  document.body.removeEventListener('click', goFullscreen);
+}, { once: true });
+</script>
+</body>
+</html>

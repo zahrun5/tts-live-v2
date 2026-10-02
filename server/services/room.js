@@ -89,6 +89,7 @@ class Room {
     this.initialized = new Set(); // game yang sudah pernah dikasih ronde SEGAR di room ini
     this.voteController = null;
     this.initialSettings = settings || {};
+    this.avatarType = this.initialSettings.avatarType || 'emoji';
   }
 
   // ---------- lifecycle ----------
@@ -218,7 +219,7 @@ class Room {
     this.emitTo(socket, 'leaderboard:update', this.buildLeaderboardPayload());
     this.emitTo(socket, 'live:status', this.liveStatus);
     this.emitTo(socket, 'status', { connected: this.liveStatus.active });
-    this.emitTo(socket, 'avatar:sync', Object.entries(this.sessionAvatars).map(([player, d]) => ({ player, emoji: d.emoji })));
+    this.emitTo(socket, 'avatar:sync', Object.entries(this.sessionAvatars).map(([player, d]) => ({ player, emoji: d.emoji, profileUrl: d.profileUrl, avatarType: this.avatarType })));
   }
 
   // ---------- leaderboard & level ----------
@@ -271,12 +272,13 @@ class Room {
     this.emit('avatar:remove', { player });
   }
 
-  assignAvatarIfNeeded(player) {
+  assignAvatarIfNeeded(player, profileUrl) {
     const name = player || 'Anonim';
     const existing = this.sessionAvatars[name];
     if (existing) {
       clearTimeout(existing.timer);
       existing.lastActive = Date.now();
+      if (profileUrl && !existing.profileUrl) existing.profileUrl = profileUrl;
       existing.timer = setTimeout(() => this.removeAvatar(name), AVATAR_TIMEOUT);
       return null;
     }
@@ -290,8 +292,8 @@ class Room {
     const emoji = pool[Math.floor(Math.random() * pool.length)];
     const timer = setTimeout(() => this.removeAvatar(name), AVATAR_TIMEOUT);
     if (timer.unref) timer.unref();
-    this.sessionAvatars[name] = { emoji, lastActive: Date.now(), timer };
-    return emoji;
+    this.sessionAvatars[name] = { emoji, profileUrl, lastActive: Date.now(), timer };
+    return { emoji, avatarUrl: profileUrl, useProfilePic: this.avatarType === 'tiktok' };
   }
 
   resetSessionAvatars() {
@@ -330,7 +332,11 @@ class Room {
   }
 
   // Dipanggil dari POST /settings. Return { switched, mode, gameId }.
-  async applySettings({ activeGame, randomGames }) {
+  async applySettings({ activeGame, randomGames, avatarType }) {
+    if (avatarType && avatarType !== this.avatarType) {
+      this.avatarType = avatarType;
+      this.resetSessionAvatars();
+    }
     const pool = this.cleanPool(randomGames);
     if (pool) this.pool = pool;
 
@@ -485,6 +491,16 @@ class Room {
 
   // Semua jawaban soal aktif, termasuk yang belum terjawab. HANYA lewat
   // endpoint ber-auth; jangan pernah di-emit ke socket overlay.
+  getAllGameStats() {
+    const stats = {};
+    for (const [id, game] of Object.entries(this.games)) {
+      if (game.getBankStats) {
+        try { stats[id] = game.getBankStats(); } catch(e) { stats[id] = null; }
+      }
+    }
+    return stats;
+  }
+
   getAdminAnswers() {
     const g = this.activeGame;
     if (!g || !g.getAdminAnswers) return { ok: false, error: 'Game aktif belum mendukung tampilan jawaban' };
@@ -500,13 +516,15 @@ class Room {
 
   // Setara alur CHAT di tiktok-connector.js V1: bubble komentar -> vote ->
   // parse -> validasi jawaban. Dipakai TikTok asli maupun tombol test dashboard.
-  async handleChat({ player, text }) {
+  async handleChat({ player, text, profileUrl }) {
     const name = player || 'Anonim';
     const msg = (text || '').toString().slice(0, 120);
     if (!msg) return;
 
-    const emoji = this.assignAvatarIfNeeded(name);
-    if (emoji) this.emit('avatar:spawn', { player: name, emoji });
+    const { emoji, avatarUrl, useProfilePic } = this.assignAvatarIfNeeded(name, profileUrl) || {};
+    if (emoji || (avatarUrl && useProfilePic)) {
+      this.emit('avatar:spawn', { player: name, emoji, profileUrl: avatarUrl, avatarType: this.avatarType });
+    }
     this.emit('chat:comment', { player: name, text: msg });
 
     try {
@@ -542,8 +560,10 @@ class Room {
       });
     }
 
-    const emoji = this.assignAvatarIfNeeded(player);
-    if (emoji) this.emit('avatar:spawn', { player, emoji });
+    const { emoji, avatarUrl, useProfilePic } = this.assignAvatarIfNeeded(player, payload.profileUrl) || {};
+    if (emoji || (avatarUrl && useProfilePic)) {
+      this.emit('avatar:spawn', { player, emoji, profileUrl: avatarUrl, avatarType: this.avatarType });
+    }
 
     this.emit('update', game.buildStatePayload());
     this.emit('leaderboard:update', this.buildLeaderboardPayload());

@@ -8,12 +8,12 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&display=swap" rel="stylesheet">
 <link rel="manifest" href="/manifest.json">
 <meta name="mobile-web-app-capable" content="yes">
-<meta name="theme-color" content="#1a1d2e">
+<meta name="theme-color" content="#0f0a1f">
 <style>
 :root {
   --bg-start: #0f0a1f;
   --bg-end: #1a0f2e;
-  --glass-bg: rgba(255, 255, 255, 0.25);
+  --glass-bg: rgba(255, 255, 255, 0.05);
   --glass-border: rgba(255, 255, 255, 0.1);
   --accent-purple: #8b5cf6;
   --accent-blue: #6366f1;
@@ -514,291 +514,213 @@ body::before {
 </style>
 </head>
 <body>
-  <div id="app">
-    <div id="letterPanel">
-      <div class="letterPanel-top">
-        <span class="letterPanel-label">HURUF DASAR</span>
-        <span class="letterPanel-progress" id="progressText">Menunggu soal...</span>
-      </div>
-      <div id="letterWheel"><div class="hub"></div></div>
-      <div id="voteHintInline"><div class="marquee-track">💬 Komen <b>SKIP 10x</b> rame-rame kalo kesulitan &nbsp;•&nbsp; ketik <b>GANTI 10x</b> buat ganti game &nbsp;•&nbsp; kalo kalian nggak bisa nerima kenyataan dari kekalahan, komen <b>NYERAH 10x</b> 🤣🤣🤣 niscaya aku kasih jawabannya</div></div>
+<div id="app">
+  <div id="letterPanel">
+    <div class="letterPanel-top">
+      <span class="letterPanel-label">HURUF DASAR</span>
+      <span class="letterPanel-progress" id="progressText">Menunggu soal...</span>
     </div>
-
-    <div id="avatarZone"></div>
-
-    <div id="answerWrap">
-      <div id="toast"></div>
-      <div id="answerList"></div>
-      <div id="leaderboard">
-        <div class="label">🏆 Papan Juara</div>
-        <div id="lbList"><div class="empty-hint">Belum ada yang jawab</div></div>
-      </div>
+    <div id="letterWheel"><div class="hub"></div></div>
+    <div id="voteHintInline"><div class="marquee-track">💬 Komen <b>SKIP 10x</b> rame-rame kalo kesulitan &nbsp;•&nbsp; ketik <b>GANTI 10x</b> buat ganti game</div></div>
+  </div>
+  <div id="avatarZone"></div>
+  <div id="answerWrap">
+    <div id="toast"></div>
+    <div id="answerList"></div>
+    <div id="leaderboard">
+      <div class="label">🏆 Leaderboard</div>
+      <div id="lbList"><div class="empty-hint">Belum ada</div></div>
     </div>
   </div>
-
-  <div id="banner"></div>
-
-  <script src="/socket.io/socket.io.js"></script>
-  <script>
-    const socket = io();
-  </script>
-  <script src="/shared/v2-bootstrap.js"></script>
-  <script src="/shared/game-switch-watcher.js"></script>
-  <script>
-    const answerListEl = document.getElementById('answerList');
-    const answerWrap = document.getElementById('answerWrap');
-    const toastEl = document.getElementById('toast');
-    const letterPanelEl = document.getElementById('letterPanel');
-    const letterWheelEl = document.getElementById('letterWheel');
-    const progressTextEl = document.getElementById('progressText');
-    const lbList = document.getElementById('lbList');
-    const bannerEl = document.getElementById('banner');
-
-    let currentPuzzle = null;
-    let currentBaseLetters = null;
-    let toastTimer = null;
-    let prevAnswerStates = new Map();
-
-    function renderAnswerList(data) {
-      currentPuzzle = data;
-      const { words } = data;
-
-      answerListEl.innerHTML = '';
-
-      words.forEach((w, idx) => {
-        const slot = document.createElement('div');
-        slot.className = 'answer-slot';
-        const wordKey = `${w.number}-${w.direction}`;
-        
-        if (w.answer) {
-          slot.classList.add('found');
-          
-          // Check if this is newly found
-          if (!prevAnswerStates.has(wordKey)) {
-            slot.classList.add('reveal');
-          }
-          prevAnswerStates.set(wordKey, true);
-        }
-
-        const numberEl = document.createElement('div');
-        numberEl.className = 'slot-number';
-        numberEl.textContent = w.number;
-
-        const contentEl = document.createElement('div');
-        contentEl.className = 'slot-content';
-        
-        if (w.answer) {
-          contentEl.textContent = w.answer;
-        } else {
-          contentEl.textContent = '?'.repeat(w.length);
-        }
-
-        slot.appendChild(numberEl);
-        slot.appendChild(contentEl);
-        answerListEl.appendChild(slot);
-      });
-    }
-
-    function renderLetterWheel(baseLetters) {
-      if (currentBaseLetters === baseLetters) return;
-      currentBaseLetters = baseLetters;
-
-      letterWheelEl.innerHTML = '<div class="hub"></div>';
-      if (!baseLetters) return;
-
-      const letters = baseLetters.split('');
-      const n = letters.length;
-      const radius = 50 - 27 / 2;
-
-      letters.forEach((ch, i) => {
-        const angle = (2 * Math.PI * i / n) - Math.PI / 2;
-        const cx = 50 + radius * Math.cos(angle);
-        const cy = 50 + radius * Math.sin(angle);
-
-        const bubble = document.createElement('div');
-        bubble.className = 'letter-bubble';
-        bubble.textContent = ch;
-        bubble.style.left = `${cx}%`;
-        bubble.style.top = `${cy}%`;
-        bubble.style.transform = 'translate(-50%, -50%)';
-        letterWheelEl.appendChild(bubble);
-      });
-    }
-
-    function renderProgress(words) {
-      const total = words.length;
-      const solved = words.filter(w => w.answer).length;
-
-      if (solved === total && total > 0) {
-        letterPanelEl.classList.add('done');
-        progressTextEl.innerHTML = '🎉 Semua kata ketemu!';
-      } else {
-        letterPanelEl.classList.remove('done');
-        progressTextEl.innerHTML = `<span class="num-solved">${solved}</span> / ${total} kata`;
+</div>
+<div id="banner"></div>
+<script src="/socket.io/socket.io.js"></script>
+<script>const socket = io();</script>
+<script src="/shared/v2-bootstrap.js"></script>
+<script src="/shared/game-switch-watcher.js"></script>
+<script>
+const answerListEl = document.getElementById('answerList');
+const toastEl = document.getElementById('toast');
+const letterPanelEl = document.getElementById('letterPanel');
+const letterWheelEl = document.getElementById('letterWheel');
+const progressTextEl = document.getElementById('progressText');
+const lbList = document.getElementById('lbList');
+const bannerEl = document.getElementById('banner');
+let currentPuzzle = null;
+let currentBaseLetters = null;
+let toastTimer = null;
+let prevAnswerStates = new Map();
+function renderAnswerList(data) {
+  currentPuzzle = data;
+  const { words } = data;
+  answerListEl.innerHTML = '';
+  words.forEach((w) => {
+    const slot = document.createElement('div');
+    slot.className = 'answer-slot';
+    const wordKey = w.number + '-' + w.direction;
+    if (w.answer) {
+      slot.classList.add('found');
+      if (!prevAnswerStates.has(wordKey)) {
+        slot.classList.add('reveal');
       }
+      prevAnswerStates.set(wordKey, true);
     }
-
-    function renderLeaderboard(list) {
-      if (!list || list.length === 0) {
-        lbList.innerHTML = '<div class="empty-hint">Belum ada yang jawab</div>';
-        return;
-      }
-      lbList.innerHTML = list.slice(0, 10).map((row, i) => `
-        <div class="lb-row">
-          <span class="lb-rank">${i + 1}</span>
-          <span class="lb-name">${escapeHtml(row.player)}</span>
-          <span class="lb-score">${row.score}</span>
-        </div>`).join('');
+    const numberEl = document.createElement('div');
+    numberEl.className = 'slot-number';
+    numberEl.textContent = w.number;
+    const contentEl = document.createElement('div');
+    contentEl.className = 'slot-content';
+    if (w.answer) {
+      contentEl.textContent = w.answer;
+    } else {
+      contentEl.textContent = '?'.repeat(w.length);
     }
-
-    function escapeHtml(s) {
-      return s.replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-    }
-
-    function showToast(data) {
-      toastEl.textContent = `${data.player} benar! ${data.answer ? data.answer.toUpperCase() : ''}`;
-      toastEl.classList.add('show');
-      clearTimeout(toastTimer);
-      toastTimer = setTimeout(() => toastEl.classList.remove('show'), 3000);
-    }
-
-    function showBanner(text) { bannerEl.textContent = text; bannerEl.classList.add('show'); }
-    function hideBanner() { bannerEl.classList.remove('show'); }
-
-    const avatarZone = document.getElementById('avatarZone');
-    const activeAvatars = {};
-
-    function spawnAvatar(player, emoji, profileUrl, avatarType) {
-      if (activeAvatars[player]) return;
-      const el = document.createElement('div');
-      el.className = 'mini-avatar';
-      let avatarHtml = `<span class="emoji">${emoji}</span>`;
-      if (avatarType === 'tiktok' && profileUrl) {
-         avatarHtml = `<img src="${profileUrl}" onerror="this.outerHTML='<span class=\\'emoji\\'>${emoji}</span>'" style="width:24px;height:24px;border-radius:50%;object-fit:cover;margin-right:2px;border:1px solid #fff;display:inline-block;vertical-align:middle;" />`;
-      }
-      el.innerHTML = `${avatarHtml}<span class="name-tag">${player}</span>`;
-      avatarZone.appendChild(el);
-      const startLeft = Math.random() * Math.max(0, avatarZone.clientWidth - 40);
-      el.style.left = startLeft + 'px';
-      activeAvatars[player] = { el, timer: null };
-      walkRandomly(player);
-    }
-
-    function walkRandomly(player) {
-      const entry = activeAvatars[player];
-      if (!entry) return;
-      const zoneWidth = avatarZone.clientWidth || 300;
-      const avatarWidth = entry.el.offsetWidth || 40;
-      const maxLeft = Math.max(0, zoneWidth - avatarWidth);
-      const currentLeft = parseFloat(entry.el.style.left) || 0;
-      const targetLeft = Math.random() * maxLeft;
-      const duration = 2.5 + Math.random() * 3;
-      entry.el.classList.toggle('facing-right', targetLeft > currentLeft);
-      entry.el.style.transition = `left ${duration}s linear`;
-      entry.el.style.left = targetLeft + 'px';
-      entry.timer = setTimeout(() => walkRandomly(player), duration * 1000);
-    }
-
-    function showComment(player, text) {
-      const entry = activeAvatars[player];
-      if (!entry) return;
-      let bubble = entry.el.querySelector('.comment-bubble');
-      if (!bubble) {
-        bubble = document.createElement('span');
-        bubble.className = 'comment-bubble';
-        entry.el.appendChild(bubble);
-      }
-      bubble.textContent = text;
-      clearTimeout(entry.commentTimer);
-      entry.commentTimer = setTimeout(() => bubble.remove(), 4000);
-    }
-
-    function clearAllAvatars() {
-      Object.values(activeAvatars).forEach(({ el, timer, commentTimer }) => {
-        clearTimeout(timer);
-        clearTimeout(commentTimer);
-        el.remove();
-      });
-      for (const key in activeAvatars) delete activeAvatars[key];
-    }
-
-    function removeAvatar(player) {
-      const entry = activeAvatars[player];
-      if (!entry) return;
-      clearTimeout(entry.timer);
-      clearTimeout(entry.commentTimer);
-      entry.el.remove();
-      delete activeAvatars[player];
-    }
-
-    socket.on('avatar:spawn', (data) => spawnAvatar(data.player, data.emoji, data.profileUrl, data.avatarType));
-    socket.on('avatar:sync', (list) => { clearAllAvatars(); list.forEach((d) => spawnAvatar(d.player, d.emoji, d.profileUrl, d.avatarType)); });
-    socket.on('avatar:reset', clearAllAvatars);
-    socket.on('avatar:remove', ({ player }) => removeAvatar(player));
-    socket.on('chat:comment', ({ player, text }) => showComment(player, text));
-
-    socket.on('game:switched', () => window.location.reload());
-    socket.on('update', (data) => {
-      renderAnswerList(data);
-      renderLetterWheel(data.baseLetters);
-      renderProgress(data.words);
-    });
-    socket.on('answer:correct', (data) => showToast(data));
-    socket.on('leaderboard:update', (list) => renderLeaderboard(list));
-    socket.on('puzzle:completed', () => showBanner('🎉 Semua kata ketemu! Menyiapkan soal baru...'));
-    socket.on('puzzle:new', () => { currentBaseLetters = null; prevAnswerStates.clear(); hideBanner(); });
-    socket.on('puzzle:error', (data) => { showBanner('⚠️ ' + data.message); setTimeout(hideBanner, 4000); });
-
-    let wakeLock = null;
-    let noSleepStarted = false;
-
-    function startNoSleepFallback() {
-      if (noSleepStarted) return;
-      noSleepStarted = true;
-      try {
-        const canvas = document.createElement('canvas');
-        canvas.width = 2; canvas.height = 2;
-        canvas.getContext('2d').fillRect(0, 0, 2, 2);
-        const stream = canvas.captureStream(1);
-        const video = document.createElement('video');
-        video.muted = true;
-        video.setAttribute('muted', '');
-        video.setAttribute('playsinline', '');
-        video.setAttribute('autoplay', '');
-        video.style.cssText = 'position:fixed;bottom:0;right:0;width:1px;height:1px;opacity:0.01;pointer-events:none;';
-        video.srcObject = stream;
-        document.body.appendChild(video);
-        video.play().catch(() => {});
-      } catch (e) {
-        console.error('⚠️ Fallback nahan layar gagal:', e.message);
-      }
-    }
-
-    async function requestWakeLock() {
-      if ('wakeLock' in navigator) {
-        try {
-          wakeLock = await navigator.wakeLock.request('screen');
-          wakeLock.addEventListener('release', () => { wakeLock = null; });
-          return;
-        } catch (e) {
-          console.error('⚠️ Wake Lock API gagal, pakai fallback:', e.message);
-        }
-      }
-      startNoSleepFallback();
-    }
-
-    document.addEventListener('visibilitychange', () => {
-      if (document.visibilityState === 'visible' && wakeLock === null) requestWakeLock();
-    });
-
-    requestWakeLock();
-
-    document.body.addEventListener('click', function goFullscreen() {
-      document.documentElement.requestFullscreen().catch(() => {});
-      requestWakeLock();
-      document.body.removeEventListener('click', goFullscreen);
-    }, { once: true });
-  </script>
-  <script src="/shared/vote-overlay.js"></script>
+    slot.appendChild(numberEl);
+    slot.appendChild(contentEl);
+    answerListEl.appendChild(slot);
+  });
+}
+function renderLetterWheel(baseLetters) {
+  if (currentBaseLetters === baseLetters) return;
+  currentBaseLetters = baseLetters;
+  letterWheelEl.innerHTML = '<div class="hub"></div>';
+  if (!baseLetters) return;
+  const letters = baseLetters.split('');
+  const n = letters.length;
+  const radius = 50 - 27 / 2;
+  letters.forEach((ch, i) => {
+    const angle = (2 * Math.PI * i / n) - Math.PI / 2;
+    const cx = 50 + radius * Math.cos(angle);
+    const cy = 50 + radius * Math.sin(angle);
+    const bubble = document.createElement('div');
+    bubble.className = 'letter-bubble';
+    bubble.textContent = ch;
+    bubble.style.left = cx + '%';
+    bubble.style.top = cy + '%';
+    bubble.style.transform = 'translate(-50%, -50%)';
+    letterWheelEl.appendChild(bubble);
+  });
+}
+function renderProgress(words) {
+  const total = words.length;
+  const solved = words.filter(w => w.answer).length;
+  if (solved === total && total > 0) {
+    letterPanelEl.classList.add('done');
+    progressTextEl.innerHTML = '🎉 Semua kata ketemu!';
+  } else {
+    letterPanelEl.classList.remove('done');
+    progressTextEl.innerHTML = '<span class="num-solved">' + solved + '</span> / ' + total + ' kata';
+  }
+}
+function renderLeaderboard(list) {
+  if (!list || list.length === 0) {
+    lbList.innerHTML = '<div class="empty-hint">Belum ada</div>';
+    return;
+  }
+  lbList.innerHTML = list.slice(0, 10).map((row, i) => {
+    const name = String(row.player).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+    return '<div class="lb-row"><span class="lb-rank">' + (i + 1) + '</span><span class="lb-name">' + name + '</span><span class="lb-score">' + row.score + '</span></div>';
+  }).join('');
+}
+function showToast(data) {
+  toastEl.textContent = data.player + ' benar! ' + (data.answer ? data.answer.toUpperCase() : '');
+  toastEl.classList.add('show');
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => toastEl.classList.remove('show'), 3000);
+}
+function showBanner(text) { bannerEl.textContent = text; bannerEl.classList.add('show'); }
+function hideBanner() { bannerEl.classList.remove('show'); }
+const avatarZone = document.getElementById('avatarZone');
+const activeAvatars = {};
+function spawnAvatar(player, emoji, profileUrl, avatarType) {
+  if (activeAvatars[player]) return;
+  const el = document.createElement('div');
+  el.className = 'mini-avatar';
+  let avatarHtml = '<span class="emoji">' + emoji + '</span>';
+  if (avatarType === 'tiktok' && profileUrl) {
+    avatarHtml = '<img src="' + profileUrl + '" onerror="this.outerHTML='<span class=\'emoji\'>' + emoji + '</span>'" style="width:24px;height:24px;border-radius:50%;object-fit:cover;margin-right:2px;border:1px solid #fff;display:inline-block;vertical-align:middle;" />';
+  }
+  el.innerHTML = avatarHtml + '<span class="name-tag">' + player + '</span>';
+  avatarZone.appendChild(el);
+  const startLeft = Math.random() * Math.max(0, avatarZone.clientWidth - 40);
+  el.style.left = startLeft + 'px';
+  activeAvatars[player] = { el: el, timer: null };
+  walkRandomly(player);
+}
+function walkRandomly(player) {
+  const entry = activeAvatars[player];
+  if (!entry) return;
+  const zoneWidth = avatarZone.clientWidth || 300;
+  const avatarWidth = entry.el.offsetWidth || 40;
+  const maxLeft = Math.max(0, zoneWidth - avatarWidth);
+  const currentLeft = parseFloat(entry.el.style.left) || 0;
+  const targetLeft = Math.random() * maxLeft;
+  const duration = 2.5 + Math.random() * 3;
+  entry.el.classList.toggle('facing-right', targetLeft > currentLeft);
+  entry.el.style.transition = 'left ' + duration + 's linear';
+  entry.el.style.left = targetLeft + 'px';
+  entry.timer = setTimeout(() => walkRandomly(player), duration * 1000);
+}
+function showComment(player, text) {
+  const entry = activeAvatars[player];
+  if (!entry) return;
+  let bubble = entry.el.querySelector('.comment-bubble');
+  if (!bubble) {
+    bubble = document.createElement('span');
+    bubble.className = 'comment-bubble';
+    entry.el.appendChild(bubble);
+  }
+  bubble.textContent = text;
+  clearTimeout(entry.commentTimer);
+  entry.commentTimer = setTimeout(() => bubble.remove(), 4000);
+}
+function clearAllAvatars() {
+  Object.values(activeAvatars).forEach(({ el, timer, commentTimer }) => {
+    clearTimeout(timer);
+    clearTimeout(commentTimer);
+    el.remove();
+  });
+  for (const key in activeAvatars) delete activeAvatars[key];
+}
+function removeAvatar(player) {
+  const entry = activeAvatars[player];
+  if (!entry) return;
+  clearTimeout(entry.timer);
+  clearTimeout(entry.commentTimer);
+  entry.el.remove();
+  delete activeAvatars[player];
+}
+socket.on('avatar:spawn', (data) => spawnAvatar(data.player, data.emoji, data.profileUrl, data.avatarType));
+socket.on('avatar:sync', (list) => { clearAllAvatars(); list.forEach((d) => spawnAvatar(d.player, d.emoji, d.profileUrl, d.avatarType)); });
+socket.on('avatar:reset', clearAllAvatars);
+socket.on('avatar:remove', ({ player }) => removeAvatar(player));
+socket.on('chat:comment', ({ player, text }) => showComment(player, text));
+socket.on('game:switched', () => window.location.reload());
+socket.on('update', (data) => { renderAnswerList(data); renderLetterWheel(data.baseLetters); renderProgress(data.words); });
+socket.on('answer:correct', (data) => showToast(data));
+socket.on('leaderboard:update', (list) => renderLeaderboard(list));
+socket.on('puzzle:completed', () => showBanner('🎉 Semua kata ketemu! Menyiapkan soal baru...'));
+socket.on('puzzle:new', () => { currentBaseLetters = null; prevAnswerStates.clear(); hideBanner(); });
+socket.on('puzzle:error', (data) => { showBanner('⚠️ ' + data.message); setTimeout(hideBanner, 4000); });
+let wakeLock = null;
+async function requestWakeLock() {
+  if ('wakeLock' in navigator) {
+    try {
+      wakeLock = await navigator.wakeLock.request('screen');
+      wakeLock.addEventListener('release', () => { wakeLock = null; });
+    } catch (e) {}
+  }
+}
+document.addEventListener('visibilitychange', () => {
+  if (document.visibilityState === 'visible' && wakeLock === null) requestWakeLock();
+});
+requestWakeLock();
+document.body.addEventListener('click', function goFullscreen() {
+  document.documentElement.requestFullscreen().catch(() => {});
+  requestWakeLock();
+  document.body.removeEventListener('click', goFullscreen);
+}, { once: true });
+</script>
+<script src="/shared/vote-overlay.js"></script>
 </body>
 </html>
