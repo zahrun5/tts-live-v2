@@ -113,7 +113,6 @@ body::before{content:'';position:absolute;inset:0;background:radial-gradient(cir
   <div id="banner"></div>
 
   <script src="/socket.io/socket.io.js"></script>
-    <script src="/shared/v2-bootstrap.js"></script>
   <script>
     const socket = io();
   </script>

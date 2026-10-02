@@ -421,7 +421,6 @@ body::before {
   <div id="lbList"><div class="empty-hint">Belum ada yang jawab</div></div>
 </div>
 <script src="/socket.io/socket.io.js"></script>
-    <script src="/shared/v2-bootstrap.js"></script>
 <script>const socket = io();</script>
 <script src="/shared/v2-bootstrap.js"></script>
 <script>

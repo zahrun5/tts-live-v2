@@ -462,7 +462,6 @@ body::before {
   <div id="banner"></div>
 
   <script src="/socket.io/socket.io.js"></script>
-    <script src="/shared/v2-bootstrap.js"></script>
   <script>
     const socket = io();
   </script>

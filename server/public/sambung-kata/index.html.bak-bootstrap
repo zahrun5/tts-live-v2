@@ -3,12 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Family 100 Live</title>
+<title>Sambung Kata Live</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&display=swap" rel="stylesheet">
 <link rel="manifest" href="/manifest.json">
 <meta name="mobile-web-app-capable" content="yes">
-<meta name="theme-color" content="#14101f">
+<meta name="theme-color" content="#1a1d2e">
 <style>
 :root {
   --bg-start: #0f0a1f;
@@ -54,17 +54,18 @@ body::before {
   position: relative;
   z-index: 1;
 }
-#questionBar {
+#letterPanel {
   flex: 0 0 auto;
   background: var(--glass-bg);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border: 1px solid var(--glass-border);
-  border-radius: 16px;
-  padding: 1rem 1.5rem;
+  border-radius: 20px;
+  padding: 1.2rem;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  gap: 1rem;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
   animation: fadeInDown 0.8s ease;
 }
@@ -72,9 +73,15 @@ body::before {
   from { opacity: 0; transform: translateY(-30px); }
   to { opacity: 1; transform: translateY(0); }
 }
-.qbar-label {
+.letterPanel-top {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.letterPanel-label {
   font-weight: 800;
-  font-size: clamp(0.7rem, 1.8vw, 0.95rem);
+  font-size: clamp(0.7rem, 1.8vw, 0.9rem);
   background: linear-gradient(135deg, var(--gold), #fbbf24);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -83,42 +90,69 @@ body::before {
   border-radius: 50px;
   border: 1px solid rgba(245, 158, 11, 0.3);
   letter-spacing: 1px;
-  white-space: nowrap;
 }
-.qbar-text {
+.letterPanel-progress {
   font-weight: 700;
-  font-size: clamp(1rem, 2.8vw, 1.6rem);
+  font-size: clamp(0.9rem, 2.2vw, 1.2rem);
+  color: var(--text-muted);
+}
+.letterPanel-progress .num-solved {
+  color: var(--success);
+}
+#letterWheel {
+  position: relative;
+  width: min(28vh, 35vw);
+  height: min(28vh, 35vw);
+  border-radius: 50%;
+  background: radial-gradient(circle at center, rgba(139, 92, 246, 0.1) 0%, rgba(99, 102, 241, 0.05) 70%, transparent 100%);
+  border: 3px solid rgba(139, 92, 246, 0.3);
+  box-shadow: 
+    0 0 40px rgba(139, 92, 246, 0.4),
+    inset 0 0 30px rgba(139, 92, 246, 0.1);
+  animation: wheelPulse 3s ease-in-out infinite;
+}
+@keyframes wheelPulse {
+  0%, 100% { box-shadow: 0 0 40px rgba(139, 92, 246, 0.4), inset 0 0 30px rgba(139, 92, 246, 0.1); }
+  50% { box-shadow: 0 0 60px rgba(139, 92, 246, 0.6), inset 0 0 40px rgba(139, 92, 246, 0.2); }
+}
+#letterWheel .hub {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20%;
+  height: 20%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--accent-purple), var(--accent-blue));
+  box-shadow: 0 4px 16px rgba(139, 92, 246, 0.5);
+}
+.letter-bubble {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 26%;
+  height: 26%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--glass-bg);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   color: var(--text-primary);
-  flex: 1;
-  text-align: center;
-  padding: 0 1rem;
+  border: 2px solid var(--glass-border);
+  border-radius: 50%;
+  font-weight: 900;
+  font-size: clamp(1.2rem, 4vw, 2rem);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+  animation: letterFloat 3s ease-in-out infinite;
 }
-.qbar-progress {
-  font-weight: 800;
-  font-size: clamp(0.9rem, 2.2vw, 1.3rem);
-  color: var(--text-muted);
-  white-space: nowrap;
+@keyframes letterFloat {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
 }
-#voteHintInline {
-  flex: 0 0 auto;
-  overflow: hidden;
-  white-space: nowrap;
-  font-size: clamp(0.75rem, 1.8vw, 1rem);
-  font-weight: 600;
-  color: var(--text-muted);
-  padding: 0.2rem 0;
-  -webkit-mask-image: linear-gradient(90deg, transparent, black 4%, black 96%, transparent);
-  mask-image: linear-gradient(90deg, transparent, black 4%, black 96%, transparent);
-}
-#voteHintInline b { color: var(--gold); font-weight: 800; }
-#voteHintInline .marquee-track {
-  display: inline-block;
-  padding-left: 100%;
-  animation: marqueeScroll 20s linear infinite;
-}
-@keyframes marqueeScroll {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-100%); }
+#letterPanel.done {
+  background: rgba(16, 185, 129, 0.1);
+  border-color: rgba(16, 185, 129, 0.3);
 }
 #avatarZone {
   flex: 0 0 70px;
@@ -142,7 +176,9 @@ body::before {
   line-height: 1;
   animation: avatarBob 0.5s ease-in-out infinite alternate;
 }
-.mini-avatar.facing-right .emoji { transform: scaleX(-1); }
+.mini-avatar.facing-right .emoji {
+  transform: scaleX(-1);
+}
 .mini-avatar .name-tag {
   font-weight: 700;
   font-size: 0.7rem;
@@ -187,7 +223,31 @@ body::before {
   from { transform: translateY(0); }
   to { transform: translateY(-4px); }
 }
-#boardWrap {
+#voteHintInline {
+  flex: 0 0 auto;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: clamp(0.75rem, 1.8vw, 1rem);
+  font-weight: 600;
+  color: var(--text-muted);
+  padding: 0.2rem 0;
+  -webkit-mask-image: linear-gradient(90deg, transparent, black 4%, black 96%, transparent);
+  mask-image: linear-gradient(90deg, transparent, black 4%, black 96%, transparent);
+}
+#voteHintInline b {
+  color: var(--gold);
+  font-weight: 800;
+}
+#voteHintInline .marquee-track {
+  display: inline-block;
+  padding-left: 100%;
+  animation: marqueeScroll 20s linear infinite;
+}
+@keyframes marqueeScroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+#answerWrap {
   flex: 1;
   display: flex;
   align-items: flex-start;
@@ -196,19 +256,19 @@ body::before {
   position: relative;
   padding-top: 0.5vh;
 }
-#board {
-  display: flex;
-  flex-direction: column;
-  gap: 0.7rem;
+#answerList {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
   width: 100%;
-  max-width: 600px;
+  max-width: 700px;
   animation: fadeInUp 0.8s ease 0.3s both;
 }
 @keyframes fadeInUp {
   from { opacity: 0; transform: translateY(30px); }
   to { opacity: 1; transform: translateY(0); }
 }
-.slot {
+.answer-slot {
   display: flex;
   align-items: center;
   background: var(--glass-bg);
@@ -217,29 +277,31 @@ body::before {
   border: 1px solid var(--glass-border);
   border-radius: 12px;
   padding: 0;
-  min-height: clamp(45px, 8vh, 62px);
+  min-height: clamp(45px, 8vh, 60px);
   transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
   overflow: hidden;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
 }
-.slot.found {
+.answer-slot.found {
   background: rgba(16, 185, 129, 0.15);
   border-color: rgba(16, 185, 129, 0.4);
   box-shadow: 0 4px 16px rgba(16, 185, 129, 0.3);
 }
-.slot-rank {
+.slot-number {
   flex: 0 0 auto;
-  width: clamp(38px, 6vw, 52px);
+  width: clamp(35px, 6vw, 50px);
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: 900;
-  font-size: clamp(1.1rem, 2.8vw, 1.6rem);
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
   color: var(--text-muted);
   background: rgba(0, 0, 0, 0.2);
   align-self: stretch;
 }
-.slot.found .slot-rank { color: var(--success); }
+.answer-slot.found .slot-number {
+  color: var(--success);
+}
 .slot-content {
   flex: 1;
   display: flex;
@@ -247,34 +309,21 @@ body::before {
   justify-content: center;
   padding: 0.6rem 1rem;
   font-weight: 700;
-  font-size: clamp(1rem, 2.8vw, 1.5rem);
+  font-size: clamp(1rem, 2.8vw, 1.4rem);
   color: var(--text-muted);
   letter-spacing: 1px;
 }
-.slot.found .slot-content {
+.answer-slot.found .slot-content {
   color: var(--text-primary);
-  letter-spacing: 0;
+  letter-spacing: 0.5px;
 }
-.slot-points {
-  flex: 0 0 auto;
-  width: clamp(42px, 7vw, 60px);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 800;
-  font-size: clamp(1rem, 2.8vw, 1.5rem);
-  color: transparent;
-  background: rgba(0, 0, 0, 0.2);
-  align-self: stretch;
-}
-.slot.found .slot-points { color: var(--gold); }
 .slot-player {
   font-size: clamp(0.7rem, 1.6vw, 0.9rem);
   color: var(--accent-purple);
   font-weight: 600;
   margin-left: 0.5rem;
 }
-.slot.reveal {
+.answer-slot.reveal {
   animation: slotReveal 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 @keyframes slotReveal {
@@ -286,26 +335,23 @@ body::before {
   position: absolute;
   top: -6px;
   left: 50%;
+  transform: translate(-50%, -130%);
   background: linear-gradient(135deg, var(--accent-purple), var(--accent-blue));
   color: white;
-  padding: 0.9rem 1.6rem;
+  padding: 0.8rem 1.5rem;
   border-radius: 50px;
-  font-weight: 800;
-  font-size: clamp(1rem, 2.8vw, 1.4rem);
+  font-weight: 700;
+  font-size: clamp(0.9rem, 2.5vw, 1.2rem);
   white-space: nowrap;
-  box-shadow: 0 8px 32px rgba(139, 92, 246, 0.6);
+  box-shadow: 0 8px 32px rgba(139, 92, 246, 0.5);
   opacity: 0;
+  transition: transform 0.35s ease, opacity 0.35s ease;
   pointer-events: none;
-  z-index: 6;
-  transform: translate(-50%, -60%) scale(0.5);
+  z-index: 5;
 }
 #toast.show {
-  animation: toastPop 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
-}
-@keyframes toastPop {
-  0% { transform: translate(-50%, -60%) scale(0.4); opacity: 0; }
-  60% { transform: translate(-50%, 5%) scale(1.15); opacity: 1; }
-  100% { transform: translate(-50%, 0%) scale(1); opacity: 1; }
+  transform: translate(-50%, 0%);
+  opacity: 1;
 }
 #leaderboard {
   position: absolute;
@@ -318,8 +364,11 @@ body::before {
   border: 1px solid var(--glass-border);
   border-radius: 16px;
   padding: 1rem;
+  display: flex;
+  flex-direction: column;
   min-width: clamp(130px, 18vw, 200px);
   max-width: 260px;
+  max-height: 85vh;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
   animation: slideInRight 0.8s ease 0.5s both;
 }
@@ -327,7 +376,7 @@ body::before {
   from { opacity: 0; transform: translateX(50px); }
   to { opacity: 1; transform: translateX(0); }
 }
-.label {
+#leaderboard .label {
   font-weight: 700;
   font-size: clamp(0.75rem, 1.7vw, 0.95rem);
   background: linear-gradient(135deg, var(--gold), #fbbf24);
@@ -343,7 +392,12 @@ body::before {
   display: flex;
   flex-direction: column;
   gap: 0.4rem;
+  overflow-y: auto;
+  max-height: 75vh;
 }
+#lbList::-webkit-scrollbar { width: 4px; }
+#lbList::-webkit-scrollbar-track { background: rgba(255, 255, 255, 0.05); border-radius: 2px; }
+#lbList::-webkit-scrollbar-thumb { background: var(--accent-purple); border-radius: 2px; }
 .lb-row {
   display: flex;
   align-items: center;
@@ -420,166 +474,197 @@ body::before {
   z-index: 10;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
 }
-#banner.show { display: block; }
+#banner.show {
+  display: block;
+}
+@media (max-width: 480px) {
+  #answerList {
+    grid-template-columns: 1fr;
+    gap: 0.6rem;
+    max-width: 400px;
+  }
+}
 @media (orientation: landscape) {
   #app {
     display: grid;
-    grid-template-columns: 1fr minmax(100px, 22%);
-    grid-template-rows: auto 1fr auto;
-    grid-template-areas: "question question" "avatars avatars" "board board";
+    grid-template-columns: 1fr minmax(240px, 32%);
+    grid-template-rows: auto auto 1fr;
+    grid-template-areas: "letters letters" "avatars avatars" "answers answers";
     gap: 1.4vh 1.6vw;
     padding: 2vh 2.4vw;
   }
-  #questionBar { grid-area: question; }
-  #boardWrap { grid-area: board; }
-  #avatarZone { grid-area: avatars; }
-  #board { max-width: 650px; }
+  #letterPanel {
+    grid-area: letters;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  #letterWheel {
+    width: min(18vh, 16vw);
+    height: min(18vh, 16vw);
+    margin: 0;
+  }
+  #avatarZone {
+    grid-area: avatars;
+  }
+  #answerWrap {
+    grid-area: answers;
+    min-width: 0;
+  }
 }
 </style>
 </head>
 <body>
   <div id="app">
-    <div id="questionBar">
-      <span class="qbar-label">FAMILY 100</span>
-      <span class="qbar-text">Menunggu soal...</span>
-      <span class="qbar-progress">0/7</span>
+    <div id="letterPanel">
+      <div class="letterPanel-top">
+        <span class="letterPanel-label">HURUF DASAR</span>
+        <span class="letterPanel-progress" id="progressText">Menunggu soal...</span>
+      </div>
+      <div id="letterWheel"><div class="hub"></div></div>
+      <div id="voteHintInline"><div class="marquee-track">💬 Komen <b>SKIP 10x</b> rame-rame kalo kesulitan &nbsp;•&nbsp; ketik <b>GANTI 10x</b> buat ganti game &nbsp;•&nbsp; kalo kalian nggak bisa nerima kenyataan dari kekalahan, komen <b>NYERAH 10x</b> 🤣🤣🤣 niscaya aku kasih jawabannya</div></div>
     </div>
-    <div id="voteHintInline"><div class="marquee-track">💬 Komen <b>SKIP 10x</b> rame-rame kalo kesulitan &nbsp;•&nbsp; ketik <b>GANTI 10x</b> buat ganti game &nbsp;•&nbsp; kalo kalian nggak bisa nerima kenyataan dari kekalahan, komen <b>NYERAH 10x</b> 🤣🤣🤣 niscaya aku kasih jawabannya</div></div>
 
     <div id="avatarZone"></div>
 
-    <div id="boardWrap">
+    <div id="answerWrap">
       <div id="toast"></div>
-      <div id="board"></div>
+      <div id="answerList"></div>
+      <div id="leaderboard">
+        <div class="label">🏆 Papan Juara</div>
+        <div id="lbList"><div class="empty-hint">Belum ada yang jawab</div></div>
+      </div>
     </div>
-  </div>
-
-  <div id="leaderboard">
-    <div class="label">🏆 Papan Skor</div>
-    <div id="lbList"><div class="empty-hint">Belum ada</div></div>
   </div>
 
   <div id="banner"></div>
 
   <script src="/socket.io/socket.io.js"></script>
-    <script src="/shared/v2-bootstrap.js"></script>
   <script>
     const socket = io();
   </script>
   <script src="/shared/v2-bootstrap.js"></script>
   <script src="/shared/game-switch-watcher.js"></script>
   <script>
-    const boardEl = document.getElementById('board');
-    const qbarText = document.querySelector('.qbar-text');
-    const qbarProgress = document.querySelector('.qbar-progress');
+    const answerListEl = document.getElementById('answerList');
+    const answerWrap = document.getElementById('answerWrap');
+    const toastEl = document.getElementById('toast');
+    const letterPanelEl = document.getElementById('letterPanel');
+    const letterWheelEl = document.getElementById('letterWheel');
+    const progressTextEl = document.getElementById('progressText');
+    const lbList = document.getElementById('lbList');
+    const bannerEl = document.getElementById('banner');
 
-    let lastState = null;
-    let prevBoard = []; // track previous board state for animation
+    let currentPuzzle = null;
+    let currentBaseLetters = null;
+    let toastTimer = null;
+    let prevAnswerStates = new Map();
 
-    function renderBoard(data) {
-      const oldBoard = prevBoard;
-      lastState = data;
-      const { board, boardSlots, question, filledCount } = data;
+    function renderAnswerList(data) {
+      currentPuzzle = data;
+      const { words } = data;
 
-      qbarText.textContent = question || 'Menunggu soal...';
-      qbarProgress.textContent = `${filledCount}/${boardSlots}`;
+      answerListEl.innerHTML = '';
 
-      boardEl.innerHTML = '';
-      prevBoard = board.map(b => b ? b.text : null);
-
-      for (let i = 0; i < boardSlots; i++) {
+      words.forEach((w, idx) => {
         const slot = document.createElement('div');
-        slot.className = 'slot';
+        slot.className = 'answer-slot';
+        const wordKey = `${w.number}-${w.direction}`;
+        
+        if (w.answer) {
+          slot.classList.add('found');
+          
+          // Check if this is newly found
+          if (!prevAnswerStates.has(wordKey)) {
+            slot.classList.add('reveal');
+          }
+          prevAnswerStates.set(wordKey, true);
+        }
 
-        const rankEl = document.createElement('div');
-        rankEl.className = 'slot-rank';
-        rankEl.textContent = i + 1;
+        const numberEl = document.createElement('div');
+        numberEl.className = 'slot-number';
+        numberEl.textContent = w.number;
 
         const contentEl = document.createElement('div');
         contentEl.className = 'slot-content';
-
-        const pointsEl = document.createElement('div');
-        pointsEl.className = 'slot-points';
-
-        if (board[i]) {
-          slot.classList.add('found');
-          contentEl.innerHTML = `${board[i].text}<span class="slot-player">${board[i].foundBy || ''}</span>`;
-          pointsEl.textContent = board[i].points;
-
-          // Check if this is a new entry or moved position
-          const wasAtIndex = oldBoard.indexOf(board[i].text);
-          if (wasAtIndex === -1) {
-            // New entry
-            slot.classList.add('reveal');
-          } else if (wasAtIndex !== i) {
-            // Moved position
-            slot.classList.add(wasAtIndex > i ? 'shuffle-up' : 'shuffle-down');
-          }
+        
+        if (w.answer) {
+          contentEl.textContent = w.answer;
         } else {
-          contentEl.textContent = '???';
-          pointsEl.textContent = '';
+          contentEl.textContent = '?'.repeat(w.length);
         }
 
-        slot.appendChild(rankEl);
+        slot.appendChild(numberEl);
         slot.appendChild(contentEl);
-        slot.appendChild(pointsEl);
-        boardEl.appendChild(slot);
-      }
+        answerListEl.appendChild(slot);
+      });
     }
 
-    function spawnConfetti(count = 18) {
-      const wrap = document.getElementById('boardWrap');
-      const colors = ['#f5b942', '#f472b6', '#5eead4', '#8b6ef5', '#4ade80'];
-      for (let i = 0; i < count; i++) {
-        const piece = document.createElement('div');
-        piece.className = 'confetti-piece';
-        const angle = Math.random() * Math.PI * 2;
-        const dist = 60 + Math.random() * 90;
-        piece.style.setProperty('--tx', `${Math.cos(angle) * dist}px`);
-        piece.style.setProperty('--ty', `${Math.sin(angle) * dist}px`);
-        piece.style.setProperty('--rot', `${(Math.random() - 0.5) * 540}deg`);
-        piece.style.background = colors[i % colors.length];
-        piece.style.animationDelay = `${Math.random() * 0.08}s`;
-        wrap.appendChild(piece);
-        setTimeout(() => piece.remove(), 1000);
-      }
+    function renderLetterWheel(baseLetters) {
+      if (currentBaseLetters === baseLetters) return;
+      currentBaseLetters = baseLetters;
+
+      letterWheelEl.innerHTML = '<div class="hub"></div>';
+      if (!baseLetters) return;
+
+      const letters = baseLetters.split('');
+      const n = letters.length;
+      const radius = 50 - 27 / 2;
+
+      letters.forEach((ch, i) => {
+        const angle = (2 * Math.PI * i / n) - Math.PI / 2;
+        const cx = 50 + radius * Math.cos(angle);
+        const cy = 50 + radius * Math.sin(angle);
+
+        const bubble = document.createElement('div');
+        bubble.className = 'letter-bubble';
+        bubble.textContent = ch;
+        bubble.style.left = `${cx}%`;
+        bubble.style.top = `${cy}%`;
+        bubble.style.transform = 'translate(-50%, -50%)';
+        letterWheelEl.appendChild(bubble);
+      });
     }
 
-    function showToast(data) {
-      const toast = document.getElementById('toast');
-      toast.textContent = `🎉 ${data.player} BENAR! "${data.answer}" +${data.points}`;
-      toast.style.background = 'var(--accent)';
-      toast.style.setProperty('--toast-glow', 'rgba(26,15,46,0.1)');
-      toast.classList.remove('show');
-      void toast.offsetWidth;
-      toast.classList.add('show');
-      spawnConfetti();
-      clearTimeout(showToast._hideT);
-      showToast._hideT = setTimeout(() => toast.classList.remove('show'), 2400);
+    function renderProgress(words) {
+      const total = words.length;
+      const solved = words.filter(w => w.answer).length;
+
+      if (solved === total && total > 0) {
+        letterPanelEl.classList.add('done');
+        progressTextEl.innerHTML = '🎉 Semua kata ketemu!';
+      } else {
+        letterPanelEl.classList.remove('done');
+        progressTextEl.innerHTML = `<span class="num-solved">${solved}</span> / ${total} kata`;
+      }
     }
 
     function renderLeaderboard(list) {
-      const lb = document.getElementById('lbList');
-      if (!list.length) { lb.innerHTML = '<div class="empty-hint">Belum ada</div>'; return; }
-      lb.innerHTML = list.map((row, i) => `
+      if (!list || list.length === 0) {
+        lbList.innerHTML = '<div class="empty-hint">Belum ada yang jawab</div>';
+        return;
+      }
+      lbList.innerHTML = list.slice(0, 10).map((row, i) => `
         <div class="lb-row">
           <span class="lb-rank">${i + 1}</span>
-          <span class="lb-name">${row.player}</span>
+          <span class="lb-name">${escapeHtml(row.player)}</span>
           <span class="lb-score">${row.score}</span>
-        </div>
-      `).join('');
+        </div>`).join('');
     }
 
-    function showBanner(msg) {
-      const banner = document.getElementById('banner');
-      banner.textContent = msg;
-      banner.classList.add('show');
-    }
-    function hideBanner() {
-      document.getElementById('banner').classList.remove('show');
+    function escapeHtml(s) {
+      return s.replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
     }
 
-    // Avatar system (same as cari-kata)
+    function showToast(data) {
+      toastEl.textContent = `${data.player} benar! ${data.answer ? data.answer.toUpperCase() : ''}`;
+      toastEl.classList.add('show');
+      clearTimeout(toastTimer);
+      toastTimer = setTimeout(() => toastEl.classList.remove('show'), 3000);
+    }
+
+    function showBanner(text) { bannerEl.textContent = text; bannerEl.classList.add('show'); }
+    function hideBanner() { bannerEl.classList.remove('show'); }
+
     const avatarZone = document.getElementById('avatarZone');
     const activeAvatars = {};
 
@@ -589,7 +674,7 @@ body::before {
       el.className = 'mini-avatar';
       let avatarHtml = `<span class="emoji">${emoji}</span>`;
       if (avatarType === 'tiktok' && profileUrl) {
-         avatarHtml = `<img src="${profileUrl}" onerror="this.outerHTML='<span class=\'emoji\'>${emoji}</span>'" style="width:24px;height:24px;border-radius:50%;object-fit:cover;margin-right:2px;border:1px solid #fff;display:inline-block;vertical-align:middle;" />`;
+         avatarHtml = `<img src="${profileUrl}" onerror="this.outerHTML='<span class=\\'emoji\\'>${emoji}</span>'" style="width:24px;height:24px;border-radius:50%;object-fit:cover;margin-right:2px;border:1px solid #fff;display:inline-block;vertical-align:middle;" />`;
       }
       el.innerHTML = `${avatarHtml}<span class="name-tag">${player}</span>`;
       avatarZone.appendChild(el);
@@ -646,26 +731,24 @@ body::before {
       delete activeAvatars[player];
     }
 
-    socket.on('game:switched', () => window.location.reload());
-
     socket.on('avatar:spawn', (data) => spawnAvatar(data.player, data.emoji, data.profileUrl, data.avatarType));
     socket.on('avatar:sync', (list) => { clearAllAvatars(); list.forEach((d) => spawnAvatar(d.player, d.emoji, d.profileUrl, d.avatarType)); });
     socket.on('avatar:reset', clearAllAvatars);
     socket.on('avatar:remove', ({ player }) => removeAvatar(player));
     socket.on('chat:comment', ({ player, text }) => showComment(player, text));
 
-    socket.on('update', (data) => renderBoard(data));
+    socket.on('game:switched', () => window.location.reload());
+    socket.on('update', (data) => {
+      renderAnswerList(data);
+      renderLetterWheel(data.baseLetters);
+      renderProgress(data.words);
+    });
     socket.on('answer:correct', (data) => showToast(data));
     socket.on('leaderboard:update', (list) => renderLeaderboard(list));
-    socket.on('puzzle:completed', () => showBanner('🎉 Papan penuh! Sedang menyiapkan soal baru...'));
-    socket.on('puzzle:new', () => { hideBanner(); prevBoard = []; });
+    socket.on('puzzle:completed', () => showBanner('🎉 Semua kata ketemu! Menyiapkan soal baru...'));
+    socket.on('puzzle:new', () => { currentBaseLetters = null; prevAnswerStates.clear(); hideBanner(); });
     socket.on('puzzle:error', (data) => { showBanner('⚠️ ' + data.message); setTimeout(hideBanner, 4000); });
-  </script>
-  <script src="/shared/vote-overlay.js"></script>
-  <script>
-    // (sengaja kosong -- vote-overlay.js pakai variabel `socket` dari script di atas)
 
-    // Wake lock
     let wakeLock = null;
     let noSleepStarted = false;
 
@@ -687,7 +770,7 @@ body::before {
         document.body.appendChild(video);
         video.play().catch(() => {});
       } catch (e) {
-        console.error('Wake lock fallback gagal:', e.message);
+        console.error('⚠️ Fallback nahan layar gagal:', e.message);
       }
     }
 
@@ -698,7 +781,7 @@ body::before {
           wakeLock.addEventListener('release', () => { wakeLock = null; });
           return;
         } catch (e) {
-          console.error('Wake Lock API gagal:', e.message);
+          console.error('⚠️ Wake Lock API gagal, pakai fallback:', e.message);
         }
       }
       startNoSleepFallback();
@@ -716,5 +799,6 @@ body::before {
       document.body.removeEventListener('click', goFullscreen);
     }, { once: true });
   </script>
+  <script src="/shared/vote-overlay.js"></script>
 </body>
 </html>
