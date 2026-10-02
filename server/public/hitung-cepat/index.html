@@ -405,6 +405,17 @@ body::before {
   .title { font-size: 1.5rem; }
   .question-text { font-size: 1.8rem; }
 }
+
+#voteHintInline{flex:0 0 auto;overflow:hidden;white-space:nowrap;font-size:clamp(.7rem,1.6vw,.9rem);color:var(--text-muted);text-align:center}
+#voteHintInline .marquee-track{display:inline-block;padding-left:100%;animation:hcMarquee 28s linear infinite}
+@keyframes hcMarquee{from{transform:translateX(0)}to{transform:translateX(-100%)}}
+#avatarZone{flex:0 0 auto;height:clamp(60px,13vh,120px);position:relative;background:transparent;overflow:visible}
+.mini-avatar{position:absolute;bottom:4px;display:flex;flex-direction:column;align-items:center;pointer-events:none;will-change:left}
+.mini-avatar .emoji{display:block;font-size:26px;line-height:1;animation:avatarBob .5s ease-in-out infinite alternate}
+.mini-avatar.facing-right .emoji{transform:scaleX(-1)}
+.mini-avatar .name-tag{font-weight:700;font-size:.65rem;color:var(--text-primary);background:rgba(26,15,46,.35);padding:.1rem .5rem;border-radius:50px;margin-bottom:.15rem;white-space:nowrap;max-width:84px;overflow:hidden;text-overflow:ellipsis;order:-1}
+.mini-avatar .comment-bubble{font-weight:600;font-size:.7rem;color:#0f0a1f;background:var(--text-primary);padding:.25rem .6rem;border-radius:10px;margin-bottom:.3rem;white-space:nowrap;max-width:150px;overflow:hidden;text-overflow:ellipsis;position:relative;order:-2}
+@keyframes avatarBob{from{transform:translateY(0)}to{transform:translateY(-4px)}}
 </style>
 </head>
 <body>
@@ -414,16 +425,18 @@ body::before {
     <div class="round-badge">Ronde <span id="round-number">1</span></div>
     <div class="progress-info"><span id="solved-count">0</span>/6 Terjawab</div>
   </div>
+  <div id="voteHintInline"><div class="marquee-track">💬 Komen <b>SKIP 10x</b> rame-rame kalo kesulitan &nbsp;•&nbsp; ketik <b>GANTI 10x</b> buat ganti game</div></div>
   <div class="grid-container" id="grid"></div>
+  <div id="avatarZone"></div>
 </div>
 <div id="leaderboard">
   <div class="label">🏆 Leaderboard</div>
   <div id="lbList"><div class="empty-hint">Belum ada yang jawab</div></div>
 </div>
 <script src="/socket.io/socket.io.js"></script>
-    <script src="/shared/v2-bootstrap.js"></script>
 <script>const socket = io();</script>
 <script src="/shared/v2-bootstrap.js"></script>
+<script src="/shared/game-switch-watcher.js"></script>
 <script>
 const grid = document.getElementById('grid');
 const lbList = document.getElementById('lbList');
@@ -493,7 +506,52 @@ socket.on('update', (state) => {
     renderLeaderboard(state.leaderboard);
   }
 });
-socket.on('game:switched', () => { window.location.reload(); });
+
+function escapeHtml(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
+socket.on('leaderboard:update', (list) => renderLeaderboard(list));
+
+const avatarZone = document.getElementById('avatarZone');
+const activeAvatars = {};
+function spawnAvatar(player, emoji, profileUrl, avatarType) {
+  if (activeAvatars[player]) return;
+  const el = document.createElement('div');
+  el.className = 'mini-avatar';
+  let avatarHtml = `<span class="emoji">${emoji}</span>`;
+  if (avatarType === 'tiktok' && profileUrl) {
+    avatarHtml = `<img src="${profileUrl}" onerror="this.outerHTML='<span class=\\'emoji\\'>${emoji}</span>'" style="width:24px;height:24px;border-radius:50%;object-fit:cover;border:1px solid #fff;display:block;" />`;
+  }
+  el.innerHTML = `${avatarHtml}<span class="name-tag">${escapeHtml(player)}</span>`;
+  avatarZone.appendChild(el);
+  el.style.left = Math.random() * Math.max(0, avatarZone.clientWidth - 40) + 'px';
+  activeAvatars[player] = { el, timer: null };
+  walkRandomly(player);
+}
+function walkRandomly(player) {
+  const entry = activeAvatars[player];
+  if (!entry) return;
+  const maxLeft = Math.max(0, (avatarZone.clientWidth || 300) - (entry.el.offsetWidth || 40));
+  const currentLeft = parseFloat(entry.el.style.left) || 0;
+  const targetLeft = Math.random() * maxLeft;
+  const duration = 2.5 + Math.random() * 3;
+  entry.el.classList.toggle('facing-right', targetLeft > currentLeft);
+  entry.el.style.transition = `left ${duration}s linear`;
+  entry.el.style.left = targetLeft + 'px';
+  entry.timer = setTimeout(() => walkRandomly(player), duration * 1000);
+}
+function clearAllAvatars() {
+  Object.values(activeAvatars).forEach(({ el, timer, commentTimer }) => { clearTimeout(timer); clearTimeout(commentTimer); el.remove(); });
+  for (const k in activeAvatars) delete activeAvatars[k];
+}
+function removeAvatar(player) {
+  const e = activeAvatars[player];
+  if (!e) return;
+  clearTimeout(e.timer); clearTimeout(e.commentTimer); e.el.remove();
+  delete activeAvatars[player];
+}
+socket.on('avatar:spawn', (d) => spawnAvatar(d.player, d.emoji, d.profileUrl, d.avatarType));
+socket.on('avatar:sync', (list) => { clearAllAvatars(); list.forEach((d) => spawnAvatar(d.player, d.emoji, d.profileUrl, d.avatarType)); });
+socket.on('avatar:reset', clearAllAvatars);
+socket.on('avatar:remove', ({ player }) => removeAvatar(player));
 let wakeLock = null;
 async function requestWakeLock() {
   if ('wakeLock' in navigator) {
@@ -513,5 +571,6 @@ document.body.addEventListener('click', function goFullscreen() {
   document.body.removeEventListener('click', goFullscreen);
 }, { once: true });
 </script>
+<script src="/shared/vote-overlay.js"></script>
 </body>
 </html>
