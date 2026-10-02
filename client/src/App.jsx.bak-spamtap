@@ -117,7 +117,6 @@ function Dashboard() {
     { id: 'sambung-kata', label: '⛓️ Sambung Kata', icon: '⛓️', color: 'from-indigo-500 to-blue-600' },
     { id: 'susun-kalimat', label: '📑 Susun Kalimat', icon: '📑', color: 'from-purple-500 to-pink-600' },
     { id: 'hitung-cepat', label: '🧮 Hitung Cepat', icon: '🧮', color: 'from-red-500 to-orange-600' },
-    { id: 'spam-tap', label: '❤️ Spam Tap Battle', icon: '⚔️', color: 'from-red-500 to-blue-600' },
   ];
   const refreshActiveSoal = async (username) => {
     if (!username) return;
