@@ -1,0 +1,215 @@
+let state = null;
+let broadcast = null;
+
+const WIN_THRESHOLD = 100; // Optional win condition
+
+function initState() {
+  state = {
+    redTaps: 0,
+    blueTaps: 0,
+    playerTeams: {},    // { player: 'red' | 'blue' }
+    playerTaps: {},     // { player: count }
+    roundNumber: 1
+  };
+}
+
+module.exports = {
+  id: 'spam-tap',
+
+  setBroadcaster(fn) {
+    broadcast = fn;
+  },
+
+  init() {
+    initState();
+    if (broadcast) {
+      setTimeout(() => broadcast(), 100);
+    }
+  },
+
+  getAdminAnswers() {
+    if (!state) {
+      return { 
+        title: 'Spam Tap LIKE - Battle', 
+        items: [
+          { label: 'Tim Merah', answer: '0', solved: false },
+          { label: 'Tim Biru', answer: '0', solved: false },
+          { label: 'Players', answer: '0', solved: false }
+        ]
+      };
+    }
+    
+    const totalPlayers = Object.keys(state.playerTeams).length;
+    
+    return {
+      title: 'Spam Tap LIKE - Ronde ' + state.roundNumber,
+      items: [
+        { label: 'Tim Merah', answer: String(state.redTaps), solved: false },
+        { label: 'Tim Biru', answer: String(state.blueTaps), solved: false },
+        { label: 'Total Players', answer: String(totalPlayers), solved: false }
+      ]
+    };
+  },
+
+  buildStatePayload() {
+    if (!state) {
+      return {
+        redTaps: 0,
+        blueTaps: 0,
+        redPlayers: [],
+        bluePlayers: [],
+        wallPosition: 50,
+        roundNumber: 1
+      };
+    }
+
+    // Separate players by team and sort by taps
+    const redPlayers = [];
+    const bluePlayers = [];
+    
+    for (const [player, team] of Object.entries(state.playerTeams)) {
+      const tapCount = state.playerTaps[player] || 0;
+      const playerData = { player, count: tapCount };
+      
+      if (team === 'red') {
+        redPlayers.push(playerData);
+      } else {
+        bluePlayers.push(playerData);
+      }
+    }
+    
+    // Sort by tap count descending
+    redPlayers.sort((a, b) => b.count - a.count);
+    bluePlayers.sort((a, b) => b.count - a.count);
+
+    // Calculate wall position (0-100, where 50 is center)
+    // More red taps pushes wall toward blue (higher number)
+    // More blue taps pushes wall toward red (lower number)
+    const totalTaps = state.redTaps + state.blueTaps;
+    let wallPosition = 50;
+    if (totalTaps > 0) {
+      wallPosition = (state.redTaps / totalTaps) * 100;
+    }
+
+    return {
+      redTaps: state.redTaps,
+      blueTaps: state.blueTaps,
+      redPlayers: redPlayers.slice(0, 10),  // Top 10 per team
+      bluePlayers: bluePlayers.slice(0, 10),
+      wallPosition: Math.round(wallPosition),
+      roundNumber: state.roundNumber
+    };
+  },
+
+  buildClueList() {
+    if (!state) return 'Ronde 1';
+    return `Ronde ${state.roundNumber} - Merah vs Biru`;
+  },
+
+  // NEW: Handle native TikTok LIKE events
+  handleLike({ player, count }) {
+    if (!player) return { ok: false, msg: 'Player tidak valid' };
+    
+    const likeCount = count || 1;
+    
+    // Auto-assign team if first time
+    if (!state.playerTeams[player]) {
+      // Random assignment: red or blue
+      state.playerTeams[player] = Math.random() < 0.5 ? 'red' : 'blue';
+    }
+    
+    const team = state.playerTeams[player];
+    
+    // Increment player's individual tap count
+    if (!state.playerTaps[player]) {
+      state.playerTaps[player] = 0;
+    }
+    state.playerTaps[player] += likeCount;
+    
+    // Increment team's total tap count
+    if (team === 'red') {
+      state.redTaps += likeCount;
+    } else {
+      state.blueTaps += likeCount;
+    }
+    
+    if (broadcast) broadcast();
+    
+    const teamEmoji = team === 'red' ? '🔴' : '🔵';
+    return { ok: true, points: likeCount, msg: `${teamEmoji} +${likeCount} tap!` };
+  },
+
+  // Keep handleAnswer for backwards compatibility but make it less prominent
+  handleAnswer({ answer, player, room }) {
+    if (!answer) return { ok: false, msg: 'Jawaban kosong' };
+    
+    // Legacy: Still allow 'LOV' comments as fallback
+    if (answer.toUpperCase() !== 'LOV') {
+      return { ok: false, msg: 'Tap LOVE button untuk main!' };
+    }
+
+    // Auto-assign team if first time
+    if (!state.playerTeams[player]) {
+      state.playerTeams[player] = Math.random() < 0.5 ? 'red' : 'blue';
+    }
+    
+    const team = state.playerTeams[player];
+    
+    if (!state.playerTaps[player]) {
+      state.playerTaps[player] = 0;
+    }
+    state.playerTaps[player]++;
+    
+    if (team === 'red') {
+      state.redTaps++;
+    } else {
+      state.blueTaps++;
+    }
+    
+    if (broadcast) broadcast();
+    
+    const teamEmoji = team === 'red' ? '🔴' : '🔵';
+    return { ok: true, points: 1, msg: `${teamEmoji} +1 tap!` };
+  },
+
+  isComplete() {
+    // Optional: auto-complete when one team reaches threshold
+    if (state.redTaps >= WIN_THRESHOLD || state.blueTaps >= WIN_THRESHOLD) {
+      return true;
+    }
+    return false;
+  },
+
+  async onComplete() {
+    // Reset for new round
+    state.redTaps = 0;
+    state.blueTaps = 0;
+    state.playerTeams = {};
+    state.playerTaps = {};
+    state.roundNumber++;
+    
+    if (broadcast) broadcast();
+    return { success: true };
+  },
+
+  reset() {
+    initState();
+    if (broadcast) broadcast();
+  },
+
+  async parseComment(text) {
+    const normalized = text.trim().toUpperCase();
+    
+    // Detect skip/reset command
+    if (normalized === 'SKIP' || normalized === '.SKIP') {
+      return { skip: true };
+    }
+    
+    // Legacy: Check if comment contains 'LOV' (less preferred method)
+    if (normalized.includes('LOV')) {
+      return { answer: 'LOV' };
+    }
+    
+    return null;
+  }
+};

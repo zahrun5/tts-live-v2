@@ -42,13 +42,6 @@ function attachHandlers(username, room, session) {
     room.handleChat({ player: info.name, profileUrl: info.profileUrl, text });
   });
 
-  conn.on(WebcastEvent.LIKE, (data) => {
-    const info = extractPlayerInfo(data);
-    const likeCount = data.likeCount || 1;
-    console.log(`[TikTok] Like dari ${info.name}, count: ${likeCount}`);
-    room.handleLike({ player: info.name, profileUrl: info.profileUrl, count: likeCount });
-  });
-
   const onDown = (reason) => {
     if (sessions.get(username) !== session) return; // sesi lama, abaikan
     room.setLiveStatus(false, session.tiktokUsername);

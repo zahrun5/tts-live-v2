@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Battle Tap - Spam Tap LOV</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #0f0a1f 0%, #1a0f2e 50%, #0f0a1f 100%);
+            min-height: 100vh;
+            overflow: hidden;
+            color: white;
+        }
+        .container { width: 100%; height: 100vh; display: flex; flex-direction: column; padding: 1rem; position: relative; }
+        .header { text-align: center; margin-bottom: 2rem; }
+        .header h1 {
+            font-size: clamp(1.5rem, 5vw, 3rem);
+            font-weight: 800;
+            background: linear-gradient(90deg, #ef4444 0%, #f59e0b 25%, #3b82f6 75%, #8b5cf6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-shadow: 0 0 30px rgba(239, 68, 68, 0.5);
+            animation: pulse 2s ease-in-out infinite;
+        }
+        @keyframes pulse { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.05); } }
+        .battle-section { flex: 1; display: flex; flex-direction: column; justify-content: center; gap: 2rem; max-width: 1400px; margin: 0 auto; width: 100%; }
+        .team-headers { display: flex; justify-content: space-between; align-items: center; padding: 0 2rem; }
+        .team-header { text-align: center; backdrop-filter: blur(10px); background: rgba(255, 255, 255, 0.05); border-radius: 20px; padding: 1rem 2rem; border: 2px solid; min-width: 200px; }
+        .team-red { border-color: rgba(239, 68, 68, 0.5); box-shadow: 0 0 20px rgba(239, 68, 68, 0.3); }
+        .team-blue { border-color: rgba(59, 130, 246, 0.5); box-shadow: 0 0 20px rgba(59, 130, 246, 0.3); }
+        .team-name { font-size: clamp(1rem, 3vw, 1.5rem); font-weight: 700; margin-bottom: 0.5rem; }
+        .team-red .team-name { color: #ef4444; }
+        .team-blue .team-name { color: #3b82f6; }
+        .team-count { font-size: clamp(1.5rem, 4vw, 2.5rem); font-weight: 800; text-shadow: 0 0 10px currentColor; }
+        .vs-text { font-size: clamp(1.5rem, 4vw, 2rem); font-weight: 800; color: #f59e0b; text-shadow: 0 0 20px rgba(245, 158, 11, 0.8); }
+        .battle-bar-container { width: 100%; height: 100px; position: relative; margin: 1rem 0; }
+        .battle-bar {
+            width: 100%; height: 100%;
+            background: linear-gradient(90deg, #ef4444 0%, #b91c1c 30%, #374151 50%, #1e40af 70%, #3b82f6 100%);
+            border-radius: 50px; position: relative; overflow: visible;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5), inset 0 -5px 20px rgba(0, 0, 0, 0.3);
+            transition: transform 0.1s ease;
+        }
+        .battle-bar.shake { animation: shake 0.3s ease; }
+        @keyframes shake { 0%, 100% { transform: translateX(0); } 25% { transform: translateX(-5px) rotate(-1deg); } 75% { transform: translateX(5px) rotate(1deg); } }
+        .wall {
+            position: absolute; top: -20px; bottom: -20px; width: 12px;
+            background: linear-gradient(180deg, #fbbf24 0%, #f59e0b 50%, #fbbf24 100%);
+            border: 3px solid #fff; border-radius: 6px;
+            box-shadow: 0 0 30px rgba(245, 158, 11, 0.8), 0 0 60px rgba(245, 158, 11, 0.4);
+            transition: left 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+            z-index: 10; transform: translateX(-50%);
+        }
+        .wall::before { content: '⚔️'; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 2rem; animation: wallPulse 1s ease-in-out infinite; }
+        @keyframes wallPulse { 0%, 100% { transform: translate(-50%, -50%) scale(1); } 50% { transform: translate(-50%, -50%) scale(1.2); } }
+        .glow-red { box-shadow: 0 0 50px rgba(239, 68, 68, 0.8), inset 0 0 30px rgba(239, 68, 68, 0.3); }
+        .glow-blue { box-shadow: 0 0 50px rgba(59, 130, 246, 0.8), inset 0 0 30px rgba(59, 130, 246, 0.3); }
+        .avatar-zones { display: flex; justify-content: space-between; gap: 2rem; min-height: 200px; }
+        .avatar-zone {
+            flex: 1; backdrop-filter: blur(10px); background: rgba(255, 255, 255, 0.03);
+            border-radius: 20px; padding: 1.5rem; border: 2px solid;
+            display: flex; flex-wrap: wrap; gap: 1rem; align-content: flex-start;
+            overflow-y: auto; max-height: 250px;
+        }
+        .avatar-zone-red { border-color: rgba(239, 68, 68, 0.3); }
+        .avatar-zone-blue { border-color: rgba(59, 130, 246, 0.3); }
+        .avatar { display: flex; flex-direction: column; align-items: center; gap: 0.3rem; animation: walkIn 0.5s ease; }
+        @keyframes walkIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+        .avatar-emoji { font-size: 2.5rem; animation: bounce 2s ease-in-out infinite; }
+        @keyframes bounce { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+        .avatar-name { font-size: 0.75rem; font-weight: 600; text-align: center; max-width: 80px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+        .avatar-taps { font-size: 0.7rem; opacity: 0.8; }
+        .instructions {
+            text-align: center; backdrop-filter: blur(10px); background: rgba(255, 255, 255, 0.05);
+            border-radius: 15px; padding: 1.5rem; border: 1px solid rgba(255, 255, 255, 0.1); margin-top: 1rem;
+        }
+        .instructions p { font-size: clamp(1rem, 2.5vw, 1.3rem); margin: 0; font-weight: 700; }
+        .instructions strong { color: #f59e0b; font-size: clamp(1.2rem, 3vw, 1.8rem); }
+        .leaderboard {
+            position: fixed; top: 1rem; right: 1rem;
+            backdrop-filter: blur(10px); background: rgba(255, 255, 255, 0.05);
+            border-radius: 15px; padding: 1rem; border: 1px solid rgba(255, 255, 255, 0.1);
+            min-width: 200px; max-height: 300px; overflow-y: auto; z-index: 100;
+        }
+        .leaderboard h3 { font-size: 1rem; margin-bottom: 0.5rem; text-align: center; color: #f59e0b; }
+        .leaderboard-item { display: flex; justify-content: space-between; padding: 0.3rem 0; font-size: 0.85rem; border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
+        @media (max-width: 768px) {
+            .team-headers { padding: 0 0.5rem; }
+            .team-header { padding: 0.75rem 1rem; min-width: 150px; }
+            .avatar-zones { flex-direction: column; gap: 1rem; }
+            .avatar-zone { max-height: 150px; }
+            .leaderboard { display: none; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header"><h1>🔥 BATTLE TAP 🔥</h1></div>
+        <div class="battle-section">
+            <div class="team-headers">
+                <div class="team-header team-red">
+                    <div class="team-name">🔴 TIM MERAH</div>
+                    <div class="team-count" id="redCount">0</div>
+                </div>
+                <div class="vs-text">VS</div>
+                <div class="team-header team-blue">
+                    <div class="team-name">TIM BIRU 🔵</div>
+                    <div class="team-count" id="blueCount">0</div>
+                </div>
+            </div>
+            <div class="battle-bar-container">
+                <div class="battle-bar" id="battleBar">
+                    <div class="wall" id="wall"></div>
+                </div>
+            </div>
+            <div class="avatar-zones">
+                <div class="avatar-zone avatar-zone-red" id="redZone"></div>
+                <div class="avatar-zone avatar-zone-blue" id="blueZone"></div>
+            </div>
+            <div class="instructions"><p>Spam <strong>LOV</strong> sebanyak-banyaknya!</p></div>
+        </div>
+        <div class="leaderboard" id="leaderboard">
+            <h3>🏆 Top Tappers</h3>
+            <div id="leaderboardContent"></div>
+        </div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/shared/v2-bootstrap.js"></script>
+    <script src="/shared/game-switch-watcher.js"></script>
+    <script src="/shared/vote-overlay.js"></script>
+    <script>
+        const socket = io();
+        const redCountEl = document.getElementById('redCount');
+        const blueCountEl = document.getElementById('blueCount');
+        const wallEl = document.getElementById('wall');
+        const battleBarEl = document.getElementById('battleBar');
+        const redZoneEl = document.getElementById('redZone');
+        const blueZoneEl = document.getElementById('blueZone');
+        const leaderboardContentEl = document.getElementById('leaderboardContent');
+        let lastWallPosition = 50;
+        const avatarEmojis = ['😎', '🤠', '🥷', '👑', '🎯', '💪', '🔥', '⚡', '🚀', '💥'];
+        function getRandomEmoji() { return avatarEmojis[Math.floor(Math.random() * avatarEmojis.length)]; }
+        function updateCounters(redTaps, blueTaps) {
+            redCountEl.textContent = redTaps;
+            blueCountEl.textContent = blueTaps;
+            battleBarEl.classList.add('shake');
+            setTimeout(() => battleBarEl.classList.remove('shake'), 300);
+        }
+        function updateWallPosition(position) {
+            wallEl.style.left = position + '%';
+            battleBarEl.classList.remove('glow-red', 'glow-blue');
+            if (position < 30) battleBarEl.classList.add('glow-blue');
+            else if (position > 70) battleBarEl.classList.add('glow-red');
+            lastWallPosition = position;
+        }
+        function updateTeamLists(redPlayers, bluePlayers) {
+            redZoneEl.innerHTML = '';
+            redPlayers.forEach(p => {
+                const avatar = document.createElement('div');
+                avatar.className = 'avatar';
+                avatar.innerHTML = `<div class="avatar-emoji">${getRandomEmoji()}</div><div class="avatar-name">${p.player}</div><div class="avatar-taps">${p.taps} taps</div>`;
+                redZoneEl.appendChild(avatar);
+            });
+            blueZoneEl.innerHTML = '';
+            bluePlayers.forEach(p => {
+                const avatar = document.createElement('div');
+                avatar.className = 'avatar';
+                avatar.innerHTML = `<div class="avatar-emoji">${getRandomEmoji()}</div><div class="avatar-name">${p.player}</div><div class="avatar-taps">${p.taps} taps</div>`;
+                blueZoneEl.appendChild(avatar);
+            });
+            const allPlayers = [...redPlayers, ...bluePlayers].sort((a, b) => b.taps - a.taps).slice(0, 10);
+            leaderboardContentEl.innerHTML = allPlayers.map((p, i) => `<div class="leaderboard-item"><span>${i + 1}. ${p.player}</span><span>${p.taps}</span></div>`).join('');
+        }
+        socket.on('update', (state) => {
+            updateCounters(state.redTaps || 0, state.blueTaps || 0);
+            updateWallPosition(state.wallPosition !== undefined ? state.wallPosition : 50);
+            updateTeamLists(state.redPlayers || [], state.bluePlayers || []);
+        });
+        socket.emit('getState');
+        if ('wakeLock' in navigator) { navigator.wakeLock.request('screen').catch(err => console.log('Wake lock failed:', err)); }
+        document.addEventListener('dblclick', () => {
+            if (!document.fullscreenElement) document.documentElement.requestFullscreen().catch(err => console.log('Fullscreen failed:', err));
+            else document.exitFullscreen();
+        });
+    </script>
+</body>
+</html>
