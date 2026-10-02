@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Card - Matching Pairs</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #0f0a1f 0%, #1a0f2e 50%, #2d1b4e 75%, #1a0f2e 100%);
+            min-height: 100vh;
+            overflow: hidden;
+            color: white;
+        }
+        .container { width: 100%; height: 100vh; display: flex; flex-direction: column; padding: 1rem; position: relative; }
+        
+        /* Header */
+        .header { text-align: center; margin-bottom: 1rem; }
+        .header h1 {
+            font-size: clamp(1.5rem, 4vw, 2.5rem);
+            font-weight: 800;
+            background: linear-gradient(90deg, #a78bfa 0%, #c084fc 50%, #e879f9 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-shadow: 0 0 30px rgba(167, 139, 250, 0.5);
+        }
+        .round-number {
+            font-size: clamp(0.9rem, 2vw, 1.2rem);
+            color: #c084fc;
+            margin-top: 0.3rem;
+            font-weight: 600;
+        }
+        
+        /* Progress */
+        .progress-bar {
+            backdrop-filter: blur(10px);
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            padding: 0.5rem 1rem;
+            border: 1px solid rgba(167, 139, 250, 0.3);
+            text-align: center;
+            margin-bottom: 1rem;
+            max-width: 300px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .progress-text {
+            font-size: clamp(0.9rem, 2vw, 1.1rem);
+            font-weight: 700;
+            color: #a78bfa;
+        }
+        
+        /* Card Grid */
+        .game-area {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0.5rem;
+        }
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: clamp(0.5rem, 1.5vw, 1rem);
+            max-width: min(90vw, 600px);
+            max-height: min(60vh, 600px);
+            width: 100%;
+            aspect-ratio: 1;
+        }
+        
+        /* Card */
+        .card {
+            position: relative;
+            cursor: pointer;
+            perspective: 1000px;
+            aspect-ratio: 1;
+        }
+        .card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+        }
+        .card.flipped .card-inner {
+            transform: rotateY(180deg);
+        }
+        .card-face {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            border-radius: clamp(8px, 1.5vw, 15px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            border: 2px solid rgba(167, 139, 250, 0.3);
+        }
+        .card-back {
+            background: linear-gradient(135deg, rgba(167, 139, 250, 0.15) 0%, rgba(192, 132, 252, 0.1) 100%);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3), inset 0 0 20px rgba(167, 139, 250, 0.1);
+        }
+        .card-back::before {
+            content: '🎴';
+            font-size: clamp(2rem, 5vw, 3rem);
+            opacity: 0.6;
+        }
+        .card-front {
+            background: linear-gradient(135deg, rgba(192, 132, 252, 0.2) 0%, rgba(167, 139, 250, 0.15) 100%);
+            backdrop-filter: blur(10px);
+            transform: rotateY(180deg);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        }
+        
+        /* Card States */
+        .card.matched {
+            animation: matchGlow 1s ease;
+        }
+        .card.matched .card-face {
+            border-color: rgba(34, 197, 94, 0.8);
+            box-shadow: 0 0 30px rgba(34, 197, 94, 0.6), 0 4px 20px rgba(0, 0, 0, 0.3);
+        }
+        .card.wrong {
+            animation: shakeWrong 0.5s ease;
+        }
+        .card.wrong .card-face {
+            border-color: rgba(239, 68, 68, 0.8);
+            box-shadow: 0 0 30px rgba(239, 68, 68, 0.6);
+        }
+        
+        @keyframes matchGlow {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+        @keyframes shakeWrong {
+            0%, 100% { transform: translateX(0); }
+            25% { transform: translateX(-5px) rotate(-2deg); }
+            75% { transform: translateX(5px) rotate(2deg); }
+        }
+        
+        /* Card Avatar */
+        .card-avatar {
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 10;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        .card.matched .card-avatar {
+            opacity: 1;
+            animation: avatarBounce 0.5s ease;
+        }
+        .card-avatar img {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            border: 2px solid #22c55e;
+            box-shadow: 0 0 10px rgba(34, 197, 94, 0.6);
+        }
+        .card-avatar .emoji {
+            font-size: 28px;
+            filter: drop-shadow(0 0 10px rgba(34, 197, 94, 0.6));
+        }
+        @keyframes avatarBounce {
+            0%, 100% { transform: translateX(-50%) translateY(0); }
+            50% { transform: translateX(-50%) translateY(-10px); }
+        }
+        
+        /* Confetti */
+        .confetti {
+            position: fixed;
+            width: 10px;
+            height: 10px;
+            background: #22c55e;
+            pointer-events: none;
+            z-index: 1000;
+            animation: confettiFall 2s ease-out forwards;
+        }
+        @keyframes confettiFall {
+            0% { transform: translateY(0) rotate(0deg); opacity: 1; }
+            100% { transform: translateY(100vh) rotate(360deg); opacity: 0; }
+        }
+        
+        /* Avatar Zone */
+        .avatar-zone {
+            backdrop-filter: blur(10px);
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 15px;
+            padding: 0.75rem;
+            border: 1px solid rgba(167, 139, 250, 0.2);
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            min-height: 80px;
+            max-height: 120px;
+            overflow-y: auto;
+            margin-top: 0.5rem;
+        }
+        .mini-avatar {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.2rem;
+            animation: walkIn 0.5s ease;
+        }
+        @keyframes walkIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .mini-avatar img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            border: 2px solid rgba(167, 139, 250, 0.5);
+        }
+        .mini-avatar .emoji {
+            font-size: 35px;
+        }
+        .mini-avatar .name-tag {
+            font-size: 0.65rem;
+            font-weight: 600;
+            text-align: center;
+            max-width: 70px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        
+        /* Instructions */
+        .instructions {
+            text-align: center;
+            backdrop-filter: blur(10px);
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            padding: 1rem;
+            border: 1px solid rgba(167, 139, 250, 0.2);
+            margin-top: 0.5rem;
+        }
+        .instructions p {
+            font-size: clamp(0.85rem, 2vw, 1.1rem);
+            margin: 0;
+            font-weight: 600;
+        }
+        .instructions strong {
+            color: #c084fc;
+            font-size: clamp(1rem, 2.5vw, 1.3rem);
+        }
+        
+        /* Leaderboard */
+        #leaderboard {
+            position: fixed;
+            top: 1rem;
+            right: 1rem;
+            backdrop-filter: blur(10px);
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            padding: 1rem;
+            border: 1px solid rgba(167, 139, 250, 0.2);
+            min-width: 180px;
+            max-height: 250px;
+            overflow-y: auto;
+            z-index: 100;
+        }
+        #leaderboard .label {
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+            text-align: center;
+            color: #c084fc;
+            font-weight: 700;
+        }
+        #lbList {
+            display: flex;
+            flex-direction: column;
+            gap: 0.3rem;
+        }
+        .lb-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.25rem 0.5rem;
+            font-size: 0.8rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            gap: 0.5rem;
+        }
+        .lb-rank {
+            color: #fbbf24;
+            font-weight: 700;
+            width: 20px;
+        }
+        .lb-name {
+            flex: 1;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        .lb-score {
+            color: #22c55e;
+            font-weight: 700;
+        }
+        
+        @media (max-width: 768px) {
+            .card-grid { gap: 0.4rem; }
+            #leaderboard { display: none; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🎴 MEMORY CARD 🎴</h1>
+            <div class="round-number" id="roundNumber">Ronde 1</div>
+        </div>
+        
+        <div class="progress-bar">
+            <div class="progress-text" id="progressText">0/16 kartu terbuka</div>
+        </div>
+        
+        <div class="game-area">
+            <div class="card-grid" id="cardGrid"></div>
+        </div>
+        
+        <div id="avatarZone" class="avatar-zone"></div>
+        
+        <div class="instructions">
+            <p>Tebak 2 kartu yang sama! Komen <strong>"2 10"</strong> atau <strong>"5 dan 12"</strong></p>
+        </div>
+        
+        <div id="leaderboard">
+            <div class="label">🏆 Top Matchers</div>
+            <div id="lbList"></div>
+        </div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/shared/v2-bootstrap.js"></script>
+    <script src="/shared/game-switch-watcher.js"></script>
+    <script src="/shared/vote-overlay.js"></script>
+    <script>
+        const socket = io();
+        const cardGridEl = document.getElementById('cardGrid');
+        const progressTextEl = document.getElementById('progressText');
+        const roundNumberEl = document.getElementById('roundNumber');
+        const avatarZoneEl = document.getElementById('avatarZone');
+        const lbListEl = document.getElementById('lbList');
+        
+        let currentCards = [];
+        
+        function createConfetti(x, y) {
+            const colors = ['#22c55e', '#a78bfa', '#fbbf24', '#f59e0b', '#c084fc'];
+            for (let i = 0; i < 15; i++) {
+                const confetti = document.createElement('div');
+                confetti.className = 'confetti';
+                confetti.style.left = x + 'px';
+                confetti.style.top = y + 'px';
+                confetti.style.background = colors[Math.floor(Math.random() * colors.length)];
+                confetti.style.animationDelay = (i * 0.05) + 's';
+                confetti.style.transform = `rotate(${Math.random() * 360}deg)`;
+                document.body.appendChild(confetti);
+                setTimeout(() => confetti.remove(), 2000);
+            }
+        }
+        
+        function renderCards(cards) {
+            if (!cards || cards.length === 0) {
+                cardGridEl.innerHTML = '';
+                return;
+            }
+            
+            const existingCards = Array.from(cardGridEl.children);
+            
+            cards.forEach((card, index) => {
+                let cardEl = existingCards[index];
+                
+                if (!cardEl) {
+                    cardEl = document.createElement('div');
+                    cardEl.className = 'card';
+                    cardEl.innerHTML = `
+                        <div class="card-inner">
+                            <div class="card-face card-back"></div>
+                            <div class="card-face card-front"></div>
+                        </div>
+                        <div class="card-avatar"></div>
+                    `;
+                    cardGridEl.appendChild(cardEl);
+                }
+                
+                const cardInner = cardEl.querySelector('.card-inner');
+                const cardFront = cardEl.querySelector('.card-front');
+                const cardAvatar = cardEl.querySelector('.card-avatar');
+                const prevCard = currentCards[index] || {};
+                
+                // Update emoji
+                cardFront.textContent = card.emoji || '';
+                
+                // Handle flip
+                if (card.revealed && !prevCard.revealed) {
+                    cardEl.classList.add('flipped');
+                }
+                if (!card.revealed && prevCard.revealed && !card.matched) {
+                    setTimeout(() => cardEl.classList.remove('flipped'), 2000);
+                }
+                
+                // Handle match
+                if (card.matched && !prevCard.matched) {
+                    cardEl.classList.add('matched');
+                    const rect = cardEl.getBoundingClientRect();
+                    createConfetti(rect.left + rect.width / 2, rect.top + rect.height / 2);
+                    
+                    // Show avatar
+                    if (card.matchedBy) {
+                        if (card.matchedByPhoto) {
+                            cardAvatar.innerHTML = `<img src="${card.matchedByPhoto}" alt="${card.matchedBy}">`;
+                        } else {
+                            cardAvatar.innerHTML = `<span class="emoji">😎</span>`;
+                        }
+                    }
+                }
+                
+                // Handle wrong
+                if (card.revealed && !card.matched && prevCard.revealed && !prevCard.matched) {
+                    if (card.wrongGuess) {
+                        cardEl.classList.add('wrong');
+                        setTimeout(() => cardEl.classList.remove('wrong'), 500);
+                    }
+                }
+                
+                // Remove classes for new cards
+                if (!card.matched) {
+                    cardEl.classList.remove('matched');
+                }
+            });
+            
+            currentCards = JSON.parse(JSON.stringify(cards));
+        }
+        
+        function updateProgress(progress) {
+            progressTextEl.textContent = progress || '0/16 kartu terbuka';
+        }
+        
+        function updateRound(roundNumber) {
+            roundNumberEl.textContent = `Ronde ${roundNumber || 1}`;
+        }
+        
+        function updateAvatars(players) {
+            avatarZoneEl.innerHTML = '';
+            if (!players || players.length === 0) return;
+            
+            players.forEach(p => {
+                const avatar = document.createElement('div');
+                avatar.className = 'mini-avatar';
+                if (p.profilePictureUrl) {
+                    avatar.innerHTML = `<img src="${p.profilePictureUrl}" alt="${p.player}"><div class="name-tag">${p.player}</div>`;
+                } else {
+                    avatar.innerHTML = `<span class="emoji">🎮</span><div class="name-tag">${p.player}</div>`;
+                }
+                avatarZoneEl.appendChild(avatar);
+            });
+        }
+        
+        function updateLeaderboard(players) {
+            if (!players || players.length === 0) {
+                lbListEl.innerHTML = '<div style="text-align:center;opacity:0.5;font-size:0.75rem;">Belum ada</div>';
+                return;
+            }
+            
+            lbListEl.innerHTML = players.slice(0, 10).map((p, i) => `
+                <div class="lb-row">
+                    <span class="lb-rank">${i + 1}.</span>
+                    <span class="lb-name">${p.player}</span>
+                    <span class="lb-score">${p.score || 0}</span>
+                </div>
+            `).join('');
+        }
+        
+        socket.on('update', (state) => {
+            renderCards(state.cards || []);
+            updateProgress(state.progress || '0/16 kartu terbuka');
+            updateRound(state.roundNumber || 1);
+        });
+        
+        socket.on('avatar:spawn', (data) => {
+            if (!data) return;
+            const existing = Array.from(avatarZoneEl.children).find(av => 
+                av.querySelector('.name-tag')?.textContent === data.player
+            );
+            if (existing) return;
+            
+            const avatar = document.createElement('div');
+            avatar.className = 'mini-avatar';
+            if (data.profilePictureUrl) {
+                avatar.innerHTML = `<img src="${data.profilePictureUrl}" alt="${data.player}"><div class="name-tag">${data.player}</div>`;
+            } else {
+                avatar.innerHTML = `<span class="emoji">🎮</span><div class="name-tag">${data.player}</div>`;
+            }
+            avatarZoneEl.appendChild(avatar);
+        });
+        
+        socket.on('avatar:sync', (players) => {
+            updateAvatars(players || []);
+        });
+        
+        socket.on('avatar:reset', () => {
+            avatarZoneEl.innerHTML = '';
+        });
+        
+        socket.on('leaderboard:update', (players) => {
+            updateLeaderboard(players || []);
+        });
+        
+        socket.emit('getState');
+        
+        if ('wakeLock' in navigator) {
+            navigator.wakeLock.request('screen').catch(err => console.log('Wake lock failed:', err));
+        }
+        
+        document.addEventListener('dblclick', () => {
+            if (!document.fullscreenElement) {
+                document.documentElement.requestFullscreen().catch(err => console.log('Fullscreen failed:', err));
+            } else {
+                document.exitFullscreen();
+            }
+        });
+    </script>
+</body>
+</html>

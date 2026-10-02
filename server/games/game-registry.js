@@ -10,4 +10,5 @@ module.exports = {
   'susun-kalimat': require('./susun-kalimat'),
   "hitung-cepat": require("./hitung-cepat"),
   "spam-tap": require("./spam-tap"),
+  "memory-card": require("./memory-card"),
 };

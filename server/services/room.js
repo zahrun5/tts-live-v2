@@ -572,7 +572,29 @@ class Room {
     if (game.isComplete()) this.handleRoundCompleted();
     return result;
   }
+
+  // Handle event LIKE TikTok (tap layar) - khusus game spam-tap.
+  async handleLike({ player, profileUrl, count }) {
+    const name = player || 'Anonim';
+    const likeCount = count || 1;
+
+    if (this.activeGameId !== 'spam-tap') return;
+    if (this.isGeneratingNext) return;
+    if (!this.activeGame || !this.activeGame.handleLike) return;
+
+    try {
+      const result = this.activeGame.handleLike({ player: name, count: likeCount, profileUrl });
+      if (result && result.ok) {
+        const { emoji, avatarUrl, useProfilePic } = this.assignAvatarIfNeeded(name, profileUrl) || {};
+        if (emoji || (avatarUrl && useProfilePic)) {
+          this.emit('avatar:spawn', { player: name, emoji, profileUrl: avatarUrl, avatarType: this.avatarType });
+        }
+        if (this.activeGame.isComplete()) this.handleRoundCompleted();
+      }
+    } catch (err) {
+      console.error(`[Room ${this.username}] like error:`, err.message);
+    }
+  }
 }
 
-// Handle TikTok LIKE events (for spam-tap game)  async handleLike({ player, profileUrl, count }) {    const name = player || Anonim;    const likeCount = count || 1;    // Only process likes for spam-tap game    if (this.activeGameId !== spam-tap) return;    if (this.isGeneratingNext) return;    try {      // Call handleLike on the game if it exists      if (this.activeGame.handleLike) {        const result = this.activeGame.handleLike({ player: name, count: likeCount, profileUrl });        if (result && result.ok) {          const { emoji, avatarUrl, useProfilePic } = this.assignAvatarIfNeeded(name, profileUrl) || {};          if (emoji || (avatarUrl && useProfilePic)) {            this.emit(avatar:spawn, { player: name, emoji, profileUrl: avatarUrl, avatarType: this.avatarType });          }        }      }    } catch (err) {      console.error(, err.message);    }  }
 module.exports = { Room, MODE_RANDOM, MODE_FIXED };
