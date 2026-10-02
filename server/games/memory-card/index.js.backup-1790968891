@@ -51,7 +51,9 @@ module.exports = {
 
   init() {
     initGame();
-    // Don't broadcast here - room will broadcast after bindBroadcaster() is called
+    if (broadcast) {
+      setTimeout(() => broadcast(), 100);
+    }
   },
 
   getAdminAnswers() {
