@@ -1075,12 +1075,14 @@ function useBattleCommand(name, p, cmd, now) {
 }
 
 // Handle TikTok LIKE event
-function handleLike(name, now) {
+function handleLike(name, now, count = 1) {
   if (!state || state.phase !== 'racing') return;
   const p = state.players.get(name);
   if (!p) return;
   
-  p.stamina = Math.min(STAMINA_MAX, p.stamina + STAMINA_PER_LIKE);
+  // TikTok menggabungkan beberapa tap jadi satu event, jadi hitung semuanya
+  const taps = Number.isFinite(count) && count > 0 ? Math.floor(count) : 1;
+  p.stamina = Math.min(STAMINA_MAX, p.stamina + STAMINA_PER_LIKE * taps);
   p.lastActive = now;
   scheduleBroadcast();
 }
@@ -1228,7 +1230,7 @@ module.exports = {
   },
   
   // NEW: Handle TikTok LIKE events
-  handleLike({ player }) {
+  handleLike({ player, count }) {
     if (!state) return;
     const name = player ? String(player) : '';
     if (!name) return;
@@ -1241,7 +1243,7 @@ module.exports = {
       }
     }
     
-    handleLike(name, now);
+    handleLike(name, now, Number(count));
   },
 
   isComplete() {

@@ -67,6 +67,9 @@ function syncTemplate(srcDir, destDir) {
   }
 }
 
+// Game yang menerima event LIKE (tap layar) dari TikTok.
+const LIKE_GAMES = ['spam-tap', 'ular-tangga'];
+
 class Room {
   constructor({ username, io, dataDir, templateDir, aiClientPath, publicDir, settings }) {
     this.username = username;
@@ -593,12 +596,12 @@ class Room {
     return result;
   }
 
-  // Handle event LIKE TikTok (tap layar) - khusus game spam-tap.
+  // Handle event LIKE TikTok (tap layar) - untuk game yang memakai tap (LIKE_GAMES).
   async handleLike({ player, profileUrl, count }) {
     const name = player || 'Anonim';
     const likeCount = count || 1;
 
-    if (this.activeGameId !== 'spam-tap') return;
+    if (!LIKE_GAMES.includes(this.activeGameId)) return;
     if (this.isGeneratingNext) return;
     if (!this.activeGame || !this.activeGame.handleLike) return;
 
@@ -618,3 +621,4 @@ class Room {
 }
 
 module.exports = { Room, MODE_RANDOM, MODE_FIXED };
+
