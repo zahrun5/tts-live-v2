@@ -100,9 +100,10 @@
     </div>
   </div>
 
+  <div class="howto">Komen <b>atas</b> · <b>bawah</b> · <b>kiri</b> · <b>kanan</b> atau <b>W A S D</b> — jalan terus sampai ketemu <b>persimpangan</b>. 3 tercepat sampai 🏁 menang!</div>
+
   <div id="stage"><canvas id="maze"></canvas></div>
 
-  <div class="howto">Komen <b>atas</b> · <b>bawah</b> · <b>kiri</b> · <b>kanan</b> atau <b>W A S D</b> — jalan terus sampai ketemu <b>persimpangan</b>. 3 tercepat sampai 🏁 menang!</div>
 
   <div id="leaderboard">
     <div class="label">🏆 Top Skor</div>
@@ -129,9 +130,14 @@
   let cell = 20, pad = 18;
   let lastRound = 0, lastFinishCount = 0;
   const avatars = new Map();     // nama -> { emoji, url }
+  const scores = new Map();      // nama -> total poin (dari leaderboard:update)
   const imgCache = new Map();    // url -> Image
   const disp = new Map();        // nama -> { x, y (tampil), tx, ty (posisi server), q (antrean petak) }
   let lastFrameT = performance.now();
+  const HOP_MS = 220;            // lama satu lompatan antar petak (ms) — gedein biar lompatnya lebih santai
+  const HOP_MIN_MS = 70;         // batas tercepat saat antrean panjang (biar nggak ketinggalan jauh)
+  const HOP_CATCHUP_MS = 12;     // tiap petak yang masih antre mempercepat lompatan segini
+  const HOP_HEIGHT = 0.42;       // tinggi lompatan (kali ukuran petak)
   const LEADERS_WITH_AVATAR = 5;
   const MEDALS = ['🥇', '🥈', '🥉'];
 
@@ -227,16 +233,12 @@
     ctx.fillText('🏁', cx(exit.x), cy(exit.y));
   }
 
-  function drawDot(name, px, py) {
-    const h = hash(name);
-    const ox = ((h % 97) / 97 - 0.5) * cell * 0.5;
-    const oy = (((h >> 7) % 89) / 89 - 0.5) * cell * 0.5;
-    ctx.fillStyle = 'hsl(' + (h % 360) + ',75%,62%)';
-    ctx.beginPath(); ctx.arc(px + ox, py + oy, Math.max(2.5, cell * 0.17), 0, Math.PI * 2); ctx.fill();
+  function drawDot(name, px, py, sc) {
+    ctx.fillStyle = 'hsl(' + (hash(name) % 360) + ',75%,62%)';
+    ctx.beginPath(); ctx.arc(px, py, Math.max(2.5, cell * 0.17 * sc), 0, Math.PI * 2); ctx.fill();
   }
-
-  function drawLeader(p, px, py, order) {
-    const r = cell * 0.4;
+  function drawLeader(p, px, py, order, sc, showLabel, showPts) {
+    const r = cell * 0.4 * sc;
     const av = avatars.get(p.n);
     ctx.save();
     ctx.beginPath(); ctx.arc(px, py, r, 0, Math.PI * 2); ctx.closePath();
@@ -255,15 +257,15 @@
       ctx.fillText(p.n.charAt(0).toUpperCase(), px, py + r * 0.05);
     }
     ctx.restore();
-    ctx.lineWidth = Math.max(2, cell * 0.09);
+    ctx.lineWidth = Math.max(1.5, cell * 0.09 * sc);
     ctx.strokeStyle = p.r ? '#fbbf24' : '#ffffff';
     ctx.beginPath(); ctx.arc(px, py, r, 0, Math.PI * 2); ctx.stroke();
 
     if (p.r) {
-      ctx.font = Math.round(cell * 0.5) + 'px sans-serif'; ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+      ctx.font = Math.round(cell * 0.5 * Math.max(0.6, sc)) + 'px sans-serif'; ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
       ctx.fillText(MEDALS[p.r - 1] || '🏅', px + r * 0.8, py - r * 0.8);
     }
-    if (order < 3) {
+    if (order < 3 && showLabel) {
       const label = p.n.length > 10 ? p.n.slice(0, 9) + '…' : p.n;
       ctx.font = '700 ' + Math.round(cell * 0.36) + 'px Poppins, sans-serif';
       ctx.textAlign = 'center'; ctx.textBaseline = 'alphabetic';
@@ -271,6 +273,35 @@
       ctx.strokeText(label, px, py - r - 3);
       ctx.fillStyle = '#fff'; ctx.fillText(label, px, py - r - 3);
     }
+    if (showPts) {
+      // poin total penonton, di bawah avatar
+      const pts = scores.get(p.n) || 0;
+      const txt = '⭐ ' + pts;
+      ctx.font = '800 ' + Math.round(cell * 0.3) + 'px Poppins, sans-serif';
+      ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+      const w = ctx.measureText(txt).width + cell * 0.22, h = cell * 0.36, y = py + r + h * 0.62;
+      ctx.fillStyle = 'rgba(15,10,30,.88)';
+      ctx.beginPath();
+      if (ctx.roundRect) ctx.roundRect(px - w / 2, y - h / 2, w, h, h / 2); else ctx.rect(px - w / 2, y - h / 2, w, h);
+      ctx.fill();
+      ctx.lineWidth = 1.5; ctx.strokeStyle = 'rgba(251,191,36,.7)'; ctx.stroke();
+      ctx.fillStyle = '#fde68a'; ctx.fillText(txt, px, y + 0.5);
+    }
+  }
+
+  // ---------- banyak pemain di satu petak ----------
+  // Pemain di petak yang sama dibagi ke slot grid kecil (1 -> tengah, 2-4 -> 2x2,
+  // 5-9 -> 3x3) dan dikecilkan, jadi nggak ada yang ketutup. Urutan slot = urutan
+  // peringkat (terdepan di slot pertama). Lebih dari 9: tampil 8 + lencana "+N".
+  const MAX_SLOTS = 9;
+  function slotLayout(i, n) {
+    const cols = n <= 1 ? 1 : n <= 4 ? 2 : 3;
+    const step = cell / cols;
+    return {
+      ox: ((i % cols) - (cols - 1) / 2) * step,
+      oy: (Math.floor(i / cols) - (cols - 1) / 2) * step,
+      sc: cols === 1 ? 1 : cols === 2 ? 0.55 : 0.37
+    };
   }
 
   function frame() {
@@ -290,19 +321,89 @@
     lastFrameT = nowT;
     const pos = players.map((p) => {
       let d = disp.get(p.n);
-      if (!d) { d = { x: p.x, y: p.y, tx: p.x, ty: p.y, q: [] }; disp.set(p.n, d); }
-      // jalan petak demi petak; makin banyak antrean, makin cepat biar nggak ketinggalan
-      let budget = dt * (10 + d.q.length * 1.5);
-      while (budget > 0 && d.q.length) {
-        const qx = d.q[0][0], qy = d.q[0][1];
-        const dx = qx - d.x, dy = qy - d.y, dist = Math.hypot(dx, dy);
-        if (dist <= budget) { d.x = qx; d.y = qy; d.q.shift(); budget -= dist; }
-        else { d.x += dx / dist * budget; d.y += dy / dist * budget; budget = 0; }
+      if (!d) { d = { x: p.x, y: p.y, tx: p.x, ty: p.y, q: [], hop: null }; disp.set(p.n, d); }
+      // lompat petak demi petak ala bidak Ludo / ular tangga
+      let left = dt * 1000;
+      while (left > 0) {
+        if (!d.hop) {
+          if (!d.q.length) break;
+          d.hop = { fx: d.x, fy: d.y, tx: d.q[0][0], ty: d.q[0][1], t: 0 };
+        }
+        const dur = Math.max(HOP_MIN_MS, HOP_MS - d.q.length * HOP_CATCHUP_MS);
+        const need = (1 - d.hop.t) * dur;
+        if (left >= need) {          // lompatan ini selesai, lanjut ke petak berikutnya
+          left -= need;
+          d.x = d.hop.tx; d.y = d.hop.ty;
+          d.q.shift(); d.hop = null;
+        } else {
+          d.hop.t += left / dur;
+          left = 0;
+        }
       }
-      return { p, px: cx(d.x), py: cy(d.y) };
+      let lift = 0, px = cx(d.x), py = cy(d.y);
+      if (d.hop) {
+        const t = d.hop.t;
+        px = cx(d.hop.fx + (d.hop.tx - d.hop.fx) * t);
+        py = cy(d.hop.fy + (d.hop.ty - d.hop.fy) * t);
+        lift = Math.sin(Math.PI * t) * cell * HOP_HEIGHT;   // busur lompatan
+      }
+      return { p, px, py, lift };
     });
-    for (let i = pos.length - 1; i >= LEADERS_WITH_AVATAR; i--) drawDot(pos[i].p.n, pos[i].px, pos[i].py);
-    for (let i = Math.min(LEADERS_WITH_AVATAR, pos.length) - 1; i >= 0; i--) drawLeader(pos[i].p, pos[i].px, pos[i].py, i);
+    // kelompokkan per petak (petak tujuan kalau lagi lompat) lalu bagi ke slot
+    const groups = new Map();
+    pos.forEach((o) => {
+      const d = disp.get(o.p.n);
+      const gx = d.hop ? d.hop.tx : d.x, gy = d.hop ? d.hop.ty : d.y;
+      const k = gx + ',' + gy;
+      if (!groups.has(k)) groups.set(k, []);
+      groups.get(k).push(o);
+      o.d = d;
+    });
+    const ease = 1 - Math.pow(0.0005, dt);   // geser halus ke slot, nggak teleport
+    const badges = [];
+    groups.forEach((list) => {
+      const n = list.length;
+      const shown = n > MAX_SLOTS ? MAX_SLOTS - 1 : n;
+      list.forEach((o, i) => {
+        const d = o.d;
+        if (d.sc === undefined) { d.ox = 0; d.oy = 0; d.sc = 1; }
+        const lay = slotLayout(Math.min(i, MAX_SLOTS - 1), Math.min(n, MAX_SLOTS));
+        d.ox += (lay.ox - d.ox) * ease; d.oy += (lay.oy - d.oy) * ease; d.sc += (lay.sc - d.sc) * ease;
+        o.px += d.ox; o.py += d.oy; o.sc = d.sc;
+        o.hidden = i >= shown;
+        o.first = i === 0;
+        if (i === shown && n > MAX_SLOTS) badges.push({ px: o.px, py: o.py, extra: n - shown });
+      });
+    });
+
+    // bayangan di lantai (tetap di tanah, mengecil saat bidak melompat)
+    ctx.fillStyle = 'rgba(0,0,0,.35)';
+    for (const o of pos) {
+      if (!o.lift || o.hidden) continue;
+      const k = 1 - Math.min(0.5, o.lift / (cell * HOP_HEIGHT) * 0.5);
+      ctx.beginPath();
+      ctx.ellipse(o.px, o.py + cell * 0.28 * o.sc, cell * 0.2 * o.sc * k, cell * 0.07 * o.sc * k, 0, 0, Math.PI * 2);
+      ctx.fill();
+    }
+    for (let i = pos.length - 1; i >= LEADERS_WITH_AVATAR; i--) {
+      if (!pos[i].hidden) drawDot(pos[i].p.n, pos[i].px, pos[i].py - pos[i].lift * pos[i].sc, pos[i].sc);
+    }
+    for (let i = Math.min(LEADERS_WITH_AVATAR, pos.length) - 1; i >= 0; i--) {
+      const o = pos[i];
+      if (!o.hidden) drawLeader(o.p, o.px, o.py - o.lift * o.sc, i, o.sc, o.first, o.sc > 0.9);
+    }
+    for (const b of badges) {
+      const txt = '+' + b.extra;
+      ctx.font = '800 ' + Math.round(cell * 0.3) + 'px Poppins, sans-serif';
+      ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+      const w = ctx.measureText(txt).width + cell * 0.18, h = cell * 0.34;
+      ctx.fillStyle = 'rgba(15,10,30,.9)';
+      ctx.beginPath();
+      if (ctx.roundRect) ctx.roundRect(b.px - w / 2, b.py - h / 2, w, h, h / 2); else ctx.rect(b.px - w / 2, b.py - h / 2, w, h);
+      ctx.fill();
+      ctx.lineWidth = 1.5; ctx.strokeStyle = '#fbbf24'; ctx.stroke();
+      ctx.fillStyle = '#fde68a'; ctx.fillText(txt, b.px, b.py + 0.5);
+    }
   }
 
   // ---------- HUD ----------
@@ -396,10 +497,10 @@
     maze = m;
     for (const p of m.players || []) {
       const d = disp.get(p.n);
-      if (!d) { disp.set(p.n, { x: p.x, y: p.y, tx: p.x, ty: p.y, q: [] }); continue; }
+      if (!d) { disp.set(p.n, { x: p.x, y: p.y, tx: p.x, ty: p.y, q: [], hop: null }); continue; }
       if (p.x === d.tx && p.y === d.ty) continue;
       d.q.push(...pathCells(m, d.tx, d.ty, p.x, p.y));
-      if (d.q.length > 80) { d.q.length = 0; d.x = p.x; d.y = p.y; }   // ketinggalan jauh: loncat
+      if (d.q.length > 80) { d.q.length = 0; d.hop = null; d.x = p.x; d.y = p.y; }   // ketinggalan jauh: loncat
       d.tx = p.x; d.ty = p.y;
     }
     if (!sameMaze) layout();
@@ -426,6 +527,12 @@
   socket.on('avatar:reset', () => avatars.clear());
 
   socket.on('leaderboard:update', (list) => {
+    scores.clear();
+    (list || []).forEach((p) => {
+      const v = p.score || 0;
+      scores.set(p.player, v);
+      scores.set(String(p.player).slice(0, 24), v);   // payload labirin memotong nama jadi 24 huruf
+    });
     const el = document.getElementById('lbList');
     el.textContent = '';
     if (!list || !list.length) {
