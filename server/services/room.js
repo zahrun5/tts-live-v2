@@ -174,7 +174,12 @@ class Room {
       };
       this.activeGame.setBroadcaster(
         () => this.emit('update', this.activeGame.buildStatePayload()),
-        requestCompletion
+        requestCompletion,
+        // poin tambahan di luar jawaban benar (mis. poin ikut serta Ular Tangga)
+        (player, points) => {
+          this.addScore(player, points);
+          this.emit('leaderboard:update', this.buildLeaderboardPayload());
+        }
       );
     }
   }

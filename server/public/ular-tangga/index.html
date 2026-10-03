@@ -109,6 +109,27 @@
   .lb-rank { color: #fbbf24; font-weight: 700; width: 20px; }
   .lb-name { flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
   .lb-score { color: #22c55e; font-weight: 700; }
+  /* Strip pemain terdepan: avatar di atas, warna bidak di bawahnya */
+  #leadStrip { flex: 0 0 auto; display: flex; justify-content: center; gap: clamp(.4rem, 2.2vw, 1rem); margin-top: .3rem; min-height: clamp(92px, 18vw, 112px); }
+  .lead { width: clamp(52px, 15vw, 82px); display: flex; flex-direction: column; align-items: center; gap: 3px; min-width: 0; }
+  .lead .av { width: clamp(30px, 8vw, 44px); height: clamp(30px, 8vw, 44px); border-radius: 50%; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #0f3a42; font-weight: 800; font-size: clamp(.9rem, 3vw, 1.2rem); border: 2px solid #fff; position: relative; }
+  .lead.done .av { border-color: #fbbf24; }
+  .lead .av img { width: 100%; height: 100%; object-fit: cover; }
+  .lead .bar { width: 100%; height: 7px; border-radius: 4px; border: 1px solid rgba(0,0,0,.5); }
+  .lead .nm { max-width: 100%; font-size: clamp(.6rem, 1.9vw, .78rem); font-weight: 700; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .lead .ps { font-size: clamp(.55rem, 1.7vw, .7rem); font-weight: 600; color: #99f6e4; white-space: nowrap; }
+  /* Banner event global (peringatan, badai, perisai massal, Perang Besar, Rebutan Item) */
+  #eventBar { flex: 0 0 auto; display: none; margin-top: .3rem; padding: .3rem .8rem; border-radius: 12px; text-align: center; font-weight: 800; font-size: clamp(.8rem, 2.8vw, 1.1rem); }
+  #eventBar.show { display: block; }
+  #eventBar.warn { background: rgba(250,204,21,.18); border: 2px solid #facc15; color: #fde68a; animation: evpulse .6s infinite alternate; }
+  #eventBar.active { background: rgba(94,234,212,.18); border: 2px solid #5eead4; color: #ccfbf1; }
+  #eventBar.war { background: rgba(239,68,68,.25); border: 2px solid #ef4444; color: #fecaca; }
+  @keyframes evpulse { from { opacity: .6; } to { opacity: 1; } }
+  #app.war { box-shadow: inset 0 0 50px rgba(239,68,68,.55); }
+  #app.shield { box-shadow: inset 0 0 50px rgba(56,189,248,.5); }
+  /* satu dadu bersama diganti dadu kecil di tiap bidak (digambar di canvas) */
+  #die { display: none; }
+  #dicePanel { grid-template-columns: 1fr; }
 </style>
 </head>
 <body>
@@ -124,6 +145,9 @@
   </div>
 
   <div class="howto" id="howto">Komen <b>lempar</b> (atau <b>dadu</b> / <b>roll</b>) buat melempar dadu. Sampai petak <b>100</b> duluan! Harus pas, kalau lebih bakal memantul.</div>
+
+  <div id="eventBar"></div>
+  <div id="leadStrip"></div>
 
   <div id="stage"><canvas id="board"></canvas></div>
 
@@ -171,7 +195,11 @@
   const HOP_HEIGHT = 0.42;       // tinggi lompatan (kali ukuran petak)
   const SLIDE_MS = 750;          // lama meluncur di ular / tangga
   const MAX_QUEUE = 40;          // antrean lebih panjang dari ini: langsung loncat ke posisi server
-  const LEADERS_WITH_AVATAR = 5;
+  const LEADERS_IN_STRIP = 5;
+  const ITEM_ICON = { serang: '💥', beku: '🧊', tangkis: '🛡️', pantul: '🪞', tukar: '🔀', jebakan: '🪤' };
+  const PAWN_COLORS = ['#ef4444', '#f97316', '#facc15', '#84cc16', '#22c55e', '#38bdf8', '#3b82f6', '#8b5cf6', '#d946ef', '#ec4899', '#f8fafc', '#d6a36b'];
+  const DICE_SHOW_MS = 1600;     // lama dadu kecil tampil di atas bidak
+  const DICE_TUMBLE_MS = 450;    // lama dadu berputar sebelum berhenti di angkanya
   const MEDALS = ['🥇', '🥈', '🥉'];
   const SNAKE_COLORS = ['#ef4444', '#f97316', '#a3e635', '#22d3ee', '#c084fc', '#f472b6', '#facc15', '#34d399'];
 
@@ -237,7 +265,8 @@
   const SPECIAL_STYLE = {
     again: { fill: 'rgba(250,204,21,.38)', icon: '🔁' },
     back:  { fill: 'rgba(239,68,68,.36)', icon: '⏪' },
-    fwd:   { fill: 'rgba(74,222,128,.36)', icon: '⏩' }
+    fwd:   { fill: 'rgba(74,222,128,.36)', icon: '⏩' },
+    mystery: { fill: 'rgba(168,85,247,.42)', icon: '❓' }
   };
 
   function drawCells() {
@@ -353,63 +382,71 @@
   }
 
   // ---------- gambar pemain ----------
-  function drawDot(name, x, y, sc) {
-    ctx.fillStyle = 'hsl(' + (hash(name) % 360) + ',75%,62%)';
-    ctx.beginPath(); ctx.arc(x, y, Math.max(2.5, cell * 0.17 * sc), 0, Math.PI * 2); ctx.fill();
-    ctx.lineWidth = 1; ctx.strokeStyle = 'rgba(0,0,0,.5)'; ctx.stroke();
-  }
-  function drawLeader(p, x, y, order, sc, showLabel, showPts) {
-    const r = cell * 0.4 * sc;
-    const av = avatars.get(p.n);
-    ctx.save();
-    ctx.beginPath(); ctx.arc(x, y, r, 0, Math.PI * 2); ctx.closePath();
-    ctx.fillStyle = 'hsl(' + (hash(p.n) % 360) + ',65%,45%)';
-    ctx.fill();
-    ctx.clip();
-    if (av && av.url) {
-      const img = getImg(av.url);
-      if (img.complete && img.naturalWidth) ctx.drawImage(img, x - r, y - r, r * 2, r * 2);
-    } else if (av && av.emoji) {
-      ctx.font = Math.round(r * 1.5) + 'px sans-serif'; ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
-      ctx.fillText(av.emoji, x, y + r * 0.08);
-    } else {
-      ctx.fillStyle = '#fff'; ctx.font = '800 ' + Math.round(r * 1.2) + 'px Poppins, sans-serif';
-      ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
-      ctx.fillText(p.n.charAt(0).toUpperCase(), x, y + r * 0.05);
-    }
-    ctx.restore();
-    ctx.lineWidth = Math.max(1.5, cell * 0.09 * sc);
-    ctx.strokeStyle = p.r ? '#fbbf24' : '#ffffff';
-    ctx.beginPath(); ctx.arc(x, y, r, 0, Math.PI * 2); ctx.stroke();
+  // Warna bidak = urutan join (palet 12 warna). Lebih dari 12 pemain: bentuk kepala
+  // bidak dibedakan (bulat / kotak / belah ketupat).
+  function pawnColor(p) { return PAWN_COLORS[(typeof p.c === 'number' ? p.c : hash(p.n)) % PAWN_COLORS.length]; }
+  function pawnShape(p) { return typeof p.c === 'number' ? Math.floor(p.c / PAWN_COLORS.length) % 3 : 0; }
 
+  function drawPawn(p, x, y, sc, showLabel) {
+    const hr = Math.max(2.5, cell * 0.17 * sc), bw = Math.max(3, cell * 0.25 * sc);
+    const by = y + cell * 0.32 * sc, ty = y - cell * 0.02 * sc, hy = ty - hr * 0.7;
+    if (p.g) {
+      ctx.strokeStyle = p.g === 'pantul' ? '#e879f9' : '#38bdf8'; ctx.lineWidth = Math.max(1.5, cell * 0.07 * sc);
+      ctx.beginPath(); ctx.arc(x, y + cell * 0.08 * sc, cell * 0.42 * sc, 0, Math.PI * 2); ctx.stroke();
+    }
+    ctx.fillStyle = pawnColor(p);
+    ctx.lineWidth = Math.max(1, cell * 0.045 * sc);
+    ctx.strokeStyle = p.r ? '#fbbf24' : 'rgba(0,0,0,.7)';
+    ctx.beginPath();
+    ctx.moveTo(x - bw, by); ctx.lineTo(x + bw, by); ctx.lineTo(x + bw * 0.35, ty); ctx.lineTo(x - bw * 0.35, ty);
+    ctx.closePath(); ctx.fill(); ctx.stroke();
+    ctx.beginPath();
+    const shape = pawnShape(p);
+    if (shape === 1) ctx.rect(x - hr, hy - hr, hr * 2, hr * 2);
+    else if (shape === 2) { ctx.moveTo(x, hy - hr * 1.25); ctx.lineTo(x + hr * 1.15, hy); ctx.lineTo(x, hy + hr * 1.25); ctx.lineTo(x - hr * 1.15, hy); ctx.closePath(); }
+    else ctx.arc(x, hy, hr, 0, Math.PI * 2);
+    ctx.fill(); ctx.stroke();
+    ctx.fillStyle = 'rgba(255,255,255,.55)';
+    ctx.beginPath(); ctx.arc(x - hr * 0.35, hy - hr * 0.35, hr * 0.28, 0, Math.PI * 2); ctx.fill();
+
+    if (sc > 0.5) {
+      ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+      if (p.i && p.i.length) { ctx.font = Math.round(cell * 0.24 * sc) + 'px sans-serif'; ctx.fillText(p.i.map((k) => ITEM_ICON[k] || '').join(''), x, by + cell * 0.2 * sc); }
+      if (p.fu && p.fu > Date.now() + clockOffset) { ctx.font = Math.round(cell * 0.34 * sc) + 'px sans-serif'; ctx.fillText('🧊', x - bw - cell * 0.05, hy); }
+    }
     if (p.r) {
       ctx.font = Math.round(cell * 0.5 * Math.max(0.6, sc)) + 'px sans-serif'; ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
-      ctx.fillText(MEDALS[p.r - 1] || '🏅', x + r * 0.8, y - r * 0.8);
+      ctx.fillText(MEDALS[p.r - 1] || '🏅', x + bw, hy - hr);
     }
-    if (order < 3 && showLabel) {
+    if (showLabel) {
       const label = p.n.length > 10 ? p.n.slice(0, 9) + '…' : p.n;
       ctx.font = '700 ' + Math.round(cell * 0.34) + 'px Poppins, sans-serif';
       ctx.textAlign = 'center'; ctx.textBaseline = 'alphabetic';
       ctx.lineWidth = 3; ctx.strokeStyle = 'rgba(7,22,26,.95)';
       const half = ctx.measureText(label).width / 2 + 2;
       const lx = Math.max(half, Math.min(cell * 10 - half, x));   // jangan terpotong di tepi papan
-      ctx.strokeText(label, lx, y - r - 3);
-      ctx.fillStyle = '#fff'; ctx.fillText(label, lx, y - r - 3);
+      const ly = hy - hr * 1.5 - 3;
+      ctx.strokeText(label, lx, ly);
+      ctx.fillStyle = '#fff'; ctx.fillText(label, lx, ly);
     }
-    if (showPts) {
-      // poin total penonton, di bawah avatar
-      const pts = scores.get(p.n) || 0;
-      const txt = '⭐ ' + pts;
-      ctx.font = '800 ' + Math.round(cell * 0.28) + 'px Poppins, sans-serif';
-      ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
-      const w = ctx.measureText(txt).width + cell * 0.22, h = cell * 0.34, yy = y + r + h * 0.62;
-      ctx.fillStyle = 'rgba(7,22,26,.9)';
-      ctx.beginPath();
-      if (ctx.roundRect) ctx.roundRect(x - w / 2, yy - h / 2, w, h, h / 2); else ctx.rect(x - w / 2, yy - h / 2, w, h);
-      ctx.fill();
-      ctx.lineWidth = 1.5; ctx.strokeStyle = 'rgba(251,191,36,.7)'; ctx.stroke();
-      ctx.fillStyle = '#fde68a'; ctx.fillText(txt, x, yy + 0.5);
+  }
+
+  // Dadu kecil di atas bidak: berputar sebentar, berhenti di angka lemparan, lalu pudar.
+  function drawMiniDice(x, y, size, v, angle, alpha) {
+    ctx.save();
+    ctx.globalAlpha = alpha;
+    ctx.translate(x, y); ctx.rotate(angle);
+    const h = size / 2;
+    ctx.fillStyle = '#fff7e0'; ctx.strokeStyle = '#c9b27a'; ctx.lineWidth = Math.max(1, size * 0.06);
+    ctx.beginPath();
+    if (ctx.roundRect) ctx.roundRect(-h, -h, size, size, size * 0.22); else ctx.rect(-h, -h, size, size);
+    ctx.fill(); ctx.stroke();
+    ctx.fillStyle = '#1f2937';
+    for (const i of PIPS[v] || []) {
+      const cx = ((i % 3) - 1) * size * 0.27, cy = (Math.floor(i / 3) - 1) * size * 0.27;
+      ctx.beginPath(); ctx.arc(cx, cy, size * 0.075, 0, Math.PI * 2); ctx.fill();
     }
+    ctx.restore();
   }
 
   // ---------- banyak pemain di satu petak ----------
@@ -439,7 +476,7 @@
     if (f + d > 100) { hopsBetween(f, 100, out); hopsBetween(100, m, out); }
     else hopsBetween(f, m, out);
     if (v === 'snake' || v === 'ladder') out.push({ cell: t, slide: v, from: m });
-    else if (v === 'back' || v === 'fwd') hopsBetween(m, t, out);
+    else if (v === 'back' || v === 'fwd' || v === 'trap') hopsBetween(m, t, out);
     return out;
   }
 
@@ -482,6 +519,17 @@
     return { gx: h.fx + (h.tx - h.fx) * t, gy: h.fy + (h.ty - h.fy) * t, lift: Math.sin(Math.PI * t) * cell * HOP_HEIGHT };
   }
 
+  function drawTraps() {
+    for (const [c, ci] of game.traps || []) {
+      const { x, y } = cellXY(c);
+      const cx = x * cell + cell * 0.2, cy = padTop + y * cell + cell * 0.78;
+      ctx.fillStyle = PAWN_COLORS[ci % PAWN_COLORS.length];
+      ctx.beginPath(); ctx.arc(cx, cy, cell * 0.17, 0, Math.PI * 2); ctx.fill();
+      ctx.font = Math.round(cell * 0.22) + 'px sans-serif'; ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+      ctx.fillText('🪤', cx, cy + 1);
+    }
+  }
+
   function frame() {
     requestAnimationFrame(frame);
     if (!game || !game.size) return;
@@ -491,6 +539,7 @@
     drawLadders();
     drawSnakes();
     drawNumbers();
+    drawTraps();
 
     const players = game.players || [];
     const nowT = performance.now();
@@ -537,12 +586,20 @@
       ctx.ellipse(o.x, o.y + cell * 0.28 * o.sc, cell * 0.2 * o.sc * k, cell * 0.07 * o.sc * k, 0, 0, Math.PI * 2);
       ctx.fill();
     }
-    for (let i = pos.length - 1; i >= LEADERS_WITH_AVATAR; i--) {
-      if (!pos[i].hidden) drawDot(pos[i].p.n, pos[i].x, pos[i].y - pos[i].lift * pos[i].sc, pos[i].sc);
-    }
-    for (let i = Math.min(LEADERS_WITH_AVATAR, pos.length) - 1; i >= 0; i--) {
+    for (let i = pos.length - 1; i >= 0; i--) {
       const o = pos[i];
-      if (!o.hidden) drawLeader(o.p, o.x, o.y - o.lift * o.sc, i, o.sc, o.first, o.sc > 0.9);
+      if (!o.hidden) drawPawn(o.p, o.x, o.y - o.lift * o.sc, o.sc, i < 3 && o.first);
+    }
+    // dadu kecil tiap pemain (banyak dadu bisa tampil bersamaan)
+    for (const o of pos) {
+      if (o.hidden || !o.d.diceT0) continue;
+      const age = nowT - o.d.diceT0;
+      if (age < 0 || age >= DICE_SHOW_MS) continue;
+      const k = Math.max(0.7, o.sc), size = cell * 0.42 * k;
+      const face = age < DICE_TUMBLE_MS ? 1 + (Math.floor(age / 70) % 6) : o.d.diceD;
+      const angle = age < DICE_TUMBLE_MS ? (age / DICE_TUMBLE_MS) * Math.PI * 2 : 0;
+      const alpha = age > DICE_SHOW_MS - 300 ? (DICE_SHOW_MS - age) / 300 : 1;
+      drawMiniDice(o.x + cell * 0.3 * k, o.y - o.lift * o.sc - cell * 0.5 * k, size, face, angle, alpha);
     }
     for (const b of badges) {
       const txt = '+' + b.extra;
@@ -576,9 +633,13 @@
     ladder: (r) => '🪜 Naik tangga ke ' + r.t,
     again: () => '🔁 Lempar lagi!',
     back: (r) => '⏪ Mundur ke ' + r.t,
-    fwd: (r) => '⏩ Maju ke ' + r.t
+    fwd: (r) => '⏩ Maju ke ' + r.t,
+    item: (r) => '🎁 Dapat item ' + (ITEM_ICON[r.it] || ''),
+    shielded: () => '🛡️ Tangkis menahan gigitan ular!',
+    trap: (r) => '🪤 Kena jebakan! Turun ke ' + r.t,
+    full: () => '🎒 Tas penuh, item hangus'
   };
-  const EFFECT_ICON = { snake: '🐍', ladder: '🪜', again: '🔁', back: '⏪', fwd: '⏩' };
+  const EFFECT_ICON = { snake: '🐍', ladder: '🪜', again: '🔁', back: '⏪', fwd: '⏩', item: '🎁', shielded: '🛡️', trap: '🪤', full: '🎒' };
 
   let lastShownSeq = 0;
   const rollQueue = [];
@@ -677,7 +738,73 @@
     } else {
       note.textContent = 'Papan baru sebentar lagi…';
     }
+    note.textContent += ' Yang belum sampai dapat poin ikut serta (maks ' + (m.participationMax || 20) + ').';
     podiumCard.appendChild(note);
+  }
+
+  // ---------- feed pertarungan ----------
+  let lastFeedSeq = 0;
+  const FEED_TEXT = {
+    item: (e) => '🎁 ' + e.a + ' dapat ' + ITEM_ICON[e.it],
+    guard: (e) => ITEM_ICON[e.it] + ' ' + e.a + ' berlindung',
+    set: (e) => '🪤 ' + e.a + ' pasang jebakan',
+    hit: (e) => ITEM_ICON[e.it] + ' ' + e.a + ' → ' + e.b,
+    block: (e) => e.b ? '🛡️ ' + e.b + ' menangkis ' + ITEM_ICON[e.it] + ' dari ' + e.a : '🛡️ ' + e.a + ' menangkis gigitan',
+    reflect: (e) => '🪞 ' + e.a + ' memantulkan ' + ITEM_ICON[e.it] + ' ke ' + e.b,
+    trap: (e) => '🪤 ' + e.b + ' kena jebakan ' + e.a
+  };
+
+  // ---------- banner event global ----------
+  const eventBar = document.getElementById('eventBar');
+  const appEl = document.getElementById('app');
+  const EVENT_WARN = { storm: '🌪️ Badai datang dalam', wind: '🍃 Angin segar dalam', shield: '🛡️ Perisai massal dalam', war: '⚔️ PERANG BESAR dalam', grab: '🎁 Rebutan item dalam' };
+  function renderEvent() {
+    const e = game && game.event;
+    if (!e) { eventBar.className = ''; appEl.classList.remove('war', 'shield'); return; }
+    const now = Date.now() + clockOffset;
+    let text, cls;
+    if (e.ph === 'warn') {
+      text = EVENT_WARN[e.t] + ' ' + Math.max(0, Math.ceil((e.at - now) / 1000)) + ' detik';
+      cls = 'warn';
+    } else {
+      const left = Math.max(0, Math.ceil((e.end - now) / 1000));
+      cls = e.t === 'war' ? 'war' : 'active';
+      text = e.t === 'storm' ? '🌪️ BADAI! Semua mundur 3 petak'
+        : e.t === 'wind' ? '🍃 Angin segar! Semua maju 3 petak'
+        : e.t === 'shield' ? '🛡️ PERISAI MASSAL: ular tidak menggigit · ' + left + ' dtk'
+        : e.t === 'war' ? '⚔️ PERANG BESAR! Serang bebas tanpa item · ' + left + ' dtk'
+        : '🎁 REBUT ITEM! Komen: "' + e.w + '" (' + e.n + '/' + e.m + ') · ' + left + ' dtk';
+    }
+    eventBar.textContent = text;
+    eventBar.className = 'show ' + cls;
+    appEl.classList.toggle('war', e.ph === 'active' && e.t === 'war');
+    appEl.classList.toggle('shield', e.ph === 'active' && e.t === 'shield');
+  }
+
+  // ---------- strip pemain terdepan ----------
+  const leadStrip = document.getElementById('leadStrip');
+  let stripSig = '';
+  function renderStrip(m) {
+    const top = (m.players || []).slice(0, LEADERS_IN_STRIP);
+    const sig = top.map((p) => [p.n, p.c, p.p, p.r, scores.get(p.n) || 0, (avatars.get(p.n) || {}).url || (avatars.get(p.n) || {}).emoji || '', (p.i || []).join(','), p.g || ''].join('|')).join(';');
+    if (sig === stripSig) return;
+    stripSig = sig;
+    leadStrip.textContent = '';
+    top.forEach((p) => {
+      const av = avatars.get(p.n);
+      const box = document.createElement('div'); box.className = 'lead' + (p.r ? ' done' : '');
+      const circle = document.createElement('div'); circle.className = 'av';
+      if (av && av.url) { const img = document.createElement('img'); img.referrerPolicy = 'no-referrer'; img.src = av.url; circle.appendChild(img); }
+      else if (av && av.emoji) circle.textContent = av.emoji;
+      else circle.textContent = p.n.charAt(0).toUpperCase();
+      const bar = document.createElement('div'); bar.className = 'bar'; bar.style.background = pawnColor(p);
+      const nm = document.createElement('div'); nm.className = 'nm'; nm.textContent = (p.r ? (MEDALS[p.r - 1] || '🏅') + ' ' : '') + p.n;
+      const ps = document.createElement('div'); ps.className = 'ps'; ps.textContent = '📍 ' + p.p + ' · ⭐ ' + (scores.get(p.n) || 0);
+      const its = document.createElement('div'); its.className = 'ps';
+      its.textContent = (p.i || []).map((k) => ITEM_ICON[k] || '').join('') + (p.g ? ' ' + (ITEM_ICON[p.g] || '') : '');
+      box.append(circle, bar, nm, ps, its);
+      leadStrip.appendChild(box);
+    });
   }
 
   function updateHud(m) {
@@ -690,6 +817,7 @@
     if (!game) return;
     if (game.phase === 'racing') chipTime.textContent = '⏱ ' + fmtTime(game.endsAt - (Date.now() + clockOffset));
     else chipTime.textContent = '⏱ selesai';
+    renderEvent();
   }, 250);
 
   // ---------- socket ----------
@@ -714,6 +842,13 @@
     }
     lastFinishCount = m.finishers.length;
 
+    // kejadian pertarungan baru -> banner (halaman yang baru dibuka nggak memutar ulang yang lama)
+    const evs = (m.feed || []).filter((e) => e.s > lastFeedSeq);
+    if (evs.length) {
+      lastFeedSeq = evs[evs.length - 1].s;
+      if (!firstSync) showToast(evs.slice(-3).map((e) => (FEED_TEXT[e.k] ? FEED_TEXT[e.k](e) : '')).filter(Boolean).join('  ·  '));
+    }
+
     const fresh = firstSync || newRound;   // pemain yang sudah ada waktu halaman dibuka muncul langsung di posisinya
     for (const p of m.players || []) {
       let d = disp.get(p.n);
@@ -721,6 +856,7 @@
         if (!fresh && p.q && p.f === 0) {            // pemain baru: lompat dari tempat mulai
           d = newDisp(0); disp.set(p.n, d);
           d.q.push(...stepsForRoll(p.f, p.d, p.m, p.v, p.p));
+          d.diceD = p.d; d.diceT0 = performance.now();
         } else {
           d = newDisp(p.p); disp.set(p.n, d);
         }
@@ -730,6 +866,7 @@
       if (p.q !== d.seq) {                            // ada lemparan baru
         if (p.f !== d.pos) hopsBetween(d.pos, p.f, d.q);   // kelewat satu lemparan (mis. lempar lagi): susul dulu
         d.q.push(...stepsForRoll(p.f, p.d, p.m, p.v, p.p));
+        d.diceD = p.d; d.diceT0 = performance.now();
         d.seq = p.q; d.pos = p.p;
       } else if (p.p !== d.pos) {                     // posisi berubah tanpa data lemparan: lompat lurus
         hopsBetween(d.pos, p.p, d.q);
@@ -740,7 +877,9 @@
     game = m;
     if (firstSync || newRound) layout();
     updateHud(m);
-    howto.innerHTML = 'Komen <b>lempar</b> (atau <b>dadu</b> / <b>roll</b>) buat melempar dadu, tiap ' + Math.round((m.cooldownMs || 3000) / 1000) + ' detik. Sampai petak <b>100</b> duluan! Harus pas, kalau lebih bakal memantul.';
+    renderStrip(m);
+    renderEvent();
+    howto.innerHTML = 'Komen <b>lempar</b> (atau <b>dadu</b> / <b>roll</b>) buat melempar dadu, tiap ' + Math.round((m.cooldownMs || 5000) / 1000) + ' detik. Sampai petak <b>100</b> duluan! Harus pas, kalau lebih bakal memantul.<br>Petak ❓ kasih item: komen <b>serang</b> · <b>beku</b> · <b>tangkis</b> · <b>pantul</b> · <b>tukar</b> · <b>jebakan</b> (target tertentu: <b>serang 1</b> = peringkat 1).';
 
     // lemparan baru -> antrean panel dadu (jangan putar ulang lemparan lama waktu halaman baru dibuka)
     const recent = m.recentRolls || [];
