@@ -340,11 +340,11 @@
     </div>
 
     <script src="/socket.io/socket.io.js"></script>
+    <script>const socket = io();</script>
     <script src="/shared/v2-bootstrap.js"></script>
     <script src="/shared/game-switch-watcher.js"></script>
     <script src="/shared/vote-overlay.js"></script>
     <script>
-        const socket = io();
         const cardGridEl = document.getElementById('cardGrid');
         const progressTextEl = document.getElementById('progressText');
         const roundNumberEl = document.getElementById('roundNumber');
@@ -405,7 +405,7 @@
                     cardEl.classList.add('flipped');
                 }
                 if (!card.revealed && prevCard.revealed && !card.matched) {
-                    setTimeout(() => cardEl.classList.remove('flipped'), 2000);
+                    cardEl.classList.remove('flipped'); // server sudah nunggu 2 detik sebelum nutup
                 }
                 
                 // Handle match
@@ -416,10 +416,13 @@
                     
                     // Show avatar
                     if (card.matchedBy) {
-                        if (card.matchedByPhoto) {
-                            cardAvatar.innerHTML = `<img src="${card.matchedByPhoto}" alt="${card.matchedBy}">`;
+                        const mb = card.matchedBy;
+                        const photo = card.matchedByPhoto || (typeof mb === 'object' ? mb.profileUrl : null);
+                        const nm = typeof mb === 'object' ? mb.name : mb;
+                        if (photo) {
+                            cardAvatar.innerHTML = `<img src="${photo}" alt="${nm}">`;
                         } else {
-                            cardAvatar.innerHTML = `<span class="emoji">😎</span>`;
+                            cardAvatar.innerHTML = `<span class="emoji">${(typeof mb === 'object' && mb.emoji) || '😎'}</span>`;
                         }
                     }
                 }

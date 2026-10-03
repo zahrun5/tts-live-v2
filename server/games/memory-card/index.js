@@ -128,7 +128,7 @@ module.exports = {
         
         // Validate range
         if (card1 >= 0 && card1 <= 15 && card2 >= 0 && card2 <= 15) {
-          return { card1, card2 };
+          return { answer: { card1, card2 } };
         }
       }
     }
@@ -224,7 +224,8 @@ module.exports = {
   },
 
   async onComplete() {
-    roundNumber++;
+    // Naik ronde hanya kalau ronde sebelumnya benar-benar selesai
+    if (state && state.cards.every(c => c.matched)) roundNumber++;
     initGame();
     if (broadcast) broadcast();
     return { success: true };

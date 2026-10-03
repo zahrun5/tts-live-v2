@@ -131,11 +131,11 @@
         </div>
     </div>
     <script src="/socket.io/socket.io.js"></script>
+    <script>const socket = io();</script>
     <script src="/shared/v2-bootstrap.js"></script>
     <script src="/shared/game-switch-watcher.js"></script>
     <script src="/shared/vote-overlay.js"></script>
     <script>
-        const socket = io();
         const redCountEl = document.getElementById('redCount');
         const blueCountEl = document.getElementById('blueCount');
         const wallEl = document.getElementById('wall');
@@ -145,7 +145,8 @@
         const leaderboardContentEl = document.getElementById('leaderboardContent');
         let lastWallPosition = 50;
         const avatarEmojis = ['😎', '🤠', '🥷', '👑', '🎯', '💪', '🔥', '⚡', '🚀', '💥'];
-        function getRandomEmoji() { return avatarEmojis[Math.floor(Math.random() * avatarEmojis.length)]; }
+        const emojiByPlayer = {};
+        function getRandomEmoji(name) { if (!emojiByPlayer[name]) emojiByPlayer[name] = avatarEmojis[Math.floor(Math.random() * avatarEmojis.length)]; return emojiByPlayer[name]; }
         function updateCounters(redTaps, blueTaps) {
             redCountEl.textContent = redTaps;
             blueCountEl.textContent = blueTaps;
@@ -164,18 +165,18 @@
             redPlayers.forEach(p => {
                 const avatar = document.createElement('div');
                 avatar.className = 'avatar';
-                avatar.innerHTML = `<div class="avatar-emoji">${getRandomEmoji()}</div><div class="avatar-name">${p.player}</div><div class="avatar-taps">${p.taps} taps</div>`;
+                avatar.innerHTML = `<div class="avatar-emoji">${getRandomEmoji(p.player)}</div><div class="avatar-name">${p.player}</div><div class="avatar-taps">${p.count ?? p.taps ?? 0} taps</div>`;
                 redZoneEl.appendChild(avatar);
             });
             blueZoneEl.innerHTML = '';
             bluePlayers.forEach(p => {
                 const avatar = document.createElement('div');
                 avatar.className = 'avatar';
-                avatar.innerHTML = `<div class="avatar-emoji">${getRandomEmoji()}</div><div class="avatar-name">${p.player}</div><div class="avatar-taps">${p.taps} taps</div>`;
+                avatar.innerHTML = `<div class="avatar-emoji">${getRandomEmoji(p.player)}</div><div class="avatar-name">${p.player}</div><div class="avatar-taps">${p.count ?? p.taps ?? 0} taps</div>`;
                 blueZoneEl.appendChild(avatar);
             });
-            const allPlayers = [...redPlayers, ...bluePlayers].sort((a, b) => b.taps - a.taps).slice(0, 10);
-            leaderboardContentEl.innerHTML = allPlayers.map((p, i) => `<div class="leaderboard-item"><span>${i + 1}. ${p.player}</span><span>${p.taps}</span></div>`).join('');
+            const allPlayers = [...redPlayers, ...bluePlayers].sort((a, b) => (b.count ?? b.taps ?? 0) - (a.count ?? a.taps ?? 0)).slice(0, 10);
+            leaderboardContentEl.innerHTML = allPlayers.map((p, i) => `<div class="leaderboard-item"><span>${i + 1}. ${p.player}</span><span>${p.count ?? p.taps ?? 0}</span></div>`).join('');
         }
         socket.on('update', (state) => {
             updateCounters(state.redTaps || 0, state.blueTaps || 0);
