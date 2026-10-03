@@ -37,16 +37,52 @@ function pathTo(payload, from, to) {
   return moves;
 }
 
-// Jalan satu pemain ke finish: kirim komentar 3-langkah, majuin jam sesuai cooldown.
-function runToFinish(name, moves) {
-  let result = null;
-  for (let i = 0; i < moves.length; i += 3) {
-    const chunk = moves.slice(i, i + 3);
-    mock.timers.tick(1000); // lewatin cooldown
-    result = game.handleAnswer({ moves: chunk, answer: chunk.join(''), player: name });
-  }
-  return result;
+// Posisi pemain dari payload (belum muncul = masih di pintu masuk).
+function posOf(name) {
+  const st = game.buildStatePayload();
+  const p = st.players.find((x) => x.n === name);
+  return p ? { x: p.x, y: p.y } : { x: st.start.x, y: st.start.y };
 }
+
+// Satu komentar: arah pertama jalur terpendek dari posisi pemain sekarang. Majuin
+// jam sampai cooldown lewat, jadi tes nggak bergantung pada angka cooldown.
+function sendNextMove(name) {
+  const st = game.buildStatePayload();
+  const dir = pathTo(st, posOf(name), st.exit)[0];
+  let r;
+  do {
+    mock.timers.tick(100);
+    r = game.handleAnswer({ moves: [dir], answer: dir, player: name });
+  } while (r.msg === 'Terlalu cepat');
+  return r;
+}
+
+// Jalan satu pemain ke finish: tiap komentar = 1 arah (lari sampai persimpangan).
+function runToFinish(name) {
+  let result = null;
+  let commands = 0;
+  for (let i = 0; i < 200; i++) {
+    result = sendNextMove(name);
+    commands++;
+    if (result.ok) break;
+  }
+  return { result, commands };
+}
+
+// Labirin buatan tangan buat ngetes runSegment (ukuran sama dengan game: 11x17).
+const COLS = 11, ROWS = 17;
+const LINK = { U: [0, -1, N, S], D: [0, 1, S, N], L: [-1, 0, W, E], R: [1, 0, E, W] };
+const blankWalls = () => new Array(COLS * ROWS).fill(N | E | S | W);
+function carve(walls, x, y, keys) {
+  for (const k of keys) {
+    const [dx, dy, wall, opp] = LINK[k];
+    walls[y * COLS + x] &= ~wall;
+    walls[(y + dy) * COLS + (x + dx)] &= ~opp;
+    x += dx; y += dy;
+  }
+  return { x, y };
+}
+const openSides = (walls, x, y) => [N, E, S, W].filter((b) => !(walls[y * COLS + x] & b)).length;
 
 // Mock timer diaktifin sekali buat satu file (enable/reset berulang per test bikin
 // timer test sebelumnya bocor). init() selalu bersihin timer game dari test lain.
@@ -104,34 +140,119 @@ test('tabrak tembok: berhenti di tempat, posisi tidak tembus', () => {
   assert.deepEqual([p.x, p.y], [st.start.x, st.start.y]);
 });
 
-test('batas 3 langkah per komentar + cooldown per pemain', () => {
-  const st = game.buildStatePayload();
-  const path = pathTo(st, st.start, st.exit);
-  const first = path.slice(0, 5);
-  mock.timers.tick(1000);
-  game.handleAnswer({ moves: first, answer: first.join(''), player: 'ani' });   // 5 langkah dikirim
-  let p = game.buildStatePayload().players.find((x) => x.n === 'ani');
-  assert.equal(Math.abs(p.x - st.start.x) + p.y, 3, 'cuma 3 langkah yang jalan');
+test('runSegment: ikut belokan, berhenti di pertigaan', () => {
+  const walls = blankWalls();
+  carve(walls, 0, 0, ['R', 'R', 'D', 'D']);   // (0,0)->(2,0) belok ke bawah ->(2,2)
+  carve(walls, 2, 2, ['L']);                   // cabang kiri di (2,2)
+  carve(walls, 2, 2, ['R', 'R', 'R', 'R']);    // cabang kanan buntu di (6,2)
+  const exit = { x: 10, y: 16 };
+  const r = game._runSegment(walls, exit, 0, 0, 'R');
+  assert.deepEqual([r.x, r.y, r.cells, r.finished], [2, 2, 4, false]);   // bukan cuma 1 langkah
+});
 
-  // langsung komentar lagi (dalam cooldown) -> ditolak
-  const r = game.handleAnswer({ moves: [path[3]], answer: path[3], player: 'ani' });
+test('runSegment: berhenti di jalan buntu', () => {
+  const walls = blankWalls();
+  carve(walls, 2, 2, ['L']);
+  carve(walls, 2, 2, ['R', 'R', 'R', 'R']);
+  const r = game._runSegment(walls, { x: 10, y: 16 }, 2, 2, 'R');
+  assert.deepEqual([r.x, r.y, r.cells], [6, 2, 4]);
+});
+
+test('runSegment: balik arah juga lari sampai ujung lorong (ikut belokan)', () => {
+  const walls = blankWalls();
+  carve(walls, 0, 0, ['R', 'R', 'D', 'D']);
+  carve(walls, 2, 2, ['L']);
+  const r = game._runSegment(walls, { x: 10, y: 16 }, 2, 2, 'U');   // (2,2)->(2,0)->belok kiri->(0,0) buntu
+  assert.deepEqual([r.x, r.y, r.cells], [0, 0, 4]);
+});
+
+test('runSegment: berhenti di perempatan, sisi asal tidak dihitung sebagai pilihan', () => {
+  const walls = blankWalls();
+  carve(walls, 6, 4, ['D', 'D']);              // lorong (6,4)->(6,6)
+  carve(walls, 6, 6, ['U']);                   // (sudah terhubung, aman diulang)
+  carve(walls, 6, 6, ['D']);
+  carve(walls, 6, 6, ['L']);
+  carve(walls, 6, 6, ['R']);
+  const r = game._runSegment(walls, { x: 10, y: 16 }, 6, 4, 'D');
+  assert.deepEqual([r.x, r.y, r.cells], [6, 6, 2]);
+  assert.equal(openSides(walls, 6, 6), 4);
+});
+
+test('runSegment: berhenti di pintu keluar walau ada cabang, dan ditandai finished', () => {
+  const walls = blankWalls();
+  carve(walls, 9, 14, ['D', 'D']);             // ... (9,14)->(9,16)
+  carve(walls, 9, 16, ['L']);                  // cabang di pintu keluar
+  const r = game._runSegment(walls, { x: 9, y: 16 }, 9, 14, 'D');
+  assert.deepEqual([r.x, r.y, r.cells, r.finished], [9, 16, 2, true]);
+});
+
+test('runSegment: langkah pertama nabrak tembok = diam di tempat', () => {
+  const walls = blankWalls();
+  carve(walls, 0, 0, ['R']);
+  for (const k of ['U', 'D', 'L']) {
+    const r = game._runSegment(walls, { x: 10, y: 16 }, 0, 0, k);
+    assert.deepEqual([r.x, r.y, r.cells, r.finished], [0, 0, 0, false], k);
+  }
+});
+
+test('satu komentar = lari sampai persimpangan/buntu/finish (40 labirin acak)', () => {
+  for (let i = 0; i < 40; i++) {
+    game.init();
+    const st = game.buildStatePayload();
+    const first = pathTo(st, st.start, st.exit)[0];
+    mock.timers.tick(1000);
+    game.handleAnswer({ moves: [first], answer: first, player: 'lari' });
+    const p = posOf('lari');
+    assert.notDeepEqual(p, { x: st.start.x, y: st.start.y }, 'harus bergerak');
+    const atExit = p.x === st.exit.x && p.y === st.exit.y;
+    // sel lorong biasa (lurus/belok) punya tepat 2 sisi terbuka; pemain nggak boleh berhenti di situ
+    assert.ok(atExit || openSides(st.walls, p.x, p.y) !== 2, `berhenti di tengah lorong (${p.x},${p.y})`);
+  }
+});
+
+test('cooldown per komentar: komentar langsung berikutnya ditolak, lalu boleh lagi', () => {
+  const st = game.buildStatePayload();
+  const dir1 = pathTo(st, st.start, st.exit)[0];
+  mock.timers.tick(1000);
+  assert.equal(game.handleAnswer({ moves: [dir1], answer: dir1, player: 'ani' }).msg, 'Bergerak');
+
+  const dir2 = pathTo(st, posOf('ani'), st.exit)[0];
+  const r = game.handleAnswer({ moves: [dir2], answer: dir2, player: 'ani' });   // langsung lagi
   assert.equal(r.ok, false);
   assert.equal(r.msg, 'Terlalu cepat');
 
+  mock.timers.tick(3000);
+  assert.notEqual(game.handleAnswer({ moves: [dir2], answer: dir2, player: 'ani' }).msg, 'Terlalu cepat');
+});
+
+test('beberapa arah dalam satu komentar dijalankan berurutan, maksimal 3 lari', () => {
+  // cari labirin yang butuh >= 4 keputusan (hampir semua)
+  let cmds, ends;
+  for (let attempt = 0; attempt < 50; attempt++) {
+    game.init();
+    const st = game.buildStatePayload();
+    let pos = { x: st.start.x, y: st.start.y };
+    cmds = []; ends = [];
+    for (let i = 0; i < 4; i++) {
+      const c = pathTo(st, pos, st.exit)[0];
+      const r = game._runSegment(st.walls, st.exit, pos.x, pos.y, c);
+      cmds.push(c); ends.push({ x: r.x, y: r.y });
+      pos = { x: r.x, y: r.y };
+      if (r.finished) break;
+    }
+    if (cmds.length === 4 && !(ends[3].x === st.exit.x && ends[3].y === st.exit.y)) break;
+  }
+  assert.equal(cmds.length, 4, 'butuh labirin dengan >= 4 keputusan');
   mock.timers.tick(1000);
-  game.handleAnswer({ moves: [path[3]], answer: path[3], player: 'ani' });
-  p = game.buildStatePayload().players.find((x) => x.n === 'ani');
-  assert.ok(Math.abs(p.x - st.start.x) + p.y >= 4);
+  game.handleAnswer({ moves: cmds, answer: cmds.join(''), player: 'multi' });   // 4 arah dikirim
+  assert.deepEqual(posOf('multi'), ends[2], 'cuma 3 lari pertama yang jalan');
 });
 
 test('3 tercepat finish: poin 100/60/30, lalu papan juara, lalu minta ronde baru', () => {
   let completions = 0;
   game.setBroadcaster(() => {}, () => { completions++; return true; });
 
-  const st = game.buildStatePayload();
-  const path = pathTo(st, st.start, st.exit);
-
-  const results = ['juara1', 'juara2', 'juara3'].map((n) => runToFinish(n, path));
+  const results = ['juara1', 'juara2', 'juara3'].map((n) => runToFinish(n).result);
   assert.deepEqual(results.map((r) => r.points), [100, 60, 30]);
   assert.deepEqual(results.map((r) => r.meta.rank), [1, 2, 3]);
   assert.ok(results.every((r) => r.ok));
@@ -150,9 +271,7 @@ test('3 tercepat finish: poin 100/60/30, lalu papan juara, lalu minta ronde baru
 });
 
 test('yang udah finish nggak dapat poin dua kali', () => {
-  const st = game.buildStatePayload();
-  const path = pathTo(st, st.start, st.exit);
-  assert.equal(runToFinish('sama', path).ok, true);
+  assert.equal(runToFinish('sama').result.ok, true);
   mock.timers.tick(1000);
   assert.equal(game.handleAnswer({ moves: ['U'], answer: 'U', player: 'sama' }).ok, false);
   assert.equal(game.buildStatePayload().finishers.length, 1);
@@ -161,13 +280,10 @@ test('yang udah finish nggak dapat poin dua kali', () => {
 test('timeout 4 menit: ronde selesai tanpa pemenang, tampil yang terdekat', () => {
   let completions = 0;
   game.setBroadcaster(() => {}, () => { completions++; return true; });
-  const st = game.buildStatePayload();
-  const path = pathTo(st, st.start, st.exit);
 
-  mock.timers.tick(1000);
-  game.handleAnswer({ moves: path.slice(0, 3), answer: '', player: 'jauh' });
-  mock.timers.tick(1000);
-  game.handleAnswer({ moves: path.slice(0, 1), answer: '', player: 'dekat0' });
+  sendNextMove('jauh');     // dua kali lari
+  sendNextMove('jauh');
+  sendNextMove('dekat0');   // sekali lari
 
   mock.timers.tick(4 * 60 * 1000);
   const after = game.buildStatePayload();

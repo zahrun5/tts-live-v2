@@ -40,8 +40,9 @@ async function waitFor(ev, name, from = 0, ms = 20000, pred = () => true) {
 }
 
 const D = { U: [0, -1, 1], D: [0, 1, 4], L: [-1, 0, 8], R: [1, 0, 2] };
-function solve(st) {
-  const { cols, rows, walls, start, exit } = st;
+function solve(st, from) {
+  const { cols, rows, walls, exit } = st;
+  const start = from || st.start;
   const key = (x, y) => y * cols + x;
   const prev = new Map([[key(start.x, start.y), null]]);
   const q = [start];
@@ -61,17 +62,19 @@ function solve(st) {
 const WORD = { U: 'atas', D: 'bawah', L: 'kiri', R: 'kanan' };
 const KEY = { U: 'w', D: 's', L: 'a', R: 'd' };
 
-// bot jalan ke finish: komentar 3 langkah tiap ~1 dtk, campur kata & WASD
-async function runBot(room, name, moves, startDelay) {
+// bot jalan ke finish: 1 komentar = 1 arah (game lari sampai persimpangan), arah
+// dihitung dari posisi bot sekarang. Campur kata & WASD.
+async function runBot(room, name, startDelay) {
   await sleep(startDelay);
-  for (let i = 0; i < moves.length; i += 3) {
-    const chunk = moves.slice(i, i + 3);
-    const wasd = chunk.map((m) => KEY[m]).join('');
-    // kombinasi huruf yang sama dengan kata biasa (ada, sad, was, ...) sengaja diabaikan parser
-    const NOT_MOVES = ['ada', 'adas', 'dada', 'sada', 'awas', 'sawa', 'add', 'dad', 'sad', 'was', 'saw'];
-    const text = (i / 3) % 2 && !NOT_MOVES.includes(wasd) ? wasd : chunk.map((m) => WORD[m]).join(' ');
-    await room.handleChat({ player: name, text });
-    await sleep(1000);
+  for (let i = 0; i < 200; i++) {
+    const st = room.activeGame.buildStatePayload();
+    if (st.phase !== 'racing') return;
+    const me = st.players.find((p) => p.n === name);
+    if (me && me.r) return;
+    const dir = solve(st, me ? { x: me.x, y: me.y } : st.start)[0];
+    if (!dir) return;
+    await room.handleChat({ player: name, text: i % 2 ? KEY[dir] : WORD[dir] });
+    await sleep(1300);   // lewatin cooldown lari (maks 2,5 dtk; lari panjang yang kena 'terlalu cepat' diulang)
   }
 }
 
@@ -88,7 +91,7 @@ async function scenario(label, room, evs, expectRotationTo) {
   // spammer: banjirin komentar nabrak tembok / bukan arah — nggak boleh ngacauin
   (async () => { for (let i = 0; i < 60; i++) { await room.handleChat({ player: 'spammer', text: i % 2 ? 'atas atas atas atas' : 'halo kak' }); await sleep(40); } })();
 
-  await Promise.all([runBot(room, 'b1', moves, 0), runBot(room, 'b2', moves, 500), runBot(room, 'b3', moves, 1000)]);
+  await Promise.all([runBot(room, 'b1', 0), runBot(room, 'b2', 500), runBot(room, 'b3', 1000)]);
   const correct = [];
   for (let i = 0; i < 3; i++) {
     const e = await waitFor(evs, 'answer:correct', from + 0, 8000, (p) => !correct.some((c) => c.player === p.player));
@@ -101,7 +104,7 @@ async function scenario(label, room, evs, expectRotationTo) {
   ok(!room.leaderboard.spammer, 'spammer tidak dapat poin');
 
   const updates = evs.slice(from).filter((e) => e.name === 'update').length;
-  ok(updates < 140, `update di-throttle (${updates} emit untuk ~${moves.length / 3 * 3} komentar bot + spam)`);
+  ok(updates < 140, `update di-throttle (${updates} emit untuk komentar 3 bot + spam)`);
   const podium = await waitFor(evs, 'update', from, 5000, (p) => p.phase === 'podium');
   ok(!!podium && podium.payload.finishers.length === 3, 'fase podium dikirim dengan 3 juara');
 

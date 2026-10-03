@@ -102,7 +102,7 @@
 
   <div id="stage"><canvas id="maze"></canvas></div>
 
-  <div class="howto">Komen <b>atas</b> · <b>bawah</b> · <b>kiri</b> · <b>kanan</b> atau <b>W A S D</b> — maks 3 langkah per komentar. 3 tercepat sampai 🏁 menang!</div>
+  <div class="howto">Komen <b>atas</b> · <b>bawah</b> · <b>kiri</b> · <b>kanan</b> atau <b>W A S D</b> — jalan terus sampai ketemu <b>persimpangan</b>. 3 tercepat sampai 🏁 menang!</div>
 
   <div id="leaderboard">
     <div class="label">🏆 Top Skor</div>
@@ -130,7 +130,8 @@
   let lastRound = 0, lastFinishCount = 0;
   const avatars = new Map();     // nama -> { emoji, url }
   const imgCache = new Map();    // url -> Image
-  const disp = new Map();        // nama -> posisi tampil (smoothing)
+  const disp = new Map();        // nama -> { x, y (tampil), tx, ty (posisi server), q (antrean petak) }
+  let lastFrameT = performance.now();
   const LEADERS_WITH_AVATAR = 5;
   const MEDALS = ['🥇', '🥈', '🥉'];
 
@@ -141,6 +142,33 @@
     let img = imgCache.get(url);
     if (!img) { img = new Image(); img.referrerPolicy = 'no-referrer'; img.src = url; imgCache.set(url, img); }
     return img;
+  }
+
+  // ---------- jalur animasi ----------
+  // Server cuma ngirim posisi akhir tiap lari. Labirinnya "sempurna" (cuma ada satu
+  // jalur antar dua petak), jadi klien nyari sendiri petak-petak yang dilewati dan
+  // menganimasikan pemain menyusuri lorong, bukan meluncur tembus tembok.
+  const DIR4 = [[0, -1, 1], [1, 0, 2], [0, 1, 4], [-1, 0, 8]];   // dx, dy, bit dinding
+  function pathCells(m, fx, fy, tx, ty) {
+    const { cols, rows, walls } = m;
+    const key = (x, y) => y * cols + x;
+    const prev = new Map([[key(fx, fy), -1]]);
+    const q = [[fx, fy]];
+    for (let h = 0; h < q.length; h++) {
+      const [x, y] = q[h];
+      if (x === tx && y === ty) break;
+      for (const [dx, dy, bit] of DIR4) {
+        if (walls[key(x, y)] & bit) continue;
+        const nx = x + dx, ny = y + dy;
+        if (nx < 0 || ny < 0 || nx >= cols || ny >= rows || prev.has(key(nx, ny))) continue;
+        prev.set(key(nx, ny), key(x, y));
+        q.push([nx, ny]);
+      }
+    }
+    if (!prev.has(key(tx, ty))) return [[tx, ty]];
+    const out = [];
+    for (let k = key(tx, ty); k !== key(fx, fy); k = prev.get(k)) out.push([k % cols, Math.floor(k / cols)]);
+    return out.reverse();
   }
 
   // ---------- layout ----------
@@ -257,10 +285,20 @@
     drawWalls();
 
     const players = maze.players || [];
+    const nowT = performance.now();
+    const dt = Math.min(0.1, (nowT - lastFrameT) / 1000);
+    lastFrameT = nowT;
     const pos = players.map((p) => {
       let d = disp.get(p.n);
-      if (!d) { d = { x: p.x, y: p.y }; disp.set(p.n, d); }
-      d.x += (p.x - d.x) * 0.3; d.y += (p.y - d.y) * 0.3;
+      if (!d) { d = { x: p.x, y: p.y, tx: p.x, ty: p.y, q: [] }; disp.set(p.n, d); }
+      // jalan petak demi petak; makin banyak antrean, makin cepat biar nggak ketinggalan
+      let budget = dt * (10 + d.q.length * 1.5);
+      while (budget > 0 && d.q.length) {
+        const qx = d.q[0][0], qy = d.q[0][1];
+        const dx = qx - d.x, dy = qy - d.y, dist = Math.hypot(dx, dy);
+        if (dist <= budget) { d.x = qx; d.y = qy; d.q.shift(); budget -= dist; }
+        else { d.x += dx / dist * budget; d.y += dy / dist * budget; budget = 0; }
+      }
       return { p, px: cx(d.x), py: cy(d.y) };
     });
     for (let i = pos.length - 1; i >= LEADERS_WITH_AVATAR; i--) drawDot(pos[i].p.n, pos[i].px, pos[i].py);
@@ -356,6 +394,14 @@
     lastFinishCount = m.finishers.length;
 
     maze = m;
+    for (const p of m.players || []) {
+      const d = disp.get(p.n);
+      if (!d) { disp.set(p.n, { x: p.x, y: p.y, tx: p.x, ty: p.y, q: [] }); continue; }
+      if (p.x === d.tx && p.y === d.ty) continue;
+      d.q.push(...pathCells(m, d.tx, d.ty, p.x, p.y));
+      if (d.q.length > 80) { d.q.length = 0; d.x = p.x; d.y = p.y; }   // ketinggalan jauh: loncat
+      d.tx = p.x; d.ty = p.y;
+    }
     if (!sameMaze) layout();
     updateHud(m);
 

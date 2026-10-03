@@ -1,17 +1,20 @@
 // Labirin — balapan labirin lewat komentar arah.
 //
 // Semua penonton mulai dari pintu masuk yang sama. Komentar arah
-// (atas/bawah/kiri/kanan, up/down/left/right, atau w/a/s/d, maksimal 3 langkah
-// per komentar) menggerakkan posisi penonton itu sendiri. 3 penonton tercepat
-// yang sampai pintu keluar jadi pemenang (poin 100/60/30).
+// (atas/bawah/kiri/kanan, up/down/left/right, atau w/a/s/d) bikin pemain itu
+// BERJALAN TERUS menyusuri lorong ke arah tersebut: belokan diikuti otomatis,
+// dan baru berhenti kalau ketemu persimpangan (pertigaan/perempatan), jalan
+// buntu, atau pintu keluar. Jadi penonton cuma perlu komentar tiap ada
+// persimpangan, bukan tiap petak. 3 penonton tercepat yang sampai pintu keluar
+// jadi pemenang (poin 100/60/30).
 //
 // Tanpa AI: parsing murni regex/kamus, sama kayak game lain yang udah pure regex.
 //
 // CATATAN KONTRAK:
-//  - handleAnswer() sengaja return { ok:false } untuk langkah biasa. Di room.js,
+//  - handleAnswer() sengaja return { ok:false } untuk gerakan biasa. Di room.js,
 //    ok:true berarti "jawaban benar" -> nambah skor + emit update/leaderboard/
-//    answer:correct. Kalau tiap langkah ok:true, 100+ penonton bakal banjirin
-//    socket. Langkah biasa disiarkan lewat broadcaster (di-throttle), dan ok:true
+//    answer:correct. Kalau tiap gerakan ok:true, 100+ penonton bakal banjirin
+//    socket. Gerakan biasa disiarkan lewat broadcaster (di-throttle), dan ok:true
 //    cuma buat penonton yang finish di 3 besar.
 //  - Ronde bisa selesai sendiri lewat timer (timeout 4 menit / jeda podium). Buat
 //    itu game butuh cara bilang "ronde selesai" ke room: argumen ke-2
@@ -24,8 +27,10 @@
 const COLS = 11;                       // lebar labirin (jumlah sel)
 const ROWS = 17;                       // tinggi labirin (portrait, muat di layar HP)
 const MIN_SHORTEST_PATH = 40;          // jalur terpendek minimal (langkah) biar nggak kecepetan
-const MAX_STEPS_PER_COMMENT = 3;       // maksimal langkah per komentar
-const STEP_COOLDOWN_MS = 300;          // kunci per langkah yang jalan (maks ~3 langkah/detik)
+const MAX_COMMANDS_PER_COMMENT = 3;    // maksimal arah per komentar (tiap arah = 1 lari sampai persimpangan)
+const RUN_COOLDOWN_BASE_MS = 500;      // kunci minimal tiap komentar yang bikin pemain jalan
+const RUN_COOLDOWN_PER_CELL_MS = 40;   // tambahan kunci per petak yang dilewati (lari panjang = tunggu lebih lama)
+const RUN_COOLDOWN_MAX_MS = 2500;      // batas atas kunci
 const ROUND_TIMEOUT_MS = 4 * 60 * 1000;
 const PODIUM_MS = 8000;                // lama papan juara tampil sebelum ronde baru
 const WINNER_POINTS = [100, 60, 30];   // poin juara 1/2/3
@@ -56,7 +61,7 @@ const WASD = { w: 'U', a: 'L', s: 'D', d: 'R' };
 // kata biasa yang kebetulan cuma terdiri dari huruf w/a/s/d
 const NOT_MOVES = new Set(['ada', 'adas', 'dada', 'sada', 'awas', 'sawa', 'add', 'dad', 'sad', 'was', 'saw']);
 
-// Return array arah (['U','R',...], maks MAX_STEPS_PER_COMMENT) atau null kalau
+// Return array arah (['U','R',...], maks MAX_COMMANDS_PER_COMMENT) atau null kalau
 // komentar bukan perintah gerak. Semua token harus berupa arah; satu kata
 // non-arah ("kiri dong") bikin seluruh komentar diabaikan.
 function parseMoves(text) {
@@ -82,7 +87,7 @@ function parseMoves(text) {
       return null;
     }
   }
-  return moves.length ? moves.slice(0, MAX_STEPS_PER_COMMENT) : null;
+  return moves.length ? moves.slice(0, MAX_COMMANDS_PER_COMMENT) : null;
 }
 
 // ---------- generator labirin ----------
@@ -137,6 +142,40 @@ function bfs(walls, from) {
     }
   }
   return dist;
+}
+
+// Satu "lari": langkah pertama sesuai arah komentar, lalu terus menyusuri lorong
+// (belokan diikuti otomatis) sampai:
+//   - pintu keluar              -> finished = true
+//   - persimpangan (pertigaan/perempatan: >= 2 jalan lanjut selain sisi asal)
+//   - jalan buntu (0 jalan lanjut)
+// Kalau langkah pertama sudah nabrak tembok, cells = 0 dan posisi nggak berubah.
+// Fungsi murni (nggak nyentuh state) biar gampang dites.
+function runSegment(walls, exit, x, y, firstKey) {
+  const first = DIRS[firstKey];
+  if (!first || (walls[idx(x, y)] & first.wall)) return { x, y, cells: 0, finished: false };
+
+  let dir = first;
+  let cells = 0;
+  for (let guard = 0; guard < COLS * ROWS; guard++) {
+    x += dir.dx;
+    y += dir.dy;
+    cells += 1;
+    if (x === exit.x && y === exit.y) return { x, y, cells, finished: true };
+
+    // jalan lanjut = sisi terbuka selain sisi tempat kita datang (dir.opp)
+    const w = walls[idx(x, y)];
+    const forward = [];
+    for (const key of Object.keys(DIRS)) {
+      const d = DIRS[key];
+      if (d.wall === dir.opp) continue;
+      if (w & d.wall) continue;
+      forward.push(d);
+    }
+    if (forward.length !== 1) break;   // 0 = buntu, >= 2 = persimpangan
+    dir = forward[0];                  // lorong lurus/belok: lanjut
+  }
+  return { x, y, cells, finished: false };
 }
 
 // Pintu masuk di baris atas (kolom acak), pintu keluar di baris bawah yang
@@ -281,19 +320,20 @@ module.exports = {
     if (p.rank) return { ok: false, msg: 'Sudah finish' };
     if (now < p.lockedUntil) return { ok: false, msg: 'Terlalu cepat' };
 
+    // Tiap arah = satu lari sampai persimpangan/buntu/finish. Beberapa arah dalam
+    // satu komentar dijalankan berurutan; berhenti kalau nabrak tembok.
     let moved = 0;
     let finished = false;
-    for (const m of list.slice(0, MAX_STEPS_PER_COMMENT)) {
-      const d = DIRS[m];
-      if (!d) break;
-      if (state.walls[idx(p.x, p.y)] & d.wall) break; // nabrak tembok: berhenti
-      p.x += d.dx;
-      p.y += d.dy;
-      moved += 1;
-      if (p.x === state.exit.x && p.y === state.exit.y) { finished = true; break; }
+    for (const m of list.slice(0, MAX_COMMANDS_PER_COMMENT)) {
+      const r = runSegment(state.walls, state.exit, p.x, p.y, m);
+      if (!r.cells) break;             // nabrak tembok: berhenti
+      p.x = r.x;
+      p.y = r.y;
+      moved += r.cells;
+      if (r.finished) { finished = true; break; }
     }
     p.steps += moved;
-    p.lockedUntil = now + Math.max(1, moved) * STEP_COOLDOWN_MS;
+    p.lockedUntil = now + Math.min(RUN_COOLDOWN_MAX_MS, RUN_COOLDOWN_BASE_MS + moved * RUN_COOLDOWN_PER_CELL_MS);
 
     if (!finished) {
       scheduleBroadcast(); // posisi baru (atau pemain baru muncul di pintu masuk)
@@ -391,5 +431,6 @@ module.exports = {
   },
 
   // dipakai test-labirin.js
-  _parseMoves: parseMoves
+  _parseMoves: parseMoves,
+  _runSegment: runSegment
 };
