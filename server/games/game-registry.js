@@ -11,4 +11,5 @@ module.exports = {
   "hitung-cepat": require("./hitung-cepat"),
   "spam-tap": require("./spam-tap"),
   "memory-card": require("./memory-card"),
+  labirin: require("./labirin"),
 };

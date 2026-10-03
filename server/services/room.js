@@ -29,7 +29,8 @@ const AVATAR_TIMEOUT = 120000; // 2 menit
 const VOTABLE_GAMES = [
   { num: 1, id: 'family100', label: 'Family 100' },
   { num: 2, id: 'sambung-kata', label: 'Sambung Kata' },
-  { num: 3, id: 'susun-kata-acak', label: 'Susun Kata Acak' }
+  { num: 3, id: 'susun-kata-acak', label: 'Susun Kata Acak' },
+  { num: 4, id: 'labirin', label: 'Labirin' }
 ];
 
 function findCircularPath(obj) {
@@ -160,7 +161,20 @@ class Room {
 
   bindBroadcaster() {
     if (this.activeGame.setBroadcaster) {
-      this.activeGame.setBroadcaster(() => this.emit('update', this.activeGame.buildStatePayload()));
+      const game = this.activeGame;
+      // Argumen ke-2 OPSIONAL: buat game yang rondenya selesai sendiri lewat timer
+      // (mis. Labirin: timeout / jeda papan juara). Game lain nggak peduli dan
+      // cukup pakai argumen pertama. Return false = game itu udah nggak aktif.
+      const requestCompletion = () => {
+        if (this.activeGame !== game) return false;
+        if (this.isGeneratingNext) { setTimeout(requestCompletion, 1000); return true; }
+        this.handleRoundCompleted();
+        return true;
+      };
+      this.activeGame.setBroadcaster(
+        () => this.emit('update', this.activeGame.buildStatePayload()),
+        requestCompletion
+      );
     }
   }
 

@@ -119,6 +119,7 @@ function Dashboard() {
     { id: 'hitung-cepat', label: '🧮 Hitung Cepat', icon: '🧮', color: 'from-red-500 to-orange-600' },
     { id: 'spam-tap', label: '❤️ Spam Tap Battle', icon: '⚔️', color: 'from-red-500 to-blue-600' },
     { id: 'memory-card', label: '🎴 Memory Card', icon: '🃏', color: 'from-purple-500 to-pink-600' },
+    { id: 'labirin', label: '🌀 Labirin', icon: '🌀', color: 'from-violet-500 to-fuchsia-600' },
   ];
   const refreshActiveSoal = async (username) => {
     if (!username) return;
