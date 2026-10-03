@@ -568,12 +568,64 @@ document.addEventListener('keydown', function(e) {
 
   function newDisp(cellNo) {
     const xy = cellXY(cellNo);
-    return { x: xy.x, y: xy.y, at: cellNo, pos: cellNo, seq: 0, q: [], hop: null, ox: 0, oy: 0, sc: 1 };
+    return { x: xy.x, y: xy.y, at: cellNo, pos: cellNo, seq: 0, q: [], hop: null, ox: 0, oy: 0, sc: 1, lift: 0 };
   }
 
   function snapTo(d, cellNo) {
     const xy = cellXY(cellNo);
     d.q.length = 0; d.hop = null; d.x = xy.x; d.y = xy.y; d.at = cellNo;
+  }
+
+  // Sumber ular/tangga yang berujung di kotak t (kepala ular / dasar tangga)
+  function jumpSource(t) {
+    for (const [h, tl] of game.snakes || []) if (tl === t) return h;
+    for (const [b, tp] of game.ladders || []) if (tp === t) return b;
+    return 0;
+  }
+
+  // Samakan posisi tampilan pion dengan posisi dari server: jalan per kotak, lalu luncur di ular/tangga
+  function syncPawn(key, target) {
+    let d = disp.get(key);
+    if (!d) { d = newDisp(target); disp.set(key, d); return d; }
+    if (d.pos === target) return d;
+    const from = d.pos;
+    d.pos = target;
+    if (target <= 0) { snapTo(d, target); return d; }
+    const src = jumpSource(target);
+    const steps = (a, b) => { for (let c = a + 1; c <= b; c++) d.q.push({ c, slide: false }); };
+    if (src && src > from && src - from <= 12) {
+      steps(from, src);
+      d.q.push({ c: target, slide: true });
+    } else if (target > from && target - from <= 12) {
+      steps(from, target);
+    } else {
+      d.q.push({ c: target, slide: true });
+    }
+    if (d.q.length > MAX_QUEUE) snapTo(d, target);
+    return d;
+  }
+
+  function tickPawns() {
+    const now = performance.now();
+    for (const d of disp.values()) {
+      for (let guard = 0; guard < 4; guard++) {
+        if (!d.hop) {
+          const seg = d.q.shift();
+          if (!seg) { d.lift = 0; break; }
+          const to = cellXY(seg.c);
+          const dur = seg.slide ? SLIDE_MS : Math.max(HOP_MIN_MS, HOP_MS - d.q.length * HOP_CATCHUP_MS);
+          d.hop = { seg, fx: d.x, fy: d.y, tx: to.x, ty: to.y, t0: now, dur };
+        }
+        const h = d.hop;
+        const u = Math.min(1, (now - h.t0) / h.dur);
+        const e = h.seg.slide ? u * u * (3 - 2 * u) : u;
+        d.x = h.fx + (h.tx - h.fx) * e;
+        d.y = h.fy + (h.ty - h.fy) * e;
+        d.lift = h.seg.slide ? 0 : Math.sin(u * Math.PI) * HOP_HEIGHT;
+        if (u < 1) break;
+        d.at = h.seg.c; d.x = h.tx; d.y = h.ty; d.lift = 0; d.hop = null;
+      }
+    }
   }
 
   function paint() {
@@ -584,31 +636,29 @@ document.addEventListener('keydown', function(e) {
     drawSnakes();
     drawNumbers();
 
-    // Draw pawns (solo) or team pieces (team mode)
+    tickPawns();
     if (game.mode === 'team' && game.teams) {
-      // Team mode: draw one pawn per team
       for (const team of game.teams) {
-        const xy = cellXY(team.pos);
+        const d = syncPawn('t' + team.idx, team.pos);
         const p = { n: team.emoji, c: team.idx, team: team.idx, r: team.rank, shield: false, sk: 0 };
-        drawPawn(p, px(xy.x), py(xy.y), 1, true);
+        drawPawn(p, px(d.x), py(d.y) - d.lift * cell, 1, true);
       }
     } else {
-      // Solo mode: draw individual pawns
       const byCell = new Map();
       for (const p of game.players || []) {
-        if (!byCell.has(p.p)) byCell.set(p.p, []);
-        byCell.get(p.p).push(p);
+        const d = syncPawn('p' + p.n, p.p);
+        if (!byCell.has(d.at)) byCell.set(d.at, []);
+        byCell.get(d.at).push([p, d]);
       }
-      for (const [c, arr] of byCell) {
-        const xy = cellXY(c);
+      for (const arr of byCell.values()) {
         const n = Math.min(arr.length, 9);
-        arr.slice(0, 9).forEach((p, i) => {
+        arr.slice(0, 9).forEach(([p, d], i) => {
           const cols = n <= 1 ? 1 : n <= 4 ? 2 : 3;
           const step = cell / cols;
           const ox = ((i % cols) - (cols - 1) / 2) * step;
           const oy = (Math.floor(i / cols) - (cols - 1) / 2) * step;
           const sc = cols === 1 ? 1 : cols === 2 ? 0.55 : 0.37;
-          drawPawn(p, px(xy.x) + ox, py(xy.y) + oy, sc, n === 1);
+          drawPawn(p, px(d.x) + ox, py(d.y) + oy - d.lift * cell, sc, n === 1);
         });
       }
     }
@@ -688,11 +738,25 @@ document.addEventListener('keydown', function(e) {
     setTimeout(() => banner.classList.remove('show'), 2500);
   }
 
+  // Hitung mundur lobby dihitung di klien, karena server hanya kirim update saat ada kejadian
+  function updateLobbyBar() {
+    if (!game || game.phase !== 'lobby') return;
+    const turnBar = document.getElementById('turnBar');
+    const left = game.lobby.endsAt - (Date.now() + clockOffset);
+    turnBar.className = 'lobby';
+    turnBar.textContent = game.lobby.endsAt > 0 && left > 0
+      ? 'Mulai dalam ' + Math.ceil(left / 1000) + 's... (' + game.totalPlayers + '/' + game.lobby.max + ')'
+      : game.lobby.endsAt > 0
+        ? 'Memulai...'
+        : 'Menunggu ' + game.lobby.min + ' pemain...';
+  }
+
   socket.on('update', (m) => {
     if (!m || m.phase === 'done') return;
     game = m;
     if (m.round !== lastRound) {
       lastRound = m.round;
+      disp.clear();
       buildGeo(m);
       layout();
     }
@@ -712,11 +776,7 @@ document.addEventListener('keydown', function(e) {
 
     const turnBar = document.getElementById('turnBar');
     if (m.phase === 'lobby') {
-      const left = m.lobby.endsAt - m.serverTime;
-      turnBar.className = 'lobby';
-      turnBar.textContent = m.lobby.endsAt > m.serverTime
-        ? 'Mulai dalam ' + Math.ceil(left / 1000) + 's... (' + m.totalPlayers + '/' + m.lobby.max + ')'
-        : 'Menunggu ' + m.lobby.min + ' pemain...';
+      updateLobbyBar();
     } else if (m.phase === 'racing' && m.turn) {
       turnBar.className = '';
       if (m.mode === 'team' && m.currentTeam !== null) {
@@ -792,6 +852,8 @@ document.addEventListener('keydown', function(e) {
     socket.emit('join-overlay');
   });
 
+  setInterval(updateLobbyBar, 250);
+
   setInterval(() => {
     if (game && game.phase === 'racing' && game.endsAt) {
       const left = game.endsAt - (Date.now() + clockOffset);
@@ -802,3 +864,4 @@ document.addEventListener('keydown', function(e) {
 </script>
 </body>
 </html>
+
