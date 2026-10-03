@@ -386,7 +386,7 @@ module.exports = {
   buildStatePayload() {
     if (!state) {
       return {
-        phase: 'racing', round: 1, cols: COLS, rows: ROWS, walls: [], start: { x: 0, y: 0 },
+        phase: 'racing', round: 1, cols: COLS, rows: ROWS, walls: [], board: null, start: { x: 0, y: 0 },
         exit: { x: 0, y: 0 }, shortest: 0, endsAt: 0, serverTime: Date.now(),
         winnersNeeded: WINNER_COUNT, totalPlayers: 0, players: [], finishers: [], closest: []
       };
@@ -409,10 +409,9 @@ module.exports = {
           .map(([name]) => shortName(name))
       : [];
 
-    const lobbyPlayers = state.spectators ? state.spectators.size : (state.phase === racing || state.phase === podium ? state.players.size : 0);
-    const countdownSecs = state.phase === countdown
-      ? Math.max(0, Math.ceil((state.countdownStartedAt + LOBBY_COUNTDOWN_MS - Date.now()) / 1000))
-      : 0;
+    // Labirin starts straight into 'racing' (no lobby phase like ular-tangga)
+    const lobbyPlayers = state.players.size;
+    const countdownSecs = 0;
     return {
       phase: state.phase,
       round: state.round,
@@ -422,6 +421,7 @@ module.exports = {
       cols: COLS,
       rows: ROWS,
       walls: state.walls,
+      board: state.walls,
       start: state.start,
       exit: state.exit,
       shortest: state.shortest,
