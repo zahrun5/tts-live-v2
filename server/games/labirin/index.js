@@ -33,6 +33,10 @@ const RUN_COOLDOWN_PER_CELL_MS = 40;   // tambahan kunci per petak yang dilewati
 const RUN_COOLDOWN_MAX_MS = 2500;      // batas atas kunci
 const ROUND_TIMEOUT_MS = 4 * 60 * 1000;
 const PODIUM_MS = 8000;                // lama papan juara tampil sebelum ronde baru
+const LOBBY_TIMEOUT_MS = 45 * 1000;    // lama maksimal nunggu pemain di lobby
+const LOBBY_COUNTDOWN_MS = 15 * 1000; // countdown sebelum race mulai
+const LOBBY_MIN_PLAYERS = 1;           // minimal pemain untuk mulai countdown
+const LOBBY_EXTEND_MS = 30 * 1000;     // perpanjang timeout kalau pemain masuk tapi belum cukup
 const WINNER_POINTS = [100, 60, 30];   // poin juara 1/2/3
 const WINNER_COUNT = WINNER_POINTS.length;
 const BROADCAST_THROTTLE_MS = 150;     // gabung banyak langkah jadi 1 emit
@@ -206,12 +210,17 @@ let requestCompletion = null;
 let roundTimer = null;
 let podiumTimer = null;
 let broadcastTimer = null;
+let lobbyTimer = null;
+let lobbyCountdownTimer = null;
+let lobbyCountdownSecs = 0;
 
 function clearTimers() {
   clearTimeout(roundTimer);
   clearTimeout(podiumTimer);
   clearTimeout(broadcastTimer);
-  roundTimer = podiumTimer = broadcastTimer = null;
+  clearTimeout(lobbyTimer);
+  clearTimeout(lobbyCountdownTimer);
+  roundTimer = podiumTimer = broadcastTimer = lobbyTimer = lobbyCountdownTimer = null;
 }
 
 function unref(t) { if (t && t.unref) t.unref(); return t; }
@@ -400,9 +409,16 @@ module.exports = {
           .map(([name]) => shortName(name))
       : [];
 
+    const lobbyPlayers = state.spectators ? state.spectators.size : (state.phase === racing || state.phase === podium ? state.players.size : 0);
+    const countdownSecs = state.phase === countdown
+      ? Math.max(0, Math.ceil((state.countdownStartedAt + LOBBY_COUNTDOWN_MS - Date.now()) / 1000))
+      : 0;
     return {
       phase: state.phase,
       round: state.round,
+      lobbyPlayers,
+      countdownSecs,
+      lobbyEndsAt: state.lobbyEndsAt || 0,
       cols: COLS,
       rows: ROWS,
       walls: state.walls,
