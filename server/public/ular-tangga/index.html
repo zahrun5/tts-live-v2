@@ -326,6 +326,7 @@ document.addEventListener('keydown', function(e) {
   let clockOffset = 0;
   let cell = 30, padTop = 14;
   let lastRound = 0, lastFinishCount = 0;
+  let lastMysterySeq = null;
   const avatars = new Map();
   const scores = new Map();
   const imgCache = new Map();
@@ -812,9 +813,14 @@ document.addEventListener('keydown', function(e) {
     // Show mystery effect if recent roll has mystery effect
     if (m.recentRolls && m.recentRolls.length > 0) {
       const latest = m.recentRolls[m.recentRolls.length - 1];
-      if (latest.v && !['snake', 'ladder', 'again', 'trap', 'shielded'].includes(latest.v)) {
+      // Banner cuma sekali per lemparan (update server datang berkali-kali), dan lewati lemparan lama saat halaman baru dibuka
+      if (lastMysterySeq !== null && latest.s !== lastMysterySeq &&
+          latest.v && !['snake', 'ladder', 'again', 'trap', 'shielded', 'back', 'fwd'].includes(latest.v)) {
         showMysteryEffect(latest.v);
       }
+      lastMysterySeq = latest.s;
+    } else if (lastMysterySeq === null) {
+      lastMysterySeq = 0;
     }
 
     updateLeadStrip();
