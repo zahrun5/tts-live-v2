@@ -12,4 +12,5 @@ module.exports = {
   "spam-tap": require("./spam-tap"),
   "memory-card": require("./memory-card"),
   labirin: require("./labirin"),
+  "ular-tangga": require("./ular-tangga"),
 };

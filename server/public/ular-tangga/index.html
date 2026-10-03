@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ular Tangga</title>
+<link rel="manifest" href="manifest.json">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Poppins', sans-serif; color: #fff; overflow: hidden;
+    background: linear-gradient(135deg, #07161a 0%, #0c2328 50%, #123238 75%, #0c2328 100%);
+    min-height: 100vh;
+  }
+  #app { width: 100%; height: 100vh; display: flex; flex-direction: column; padding: .6rem .8rem; position: relative; }
+
+  .header { text-align: center; flex: 0 0 auto; }
+  .header h1 {
+    font-size: clamp(1.3rem, 4vw, 2.2rem); font-weight: 800;
+    background: linear-gradient(90deg, #5eead4, #a3e635, #facc15);
+    -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;
+  }
+  .stats { display: flex; justify-content: center; gap: .5rem; flex-wrap: wrap; margin-top: .25rem; }
+  .chip {
+    font-size: clamp(.7rem, 1.8vw, .95rem); font-weight: 700; padding: .15rem .65rem; border-radius: 50px;
+    background: rgba(255,255,255,.07); border: 1px solid rgba(94,234,212,.3); color: #ccfbf1; white-space: nowrap;
+  }
+  .chip.hot { color: #fbbf24; border-color: rgba(251,191,36,.5); }
+
+  .howto {
+    flex: 0 0 auto; text-align: center; margin-top: .3rem; padding: .35rem .6rem; border-radius: 12px;
+    background: rgba(255,255,255,.05); border: 1px solid rgba(94,234,212,.2);
+    font-size: clamp(.7rem, 1.9vw, .95rem); font-weight: 600; line-height: 1.35;
+  }
+  .howto b { color: #a3e635; }
+
+  #stage { flex: 1 1 auto; min-height: 0; display: flex; align-items: center; justify-content: center; margin-top: .3rem; }
+  canvas { display: block; }
+
+  /* Panel dadu: lemparan terbaru + daftar lemparan terakhir */
+  #dicePanel {
+    flex: 0 0 auto; margin-top: .3rem; padding: .5rem .7rem; border-radius: 16px;
+    background: rgba(255,255,255,.06); border: 1px solid rgba(94,234,212,.25);
+    display: grid; grid-template-columns: auto 1fr; gap: .2rem .8rem; align-items: center;
+  }
+  #die {
+    width: clamp(54px, 15vw, 84px); height: clamp(54px, 15vw, 84px); border-radius: 16%;
+    background: #fff7e0; box-shadow: 0 4px 0 #c9b27a, 0 0 18px rgba(250,204,21,.35);
+    display: grid; grid-template-columns: repeat(3, 1fr); grid-template-rows: repeat(3, 1fr);
+    padding: 11%; gap: 6%; grid-row: span 2;
+  }
+  #die i { border-radius: 50%; background: transparent; }
+  #die i.on { background: #1f2937; }
+  #die.rolling { animation: tumble .45s linear; }
+  @keyframes tumble { 0% { transform: rotate(0) scale(1); } 50% { transform: rotate(200deg) scale(1.12); } 100% { transform: rotate(360deg) scale(1); } }
+  #diceWho { font-size: clamp(.95rem, 3.2vw, 1.35rem); font-weight: 800; color: #fde68a; min-height: 1.4em; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  #diceSub { font-size: clamp(.75rem, 2.4vw, 1rem); font-weight: 600; color: #99f6e4; min-height: 1.3em; }
+  #recent { grid-column: 1 / -1; display: flex; gap: .35rem; flex-wrap: wrap; justify-content: center; min-height: 1.4rem; }
+  .rc { font-size: clamp(.62rem, 1.8vw, .8rem); font-weight: 700; padding: .1rem .5rem; border-radius: 50px; background: rgba(255,255,255,.08); color: #e2e8f0; white-space: nowrap; max-width: 46vw; overflow: hidden; text-overflow: ellipsis; }
+
+  #toast {
+    position: fixed; left: 50%; top: 18%; transform: translate(-50%, -20px); opacity: 0; pointer-events: none;
+    padding: .5rem 1.1rem; border-radius: 50px; font-weight: 800; font-size: clamp(.9rem, 3vw, 1.4rem);
+    background: rgba(7,22,26,.88); border: 2px solid #fbbf24; color: #fde68a; z-index: 200;
+    transition: opacity .3s, transform .3s; white-space: nowrap;
+  }
+  #toast.show { opacity: 1; transform: translate(-50%, 0); }
+
+  #podium {
+    position: fixed; inset: 0; display: none; align-items: center; justify-content: center; z-index: 150;
+    background: rgba(4,14,17,.8); backdrop-filter: blur(4px);
+  }
+  #podium.show { display: flex; }
+  .podium-card {
+    width: min(92vw, 460px); padding: 1.2rem 1.1rem; border-radius: 22px; text-align: center;
+    background: linear-gradient(160deg, rgba(15,76,70,.92), rgba(8,32,38,.96));
+    border: 2px solid rgba(251,191,36,.6); box-shadow: 0 0 40px rgba(94,234,212,.4);
+    animation: pop .45s ease;
+  }
+  @keyframes pop { from { transform: scale(.85); opacity: 0; } to { transform: scale(1); opacity: 1; } }
+  .podium-card h2 { font-size: clamp(1.3rem, 5vw, 2rem); font-weight: 800; color: #fde68a; margin-bottom: .6rem; }
+  .podium-row {
+    display: flex; align-items: center; gap: .6rem; padding: .5rem .7rem; margin: .35rem 0; border-radius: 14px;
+    background: rgba(255,255,255,.08); font-weight: 700; font-size: clamp(.95rem, 3.4vw, 1.25rem);
+  }
+  .podium-row .medal { font-size: 1.6em; }
+  .podium-row .nm { flex: 1; text-align: left; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .podium-row .pt { color: #4ade80; }
+  .podium-row .tm { color: #99f6e4; font-size: .75em; font-weight: 600; }
+  .podium-note { margin-top: .6rem; font-size: clamp(.75rem, 2.4vw, .95rem); color: #99f6e4; }
+
+  .confetti { position: fixed; top: -12px; width: 9px; height: 14px; z-index: 160; pointer-events: none; animation: fall linear forwards; }
+  @keyframes fall { to { transform: translateY(105vh) rotate(540deg); opacity: .9; } }
+
+  @media (prefers-reduced-motion: reduce) { #die.rolling { animation: none; } .podium-card { animation: none; } }
+
+  /* Leaderboard (gaya sama game lain; v2-bootstrap.js ngerapihin di layar portrait) */
+  #leaderboard {
+    position: fixed; top: 1rem; right: 1rem; z-index: 100; min-width: 170px; max-height: 250px; overflow-y: auto;
+    padding: .8rem 1rem; border-radius: 15px; backdrop-filter: blur(10px);
+    background: rgba(255,255,255,.05); border: 1px solid rgba(94,234,212,.2);
+  }
+  #leaderboard .label { font-size: .9rem; margin-bottom: .5rem; text-align: center; color: #5eead4; font-weight: 700; }
+  #lbList { display: flex; flex-direction: column; gap: .3rem; }
+  .lb-row { display: flex; justify-content: space-between; gap: .5rem; padding: .25rem .5rem; font-size: .8rem; border-bottom: 1px solid rgba(255,255,255,.1); }
+  .lb-rank { color: #fbbf24; font-weight: 700; width: 20px; }
+  .lb-name { flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .lb-score { color: #22c55e; font-weight: 700; }
+</style>
+</head>
+<body>
+<div id="app">
+  <div class="header">
+    <h1>🐍 ULAR TANGGA 🪜</h1>
+    <div class="stats">
+      <span class="chip" id="chipRound">Ronde 1</span>
+      <span class="chip hot" id="chipFinish">🏁 0/3 sampai</span>
+      <span class="chip" id="chipTime">⏱ --:--</span>
+      <span class="chip" id="chipPlayers">👥 0</span>
+    </div>
+  </div>
+
+  <div class="howto" id="howto">Komen <b>lempar</b> (atau <b>dadu</b> / <b>roll</b>) buat melempar dadu. Sampai petak <b>100</b> duluan! Harus pas, kalau lebih bakal memantul.</div>
+
+  <div id="stage"><canvas id="board"></canvas></div>
+
+  <div id="dicePanel">
+    <div id="die"></div>
+    <div id="diceWho">Ketik "lempar" buat mulai!</div>
+    <div id="diceSub"></div>
+    <div id="recent"></div>
+  </div>
+
+  <div id="leaderboard">
+    <div class="label">🏆 Top Skor</div>
+    <div id="lbList"></div>
+  </div>
+</div>
+
+<div id="toast"></div>
+<div id="podium"><div class="podium-card" id="podiumCard"></div></div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script>const socket = io();</script>
+<script src="/shared/v2-bootstrap.js"></script>
+<script src="/shared/game-switch-watcher.js"></script>
+<script src="/shared/vote-overlay.js"></script>
+<script>
+(function () {
+  const canvas = document.getElementById('board');
+  const ctx = canvas.getContext('2d');
+  const stage = document.getElementById('stage');
+
+  let game = null;               // payload 'update' terakhir
+  let clockOffset = 0;           // serverTime - Date.now()
+  let cell = 30, padTop = 14;
+  let lastRound = 0, lastFinishCount = 0;
+  const avatars = new Map();     // nama -> { emoji, url }
+  const scores = new Map();      // nama -> total poin (dari leaderboard:update)
+  const imgCache = new Map();    // url -> Image
+  const disp = new Map();        // nama -> { x, y (tampil, satuan petak), at, pos, seq, q (antrean langkah), hop }
+  let snakeGeo = new Map();      // petak kepala ular -> bentuk lekukan
+  let lastFrameT = performance.now();
+
+  const HOP_MS = 220;            // lama satu lompatan antar petak (ms)
+  const HOP_MIN_MS = 70;         // batas tercepat saat antrean panjang
+  const HOP_CATCHUP_MS = 12;     // tiap petak yang masih antre mempercepat lompatan segini
+  const HOP_HEIGHT = 0.42;       // tinggi lompatan (kali ukuran petak)
+  const SLIDE_MS = 750;          // lama meluncur di ular / tangga
+  const MAX_QUEUE = 40;          // antrean lebih panjang dari ini: langsung loncat ke posisi server
+  const LEADERS_WITH_AVATAR = 5;
+  const MEDALS = ['🥇', '🥈', '🥉'];
+  const SNAKE_COLORS = ['#ef4444', '#f97316', '#a3e635', '#22d3ee', '#c084fc', '#f472b6', '#facc15', '#34d399'];
+
+  // ---------- util ----------
+  function hash(s) { let h = 0; for (let i = 0; i < s.length; i++) h = (h * 31 + s.charCodeAt(i)) | 0; return Math.abs(h); }
+  function fmtTime(ms) { const s = Math.max(0, Math.ceil(ms / 1000)); return Math.floor(s / 60) + ':' + String(s % 60).padStart(2, '0'); }
+  function getImg(url) {
+    let img = imgCache.get(url);
+    if (!img) { img = new Image(); img.referrerPolicy = 'no-referrer'; img.src = url; imgCache.set(url, img); }
+    return img;
+  }
+
+  // ---------- geometri papan ----------
+  // Petak 1 di kiri-bawah, zig-zag ke atas; petak 100 di kiri-atas. Petak 0 =
+  // tempat mulai, satu baris di bawah petak 1.
+  function cellXY(n) {
+    if (n <= 0) return { x: 0, y: 10 };
+    const i = n - 1, rowB = Math.floor(i / 10);
+    let col = i % 10;
+    if (rowB % 2 === 1) col = 9 - col;
+    return { x: col, y: 9 - rowB };
+  }
+  const px = (gx) => (gx + 0.5) * cell;
+  const py = (gy) => padTop + (gy + 0.5) * cell;
+
+  // Titik di sepanjang ular (satuan petak): garis lurus + gelombang sinus.
+  function snakePoint(g, t) {
+    const dx = g.bx - g.ax, dy = g.by - g.ay;
+    const len = Math.hypot(dx, dy) || 1;
+    const nx = -dy / len, ny = dx / len;
+    const off = Math.sin(t * Math.PI * g.k) * g.amp * g.sign;
+    return { x: g.ax + dx * t + nx * off, y: g.ay + dy * t + ny * off };
+  }
+
+  function buildGeo(m) {
+    snakeGeo = new Map();
+    (m.snakes || []).forEach(([head, tail], i) => {
+      const a = cellXY(head), b = cellXY(tail);
+      const h = hash(head + ':' + tail);
+      snakeGeo.set(head, {
+        head, tail, ax: a.x, ay: a.y, bx: b.x, by: b.y,
+        k: 2 + (h % 3), amp: 0.32 + (h % 5) * 0.04, sign: h % 2 ? 1 : -1,
+        color: SNAKE_COLORS[i % SNAKE_COLORS.length]
+      });
+    });
+  }
+
+  // ---------- layout ----------
+  function layout() {
+    if (!game) return;
+    const r = stage.getBoundingClientRect();
+    cell = Math.max(10, Math.floor(Math.min(r.width / 10, r.height / 11.1)));
+    padTop = Math.round(cell * 0.45);
+    const w = cell * 10, h = padTop + cell * 11;
+    const dpr = window.devicePixelRatio || 1;
+    canvas.width = w * dpr; canvas.height = h * dpr;
+    canvas.style.width = w + 'px'; canvas.style.height = h + 'px';
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+  }
+  new ResizeObserver(layout).observe(stage);
+
+  // ---------- gambar papan ----------
+  const SPECIAL_STYLE = {
+    again: { fill: 'rgba(250,204,21,.38)', icon: '🔁' },
+    back:  { fill: 'rgba(239,68,68,.36)', icon: '⏪' },
+    fwd:   { fill: 'rgba(74,222,128,.36)', icon: '⏩' }
+  };
+
+  function drawCells() {
+    const specials = new Map((game.specials || []).map((s) => [s.c, s]));
+    ctx.textAlign = 'left'; ctx.textBaseline = 'top';
+    for (let n = 1; n <= 100; n++) {
+      const { x, y } = cellXY(n);
+      const x0 = x * cell, y0 = padTop + y * cell;
+      ctx.fillStyle = (x + y) % 2 ? '#14434a' : '#195660';
+      ctx.fillRect(x0, y0, cell, cell);
+      const sp = specials.get(n);
+      if (sp && SPECIAL_STYLE[sp.t]) {
+        ctx.fillStyle = SPECIAL_STYLE[sp.t].fill;
+        ctx.fillRect(x0, y0, cell, cell);
+      }
+      if (n === 100) {
+        ctx.fillStyle = 'rgba(251,191,36,.45)';
+        ctx.fillRect(x0, y0, cell, cell);
+      }
+      if (sp && SPECIAL_STYLE[sp.t]) {
+        ctx.font = Math.round(cell * 0.3) + 'px sans-serif';
+        ctx.textAlign = 'right'; ctx.textBaseline = 'bottom';
+        ctx.fillText(SPECIAL_STYLE[sp.t].icon, x0 + cell * 0.97, y0 + cell * 0.97);
+        ctx.textAlign = 'left'; ctx.textBaseline = 'top';
+      }
+    }
+    // garis petak halus + bingkai
+    ctx.strokeStyle = 'rgba(94,234,212,.18)'; ctx.lineWidth = 1;
+    ctx.beginPath();
+    for (let i = 0; i <= 10; i++) {
+      ctx.moveTo(i * cell, padTop); ctx.lineTo(i * cell, padTop + 10 * cell);
+      ctx.moveTo(0, padTop + i * cell); ctx.lineTo(10 * cell, padTop + i * cell);
+    }
+    ctx.stroke();
+    ctx.strokeStyle = 'rgba(94,234,212,.6)'; ctx.lineWidth = 2;
+    ctx.strokeRect(0, padTop, 10 * cell, 10 * cell);
+
+    // bendera di petak 100 dan tempat mulai di bawah petak 1
+    ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+    const f = cellXY(100);
+    ctx.font = Math.round(cell * 0.5) + 'px sans-serif';
+    ctx.fillText('🏁', px(f.x), py(f.y) + cell * 0.08);
+    ctx.font = '700 ' + Math.round(cell * 0.3) + 'px Poppins, sans-serif';
+    ctx.fillStyle = '#86efac';
+    ctx.textAlign = 'left';
+    ctx.fillText('◀ MULAI', cell * 1.0, py(10));
+  }
+
+  // Angka petak digambar setelah tangga & ular, dengan tepi gelap, biar tetap kebaca.
+  function drawNumbers() {
+    ctx.textAlign = 'left'; ctx.textBaseline = 'top';
+    ctx.font = '700 ' + Math.round(cell * 0.26) + 'px Poppins, sans-serif';
+    ctx.lineJoin = 'round'; ctx.lineWidth = Math.max(2, cell * 0.08);
+    for (let n = 1; n <= 100; n++) {
+      const { x, y } = cellXY(n);
+      const tx = x * cell + cell * 0.08, ty = padTop + y * cell + cell * 0.05;
+      ctx.strokeStyle = 'rgba(7,22,26,.85)';
+      ctx.strokeText(String(n), tx, ty);
+      ctx.fillStyle = n === 100 ? '#fde68a' : '#d5fbf4';
+      ctx.fillText(String(n), tx, ty);
+    }
+  }
+
+  function drawLadders() {
+    ctx.lineCap = 'round';
+    ctx.globalAlpha = 0.85;
+    for (const [bottom, top] of game.ladders || []) {
+      const a = cellXY(bottom), b = cellXY(top);
+      const ax = px(a.x), ay = py(a.y), bx = px(b.x), by = py(b.y);
+      const dx = bx - ax, dy = by - ay, len = Math.hypot(dx, dy) || 1;
+      const nx = -dy / len * cell * 0.13, ny = dx / len * cell * 0.13;
+      ctx.strokeStyle = '#e0a84f'; ctx.lineWidth = Math.max(2, cell * 0.075);
+      ctx.beginPath();
+      ctx.moveTo(ax + nx, ay + ny); ctx.lineTo(bx + nx, by + ny);
+      ctx.moveTo(ax - nx, ay - ny); ctx.lineTo(bx - nx, by - ny);
+      ctx.stroke();
+      ctx.strokeStyle = '#f4d08a'; ctx.lineWidth = Math.max(1.5, cell * 0.05);
+      ctx.beginPath();
+      const rungs = Math.max(2, Math.floor(len / (cell * 0.34)));
+      for (let i = 1; i < rungs; i++) {
+        const t = i / rungs, cx2 = ax + dx * t, cy2 = ay + dy * t;
+        ctx.moveTo(cx2 + nx, cy2 + ny); ctx.lineTo(cx2 - nx, cy2 - ny);
+      }
+      ctx.stroke();
+    }
+    ctx.globalAlpha = 1;
+  }
+
+  function drawSnakes() {
+    ctx.lineCap = 'round'; ctx.lineJoin = 'round';
+    for (const g of snakeGeo.values()) {
+      const pts = [];
+      for (let i = 0; i <= 32; i++) { const p = snakePoint(g, i / 32); pts.push([px(p.x), py(p.y)]); }
+      const path = () => { ctx.beginPath(); pts.forEach(([x, y], i) => (i ? ctx.lineTo(x, y) : ctx.moveTo(x, y))); };
+      ctx.globalAlpha = 0.93;
+      path(); ctx.strokeStyle = 'rgba(0,0,0,.35)'; ctx.lineWidth = cell * 0.24; ctx.stroke();
+      path(); ctx.strokeStyle = g.color; ctx.lineWidth = cell * 0.19; ctx.stroke();
+      path(); ctx.strokeStyle = 'rgba(255,255,255,.45)'; ctx.lineWidth = cell * 0.07; ctx.setLineDash([cell * 0.1, cell * 0.2]); ctx.stroke();
+      ctx.setLineDash([]);
+      // ekor
+      const [tx, ty] = pts[pts.length - 1];
+      ctx.fillStyle = g.color; ctx.beginPath(); ctx.arc(tx, ty, cell * 0.06, 0, Math.PI * 2); ctx.fill();
+      // kepala + mata
+      const [hx, hy] = pts[0];
+      ctx.fillStyle = g.color; ctx.beginPath(); ctx.arc(hx, hy, cell * 0.17, 0, Math.PI * 2); ctx.fill();
+      ctx.strokeStyle = 'rgba(0,0,0,.4)'; ctx.lineWidth = 1.5; ctx.stroke();
+      ctx.fillStyle = '#fff';
+      ctx.beginPath(); ctx.arc(hx - cell * 0.07, hy - cell * 0.04, cell * 0.05, 0, Math.PI * 2); ctx.arc(hx + cell * 0.07, hy - cell * 0.04, cell * 0.05, 0, Math.PI * 2); ctx.fill();
+      ctx.fillStyle = '#111';
+      ctx.beginPath(); ctx.arc(hx - cell * 0.07, hy - cell * 0.03, cell * 0.022, 0, Math.PI * 2); ctx.arc(hx + cell * 0.07, hy - cell * 0.03, cell * 0.022, 0, Math.PI * 2); ctx.fill();
+      ctx.globalAlpha = 1;
+    }
+  }
+
+  // ---------- gambar pemain ----------
+  function drawDot(name, x, y, sc) {
+    ctx.fillStyle = 'hsl(' + (hash(name) % 360) + ',75%,62%)';
+    ctx.beginPath(); ctx.arc(x, y, Math.max(2.5, cell * 0.17 * sc), 0, Math.PI * 2); ctx.fill();
+    ctx.lineWidth = 1; ctx.strokeStyle = 'rgba(0,0,0,.5)'; ctx.stroke();
+  }
+  function drawLeader(p, x, y, order, sc, showLabel, showPts) {
+    const r = cell * 0.4 * sc;
+    const av = avatars.get(p.n);
+    ctx.save();
+    ctx.beginPath(); ctx.arc(x, y, r, 0, Math.PI * 2); ctx.closePath();
+    ctx.fillStyle = 'hsl(' + (hash(p.n) % 360) + ',65%,45%)';
+    ctx.fill();
+    ctx.clip();
+    if (av && av.url) {
+      const img = getImg(av.url);
+      if (img.complete && img.naturalWidth) ctx.drawImage(img, x - r, y - r, r * 2, r * 2);
+    } else if (av && av.emoji) {
+      ctx.font = Math.round(r * 1.5) + 'px sans-serif'; ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+      ctx.fillText(av.emoji, x, y + r * 0.08);
+    } else {
+      ctx.fillStyle = '#fff'; ctx.font = '800 ' + Math.round(r * 1.2) + 'px Poppins, sans-serif';
+      ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+      ctx.fillText(p.n.charAt(0).toUpperCase(), x, y + r * 0.05);
+    }
+    ctx.restore();
+    ctx.lineWidth = Math.max(1.5, cell * 0.09 * sc);
+    ctx.strokeStyle = p.r ? '#fbbf24' : '#ffffff';
+    ctx.beginPath(); ctx.arc(x, y, r, 0, Math.PI * 2); ctx.stroke();
+
+    if (p.r) {
+      ctx.font = Math.round(cell * 0.5 * Math.max(0.6, sc)) + 'px sans-serif'; ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+      ctx.fillText(MEDALS[p.r - 1] || '🏅', x + r * 0.8, y - r * 0.8);
+    }
+    if (order < 3 && showLabel) {
+      const label = p.n.length > 10 ? p.n.slice(0, 9) + '…' : p.n;
+      ctx.font = '700 ' + Math.round(cell * 0.34) + 'px Poppins, sans-serif';
+      ctx.textAlign = 'center'; ctx.textBaseline = 'alphabetic';
+      ctx.lineWidth = 3; ctx.strokeStyle = 'rgba(7,22,26,.95)';
+      const half = ctx.measureText(label).width / 2 + 2;
+      const lx = Math.max(half, Math.min(cell * 10 - half, x));   // jangan terpotong di tepi papan
+      ctx.strokeText(label, lx, y - r - 3);
+      ctx.fillStyle = '#fff'; ctx.fillText(label, lx, y - r - 3);
+    }
+    if (showPts) {
+      // poin total penonton, di bawah avatar
+      const pts = scores.get(p.n) || 0;
+      const txt = '⭐ ' + pts;
+      ctx.font = '800 ' + Math.round(cell * 0.28) + 'px Poppins, sans-serif';
+      ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+      const w = ctx.measureText(txt).width + cell * 0.22, h = cell * 0.34, yy = y + r + h * 0.62;
+      ctx.fillStyle = 'rgba(7,22,26,.9)';
+      ctx.beginPath();
+      if (ctx.roundRect) ctx.roundRect(x - w / 2, yy - h / 2, w, h, h / 2); else ctx.rect(x - w / 2, yy - h / 2, w, h);
+      ctx.fill();
+      ctx.lineWidth = 1.5; ctx.strokeStyle = 'rgba(251,191,36,.7)'; ctx.stroke();
+      ctx.fillStyle = '#fde68a'; ctx.fillText(txt, x, yy + 0.5);
+    }
+  }
+
+  // ---------- banyak pemain di satu petak ----------
+  // Pemain di petak yang sama dibagi ke slot grid kecil (1 -> tengah, 2-4 -> 2x2,
+  // 5-9 -> 3x3) dan dikecilkan, jadi nggak ada yang ketutup. Urutan slot = urutan
+  // peringkat (terdepan di slot pertama). Lebih dari 9: tampil 8 + lencana "+N".
+  const MAX_SLOTS = 9;
+  function slotLayout(i, n) {
+    const cols = n <= 1 ? 1 : n <= 4 ? 2 : 3;
+    const step = cell / cols;
+    return {
+      ox: ((i % cols) - (cols - 1) / 2) * step,
+      oy: (Math.floor(i / cols) - (cols - 1) / 2) * step,
+      sc: cols === 1 ? 1 : cols === 2 ? 0.55 : 0.37
+    };
+  }
+
+  // ---------- animasi lompat ----------
+  // Langkah = { cell, slide }: slide 'snake' / 'ladder' = meluncur, selain itu lompat.
+  function hopsBetween(a, b, out) {
+    const dir = b > a ? 1 : -1;
+    for (let c = a + dir; c !== b + dir; c += dir) out.push({ cell: c });
+  }
+  // Rangkai langkah dari data lemparan (f = asal, d = dadu, m = mendarat, v = efek, t = akhir).
+  function stepsForRoll(f, d, m, v, t) {
+    const out = [];
+    if (f + d > 100) { hopsBetween(f, 100, out); hopsBetween(100, m, out); }
+    else hopsBetween(f, m, out);
+    if (v === 'snake' || v === 'ladder') out.push({ cell: t, slide: v, from: m });
+    else if (v === 'back' || v === 'fwd') hopsBetween(m, t, out);
+    return out;
+  }
+
+  function newDisp(cellNo) {
+    const xy = cellXY(cellNo);
+    return { x: xy.x, y: xy.y, at: cellNo, pos: cellNo, seq: 0, q: [], hop: null, ox: 0, oy: 0, sc: 1 };
+  }
+  function snapTo(d, cellNo) {
+    const xy = cellXY(cellNo);
+    d.q.length = 0; d.hop = null; d.x = xy.x; d.y = xy.y; d.at = cellNo;
+  }
+
+  function stepHop(d, dtMs) {
+    let left = dtMs;
+    while (left > 0) {
+      if (!d.hop) {
+        if (!d.q.length) break;
+        const s = d.q[0], to = cellXY(s.cell);
+        d.hop = { fx: d.x, fy: d.y, tx: to.x, ty: to.y, t: 0, cell: s.cell, slide: s.slide || null, from: s.from, geo: s.slide === 'snake' ? snakeGeo.get(s.from) : null };
+      }
+      const dur = d.hop.slide ? SLIDE_MS : Math.max(HOP_MIN_MS, HOP_MS - d.q.length * HOP_CATCHUP_MS);
+      const need = (1 - d.hop.t) * dur;
+      if (left >= need) {
+        left -= need;
+        d.x = d.hop.tx; d.y = d.hop.ty; d.at = d.hop.cell;
+        d.q.shift(); d.hop = null;
+      } else {
+        d.hop.t += left / dur;
+        left = 0;
+      }
+    }
+    // posisi tampil sekarang
+    if (!d.hop) return { gx: d.x, gy: d.y, lift: 0 };
+    const h = d.hop, t = h.t;
+    if (h.slide) {
+      const e = t * t * (3 - 2 * t);
+      if (h.geo) { const p = snakePoint(h.geo, e); return { gx: p.x, gy: p.y, lift: 0 }; }
+      return { gx: h.fx + (h.tx - h.fx) * e, gy: h.fy + (h.ty - h.fy) * e, lift: 0 };
+    }
+    return { gx: h.fx + (h.tx - h.fx) * t, gy: h.fy + (h.ty - h.fy) * t, lift: Math.sin(Math.PI * t) * cell * HOP_HEIGHT };
+  }
+
+  function frame() {
+    requestAnimationFrame(frame);
+    if (!game || !game.size) return;
+    const w = cell * 10, h = padTop + cell * 11;
+    ctx.clearRect(0, 0, w, h);
+    drawCells();
+    drawLadders();
+    drawSnakes();
+    drawNumbers();
+
+    const players = game.players || [];
+    const nowT = performance.now();
+    const dtMs = Math.min(100, nowT - lastFrameT);
+    const dt = dtMs / 1000;
+    lastFrameT = nowT;
+
+    const pos = players.map((p) => {
+      let d = disp.get(p.n);
+      if (!d) { d = newDisp(p.p); disp.set(p.n, d); }
+      const cur = stepHop(d, dtMs);
+      return { p, d, x: px(cur.gx), y: py(cur.gy), lift: cur.lift };
+    });
+
+    // kelompokkan per petak (petak tujuan kalau lagi lompat) lalu bagi ke slot
+    const groups = new Map();
+    pos.forEach((o) => {
+      const k = o.d.hop ? o.d.hop.cell : o.d.at;
+      if (!groups.has(k)) groups.set(k, []);
+      groups.get(k).push(o);
+    });
+    const ease = 1 - Math.pow(0.0005, dt);   // geser halus ke slot, nggak teleport
+    const badges = [];
+    groups.forEach((list) => {
+      const n = list.length;
+      const shown = n > MAX_SLOTS ? MAX_SLOTS - 1 : n;
+      list.forEach((o, i) => {
+        const d = o.d;
+        const lay = slotLayout(Math.min(i, MAX_SLOTS - 1), Math.min(n, MAX_SLOTS));
+        d.ox += (lay.ox - d.ox) * ease; d.oy += (lay.oy - d.oy) * ease; d.sc += (lay.sc - d.sc) * ease;
+        o.x += d.ox; o.y += d.oy; o.sc = d.sc;
+        o.hidden = i >= shown;
+        o.first = i === 0;
+        if (i === shown && n > MAX_SLOTS) badges.push({ x: o.x, y: o.y, extra: n - shown });
+      });
+    });
+
+    // bayangan di lantai (tetap di tanah, mengecil saat bidak melompat)
+    ctx.fillStyle = 'rgba(0,0,0,.35)';
+    for (const o of pos) {
+      if (!o.lift || o.hidden) continue;
+      const k = 1 - Math.min(0.5, o.lift / (cell * HOP_HEIGHT) * 0.5);
+      ctx.beginPath();
+      ctx.ellipse(o.x, o.y + cell * 0.28 * o.sc, cell * 0.2 * o.sc * k, cell * 0.07 * o.sc * k, 0, 0, Math.PI * 2);
+      ctx.fill();
+    }
+    for (let i = pos.length - 1; i >= LEADERS_WITH_AVATAR; i--) {
+      if (!pos[i].hidden) drawDot(pos[i].p.n, pos[i].x, pos[i].y - pos[i].lift * pos[i].sc, pos[i].sc);
+    }
+    for (let i = Math.min(LEADERS_WITH_AVATAR, pos.length) - 1; i >= 0; i--) {
+      const o = pos[i];
+      if (!o.hidden) drawLeader(o.p, o.x, o.y - o.lift * o.sc, i, o.sc, o.first, o.sc > 0.9);
+    }
+    for (const b of badges) {
+      const txt = '+' + b.extra;
+      ctx.font = '800 ' + Math.round(cell * 0.3) + 'px Poppins, sans-serif';
+      ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+      const bw = ctx.measureText(txt).width + cell * 0.18, bh = cell * 0.34;
+      ctx.fillStyle = 'rgba(7,22,26,.92)';
+      ctx.beginPath();
+      if (ctx.roundRect) ctx.roundRect(b.x - bw / 2, b.y - bh / 2, bw, bh, bh / 2); else ctx.rect(b.x - bw / 2, b.y - bh / 2, bw, bh);
+      ctx.fill();
+      ctx.lineWidth = 1.5; ctx.strokeStyle = '#fbbf24'; ctx.stroke();
+      ctx.fillStyle = '#fde68a'; ctx.fillText(txt, b.x, b.y + 0.5);
+    }
+  }
+
+  // ---------- panel dadu ----------
+  const dieEl = document.getElementById('die');
+  const diceWho = document.getElementById('diceWho');
+  const diceSub = document.getElementById('diceSub');
+  const recentEl = document.getElementById('recent');
+  const PIPS = { 1: [4], 2: [0, 8], 3: [0, 4, 8], 4: [0, 2, 6, 8], 5: [0, 2, 4, 6, 8], 6: [0, 2, 3, 5, 6, 8] };
+  for (let i = 0; i < 9; i++) dieEl.appendChild(document.createElement('i'));
+  function setDie(v) {
+    const on = new Set(PIPS[v] || []);
+    [...dieEl.children].forEach((el, i) => el.classList.toggle('on', on.has(i)));
+  }
+  setDie(1);
+
+  const EFFECT_TEXT = {
+    snake: (r) => '🐍 Digigit ular! Turun ke ' + r.t,
+    ladder: (r) => '🪜 Naik tangga ke ' + r.t,
+    again: () => '🔁 Lempar lagi!',
+    back: (r) => '⏪ Mundur ke ' + r.t,
+    fwd: (r) => '⏩ Maju ke ' + r.t
+  };
+  const EFFECT_ICON = { snake: '🐍', ladder: '🪜', again: '🔁', back: '⏪', fwd: '⏩' };
+
+  let lastShownSeq = 0;
+  const rollQueue = [];
+  let rollBusy = false;
+
+  function showRoll(r) {
+    rollBusy = true;
+    dieEl.classList.remove('rolling'); void dieEl.offsetWidth; dieEl.classList.add('rolling');
+    let ticks = 0;
+    const spin = setInterval(() => { setDie(1 + Math.floor(Math.random() * 6)); if (++ticks >= 6) clearInterval(spin); }, 70);
+    setTimeout(() => {
+      clearInterval(spin);
+      setDie(r.d);
+      diceWho.textContent = r.n + ' dapat ' + r.d;
+      const bounced = r.f + r.d > 100;
+      const landed = bounced ? 200 - r.f - r.d : r.f + r.d;   // petak mendarat sebelum efek
+      let sub = (bounced ? 'Memantul dari 100 ke petak ' : 'Mendarat di petak ') + landed;
+      if (r.v) sub += ' · ' + EFFECT_TEXT[r.v](r);
+      diceSub.textContent = sub;
+    }, 430);
+    setTimeout(() => {
+      rollBusy = false;
+      nextRoll();
+    }, 1000);
+  }
+  function nextRoll() {
+    if (rollBusy || !rollQueue.length) return;
+    if (rollQueue.length > 4) rollQueue.splice(0, rollQueue.length - 2);   // ketinggalan: lompat ke yang terbaru
+    showRoll(rollQueue.shift());
+  }
+
+  function renderRecent(list) {
+    recentEl.textContent = '';
+    [...list].reverse().forEach((r) => {
+      const c = document.createElement('span'); c.className = 'rc';
+      c.textContent = r.n + ' 🎲' + r.d + ' → ' + r.t + (r.v ? ' ' + EFFECT_ICON[r.v] : '');
+      recentEl.appendChild(c);
+    });
+  }
+
+  // ---------- HUD ----------
+  const chipRound = document.getElementById('chipRound');
+  const chipFinish = document.getElementById('chipFinish');
+  const chipTime = document.getElementById('chipTime');
+  const chipPlayers = document.getElementById('chipPlayers');
+  const howto = document.getElementById('howto');
+  const toastEl = document.getElementById('toast');
+  const podiumEl = document.getElementById('podium');
+  const podiumCard = document.getElementById('podiumCard');
+  let toastTimer = null;
+
+  function showToast(text) {
+    toastEl.textContent = text;
+    toastEl.classList.add('show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(() => toastEl.classList.remove('show'), 2600);
+  }
+
+  function confetti() {
+    const colors = ['#fbbf24', '#5eead4', '#4ade80', '#f472b6', '#60a5fa'];
+    for (let i = 0; i < 40; i++) {
+      const c = document.createElement('div');
+      c.className = 'confetti';
+      c.style.left = Math.random() * 100 + 'vw';
+      c.style.background = colors[i % colors.length];
+      c.style.animationDuration = 1.8 + Math.random() * 1.8 + 's';
+      c.style.animationDelay = Math.random() * 0.5 + 's';
+      document.body.appendChild(c);
+      setTimeout(() => c.remove(), 4500);
+    }
+  }
+
+  function renderPodium(m) {
+    podiumCard.textContent = '';
+    const h2 = document.createElement('h2');
+    h2.textContent = m.finishers.length ? '🏆 Pemenang Ular Tangga!' : '⏰ Waktu Habis!';
+    podiumCard.appendChild(h2);
+
+    m.finishers.forEach((f) => {
+      const row = document.createElement('div'); row.className = 'podium-row';
+      const medal = document.createElement('span'); medal.className = 'medal'; medal.textContent = MEDALS[f.rank - 1] || '🏅';
+      const nm = document.createElement('span'); nm.className = 'nm'; nm.textContent = f.player;
+      const tm = document.createElement('span'); tm.className = 'tm'; tm.textContent = f.rolls + ' lemparan';
+      const pt = document.createElement('span'); pt.className = 'pt'; pt.textContent = '+' + f.points;
+      row.append(medal, nm, tm, pt);
+      podiumCard.appendChild(row);
+    });
+
+    const note = document.createElement('div'); note.className = 'podium-note';
+    if (!m.finishers.length) {
+      note.textContent = m.closest && m.closest.length
+        ? 'Belum ada yang sampai 100. Paling dekat: ' + m.closest.join(', ')
+        : 'Belum ada yang sampai petak 100.';
+    } else if (m.finishers.length < m.winnersNeeded) {
+      note.textContent = 'Waktu habis sebelum juara terisi semua.' + (m.closest && m.closest.length ? ' Paling dekat: ' + m.closest.join(', ') : '');
+    } else {
+      note.textContent = 'Papan baru sebentar lagi…';
+    }
+    podiumCard.appendChild(note);
+  }
+
+  function updateHud(m) {
+    chipRound.textContent = 'Ronde ' + m.round;
+    chipFinish.textContent = '🏁 ' + m.finishers.length + '/' + m.winnersNeeded + ' sampai';
+    chipPlayers.textContent = '👥 ' + m.totalPlayers;
+  }
+
+  setInterval(() => {
+    if (!game) return;
+    if (game.phase === 'racing') chipTime.textContent = '⏱ ' + fmtTime(game.endsAt - (Date.now() + clockOffset));
+    else chipTime.textContent = '⏱ selesai';
+  }, 250);
+
+  // ---------- socket ----------
+  socket.on('update', (m) => {
+    if (!m || !m.size) return;
+    clockOffset = m.serverTime - Date.now();
+
+    const firstSync = !game;
+    const newRound = m.round !== lastRound;
+    if (newRound) {
+      lastRound = m.round; lastFinishCount = 0;
+      disp.clear(); rollQueue.length = 0; lastShownSeq = 0;
+      podiumEl.classList.remove('show');
+      diceWho.textContent = 'Ketik "lempar" buat mulai!'; diceSub.textContent = '';
+    }
+    if (newRound || firstSync) buildGeo(m);
+
+    // toast tiap ada yang baru finish
+    if (m.finishers.length > lastFinishCount) {
+      const f = m.finishers[m.finishers.length - 1];
+      showToast((MEDALS[f.rank - 1] || '🏅') + ' ' + f.player + ' sampai 100! +' + f.points);
+    }
+    lastFinishCount = m.finishers.length;
+
+    const fresh = firstSync || newRound;   // pemain yang sudah ada waktu halaman dibuka muncul langsung di posisinya
+    for (const p of m.players || []) {
+      let d = disp.get(p.n);
+      if (!d) {
+        if (!fresh && p.q && p.f === 0) {            // pemain baru: lompat dari tempat mulai
+          d = newDisp(0); disp.set(p.n, d);
+          d.q.push(...stepsForRoll(p.f, p.d, p.m, p.v, p.p));
+        } else {
+          d = newDisp(p.p); disp.set(p.n, d);
+        }
+        d.seq = p.q; d.pos = p.p;
+        continue;
+      }
+      if (p.q !== d.seq) {                            // ada lemparan baru
+        if (p.f !== d.pos) hopsBetween(d.pos, p.f, d.q);   // kelewat satu lemparan (mis. lempar lagi): susul dulu
+        d.q.push(...stepsForRoll(p.f, p.d, p.m, p.v, p.p));
+        d.seq = p.q; d.pos = p.p;
+      } else if (p.p !== d.pos) {                     // posisi berubah tanpa data lemparan: lompat lurus
+        hopsBetween(d.pos, p.p, d.q);
+        d.pos = p.p;
+      }
+      if (d.q.length > MAX_QUEUE) snapTo(d, p.p);
+    }
+    game = m;
+    if (firstSync || newRound) layout();
+    updateHud(m);
+    howto.innerHTML = 'Komen <b>lempar</b> (atau <b>dadu</b> / <b>roll</b>) buat melempar dadu, tiap ' + Math.round((m.cooldownMs || 3000) / 1000) + ' detik. Sampai petak <b>100</b> duluan! Harus pas, kalau lebih bakal memantul.';
+
+    // lemparan baru -> antrean panel dadu (jangan putar ulang lemparan lama waktu halaman baru dibuka)
+    const recent = m.recentRolls || [];
+    const maxSeq = recent.reduce((a, r) => Math.max(a, r.s), 0);
+    if (firstSync || maxSeq < lastShownSeq) lastShownSeq = maxSeq;
+    recent.filter((r) => r.s > lastShownSeq).forEach((r) => { rollQueue.push(r); lastShownSeq = Math.max(lastShownSeq, r.s); });
+    renderRecent(recent);
+    nextRoll();
+
+    if (m.phase === 'racing') {
+      podiumEl.classList.remove('show');
+    } else if (!podiumEl.classList.contains('show')) {
+      renderPodium(m);
+      podiumEl.classList.add('show');
+      if (m.finishers.length) confetti();
+    }
+  });
+
+  // avatar (event dari room.js): dipakai buat 5 pemain terdepan
+  socket.on('avatar:spawn', (d) => {
+    if (!d || !d.player) return;
+    avatars.set(d.player, { emoji: d.emoji, url: d.avatarType === 'tiktok' ? d.profileUrl : null });
+  });
+  socket.on('avatar:sync', (list) => {
+    (list || []).forEach((d) => avatars.set(d.player, { emoji: d.emoji, url: d.avatarType === 'tiktok' ? d.profileUrl : null }));
+  });
+  socket.on('avatar:remove', (d) => { if (d && d.player) avatars.delete(d.player); });
+  socket.on('avatar:reset', () => avatars.clear());
+
+  socket.on('leaderboard:update', (list) => {
+    scores.clear();
+    (list || []).forEach((p) => {
+      const v = p.score || 0;
+      scores.set(p.player, v);
+      scores.set(String(p.player).slice(0, 24), v);   // payload ular tangga memotong nama jadi 24 huruf
+    });
+    const el = document.getElementById('lbList');
+    el.textContent = '';
+    if (!list || !list.length) {
+      const e = document.createElement('div');
+      e.style.cssText = 'text-align:center;opacity:.5;font-size:.75rem';
+      e.textContent = 'Belum ada';
+      el.appendChild(e);
+      return;
+    }
+    list.slice(0, 10).forEach((p, i) => {
+      const row = document.createElement('div'); row.className = 'lb-row';
+      const rk = document.createElement('span'); rk.className = 'lb-rank'; rk.textContent = (i + 1) + '.';
+      const nm = document.createElement('span'); nm.className = 'lb-name'; nm.textContent = p.player;
+      const sc = document.createElement('span'); sc.className = 'lb-score'; sc.textContent = p.score || 0;
+      row.append(rk, nm, sc);
+      el.appendChild(row);
+    });
+  });
+
+  socket.emit('getState');
+  requestAnimationFrame(frame);
+
+  if ('wakeLock' in navigator) navigator.wakeLock.request('screen').catch(() => {});
+  document.addEventListener('dblclick', () => {
+    if (!document.fullscreenElement) document.documentElement.requestFullscreen().catch(() => {});
+    else document.exitFullscreen();
+  });
+})();
+</script>
+</body>
+</html>

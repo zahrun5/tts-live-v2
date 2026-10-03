@@ -1,0 +1,9 @@
+{
+  "name": "Ular Tangga Live",
+  "short_name": "Ular Tangga",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#07161a",
+  "theme_color": "#07161a",
+  "orientation": "portrait"
+}

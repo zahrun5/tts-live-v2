@@ -120,6 +120,7 @@ function Dashboard() {
     { id: 'spam-tap', label: '❤️ Spam Tap Battle', icon: '⚔️', color: 'from-red-500 to-blue-600' },
     { id: 'memory-card', label: '🎴 Memory Card', icon: '🃏', color: 'from-purple-500 to-pink-600' },
     { id: 'labirin', label: '🌀 Labirin', icon: '🌀', color: 'from-violet-500 to-fuchsia-600' },
+    { id: 'ular-tangga', label: '🐍 Ular Tangga', icon: '🐍', color: 'from-emerald-500 to-lime-600' },
   ];
   const refreshActiveSoal = async (username) => {
     if (!username) return;

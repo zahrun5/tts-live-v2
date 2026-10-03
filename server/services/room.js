@@ -30,7 +30,8 @@ const VOTABLE_GAMES = [
   { num: 1, id: 'family100', label: 'Family 100' },
   { num: 2, id: 'sambung-kata', label: 'Sambung Kata' },
   { num: 3, id: 'susun-kata-acak', label: 'Susun Kata Acak' },
-  { num: 4, id: 'labirin', label: 'Labirin' }
+  { num: 4, id: 'labirin', label: 'Labirin' },
+  { num: 5, id: 'ular-tangga', label: 'Ular Tangga' }
 ];
 
 function findCircularPath(obj) {
