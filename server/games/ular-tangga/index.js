@@ -1,50 +1,55 @@
-// Ular Tangga — balapan ke petak 100 lewat komentar "lempar".
+// Ular Tangga — balapan ke petak 100, dadu dilempar OTOMATIS BERGILIRAN.
 //
-// Semua penonton main BERSAMAAN (bukan bergiliran): tiap penonton punya bidak
-// sendiri dan melempar dadu dengan mengetik "lempar" (alias: dadu, roll, 🎲).
-// Dadu 1-6 diundi di server. Ada cooldown per penonton biar spam komentar nggak
-// mempercepat lemparan. 3 penonton tercepat yang sampai petak 100 jadi pemenang
-// (poin 100/60/30), lalu podium + konfeti, lalu ronde baru.
+// Alur satu ronde:
+//  1. LOBI: penonton komen "join" (alias: main, gabung) buat ikut. Begitu ada
+//     LOBBY_MIN pemain, hitung mundur LOBBY_MS mulai; yang join selama hitung
+//     mundur ikut main. Papan penuh (MAX_PLAYERS) = langsung mulai.
+//  2. BALAPAN: server melempar dadu sendiri, satu pemain per giliran, urut
+//     sesuai urutan join (jeda TURN_MS per giliran). Penonton nggak perlu
+//     ngetik "lempar", cukup fokus ke battle (item + event). Yang telat join
+//     tetap bisa ikut kapan saja: masuk antrean paling belakang, mulai dari
+//     petak 0.
+//  3. 3 pemain tercepat di petak 100 jadi juara (poin 100/60/30). Ronde juga
+//     selesai kalau tinggal 1 pemain yang belum finish (nggak ada lawan lagi)
+//     atau waktu habis. Lalu podium + konfeti, lalu balik ke lobi.
 //
 // Aturan papan (100 petak, diacak tiap ronde):
-//  - ular: turun, tangga: naik, petak spesial: "lempar lagi" (tanpa cooldown),
-//    "mundur 3", "maju 5".
+//  - ular: turun, tangga: naik, petak spesial: "lempar lagi" (pemain yang sama
+//    lempar lagi di giliran berikutnya) dan petak misteri (item atau maju/mundur).
 //  - harus pas di petak 100: kalau lemparan melebihi 100, bidak memantul balik.
-//  - satu efek per lemparan (tidak ada rantai efek), kecuali "lempar lagi" yang
-//    memberi satu lemparan bonus tanpa cooldown.
-//  - ronde yang habis waktu TIDAK membagi poin (poin cuma lewat ok:true di
-//    handleAnswer, dan itu cuma buat finisher). Papan juara menampilkan siapa
-//    yang paling dekat ke petak 100.
+//  - satu efek per lemparan (tidak ada rantai efek).
+//  - beku = giliran lempar korban berikutnya dilewati (bukan lagi hitungan detik).
 //
-// CATATAN KONTRAK (sama seperti Labirin):
-//  - handleAnswer() return { ok:false } untuk lemparan biasa. Di room.js ok:true
-//    berarti "jawaban benar" -> nambah skor + emit update/leaderboard/answer:correct.
-//    Kalau tiap lemparan ok:true, ratusan penonton bakal banjirin socket.
-//    Lemparan biasa disiarkan lewat broadcaster (di-throttle); ok:true cuma buat
-//    penonton yang finish di 3 besar.
-//  - Ronde bisa selesai sendiri lewat timer (timeout / jeda podium). Buat itu game
-//    butuh cara bilang "ronde selesai" ke room: argumen ke-2
-//    setBroadcaster(fn, requestCompletion). Kalau argumen itu nggak ada, game
-//    bikin ronde baru sendiri.
+// CATATAN KONTRAK:
+//  - Lemparan terjadi dari timer di dalam game, bukan dari komentar, jadi
+//    handleAnswer() selalu return { ok:false } (join, item, rebutan item).
+//    Poin juara dikirim lewat awardFn (argumen ke-3 setBroadcaster), sama
+//    seperti poin ikut serta. Tanpa awardFn game tetap jalan, cuma tanpa poin.
+//  - Ronde selesai sendiri lewat timer (timeout / jeda podium / lobi sepi).
+//    Game bilang "ronde selesai" ke room lewat argumen ke-2 setBroadcaster
+//    (requestCompletion). Kalau argumen itu nggak ada, game bikin ronde baru
+//    sendiri.
 
 'use strict';
 
 // ---------- konfigurasi ----------
 const BOARD_SIZE = 100;
-const ROLL_COOLDOWN_MS = 5000;         // jeda minimal antar lemparan per penonton
-const ROUND_TIMEOUT_MS = 20 * 60 * 1000;
+const TURN_MS = 3000;                  // jeda sebelum dadu otomatis dilempar tiap giliran
+const LOBBY_MIN = 2;                   // pemain minimal buat memulai hitung mundur
+const LOBBY_MS = 20000;                // lama hitung mundur lobi (setelah LOBBY_MIN terpenuhi)
+const LOBBY_IDLE_MS = 3 * 60 * 1000;   // lobi sepi segini lama (pemain < LOBBY_MIN) = ronde dilewati
+const MAX_PLAYERS = 6;                 // pemain maksimal per ronde (lobi penuh = langsung mulai)
+const ROUND_TIMEOUT_MS = 20 * 60 * 1000;   // dihitung sejak balapan mulai, bukan sejak lobi
 const PODIUM_MS = 8000;                // lama papan juara tampil sebelum ronde baru
 const WINNER_POINTS = [100, 60, 30];   // poin juara 1/2/3
 const WINNER_COUNT = WINNER_POINTS.length;
 const PARTICIPATION_MAX = 20;          // poin maks buat yang belum finish (sebanding petak saat ronde berakhir)
-const BROADCAST_THROTTLE_MS = 150;     // gabung banyak lemparan jadi 1 emit
-const MAX_PLAYERS_IN_PAYLOAD = 80;
-const MAX_TRACKED_PLAYERS = 1000;
+const BROADCAST_THROTTLE_MS = 150;     // gabung banyak perubahan jadi 1 emit
 const MAX_COMMENT_LENGTH = 20;
 const RECENT_ROLLS_IN_PAYLOAD = 5;
 
-const SNAKE_COUNT = 12;
-const LADDER_COUNT = 4;
+const SNAKE_COUNT = 8;
+const LADDER_COUNT = 6;
 const MIN_JUMP = 10;                   // selisih minimal naik/turun (petak)
 const MAX_SNAKE_DROP = 60;             // turun terjauh lewat ular (petak)
 const MAX_LADDER_RISE = 25;            // naik terjauh lewat tangga (biar papan tetap kebaca)
@@ -59,7 +64,7 @@ const SPECIAL_PLAN = [
 // item & pertarungan
 const MAX_ITEMS = 2;                   // tas item per penonton
 const ATTACK_BACK = 5;                 // serang: target mundur segini petak
-const FREEZE_MS = 8000;                // beku: target nggak bisa lempar segini lama
+const FREEZE_TURNS = 1;                // beku: target kehilangan segini giliran lempar
 const IMMUNE_MS = 10000;               // kebal setelah kena serang/beku/tukar
 const TRAP_DROP = 8;                   // jebakan: korban turun segini petak
 const MAX_TRAPS = 12;
@@ -85,9 +90,11 @@ const GRAB_WINNERS = 5;
 const GRAB_WORDS = ['gas', 'rebut', 'sikat', 'kocok', 'ambil', 'bagi', 'mantap', 'cepat'];
 const EVENT_WEIGHTS = [['storm', 2], ['wind', 2], ['shield', 2], ['war', 2], ['grab', 3]];
 
-// target rata-rata jumlah lemparan sampai finish (diukur lewat simulasi)
-const TARGET_ROLLS_MIN = 95;
-const TARGET_ROLLS_MAX = 135;
+// target rata-rata jumlah lemparan sampai finish (diukur lewat simulasi).
+// Dengan giliran bergantian, durasi ronde ~ lemparan x jumlah pemain x TURN_MS,
+// jadi targetnya jauh lebih kecil daripada versi paralel.
+const TARGET_ROLLS_MIN = 45;
+const TARGET_ROLLS_MAX = 65;
 const SIM_RUNS = 300;
 const BOARD_ATTEMPTS = 200;
 
@@ -97,16 +104,16 @@ function randInt(a, b) { return a + Math.floor(rng() * (b - a + 1)); }
 function rowOf(cell) { return Math.floor((cell - 1) / 10); }
 
 // ---------- parser komentar ----------
-const ROLL_WORDS = new Set(['lempar', 'dadu', 'roll', '🎲']);
+const JOIN_WORDS = new Set(['join', 'main', 'gabung']);
 
-// true kalau komentar PERSIS satu kata perintah lempar (boleh diakhiri tanda
-// baca). Obrolan biasa ("lempar dong", "dadunya mana") diabaikan.
-function isRollComment(text) {
+// true kalau komentar PERSIS satu kata perintah join (boleh diakhiri tanda
+// baca). Obrolan biasa ("mau join dong", "main apa ini") diabaikan.
+function isJoinComment(text) {
   if (typeof text !== 'string') return false;
   let s = text.trim().toLowerCase();
   if (!s || s.length > MAX_COMMENT_LENGTH) return false;
-  s = s.replace(/\uFE0F/g, '').replace(/[\s!.?,]+$/g, '');
-  return ROLL_WORDS.has(s);
+  s = s.replace(/[\s!.?,]+$/g, '');
+  return JOIN_WORDS.has(s);
 }
 
 // ---------- papan ----------
@@ -203,8 +210,8 @@ function tryGenerateBoard() {
 // Papan tetap, dipakai kalau generator acak gagal total (nggak boleh sampai ronde
 // tanpa papan). Memenuhi aturan yang sama dengan papan acak.
 const FALLBACK_BOARD = {
-  snakes: [[98, 64], [94, 71], [90, 52], [87, 48], [79, 38], [74, 40], [67, 29], [63, 26], [53, 19], [49, 14], [36, 7], [32, 5]],
-  ladders: [[3, 24], [22, 43], [34, 57], [59, 81]],
+  snakes: [[96, 78], [89, 70], [83, 64], [72, 55], [61, 42], [52, 35], [44, 26], [27, 7]],
+  ladders: [[3, 24], [22, 43], [34, 57], [59, 81], [9, 30], [41, 62]],
   specials: [
     { c: 8, t: 'again', to: 8 }, { c: 45, t: 'again', to: 45 },
     { c: 12, t: 'mystery', to: 12 }, { c: 16, t: 'mystery', to: 16 }, { c: 58, t: 'mystery', to: 58 },
@@ -248,14 +255,21 @@ let roundTimer = null;
 let podiumTimer = null;
 let broadcastTimer = null;
 let eventTimer = null;
+let turnTimer = null;
+let lobbyTimer = null;
+let lobbyIdleTimer = null;
 let EVENTS_ENABLED = true;
+let TURNS_PAUSED = false;   // cuma dipakai tes
 
 function clearTimers() {
   clearTimeout(roundTimer);
   clearTimeout(podiumTimer);
   clearTimeout(broadcastTimer);
   clearTimeout(eventTimer);
-  roundTimer = podiumTimer = broadcastTimer = eventTimer = null;
+  clearTimeout(turnTimer);
+  clearTimeout(lobbyTimer);
+  clearTimeout(lobbyIdleTimer);
+  roundTimer = podiumTimer = broadcastTimer = eventTimer = turnTimer = lobbyTimer = lobbyIdleTimer = null;
 }
 
 function unref(t) { if (t && t.unref) t.unref(); return t; }
@@ -268,16 +282,19 @@ function scheduleBroadcast() {
   }, BROADCAST_THROTTLE_MS));
 }
 
+// Ronde baru selalu mulai dari LOBI: papan sudah jadi, nunggu pemain join.
 function newRound() {
   clearTimers();
   round += 1;
   const board = generateBoard();
-  const now = Date.now();
   state = {
-    phase: 'racing',            // racing -> podium -> done
+    phase: 'lobby',             // lobby -> racing -> podium -> done
     round,
     board,
     players: new Map(),
+    order: [],                  // urutan giliran = urutan join
+    turn: null,                 // nama pemain yang gilirannya sedang menunggu
+    turnAt: 0,                  // kapan dadunya otomatis dilempar
     finishers: [],
     nextColor: 0,
     awarded: false,
@@ -288,20 +305,161 @@ function newRound() {
     warUntil: 0,
     recent: [],
     endReason: null,
-    startedAt: now,
-    endsAt: now + ROUND_TIMEOUT_MS
+    lobbyEndsAt: 0,
+    startedAt: 0,
+    endsAt: 0
   };
-  roundTimer = unref(setTimeout(() => endRound('timeout'), ROUND_TIMEOUT_MS));
-  scheduleEvent();
+  lobbyIdleTimer = unref(setTimeout(lobbyIdleExpired, LOBBY_IDLE_MS));
   scheduleBroadcast();
 }
 
-// Ronde berakhir (3 juara terisi atau waktu habis): tampilkan papan juara dulu,
-// baru minta room bikin ronde berikutnya.
+// Lobi sepi terlalu lama: lewati ronde ini (penting buat rotasi Game Acak,
+// biar nggak nyangkut di game yang nggak ada pemainnya).
+function lobbyIdleExpired() {
+  lobbyIdleTimer = null;
+  if (!state || state.phase !== 'lobby' || lobbyTimer) return;
+  clearTimers();
+  state.phase = 'done';
+  if (typeof requestCompletion === 'function') requestCompletion();
+  else newRound();
+}
+
+// Pemain ke-LOBBY_MIN gabung -> hitung mundur mulai. Penuh -> langsung mulai.
+function joinPlayer(name, now) {
+  if (!state || (state.phase !== 'lobby' && state.phase !== 'racing')) return { ok: false, msg: 'Ronde sudah selesai' };
+  if (state.players.has(name)) return { ok: false, msg: 'Sudah ikut' };
+  if (state.players.size >= MAX_PLAYERS) return { ok: false, msg: 'Papan penuh' };
+  state.players.set(name, newPlayer(now));
+  state.order.push(name);              // telat join = antre paling belakang
+  pushFeed('join', name, '', '');
+  if (state.phase === 'lobby') {
+    if (state.players.size >= MAX_PLAYERS) {
+      clearTimeout(lobbyTimer);
+      startRace();
+    } else if (state.players.size >= LOBBY_MIN && !lobbyTimer) {
+      state.lobbyEndsAt = now + LOBBY_MS;
+      lobbyTimer = unref(setTimeout(startRace, LOBBY_MS));
+    }
+  }
+  scheduleBroadcast();
+  return { ok: false, msg: 'Gabung' };
+}
+
+function startRace() {
+  lobbyTimer = null;
+  if (!state || state.phase !== 'lobby' || state.players.size < LOBBY_MIN) return;
+  clearTimeout(lobbyIdleTimer);
+  lobbyIdleTimer = null;
+  const now = Date.now();
+  state.phase = 'racing';
+  state.lobbyEndsAt = 0;
+  state.startedAt = now;
+  state.endsAt = now + ROUND_TIMEOUT_MS;
+  roundTimer = unref(setTimeout(() => endRound('timeout'), ROUND_TIMEOUT_MS));
+  state.turn = state.order[0];
+  scheduleEvent();
+  scheduleTurn();
+  scheduleBroadcast();
+}
+
+// ---------- giliran otomatis ----------
+function scheduleTurn() {
+  clearTimeout(turnTimer);
+  if (TURNS_PAUSED) { turnTimer = null; return; }
+  state.turnAt = Date.now() + TURN_MS;
+  turnTimer = unref(setTimeout(takeTurn, TURN_MS));
+}
+
+// Pindah ke pemain berikutnya (yang belum finish) menurut urutan join.
+function advanceTurn() {
+  if (!state || state.phase !== 'racing') return;
+  const n = state.order.length;
+  const idx = state.order.indexOf(state.turn);
+  for (let i = 1; i <= n; i++) {
+    const nm = state.order[(((idx + i) % n) + n) % n];
+    const q = state.players.get(nm);
+    if (q && !q.rank) {
+      state.turn = nm;
+      scheduleTurn();
+      scheduleBroadcast();
+      return;
+    }
+  }
+  endRound('finished');
+}
+
+// Ronde selesai kalau 3 juara terisi, atau sisa pemain yang belum finish < 2.
+function checkRoundEnd() {
+  let unfinished = 0;
+  for (const q of state.players.values()) if (!q.rank) unfinished += 1;
+  if (state.finishers.length >= WINNER_COUNT || unfinished < 2) {
+    endRound('finished');
+    return true;
+  }
+  return false;
+}
+
+// Satu lemparan buat `name`. Return hasil applyRoll (r.t = petak akhir, r.v = efek).
+function doRoll(name, p, now) {
+  const d = randInt(1, 6);
+  const from = p.pos;
+  const r = applyRoll(state.board.effects, from, d);
+  resolveEffects(r, p, name);
+  rollSeq += 1;
+  p.pos = r.t;
+  p.rolls += 1;
+  p.lastActive = now;
+  p.arrive = ++arriveSeq;
+  p.q = rollSeq; p.d = d; p.f = from; p.m = r.m; p.v = r.v;
+  state.recent.push({ s: rollSeq, n: shortName(name), d, f: from, t: r.t, v: r.v, it: r.it || '' });
+  if (state.recent.length > RECENT_ROLLS_IN_PAYLOAD) state.recent.shift();
+  return r;
+}
+
+function takeTurn() {
+  turnTimer = null;
+  if (!state || state.phase !== 'racing') return;
+  const now = Date.now();
+  const name = state.turn;
+  const p = name == null ? null : state.players.get(name);
+  if (!p || p.rank) { advanceTurn(); return; }
+
+  if (p.skip > 0) {                     // kena beku: giliran dilewati
+    p.skip -= 1;
+    pushFeed('skip', name, '', 'beku');
+    scheduleBroadcast();
+    advanceTurn();
+    return;
+  }
+
+  const r = doRoll(name, p, now);
+
+  if (r.t === BOARD_SIZE) {
+    p.rank = state.finishers.length + 1;
+    p.finishMs = now - state.startedAt;
+    const points = WINNER_POINTS[p.rank - 1] || 0;
+    state.finishers.push({ player: shortName(name), rank: p.rank, points, ms: p.finishMs, rolls: p.rolls });
+    if (points && awardPoints) awardPoints(name, points);
+    if (checkRoundEnd()) return;
+    scheduleBroadcast();
+    advanceTurn();
+    return;
+  }
+
+  scheduleBroadcast();
+  if (r.v === 'again') scheduleTurn();  // pemain yang sama lempar lagi
+  else advanceTurn();
+}
+
+// Ronde berakhir (juara terisi, tinggal 1 pemain, atau waktu habis): tampilkan
+// papan juara dulu, baru minta room bikin ronde berikutnya.
 function endRound(reason) {
   if (!state || state.phase !== 'racing') return;
   clearTimeout(roundTimer);
   roundTimer = null;
+  clearTimeout(turnTimer);
+  turnTimer = null;
+  state.turn = null;
   state.phase = 'podium';
   state.endReason = reason;
   clearTimeout(eventTimer);
@@ -352,16 +510,20 @@ function compareProgress(a, b) {
   return b.pos - a.pos || a.arrive - b.arrive;
 }
 
-// Penuh? buang pemain tak selesai yang paling lama diam.
-function evictIdlePlayer() {
-  let victim = null, victimName = null;
-  for (const [name, p] of state.players) {
-    if (p.rank) continue;
-    if (!victim || p.lastActive < victim.lastActive) { victim = p; victimName = name; }
+// Antrean giliran: mulai dari yang sedang menunggu (balapan) / urutan join (lobi).
+function turnQueue() {
+  if (!state) return [];
+  if (state.phase === 'lobby') return state.order.map(shortName);
+  if (state.turn == null) return [];
+  const n = state.order.length;
+  const idx = state.order.indexOf(state.turn);
+  const out = [];
+  for (let i = 0; i < n; i++) {
+    const nm = state.order[(idx + i) % n];
+    const q = state.players.get(nm);
+    if (q && !q.rank) out.push(shortName(nm));
   }
-  if (victimName === null) return false;
-  state.players.delete(victimName);
-  return true;
+  return out;
 }
 
 // ---------- item & pertarungan ----------
@@ -444,8 +606,7 @@ function applyHit(kind, victim, attacker, now) {
     victim.pos = Math.max(1, victim.pos - ATTACK_BACK);
     victim.arrive = ++arriveSeq;
   } else if (kind === 'beku') {
-    victim.lockedUntil = Math.max(victim.lockedUntil, now) + FREEZE_MS;
-    victim.frozenUntil = victim.lockedUntil;
+    victim.skip += FREEZE_TURNS;              // giliran lempar berikutnya dilewati
   } else if (kind === 'tukar') {
     const t = attacker.pos; attacker.pos = victim.pos; victim.pos = t;
     attacker.arrive = ++arriveSeq; victim.arrive = ++arriveSeq;
@@ -495,7 +656,7 @@ function useItem(name, p, kind, arg, now) {
 
 // ---------- event global ----------
 function newPlayer(now) {
-  return { pos: 0, lockedUntil: 0, rank: 0, rolls: 0, joinedAt: now, lastActive: now, ci: state.nextColor++, bonus: 0, warLock: 0, items: [], guard: null, immuneUntil: 0, frozenUntil: 0, arrive: 0, finishMs: 0, q: 0, d: 0, f: 0, m: 0, v: null };
+  return { pos: 0, skip: 0, rank: 0, rolls: 0, joinedAt: now, lastActive: now, ci: state.nextColor++, bonus: 0, warLock: 0, items: [], guard: null, immuneUntil: 0, arrive: 0, finishMs: 0, q: 0, d: 0, f: 0, m: 0, v: null };
 }
 
 function pickEvent() {
@@ -564,12 +725,8 @@ function isGrabComment(text) {
 function joinGrab(name, now) {
   const ev = state.event;
   if (ev.got.includes(name)) return { ok: false, msg: 'Sudah dapat' };
-  let p = state.players.get(name);
-  if (!p) {
-    if (state.players.size >= MAX_TRACKED_PLAYERS && !evictIdlePlayer()) return { ok: false, msg: 'Papan penuh' };
-    p = newPlayer(now);
-    state.players.set(name, p);
-  }
+  const p = state.players.get(name);
+  if (!p) return { ok: false, msg: 'Belum ikut main' };   // rebutan item cuma buat yang sudah join
   if (p.rank || p.items.length >= MAX_ITEMS) return { ok: false, msg: 'Tas penuh' };
   const it = pickItem();
   p.items.push(it);
@@ -584,7 +741,7 @@ function joinGrab(name, now) {
 module.exports = {
   id: 'ular-tangga',
 
-  // Argumen ke-2 opsional (lihat patch room.js).
+  // Argumen ke-2 & ke-3 opsional (lihat patch room.js).
   setBroadcaster(fn, completeFn, awardFn) {
     broadcast = fn;
     awardPoints = typeof awardFn === 'function' ? awardFn : null;
@@ -597,69 +754,31 @@ module.exports = {
   },
 
   parseComment(text) {
-    if (isRollComment(text)) return { answer: 'lempar' };
+    if (isJoinComment(text)) return { answer: 'join' };
     if (isGrabComment(text)) return { answer: state.event.w };
     const c = parseItemCommand(text);
     return c ? { answer: c.kind + (c.arg ? ' ' + c.arg : '') } : null;
   },
 
+  // Selalu { ok:false }: join/item nggak memberi poin langsung. Poin juara
+  // dikirim lewat awardFn dari timer giliran (lihat takeTurn).
   handleAnswer({ answer, player }) {
-    if (!state || state.phase !== 'racing') return { ok: false, msg: 'Ronde belum jalan' };
+    if (!state) return { ok: false, msg: 'Ronde belum siap' };
     const name = player ? String(player) : '';
     if (!name) return { ok: false, msg: 'Pemain tidak valid' };
-    if (isGrabComment(String(answer || ''))) return joinGrab(name, Date.now());
-    const cmd = parseItemCommand(String(answer || ''));
+    const text = String(answer || '');
+    const now = Date.now();
+
+    if (isJoinComment(text)) return joinPlayer(name, now);
+    if (state.phase !== 'racing') return { ok: false, msg: 'Ronde belum jalan' };
+    if (isGrabComment(text)) return joinGrab(name, now);
+    const cmd = parseItemCommand(text);
     if (cmd) {
       const p0 = state.players.get(name);
       if (!p0 || p0.rank) return { ok: false, msg: 'Belum bisa pakai item' };
-      return useItem(name, p0, cmd.kind, cmd.arg, Date.now());
+      return useItem(name, p0, cmd.kind, cmd.arg, now);
     }
-    if (!isRollComment(String(answer || ''))) return { ok: false, msg: 'Bukan perintah lempar' };
-
-    const now = Date.now();
-    let p = state.players.get(name);
-    if (!p) {
-      if (state.players.size >= MAX_TRACKED_PLAYERS && !evictIdlePlayer()) return { ok: false, msg: 'Papan penuh' };
-      p = newPlayer(now);
-      state.players.set(name, p);
-    }
-    if (p.rank) return { ok: false, msg: 'Sudah finish' };
-    if (now < p.lockedUntil) return { ok: false, msg: 'Terlalu cepat' };
-
-    const d = randInt(1, 6);
-    const from = p.pos;
-    const r = applyRoll(state.board.effects, from, d);
-    resolveEffects(r, p, name);
-    rollSeq += 1;
-    p.pos = r.t;
-    p.rolls += 1;
-    p.lastActive = now;
-    p.arrive = ++arriveSeq;
-    p.q = rollSeq; p.d = d; p.f = from; p.m = r.m; p.v = r.v;
-    // "lempar lagi" = lemparan berikutnya tanpa cooldown
-    p.lockedUntil = r.v === 'again' ? now : now + ROLL_COOLDOWN_MS;
-
-    state.recent.push({ s: rollSeq, n: shortName(name), d, f: from, t: r.t, v: r.v, it: r.it || '' });
-    if (state.recent.length > RECENT_ROLLS_IN_PAYLOAD) state.recent.shift();
-
-    if (r.t !== BOARD_SIZE) {
-      scheduleBroadcast();
-      return { ok: false, msg: 'Dilempar' };
-    }
-
-    p.rank = state.finishers.length + 1;
-    p.finishMs = now - state.startedAt;
-    const points = WINNER_POINTS[p.rank - 1] || 0;
-    state.finishers.push({ player: shortName(name), rank: p.rank, points, ms: p.finishMs, rolls: p.rolls });
-    if (state.finishers.length >= WINNER_COUNT) endRound('finished');
-    else scheduleBroadcast();
-
-    return {
-      ok: true,
-      points,
-      msg: `Juara ${p.rank}!`,
-      meta: { rank: p.rank, ms: p.finishMs }
-    };
+    return { ok: false, msg: 'Perintah tidak dikenal' };
   },
 
   isComplete() {
@@ -684,22 +803,24 @@ module.exports = {
   buildStatePayload() {
     if (!state) {
       return {
-        phase: 'racing', round: 1, size: BOARD_SIZE, snakes: [], ladders: [], specials: [],
-        endsAt: 0, serverTime: Date.now(), cooldownMs: ROLL_COOLDOWN_MS,
+        phase: 'lobby', round: 1, size: BOARD_SIZE, snakes: [], ladders: [], specials: [],
+        endsAt: 0, serverTime: Date.now(), turn: '', turnAt: 0, turnMs: TURN_MS, queue: [],
+        lobby: { endsAt: 0, min: LOBBY_MIN, max: MAX_PLAYERS },
         winnersNeeded: WINNER_COUNT, totalPlayers: 0, players: [], finishers: [],
         closest: [], recentRolls: []
       };
     }
 
     const ranked = [...state.players.entries()].sort(([, a], [, b]) => compareProgress(a, b));
+    const now = Date.now();
 
-    const players = ranked.slice(0, MAX_PLAYERS_IN_PAYLOAD).map(([name, p]) => ({
+    const players = ranked.map(([name, p]) => ({
       n: shortName(name), p: p.pos, r: p.rank, c: p.ci,
-      i: p.items.slice(), g: p.guard || 0, fu: p.frozenUntil > Date.now() ? p.frozenUntil : 0,
+      i: p.items.slice(), g: p.guard || 0, sk: p.skip,
       q: p.q, d: p.d, f: p.f, m: p.m, v: p.v     // lemparan terakhir, buat animasi lompat
     }));
 
-    const closest = state.phase !== 'racing' && state.finishers.length < WINNER_COUNT
+    const closest = state.phase !== 'racing' && state.phase !== 'lobby' && state.finishers.length < WINNER_COUNT
       ? ranked.filter(([, p]) => !p.rank).slice(0, WINNER_COUNT - state.finishers.length)
           .map(([name]) => shortName(name))
       : [];
@@ -712,9 +833,13 @@ module.exports = {
       ladders: state.board.ladders,
       specials: state.board.specials,
       endsAt: state.endsAt,
-      serverTime: Date.now(),
+      serverTime: now,
       endReason: state.endReason,
-      cooldownMs: ROLL_COOLDOWN_MS,
+      turn: state.phase === 'racing' && state.turn != null ? shortName(state.turn) : '',
+      turnAt: state.phase === 'racing' ? state.turnAt : 0,
+      turnMs: TURN_MS,
+      queue: turnQueue(),
+      lobby: { endsAt: state.lobbyEndsAt, min: LOBBY_MIN, max: MAX_PLAYERS },
       participationMax: PARTICIPATION_MAX,
       winnersNeeded: WINNER_COUNT,
       totalPlayers: state.players.size,
@@ -734,6 +859,7 @@ module.exports = {
   getAdminAnswers() {
     if (!state) return { title: 'Ular Tangga', items: [] };
     const items = [
+      { label: 'Fase', answer: state.phase, solved: false },
       { label: 'Rata-rata lemparan (simulasi)', answer: String(state.board.avgRolls), solved: false },
       { label: 'Ular / Tangga / Spesial', answer: `${state.board.snakes.length} / ${state.board.ladders.length} / ${state.board.specials.length}`, solved: false },
       { label: 'Pemain di papan', answer: String(state.players.size), solved: false },
@@ -743,7 +869,7 @@ module.exports = {
   },
 
   // ---------- dipakai test-ular-tangga.js ----------
-  _isRollComment: isRollComment,
+  _isJoinComment: isJoinComment,
   _applyRoll: applyRoll,
   _generateBoard: generateBoard,
   _tryGenerateBoard: tryGenerateBoard,
@@ -752,6 +878,12 @@ module.exports = {
   _simulate: simulate,
   _setRng(fn) { rng = typeof fn === 'function' ? fn : Math.random; },
   _setEvents(on) { EVENTS_ENABLED = !!on; },
+  // Hentikan / lanjutkan dadu otomatis (biar tes item & event bisa atur posisi pasti).
+  _pauseTurns(on) {
+    TURNS_PAUSED = !!on;
+    if (on) { clearTimeout(turnTimer); turnTimer = null; }
+    else if (state && state.phase === 'racing') scheduleTurn();
+  },
   _startEvent(type) { clearTimeout(eventTimer); startEvent(type); },
   _giveItem(name, item) { state.players.get(name).items.push(item); },
   // Pasang papan buatan tangan ke ronde yang sedang jalan.
@@ -764,8 +896,8 @@ module.exports = {
   },
   _config: {
     EVENT_WARN_MS, EVENT_BANNER_MS, STORM_BACK, WIND_FWD, SHIELD_MS, WAR_MS, WAR_ATTACK_GAP_MS, GRAB_WINNERS,
-    PARTICIPATION_MAX, MAX_ITEMS, ATTACK_BACK, FREEZE_MS, IMMUNE_MS, TRAP_DROP, BOARD_SIZE, ROLL_COOLDOWN_MS, ROUND_TIMEOUT_MS, PODIUM_MS, WINNER_POINTS,
-    MAX_PLAYERS_IN_PAYLOAD, MAX_TRACKED_PLAYERS, BROADCAST_THROTTLE_MS,
+    PARTICIPATION_MAX, MAX_ITEMS, ATTACK_BACK, FREEZE_TURNS, IMMUNE_MS, TRAP_DROP, BOARD_SIZE, ROUND_TIMEOUT_MS, PODIUM_MS, WINNER_POINTS,
+    TURN_MS, LOBBY_MIN, LOBBY_MS, LOBBY_IDLE_MS, MAX_PLAYERS, BROADCAST_THROTTLE_MS,
     SNAKE_COUNT, LADDER_COUNT, MIN_JUMP, MAX_SNAKE_DROP, MAX_LADDER_RISE, BACK_STEPS, FWD_STEPS,
     TARGET_ROLLS_MIN, TARGET_ROLLS_MAX
   }

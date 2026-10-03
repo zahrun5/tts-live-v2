@@ -1,4 +1,5 @@
-// Test game Ular Tangga. Jalankan: node --test server/test/test-ular-tangga.js
+// Test game Ular Tangga (giliran otomatis + lobi). Jalankan:
+//   node --test server/test/test-ular-tangga.js
 // (Node 20+, tanpa dependensi. Timer & jam dipalsukan, jadi test cepat.)
 'use strict';
 
@@ -7,7 +8,10 @@ const assert = require('node:assert/strict');
 const game = require('../games/ular-tangga');
 
 const CFG = game._config;
-const COOLDOWN = CFG.ROLL_COOLDOWN_MS;
+const TURN = CFG.TURN_MS;
+
+let awarded;       // [[nama, poin]] dari awardFn
+let completions;   // berapa kali game minta room bikin ronde baru
 
 // Mock timer diaktifin sekali buat satu file (enable/reset berulang per test bikin
 // timer test sebelumnya bocor). init() selalu bersihin timer game dari test lain.
@@ -15,57 +19,66 @@ before(() => mock.timers.enable({ apis: ['setTimeout', 'Date'], now: 1_000_000 }
 after(() => mock.timers.reset());
 beforeEach(() => {
   game._setRng();                       // acak asli buat generator papan
-  game.setBroadcaster(() => {}, null);
+  awarded = [];
+  completions = 0;
+  game.setBroadcaster(() => {}, () => { completions += 1; }, (n, p) => awarded.push([n, p]));
   game._setEvents(false);               // event acak dimatikan; tes event memanggil _startEvent
   game.init();
+  game._pauseTurns(false);
+  plan = {};
 });
 
-// Paksa hasil dadu = d (rng: 1 + floor(r * 6) == d).
-function forceDie(d) { game._setRng(() => (d - 1) / 6 + 0.01); }
+// ---------- helper ----------
+let plan = {};
+// Atur dadu per pemain. Nilai = angka dadu, atau fungsi (petakSekarang) => dadu.
+// Dibaca dari pemain yang sedang giliran, jadi nggak peduli urutan lempar.
+function planRng() {
+  const s = game.buildStatePayload();
+  const who = s.turn;
+  if (!who || plan[who] === undefined) return 0.5;
+  const pos = s.players.find((x) => x.n === who).p;
+  const want = typeof plan[who] === 'function' ? plan[who](pos) : plan[who];
+  return (want - 1) / 6 + 0.01;
+}
+function dice(map) { plan = { ...plan, ...map }; game._setRng(planRng); }
+// Sampai petak 100 secepat mungkin dengan langkah maksimal `max` (pas di akhir).
+const sprint = (max) => (pos) => Math.min(max, 100 - pos);
 
-// Papan kosong (tanpa efek) / papan buatan tangan.
+const join = (name, word = 'join') => game.handleAnswer({ answer: word, player: name });
+const use = (name, cmd) => game.handleAnswer({ answer: cmd, player: name });
+const snap = () => game.buildStatePayload();
+const P = (name) => snap().players.find((x) => x.n === name);
+const posOf = (name) => { const p = P(name); return p ? p.p : 0; };
+const turns = (n) => { for (let i = 0; i < n; i++) mock.timers.tick(TURN); };
+const warm = () => mock.timers.tick(CFG.EVENT_WARN_MS + 10);
 function emptyBoard() { game._setBoard([], [], []); }
 
-// Satu lemparan dengan dadu d. Majuin jam melewati cooldown dulu.
-function roll(name, d) {
-  mock.timers.tick(COOLDOWN + 100);
-  return rollNow(name, d);
-}
-// Lemparan tanpa nunggu cooldown (buat tes cooldown & "lempar lagi").
-function rollNow(name, d) {
-  forceDie(d);
-  return game.handleAnswer({ answer: 'lempar', player: name });
-}
-
-function posOf(name) {
-  const p = game.buildStatePayload().players.find((x) => x.n === name);
-  return p ? p.p : 0;
-}
-
-// Bawa satu pemain ke petak 100 di papan kosong: 16 x dadu 6 (= 96), lalu dadu 4.
-function runToFinish(name) {
-  let r;
-  for (let i = 0; i < 16; i++) r = roll(name, 6);
-  assert.equal(posOf(name), 96);
-  r = roll(name, 4);
-  return r;
+// Gabung semua `names`, pasang papan, lewati hitung mundur lobi -> balapan jalan.
+function startRace(names, board = emptyBoard) {
+  names.forEach((n) => join(n));
+  board();
+  mock.timers.tick(CFG.LOBBY_MS);
+  assert.equal(snap().phase, 'racing');
 }
 
 // ---------- parser ----------
-test('parser: perintah lempar yang valid', () => {
-  const p = game._isRollComment;
-  for (const t of ['lempar', 'LEMPAR', '  Dadu ', 'roll', '🎲', '🎲️', 'lempar!', 'roll!!!', 'dadu.']) {
+test('parser: join / main / gabung dikenali', () => {
+  const p = game._isJoinComment;
+  for (const t of ['join', 'JOIN', '  Main ', 'gabung', 'join!', 'main!!!', 'gabung.']) {
     assert.equal(p(t), true, `harusnya valid: ${JSON.stringify(t)}`);
   }
-  assert.deepEqual(game.parseComment('lempar'), { answer: 'lempar' });
+  assert.deepEqual(game.parseComment('join'), { answer: 'join' });
+  assert.deepEqual(game.parseComment('Gabung!'), { answer: 'join' });
 });
 
-test('parser: obrolan biasa diabaikan', () => {
-  const p = game._isRollComment;
-  for (const t of ['halo kak', 'lempar dong', 'dadunya mana', 'lemparan', 'roll roll', 'skip', '', '   ', 'x'.repeat(100), null, 42]) {
+test('parser: obrolan biasa dan "lempar" lama diabaikan', () => {
+  const p = game._isJoinComment;
+  for (const t of ['halo kak', 'mau join dong', 'main apa ini', 'bergabung', 'join join', 'skip', '', '   ', 'x'.repeat(100), null, 42]) {
     assert.equal(p(t), false, `harusnya diabaikan: ${JSON.stringify(t)}`);
   }
   assert.equal(game.parseComment('halo'), null);
+  assert.equal(game.parseComment('lempar'), null);      // dadu sekarang otomatis
+  assert.equal(game.parseComment('dadu'), null);
 });
 
 // ---------- generator papan ----------
@@ -156,248 +169,299 @@ test('applyRoll: satu efek per lemparan (nggak ada rantai)', () => {
   assert.deepEqual(game._applyRoll(fx, 7, 3), { m: 10, t: 20, v: 'ladder' });
 });
 
-// ---------- handleAnswer ----------
-test('lemparan pertama: pemain muncul di papan dengan data lemparan', () => {
-  emptyBoard();
-  const r = roll('budi', 4);
-  assert.equal(r.ok, false, 'lemparan biasa nggak boleh ok:true');
-  const p = game.buildStatePayload().players.find((x) => x.n === 'budi');
-  assert.equal(p.p, 4);
-  assert.deepEqual([p.d, p.f, p.m, p.v], [4, 0, 4, null]);
-  assert.ok(p.q > 0);
-  const rr = game.buildStatePayload().recentRolls;
-  assert.deepEqual(rr[rr.length - 1], { s: p.q, n: 'budi', d: 4, f: 0, t: 4, v: null, it: '' });
+// ---------- lobi ----------
+test('lobi: ronde baru mulai dari lobi tanpa pemain', () => {
+  const s = snap();
+  assert.equal(s.phase, 'lobby');
+  assert.equal(s.totalPlayers, 0);
+  assert.equal(s.turn, '');
+  assert.equal(s.lobby.endsAt, 0);
+  assert.equal(s.lobby.min, CFG.LOBBY_MIN);
+  assert.equal(s.lobby.max, CFG.MAX_PLAYERS);
 });
 
-test('komentar bukan lempar: ditolak dan pemain nggak dibuat', () => {
-  const r = game.handleAnswer({ answer: 'halo', player: 'iseng' });
-  assert.equal(r.ok, false);
-  assert.equal(game.buildStatePayload().totalPlayers, 0);
-  assert.equal(game.handleAnswer({ answer: 'lempar', player: '' }).ok, false);
+test('lobi: join / main / gabung, nama yang sama nggak dihitung dobel', () => {
+  assert.equal(join('A', 'join').msg, 'Gabung');
+  assert.equal(join('B', 'main').msg, 'Gabung');
+  assert.equal(join('C', 'gabung').msg, 'Gabung');
+  assert.equal(join('A').msg, 'Sudah ikut');
+  assert.equal(snap().totalPlayers, 3);
+  assert.deepEqual(snap().queue, ['A', 'B', 'C']);
+  assert.ok(snap().feed.some((e) => e.k === 'join' && e.a === 'A'));
 });
 
-test('ular menurunkan, tangga menaikkan', () => {
-  game._setBoard([[10, 3]], [[14, 30]], []);
-  roll('ular', 6);
-  assert.equal(roll('ular', 4).ok, false);
-  assert.equal(posOf('ular'), 3, 'kena ular di 10 -> 3');
-  const rr = game.buildStatePayload().recentRolls;
-  assert.equal(rr[rr.length - 1].v, 'snake');
-
-  roll('tangga', 6); roll('tangga', 6); roll('tangga', 2);
-  assert.equal(posOf('tangga'), 30, 'naik tangga di 14 -> 30');
+test('lobi: 1 pemain saja belum memulai hitung mundur', () => {
+  join('A');
+  assert.equal(snap().lobby.endsAt, 0);
+  mock.timers.tick(CFG.LOBBY_MS * 2);
+  assert.equal(snap().phase, 'lobby');
 });
 
-test('petak spesial: mundur 3 dan maju 5', () => {
-  game._setBoard([], [], [{ c: 8, t: 'back', to: 5 }, { c: 20, t: 'fwd', to: 25 }]);
-  roll('mundur', 6); roll('mundur', 2);
-  assert.equal(posOf('mundur'), 5);
-  roll('maju', 6); roll('maju', 6); roll('maju', 6); roll('maju', 2);
-  assert.equal(posOf('maju'), 25);
+test('lobi: pemain ke-2 memulai hitung mundur, lalu balapan jalan urut join', () => {
+  join('A'); join('B');
+  assert.equal(snap().lobby.endsAt, Date.now() + CFG.LOBBY_MS);
+  mock.timers.tick(CFG.LOBBY_MS - 1);
+  assert.equal(snap().phase, 'lobby');
+  mock.timers.tick(1);
+  const s = snap();
+  assert.equal(s.phase, 'racing');
+  assert.equal(s.turn, 'A');
+  assert.ok(s.endsAt > Date.now());
+  assert.equal(s.lobby.endsAt, 0);
 });
 
-test('"lempar lagi": lemparan berikutnya tanpa cooldown', () => {
-  game._setBoard([], [], [{ c: 6, t: 'again', to: 6 }]);
-  roll('lagi', 6);                                   // mendarat di 6 = lempar lagi
-  assert.equal(posOf('lagi'), 6);
-  const bonus = rollNow('lagi', 3);                  // langsung, tanpa nunggu
-  assert.notEqual(bonus.msg, 'Terlalu cepat');
-  assert.equal(posOf('lagi'), 9);
-  assert.equal(rollNow('lagi', 3).msg, 'Terlalu cepat', 'setelah bonus, cooldown biasa');
+test('lobi: yang join selama hitung mundur ikut main', () => {
+  join('A'); join('B');
+  mock.timers.tick(CFG.LOBBY_MS - 500);
+  assert.equal(join('C').msg, 'Gabung');
+  mock.timers.tick(500);
+  assert.equal(snap().phase, 'racing');
+  assert.deepEqual(snap().queue, ['A', 'B', 'C']);
 });
 
-test('cooldown per penonton: lemparan langsung berikutnya ditolak, lalu boleh lagi', () => {
-  emptyBoard();
-  roll('ani', 2);
-  const r = rollNow('ani', 3);
-  assert.equal(r.ok, false);
-  assert.equal(r.msg, 'Terlalu cepat');
-  assert.equal(posOf('ani'), 2, 'posisi nggak berubah');
-  mock.timers.tick(COOLDOWN);
-  assert.notEqual(rollNow('ani', 3).msg, 'Terlalu cepat');
-  assert.equal(posOf('ani'), 5);
-  // penonton lain nggak ikut kena cooldown
-  assert.notEqual(rollNow('bima', 1).msg, 'Terlalu cepat');
+test('lobi: papan penuh langsung mulai tanpa nunggu hitung mundur', () => {
+  for (let i = 0; i < CFG.MAX_PLAYERS; i++) join('P' + i);
+  assert.equal(snap().phase, 'racing');
+  assert.equal(join('Telat').msg, 'Papan penuh');
 });
 
-test('harus pas di 100: kelebihan memantul balik', () => {
-  emptyBoard();
-  for (let i = 0; i < 16; i++) roll('pantul', 6);
-  assert.equal(posOf('pantul'), 96);
-  roll('pantul', 6);                                 // 96+6=102 -> memantul ke 98
-  assert.equal(posOf('pantul'), 98);
-  assert.equal(game.buildStatePayload().finishers.length, 0);
-  const r = roll('pantul', 2);                       // 98+2 = 100 pas
-  assert.equal(r.ok, true);
-  assert.equal(posOf('pantul'), 100);
-});
-
-// ---------- juara, podium, timeout ----------
-test('3 tercepat finish: poin 100/60/30, lalu papan juara, lalu minta ronde baru', () => {
-  let completions = 0;
-  game.setBroadcaster(() => {}, () => { completions++; return true; });
-  emptyBoard();
-
-  const results = ['juara1', 'juara2', 'juara3'].map((n) => runToFinish(n));
-  assert.ok(results.every((r) => r.ok));
-  assert.deepEqual(results.map((r) => r.points), [100, 60, 30]);
-  assert.deepEqual(results.map((r) => r.meta.rank), [1, 2, 3]);
-
-  const after = game.buildStatePayload();
-  assert.equal(after.phase, 'podium');
-  assert.equal(after.endReason, 'finished');
-  assert.deepEqual(after.finishers.map((f) => f.player), ['juara1', 'juara2', 'juara3']);
-  assert.equal(after.finishers[0].rolls, 17);
-  assert.equal(game.isComplete(), false, 'belum complete selama papan juara tampil');
-
-  assert.equal(rollNow('telat', 3).ok, false, 'setelah ronde selesai nggak ada lemparan lagi');
-
-  mock.timers.tick(CFG.PODIUM_MS);
-  assert.equal(game.isComplete(), true);
-  assert.equal(completions, 1, 'room diminta nyelesaiin ronde tepat sekali');
-});
-
-test('yang udah finish nggak bisa melempar lagi dan nggak dapat poin dua kali', () => {
-  emptyBoard();
-  assert.equal(runToFinish('sama').ok, true);
-  mock.timers.tick(COOLDOWN + 100);
-  const r = rollNow('sama', 3);
-  assert.equal(r.ok, false);
-  assert.equal(r.msg, 'Sudah finish');
-  assert.equal(game.buildStatePayload().finishers.length, 1);
-});
-
-test('timeout: ronde selesai tanpa poin, tampil yang terdekat (imbang = tiba duluan)', () => {
-  let completions = 0;
-  game.setBroadcaster(() => {}, () => { completions++; return true; });
-  emptyBoard();
-
-  roll('jauh', 6); roll('jauh', 6);                  // petak 12
-  roll('kembar1', 6); roll('kembar1', 4);            // petak 10 (tiba duluan)
-  roll('kembar2', 5); roll('kembar2', 5);            // petak 10 (tiba belakangan)
-  roll('dekat', 3);
-
-  mock.timers.tick(CFG.ROUND_TIMEOUT_MS);
-  const after = game.buildStatePayload();
-  assert.equal(after.phase, 'podium');
-  assert.equal(after.endReason, 'timeout');
-  assert.equal(after.finishers.length, 0);
-  assert.deepEqual(after.closest, ['jauh', 'kembar1', 'kembar2']);
-  assert.deepEqual(after.players.map((p) => p.n).slice(0, 3), ['jauh', 'kembar1', 'kembar2']);
-
-  mock.timers.tick(CFG.PODIUM_MS);
+test('lobi sepi: ronde dilewati, room diminta ganti (rotasi Game Acak)', () => {
+  join('A');
+  mock.timers.tick(CFG.LOBBY_IDLE_MS + 10);
   assert.equal(completions, 1);
 });
 
-test('timeout sebagian: yang sudah finish tetap dapat poin, sisanya cuma "terdekat"', () => {
-  emptyBoard();
-  assert.equal(runToFinish('satu').points, 100);
-  roll('hampir', 6); roll('hampir', 6);
-  mock.timers.tick(CFG.ROUND_TIMEOUT_MS);
-  const after = game.buildStatePayload();
-  assert.equal(after.endReason, 'timeout');
-  assert.equal(after.finishers.length, 1);
-  assert.deepEqual(after.closest, ['hampir']);
-});
-
-test('tanpa hook room (room.js belum di-patch): bikin ronde baru sendiri', () => {
+test('lobi sepi: tanpa hook room, bikin lobi baru sendiri', () => {
   game.setBroadcaster(() => {}, null);
-  const before = game.buildStatePayload();
-  mock.timers.tick(CFG.ROUND_TIMEOUT_MS);   // timeout -> papan juara
-  mock.timers.tick(CFG.PODIUM_MS);          // papan juara selesai -> ronde baru (fallback)
-  const after = game.buildStatePayload();
-  assert.equal(after.phase, 'racing');
-  assert.equal(after.round, before.round + 1);
-  assert.equal(after.players.length, 0);
+  game.init();
+  const r = snap().round;
+  mock.timers.tick(CFG.LOBBY_IDLE_MS + 10);
+  assert.equal(snap().round, r + 1);
+  assert.equal(snap().phase, 'lobby');
 });
 
-test('onComplete() = ronde baru dengan papan baru (dipakai skip vote & rotasi)', async () => {
-  const r0 = game.buildStatePayload().round;
+test('lobi yang sudah ramai nggak dilewati walau lewat batas sepi', () => {
+  join('A'); join('B');
+  mock.timers.tick(CFG.LOBBY_MS);
+  game._pauseTurns(true);
+  mock.timers.tick(CFG.LOBBY_IDLE_MS);
+  assert.equal(completions, 0);
+});
+
+// ---------- giliran otomatis ----------
+test('giliran otomatis: dadu dilempar sendiri tiap TURN_MS, bergantian urut join', () => {
+  startRace(['A', 'B', 'C']);
+  dice({ A: 1, B: 2, C: 3 });
+  mock.timers.tick(TURN - 1);
+  assert.equal(posOf('A'), 0);                    // belum waktunya
+  mock.timers.tick(1);
+  assert.equal(posOf('A'), 1); assert.equal(snap().turn, 'B');
+  turns(1);
+  assert.equal(posOf('B'), 2); assert.equal(snap().turn, 'C');
+  turns(1);
+  assert.equal(posOf('C'), 3); assert.equal(snap().turn, 'A');
+  turns(1);
+  assert.equal(posOf('A'), 2);
+  assert.equal(snap().recentRolls.length, 4);
+  assert.deepEqual(P('A'), { ...P('A'), q: P('A').q, d: 1, f: 1, m: 2, v: null });   // data lemparan buat animasi
+});
+
+test('komentar "lempar" manual nggak ngaruh lagi', () => {
+  startRace(['A', 'B']);
+  dice({ A: 2, B: 2 });
+  assert.equal(use('A', 'lempar').ok, false);
+  assert.equal(posOf('A'), 0);
+});
+
+test('join di tengah balapan: ikut urutan join, mulai dari petak 0', () => {
+  startRace(['A', 'B', 'C']);
+  dice({ A: 3, B: 3, C: 3, D: 3 });
+  turns(2);                                       // A dan B sudah lempar, sekarang giliran C
+  assert.equal(snap().turn, 'C');
+  assert.equal(join('D').msg, 'Gabung');
+  assert.equal(posOf('D'), 0);
+  assert.deepEqual(snap().queue, ['C', 'D', 'A', 'B']);
+  turns(1);                                       // C
+  assert.equal(snap().turn, 'D');
+  turns(1);                                       // D
+  assert.equal(posOf('D'), 3);
+  assert.equal(snap().turn, 'A');
+});
+
+test('petak "lempar lagi": pemain yang sama dapat giliran berikutnya', () => {
+  startRace(['A', 'B'], () => game._setBoard([], [], [{ c: 3, t: 'again', to: 3 }]));
+  dice({ A: 3, B: 1 });
+  turns(1);
+  assert.equal(P('A').v, 'again');
+  assert.equal(snap().turn, 'A');
+  turns(1);
+  assert.equal(posOf('A'), 6);
+  assert.equal(snap().turn, 'B');
+});
+
+test('ular menurunkan, tangga menaikkan', () => {
+  startRace(['A', 'B'], () => game._setBoard([[7, 2]], [[4, 20]], []));
+  dice({ A: 4, B: (pos) => (pos === 0 ? 1 : 6) });
+  turns(2);
+  assert.equal(posOf('A'), 20); assert.equal(P('A').v, 'ladder');
+  turns(2);                                       // B: 1 lalu 1+6=7 = kepala ular
+  assert.equal(posOf('B'), 2); assert.equal(P('B').v, 'snake');
+});
+
+test('harus pas di 100: kelebihan memantul balik, lalu pas = finish', () => {
+  startRace(['A', 'B']);
+  dice({ A: sprint(6), B: 1 });
+  for (let i = 0; i < 40 && posOf('A') < 96; i++) turns(2);
+  assert.equal(posOf('A'), 96);
+  dice({ A: 6 });
+  turns(2);
+  assert.equal(posOf('A'), 98);                   // 96+6=102 -> 100-2
+  dice({ A: sprint(6) });
+  turns(2);
+  assert.equal(snap().phase, 'podium');
+  assert.equal(snap().finishers[0].player, 'A');
+});
+
+// ---------- finish, poin, ronde ----------
+function runUntilPodium(max = 600) {
+  for (let i = 0; i < max && snap().phase === 'racing'; i++) turns(1);
+  return snap();
+}
+
+test('2 pemain: yang finish duluan dapat 100, ronde langsung selesai', () => {
+  startRace(['A', 'B']);
+  dice({ A: sprint(6), B: 1 });
+  const s = runUntilPodium();
+  assert.equal(s.phase, 'podium');
+  assert.equal(s.endReason, 'finished');
+  assert.deepEqual(s.finishers.map((f) => [f.player, f.rank, f.points]), [['A', 1, 100]]);
+  const aw = Object.fromEntries(awarded);
+  assert.equal(aw.A, 100);
+  assert.ok(aw.B >= 1);                           // poin ikut serta buat B
+  assert.equal(awarded.length, 2);
+  assert.equal(completions, 0);                   // podium dulu
+  mock.timers.tick(CFG.PODIUM_MS + 10);
+  assert.equal(completions, 1);                   // lalu room diminta ronde baru
+  assert.equal(awarded.length, 2);                // poin nggak dobel
+});
+
+test('3 pemain: tinggal 1 yang belum finish = ronde selesai', () => {
+  startRace(['A', 'B', 'C']);
+  dice({ A: sprint(6), B: sprint(5), C: 1 });
+  const s = runUntilPodium();
+  assert.deepEqual(s.finishers.map((f) => [f.player, f.points]), [['A', 100], ['B', 60]]);
+  assert.deepEqual(s.closest, ['C']);
+  assert.ok(Object.fromEntries(awarded).C >= 1);
+});
+
+test('4 pemain: 3 juara terisi (100/60/30), sisanya dapat poin ikut serta', () => {
+  startRace(['A', 'B', 'C', 'D']);
+  dice({ A: sprint(6), B: sprint(5), C: sprint(4), D: 1 });
+  const s = runUntilPodium();
+  assert.deepEqual(s.finishers.map((f) => [f.player, f.points]), [['A', 100], ['B', 60], ['C', 30]]);
+  const aw = Object.fromEntries(awarded);
+  assert.equal(aw.A, 100); assert.equal(aw.B, 60); assert.equal(aw.C, 30);
+  assert.ok(aw.D >= 1);
+});
+
+test('yang sudah finish dilewati di giliran berikutnya', () => {
+  startRace(['A', 'B', 'C', 'D']);
+  dice({ A: sprint(6), B: 1, C: 1, D: 1 });
+  for (let i = 0; i < 200 && snap().finishers.length < 1; i++) turns(1);
+  assert.equal(snap().finishers[0].player, 'A');
+  assert.equal(snap().phase, 'racing');
+  assert.ok(!snap().queue.includes('A'));
+  const q = snap().queue.length;
+  assert.equal(q, 3);
+});
+
+test('timeout: ronde selesai, yang terdekat tampil, poin ikut serta sekali', () => {
+  startRace(['A', 'B']);
+  dice({ A: 6, B: 3 });
+  turns(4);                                       // A=12, B=6
+  game._pauseTurns(true);
+  mock.timers.tick(CFG.ROUND_TIMEOUT_MS + 100);
+  const s = snap();
+  assert.equal(s.phase, 'podium');
+  assert.equal(s.endReason, 'timeout');
+  assert.deepEqual(s.closest, ['A', 'B']);
+  assert.deepEqual([...awarded].sort(), [['A', 2], ['B', 1]]);
+  mock.timers.tick(CFG.PODIUM_MS + 100);
+  assert.equal(awarded.length, 2);
+  assert.equal(completions, 1);
+});
+
+test('tanpa hook room (room.js belum di-patch): bikin lobi baru sendiri', () => {
+  game.setBroadcaster(() => {}, null);
+  game.init();
+  startRace(['A', 'B']);
+  dice({ A: sprint(6), B: 1 });
+  runUntilPodium();
+  const r = snap().round;
+  plan = {};
+  game._setRng();
+  mock.timers.tick(CFG.PODIUM_MS + 10);
+  assert.equal(snap().round, r + 1);
+  assert.equal(snap().phase, 'lobby');
+  assert.equal(snap().totalPlayers, 0);
+});
+
+test('onComplete() = ronde baru (lobi kosong) dengan papan baru', async () => {
+  join('A');
+  const r1 = snap().round;
   const res = await game.onComplete();
   assert.equal(res.success, true);
-  const st = game.buildStatePayload();
-  assert.equal(st.round, r0 + 1);
-  assert.equal(st.phase, 'racing');
-  assert.equal(st.snakes.length, CFG.SNAKE_COUNT);
+  assert.equal(snap().round, r1 + 1);
+  assert.equal(snap().phase, 'lobby');
+  assert.equal(snap().totalPlayers, 0);
+  assert.equal(game.isComplete(), false);
 });
 
-test('reset() mulai dari ronde 1 dengan papan kosong pemain', () => {
-  roll('x', 3);
-  game._setRng();
+test('reset() mulai dari ronde 1 dengan lobi kosong', () => {
+  startRace(['A', 'B']);
   game.reset();
-  const st = game.buildStatePayload();
-  assert.equal(st.round, 1);
-  assert.equal(st.totalPlayers, 0);
+  assert.equal(snap().round, 1);
+  assert.equal(snap().phase, 'lobby');
+  assert.equal(snap().totalPlayers, 0);
 });
 
-// ---------- beban ----------
-test('broadcast di-throttle: 200 lemparan dari 200 penonton = 1 emit', () => {
+test('broadcast di-throttle: banyak join bersamaan = 1 emit', () => {
   let emits = 0;
-  game.setBroadcaster(() => { emits++; }, null);
+  game.setBroadcaster(() => { emits += 1; }, null);
+  game.init();
+  mock.timers.tick(CFG.BROADCAST_THROTTLE_MS + 10);
   emits = 0;
-  emptyBoard();
-  for (let i = 0; i < 200; i++) rollNow('p' + i, 3);
-  assert.equal(emits, 0, 'belum ada emit sebelum jeda throttle lewat');
-  mock.timers.tick(CFG.BROADCAST_THROTTLE_MS);
+  for (let i = 0; i < 5; i++) join('P' + i);
+  mock.timers.tick(CFG.BROADCAST_THROTTLE_MS + 10);
   assert.equal(emits, 1);
 });
 
-test('payload tetap kecil dengan 500 pemain', () => {
-  emptyBoard();
-  for (let i = 0; i < 500; i++) rollNow('penonton-' + i, 1 + (i % 6));
-  const st = game.buildStatePayload();
-  assert.equal(st.totalPlayers, 500);
-  assert.equal(st.players.length, CFG.MAX_PLAYERS_IN_PAYLOAD);
-  assert.ok(st.recentRolls.length <= 5);
-  const bytes = JSON.stringify(st).length;
-  assert.ok(bytes < 15000, `payload ${bytes} byte kebesaran`);
-  // urut terdepan dulu
-  for (let i = 1; i < st.players.length; i++) assert.ok(st.players[i - 1].p >= st.players[i].p);
-});
-
-test('papan penuh: pemain paling lama diam dibuang, pemain baru tetap bisa main', () => {
-  emptyBoard();
-  for (let i = 0; i < CFG.MAX_TRACKED_PLAYERS; i++) {
-    rollNow('pemain-' + i, 1);
-    if (i % 100 === 99) mock.timers.tick(10);   // beda waktu aktif antar kelompok
-  }
-  assert.equal(game.buildStatePayload().totalPlayers, CFG.MAX_TRACKED_PLAYERS);
-  const r = rollNow('pemain-baru', 2);
-  assert.notEqual(r.msg, 'Papan penuh');
-  const st = game.buildStatePayload();
-  assert.equal(st.totalPlayers, CFG.MAX_TRACKED_PLAYERS, 'jumlah tetap di batas');
-  assert.equal(posOf('pemain-baru'), 2);
-  assert.equal(posOf('pemain-0'), 0, 'pemain paling lama diam yang dibuang');
+test('payload: lobi dan balapan membawa info giliran', () => {
+  join('A'); join('B');
+  let s = snap();
+  assert.equal(s.phase, 'lobby');
+  assert.equal(s.turn, '');
+  assert.deepEqual(s.queue, ['A', 'B']);
+  assert.ok(s.lobby.endsAt > Date.now());
+  mock.timers.tick(CFG.LOBBY_MS);
+  s = snap();
+  assert.equal(s.turn, 'A');
+  assert.equal(s.turnMs, TURN);
+  assert.ok(s.turnAt > Date.now());
+  assert.equal(typeof P('A').c, 'number');        // warna bidak
+  assert.equal(s.cooldownMs, undefined);          // cooldown lempar sudah nggak ada
 });
 
 test('getAdminAnswers & buildClueList memenuhi kontrak', () => {
-  roll('adm', 3);
+  join('A');
   const a = game.getAdminAnswers();
   assert.ok(a.title.includes('Ular Tangga'));
-  assert.ok(Array.isArray(a.items) && a.items.length >= 3);
-  assert.ok(game.buildClueList().includes('Ular Tangga'));
-  assert.equal(game.id, 'ular-tangga');
-});
-
-test('poin ikut serta: yang belum finish dapat poin sebanding petak, cuma sekali', () => {
-  const awarded = [];
-  game.setBroadcaster(() => {}, null, (name, pts) => awarded.push([name, pts]));
-  game.init();
-  emptyBoard();
-  roll('Budi', 6);                         // Budi di petak 6, belum finish
-  roll('Sari', 3);
-  const st = game.buildStatePayload();
-  assert.equal(typeof st.players.find((x) => x.n === 'Budi').c, 'number');   // warna bidak
-  mock.timers.tick(CFG.ROUND_TIMEOUT_MS + 100);                             // ronde habis waktu
-  assert.deepEqual(awarded.sort(), [['Budi', 1], ['Sari', 1]].sort());       // min 1 poin
-  mock.timers.tick(CFG.PODIUM_MS + 100);
-  assert.equal(awarded.length, 2);                                          // tidak dobel
+  assert.ok(a.items.some((i) => i.label === 'Pemain di papan' && i.answer === '1'));
+  assert.ok(a.items.some((i) => i.label === 'Fase' && i.answer === 'lobby'));
+  assert.ok(String(game.buildClueList()).includes('Ular Tangga'));
 });
 
 // ---------- item & pertarungan ----------
-function use(name, cmd) { return game.handleAnswer({ answer: cmd, player: name }); }
-function P(name) { return game.buildStatePayload().players.find((x) => x.n === name); }
-
 test('parseComment: perintah item dikenali, obrolan biasa tidak', () => {
   assert.deepEqual(game.parseComment('Serang 2!'), { answer: 'serang 2' });
   assert.deepEqual(game.parseComment('tangkis'), { answer: 'tangkis' });
@@ -405,9 +469,19 @@ test('parseComment: perintah item dikenali, obrolan biasa tidak', () => {
   assert.equal(game.parseComment('tangkis 3'), null);
 });
 
+test('item: cuma buat pemain yang sudah join, dan cuma saat balapan jalan', () => {
+  join('A');
+  assert.equal(use('A', 'serang').msg, 'Ronde belum jalan');        // masih lobi
+  startRace(['A', 'B']);
+  game._pauseTurns(true);
+  assert.equal(use('Z', 'serang').msg, 'Belum bisa pakai item');    // penonton biasa
+});
+
 test('serang: kena pemain terdekat di depan, korban kebal sesudahnya', () => {
-  emptyBoard();
-  roll('A', 1); roll('B', 4); roll('C', 6);
+  startRace(['A', 'B', 'C']);
+  dice({ A: 1, B: 4, C: 6 });
+  turns(3);
+  game._pauseTurns(true);
   game._giveItem('A', 'serang'); game._giveItem('A', 'serang');
   assert.equal(use('A', 'serang').ok, false);
   assert.equal(posOf('B'), 1);                    // 4 - 5, minimal petak 1
@@ -418,8 +492,10 @@ test('serang: kena pemain terdekat di depan, korban kebal sesudahnya', () => {
 });
 
 test('tangkis menahan serangan dan gigitan ular', () => {
-  game._setBoard([[8, 2]], [], []);
-  roll('A', 1); roll('B', 3);
+  startRace(['A', 'B'], () => game._setBoard([[8, 2]], [], []));
+  dice({ A: 1, B: 3 });
+  turns(2);
+  game._pauseTurns(true);
   game._giveItem('B', 'tangkis'); game._giveItem('A', 'serang');
   use('B', 'tangkis');
   assert.equal(P('B').g, 'tangkis');
@@ -427,106 +503,138 @@ test('tangkis menahan serangan dan gigitan ular', () => {
   assert.equal(posOf('B'), 3);
   assert.equal(P('B').g, 0);
   game._giveItem('B', 'tangkis'); use('B', 'tangkis');
-  roll('B', 5);                                   // petak 8 = kepala ular
+  dice({ B: 5 });
+  game._pauseTurns(false);
+  turns(2);                                       // A lempar, lalu B: 3 + 5 = 8 = kepala ular
   assert.equal(posOf('B'), 8);
   assert.equal(P('B').v, 'shielded');
 });
 
 test('pantul: serangan balik ke penyerang', () => {
-  emptyBoard();
-  roll('A', 6); roll('B', 6); roll('B', 1);       // A=6, B=7
+  startRace(['A', 'B']);
+  dice({ A: 2, B: 3 });
+  turns(2);
+  game._pauseTurns(true);
   game._giveItem('B', 'pantul'); game._giveItem('A', 'serang');
   use('B', 'pantul'); use('A', 'serang');
-  assert.equal(posOf('A'), 1);
-  assert.equal(posOf('B'), 7);
+  assert.equal(posOf('A'), 1);                    // 2 - 5, minimal 1
+  assert.equal(posOf('B'), 3);
 });
 
-test('beku: korban tidak bisa lempar selama FREEZE_MS', () => {
-  emptyBoard();
-  roll('A', 1); roll('B', 4);
-  game._giveItem('A', 'beku'); use('A', 'beku');
-  forceDie(2);
-  mock.timers.tick(CFG.ROLL_COOLDOWN_MS + 100);
-  assert.equal(game.handleAnswer({ answer: 'lempar', player: 'B' }).msg, 'Terlalu cepat');
-  mock.timers.tick(CFG.FREEZE_MS);
-  assert.equal(game.handleAnswer({ answer: 'lempar', player: 'B' }).msg, 'Dilempar');
+test('beku: giliran lempar korban berikutnya dilewati satu kali', () => {
+  startRace(['A', 'B']);
+  dice({ A: 1, B: 4 });
+  turns(2);                                       // A=1, B=4, sekarang giliran A
+  game._giveItem('A', 'beku');
+  use('A', 'beku');
+  assert.equal(P('B').sk, CFG.FREEZE_TURNS);
+  turns(1);                                       // A lempar (=2)
+  assert.equal(snap().turn, 'B');
+  turns(1);                                       // giliran B dilewati
+  assert.equal(posOf('B'), 4);
+  assert.equal(P('B').sk, 0);
+  assert.equal(snap().turn, 'A');
+  assert.ok(snap().feed.some((e) => e.k === 'skip' && e.a === 'B'));
+  turns(2);                                       // A lempar, B lempar lagi seperti biasa
+  assert.equal(posOf('B'), 8);
 });
 
 test('tukar: dua pemain bertukar petak', () => {
-  emptyBoard();
-  roll('A', 2); roll('B', 6);
+  startRace(['A', 'B']);
+  dice({ A: 2, B: 6 });
+  turns(2);
+  game._pauseTurns(true);
   game._giveItem('A', 'tukar'); use('A', 'tukar');
   assert.equal(posOf('A'), 6);
   assert.equal(posOf('B'), 2);
 });
 
 test('jebakan: korban turun TRAP_DROP petak, pemasang aman', () => {
-  emptyBoard();
-  roll('A', 6); roll('B', 2);
+  startRace(['A', 'B']);
+  dice({ A: 6, B: 2 });
+  turns(2);                                       // A=6, B=2
+  game._pauseTurns(true);
   game._giveItem('A', 'jebakan'); use('A', 'jebakan');
-  assert.deepEqual(game.buildStatePayload().traps.map((t) => t[0]), [6]);
-  roll('B', 4);                                   // 2 + 4 = 6
+  assert.deepEqual(snap().traps.map((t) => t[0]), [6]);
+  dice({ B: 4 });
+  game._pauseTurns(false);
+  turns(2);                                       // A lempar (lewat jebakannya sendiri), B: 2 + 4 = 6
   assert.equal(posOf('B'), 1);                    // 6 - 8, minimal 1
   assert.equal(P('B').v, 'trap');
-  assert.equal(game.buildStatePayload().traps.length, 0);
+  assert.equal(snap().traps.length, 0);
 });
 
-test('petak misteri: item masuk tas, tas penuh, atau maju', () => {
-  game._setBoard([], [], [{ c: 2, t: 'mystery', to: 2 }, { c: 3, t: 'mystery', to: 3 }, { c: 4, t: 'mystery', to: 4 }]);
-  roll('A', 2);
+test('petak misteri: item masuk tas, tas penuh', () => {
+  startRace(['A', 'B'], () => game._setBoard([], [], [{ c: 2, t: 'mystery', to: 2 }, { c: 3, t: 'mystery', to: 3 }, { c: 4, t: 'mystery', to: 4 }]));
+  dice({ A: 2, B: 1 });
+  turns(1);                                       // A: 2
   assert.deepEqual(P('A').i, ['serang']);
   assert.equal(P('A').v, 'item');
-  roll('A', 1);
+  dice({ A: 1 });
+  turns(2);                                       // B, lalu A: 3
   assert.equal(P('A').i.length, CFG.MAX_ITEMS);
-  roll('A', 1);                                   // tas sudah penuh
+  turns(2);                                       // B, lalu A: 4 (tas sudah penuh)
   assert.equal(P('A').v, 'full');
   assert.equal(P('A').i.length, CFG.MAX_ITEMS);
-  game._setBoard([], [], [{ c: 4, t: 'mystery', to: 4 }]);
-  game._setRng(() => 0.6);                        // dadu 4, lalu maju 3-6 (di sini 5)
-  mock.timers.tick(COOLDOWN + 100);
-  game.handleAnswer({ answer: 'lempar', player: 'B' });
-  assert.equal(posOf('B'), 9);
-  assert.equal(P('B').v, 'fwd');
 });
 
+test('petak misteri: kadang maju 3-6 petak', () => {
+  startRace(['A', 'B'], () => game._setBoard([], [], [{ c: 4, t: 'mystery', to: 4 }]));
+  game._setRng(() => 0.6);                        // dadu 4 -> petak misteri, lalu maju 5
+  turns(1);
+  assert.equal(posOf('A'), 9);
+  assert.equal(P('A').v, 'fwd');
+});
 
 // ---------- event global ----------
-function warm() { mock.timers.tick(CFG.EVENT_WARN_MS + 10); }
-
 test('badai: semua pemain mundur, banner tampil lalu hilang', () => {
-  emptyBoard();
-  roll('A', 6); roll('A', 4); roll('B', 2);       // A=10, B=2
+  startRace(['A', 'B']);
+  dice({ A: 6, B: 2 });
+  turns(2);                                       // A=6, B=2
+  game._pauseTurns(true);
   game._startEvent('storm');
-  assert.equal(game.buildStatePayload().event.ph, 'warn');
+  assert.equal(snap().event.ph, 'warn');
   warm();
-  assert.equal(posOf('A'), 10 - CFG.STORM_BACK);
+  assert.equal(posOf('A'), 6 - CFG.STORM_BACK);
   assert.equal(posOf('B'), 1);                    // minimal petak 1
-  assert.equal(game.buildStatePayload().event.t, 'storm');
+  assert.equal(snap().event.t, 'storm');
   mock.timers.tick(CFG.EVENT_BANNER_MS + 10);
-  assert.equal(game.buildStatePayload().event, null);
+  assert.equal(snap().event, null);
 });
 
 test('angin segar: semua maju', () => {
-  emptyBoard();
-  roll('A', 6); roll('A', 4);
+  startRace(['A', 'B']);
+  dice({ A: 6, B: 2 });
+  turns(2);
+  game._pauseTurns(true);
   game._startEvent('wind'); warm();
-  assert.equal(posOf('A'), 10 + CFG.WIND_FWD);
+  assert.equal(posOf('A'), 6 + CFG.WIND_FWD);
+  assert.equal(posOf('B'), 2 + CFG.WIND_FWD);
 });
 
 test('perisai massal: ular tidak menggigit selama SHIELD_MS', () => {
-  game._setBoard([[8, 2]], [], []);
-  roll('A', 3); roll('B', 3);
+  startRace(['A', 'B'], () => game._setBoard([[8, 2]], [], []));
+  dice({ A: 3, B: 3 });
+  turns(2);                                       // A=3, B=3
+  game._pauseTurns(true);
   game._startEvent('shield'); warm();
-  roll('A', 5);                                   // 3 + 5 = 8, kepala ular
+  dice({ A: 5 });
+  game._pauseTurns(false);
+  turns(1);                                       // A: 3 + 5 = 8, kepala ular
   assert.equal(posOf('A'), 8);
+  game._pauseTurns(true);
   mock.timers.tick(CFG.SHIELD_MS);
-  roll('B', 5);
+  dice({ B: 5 });
+  game._pauseTurns(false);
+  turns(1);                                       // B: 3 + 5 = 8
   assert.equal(posOf('B'), 2);                    // perisai sudah habis
 });
 
 test('Perang Besar: serang bebas tanpa item, ada jeda antar serangan', () => {
-  emptyBoard();
-  roll('A', 1); roll('B', 4); roll('C', 6);
+  startRace(['A', 'B', 'C']);
+  dice({ A: 1, B: 4, C: 6 });
+  turns(3);
+  game._pauseTurns(true);
   assert.equal(use('A', 'serang').msg, 'Item tidak ada');
   game._startEvent('war'); warm();
   use('A', 'serang');                             // gratis, kena B
@@ -539,18 +647,20 @@ test('Perang Besar: serang bebas tanpa item, ada jeda antar serangan', () => {
   assert.equal(use('A', 'serang').msg, 'Item tidak ada');
 });
 
-test('Rebutan Item: 5 tercepat dapat item, event selesai lebih awal', () => {
-  emptyBoard();
-  roll('A', 1);
-  game._startEvent('grab');
-  assert.equal(game.buildStatePayload().event.w, '');   // kata belum dibuka saat peringatan
-  warm();
-  const w = game.buildStatePayload().event.w;
-  assert.ok(w);
+test('Rebutan Item: 5 tercepat dapat item, event selesai lebih awal, penonton non-pemain nggak bisa', () => {
   const names = ['A', 'B', 'C', 'D', 'E', 'F'];
+  names.forEach((n) => join(n));                  // 6 = penuh, balapan langsung jalan
+  game._pauseTurns(true);
+  game._startEvent('grab');
+  assert.equal(snap().event.w, '');               // kata belum dibuka saat peringatan
+  warm();
+  const w = snap().event.w;
+  assert.ok(w);
+  assert.equal(game.handleAnswer({ answer: w, player: 'Z' }).msg, 'Belum ikut main');
+  assert.equal(P('Z'), undefined);                // nggak otomatis jadi pemain
   names.forEach((n) => game.handleAnswer({ answer: w, player: n }));
-  const have = names.filter((n) => P(n) && P(n).i.length === 1);
+  const have = names.filter((n) => P(n).i.length === 1);
   assert.equal(have.length, CFG.GRAB_WINNERS);
-  assert.equal(game.buildStatePayload().event, null);
-  assert.equal(game.parseComment(w), null);             // kata biasa lagi
+  assert.equal(snap().event, null);
+  assert.equal(game.parseComment(w), null);       // kata biasa lagi
 });

@@ -118,6 +118,11 @@
   .lead .bar { width: 100%; height: 7px; border-radius: 4px; border: 1px solid rgba(0,0,0,.5); }
   .lead .nm { max-width: 100%; font-size: clamp(.6rem, 1.9vw, .78rem); font-weight: 700; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
   .lead .ps { font-size: clamp(.55rem, 1.7vw, .7rem); font-weight: 600; color: #99f6e4; white-space: nowrap; }
+  /* Bar lobi / giliran: siapa yang lagi dapat giliran lempar otomatis */
+  #turnBar { flex: 0 0 auto; margin-top: .3rem; padding: .3rem .8rem; border-radius: 12px; text-align: center; font-weight: 800; font-size: clamp(.8rem, 2.8vw, 1.1rem); background: rgba(94,234,212,.12); border: 2px solid rgba(94,234,212,.5); color: #ccfbf1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  #turnBar.lobby { background: rgba(250,204,21,.15); border-color: #facc15; color: #fde68a; }
+  #turnBar:empty { display: none; }
+  .lead.turn .av { border-color: #5eead4; box-shadow: 0 0 0 3px rgba(94,234,212,.55); }
   /* Banner event global (peringatan, badai, perisai massal, Perang Besar, Rebutan Item) */
   #eventBar { flex: 0 0 auto; display: none; margin-top: .3rem; padding: .3rem .8rem; border-radius: 12px; text-align: center; font-weight: 800; font-size: clamp(.8rem, 2.8vw, 1.1rem); }
   #eventBar.show { display: block; }
@@ -144,16 +149,17 @@
     </div>
   </div>
 
-  <div class="howto" id="howto">Komen <b>lempar</b> (atau <b>dadu</b> / <b>roll</b>) buat melempar dadu. Sampai petak <b>100</b> duluan! Harus pas, kalau lebih bakal memantul.</div>
+  <div class="howto" id="howto">Komen <b>join</b> (atau <b>main</b> / <b>gabung</b>) buat ikut! Dadu dilempar otomatis bergiliran. Sampai petak <b>100</b> duluan!</div>
 
   <div id="eventBar"></div>
+  <div id="turnBar"></div>
   <div id="leadStrip"></div>
 
   <div id="stage"><canvas id="board"></canvas></div>
 
   <div id="dicePanel">
     <div id="die"></div>
-    <div id="diceWho">Ketik "lempar" buat mulai!</div>
+    <div id="diceWho">Komen "join" buat ikut!</div>
     <div id="diceSub"></div>
     <div id="recent"></div>
   </div>
@@ -195,7 +201,7 @@
   const HOP_HEIGHT = 0.42;       // tinggi lompatan (kali ukuran petak)
   const SLIDE_MS = 750;          // lama meluncur di ular / tangga
   const MAX_QUEUE = 40;          // antrean lebih panjang dari ini: langsung loncat ke posisi server
-  const LEADERS_IN_STRIP = 5;
+  const LEADERS_IN_STRIP = 6;
   const ITEM_ICON = { serang: '💥', beku: '🧊', tangkis: '🛡️', pantul: '🪞', tukar: '🔀', jebakan: '🪤' };
   const PAWN_COLORS = ['#ef4444', '#f97316', '#facc15', '#84cc16', '#22c55e', '#38bdf8', '#3b82f6', '#8b5cf6', '#d946ef', '#ec4899', '#f8fafc', '#d6a36b'];
   const DICE_SHOW_MS = 1600;     // lama dadu kecil tampil di atas bidak
@@ -412,7 +418,7 @@
     if (sc > 0.5) {
       ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
       if (p.i && p.i.length) { ctx.font = Math.round(cell * 0.24 * sc) + 'px sans-serif'; ctx.fillText(p.i.map((k) => ITEM_ICON[k] || '').join(''), x, by + cell * 0.2 * sc); }
-      if (p.fu && p.fu > Date.now() + clockOffset) { ctx.font = Math.round(cell * 0.34 * sc) + 'px sans-serif'; ctx.fillText('🧊', x - bw - cell * 0.05, hy); }
+      if (p.sk) { ctx.font = Math.round(cell * 0.34 * sc) + 'px sans-serif'; ctx.fillText('🧊', x - bw - cell * 0.05, hy); }
     }
     if (p.r) {
       ctx.font = Math.round(cell * 0.5 * Math.max(0.6, sc)) + 'px sans-serif'; ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
@@ -734,7 +740,7 @@
         ? 'Belum ada yang sampai 100. Paling dekat: ' + m.closest.join(', ')
         : 'Belum ada yang sampai petak 100.';
     } else if (m.finishers.length < m.winnersNeeded) {
-      note.textContent = 'Waktu habis sebelum juara terisi semua.' + (m.closest && m.closest.length ? ' Paling dekat: ' + m.closest.join(', ') : '');
+      note.textContent = (m.endReason === 'timeout' ? 'Waktu habis sebelum juara terisi semua.' : 'Tinggal satu pemain tersisa, ronde selesai.') + (m.closest && m.closest.length ? ' Paling dekat: ' + m.closest.join(', ') : '');
     } else {
       note.textContent = 'Papan baru sebentar lagi…';
     }
@@ -751,7 +757,9 @@
     hit: (e) => ITEM_ICON[e.it] + ' ' + e.a + ' → ' + e.b,
     block: (e) => e.b ? '🛡️ ' + e.b + ' menangkis ' + ITEM_ICON[e.it] + ' dari ' + e.a : '🛡️ ' + e.a + ' menangkis gigitan',
     reflect: (e) => '🪞 ' + e.a + ' memantulkan ' + ITEM_ICON[e.it] + ' ke ' + e.b,
-    trap: (e) => '🪤 ' + e.b + ' kena jebakan ' + e.a
+    trap: (e) => '🪤 ' + e.b + ' kena jebakan ' + e.a,
+    join: (e) => '👋 ' + e.a + ' gabung',
+    skip: (e) => '🧊 ' + e.a + ' beku, giliran dilewati'
   };
 
   // ---------- banner event global ----------
@@ -786,19 +794,19 @@
   let stripSig = '';
   function renderStrip(m) {
     const top = (m.players || []).slice(0, LEADERS_IN_STRIP);
-    const sig = top.map((p) => [p.n, p.c, p.p, p.r, scores.get(p.n) || 0, (avatars.get(p.n) || {}).url || (avatars.get(p.n) || {}).emoji || '', (p.i || []).join(','), p.g || ''].join('|')).join(';');
+    const sig = top.map((p) => [p.n, p.c, p.p, p.r, scores.get(p.n) || 0, (avatars.get(p.n) || {}).url || (avatars.get(p.n) || {}).emoji || '', (p.i || []).join(','), p.g || '', p.sk || 0, p.n === m.turn ? 1 : 0].join('|')).join(';');
     if (sig === stripSig) return;
     stripSig = sig;
     leadStrip.textContent = '';
     top.forEach((p) => {
       const av = avatars.get(p.n);
-      const box = document.createElement('div'); box.className = 'lead' + (p.r ? ' done' : '');
+      const box = document.createElement('div'); box.className = 'lead' + (p.r ? ' done' : '') + (p.n === m.turn ? ' turn' : '');
       const circle = document.createElement('div'); circle.className = 'av';
       if (av && av.url) { const img = document.createElement('img'); img.referrerPolicy = 'no-referrer'; img.src = av.url; circle.appendChild(img); }
       else if (av && av.emoji) circle.textContent = av.emoji;
       else circle.textContent = p.n.charAt(0).toUpperCase();
       const bar = document.createElement('div'); bar.className = 'bar'; bar.style.background = pawnColor(p);
-      const nm = document.createElement('div'); nm.className = 'nm'; nm.textContent = (p.r ? (MEDALS[p.r - 1] || '🏅') + ' ' : '') + p.n;
+      const nm = document.createElement('div'); nm.className = 'nm'; nm.textContent = (p.r ? (MEDALS[p.r - 1] || '🏅') + ' ' : '') + (p.sk ? '🧊 ' : '') + p.n;
       const ps = document.createElement('div'); ps.className = 'ps'; ps.textContent = '📍 ' + p.p + ' · ⭐ ' + (scores.get(p.n) || 0);
       const its = document.createElement('div'); its.className = 'ps';
       its.textContent = (p.i || []).map((k) => ITEM_ICON[k] || '').join('') + (p.g ? ' ' + (ITEM_ICON[p.g] || '') : '');
@@ -813,11 +821,38 @@
     chipPlayers.textContent = '👥 ' + m.totalPlayers;
   }
 
+  // ---------- bar lobi / giliran ----------
+  const turnBar = document.getElementById('turnBar');
+  function renderTurn() {
+    const m = game;
+    if (!m) return;
+    const now = Date.now() + clockOffset;
+    if (m.phase === 'lobby') {
+      const names = (m.queue || []).join(', ');
+      const need = Math.max(0, m.lobby.min - (m.totalPlayers || 0));
+      turnBar.className = 'lobby';
+      if (m.lobby.endsAt) {
+        turnBar.textContent = '⏳ Mulai dalam ' + Math.max(0, Math.ceil((m.lobby.endsAt - now) / 1000)) + ' dtk · komen join/main/gabung! · ' + names;
+      } else {
+        turnBar.textContent = '👋 Komen join / main / gabung! Butuh ' + need + ' pemain lagi' + (names ? ' · ' + names : '');
+      }
+    } else if (m.phase === 'racing' && m.turn) {
+      const next = (m.queue || []).slice(1, 3);
+      turnBar.className = '';
+      turnBar.textContent = '🎲 Giliran: ' + m.turn + (next.length ? ' → ' + next.join(' → ') : '');
+    } else {
+      turnBar.className = '';
+      turnBar.textContent = '';
+    }
+  }
+
   setInterval(() => {
     if (!game) return;
     if (game.phase === 'racing') chipTime.textContent = '⏱ ' + fmtTime(game.endsAt - (Date.now() + clockOffset));
+    else if (game.phase === 'lobby') chipTime.textContent = '⏱ lobi';
     else chipTime.textContent = '⏱ selesai';
     renderEvent();
+    renderTurn();
   }, 250);
 
   // ---------- socket ----------
@@ -831,7 +866,7 @@
       lastRound = m.round; lastFinishCount = 0;
       disp.clear(); rollQueue.length = 0; lastShownSeq = 0;
       podiumEl.classList.remove('show');
-      diceWho.textContent = 'Ketik "lempar" buat mulai!'; diceSub.textContent = '';
+      diceWho.textContent = 'Komen "join" buat ikut!'; diceSub.textContent = '';
     }
     if (newRound || firstSync) buildGeo(m);
 
@@ -879,7 +914,8 @@
     updateHud(m);
     renderStrip(m);
     renderEvent();
-    howto.innerHTML = 'Komen <b>lempar</b> (atau <b>dadu</b> / <b>roll</b>) buat melempar dadu, tiap ' + Math.round((m.cooldownMs || 5000) / 1000) + ' detik. Sampai petak <b>100</b> duluan! Harus pas, kalau lebih bakal memantul.<br>Petak ❓ kasih item: komen <b>serang</b> · <b>beku</b> · <b>tangkis</b> · <b>pantul</b> · <b>tukar</b> · <b>jebakan</b> (target tertentu: <b>serang 1</b> = peringkat 1).';
+    howto.innerHTML = 'Komen <b>join</b> / <b>main</b> / <b>gabung</b> buat ikut, kapan saja. Dadu dilempar <b>otomatis bergiliran</b>. Sampai petak <b>100</b> duluan! Harus pas, kalau lebih bakal memantul.<br>Petak ❓ kasih item: komen <b>serang</b> · <b>beku</b> · <b>tangkis</b> · <b>pantul</b> · <b>tukar</b> · <b>jebakan</b> (target tertentu: <b>serang 1</b> = peringkat 1).';
+    renderTurn();
 
     // lemparan baru -> antrean panel dadu (jangan putar ulang lemparan lama waktu halaman baru dibuka)
     const recent = m.recentRolls || [];
@@ -889,7 +925,7 @@
     renderRecent(recent);
     nextRoll();
 
-    if (m.phase === 'racing') {
+    if (m.phase === 'racing' || m.phase === 'lobby') {
       podiumEl.classList.remove('show');
     } else if (!podiumEl.classList.contains('show')) {
       renderPodium(m);
