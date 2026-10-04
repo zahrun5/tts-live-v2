@@ -1084,8 +1084,6 @@ function handleLike(name, now, count = 1) {
   const taps = Number.isFinite(count) && count > 0 ? Math.floor(count) : 1;
   p.stamina = Math.min(STAMINA_MAX, p.stamina + STAMINA_PER_LIKE * taps);
   p.lastActive = now;
-  // FIX: tiap LIKE tap = 1 poin leaderboard, biar skor naik walau belum finish
-  if (awardPoints) awardPoints(name, taps);
   scheduleBroadcast();
 }
 

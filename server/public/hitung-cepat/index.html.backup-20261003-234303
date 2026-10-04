@@ -58,8 +58,8 @@ body::before {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  padding: 1vh 2vw;
-  gap: 1vh;
+  padding: 2vh 2vw;
+  gap: 2vh;
   position: relative;
   z-index: 1;
 }
@@ -114,11 +114,10 @@ body::before {
 
 .grid-container {
   flex: 1;
-  min-height: 0;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  gap: clamp(8px, 1.5vh, 18px);
+  gap: clamp(12px, 2vh, 24px);
   max-width: 1400px;
   margin: 0 auto;
   width: 100%;
@@ -228,26 +227,55 @@ body::before {
   display: none;
   flex-direction: column;
   align-items: center;
+  animation: avatarBounceIn 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
 .question-slot.solved .avatar-container {
   display: flex;
 }
 
+@keyframes avatarBounceIn {
+  0% { transform: scale(0) translateY(-50px); opacity: 0; }
+  50% { transform: scale(1.15) translateY(-5px); }
+  100% { transform: scale(1) translateY(0); opacity: 1; }
+}
+
+.avatar-container img,
+.avatar-container .emoji {
+  width: clamp(60px, 12vw, 90px);
+  height: clamp(60px, 12vw, 90px);
+  border-radius: 50%;
+  border: 3px solid var(--gold);
+  box-shadow: 
+    0 8px 24px rgba(245, 158, 11, 0.4),
+    0 0 20px rgba(245, 158, 11, 0.3);
+  object-fit: cover;
+  animation: avatarFloat 3s ease-in-out infinite;
+}
+
+.avatar-container .emoji {
+  font-size: clamp(60px, 12vw, 90px);
+  line-height: 1;
+  border: none;
+  filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.4));
+}
+
+@keyframes avatarFloat {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-12px); }
+}
+
 .winner-name {
-  font-size: clamp(0.75rem, 1.6vw, 1rem);
+  font-size: clamp(0.9rem, 2vw, 1.3rem);
   font-weight: 700;
   color: var(--gold);
-  margin-top: 0.5rem;
+  margin-top: 0.8rem;
+  text-shadow: 0 2px 8px rgba(245, 158, 11, 0.5);
   text-align: center;
-  max-width: 140px;
+  max-width: 150px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  background: rgba(245,158,11,0.12);
-  padding: 0.2rem 0.7rem;
-  border-radius: 50px;
-  border: 1px solid rgba(245,158,11,0.3);
 }
 
 #leaderboard {
@@ -381,7 +409,7 @@ body::before {
 #voteHintInline{flex:0 0 auto;overflow:hidden;white-space:nowrap;font-size:clamp(.7rem,1.6vw,.9rem);color:var(--text-muted);text-align:center}
 #voteHintInline .marquee-track{display:inline-block;padding-left:100%;animation:hcMarquee 28s linear infinite}
 @keyframes hcMarquee{from{transform:translateX(0)}to{transform:translateX(-100%)}}
-#avatarZone{flex:0 0 auto;height:clamp(70px,10vh,110px);min-height:70px;position:relative;background:transparent;overflow:visible}
+#avatarZone{flex:0 0 auto;height:clamp(60px,13vh,120px);position:relative;background:transparent;overflow:visible}
 .mini-avatar{position:absolute;bottom:4px;display:flex;flex-direction:column;align-items:center;pointer-events:none;will-change:left}
 .mini-avatar .emoji{display:block;font-size:26px;line-height:1;animation:avatarBob .5s ease-in-out infinite alternate}
 .mini-avatar.facing-right .emoji{transform:scaleX(-1)}
@@ -429,9 +457,26 @@ function renderQuestions(questions, avatarType) {
     const avatarContainer = document.createElement('div');
     avatarContainer.className = 'avatar-container';
     if (q.solved && q.winner) {
+      if (avatarType === 'tiktok' && q.winner.profileUrl) {
+        const img = document.createElement('img');
+        img.src = q.winner.profileUrl;
+        img.alt = q.winner.name;
+        img.onerror = function() {
+          const emoji = document.createElement('span');
+          emoji.className = 'emoji';
+          emoji.innerText = q.winner.emoji;
+          this.replaceWith(emoji);
+        };
+        avatarContainer.appendChild(img);
+      } else {
+        const emoji = document.createElement('span');
+        emoji.className = 'emoji';
+        emoji.innerText = q.winner.emoji;
+        avatarContainer.appendChild(emoji);
+      }
       const winnerName = document.createElement('div');
       winnerName.className = 'winner-name';
-      winnerName.innerText = '✅ ' + q.winner.name;
+      winnerName.innerText = q.winner.name;
       avatarContainer.appendChild(winnerName);
     }
     slot.appendChild(slotNumber);
@@ -520,24 +565,11 @@ document.addEventListener('visibilitychange', () => {
   if (document.visibilityState === 'visible' && wakeLock === null) requestWakeLock();
 });
 requestWakeLock();
-// Fullscreen: masuk saat klik pertama, auto-restore kalau keluar tanpa sengaja
-let fsLocked = false;
-function enterFullscreen() {
-  if (!document.fullscreenElement) {
-    document.documentElement.requestFullscreen().catch(() => {});
-  }
-  requestWakeLock();
-}
 document.body.addEventListener('click', function goFullscreen() {
-  fsLocked = true;
-  enterFullscreen();
+  document.documentElement.requestFullscreen().catch(() => {});
+  requestWakeLock();
+  document.body.removeEventListener('click', goFullscreen);
 }, { once: true });
-document.addEventListener('fullscreenchange', () => {
-  // Kalau fullscreen keluar tapi bukan karena user tekan Esc/F11
-  if (!document.fullscreenElement && fsLocked) {
-    setTimeout(enterFullscreen, 300);
-  }
-});
 </script>
 <script src="/shared/vote-overlay.js"></script>
 </body>

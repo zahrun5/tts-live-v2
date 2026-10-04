@@ -16,7 +16,7 @@ const { getAllFallbackWords } = require('./fallback-manager');
 
 const WORDBANK_PATH = path.join(__dirname, 'fallback-wordbank.json');
 const USED_WORDS_PATH = path.join(__dirname, 'used-words.json');
-const USED_HISTORY_LIMIT = 300; // digedein karena sumber kata sekarang gabungan static + bank AI
+const USED_HISTORY_LIMIT = 900; // digedein karena sumber kata sekarang gabungan static + bank AI
 
 // Gabungan kata statis (fallback-wordbank.json, selalu ada dari awal) +
 // kata hasil AI yang udah ditabung ai-worker.js ke fallback/bank-*.json.

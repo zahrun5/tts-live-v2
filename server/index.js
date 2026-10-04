@@ -77,6 +77,38 @@ app.get('/overlay/:username', async (req, res) => {
   }
 });
 
+// ── OVERLAY SHELL (iframe wrapper, fullscreen-safe) ──────────────────────────
+// Halaman wrapper permanen; game di-load di iframe supaya fullscreen tidak
+// hilang saat ganti game (iframe.src di-swap, bukan reload parent).
+app.get('/overlay-shell/:username', async (req, res) => {
+  res.setHeader('Cache-Control', 'no-store');
+  try {
+    const room = await roomManager.getRoom(req.params.username);
+    if (!room) return res.status(404).send('User tidak ditemukan');
+    let html = fs.readFileSync(path.join(PUBLIC_DIR, 'shared/overlay-shell.html'), 'utf8');
+    const inject = '<script>window.__SHELL_USERNAME__ = ' + JSON.stringify(req.params.username) + ';</script>\n';
+    html = html.replace('</head>', inject + '</head>');
+    res.type('html').send(html);
+  } catch (err) { res.status(500).send('Error'); }
+});
+
+// Versi game HTML untuk di-load di dalam iframe (sama seperti /overlay/:username tapi pakai gameId tertentu)
+app.get('/overlay-game/:username/:gameId', async (req, res) => {
+  res.setHeader('Cache-Control', 'no-store');
+  try {
+    const room = await roomManager.getRoom(req.params.username);
+    if (!room) return res.status(404).send('User tidak ditemukan');
+    const gameId = req.params.gameId;
+    const gamePath = path.join(PUBLIC_DIR, gameId, 'index.html');
+    if (!fs.existsSync(gamePath)) return res.status(404).send('Game tidak ditemukan: ' + gameId);
+    const cfg = JSON.stringify({ username: room.username }).replace(/</g, '\u003c');
+    const injection = '<script>window.TTS_LIVE_V2_CONFIG = ' + cfg + ';</script>\n';
+    let html = fs.readFileSync(gamePath, 'utf8');
+    html = html.includes('</head>') ? html.replace('</head>', () => injection + '</head>') : injection + html;
+    res.type('html').send(html);
+  } catch (err) { res.status(500).send('Error'); }
+});
+
 // Game V1 masih manggil ini buat state awal; di V2 state dikirim lewat socket,
 // jadi jawab kosong (bukan HTML SPA) biar nggak bikin error parse.
 app.get('/api/grid', (req, res) => res.json({}));
@@ -98,6 +130,18 @@ io.on('connection', (socket) => {
       room.sendFullState(socket);
     } catch (err) {
       console.error('[Socket] join-overlay gagal:', err.message);
+    }
+  });
+
+  // Shell overlay: join room + kirim gameId aktif buat load iframe pertama kali
+  socket.on('join-shell', async (username) => {
+    try {
+      const room = await roomManager.getRoom(username);
+      if (!room) return;
+      socket.join(room.roomName);
+      socket.emit('shell:init', { gameId: room.activeGameId });
+    } catch (err) {
+      console.error('[Socket] join-shell gagal:', err.message);
     }
   });
 });

@@ -22,7 +22,7 @@ const OUTPUT_FILE = path.join(__dirname, 'puzzle.json');
 const USED_WORDS_FILE = path.join(__dirname, 'used-words.json');
 
 const MAX_AI_ATTEMPTS = 3;
-const USED_WORDS_HISTORY_LIMIT = 60; // biar gak muter-muter kata itu lagi terus
+const USED_WORDS_HISTORY_LIMIT = 600; // biar gak muter-muter kata itu lagi terus
 const POOL_SIZE_TARGET = 22; // minta AI bikin sekitar segini
 const SUBSET_MAX = 6; // target jumlah kata final (dicoba dari sini turun)
 const SUBSET_MIN = 4; // paling kecil yang masih dianggap layak jadi puzzle

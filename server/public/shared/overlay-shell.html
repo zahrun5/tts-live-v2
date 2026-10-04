@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang=id>
+<head>
+<meta charset=UTF-8>
+<meta name=viewport content=width=device-width, initial-scale=1.0>
+<title>Overlay Shell</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { width: 100%; height: 100%; background: #000; overflow: hidden; }
+#game-frame { width: 100%; height: 100%; border: none; display: block; }
+#fs-hint {
+  position: fixed; inset: 0; background: rgba(0,0,0,0.85);
+  display: flex; align-items: center; justify-content: center;
+  flex-direction: column; gap: 1rem; color: #f3f4f6;
+  font-family: sans-serif; font-size: 1.4rem; font-weight: 700;
+  cursor: pointer; z-index: 9999; letter-spacing: 1px;
+}
+#fs-hint span { font-size: 3rem; }
+#switching-banner {
+  position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%);
+  background: rgba(139,92,246,0.9); color: #fff;
+  padding: 1rem 2.5rem; border-radius: 50px;
+  font-family: sans-serif; font-size: 1.2rem; font-weight: 700;
+  display: none; z-index: 9998; pointer-events: none; letter-spacing: 1px;
+}
+</style>
+</head>
+<body>
+
+<div id=fs-hint><span>🎮</span>Klik untuk masuk Fullscreen</div>
+<div id=switching-banner>🔀 Ganti game...</div>
+<iframe id=game-frame src= allowfullscreen></iframe>
+
+<script src=/socket.io/socket.io.js></script>
+<script>
+var USERNAME = window.__SHELL_USERNAME__ || '';
+var frame = document.getElementById('game-frame');
+var hint = document.getElementById('fs-hint');
+var banner = document.getElementById('switching-banner');
+var fsLocked = false;
+var currentGameId = null;
+
+function enterFullscreen() {
+  if (!document.fullscreenElement)
+    document.documentElement.requestFullscreen().catch(function(){});
+}
+
+hint.addEventListener('click', function() {
+  fsLocked = true;
+  hint.style.display = 'none';
+  enterFullscreen();
+});
+
+document.addEventListener('fullscreenchange', function() {
+  if (!document.fullscreenElement && fsLocked) setTimeout(enterFullscreen, 300);
+});
+
+function loadGame(gameId, force) {
+  if (!gameId) return;
+  // Kalau game sama dan tidak di-force, tetap reload (pakai timestamp agar URL unik)
+  currentGameId = gameId;
+  banner.style.display = 'block';
+  // Reset src dulu ke kosong agar iframe benar-benar reload meski URL sama
+  frame.src = '';
+  setTimeout(function() {
+    frame.src = '/overlay-game/' + USERNAME + '/' + gameId + '?t=' + Date.now();
+    frame.onload = function() { banner.style.display = 'none'; };
+  }, 50);
+}
+
+var socket = io({ reconnection: true, reconnectionDelay: 1000 });
+
+socket.on('connect', function() {
+  socket.emit('join-shell', USERNAME);
+});
+
+// shell:init: server kirim gameId aktif saat connect/reconnect
+socket.on('shell:init', function(data) {
+  if (data && data.gameId) loadGame(data.gameId);
+});
+
+// game:switched: server ganti game → swap iframe
+socket.on('game:switched', function(payload) {
+  if (payload && payload.gameId) {
+    setTimeout(function() { loadGame(payload.gameId); }, 200);
+  }
+});
+
+// force-reload dari server → reload iframe juga
+socket.on('force-reload', function() {
+  if (currentGameId) loadGame(currentGameId);
+});
+</script>
+</body>
+</html>

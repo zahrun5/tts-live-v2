@@ -695,13 +695,29 @@ function Dashboard() {
             <code className="flex-1 px-4 py-3 text-sm text-emerald-300 bg-slate-900/70 border border-slate-700/50 rounded-xl select-all overflow-x-auto font-mono">
               https://live.albiontools.fun/overlay/{user.username}
             </code>
+          </div>
+        </div>
+
+        {/* Fullscreen PC Link */}
+        <div className="mt-4 p-6 backdrop-blur-xl bg-gradient-to-br from-slate-800/50 to-indigo-900/30 border border-white/10 rounded-2xl shadow-2xl">
+          <div className="flex items-center gap-2 mb-4">
+            <span className="text-2xl">🖥️</span>
+            <div>
+              <h2 className="font-bold text-white text-lg">Fullscreen PC</h2>
+              <p className="text-xs text-slate-400">Buka di browser PC — fullscreen otomatis terjaga saat ganti game</p>
+            </div>
+          </div>
+          <div className="flex items-center gap-3">
+            <code className="flex-1 px-4 py-3 text-sm text-purple-300 bg-slate-900/70 border border-slate-700/50 rounded-xl select-all overflow-x-auto font-mono">
+              https://live.albiontools.fun/overlay-shell/{user.username}
+            </code>
             <a
-              href={'/overlay/' + user.username}
+              href={'https://live.albiontools.fun/overlay-shell/' + user.username}
               target="_blank"
               rel="noopener noreferrer"
-              className="px-5 py-3 font-medium text-white bg-gradient-to-r from-blue-600 to-cyan-600 rounded-xl hover:from-blue-500 hover:to-cyan-500 transition-all shadow-lg hover:shadow-blue-500/50 whitespace-nowrap"
+              className="px-5 py-3 font-medium text-white bg-gradient-to-r from-purple-600 to-indigo-600 rounded-xl hover:from-purple-500 hover:to-indigo-500 transition-all shadow-lg hover:shadow-purple-500/50 whitespace-nowrap"
             >
-              🚀 Buka
+              🖥️ Buka
             </a>
           </div>
         </div>

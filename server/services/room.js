@@ -12,6 +12,14 @@
 
 const fs = require('fs');
 const path = require('path');
+
+// ── Ghost Bot (Nindy cs) ─────────────────────────────────────────────────────
+const GHOST_NAMES = ['Nindy', 'Rara', 'Sinta', 'Amel', 'Devi', 'Tiara', 'Nisa', 'Putri', 'Lala', 'Mega'];
+const GHOST_TIMEOUT_MS = 45 * 1000; // 2 menit tidak ada jawaban
+const GHOST_SKIP_GAMES = new Set(['ular-tangga', 'labirin', 'memory-card', 'spam-tap']);
+function ghostName() { return GHOST_NAMES[Math.floor(Math.random() * GHOST_NAMES.length)]; }
+// ─────────────────────────────────────────────────────────────────────────────
+
 const createVoteController = require('../vote-controller');
 
 const MODE_RANDOM = 'random';
@@ -95,6 +103,8 @@ class Room {
     this.voteController = null;
     this.initialSettings = settings || {};
     this.avatarType = this.initialSettings.avatarType || 'emoji';
+    this.lastAnswerTime = Date.now();
+    this.ghostTimer = null;
   }
 
   // ---------- lifecycle ----------
@@ -131,6 +141,7 @@ class Room {
     await this.activeGame.init();
     this.bindBroadcaster();
     await this.ensureRoundReady();
+    // Ghost bot distart via setLiveStatus saat live connect, bukan saat room start
 
     this.voteController = createVoteController({
       safeEmit: (event, payload) => this.emit(event, payload),
@@ -181,7 +192,7 @@ class Room {
         // poin tambahan di luar jawaban benar (mis. poin ikut serta Ular Tangga)
         (player, points) => {
           this.addScore(player, points);
-          this.emit('leaderboard:update', this.buildLeaderboardPayload());
+          this.emit('leaderboard:update', this.buildLeaderboardPayload()); this.emit('scores:update', this.buildFullScorePayload());
         }
       );
     }
@@ -239,7 +250,7 @@ class Room {
     } catch (err) {
       console.error(`[Room ${this.username}] buildStatePayload gagal:`, err.message);
     }
-    this.emitTo(socket, 'leaderboard:update', this.buildLeaderboardPayload());
+    this.emitTo(socket, 'leaderboard:update', this.buildLeaderboardPayload()); this.emitTo(socket, 'scores:update', this.buildFullScorePayload());
     this.emitTo(socket, 'live:status', this.liveStatus);
     this.emitTo(socket, 'status', { connected: this.liveStatus.active });
     this.emitTo(socket, 'avatar:sync', Object.entries(this.sessionAvatars).map(([player, d]) => ({ player, emoji: d.emoji, profileUrl: d.profileUrl, avatarType: this.avatarType })));
@@ -260,6 +271,11 @@ class Room {
       .slice(0, 10);
   }
 
+  buildFullScorePayload() {
+    return Object.fromEntries(
+      Object.entries(this.leaderboard)
+    );
+  }
   getHighestScore() {
     return Math.max(0, ...Object.values(this.leaderboard));
   }
@@ -283,7 +299,7 @@ class Room {
     this.leaderboard = {};
     this.unlockedLevels = { 2: false, 3: false };
     this.saveState();
-    this.emit('leaderboard:update', this.buildLeaderboardPayload());
+    this.emit('leaderboard:update', this.buildLeaderboardPayload()); this.emit('scores:update', this.buildFullScorePayload());
   }
 
   // ---------- avatar ----------
@@ -333,6 +349,9 @@ class Room {
     this.emit('live:status', this.liveStatus);
     this.emit('status', { connected: !!active });
     if (isNewSession) this.resetSessionAvatars();
+    // Ghost bot hanya aktif saat live berlangsung
+    if (!!active) this.startGhostBot();
+    else this.stopGhostBot();
   }
 
   // ---------- pengaturan dari dashboard ----------
@@ -404,7 +423,7 @@ class Room {
     this.saveState();
 
     this.emit('game:switched', { gameId, state: this.activeGame.buildStatePayload(), mode: this.mode });
-    this.emit('leaderboard:update', this.buildLeaderboardPayload());
+    this.emit('leaderboard:update', this.buildLeaderboardPayload()); this.emit('scores:update', this.buildFullScorePayload());
     return { ok: true, id: gameId };
   }
 
@@ -435,7 +454,7 @@ class Room {
       this.saveState();
       const statePayload = this.activeGame.buildStatePayload();
       this.emit('game:switched', { gameId: nextId, state: statePayload, mode: this.mode });
-      this.emit('leaderboard:update', this.buildLeaderboardPayload());
+      this.emit('leaderboard:update', this.buildLeaderboardPayload()); this.emit('scores:update', this.buildFullScorePayload());
       this.emit('update', statePayload);
       this.emit('puzzle:new', {
         clues: this.activeGame.buildClueList ? this.activeGame.buildClueList() : null,
@@ -565,11 +584,59 @@ class Room {
     }
   }
 
+  // ── Ghost Bot ──────────────────────────────────────────────────────────────
+  startGhostBot() {
+    this.stopGhostBot();
+    this.lastAnswerTime = Date.now();
+    this.ghostTimer = setInterval(async () => {
+      try {
+        if (!this.activeGame || !this.activeGameId) return;
+        if (GHOST_SKIP_GAMES.has(this.activeGameId)) return;
+        if (Date.now() - this.lastAnswerTime < GHOST_TIMEOUT_MS) return;
+        if (!this.activeGame.getAdminAnswers) return;
+
+        const { items } = this.activeGame.getAdminAnswers();
+        const unsolved = (items || []).filter(it => !it.solved && it.answer);
+        if (unsolved.length === 0) return;
+
+        // Pilih satu jawaban unsolved secara random
+        const pick = unsolved[Math.floor(Math.random() * unsolved.length)];
+        const name = ghostName();
+        const answer = String(pick.answer).trim();
+
+        console.log();
+
+        // Parse dulu supaya format payload cocok dengan game
+        let parsed = null;
+        if (this.activeGame.parseComment) {
+          parsed = await this.activeGame.parseComment(answer);
+        }
+        if (parsed) {
+          await this.handleAnswer({ ...parsed, player: name });
+        } else {
+          // Fallback: inject langsung sebagai answer field
+          await this.handleAnswer({ answer, player: name });
+        }
+
+        // Reset timer setelah jawab
+        this.lastAnswerTime = Date.now();
+      } catch (err) {
+        console.error('[GhostBot] error:', err.message);
+      }
+    }, 30_000); // cek tiap 30 detik
+  }
+
+  stopGhostBot() {
+    if (this.ghostTimer) { clearInterval(this.ghostTimer); this.ghostTimer = null; }
+  }
+  // ───────────────────────────────────────────────────────────────────────────
+
   // Setara POST /api/answer di server.js V1.
   async handleAnswer(payload) {
     const game = this.activeGame;
     const result = game.handleAnswer(payload);
     if (!result.ok) return result;
+    this.lastAnswerTime = Date.now(); // reset ghost bot timer
 
     const player = payload.player || 'Anonim';
     this.addScore(player, result.points || 0);
@@ -589,7 +656,7 @@ class Room {
     }
 
     this.emit('update', game.buildStatePayload());
-    this.emit('leaderboard:update', this.buildLeaderboardPayload());
+    this.emit('leaderboard:update', this.buildLeaderboardPayload()); this.emit('scores:update', this.buildFullScorePayload());
     this.emit('answer:correct', { player, points: result.points || 0, ...(result.meta || {}) });
 
     if (game.isComplete()) this.handleRoundCompleted();

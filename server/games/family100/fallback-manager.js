@@ -87,11 +87,11 @@ function pickFallbackQuestion(usedQuestions) {
   const notUsed = all.filter(q => !usedQuestions.includes(q.question));
 
   if (notUsed.length > 0) {
-    return notUsed[0];
+    return notUsed[Math.floor(Math.random() * notUsed.length)];
   }
 
-  // Semua udah kepakai, reset
-  return all[0];
+  // Semua udah kepakai, reset — pilih acak juga
+  return all[Math.floor(Math.random() * all.length)];
 }
 
 function getTotalCount() {

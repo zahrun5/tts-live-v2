@@ -487,41 +487,28 @@ body::before {
 @media (orientation: landscape) {
   #app {
     display: grid;
-    grid-template-columns: minmax(220px, 28%) 1fr;
-    grid-template-rows: 1fr auto;
-    grid-template-areas: "letters answers" "avatars answers";
-    gap: 1.2vh 1.6vw;
-    padding: 1.5vh 1.5vw;
+    grid-template-columns: 1fr minmax(240px, 32%);
+    grid-template-rows: auto auto 1fr;
+    grid-template-areas: "letters letters" "avatars avatars" "answers answers";
+    gap: 1.4vh 1.6vw;
+    padding: 2vh 2.4vw;
   }
   #letterPanel {
     grid-area: letters;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
   }
   #letterWheel {
-    width: min(22vh, 20vw);
-    height: min(22vh, 20vw);
+    width: min(18vh, 16vw);
+    height: min(18vh, 16vw);
     margin: 0;
   }
   #avatarZone {
     grid-area: avatars;
-    height: 60px;
-    min-height: 60px;
   }
   #answerWrap {
     grid-area: answers;
     min-width: 0;
-    align-items: center;
-  }
-  #answerList {
-    max-width: none;
-    width: 100%;
-  }
-  #leaderboard {
-    top: 8px;
-    right: 8px;
-    max-width: 200px;
   }
 }
 </style>
@@ -552,7 +539,10 @@ body::before {
   <div id="banner"></div>
 
   <script src="/socket.io/socket.io.js"></script>
-  <script>const socket = io();</script>
+    <script src="/shared/v2-bootstrap.js"></script>
+  <script>
+    const socket = io();
+  </script>
   <script src="/shared/v2-bootstrap.js"></script>
   <script src="/shared/game-switch-watcher.js"></script>
   <script>
