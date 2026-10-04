@@ -319,6 +319,15 @@ function getAdminAnswers() {
   };
 }
 
+
+function tryGhostAnswer() {
+  const unsolved = state.items.filter(it => !it.solved);
+  if (unsolved.length === 0) return null;
+  const pick = unsolved[Math.floor(Math.random() * unsolved.length)];
+  const answer = pick.synonyms[0];
+  return { number: pick.number, answer };
+}
+
 module.exports = {
   id: 'sinonim-kata',
   init,
@@ -332,5 +341,6 @@ module.exports = {
   revealRandomAnswer,
   parseComment,
   getBankStats,
-  resetBankCycle
+  resetBankCycle,
+  tryGhostAnswer
 };
