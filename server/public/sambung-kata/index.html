@@ -130,8 +130,8 @@ body::before {
   position: absolute;
   top: 0;
   left: 0;
-  width: 26%;
-  height: 26%;
+  width: 22%;
+  height: 22%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -142,7 +142,7 @@ body::before {
   border: 2px solid var(--glass-border);
   border-radius: 50%;
   font-weight: 900;
-  font-size: clamp(1.2rem, 4vw, 2rem);
+  font-size: clamp(1rem, 3vw, 1.6rem);
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
   animation: letterFloat 3s ease-in-out infinite;
 }
@@ -487,9 +487,9 @@ body::before {
 @media (orientation: landscape) {
   #app {
     display: grid;
-    grid-template-columns: minmax(220px, 28%) 1fr;
-    grid-template-rows: 1fr auto;
-    grid-template-areas: "letters answers" "avatars answers";
+    grid-template-columns: minmax(200px, 28%) 1fr;
+    grid-template-rows: auto auto 1fr;
+    grid-template-areas: "letters grid" "avatars avatars" "answers answers";
     gap: 1.2vh 1.6vw;
     padding: 1.5vh 1.5vw;
   }
@@ -514,6 +514,12 @@ body::before {
     min-width: 0;
     align-items: center;
   }
+  #gridWrap {
+    grid-area: grid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   #answerList {
     max-width: none;
     width: 100%;
@@ -523,6 +529,46 @@ body::before {
     right: 8px;
     max-width: 200px;
   }
+}
+
+#gridWrap {
+  flex: 1.5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 0;
+}
+#grid {
+  display: grid;
+  gap: 2px;
+}
+.cell {
+  position: relative;
+  background: transparent;
+}
+.cell.open {
+  background: var(--cell-bg, #f3f4f6);
+  border-radius: 3px;
+  box-shadow: 0 2px 8px rgba(26,15,46,0.1);
+}
+.cell .num {
+  position: absolute;
+  top: 1px;
+  left: 3px;
+  font-size: 0.26em;
+  font-weight: 700;
+  color: var(--accent-purple);
+}
+.cell .letter {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  color: #1a0f2e;
+  font-size: 0.5em;
+  font-family: 'Poppins', sans-serif;
 }
 </style>
 </head>
@@ -536,6 +582,10 @@ body::before {
       <div id="letterWheel"><div class="hub"></div></div>
       <div id="voteHintInline"><div class="marquee-track">💬 Komen <b>SKIP 10x</b> rame-rame kalo kesulitan &nbsp;•&nbsp; ketik <b>GANTI 10x</b> buat ganti game &nbsp;•&nbsp; kalo kalian nggak bisa nerima kenyataan dari kekalahan, komen <b>NYERAH 10x</b> 🤣🤣🤣 niscaya aku kasih jawabannya</div></div>
     </div>
+    <div id="gridWrap">
+      <div id="grid"></div>
+    </div>
+
 
     <div id="avatarZone"></div>
 
@@ -610,6 +660,49 @@ body::before {
       });
     }
 
+
+    function renderGrid(data) {
+      const gridEl = document.getElementById('grid');
+      const gridWrap = document.getElementById('gridWrap');
+      if (!data || !data.board) {
+        gridWrap.style.display = 'none';
+        return;
+      }
+      const { board, size } = data.board;
+      const rows = size.rows;
+      const cols = size.cols;
+      if (!rows || !cols) {
+        gridWrap.style.display = 'none';
+        return;
+      }
+      gridWrap.style.display = 'flex';
+      const cellSize = Math.floor(Math.min(gridWrap.clientWidth / cols, gridWrap.clientHeight / rows));
+      gridEl.style.gridTemplateColumns = `repeat(${cols}, ${cellSize}px)`;
+      gridEl.style.gridTemplateRows = `repeat(${rows}, ${cellSize}px)`;
+      gridEl.style.fontSize = `${cellSize}px`;
+      gridEl.innerHTML = '';
+      for (let r = 0; r < rows; r++) {
+        for (let c = 0; c < cols; c++) {
+          const div = document.createElement('div');
+          const cellData = board[r] && board[r][c];
+          div.className = 'cell' + (cellData ? ' open' : '');
+          if (cellData) {
+            if (cellData.number) {
+              const num = document.createElement('div');
+              num.className = 'num';
+              num.textContent = cellData.number;
+              div.appendChild(num);
+            }
+            const letter = document.createElement('div');
+            letter.className = 'letter';
+            letter.textContent = cellData.letter || '';
+            div.appendChild(letter);
+          }
+          gridEl.appendChild(div);
+        }
+      }
+    }
+
     function renderLetterWheel(baseLetters) {
       if (currentBaseLetters === baseLetters) return;
       currentBaseLetters = baseLetters;
@@ -619,7 +712,8 @@ body::before {
 
       const letters = baseLetters.split('');
       const n = letters.length;
-      const radius = 50 - 27 / 2;
+      const bubbleHalf = 22 / 2; // setengah ukuran bubble (22%)
+      const radius = 50 - bubbleHalf;
 
       letters.forEach((ch, i) => {
         const angle = (2 * Math.PI * i / n) - Math.PI / 2;
@@ -753,6 +847,7 @@ body::before {
       renderAnswerList(data);
       renderLetterWheel(data.baseLetters);
       renderProgress(data.words);
+      renderGrid(data);
     });
     socket.on('answer:correct', (data) => showToast(data));
     socket.on('leaderboard:update', (list) => renderLeaderboard(list));
