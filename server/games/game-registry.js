@@ -13,4 +13,5 @@ module.exports = {
   "memory-card": require("./memory-card"),
   labirin: require("./labirin"),
   "ular-tangga": require("./ular-tangga"),
+  "sinonim-kata": require("./sinonim-kata"),
 };
