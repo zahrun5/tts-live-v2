@@ -94,7 +94,7 @@ function Dashboard() {
   const [user, setUser] = useState(null);
   const [tiktokUsername, setTiktokUsername] = useState('');
   const [activeGame, setActiveGame] = useState('tts');
-  const [randomGames, setRandomGames] = useState(['tts', 'susun-kata-acak', 'family100', 'cari-kata', 'sambung-kata', 'susun-kalimat', 'sinonim-kata']);
+  const [randomGames, setRandomGames] = useState(['tts', 'susun-kata-acak', 'family100', 'cari-kata', 'sambung-kata', 'susun-kalimat', 'sinonim-kata', 'bahasa-daerah']);
   const [avatarType, setAvatarType] = useState('emoji');
   const [isConnected, setIsConnected] = useState(false);
   const [activeSoal, setActiveSoal] = useState(null);
@@ -117,6 +117,7 @@ function Dashboard() {
     { id: 'sambung-kata', label: '⛓️ Sambung Kata', icon: '⛓️', color: 'from-indigo-500 to-blue-600' },
     { id: 'susun-kalimat', label: '📑 Susun Kalimat', icon: '📑', color: 'from-purple-500 to-pink-600' },
     { id: 'sinonim-kata', label: '🔁 Sinonim Kata', icon: '🔁', color: 'from-cyan-500 to-blue-600' },
+    { id: 'bahasa-daerah', label: '🗣️ Bahasa Daerah', icon: '🗣️', color: 'from-green-500 to-teal-600' },
     { id: 'hitung-cepat', label: '🧮 Hitung Cepat', icon: '🧮', color: 'from-red-500 to-orange-600' },
     { id: 'spam-tap', label: '❤️ Spam Tap Battle', icon: '⚔️', color: 'from-red-500 to-blue-600' },
     { id: 'memory-card', label: '🎴 Memory Card', icon: '🃏', color: 'from-purple-500 to-pink-600' },
@@ -159,7 +160,7 @@ function Dashboard() {
         setUser(res.data.user);
         setTiktokUsername(res.data.user.tiktokUsername || '');
         setActiveGame(res.data.user.activeGame || 'tts');
-        setRandomGames(res.data.user.randomGames || ['tts', 'susun-kata-acak', 'family100', 'cari-kata', 'sambung-kata', 'susun-kalimat', 'sinonim-kata']);
+        setRandomGames(res.data.user.randomGames || ['tts', 'susun-kata-acak', 'family100', 'cari-kata', 'sambung-kata', 'susun-kalimat', 'sinonim-kata', 'bahasa-daerah']);
         setAvatarType(res.data.user.avatarType || 'emoji');
         setIsConnected(res.data.isConnected);
         refreshActiveSoal(res.data.user.username);
