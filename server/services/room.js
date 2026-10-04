@@ -403,8 +403,12 @@ class Room {
     this.emit('live:status', this.liveStatus);
     this.emit('status', { connected: !!active });
     if (isNewSession) this.resetSessionAvatars();
-    // Ghost bot dimatikan sementara
-    this.stopGhostBot();
+    // Ghost bot: start saat live, stop saat disconnect
+    if (!!active) {
+      this.startGhostBot();
+    } else {
+      this.stopGhostBot();
+    }
   }
 
   // ---------- pengaturan dari dashboard ----------
