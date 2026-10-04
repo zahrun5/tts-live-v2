@@ -15,7 +15,7 @@ const path = require('path');
 
 // ── Ghost Bot (Nindy cs) ─────────────────────────────────────────────────────
 const GHOST_NAMES = ['Nindy', 'Rara', 'Sinta', 'Amel', 'Devi', 'Tiara', 'Nisa', 'Putri', 'Lala', 'Mega'];
-const GHOST_TIMEOUT_MS = 45 * 1000; // 2 menit tidak ada jawaban
+const GHOST_TIMEOUT_MS = 30 * 1000; // 2 menit tidak ada jawaban
 const GHOST_SKIP_GAMES = new Set(['ular-tangga', 'labirin', 'memory-card', 'spam-tap']);
 function ghostName() { return GHOST_NAMES[Math.floor(Math.random() * GHOST_NAMES.length)]; }
 // ─────────────────────────────────────────────────────────────────────────────
