@@ -78,6 +78,13 @@ function syncTemplate(srcDir, destDir) {
 // Game yang menerima event LIKE (tap layar) dari TikTok.
 const LIKE_GAMES = ['spam-tap', 'ular-tangga'];
 
+// Papan hasil ronde: ditampilkan di overlay sebentar sebelum ganti ronde/game.
+// Labirin & Ular Tangga sudah punya papan juara sendiri, jadi dilewati.
+const SUMMARY_MS = 7000;
+const SUMMARY_SKIP_GAMES = new Set(['labirin', 'ular-tangga']);
+const SUMMARY_MAX_ANSWERS = 8;
+const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+
 class Room {
   constructor({ username, io, dataDir, templateDir, aiClientPath, publicDir, settings }) {
     this.username = username;
@@ -99,6 +106,8 @@ class Room {
     this.sessionAvatars = {};
     this.liveStatus = { active: false, username: null, error: null, updatedAt: null };
     this.isGeneratingNext = false;
+    this.summaryActive = false;
+    this.roundStats = { scores: {}, answers: [] };
     this.initialized = new Set(); // game yang sudah pernah dikasih ronde SEGAR di room ini
     this.voteController = null;
     this.initialSettings = settings || {};
@@ -192,6 +201,7 @@ class Room {
         // poin tambahan di luar jawaban benar (mis. poin ikut serta Ular Tangga)
         (player, points) => {
           this.addScore(player, points);
+          this.recordRoundScore(player, points);
           this.emit('leaderboard:update', this.buildLeaderboardPayload()); this.emit('scores:update', this.buildFullScorePayload());
         }
       );
@@ -300,6 +310,50 @@ class Room {
     this.unlockedLevels = { 2: false, 3: false };
     this.saveState();
     this.emit('leaderboard:update', this.buildLeaderboardPayload()); this.emit('scores:update', this.buildFullScorePayload());
+  }
+
+  // ---------- statistik & papan hasil ronde ----------
+
+  resetRoundStats() {
+    this.roundStats = { scores: {}, answers: [] };
+  }
+
+  // label = teks jawaban (opsional). Kalau ada, ikut masuk daftar "siapa menjawab apa".
+  recordRoundScore(player, points, label) {
+    const name = player || 'Anonim';
+    const pts = Number(points) || 0;
+    this.roundStats.scores[name] = (this.roundStats.scores[name] || 0) + pts;
+    if (label) {
+      this.roundStats.answers.push({ player: name, points: pts, text: String(label).slice(0, 40) });
+    }
+  }
+
+  // Bentuk payload event 'round:summary'. Return null kalau nggak ada yang perlu ditampilkan.
+  buildRoundSummary() {
+    const emojiOf = (p) => (this.sessionAvatars[p] && this.sessionAvatars[p].emoji) || '';
+
+    const top = Object.entries(this.roundStats.scores)
+      .filter(([, pts]) => pts > 0)
+      .sort((a, b) => b[1] - a[1])
+      .slice(0, 3)
+      .map(([player, points]) => ({ player, points, emoji: emojiOf(player) }));
+
+    // Skor total: cuma pemain yang masih aktif (punya avatar sesi), skor di data tetap utuh.
+    const total = Object.entries(this.leaderboard)
+      .filter(([player]) => this.sessionAvatars[player])
+      .sort((a, b) => b[1] - a[1])
+      .slice(0, 5)
+      .map(([player, score]) => ({ player, score, emoji: emojiOf(player) }));
+
+    if (top.length === 0 && total.length === 0) return null;
+
+    return {
+      gameId: this.activeGameId,
+      durationMs: SUMMARY_MS,
+      top,
+      answers: this.roundStats.answers.slice(-SUMMARY_MAX_ANSWERS),
+      total
+    };
   }
 
   // ---------- avatar ----------
@@ -417,6 +471,7 @@ class Room {
 
     this.activeGame = nextGame;
     this.activeGameId = gameId;
+    this.resetRoundStats();
     this.bindBroadcaster();
     await this.ensureRoundReady();
     this.saveState();
@@ -480,7 +535,30 @@ class Room {
     }
   }
 
+  // Ronde selesai: tampilkan papan hasil dulu (kalau ada isinya), baru lanjut.
   async handleRoundCompleted() {
+    if (this.summaryActive) return;
+
+    const summary = SUMMARY_SKIP_GAMES.has(this.activeGameId) ? null : this.buildRoundSummary();
+    if (!summary) {
+      this.resetRoundStats();
+      return this.advanceToNextRound();
+    }
+
+    this.summaryActive = true;
+    this.isGeneratingNext = true; // jawaban masuk selama jeda diabaikan
+    this.emit('round:summary', summary);
+    try {
+      await sleep(SUMMARY_MS);
+      this.resetRoundStats();
+      await this.advanceToNextRound();
+    } finally {
+      this.summaryActive = false;
+      this.isGeneratingNext = false;
+    }
+  }
+
+  async advanceToNextRound() {
     if (this.mode === MODE_FIXED) return this.startNextRoundInSameGame();
 
     const previousId = this.activeGameId;
@@ -501,6 +579,7 @@ class Room {
       if (!result || result.success === false) {
         return { ok: false, error: result ? result.error : 'Gagal skip soal' };
       }
+      this.resetRoundStats();
       this.emit('update', this.activeGame.buildStatePayload());
       this.emit('puzzle:new', {
         clues: this.activeGame.buildClueList ? this.activeGame.buildClueList() : null,
@@ -639,6 +718,8 @@ class Room {
 
     const player = payload.player || 'Anonim';
     this.addScore(player, result.points || 0);
+    const meta = result.meta || {};
+    this.recordRoundScore(player, result.points || 0, meta.answer || meta.word || meta.sentence || null);
 
     for (const level of this.checkLevelUnlock()) {
       this.emit('level:unlock', {
@@ -674,6 +755,7 @@ class Room {
     try {
       const result = this.activeGame.handleLike({ player: name, count: likeCount, profileUrl });
       if (result && result.ok) {
+        this.recordRoundScore(name, result.points || 0); // tap: masuk skor ronde, bukan daftar jawaban
         const { emoji, avatarUrl, useProfilePic } = this.assignAvatarIfNeeded(name, profileUrl) || {};
         if (emoji || (avatarUrl && useProfilePic)) {
           this.emit('avatar:spawn', { player: name, emoji, profileUrl: avatarUrl, avatarType: this.avatarType });
@@ -687,4 +769,5 @@ class Room {
 }
 
 module.exports = { Room, MODE_RANDOM, MODE_FIXED };
+
 

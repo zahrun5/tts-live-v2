@@ -44,11 +44,7 @@ app.use('/api/sys', require('./routes/api'));
 
 // Script bersama yang dipanggil HTML game dengan path absolut (/shared/...).
 // (Di versi lama ini nggak ke-mount, jadi vote-overlay & watcher 404.)
-app.use('/shared', express.static(path.join(PUBLIC_DIR, 'shared'), {
-  setHeaders: (res) => {
-    res.setHeader('Cache-Control', 'no-cache, no-store, must-revalidate, max-age=0');
-  }
-}));
+app.use('/shared', express.static(path.join(PUBLIC_DIR, 'shared')));
 
 // Dashboard React (hasil `npm run build` di folder client)
 app.use(express.static(path.join(__dirname, '../client/dist')));

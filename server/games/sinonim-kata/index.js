@@ -26,7 +26,7 @@ const USED_FILE = path.join(__dirname, 'used-words.json');
 
 const POINTS_PER_SOAL = 10;
 const SOAL_PER_ROUND = 8;
-const USED_HISTORY_LIMIT = 500;
+const USED_HISTORY_LIMIT = 455;
 const ASSEMBLE_ATTEMPTS = 20;
 
 let state = { items: [] }; // { items: [{ number, word, synonyms, solved, solvedBy, winnerAnswer }] }
