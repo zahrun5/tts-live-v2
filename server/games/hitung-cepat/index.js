@@ -2,12 +2,14 @@ let state = null;
 let broadcast = null;
 let roundNumber = 1;
 
-// Generate 6 unique math problems with no duplicate answers
+const QUESTIONS_PER_ROUND = 8;
+
+// Generate QUESTIONS_PER_ROUND unique math problems with no duplicate answers
 function generateRound() {
   const questions = [];
   const usedAnswers = new Set();
   
-  while (questions.length < 6) {
+  while (questions.length < QUESTIONS_PER_ROUND) {
     const ops = ['+', '-', '*'];
     const op = ops[Math.floor(Math.random() * ops.length)];
     let a, b, ans;
@@ -85,6 +87,8 @@ module.exports = {
       questions: state.questions.map(q => ({
         question: q.question,
         solved: q.solved,
+        // Jawaban baru dikirim setelah terjawab, biar nggak bocor ke overlay
+        answer: q.solved ? q.answer : null,
         winner: q.winner
       })),
       roundNumber: state.roundNumber,
@@ -163,3 +167,4 @@ module.exports = {
     return null;
   }
 };
+
