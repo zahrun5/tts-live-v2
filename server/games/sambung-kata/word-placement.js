@@ -49,6 +49,24 @@ function hasValidBoundary(grid, word, row, col) {
 }
 
 /**
+ * Cek tetangga samping (tegak lurus arah kata) untuk setiap kotak baru.
+ * Kotak yang sudah terisi (persilangan sah) dilewati.
+ * @returns {boolean} true kalau ada kotak baru yang menempel ke kotak lain
+ */
+function hasSideContact(grid, word, row, col) {
+  const { answer, direction } = word;
+  for (let i = 0; i < answer.length; i++) {
+    const r = direction === 'down' ? row + i : row;
+    const c = direction === 'across' ? col + i : col;
+    if (grid.cells[`${r},${c}`]) continue; // persilangan
+    const sideA = direction === 'across' ? `${r - 1},${c}` : `${r},${c - 1}`;
+    const sideB = direction === 'across' ? `${r + 1},${c}` : `${r},${c + 1}`;
+    if (grid.cells[sideA] || grid.cells[sideB]) return true;
+  }
+  return false;
+}
+
+/**
  * Cek apakah kata bisa ditempatkan di posisi tertentu
  * @param {Object} grid - Grid object
  * @param {Object} word - Word object
@@ -105,6 +123,17 @@ function canPlaceWord(grid, word, row, col) {
     }
   }
   
+  // Aturan ketat: kotak BARU (bukan persilangan) nggak boleh punya tetangga
+  // di sisi samping. Kalau ada, dua kata jadi nempel & bikin deretan huruf
+  // liar yang bukan bagian dari kata mana pun.
+  if (hasSideContact(grid, word, row, col)) {
+    return {
+      canPlace: false,
+      reason: 'side_contact',
+      conflicts: []
+    };
+  }
+
   // Cek kotak sebelum & sesudah harus kosong (nggak boleh numpuk/nyambung)
   if (!hasValidBoundary(grid, word, row, col)) {
     return {
@@ -501,3 +530,4 @@ module.exports = {
   initializeGrid,
   hasValidBoundary
 };
+
