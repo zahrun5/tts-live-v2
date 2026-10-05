@@ -9,10 +9,14 @@
   {
     "word": "ADIK",
     "regional": [
+      "ADEK",
       "ADHIK",
-      "RAYI",
+      "ADI",
+      "ADIAK",
+      "ADÖË",
+      "ANGGI",
       "ENENG",
-      "ADIAK"
+      "RAYI"
     ]
   },
   {
@@ -55,10 +59,12 @@
   {
     "word": "ANAK",
     "regional": [
-      "BOCAH",
+      "ANA",
       "ANAK",
+      "ANEUK",
+      "BOCAH",
       "BUDAK",
-      "ANAK"
+      "PIANAK"
     ]
   },
   {
@@ -134,27 +140,39 @@
     "word": "BAIK",
     "regional": [
       "APIK",
+      "BAGUS",
       "BECIK",
+      "DENGGAN",
+      "ELOK",
+      "GET",
+      "MAKANJA",
       "SAE",
-      "ELOK"
+      "SAÉ"
     ]
   },
   {
     "word": "BANGUN",
     "regional": [
-      "TANGI",
+      "BANGKIT",
+      "BANGUN",
+      "BONGKAR",
       "GUGAH",
       "HUDANG",
-      "BONGKAR"
+      "MAKKARESO",
+      "TANGI"
     ]
   },
   {
     "word": "BAPAK",
     "regional": [
-      "BAPAK",
-      "RAMA",
+      "AMA",
+      "AMBO",
+      "AYAH",
       "BABE",
-      "AYAH"
+      "BAPA",
+      "BAPAK",
+      "BÂPÂ",
+      "RAMA"
     ]
   },
   {
@@ -183,10 +201,17 @@
   {
     "word": "BERDIRI",
     "regional": [
-      "NGADEG",
+      "BERDIRI",
+      "JEJEG",
       "JONGJON",
+      "NANGTUNG",
+      "NGADEG",
+      "RIRI",
       "TAGAK",
-      "TATOGAK"
+      "TAROPA",
+      "TATOGAK",
+      "TEUDUÉK",
+      "TORSIK"
     ]
   },
   {
@@ -202,11 +227,16 @@
     "word": "BESAR",
     "regional": [
       "AGENG",
+      "AGEUNG",
       "AGRENG",
       "BEBENG",
+      "BOLON",
       "GADANG",
       "GEDE",
-      "GEDHE"
+      "GEDHE",
+      "LOMPO",
+      "RAJÂ",
+      "RAYEK"
     ]
   },
   {
@@ -321,9 +351,15 @@
   {
     "word": "DATANG",
     "regional": [
-      "TEKA",
+      "DATANG",
+      "DATENG",
+      "JAK",
+      "MAI",
+      "RAUH",
       "RAWUH",
       "SUMPING",
+      "TEKA",
+      "TIBA",
       "TIBO"
     ]
   },
@@ -357,10 +393,17 @@
   {
     "word": "DUDUK",
     "regional": [
-      "LUNGGUH",
       "DIUK",
+      "DUDUAK",
+      "DUDUK",
+      "DUÉK",
+      "LINGGIH",
+      "LUNGGUH",
+      "MENENG",
+      "TOKKO",
+      "TONGGO",
       "TONGKRONG",
-      "DUDUK"
+      "TUDANG"
     ]
   },
   {
@@ -389,10 +432,13 @@
   {
     "word": "GIGI",
     "regional": [
-      "UNTU",
-      "WAOS",
+      "GHIGHI",
+      "GIGI",
+      "GIGIH",
+      "GIGÖË",
       "HUNTU",
-      "GIGIH"
+      "UNTU",
+      "WAOS"
     ]
   },
   {
@@ -416,19 +462,30 @@
   {
     "word": "HIDUNG",
     "regional": [
-      "IRUNG",
-      "IRUNG",
+      "CUNGUH",
       "HIDUNG",
-      "IDUANG"
+      "IDUANG",
+      "IDUNG",
+      "IGUNG",
+      "IJUK",
+      "IRUNG",
+      "ISU",
+      "ÈRONG"
     ]
   },
   {
     "word": "IBU",
     "regional": [
-      "IBU",
-      "SIMBOK",
+      "AMAK",
       "EMAK",
-      "AMAK"
+      "IBU",
+      "INANG",
+      "INDO",
+      "INDUNG",
+      "MAK",
+      "MÉMÉ",
+      "SIMBOK",
+      "ÈBU"
     ]
   },
   {
@@ -510,30 +567,49 @@
   {
     "word": "KAKAK",
     "regional": [
-      "MBAKYU",
-      "KANGMAS",
       "AKANG",
+      "BELI",
+      "ENCING",
+      "KAKA",
+      "KAKAK",
+      "KANGMAS",
+      "MBAKYU",
+      "TULANG",
+      "UDA",
       "UWO"
     ]
   },
   {
     "word": "KAKEK",
     "regional": [
+      "AKI",
       "DATUK",
       "EMBAH",
+      "ENGKONG",
       "EYANG",
+      "INYIAK",
+      "KAI",
+      "KAKEK",
+      "KAKÈ",
       "MBAH",
       "MBAH KAKUNG",
-      "OPUNG"
+      "OPUNG",
+      "SIMBAH",
+      "WAN"
     ]
   },
   {
     "word": "KAKI",
     "regional": [
-      "SIKIL",
-      "SUKU",
+      "ADDENG",
+      "BATIS",
+      "HAE",
+      "KAKI",
+      "KRUËNG",
       "SAMPEAN",
-      "KAKI"
+      "SAPPA",
+      "SIKIL",
+      "SUKU"
     ]
   },
   {
@@ -547,10 +623,17 @@
     "word": "KECIL",
     "regional": [
       "ALIT",
+      "CADDI",
+      "CENIK",
       "CILIK",
+      "KACIAK",
       "KCIL",
+      "KECIL",
       "KETEK",
-      "PACER"
+      "KÈNI",
+      "OTIK",
+      "PACER",
+      "UTÔ"
     ]
   },
   {
@@ -572,10 +655,14 @@
   {
     "word": "KEPALA",
     "regional": [
-      "SIRAH",
       "ENDHAS",
       "HULU",
-      "KAPALO"
+      "KAPALO",
+      "KEPALA",
+      "SIRAH",
+      "TANDO",
+      "ULU",
+      "ULÈË"
     ]
   },
   {
@@ -625,10 +712,16 @@
   {
     "word": "LARI",
     "regional": [
-      "MLAYU",
-      "NGALAYANG",
       "KABUR",
-      "MARLAYU"
+      "LARI",
+      "LAUT",
+      "LEUMPANG",
+      "LUMBA",
+      "LUMPAT",
+      "MALARI",
+      "MARLAYU",
+      "MLAYU",
+      "NGALAYANG"
     ]
   },
   {
@@ -700,10 +793,14 @@
   {
     "word": "MAKAN",
     "regional": [
-      "MANGAN",
-      "TUANG",
       "DAHAR",
-      "MANGAN"
+      "KANDE",
+      "MAKAN",
+      "MANGAN",
+      "NAAR",
+      "NGAKAN",
+      "PAJOH",
+      "TUANG"
     ]
   },
   {
@@ -725,10 +822,17 @@
   {
     "word": "MARAH",
     "regional": [
-      "NESU",
-      "DUKA",
       "AMBEK",
-      "MARAH"
+      "BENDU",
+      "BEUNGEH",
+      "BÂNCI",
+      "DUKA",
+      "GEDEG",
+      "MALARA",
+      "MANGIK",
+      "MARAH",
+      "NESU",
+      "PASUAM"
     ]
   },
   {
@@ -750,10 +854,13 @@
   {
     "word": "MATA",
     "regional": [
+      "MADA",
       "MATA",
-      "PANINGAL",
+      "MATO",
+      "MATÈË",
       "MRIPAT",
-      "MATO"
+      "PANINGAL",
+      "PANON"
     ]
   },
   {
@@ -782,10 +889,15 @@
   {
     "word": "MINUM",
     "regional": [
-      "NGOMBE",
-      "NGINUM",
+      "INGNGU",
+      "INUM",
+      "INÔM",
       "MAINUM",
-      "INUM"
+      "MINUM",
+      "MINUN",
+      "NGENOM",
+      "NGINUM",
+      "NGOMBE"
     ]
   },
   {
@@ -798,10 +910,16 @@
   {
     "word": "MULUT",
     "regional": [
+      "BAHAM",
       "CANGKEM",
-      "TUTUK",
+      "MEULUËT",
+      "MOLO",
+      "MULUIK",
+      "MULUT",
+      "MUNCUANG",
+      "MÉNGNGO",
       "SUNGUT",
-      "MULUIK"
+      "TUTUK"
     ]
   },
   {
@@ -823,13 +941,20 @@
   {
     "word": "NENEK",
     "regional": [
+      "CÈËT",
+      "DADONG",
       "EMBAH",
       "ENYAK",
       "ETEK",
       "EYANG",
+      "INYIAK",
       "MBAH",
       "MBAH PUTRI",
-      "NINI"
+      "NENEK",
+      "NINI",
+      "NÈNÈ",
+      "OPUNG",
+      "SIMBAH"
     ]
   },
   {
@@ -879,9 +1004,14 @@
   {
     "word": "PENDEK",
     "regional": [
+      "CENDEK",
       "CENDHEK",
-      "PONDOK",
+      "KEUTÔË",
+      "KODDE",
       "PENDEK",
+      "PODEK",
+      "PONDOK",
+      "PÈNDHÂ",
       "RANDAH"
     ]
   },
@@ -919,10 +1049,15 @@
   {
     "word": "PERGI",
     "regional": [
-      "LUNGO",
-      "LUNGA",
       "INDIT",
-      "PEGI"
+      "JALÉUK",
+      "LAHO",
+      "LAJU",
+      "LARI",
+      "LUNGA",
+      "LUNGO",
+      "PEGI",
+      "PERGI"
     ]
   },
   {
@@ -961,10 +1096,16 @@
   {
     "word": "PULANG",
     "regional": [
-      "MULIH",
-      "MANTUK",
+      "BALIK",
       "KONDUR",
-      "BALIK"
+      "MANTUK",
+      "MOLÈ",
+      "MULAK",
+      "MULANG",
+      "MULIH",
+      "POLE",
+      "PULANG",
+      "WATÈË"
     ]
   },
   {
@@ -979,10 +1120,14 @@
   {
     "word": "RAMBUT",
     "regional": [
-      "RAMBUT",
-      "RIKMA",
+      "BULU",
+      "BULUNG",
       "BUUK",
-      "RAMBUIK"
+      "BUËK",
+      "RAMBOT",
+      "RAMBUIK",
+      "RAMBUT",
+      "RIKMA"
     ]
   },
   {
@@ -1056,10 +1201,15 @@
   {
     "word": "SEDIH",
     "regional": [
-      "SEDHIH",
       "DUKA",
+      "MALARA",
+      "NEUGAH",
+      "SADIAH",
+      "SEDHIH",
       "SEDIH",
-      "SADIAH"
+      "SUSA",
+      "SUSAH",
+      "SÈDHI"
     ]
   },
   {
@@ -1095,10 +1245,15 @@
   {
     "word": "SENANG",
     "regional": [
-      "SENENG",
       "BINGAH",
+      "BUNGAH",
+      "GEULOE",
+      "LOMO",
+      "MAKANJA",
+      "RANCAK",
+      "SANANG",
       "SENENG",
-      "SANANG"
+      "SENNANG"
     ]
   },
   {
@@ -1154,19 +1309,27 @@
   {
     "word": "TAKUT",
     "regional": [
-      "WEDI",
       "AJRIH",
+      "GEULANTÖÖ",
+      "HEDOM",
+      "JIRIH",
+      "MAELO",
       "SIEUN",
-      "TAKUIK"
+      "TAKOD",
+      "TAKUIK",
+      "TAKUT",
+      "WEDI"
     ]
   },
   {
     "word": "TANGAN",
     "regional": [
-      "TANGAN",
       "ASTA",
+      "BULÉË",
       "LEUNGEUN",
-      "TANGAN"
+      "LIMA",
+      "TANGAN",
+      "TANGÂN"
     ]
   },
   {
@@ -1200,10 +1363,13 @@
   {
     "word": "TELINGA",
     "regional": [
-      "KUPING",
-      "TALINGAN",
       "CEULI",
-      "TALINGO"
+      "KUPING",
+      "KÈNING",
+      "TALINGAH",
+      "TALINGAN",
+      "TALINGO",
+      "TEUNGAH"
     ]
   },
   {
@@ -1255,10 +1421,16 @@
   {
     "word": "TIDUR",
     "regional": [
-      "TURU",
       "BOBO",
+      "GONDANG",
       "SARE",
-      "TIDOR"
+      "SARÉ",
+      "SIREP",
+      "TADORON",
+      "TAMONG",
+      "TIDOR",
+      "TIDUA",
+      "TURU"
     ]
   },
   {
@@ -1276,8 +1448,13 @@
       "DHUWUR",
       "GANJO",
       "GELIK",
+      "LOAS",
       "LUHUR",
-      "TINGGI"
+      "TEGEH",
+      "TENGGI",
+      "TIGI",
+      "TINGGI",
+      "TUNGGÉN"
     ]
   },
   {
@@ -1543,6 +1720,230 @@
     "regional": [
       "ASAK",
       "CABUK"
+    ]
+  },
+  {
+    "word": "BERJALAN",
+    "regional": [
+      "MLAKU",
+      "LEUMPANG",
+      "JALAN",
+      "BAJALAN",
+      "MARJALAN",
+      "MAKIDIH",
+      "MAJALAN",
+      "MABBÈRE",
+      "LAMPAH"
+    ]
+  },
+  {
+    "word": "CANTIK",
+    "regional": [
+      "AYU",
+      "GEULIS",
+      "CANTIK",
+      "CANTIK",
+      "GANJIL",
+      "JEGEG",
+      "BAGUS",
+      "MARANNU",
+      "LAGÈË"
+    ]
+  },
+  {
+    "word": "GANTENG",
+    "regional": [
+      "BAGUS",
+      "KASEP",
+      "GANTENG",
+      "GAGAH",
+      "BUJUR",
+      "TERUNA",
+      "BAGUS",
+      "MARANNU",
+      "LAGÈË"
+    ]
+  },
+  {
+    "word": "JELEK",
+    "regional": [
+      "ELEK",
+      "GORENG",
+      "JELEK",
+      "ANCAK",
+      "JOROK",
+      "JELEK",
+      "JÂLÂ",
+      "JANGGA",
+      "JEUËT"
+    ]
+  },
+  {
+    "word": "GEMUK",
+    "regional": [
+      "LEMU",
+      "BEUBEUT",
+      "GENDUT",
+      "LAMAK",
+      "SOMBOR",
+      "BÊBÊK",
+      "LÈMO",
+      "LOMPO",
+      "TEUBAI"
+    ]
+  },
+  {
+    "word": "KURUS",
+    "regional": [
+      "KURU",
+      "KURU",
+      "KURUS",
+      "KUCIANG",
+      "IHOT",
+      "CENGKING",
+      "KORO",
+      "KODDE",
+      "KEULÈËNG"
+    ]
+  },
+  {
+    "word": "PINTAR",
+    "regional": [
+      "PINTER",
+      "PINTER",
+      "PINTER",
+      "PAKIAH",
+      "PINTAR",
+      "LEMPONG",
+      "PATTAR",
+      "LEPPE",
+      "PEUNEUGAH"
+    ]
+  },
+  {
+    "word": "BODOH",
+    "regional": [
+      "BODHO",
+      "BODO",
+      "BEGO",
+      "BODOH",
+      "BABAL",
+      "BELOG",
+      "BÂDHÂNGÂN",
+      "BODO",
+      "BOEDEUËH"
+    ]
+  },
+  {
+    "word": "RAJIN",
+    "regional": [
+      "SREGEP",
+      "GETOL",
+      "RAJIN",
+      "RAJIN",
+      "GARET",
+      "SEKED",
+      "RAJIN",
+      "RESO",
+      "SUNGGOH"
+    ]
+  },
+  {
+    "word": "MALAS",
+    "regional": [
+      "MALES",
+      "PUGUH",
+      "MALES",
+      "CALIAK",
+      "BONTOR",
+      "MELAH",
+      "MALAS",
+      "TALE",
+      "MALEUËM"
+    ]
+  },
+  {
+    "word": "JAHAT",
+    "regional": [
+      "ALA",
+      "GORENG",
+      "JAHAT",
+      "JAHAT",
+      "JAHAT",
+      "KOTOR",
+      "ZÂLÂM",
+      "JAPPA",
+      "JAHAT"
+    ]
+  },
+  {
+    "word": "SAYANG",
+    "regional": [
+      "TRESNA",
+      "NYAAH",
+      "SAYANG",
+      "SAYANG",
+      "HOLONG",
+      "TRESNA",
+      "SAYANG",
+      "MAENNAI",
+      "SAYANG"
+    ]
+  },
+  {
+    "word": "BENCI",
+    "regional": [
+      "SENGIT",
+      "BENCI",
+      "BENCI",
+      "BANCI",
+      "PULAS",
+      "BENCI",
+      "BÂNCI",
+      "PARANI",
+      "BEUËNGEH"
+    ]
+  },
+  {
+    "word": "PAMAN",
+    "regional": [
+      "PAKDHE",
+      "PAMAN",
+      "OM",
+      "MAMAK",
+      "TULANG",
+      "PAMAN",
+      "PAMAN",
+      "PUANG",
+      "AMANG"
+    ]
+  },
+  {
+    "word": "BIBI",
+    "regional": [
+      "BUDHE",
+      "BIBI",
+      "TANTE",
+      "UNI",
+      "NANTULANG",
+      "BIBI",
+      "BIBI",
+      "PUANG",
+      "CÈËT"
+    ]
+  },
+  {
+    "word": "HATI",
+    "regional": [
+      "ATI",
+      "HATÉ",
+      "HATI",
+      "HATI",
+      "ROHA",
+      "KENEH",
+      "ATÈ",
+      "ATI",
+      "ATÉË"
     ]
   }
 ]

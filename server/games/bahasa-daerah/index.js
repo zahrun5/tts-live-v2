@@ -205,6 +205,36 @@ function handleAnswer({ number, answer, player }) {
     if (candidates.some(it => !it.solved && it.word === norm)) {
       return { ok: false, msg: 'Itu kata soalnya, cari persamaannya' };
     }
+
+    // Log potential valid answers for crowdsource review
+    const POTENTIAL_LOG = path.join(__dirname, 'potential-answers.json');
+    try {
+      let log = {};
+      if (fs.existsSync(POTENTIAL_LOG)) {
+        log = JSON.parse(fs.readFileSync(POTENTIAL_LOG, 'utf8'));
+      }
+      
+      // Find the word being answered
+      const item = candidates[0]; // Use first candidate as reference
+      if (item && norm) {
+        const word = item.word;
+        if (!log[word]) log[word] = {};
+        if (!log[word][norm]) {
+          log[word][norm] = { count: 0, first_seen: new Date().toISOString(), users: [] };
+        }
+        
+        log[word][norm].count++;
+        if (!log[word][norm].users.includes(player)) {
+          log[word][norm].users.push(player);
+        }
+        log[word][norm].last_seen = new Date().toISOString();
+        
+        fs.writeFileSync(POTENTIAL_LOG, JSON.stringify(log, null, 2), 'utf8');
+      }
+    } catch (e) {
+      console.error('[Bahasa Daerah] Gagal log potential answer:', e.message);
+    }
+
     return { ok: false, msg: 'Salah' };
   }
 
