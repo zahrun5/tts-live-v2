@@ -15,4 +15,5 @@ module.exports = {
   "ular-tangga": require("./ular-tangga"),
   "sinonim-kata": require("./sinonim-kata"),
   "bahasa-daerah": require("./bahasa-daerah"),
+  "sinonim-dan-bahasa-daerah": require("./sinonim-dan-bahasa-daerah"),
 };

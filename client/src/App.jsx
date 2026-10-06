@@ -118,6 +118,7 @@ function Dashboard() {
     { id: 'susun-kalimat', label: '📑 Susun Kalimat', icon: '📑', color: 'from-purple-500 to-pink-600' },
     { id: 'sinonim-kata', label: '🔁 Sinonim Kata', icon: '🔁', color: 'from-cyan-500 to-blue-600' },
     { id: 'bahasa-daerah', label: '🗣️ Bahasa Daerah', icon: '🗣️', color: 'from-green-500 to-teal-600' },
+    { id: 'sinonim-dan-bahasa-daerah', label: '🔄 Sinonim dan Bahasa Daerah', icon: '🔄', color: 'from-purple-500 to-blue-500' },
     { id: 'hitung-cepat', label: '🧮 Hitung Cepat', icon: '🧮', color: 'from-red-500 to-orange-600' },
     { id: 'spam-tap', label: '❤️ Spam Tap Battle', icon: '⚔️', color: 'from-red-500 to-blue-600' },
     { id: 'memory-card', label: '🎴 Memory Card', icon: '🃏', color: 'from-purple-500 to-pink-600' },

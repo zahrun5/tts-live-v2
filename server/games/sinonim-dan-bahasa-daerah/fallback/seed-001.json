@@ -1,0 +1,4959 @@
+[
+  {
+    "word": "ABJAD",
+    "answers": [
+      "AKSARA",
+      "HURUF"
+    ]
+  },
+  {
+    "word": "ABU ROKOK",
+    "answers": [
+      "CALACAH",
+      "TIMBORA"
+    ]
+  },
+  {
+    "word": "ADIK",
+    "answers": [
+      "ADEK",
+      "ADHIK",
+      "ADI",
+      "ADIAK",
+      "ADÖË",
+      "ANGGI",
+      "ENENG",
+      "RAYI"
+    ]
+  },
+  {
+    "word": "ADUK",
+    "answers": [
+      "CAMPUR",
+      "KACAU"
+    ]
+  },
+  {
+    "word": "AIR",
+    "answers": [
+      "AIE",
+      "BANYU",
+      "CAI",
+      "TOYA"
+    ]
+  },
+  {
+    "word": "AIR MATA",
+    "answers": [
+      "ELUH",
+      "ILU",
+      "ILUH",
+      "LUWEK",
+      "WASPA"
+    ]
+  },
+  {
+    "word": "AIR TERJUN",
+    "answers": [
+      "COBAN",
+      "CURUG"
+    ]
+  },
+  {
+    "word": "AJUDAN",
+    "answers": [
+      "ASISTEN",
+      "PEMBANTU"
+    ]
+  },
+  {
+    "word": "AKRAB",
+    "answers": [
+      "DEKAT",
+      "KARIB",
+      "MESRA"
+    ]
+  },
+  {
+    "word": "ALAMAT",
+    "answers": [
+      "LOKASI",
+      "TEMPAT"
+    ]
+  },
+  {
+    "word": "ALAT",
+    "answers": [
+      "MEDIA",
+      "PIRANTI",
+      "TOOL"
+    ]
+  },
+  {
+    "word": "ALIH",
+    "answers": [
+      "GANTI",
+      "PINDAH",
+      "TUKAR",
+      "UBAH"
+    ]
+  },
+  {
+    "word": "ALKITAB",
+    "answers": [
+      "BIBEL"
+    ]
+  },
+  {
+    "word": "AMBIGUITAS",
+    "answers": [
+      "KERAGUAN",
+      "KETIDAKJELASAN",
+      "KETIDAKPASTIAN"
+    ]
+  },
+  {
+    "word": "AMBIL",
+    "answers": [
+      "AMBIK",
+      "COKOT",
+      "COMOT",
+      "JIMPIT",
+      "JUPUK",
+      "MANGALEH",
+      "RAIH",
+      "SEBROT"
+    ]
+  },
+  {
+    "word": "AMBROL",
+    "answers": [
+      "JATUH",
+      "ROBOH",
+      "RUNTUH"
+    ]
+  },
+  {
+    "word": "AMPAS",
+    "answers": [
+      "LIMBAH",
+      "RESIDU",
+      "SISA"
+    ]
+  },
+  {
+    "word": "ANAK",
+    "answers": [
+      "ANA",
+      "ANAK",
+      "ANEUK",
+      "BOCAH",
+      "BUDAK",
+      "PIANAK"
+    ]
+  },
+  {
+    "word": "ANAK ANGSA",
+    "answers": [
+      "BELENGUR",
+      "BLENGUR"
+    ]
+  },
+  {
+    "word": "ANAK ENTOK",
+    "answers": [
+      "MINTI",
+      "TITIT"
+    ]
+  },
+  {
+    "word": "ANAK GAJAH",
+    "answers": [
+      "BLEDUG",
+      "BLEDUK",
+      "MENEL"
+    ]
+  },
+  {
+    "word": "ANAK LELE",
+    "answers": [
+      "JABANGAN",
+      "JABRISAN",
+      "NANAHAON"
+    ]
+  },
+  {
+    "word": "ANCAM",
+    "answers": [
+      "BAHAYA",
+      "CELAKA",
+      "RUGI",
+      "SULIT",
+      "SUSAH"
+    ]
+  },
+  {
+    "word": "ANGAN",
+    "answers": [
+      "INGATAN",
+      "MAKSUD",
+      "NIAT",
+      "PIKIRAN"
+    ]
+  },
+  {
+    "word": "ANGGARAN",
+    "answers": [
+      "ATURAN",
+      "BUDGET",
+      "DANA"
+    ]
+  },
+  {
+    "word": "ANGKAT",
+    "answers": [
+      "ANGKUT",
+      "BAWA",
+      "NAIKKAN"
+    ]
+  },
+  {
+    "word": "ANGKATAN",
+    "answers": [
+      "BATCH",
+      "GENERASI",
+      "KELOMPOK"
+    ]
+  },
+  {
+    "word": "ANGKUT",
+    "answers": [
+      "BAWA",
+      "KIRIM",
+      "MUAT"
+    ]
+  },
+  {
+    "word": "ANGSA",
+    "answers": [
+      "BURUNG",
+      "SWAN"
+    ]
+  },
+  {
+    "word": "ANJAL",
+    "answers": [
+      "ELASTIS",
+      "KENYAL",
+      "LENTUR"
+    ]
+  },
+  {
+    "word": "ANJING",
+    "answers": [
+      "ASU",
+      "ASU KOROTEI"
+    ]
+  },
+  {
+    "word": "ANTAR",
+    "answers": [
+      "BAWA",
+      "HANTAR",
+      "KIRIM"
+    ]
+  },
+  {
+    "word": "APLIKASI",
+    "answers": [
+      "APP",
+      "PENERAPAN",
+      "PENGGUNAAN"
+    ]
+  },
+  {
+    "word": "ARAL",
+    "answers": [
+      "HALANGAN",
+      "HAMBATAN",
+      "RINTANGAN"
+    ]
+  },
+  {
+    "word": "ARAS",
+    "answers": [
+      "BERBATAS",
+      "MENYENTUH",
+      "SAMPAI"
+    ]
+  },
+  {
+    "word": "ASING",
+    "answers": [
+      "LUAR",
+      "RANTAU"
+    ]
+  },
+  {
+    "word": "ASLI",
+    "answers": [
+      "AUTENTIK",
+      "JATI",
+      "NATUR"
+    ]
+  },
+  {
+    "word": "ASTRONAUT",
+    "answers": [
+      "ANGKASAWAN",
+      "KOSMONAUT"
+    ]
+  },
+  {
+    "word": "ASUH",
+    "answers": [
+      "JAGA",
+      "PIMPIN",
+      "RAWAT"
+    ]
+  },
+  {
+    "word": "ATUR",
+    "answers": [
+      "KELOLA",
+      "RAPIKAN",
+      "SUSUN"
+    ]
+  },
+  {
+    "word": "ATURAN",
+    "answers": [
+      "KETENTUAN",
+      "PERATURAN",
+      "REGULASI"
+    ]
+  },
+  {
+    "word": "AUR",
+    "answers": [
+      "BAMBU",
+      "BULUH"
+    ]
+  },
+  {
+    "word": "AUTENTIK",
+    "answers": [
+      "ASLI",
+      "SAH",
+      "TULEN"
+    ]
+  },
+  {
+    "word": "AUTENTISITAS",
+    "answers": [
+      "KEASLIAN",
+      "KEBENARAN"
+    ]
+  },
+  {
+    "word": "AYAH",
+    "answers": [
+      "ABAH",
+      "BAPA",
+      "BAPAK",
+      "PAPA"
+    ]
+  },
+  {
+    "word": "AYAM",
+    "answers": [
+      "AYAM",
+      "HAYAM",
+      "PITIK"
+    ]
+  },
+  {
+    "word": "BABAT",
+    "answers": [
+      "RAMPAT",
+      "TEBAS"
+    ]
+  },
+  {
+    "word": "BACA",
+    "answers": [
+      "BACE",
+      "MACA",
+      "MACAAN",
+      "MAMBACO"
+    ]
+  },
+  {
+    "word": "BACANG",
+    "answers": [
+      "LIMUS",
+      "PAKEL"
+    ]
+  },
+  {
+    "word": "BADAN",
+    "answers": [
+      "JASAD",
+      "RAGA",
+      "SARIRA",
+      "TUBUH",
+      "WARUGA"
+    ]
+  },
+  {
+    "word": "BAGUS",
+    "answers": [
+      "APIK",
+      "BAIK",
+      "KEREN"
+    ]
+  },
+  {
+    "word": "BAHTERA",
+    "answers": [
+      "KAPAL",
+      "PERAHU"
+    ]
+  },
+  {
+    "word": "BAIK",
+    "answers": [
+      "APIK",
+      "BAGUS",
+      "BECIK",
+      "DENGGAN",
+      "ELOK",
+      "GET",
+      "MAKANJA",
+      "SAE",
+      "SAÉ"
+    ]
+  },
+  {
+    "word": "BAJU",
+    "answers": [
+      "BUSANA",
+      "PAKAIAN",
+      "SANDANG"
+    ]
+  },
+  {
+    "word": "BAKHIL",
+    "answers": [
+      "KIKIR",
+      "LOKEK",
+      "PELIT"
+    ]
+  },
+  {
+    "word": "BALA",
+    "answers": [
+      "PASUKAN",
+      "PRAJURIT"
+    ]
+  },
+  {
+    "word": "BALAI",
+    "answers": [
+      "GEDUNG",
+      "KANTOR",
+      "RUMAH"
+    ]
+  },
+  {
+    "word": "BALAS",
+    "answers": [
+      "GANJARAN",
+      "HUKUMAN",
+      "JAWAB",
+      "JAWABAN",
+      "REAKSI"
+    ]
+  },
+  {
+    "word": "BAMBU",
+    "answers": [
+      "AUR",
+      "PERING"
+    ]
+  },
+  {
+    "word": "BANCI",
+    "answers": [
+      "TRANSGENDER",
+      "WARIA"
+    ]
+  },
+  {
+    "word": "BANDEL",
+    "answers": [
+      "BERENGSEK"
+    ]
+  },
+  {
+    "word": "BANDIT",
+    "answers": [
+      "GANGSTER",
+      "PENCURI",
+      "PENJAHAT"
+    ]
+  },
+  {
+    "word": "BANGGA",
+    "answers": [
+      "BERBANGGA",
+      "PUAS"
+    ]
+  },
+  {
+    "word": "BANGUN",
+    "answers": [
+      "BANGKIT",
+      "BANGUN",
+      "BONGKAR",
+      "GUGAH",
+      "HUDANG",
+      "MAKKARESO",
+      "TANGI"
+    ]
+  },
+  {
+    "word": "BAPAK",
+    "answers": [
+      "AMA",
+      "AMBO",
+      "AYAH",
+      "BABE",
+      "BAPA",
+      "BAPAK",
+      "BÂPÂ",
+      "PAPA",
+      "RAMA"
+    ]
+  },
+  {
+    "word": "BARU",
+    "answers": [
+      "ANYAR",
+      "MODERN",
+      "MUTAKHIR"
+    ]
+  },
+  {
+    "word": "BASAH",
+    "answers": [
+      "LITAP",
+      "TELES"
+    ]
+  },
+  {
+    "word": "BASUH",
+    "answers": [
+      "BILAS"
+    ]
+  },
+  {
+    "word": "BAWA",
+    "answers": [
+      "ANGKUT",
+      "ANTAR",
+      "MEMBAWA"
+    ]
+  },
+  {
+    "word": "BELAI",
+    "answers": [
+      "BUJUK",
+      "ELUS",
+      "USAP"
+    ]
+  },
+  {
+    "word": "BELAJAR",
+    "answers": [
+      "BERSEKOLAH",
+      "MENGAJI"
+    ]
+  },
+  {
+    "word": "BELIGO",
+    "answers": [
+      "BLONCENG"
+    ]
+  },
+  {
+    "word": "BELOKAN",
+    "answers": [
+      "BELOK",
+      "TIKUNGAN"
+    ]
+  },
+  {
+    "word": "BENAR",
+    "answers": [
+      "BETUL",
+      "SAHIH",
+      "TEPAT",
+      "VALID"
+    ]
+  },
+  {
+    "word": "BENCI",
+    "answers": [
+      "BANCI",
+      "BENCI",
+      "BEUËNGEH",
+      "BÂNCI",
+      "PARANI",
+      "PULAS",
+      "SENGIT"
+    ]
+  },
+  {
+    "word": "BENDUNGAN",
+    "answers": [
+      "DAM",
+      "WADUK"
+    ]
+  },
+  {
+    "word": "BENGKAK",
+    "answers": [
+      "ABUH",
+      "TUBUK"
+    ]
+  },
+  {
+    "word": "BEPERKARA",
+    "answers": [
+      "BERHUKUM"
+    ]
+  },
+  {
+    "word": "BERAK",
+    "answers": [
+      "BERTELUR"
+    ]
+  },
+  {
+    "word": "BERAKAR",
+    "answers": [
+      "BERURAT"
+    ]
+  },
+  {
+    "word": "BERALASAN",
+    "answers": [
+      "BERLANDASAN"
+    ]
+  },
+  {
+    "word": "BERALIH",
+    "answers": [
+      "BERKISAR"
+    ]
+  },
+  {
+    "word": "BERANGKAT",
+    "answers": [
+      "BERLEPAS",
+      "MELANGKAH"
+    ]
+  },
+  {
+    "word": "BERANI",
+    "answers": [
+      "GAGAH",
+      "PERKASA",
+      "TANGGUH"
+    ]
+  },
+  {
+    "word": "BERAT",
+    "answers": [
+      "ABOT",
+      "BARAIK",
+      "BERAT",
+      "BEURAT"
+    ]
+  },
+  {
+    "word": "BERBENTROK",
+    "answers": [
+      "BERTENTANGAN"
+    ]
+  },
+  {
+    "word": "BERBENTROKAN",
+    "answers": [
+      "BERSELISIH"
+    ]
+  },
+  {
+    "word": "BERBILANG",
+    "answers": [
+      "PERHITUNGAN"
+    ]
+  },
+  {
+    "word": "BERCANGGAH",
+    "answers": [
+      "BERTENTANGAN"
+    ]
+  },
+  {
+    "word": "BERCEROTEH",
+    "answers": [
+      "MERENGEK"
+    ]
+  },
+  {
+    "word": "BERCINTA",
+    "answers": [
+      "BERSANGGAMA",
+      "BERSETUBUH"
+    ]
+  },
+  {
+    "word": "BERCINTAAN",
+    "answers": [
+      "BERPACARAN"
+    ]
+  },
+  {
+    "word": "BERCUKUR",
+    "answers": [
+      "BERGUNTING"
+    ]
+  },
+  {
+    "word": "BERDAKI",
+    "answers": [
+      "BERPUYAN"
+    ]
+  },
+  {
+    "word": "BERDALIH",
+    "answers": [
+      "BERHELAT"
+    ]
+  },
+  {
+    "word": "BERDANDAN",
+    "answers": [
+      "BERPAKAIAN"
+    ]
+  },
+  {
+    "word": "BERDASAR",
+    "answers": [
+      "BERLANDASAN"
+    ]
+  },
+  {
+    "word": "BERDAYUNG",
+    "answers": [
+      "BERSEPEDA"
+    ]
+  },
+  {
+    "word": "BERDINAS",
+    "answers": [
+      "BERKANTOR"
+    ]
+  },
+  {
+    "word": "BERDIRI",
+    "answers": [
+      "BERDIRI",
+      "JEJEG",
+      "JONGJON",
+      "NANGTUNG",
+      "NGADEG",
+      "RIRI",
+      "TAGAK",
+      "TAROPA",
+      "TATOGAK",
+      "TEUDUÉK",
+      "TORSIK"
+    ]
+  },
+  {
+    "word": "BERENGOS",
+    "answers": [
+      "KUMIS",
+      "MISAI"
+    ]
+  },
+  {
+    "word": "BERENGSEK",
+    "answers": [
+      "BANDEL",
+      "REWEL"
+    ]
+  },
+  {
+    "word": "BERENTANG",
+    "answers": [
+      "RENTAK",
+      "SENTAK"
+    ]
+  },
+  {
+    "word": "BERFAEDAH",
+    "answers": [
+      "BERJASA"
+    ]
+  },
+  {
+    "word": "BERGELUNDUNGAN",
+    "answers": [
+      "BERGULINGAN"
+    ]
+  },
+  {
+    "word": "BERGESER",
+    "answers": [
+      "BERKISAR",
+      "GINGSIR"
+    ]
+  },
+  {
+    "word": "BERGIDIK",
+    "answers": [
+      "NGERI"
+    ]
+  },
+  {
+    "word": "BERGULINGAN",
+    "answers": [
+      "BERGELUNDUNGAN"
+    ]
+  },
+  {
+    "word": "BERGUNA",
+    "answers": [
+      "BERJASA"
+    ]
+  },
+  {
+    "word": "BERGUNTING",
+    "answers": [
+      "BERCUKUR"
+    ]
+  },
+  {
+    "word": "BERGURU",
+    "answers": [
+      "BERSEKOLAH"
+    ]
+  },
+  {
+    "word": "BERHELAT",
+    "answers": [
+      "BERDALIH"
+    ]
+  },
+  {
+    "word": "BERHIMPUN",
+    "answers": [
+      "BERJUMAT"
+    ]
+  },
+  {
+    "word": "BERHUKUM",
+    "answers": [
+      "BEPERKARA",
+      "BERSENGKETA"
+    ]
+  },
+  {
+    "word": "BERI",
+    "answers": [
+      "BAGIAN",
+      "NGASIH",
+      "PARINGI",
+      "WENEH"
+    ]
+  },
+  {
+    "word": "BERIAN",
+    "answers": [
+      "MASKAWIN"
+    ]
+  },
+  {
+    "word": "BERITA",
+    "answers": [
+      "INFORMASI",
+      "KABAR",
+      "WARTA"
+    ]
+  },
+  {
+    "word": "BERJALAN",
+    "answers": [
+      "BAJALAN",
+      "JALAN",
+      "LAMPAH",
+      "LEUMPANG",
+      "MABBÈRE",
+      "MAJALAN",
+      "MAKIDIH",
+      "MARJALAN",
+      "MLAKU"
+    ]
+  },
+  {
+    "word": "BERJANTAN",
+    "answers": [
+      "BERSEMBURIT"
+    ]
+  },
+  {
+    "word": "BERJASA",
+    "answers": [
+      "BERFAEDAH",
+      "BERGUNA"
+    ]
+  },
+  {
+    "word": "BERJENTERA",
+    "answers": [
+      "BERPUSING",
+      "BERPUTAR"
+    ]
+  },
+  {
+    "word": "BERJODOH",
+    "answers": [
+      "KAWIN"
+    ]
+  },
+  {
+    "word": "BERJUAK",
+    "answers": [
+      "BERLAWAN",
+      "BERTANDING"
+    ]
+  },
+  {
+    "word": "BERJUMAT",
+    "answers": [
+      "BERHIMPUN",
+      "BERKUMPUL"
+    ]
+  },
+  {
+    "word": "BERKANTOR",
+    "answers": [
+      "BERDINAS"
+    ]
+  },
+  {
+    "word": "BERKAWAN",
+    "answers": [
+      "BERSYARIKAT"
+    ]
+  },
+  {
+    "word": "BERKEINGINAN",
+    "answers": [
+      "BERSELERA"
+    ]
+  },
+  {
+    "word": "BERKENDURI",
+    "answers": [
+      "BERSEDEKAH"
+    ]
+  },
+  {
+    "word": "BERKIL",
+    "answers": [
+      "BAMBANGAN"
+    ]
+  },
+  {
+    "word": "BERKISAR",
+    "answers": [
+      "BERALIH",
+      "BERGESER",
+      "BERPINDAH",
+      "BERTUKAR"
+    ]
+  },
+  {
+    "word": "BERKOMPLOT",
+    "answers": [
+      "BERKONGSI"
+    ]
+  },
+  {
+    "word": "BERKONGSI",
+    "answers": [
+      "BERKOMPLOT",
+      "BERSEKUTU"
+    ]
+  },
+  {
+    "word": "BERKUMPUL",
+    "answers": [
+      "BERJUMAT"
+    ]
+  },
+  {
+    "word": "BERLANDASAN",
+    "answers": [
+      "BERALASAN",
+      "BERDASAR"
+    ]
+  },
+  {
+    "word": "BERLANTARAN",
+    "answers": [
+      "BERPOKOK"
+    ]
+  },
+  {
+    "word": "BERLAWAN",
+    "answers": [
+      "BERJUAK"
+    ]
+  },
+  {
+    "word": "BERLEPAS",
+    "answers": [
+      "BERANGKAT",
+      "PERGI"
+    ]
+  },
+  {
+    "word": "BERMA",
+    "answers": [
+      "MERAH"
+    ]
+  },
+  {
+    "word": "BERMODAL",
+    "answers": [
+      "BERPOKOK"
+    ]
+  },
+  {
+    "word": "BERNAPAS",
+    "answers": [
+      "BERNAFAS",
+      "RESPIRASI"
+    ]
+  },
+  {
+    "word": "BERONOK",
+    "answers": [
+      "TERIPANG"
+    ]
+  },
+  {
+    "word": "BERPACARAN",
+    "answers": [
+      "BERCINTAAN"
+    ]
+  },
+  {
+    "word": "BERPAKAIAN",
+    "answers": [
+      "BERDANDAN"
+    ]
+  },
+  {
+    "word": "BERPENDAR",
+    "answers": [
+      "PUSING"
+    ]
+  },
+  {
+    "word": "BERPINDAH",
+    "answers": [
+      "BERKISAR"
+    ]
+  },
+  {
+    "word": "BERPOKOK",
+    "answers": [
+      "BERLANTARAN",
+      "BERMODAL",
+      "BERSEBAB"
+    ]
+  },
+  {
+    "word": "BERPUSING",
+    "answers": [
+      "BERJENTERA"
+    ]
+  },
+  {
+    "word": "BERPUTAR",
+    "answers": [
+      "BERJENTERA",
+      "PIVOT"
+    ]
+  },
+  {
+    "word": "BERPUYAN",
+    "answers": [
+      "BERDAKI"
+    ]
+  },
+  {
+    "word": "BERSAHABAT",
+    "answers": [
+      "AKRAB",
+      "MESRA",
+      "RAMAH"
+    ]
+  },
+  {
+    "word": "BERSANGGAMA",
+    "answers": [
+      "BERCINTA",
+      "KENTU"
+    ]
+  },
+  {
+    "word": "BERSAWAH",
+    "answers": [
+      "MENYAWAH"
+    ]
+  },
+  {
+    "word": "BERSEBAB",
+    "answers": [
+      "BERPOKOK"
+    ]
+  },
+  {
+    "word": "BERSEDEKAH",
+    "answers": [
+      "BERKENDURI",
+      "BERSELAMATAN"
+    ]
+  },
+  {
+    "word": "BERSEKETIDURAN",
+    "answers": [
+      "BERSETUBUH"
+    ]
+  },
+  {
+    "word": "BERSEKOLAH",
+    "answers": [
+      "BELAJAR",
+      "BERGURU"
+    ]
+  },
+  {
+    "word": "BERSEKUTU",
+    "answers": [
+      "BERKONGSI",
+      "BERSYARIKAT"
+    ]
+  },
+  {
+    "word": "BERSELAMATAN",
+    "answers": [
+      "BERSEDEKAH"
+    ]
+  },
+  {
+    "word": "BERSELERA",
+    "answers": [
+      "BERKEINGINAN"
+    ]
+  },
+  {
+    "word": "BERSELISIH",
+    "answers": [
+      "BERBENTROKAN"
+    ]
+  },
+  {
+    "word": "BERSEMBURIT",
+    "answers": [
+      "BERJANTAN"
+    ]
+  },
+  {
+    "word": "BERSENGKETA",
+    "answers": [
+      "BERHUKUM",
+      "KONKUREN"
+    ]
+  },
+  {
+    "word": "BERSENTUH",
+    "answers": [
+      "BERSETUBUH"
+    ]
+  },
+  {
+    "word": "BERSEPEDA",
+    "answers": [
+      "BERDAYUNG"
+    ]
+  },
+  {
+    "word": "BERSEREGANG",
+    "answers": [
+      "BERKELAHI"
+    ]
+  },
+  {
+    "word": "BERSETUBUH",
+    "answers": [
+      "BERCINTA",
+      "BERSEKETIDURAN",
+      "BERSENTUH"
+    ]
+  },
+  {
+    "word": "BERSEWAKA",
+    "answers": [
+      "MELAYANI",
+      "MENGHAMBA"
+    ]
+  },
+  {
+    "word": "BERSIASAT",
+    "answers": [
+      "BERTANYA"
+    ]
+  },
+  {
+    "word": "BERSIH",
+    "answers": [
+      "HIGIENIS",
+      "MURNI",
+      "SUCI"
+    ]
+  },
+  {
+    "word": "BERSYARIKAT",
+    "answers": [
+      "BERKAWAN",
+      "BERSAHABAT",
+      "BERSEKUTU"
+    ]
+  },
+  {
+    "word": "BERTANDING",
+    "answers": [
+      "BERJUAK"
+    ]
+  },
+  {
+    "word": "BERTANYA",
+    "answers": [
+      "BERSIASAT"
+    ]
+  },
+  {
+    "word": "BERTELUR",
+    "answers": [
+      "BERAK"
+    ]
+  },
+  {
+    "word": "BERTENTANGAN",
+    "answers": [
+      "BERBENTROK",
+      "BERCANGGAH"
+    ]
+  },
+  {
+    "word": "BERTUKAR",
+    "answers": [
+      "BERKISAR"
+    ]
+  },
+  {
+    "word": "BERTUMIS",
+    "answers": [
+      "MENUMIS"
+    ]
+  },
+  {
+    "word": "BERUJU",
+    "answers": [
+      "BUNGSU"
+    ]
+  },
+  {
+    "word": "BERUNTUN",
+    "answers": [
+      "BERURUT"
+    ]
+  },
+  {
+    "word": "BERURAT",
+    "answers": [
+      "BERAKAR"
+    ]
+  },
+  {
+    "word": "BERURUT",
+    "answers": [
+      "BERUNTUN"
+    ]
+  },
+  {
+    "word": "BERWUJUD",
+    "answers": [
+      "KONKRET",
+      "NYATA"
+    ]
+  },
+  {
+    "word": "BESAR",
+    "answers": [
+      "AGENG",
+      "AGEUNG",
+      "AGRENG",
+      "AGUNG",
+      "AKBAR",
+      "BEBENG",
+      "BOLON",
+      "GADANG",
+      "GEDE",
+      "GEDHE",
+      "LOMPO",
+      "RAJÂ",
+      "RAYA",
+      "RAYEK"
+    ]
+  },
+  {
+    "word": "BESTI",
+    "answers": [
+      "SAHABAT"
+    ]
+  },
+  {
+    "word": "BETOT",
+    "answers": [
+      "CABUT",
+      "TARIK"
+    ]
+  },
+  {
+    "word": "BIANGLALA",
+    "answers": [
+      "PELANGI"
+    ]
+  },
+  {
+    "word": "BIARPUN",
+    "answers": [
+      "MESKIPUN"
+    ]
+  },
+  {
+    "word": "BIATAH",
+    "answers": [
+      "BIDAYUH"
+    ]
+  },
+  {
+    "word": "BIAWAN",
+    "answers": [
+      "TAMBAKAN"
+    ]
+  },
+  {
+    "word": "BIBEL",
+    "answers": [
+      "ALKITAB"
+    ]
+  },
+  {
+    "word": "BIBI",
+    "answers": [
+      "BIBI",
+      "BUDHE",
+      "CÈËT",
+      "NANTULANG",
+      "PUANG",
+      "TANTE",
+      "UNI"
+    ]
+  },
+  {
+    "word": "BIBIT",
+    "answers": [
+      "BIJA"
+    ]
+  },
+  {
+    "word": "BIBLIOKLASME",
+    "answers": [
+      "BIBLIOSIDA"
+    ]
+  },
+  {
+    "word": "BIBLIOSIDA",
+    "answers": [
+      "BIBLIOKLASME",
+      "LIBRISIDA"
+    ]
+  },
+  {
+    "word": "BICARA",
+    "answers": [
+      "BINCANG",
+      "CARIOS",
+      "CERAK",
+      "KATA",
+      "MARATUR",
+      "NGOCEH",
+      "NGOMONG",
+      "REMBUK"
+    ]
+  },
+  {
+    "word": "BICU",
+    "answers": [
+      "DONGKRAK",
+      "PENGUNGKIT",
+      "TUIL"
+    ]
+  },
+  {
+    "word": "BIDASAN",
+    "answers": [
+      "REAKSI",
+      "SERANGAN"
+    ]
+  },
+  {
+    "word": "BIDAYUH",
+    "answers": [
+      "BIATAH"
+    ]
+  },
+  {
+    "word": "BIDUR",
+    "answers": [
+      "GELEGATA"
+    ]
+  },
+  {
+    "word": "BIGA",
+    "answers": [
+      "MATBAT"
+    ]
+  },
+  {
+    "word": "BIGAIR",
+    "answers": [
+      "KECUALI",
+      "MELAINKAN",
+      "TANPA"
+    ]
+  },
+  {
+    "word": "BIJA",
+    "answers": [
+      "BENIH",
+      "BIBIT"
+    ]
+  },
+  {
+    "word": "BIKANG",
+    "answers": [
+      "BINGKA"
+    ]
+  },
+  {
+    "word": "BIKIR",
+    "answers": [
+      "GADIS",
+      "PERAWAN"
+    ]
+  },
+  {
+    "word": "BIKSAH",
+    "answers": [
+      "PENGUTUSAN",
+      "PERUTUSAN"
+    ]
+  },
+  {
+    "word": "BIKUSPID",
+    "answers": [
+      "PREMOLAR"
+    ]
+  },
+  {
+    "word": "BILANG",
+    "answers": [
+      "HITUNG"
+    ]
+  },
+  {
+    "word": "BILAS",
+    "answers": [
+      "BASUH",
+      "CUCI"
+    ]
+  },
+  {
+    "word": "BILITONIT",
+    "answers": [
+      "SATAM"
+    ]
+  },
+  {
+    "word": "BILYET",
+    "answers": [
+      "KARCIS",
+      "KARTU"
+    ]
+  },
+  {
+    "word": "BIMBING",
+    "answers": [
+      "PANDU",
+      "PIMPIN",
+      "TUNTUN"
+    ]
+  },
+  {
+    "word": "BINAWAN",
+    "answers": [
+      "PEMBINA"
+    ]
+  },
+  {
+    "word": "BINCANG",
+    "answers": [
+      "BICARA",
+      "RUNDING"
+    ]
+  },
+  {
+    "word": "BINCUT",
+    "answers": [
+      "BENJOL"
+    ]
+  },
+  {
+    "word": "BINGKA",
+    "answers": [
+      "BIKANG"
+    ]
+  },
+  {
+    "word": "BINGKAI",
+    "answers": [
+      "BIRAI"
+    ]
+  },
+  {
+    "word": "BINGKIS",
+    "answers": [
+      "KIRIM"
+    ]
+  },
+  {
+    "word": "BINJAT",
+    "answers": [
+      "ANGKAT"
+    ]
+  },
+  {
+    "word": "BIOPLASMA",
+    "answers": [
+      "PROTOPLASMA"
+    ]
+  },
+  {
+    "word": "BIRAI",
+    "answers": [
+      "BINGKAI",
+      "TEPI"
+    ]
+  },
+  {
+    "word": "BIRAM",
+    "answers": [
+      "GAJAH",
+      "MERAH"
+    ]
+  },
+  {
+    "word": "BIRIT",
+    "answers": [
+      "PANTAT"
+    ]
+  },
+  {
+    "word": "BIRO",
+    "answers": [
+      "KANTOR"
+    ]
+  },
+  {
+    "word": "BISIKAN",
+    "answers": [
+      "ILHAM"
+    ]
+  },
+  {
+    "word": "BISKOP",
+    "answers": [
+      "USKUP"
+    ]
+  },
+  {
+    "word": "BIUMBAI",
+    "answers": [
+      "TUNANGAN"
+    ]
+  },
+  {
+    "word": "BLOGER",
+    "answers": [
+      "NARABLOG"
+    ]
+  },
+  {
+    "word": "BLONCENG",
+    "answers": [
+      "BELIGO"
+    ]
+  },
+  {
+    "word": "BODOH",
+    "answers": [
+      "BABAL",
+      "BEGO",
+      "BELOG",
+      "BODHO",
+      "BODO",
+      "BODOH",
+      "BOEDEUËH",
+      "BÂDHÂNGÂN"
+    ]
+  },
+  {
+    "word": "BOROS",
+    "answers": [
+      "MUBAZIR",
+      "PEMBOROSAN"
+    ]
+  },
+  {
+    "word": "BUAH",
+    "answers": [
+      "BUAH",
+      "WOHWOHAN"
+    ]
+  },
+  {
+    "word": "BUKA",
+    "answers": [
+      "BONGKAR",
+      "BUKA",
+      "BUKE",
+      "MAMBUKAK",
+      "MBUKAK",
+      "SINGKAP"
+    ]
+  },
+  {
+    "word": "BULAN",
+    "answers": [
+      "BULAN",
+      "LUNAR",
+      "PURNAMA",
+      "REMBULAN",
+      "SASI",
+      "WULAN"
+    ]
+  },
+  {
+    "word": "BULUH",
+    "answers": [
+      "AUR",
+      "PERING"
+    ]
+  },
+  {
+    "word": "BUMI",
+    "answers": [
+      "BUANA",
+      "DUNIA",
+      "JAGAT"
+    ]
+  },
+  {
+    "word": "BUNGA",
+    "answers": [
+      "KEMBANG",
+      "KUSUMA",
+      "PUSPA"
+    ]
+  },
+  {
+    "word": "BUNGA PADI",
+    "answers": [
+      "JEPUN",
+      "RINGSANG"
+    ]
+  },
+  {
+    "word": "BUNGSU",
+    "answers": [
+      "BERUJU"
+    ]
+  },
+  {
+    "word": "BURUH",
+    "answers": [
+      "KARYAWAN",
+      "PEKERJA"
+    ]
+  },
+  {
+    "word": "BURUK",
+    "answers": [
+      "ALA",
+      "BUSUAK",
+      "ELEK",
+      "JELEK"
+    ]
+  },
+  {
+    "word": "CACI",
+    "answers": [
+      "CELA",
+      "CERCA",
+      "HINA",
+      "MAKI"
+    ]
+  },
+  {
+    "word": "CAMPUR",
+    "answers": [
+      "ADUK",
+      "CAMPUR"
+    ]
+  },
+  {
+    "word": "CANTIK",
+    "answers": [
+      "AYU",
+      "BAGUS",
+      "CANTIK",
+      "GANJIL",
+      "GEULIS",
+      "JEGEG",
+      "LAGÈË",
+      "MARANNU"
+    ]
+  },
+  {
+    "word": "CELAKA",
+    "answers": [
+      "MALANG",
+      "NAHAS",
+      "SIAL"
+    ]
+  },
+  {
+    "word": "CELEMEK",
+    "answers": [
+      "APRON",
+      "BAJU"
+    ]
+  },
+  {
+    "word": "CELOLA",
+    "answers": [
+      "CELOLMEO",
+      "CELOLO"
+    ]
+  },
+  {
+    "word": "CEMBURU",
+    "answers": [
+      "BUTAREPAN",
+      "TIMBURU"
+    ]
+  },
+  {
+    "word": "CEPAT",
+    "answers": [
+      "CEPEK",
+      "CEPET",
+      "GANCANG",
+      "GESIT",
+      "KENCENG",
+      "KILAT"
+    ]
+  },
+  {
+    "word": "CERAI",
+    "answers": [
+      "BERPISAH",
+      "PISAH"
+    ]
+  },
+  {
+    "word": "CINTA",
+    "answers": [
+      "ASMARA",
+      "KASIH",
+      "SAYANG"
+    ]
+  },
+  {
+    "word": "CONTOH",
+    "answers": [
+      "MISAL",
+      "SAMPEL",
+      "TELADAN"
+    ]
+  },
+  {
+    "word": "CUCI",
+    "answers": [
+      "BILAS",
+      "KUMBAH",
+      "MAMBASUH",
+      "NYEUSEUH",
+      "WISUH"
+    ]
+  },
+  {
+    "word": "DADA",
+    "answers": [
+      "DADA",
+      "DADO",
+      "DHADHA",
+      "JAJA"
+    ]
+  },
+  {
+    "word": "DAERAH",
+    "answers": [
+      "DESA",
+      "KAWASAN",
+      "WILAYAH"
+    ]
+  },
+  {
+    "word": "DAGING",
+    "answers": [
+      "DAGIANG",
+      "IWAK",
+      "LAUK",
+      "ULAM"
+    ]
+  },
+  {
+    "word": "DANAU",
+    "answers": [
+      "RANU",
+      "SITU"
+    ]
+  },
+  {
+    "word": "DATANG",
+    "answers": [
+      "DATANG",
+      "DATENG",
+      "HADIR",
+      "JAK",
+      "MAI",
+      "RAUH",
+      "RAWUH",
+      "SAMPAI",
+      "SUMPING",
+      "TEKA",
+      "TIBA",
+      "TIBO"
+    ]
+  },
+  {
+    "word": "DATUK",
+    "answers": [
+      "EYANG",
+      "KAKEK"
+    ]
+  },
+  {
+    "word": "DENGAR",
+    "answers": [
+      "DANGARI",
+      "DENGER",
+      "KRUNGU",
+      "MENDENGAR",
+      "RUNGU",
+      "SIMAK",
+      "TANGKAP"
+    ]
+  },
+  {
+    "word": "DINGIN",
+    "answers": [
+      "ADEM",
+      "ADHEM",
+      "BEKU",
+      "DINGIN",
+      "SAJUAK",
+      "SEJUK",
+      "TIIS"
+    ]
+  },
+  {
+    "word": "DONGKRAK",
+    "answers": [
+      "BICU"
+    ]
+  },
+  {
+    "word": "DUA",
+    "answers": [
+      "DUA",
+      "DUO",
+      "KALIH",
+      "LORO"
+    ]
+  },
+  {
+    "word": "DUBUR",
+    "answers": [
+      "ANUS",
+      "PANTAT"
+    ]
+  },
+  {
+    "word": "DUDUK",
+    "answers": [
+      "DIUK",
+      "DUDUAK",
+      "DUDUK",
+      "DUÉK",
+      "LINGGIH",
+      "LUNGGUH",
+      "MENENG",
+      "TOKKO",
+      "TONGGO",
+      "TONGKRONG",
+      "TUDANG"
+    ]
+  },
+  {
+    "word": "DUGA",
+    "answers": [
+      "KIRA",
+      "PREDIKSI",
+      "RABA",
+      "SANGKA"
+    ]
+  },
+  {
+    "word": "DUNGU",
+    "answers": [
+      "BELEGUG",
+      "KOPLO"
+    ]
+  },
+  {
+    "word": "ELASTIS",
+    "answers": [
+      "FLEKSIBEL",
+      "KENYAL",
+      "LENTUR"
+    ]
+  },
+  {
+    "word": "ELOK",
+    "answers": [
+      "CANTIK",
+      "INDAH",
+      "MOLEK"
+    ]
+  },
+  {
+    "word": "ELUS",
+    "answers": [
+      "BELAI",
+      "BUJUK",
+      "USAP"
+    ]
+  },
+  {
+    "word": "ENAK",
+    "answers": [
+      "LEZAT",
+      "NIKMAT",
+      "SEDAP"
+    ]
+  },
+  {
+    "word": "ENAU",
+    "answers": [
+      "AREN",
+      "BOGOR"
+    ]
+  },
+  {
+    "word": "GADIS",
+    "answers": [
+      "BIKIR",
+      "NONI"
+    ]
+  },
+  {
+    "word": "GAJAH",
+    "answers": [
+      "BIRAM",
+      "KUNJARA"
+    ]
+  },
+  {
+    "word": "GALAH",
+    "answers": [
+      "GANTAR",
+      "SENGGET"
+    ]
+  },
+  {
+    "word": "GANJARAN",
+    "answers": [
+      "BALAS",
+      "HUKUMAN"
+    ]
+  },
+  {
+    "word": "GANTENG",
+    "answers": [
+      "BAGUS",
+      "BUJUR",
+      "GAGAH",
+      "GANTENG",
+      "KASEP",
+      "LAGÈË",
+      "MARANNU",
+      "TERUNA"
+    ]
+  },
+  {
+    "word": "GANTI",
+    "answers": [
+      "BERGANTI",
+      "SILIH",
+      "TUKAR",
+      "UBAH"
+    ]
+  },
+  {
+    "word": "GARAM",
+    "answers": [
+      "GARAM",
+      "SIRA",
+      "UYAH"
+    ]
+  },
+  {
+    "word": "GELAP",
+    "answers": [
+      "GULITA",
+      "KELAM",
+      "PEKAT"
+    ]
+  },
+  {
+    "word": "GELEGATA",
+    "answers": [
+      "BIDUR",
+      "KALIGATA"
+    ]
+  },
+  {
+    "word": "GEMUK",
+    "answers": [
+      "BEUBEUT",
+      "BÊBÊK",
+      "GENDUT",
+      "LAMAK",
+      "LEMU",
+      "LOMPO",
+      "LÈMO",
+      "SOMBOR",
+      "TEUBAI"
+    ]
+  },
+  {
+    "word": "GENDONGAN",
+    "answers": [
+      "GENDONG",
+      "TIMANG"
+    ]
+  },
+  {
+    "word": "GENERASI",
+    "answers": [
+      "ANGKATAN",
+      "KETURUNAN"
+    ]
+  },
+  {
+    "word": "GIAT",
+    "answers": [
+      "AKTIF",
+      "RAJIN",
+      "SEMANGAT"
+    ]
+  },
+  {
+    "word": "GIGI",
+    "answers": [
+      "GHIGHI",
+      "GIGI",
+      "GIGIH",
+      "GIGÖË",
+      "HUNTU",
+      "UNTU",
+      "WAOS"
+    ]
+  },
+  {
+    "word": "GUBAHAN",
+    "answers": [
+      "CIPTAAN",
+      "KARANGAN",
+      "KOMPOSISI"
+    ]
+  },
+  {
+    "word": "GUGURAN",
+    "answers": [
+      "KEGUGURAN",
+      "RONTOK"
+    ]
+  },
+  {
+    "word": "GULA",
+    "answers": [
+      "GENDHIS",
+      "GULA",
+      "GULO"
+    ]
+  },
+  {
+    "word": "GULUNG",
+    "answers": [
+      "LINGKAR",
+      "LIPAT",
+      "ROLL"
+    ]
+  },
+  {
+    "word": "GUNUNG",
+    "answers": [
+      "BUKIT",
+      "LERENG",
+      "PEGUNUNGAN"
+    ]
+  },
+  {
+    "word": "HANCUR",
+    "answers": [
+      "REMUK",
+      "RUNTUH",
+      "RUSAK"
+    ]
+  },
+  {
+    "word": "HARI",
+    "answers": [
+      "DINA",
+      "DINTEN",
+      "HARI"
+    ]
+  },
+  {
+    "word": "HATI",
+    "answers": [
+      "ATI",
+      "ATÈ",
+      "ATÉË",
+      "HATI",
+      "HATÉ",
+      "KENEH",
+      "ROHA"
+    ]
+  },
+  {
+    "word": "HELA",
+    "answers": [
+      "SERET",
+      "TARIK"
+    ]
+  },
+  {
+    "word": "HERAN",
+    "answers": [
+      "KAGUM",
+      "TAKJUB"
+    ]
+  },
+  {
+    "word": "HEWAN",
+    "answers": [
+      "BINATANG",
+      "FAUNA",
+      "SATWA"
+    ]
+  },
+  {
+    "word": "HIDUNG",
+    "answers": [
+      "CUNGUH",
+      "HIDUNG",
+      "IDUANG",
+      "IDUNG",
+      "IGUNG",
+      "IJUK",
+      "IRUNG",
+      "ISU",
+      "ÈRONG"
+    ]
+  },
+  {
+    "word": "HILANG",
+    "answers": [
+      "LENYAP",
+      "MUSNAH",
+      "RAIB",
+      "SIRNA"
+    ]
+  },
+  {
+    "word": "HITUNG",
+    "answers": [
+      "BILANG",
+      "REKEN"
+    ]
+  },
+  {
+    "word": "HUKUMAN",
+    "answers": [
+      "BALAS",
+      "GANJARAN"
+    ]
+  },
+  {
+    "word": "HUTAN",
+    "answers": [
+      "BELANTARA",
+      "RIMBA",
+      "WANA"
+    ]
+  },
+  {
+    "word": "IBU",
+    "answers": [
+      "AMAK",
+      "BUNDA",
+      "EMAK",
+      "IBU",
+      "INANG",
+      "INDO",
+      "INDUNG",
+      "MAK",
+      "MAMA",
+      "MAMI",
+      "MÉMÉ",
+      "SIMBOK",
+      "ÈBU"
+    ]
+  },
+  {
+    "word": "IKAN",
+    "answers": [
+      "IKAN",
+      "IWAK",
+      "LAUK",
+      "ULAM"
+    ]
+  },
+  {
+    "word": "IKAT",
+    "answers": [
+      "KAIT",
+      "MENGIKAT",
+      "SAMBUNG"
+    ]
+  },
+  {
+    "word": "ILHAM",
+    "answers": [
+      "BISIKAN",
+      "INSPIRASI",
+      "PETUNJUK"
+    ]
+  },
+  {
+    "word": "INDAH",
+    "answers": [
+      "CANTIK",
+      "ELOK",
+      "GEULIS",
+      "MOLEK",
+      "PENI",
+      "PERMAI"
+    ]
+  },
+  {
+    "word": "INGATAN",
+    "answers": [
+      "KENANGAN",
+      "MEMORI",
+      "PIKIRAN"
+    ]
+  },
+  {
+    "word": "ISTIRAHAT",
+    "answers": [
+      "BAGORAK",
+      "ISTIRAHAT",
+      "LEREN",
+      "NGASO"
+    ]
+  },
+  {
+    "word": "ISTRI",
+    "answers": [
+      "BINI",
+      "BOJO",
+      "GARWA",
+      "JATUKRAMA",
+      "WADON"
+    ]
+  },
+  {
+    "word": "JAGA",
+    "answers": [
+      "ASUH",
+      "KAWAL",
+      "PELIHARA",
+      "RAWAT"
+    ]
+  },
+  {
+    "word": "JAHAT",
+    "answers": [
+      "ALA",
+      "GORENG",
+      "JAHAT",
+      "JAPPA",
+      "KOTOR",
+      "ZÂLÂM"
+    ]
+  },
+  {
+    "word": "JALAN",
+    "answers": [
+      "JALAN",
+      "JALUR",
+      "LAMPAH",
+      "LINTASAN",
+      "LORONG",
+      "LUMBAN",
+      "MLAKU",
+      "RUTE"
+    ]
+  },
+  {
+    "word": "JAMAH",
+    "answers": [
+      "PEGANG",
+      "RABA",
+      "SENTUH"
+    ]
+  },
+  {
+    "word": "JARI",
+    "answers": [
+      "DRIJI",
+      "JARI",
+      "RAMO",
+      "RAOS"
+    ]
+  },
+  {
+    "word": "JATUH",
+    "answers": [
+      "AMBLEK",
+      "AMBYUK"
+    ]
+  },
+  {
+    "word": "JAUH",
+    "answers": [
+      "JARAK",
+      "NUN"
+    ]
+  },
+  {
+    "word": "JAWAB",
+    "answers": [
+      "MANJAWAB",
+      "NGAWALON",
+      "WANGSUL",
+      "WASULIN"
+    ]
+  },
+  {
+    "word": "JELEK",
+    "answers": [
+      "ANCAK",
+      "ELEK",
+      "GORENG",
+      "JANGGA",
+      "JELEK",
+      "JEUËT",
+      "JOROK",
+      "JÂLÂ"
+    ]
+  },
+  {
+    "word": "JERAWAT",
+    "answers": [
+      "BISUL",
+      "KOMEDO"
+    ]
+  },
+  {
+    "word": "KABUR",
+    "answers": [
+      "BLAWUR",
+      "BRUWET"
+    ]
+  },
+  {
+    "word": "KACAU",
+    "answers": [
+      "ADUK",
+      "RUSAK"
+    ]
+  },
+  {
+    "word": "KAKAK",
+    "answers": [
+      "AKANG",
+      "BELI",
+      "ENCING",
+      "KAKA",
+      "KAKAK",
+      "KANGMAS",
+      "MBAKYU",
+      "TULANG",
+      "UDA",
+      "UWO"
+    ]
+  },
+  {
+    "word": "KAKEK",
+    "answers": [
+      "AKI",
+      "DATUK",
+      "EMBAH",
+      "ENGKONG",
+      "EYANG",
+      "INYIAK",
+      "KAI",
+      "KAKEK",
+      "KAKÈ",
+      "MBAH",
+      "MBAH KAKUNG",
+      "OPUNG",
+      "SIMBAH",
+      "WAN"
+    ]
+  },
+  {
+    "word": "KAKI",
+    "answers": [
+      "ADDENG",
+      "BATIS",
+      "HAE",
+      "KAKI",
+      "KRUËNG",
+      "SAMPEAN",
+      "SAPPA",
+      "SIKIL",
+      "SUKU"
+    ]
+  },
+  {
+    "word": "KANTOR",
+    "answers": [
+      "BALAI",
+      "BIRO",
+      "PEJABAT"
+    ]
+  },
+  {
+    "word": "KARANGAN",
+    "answers": [
+      "CIPTAAN",
+      "ESAI",
+      "TULISAN"
+    ]
+  },
+  {
+    "word": "KARCIS",
+    "answers": [
+      "BILYET"
+    ]
+  },
+  {
+    "word": "KARTU",
+    "answers": [
+      "BILYET"
+    ]
+  },
+  {
+    "word": "KATAPEL",
+    "answers": [
+      "PELINTENG",
+      "PLINTENG"
+    ]
+  },
+  {
+    "word": "KAWIN",
+    "answers": [
+      "BERJODOH"
+    ]
+  },
+  {
+    "word": "KAYA",
+    "answers": [
+      "BERADA",
+      "HARTAWAN",
+      "MAKMUR"
+    ]
+  },
+  {
+    "word": "KEADAAN",
+    "answers": [
+      "KONDISI",
+      "SITUASI"
+    ]
+  },
+  {
+    "word": "KEASLIAN",
+    "answers": [
+      "AUTENTISITAS",
+      "ORISINALITAS"
+    ]
+  },
+  {
+    "word": "KECIL",
+    "answers": [
+      "ALIT",
+      "CADDI",
+      "CENIK",
+      "CILIK",
+      "KACIAK",
+      "KCIL",
+      "KECIL",
+      "KETEK",
+      "KÈNI",
+      "MIKRO",
+      "MINI",
+      "MUNGIL",
+      "OTIK",
+      "PACER",
+      "UTÔ"
+    ]
+  },
+  {
+    "word": "KECUALI",
+    "answers": [
+      "BIGAIR"
+    ]
+  },
+  {
+    "word": "KELAPA",
+    "answers": [
+      "KALAPA",
+      "KARAMBIA",
+      "KRAMBIL"
+    ]
+  },
+  {
+    "word": "KELOK",
+    "answers": [
+      "BELOK",
+      "LENGKUNG",
+      "TIKUNGAN"
+    ]
+  },
+  {
+    "word": "KEMAMPUAN",
+    "answers": [
+      "KAPASITAS",
+      "KECAKAPAN"
+    ]
+  },
+  {
+    "word": "KENCANG",
+    "answers": [
+      "SANTER",
+      "SEDET"
+    ]
+  },
+  {
+    "word": "KEPADA",
+    "answers": [
+      "BAGI",
+      "UNTUK"
+    ]
+  },
+  {
+    "word": "KEPALA",
+    "answers": [
+      "ENDHAS",
+      "HULU",
+      "KAPALO",
+      "KEPALA",
+      "SIRAH",
+      "TANDO",
+      "ULU",
+      "ULÈË"
+    ]
+  },
+  {
+    "word": "KERABAT",
+    "answers": [
+      "FAMILI",
+      "KELUARGA",
+      "SAUDARA"
+    ]
+  },
+  {
+    "word": "KERAS",
+    "answers": [
+      "ATOS",
+      "KAREH",
+      "KERAS",
+      "TEGAS"
+    ]
+  },
+  {
+    "word": "KERJA",
+    "answers": [
+      "GAWEAN",
+      "MAKARAJO",
+      "NYAMBUT",
+      "PAGAWEAN"
+    ]
+  },
+  {
+    "word": "KETIDAKJELASAN",
+    "answers": [
+      "KEKABURAN",
+      "KETIDAKPASTIAN"
+    ]
+  },
+  {
+    "word": "KETIDAKTENTUAN",
+    "answers": [
+      "KERAGU-RAGUAN",
+      "KETIDAKPASTIAN"
+    ]
+  },
+  {
+    "word": "KIRIM",
+    "answers": [
+      "ANTAR",
+      "HANTAR",
+      "KIRIMKAN"
+    ]
+  },
+  {
+    "word": "KONKRET",
+    "answers": [
+      "BERWUJUD"
+    ]
+  },
+  {
+    "word": "KOPI",
+    "answers": [
+      "KAWA",
+      "KOPI",
+      "WARUNG"
+    ]
+  },
+  {
+    "word": "KOSONG",
+    "answers": [
+      "MUWA",
+      "NUMAR",
+      "SUWUNG"
+    ]
+  },
+  {
+    "word": "KOTOR",
+    "answers": [
+      "CEMAR",
+      "JOROK",
+      "KUMAL",
+      "KUSAM"
+    ]
+  },
+  {
+    "word": "KUAP",
+    "answers": [
+      "MENGANGA",
+      "MENGUAP"
+    ]
+  },
+  {
+    "word": "KUAT",
+    "answers": [
+      "KEKAR",
+      "KOKOH",
+      "TANGGUH"
+    ]
+  },
+  {
+    "word": "KUMIS",
+    "answers": [
+      "BERENGOS"
+    ]
+  },
+  {
+    "word": "KURUS",
+    "answers": [
+      "CENGKING",
+      "IHOT",
+      "KEULÈËNG",
+      "KODDE",
+      "KORO",
+      "KUCIANG",
+      "KURU",
+      "KURUS"
+    ]
+  },
+  {
+    "word": "KUSTA",
+    "answers": [
+      "LEPRA",
+      "PENYAKIT"
+    ]
+  },
+  {
+    "word": "LAMA",
+    "answers": [
+      "KUNO",
+      "LAWAS",
+      "PURBA",
+      "USANG"
+    ]
+  },
+  {
+    "word": "LAMBAT",
+    "answers": [
+      "ALON",
+      "LAMBAN",
+      "LAMBEK",
+      "LAUN",
+      "LELET",
+      "PELAN",
+      "PERLAHAN"
+    ]
+  },
+  {
+    "word": "LANGIT",
+    "answers": [
+      "ANGKASA",
+      "AWANG",
+      "CAKRAWALA"
+    ]
+  },
+  {
+    "word": "LARI",
+    "answers": [
+      "KABUR",
+      "LARI",
+      "LAUT",
+      "LEUMPANG",
+      "LUMBA",
+      "LUMPAT",
+      "MALARI",
+      "MARLAYU",
+      "MLAYU",
+      "NGALAYANG"
+    ]
+  },
+  {
+    "word": "LAUT",
+    "answers": [
+      "BAHARI",
+      "SAMUDERA",
+      "SAMUDRA",
+      "SEGARA"
+    ]
+  },
+  {
+    "word": "LEBAR",
+    "answers": [
+      "AMBA",
+      "JEBRAG",
+      "LEBA",
+      "LEBAR",
+      "TANGAR",
+      "WERA",
+      "WIYAR"
+    ]
+  },
+  {
+    "word": "LEHER",
+    "answers": [
+      "GULU",
+      "TANGGUAK",
+      "TENGGOROKAN"
+    ]
+  },
+  {
+    "word": "LELAH",
+    "answers": [
+      "CAPEK",
+      "LETIH",
+      "PAYAH",
+      "PENAT"
+    ]
+  },
+  {
+    "word": "LELAP",
+    "answers": [
+      "PULAS",
+      "TIDUR"
+    ]
+  },
+  {
+    "word": "LEMAH",
+    "answers": [
+      "LEMAS",
+      "LESU",
+      "LOYO",
+      "LUNGLAI"
+    ]
+  },
+  {
+    "word": "LEMBUT",
+    "answers": [
+      "ALUS",
+      "LEMBUK",
+      "LEMES"
+    ]
+  },
+  {
+    "word": "LEMPAR",
+    "answers": [
+      "BALEDOG",
+      "BUANG",
+      "MANIMPAK",
+      "UNCAL"
+    ]
+  },
+  {
+    "word": "LENTUR",
+    "answers": [
+      "ELASTIS",
+      "FLEKSIBEL",
+      "LUWES"
+    ]
+  },
+  {
+    "word": "LEZAT",
+    "answers": [
+      "ENAK",
+      "NIKMAT",
+      "SEDAP"
+    ]
+  },
+  {
+    "word": "LIDAH",
+    "answers": [
+      "BASA",
+      "ILAT",
+      "LIDAH",
+      "LISAN"
+    ]
+  },
+  {
+    "word": "LIHAT",
+    "answers": [
+      "AMATI",
+      "DELOK",
+      "LIAK",
+      "NINGALI",
+      "PANDANG",
+      "TATAP",
+      "TENGOK"
+    ]
+  },
+  {
+    "word": "LOBA",
+    "answers": [
+      "RAKUS",
+      "SERAKAH",
+      "TAMAK"
+    ]
+  },
+  {
+    "word": "LUAS",
+    "answers": [
+      "LAPANG",
+      "LEBAR",
+      "LELUASA"
+    ]
+  },
+  {
+    "word": "LUTUT",
+    "answers": [
+      "DENGKUL",
+      "LUTUT"
+    ]
+  },
+  {
+    "word": "MAIN",
+    "answers": [
+      "DOLANAN",
+      "MAENAN",
+      "MAMAIN",
+      "ULIN"
+    ]
+  },
+  {
+    "word": "MAJU",
+    "answers": [
+      "BERKEMBANG",
+      "MAJU",
+      "PROGRESS"
+    ]
+  },
+  {
+    "word": "MAKAN",
+    "answers": [
+      "DAHAR",
+      "KANDE",
+      "MAKAN",
+      "MANGAN",
+      "NAAR",
+      "NGAKAN",
+      "PAJOH",
+      "TUANG"
+    ]
+  },
+  {
+    "word": "MAKSUD",
+    "answers": [
+      "NIAT",
+      "RENCANA",
+      "TUJUAN"
+    ]
+  },
+  {
+    "word": "MALAM",
+    "answers": [
+      "BENGI",
+      "DALU",
+      "MALAM",
+      "MALEM"
+    ]
+  },
+  {
+    "word": "MALAS",
+    "answers": [
+      "BONTOR",
+      "CALIAK",
+      "MALAS",
+      "MALES",
+      "MALEUËM",
+      "MELAH",
+      "PUGUH",
+      "TALE"
+    ]
+  },
+  {
+    "word": "MANDUL",
+    "answers": [
+      "CINING",
+      "GEMPUS"
+    ]
+  },
+  {
+    "word": "MARAH",
+    "answers": [
+      "AMBEK",
+      "BENDU",
+      "BERANG",
+      "BEUNGEH",
+      "BÂNCI",
+      "DUKA",
+      "GEDEG",
+      "GERAM",
+      "GUSAR",
+      "MALARA",
+      "MANGIK",
+      "MARAH",
+      "MURKA",
+      "NESU",
+      "PASUAM"
+    ]
+  },
+  {
+    "word": "MASAK",
+    "answers": [
+      "MAMASAK",
+      "MASAK",
+      "NGASAK",
+      "NGOLAH"
+    ]
+  },
+  {
+    "word": "MASKAWIN",
+    "answers": [
+      "BERIAN"
+    ]
+  },
+  {
+    "word": "MASUK",
+    "answers": [
+      "ASUP",
+      "BLUSUK"
+    ]
+  },
+  {
+    "word": "MATA",
+    "answers": [
+      "MADA",
+      "MATA",
+      "MATO",
+      "MATÈË",
+      "MRIPAT",
+      "NETRA",
+      "PANDANGAN",
+      "PANINGAL",
+      "PANON"
+    ]
+  },
+  {
+    "word": "MATAHARI",
+    "answers": [
+      "BAGASKARA",
+      "BASKARA",
+      "MENTARI",
+      "SURYA"
+    ]
+  },
+  {
+    "word": "MATBAT",
+    "answers": [
+      "BIGA"
+    ]
+  },
+  {
+    "word": "MEGAH",
+    "answers": [
+      "BESAR",
+      "MEWAH"
+    ]
+  },
+  {
+    "word": "MELAHIRKAN",
+    "answers": [
+      "MURIK",
+      "NAI"
+    ]
+  },
+  {
+    "word": "MELAINKAN",
+    "answers": [
+      "BIGAIR"
+    ]
+  },
+  {
+    "word": "MELAYANI",
+    "answers": [
+      "BERSEWAKA"
+    ]
+  },
+  {
+    "word": "MELINJO",
+    "answers": [
+      "BOGOR",
+      "MENINJAU"
+    ]
+  },
+  {
+    "word": "MENDUT",
+    "answers": [
+      "BUGIS KOCI",
+      "KOCI-KOCI"
+    ]
+  },
+  {
+    "word": "MENGGEMBALA",
+    "answers": [
+      "MENGGEMBALAKAN",
+      "TERNAK"
+    ]
+  },
+  {
+    "word": "MENGHAMBA",
+    "answers": [
+      "BERSEWAKA"
+    ]
+  },
+  {
+    "word": "MENGHAPUS",
+    "answers": [
+      "HAPUS",
+      "HILANGKAN"
+    ]
+  },
+  {
+    "word": "MENGHILANGKAN",
+    "answers": [
+      "HAPUS",
+      "HILANGKAN"
+    ]
+  },
+  {
+    "word": "MENGIKAT",
+    "answers": [
+      "IKAT",
+      "SAMBUNG",
+      "TALI"
+    ]
+  },
+  {
+    "word": "MENUMIS",
+    "answers": [
+      "BERTUMIS"
+    ]
+  },
+  {
+    "word": "MENYAWAH",
+    "answers": [
+      "BERSAWAH"
+    ]
+  },
+  {
+    "word": "MENYENTUH",
+    "answers": [
+      "ARAS",
+      "SENTUH"
+    ]
+  },
+  {
+    "word": "MERAH",
+    "answers": [
+      "BERMA",
+      "BIRAM"
+    ]
+  },
+  {
+    "word": "MERENGEK",
+    "answers": [
+      "BERCEROTEH"
+    ]
+  },
+  {
+    "word": "MESKIPUN",
+    "answers": [
+      "BIARPUN"
+    ]
+  },
+  {
+    "word": "MIKROFON",
+    "answers": [
+      "MIC",
+      "PENGERAS"
+    ]
+  },
+  {
+    "word": "MINGGU",
+    "answers": [
+      "AHAD",
+      "KLIWON",
+      "MINGGU"
+    ]
+  },
+  {
+    "word": "MINUM",
+    "answers": [
+      "INGNGU",
+      "INUM",
+      "INÔM",
+      "MAINUM",
+      "MINUM",
+      "MINUN",
+      "NGENOM",
+      "NGINUM",
+      "NGOMBE"
+    ]
+  },
+  {
+    "word": "MISAI",
+    "answers": [
+      "BERENGOS"
+    ]
+  },
+  {
+    "word": "MISKIN",
+    "answers": [
+      "FAKIR",
+      "MELARAT",
+      "PAPA"
+    ]
+  },
+  {
+    "word": "MUAT",
+    "answers": [
+      "ISI",
+      "MUAT",
+      "SIMPAN"
+    ]
+  },
+  {
+    "word": "MUDA",
+    "answers": [
+      "BELIA",
+      "BOBORU",
+      "ENOM",
+      "MUDA",
+      "REMAJA"
+    ]
+  },
+  {
+    "word": "MUDAH",
+    "answers": [
+      "GAMPANG",
+      "RINGAN",
+      "SIMPLE"
+    ]
+  },
+  {
+    "word": "MULIA",
+    "answers": [
+      "AGUNG",
+      "LUHUR"
+    ]
+  },
+  {
+    "word": "MULUT",
+    "answers": [
+      "BAHAM",
+      "CANGKEM",
+      "MEULUËT",
+      "MOLO",
+      "MULUIK",
+      "MULUT",
+      "MUNCUANG",
+      "MÉNGNGO",
+      "SUNGUT",
+      "TUTUK"
+    ]
+  },
+  {
+    "word": "NAKAL",
+    "answers": [
+      "BANGOR",
+      "BELING"
+    ]
+  },
+  {
+    "word": "NARABLOG",
+    "answers": [
+      "BLOGER"
+    ]
+  },
+  {
+    "word": "NASI",
+    "answers": [
+      "NASI",
+      "SANGU",
+      "SEGA",
+      "SEKUL"
+    ]
+  },
+  {
+    "word": "NENEK",
+    "answers": [
+      "CÈËT",
+      "DADONG",
+      "EMBAH",
+      "ENYAK",
+      "ETEK",
+      "EYANG",
+      "INYIAK",
+      "MBAH",
+      "MBAH PUTRI",
+      "NENEK",
+      "NINI",
+      "NÈNÈ",
+      "OMA",
+      "OPUNG",
+      "SIMBAH"
+    ]
+  },
+  {
+    "word": "NGERI",
+    "answers": [
+      "BERGIDIK"
+    ]
+  },
+  {
+    "word": "NIAT",
+    "answers": [
+      "KEINGINAN",
+      "MAKSUD",
+      "TUJUAN"
+    ]
+  },
+  {
+    "word": "PADAT",
+    "answers": [
+      "AOS",
+      "GEMPI",
+      "KINIMPAL",
+      "TITIH"
+    ]
+  },
+  {
+    "word": "PAGI",
+    "answers": [
+      "ENJING",
+      "ESUK",
+      "PAGI",
+      "PAGIAH"
+    ]
+  },
+  {
+    "word": "PAMAN",
+    "answers": [
+      "AMANG",
+      "MAMAK",
+      "OM",
+      "PAKDHE",
+      "PAMAN",
+      "PUANG",
+      "TULANG"
+    ]
+  },
+  {
+    "word": "PANAS",
+    "answers": [
+      "ANAS",
+      "ANGEK",
+      "BENTER",
+      "GERAH",
+      "HANGAT",
+      "PANAS",
+      "TERIK"
+    ]
+  },
+  {
+    "word": "PANJANG",
+    "answers": [
+      "DAWA",
+      "GEPA",
+      "JANGJANG",
+      "PANJANG",
+      "RANGA"
+    ]
+  },
+  {
+    "word": "PANTAT",
+    "answers": [
+      "BIRIT",
+      "BOKONG",
+      "DUBUR",
+      "PELEPASAN"
+    ]
+  },
+  {
+    "word": "PASTI",
+    "answers": [
+      "TENTU",
+      "YAKIN"
+    ]
+  },
+  {
+    "word": "PASUKAN",
+    "answers": [
+      "BALA",
+      "GEROMBONG"
+    ]
+  },
+  {
+    "word": "PEGANG",
+    "answers": [
+      "JABAT",
+      "MEMEGANG"
+    ]
+  },
+  {
+    "word": "PELANGGAN",
+    "answers": [
+      "KONSUMEN",
+      "PEMBELI"
+    ]
+  },
+  {
+    "word": "PELANGI",
+    "answers": [
+      "BIANGLALA",
+      "KATUMBIRI",
+      "KELUWUNG",
+      "TEJA"
+    ]
+  },
+  {
+    "word": "PELIHARA",
+    "answers": [
+      "JAGA",
+      "RAWAT",
+      "URUS"
+    ]
+  },
+  {
+    "word": "PEMBELA",
+    "answers": [
+      "DEFENDER",
+      "PELINDUNG"
+    ]
+  },
+  {
+    "word": "PEMBINA",
+    "answers": [
+      "BINAWAN"
+    ]
+  },
+  {
+    "word": "PENCURI",
+    "answers": [
+      "BANDIT",
+      "GORILYA",
+      "PANCALONGOK",
+      "PERLENTEH",
+      "SARIK"
+    ]
+  },
+  {
+    "word": "PENDEK",
+    "answers": [
+      "CENDEK",
+      "CENDHEK",
+      "KEUTÔË",
+      "KODDE",
+      "PENDEK",
+      "PODEK",
+      "PONDOK",
+      "PÈNDHÂ",
+      "RANDAH"
+    ]
+  },
+  {
+    "word": "PENERAPAN",
+    "answers": [
+      "APLIKASI",
+      "IMPLEMENTASI"
+    ]
+  },
+  {
+    "word": "PENGAJARAN",
+    "answers": [
+      "PIWULANG",
+      "WIYATA"
+    ]
+  },
+  {
+    "word": "PENGAJUAN",
+    "answers": [
+      "PERMOHONAN",
+      "PROPOSAL",
+      "USULAN"
+    ]
+  },
+  {
+    "word": "PENGANAN",
+    "answers": [
+      "BINTENG",
+      "BRENGKESAN",
+      "JALABRIA",
+      "JENANG JADI",
+      "JENANG KATUL"
+    ]
+  },
+  {
+    "word": "PENGGUNAAN",
+    "answers": [
+      "APLIKASI",
+      "PEMAKAIAN",
+      "PENERAPAN"
+    ]
+  },
+  {
+    "word": "PENGUBAHAN",
+    "answers": [
+      "MODIFIKASI",
+      "PERUBAHAN",
+      "TRANSFORMASI"
+    ]
+  },
+  {
+    "word": "PENGUMUMAN",
+    "answers": [
+      "MAKLUMAT",
+      "NOTIFIKASI",
+      "PEMBERITAHUAN"
+    ]
+  },
+  {
+    "word": "PENGUNGKIT",
+    "answers": [
+      "BICU"
+    ]
+  },
+  {
+    "word": "PENGUTUSAN",
+    "answers": [
+      "BIKSAH"
+    ]
+  },
+  {
+    "word": "PENJAHAT",
+    "answers": [
+      "BANDIT",
+      "BEBOTOH",
+      "DURJANA",
+      "GANGSTER",
+      "PERLENTEH"
+    ]
+  },
+  {
+    "word": "PERANAKAN",
+    "answers": [
+      "PEPUJU",
+      "TOKOL"
+    ]
+  },
+  {
+    "word": "PERANG",
+    "answers": [
+      "JURIT",
+      "PALAGAN"
+    ]
+  },
+  {
+    "word": "PERAWAN",
+    "answers": [
+      "BIKIR"
+    ]
+  },
+  {
+    "word": "PERCAYA",
+    "answers": [
+      "IMAN",
+      "TRUST",
+      "YAKIN"
+    ]
+  },
+  {
+    "word": "PERGANTIAN",
+    "answers": [
+      "PENGGANTIAN",
+      "PERTUKARAN",
+      "ROTASI"
+    ]
+  },
+  {
+    "word": "PERGI",
+    "answers": [
+      "BERLEPAS",
+      "INDIT",
+      "JAJAH",
+      "JALÉUK",
+      "LAHO",
+      "LAJU",
+      "LARI",
+      "LUNGA",
+      "LUNGO",
+      "NYIT",
+      "PEGI",
+      "PERGI",
+      "SIUH"
+    ]
+  },
+  {
+    "word": "PERHITUNGAN",
+    "answers": [
+      "BERBILANG",
+      "RUNDING"
+    ]
+  },
+  {
+    "word": "PERINTAH",
+    "answers": [
+      "ARAHAN",
+      "INSTRUKSI",
+      "KOMANDO"
+    ]
+  },
+  {
+    "word": "PERMADANI",
+    "answers": [
+      "KARPET",
+      "TIKAR"
+    ]
+  },
+  {
+    "word": "PERMALIM",
+    "answers": [
+      "PALBEGU",
+      "PERBARINGIN"
+    ]
+  },
+  {
+    "word": "PERMINTAAN",
+    "answers": [
+      "PERMOHONAN",
+      "PESANAN",
+      "REQUEST"
+    ]
+  },
+  {
+    "word": "PERMISI",
+    "answers": [
+      "KULA NUWUN",
+      "PUNTEN",
+      "SAMPURASUN"
+    ]
+  },
+  {
+    "word": "PERTANIAN",
+    "answers": [
+      "AGRIKULTUR",
+      "PERKEBUNAN"
+    ]
+  },
+  {
+    "word": "PERTUKARAN",
+    "answers": [
+      "PENUKARAN",
+      "PERGANTIAN",
+      "TUKAR-MENUKAR"
+    ]
+  },
+  {
+    "word": "PERUMPAMAAN",
+    "answers": [
+      "ANALOGI",
+      "KIASAN",
+      "METAFORA"
+    ]
+  },
+  {
+    "word": "PERUT",
+    "answers": [
+      "BEUTEUNG",
+      "PADHARAN",
+      "PARUIK",
+      "WETENG"
+    ]
+  },
+  {
+    "word": "PERUTUSAN",
+    "answers": [
+      "BIKSAH"
+    ]
+  },
+  {
+    "word": "PETUNJUK",
+    "answers": [
+      "ARAHAN",
+      "PANDUAN",
+      "TANDA"
+    ]
+  },
+  {
+    "word": "PIJIT",
+    "answers": [
+      "PIJAT",
+      "URUT"
+    ]
+  },
+  {
+    "word": "PIKIRAN",
+    "answers": [
+      "AKAL",
+      "ANGAN",
+      "INGATAN",
+      "PEMIKIRAN"
+    ]
+  },
+  {
+    "word": "PIMPIN",
+    "answers": [
+      "ASUH",
+      "BIMBING",
+      "MEMIMPIN"
+    ]
+  },
+  {
+    "word": "PINDAH",
+    "answers": [
+      "ALIH",
+      "BERGESER",
+      "BERPINDAH",
+      "GANTI"
+    ]
+  },
+  {
+    "word": "PINTAL",
+    "answers": [
+      "ANYAM",
+      "PILIN",
+      "PUNTIR"
+    ]
+  },
+  {
+    "word": "PINTAR",
+    "answers": [
+      "CERDAS",
+      "CERDIK",
+      "JENIUS",
+      "LEMPONG",
+      "LEPPE",
+      "PAKIAH",
+      "PANDAI",
+      "PATTAR",
+      "PEUNEUGAH",
+      "PINTAR",
+      "PINTER"
+    ]
+  },
+  {
+    "word": "PISAH",
+    "answers": [
+      "BERPISAH",
+      "CERAI"
+    ]
+  },
+  {
+    "word": "PISANG",
+    "answers": [
+      "BUNGKIL",
+      "CAU",
+      "GEDANG",
+      "PISANG"
+    ]
+  },
+  {
+    "word": "POROS",
+    "answers": [
+      "AS",
+      "SUMBU"
+    ]
+  },
+  {
+    "word": "PREMOLAR",
+    "answers": [
+      "BIKUSPID"
+    ]
+  },
+  {
+    "word": "PROTOPLASMA",
+    "answers": [
+      "BIOPLASMA"
+    ]
+  },
+  {
+    "word": "PUKUL",
+    "answers": [
+      "BALUN",
+      "BEDAL",
+      "BELASAH",
+      "GASAK",
+      "GEBOT",
+      "GEBRAK"
+    ]
+  },
+  {
+    "word": "PULANG",
+    "answers": [
+      "BALIK",
+      "KONDUR",
+      "MANTUK",
+      "MOLÈ",
+      "MULAK",
+      "MULANG",
+      "MULIH",
+      "POLE",
+      "PULANG",
+      "WATÈË"
+    ]
+  },
+  {
+    "word": "PUNGGUNG",
+    "answers": [
+      "MBURI",
+      "PUNGGUANG",
+      "TONGGONG",
+      "WINGKING"
+    ]
+  },
+  {
+    "word": "PUSING",
+    "answers": [
+      "BERPENDAR",
+      "PUTAR"
+    ]
+  },
+  {
+    "word": "RABA",
+    "answers": [
+      "DUGA",
+      "PEGANG",
+      "SENTUH"
+    ]
+  },
+  {
+    "word": "RAIH",
+    "answers": [
+      "CAPAI",
+      "GAPAI"
+    ]
+  },
+  {
+    "word": "RAJIN",
+    "answers": [
+      "GARET",
+      "GETOL",
+      "GIAT",
+      "GIGIH",
+      "RAJIN",
+      "RESO",
+      "SEKED",
+      "SREGEP",
+      "SUNGGOH",
+      "TEKUN",
+      "ULET"
+    ]
+  },
+  {
+    "word": "RAMAH",
+    "answers": [
+      "FRIENDLY",
+      "SANTUN",
+      "SOPAN"
+    ]
+  },
+  {
+    "word": "RAMAI",
+    "answers": [
+      "GADUH",
+      "MERIAH",
+      "RIUH",
+      "SEMARAK"
+    ]
+  },
+  {
+    "word": "RAMBUT",
+    "answers": [
+      "BULU",
+      "BULUNG",
+      "BUUK",
+      "BUËK",
+      "RAMBOT",
+      "RAMBUIK",
+      "RAMBUT",
+      "RIKMA"
+    ]
+  },
+  {
+    "word": "RASUL",
+    "answers": [
+      "NABI",
+      "UTUSAN"
+    ]
+  },
+  {
+    "word": "RAWAT",
+    "answers": [
+      "JAGA",
+      "PELIHARA"
+    ]
+  },
+  {
+    "word": "REKAAN",
+    "answers": [
+      "FIKSI",
+      "IMAJINASI",
+      "KHAYALAN"
+    ]
+  },
+  {
+    "word": "RENDAH",
+    "answers": [
+      "ENDHEK",
+      "HANDAP",
+      "RANDAH",
+      "RENDAH"
+    ]
+  },
+  {
+    "word": "RENTAK",
+    "answers": [
+      "BERENTANG"
+    ]
+  },
+  {
+    "word": "REWEL",
+    "answers": [
+      "BERENGSEK"
+    ]
+  },
+  {
+    "word": "RINGAN",
+    "answers": [
+      "ENTENG",
+      "ENTHENG",
+      "HAMPANG",
+      "MUDAH",
+      "RINGAN",
+      "SEDERHANA"
+    ]
+  },
+  {
+    "word": "RINTANGAN",
+    "answers": [
+      "HALANGAN",
+      "HAMBATAN",
+      "OBSTACLE"
+    ]
+  },
+  {
+    "word": "RUGI",
+    "answers": [
+      "BANGKRUT",
+      "LOSS",
+      "MERUGI"
+    ]
+  },
+  {
+    "word": "RUMAH",
+    "answers": [
+      "DALEM",
+      "HUNIAN",
+      "KEDIAMAN",
+      "OMAH",
+      "WISMA"
+    ]
+  },
+  {
+    "word": "RUMPUT",
+    "answers": [
+      "JUKUT",
+      "SUKET"
+    ]
+  },
+  {
+    "word": "RUNDING",
+    "answers": [
+      "BINCANG",
+      "PERHITUNGAN",
+      "PERKIRAAN"
+    ]
+  },
+  {
+    "word": "RUNTUH",
+    "answers": [
+      "AMBROL",
+      "HANCUR",
+      "ROBOH"
+    ]
+  },
+  {
+    "word": "RUSAK",
+    "answers": [
+      "HANCUR",
+      "JELEK",
+      "KORUP"
+    ]
+  },
+  {
+    "word": "SABUNG",
+    "answers": [
+      "ADU",
+      "LAGA"
+    ]
+  },
+  {
+    "word": "SAHABAT",
+    "answers": [
+      "BESTI",
+      "DONGAN",
+      "MITRA"
+    ]
+  },
+  {
+    "word": "SAKIT",
+    "answers": [
+      "NGILU",
+      "NYERI",
+      "PEDIH",
+      "PERIH"
+    ]
+  },
+  {
+    "word": "SALAH",
+    "answers": [
+      "GALAT",
+      "KELIRU",
+      "KHILAF",
+      "SILAP"
+    ]
+  },
+  {
+    "word": "SALURAN",
+    "answers": [
+      "ALUR",
+      "KANAL"
+    ]
+  },
+  {
+    "word": "SAPU",
+    "answers": [
+      "MANYAPU",
+      "NGISIHKEUN",
+      "NYAPU",
+      "SASAPU"
+    ]
+  },
+  {
+    "word": "SATAM",
+    "answers": [
+      "BILITONIT"
+    ]
+  },
+  {
+    "word": "SATU",
+    "answers": [
+      "CIEK",
+      "HIJI",
+      "SETUNGGAL",
+      "SIJI"
+    ]
+  },
+  {
+    "word": "SAUDARA",
+    "answers": [
+      "SADARAH",
+      "SADULUR",
+      "SEDULUR",
+      "SODARA"
+    ]
+  },
+  {
+    "word": "SAYANG",
+    "answers": [
+      "HOLONG",
+      "MAENNAI",
+      "NYAAH",
+      "SAYANG",
+      "TRESNA"
+    ]
+  },
+  {
+    "word": "SAYUR",
+    "answers": [
+      "JANGAN",
+      "LALAP",
+      "SAYUA",
+      "SAYUR"
+    ]
+  },
+  {
+    "word": "SEDIH",
+    "answers": [
+      "DUKA",
+      "MALARA",
+      "MURAM",
+      "NEUGAH",
+      "PILU",
+      "SADIAH",
+      "SEDHIH",
+      "SEDIH",
+      "SENDU",
+      "SUSA",
+      "SUSAH",
+      "SÈDHI"
+    ]
+  },
+  {
+    "word": "SEGAR",
+    "answers": [
+      "CENGHAR",
+      "LOYOK"
+    ]
+  },
+  {
+    "word": "SEHAT",
+    "answers": [
+      "CAGEUR",
+      "JERGET"
+    ]
+  },
+  {
+    "word": "SEMBILAN",
+    "answers": [
+      "SANGA",
+      "SELAPAN"
+    ]
+  },
+  {
+    "word": "SEMBUH",
+    "answers": [
+      "PULIH",
+      "SEHAT",
+      "WARAS"
+    ]
+  },
+  {
+    "word": "SEMPIT",
+    "answers": [
+      "CIUT",
+      "HEPIT",
+      "SEMPIT",
+      "SIKIK"
+    ]
+  },
+  {
+    "word": "SENANG",
+    "answers": [
+      "BAHAGIA",
+      "BINGAH",
+      "BUNGAH",
+      "CERIA",
+      "GEMBIRA",
+      "GEULOE",
+      "LOMO",
+      "MAKANJA",
+      "RANCAK",
+      "RIANG",
+      "SANANG",
+      "SENENG",
+      "SENNANG"
+    ]
+  },
+  {
+    "word": "SENTAK",
+    "answers": [
+      "BERENTANG"
+    ]
+  },
+  {
+    "word": "SEPENUHNYA",
+    "answers": [
+      "PENUH",
+      "TOTAL"
+    ]
+  },
+  {
+    "word": "SEPI",
+    "answers": [
+      "HENING",
+      "LENGANG",
+      "SENYAP",
+      "SUNYI"
+    ]
+  },
+  {
+    "word": "SERANGAN",
+    "answers": [
+      "BIDASAN",
+      "SERBUAN"
+    ]
+  },
+  {
+    "word": "SERING",
+    "answers": [
+      "ACAP",
+      "KERAP"
+    ]
+  },
+  {
+    "word": "SESAT",
+    "answers": [
+      "KEBLINGER",
+      "SASAR"
+    ]
+  },
+  {
+    "word": "SETIA",
+    "answers": [
+      "FAITHFUL",
+      "LOYAL",
+      "TEGUH"
+    ]
+  },
+  {
+    "word": "SIANG",
+    "answers": [
+      "AWAN",
+      "SIANG",
+      "SIYANG"
+    ]
+  },
+  {
+    "word": "SOMBONG",
+    "answers": [
+      "ANGKUH",
+      "BEDEGONG",
+      "CONGKAK",
+      "UMUK"
+    ]
+  },
+  {
+    "word": "SORE",
+    "answers": [
+      "SONTEN",
+      "SORE",
+      "SOREE"
+    ]
+  },
+  {
+    "word": "STROK",
+    "answers": [
+      "SERANGAN",
+      "STROKE"
+    ]
+  },
+  {
+    "word": "SUAMI",
+    "answers": [
+      "BOJO",
+      "LAKI",
+      "LANANG"
+    ]
+  },
+  {
+    "word": "SULAM",
+    "answers": [
+      "BORDIR",
+      "JAHIT"
+    ]
+  },
+  {
+    "word": "SULING",
+    "answers": [
+      "FLUTE",
+      "SERULING"
+    ]
+  },
+  {
+    "word": "SULIT",
+    "answers": [
+      "BERAT",
+      "RUMIT",
+      "SUSAH"
+    ]
+  },
+  {
+    "word": "SUSAH",
+    "answers": [
+      "BERAT",
+      "RUMIT",
+      "SULIT"
+    ]
+  },
+  {
+    "word": "SUSUN",
+    "answers": [
+      "ATUR",
+      "JALIN",
+      "RAPI"
+    ]
+  },
+  {
+    "word": "SUSUT",
+    "answers": [
+      "BERKURANG",
+      "MENCIUT",
+      "MENYUSUT"
+    ]
+  },
+  {
+    "word": "TAHUN",
+    "answers": [
+      "TAUN",
+      "WARSA"
+    ]
+  },
+  {
+    "word": "TAHUNAN",
+    "answers": [
+      "ANNUAL",
+      "PER TAHUN",
+      "YEARLY"
+    ]
+  },
+  {
+    "word": "TAKUT",
+    "answers": [
+      "AJRIH",
+      "GENTAR",
+      "GEULANTÖÖ",
+      "HEDOM",
+      "JERI",
+      "JIRIH",
+      "KECUT",
+      "MAELO",
+      "NGERI",
+      "SIEUN",
+      "TAKOD",
+      "TAKUIK",
+      "TAKUT",
+      "WEDI"
+    ]
+  },
+  {
+    "word": "TAMAK",
+    "answers": [
+      "LOBA",
+      "RAKUS",
+      "SERAKAH"
+    ]
+  },
+  {
+    "word": "TAMBAKAN",
+    "answers": [
+      "BIAWAN"
+    ]
+  },
+  {
+    "word": "TANGAN",
+    "answers": [
+      "ASTA",
+      "BULÉË",
+      "LEUNGEUN",
+      "LIMA",
+      "TANGAN",
+      "TANGÂN"
+    ]
+  },
+  {
+    "word": "TANGKAP",
+    "answers": [
+      "CEKEL",
+      "CEKELAN",
+      "MANANGKOK",
+      "TANGKEP"
+    ]
+  },
+  {
+    "word": "TANPA",
+    "answers": [
+      "BIGAIR"
+    ]
+  },
+  {
+    "word": "TANTANGAN",
+    "answers": [
+      "COBAAN",
+      "UJIAN"
+    ]
+  },
+  {
+    "word": "TANYA",
+    "answers": [
+      "MANANYA",
+      "NANYA",
+      "TAKON",
+      "TAKONA"
+    ]
+  },
+  {
+    "word": "TARIK",
+    "answers": [
+      "HELA",
+      "SERET"
+    ]
+  },
+  {
+    "word": "TEBAL",
+    "answers": [
+      "DAMPA",
+      "KANDEL",
+      "TABA",
+      "TALUB",
+      "TEBEL"
+    ]
+  },
+  {
+    "word": "TEBAS",
+    "answers": [
+      "BABAT",
+      "MENEBAS",
+      "RAMPAT"
+    ]
+  },
+  {
+    "word": "TELINGA",
+    "answers": [
+      "CEULI",
+      "KUPING",
+      "KÈNING",
+      "TALINGAH",
+      "TALINGAN",
+      "TALINGO",
+      "TEUNGAH"
+    ]
+  },
+  {
+    "word": "TELITI",
+    "answers": [
+      "CELI",
+      "NASTITI"
+    ]
+  },
+  {
+    "word": "TELUR",
+    "answers": [
+      "ENDHOG",
+      "ENDOG",
+      "TALUA",
+      "TIGAN"
+    ]
+  },
+  {
+    "word": "TEMAN",
+    "answers": [
+      "BALA",
+      "BOLO",
+      "KANCA",
+      "KAWAN",
+      "KOLEGA",
+      "SAHABAT",
+      "SOBAT"
+    ]
+  },
+  {
+    "word": "TEMBUS",
+    "answers": [
+      "BUTUL",
+      "LETAM"
+    ]
+  },
+  {
+    "word": "TEMPAT",
+    "answers": [
+      "DAERAH",
+      "DESA",
+      "LOKASI"
+    ]
+  },
+  {
+    "word": "TENANG",
+    "answers": [
+      "ANTENG",
+      "JONGJON"
+    ]
+  },
+  {
+    "word": "TENDANG",
+    "answers": [
+      "DUPAK",
+      "SADUK",
+      "SELENTAK"
+    ]
+  },
+  {
+    "word": "TEPI",
+    "answers": [
+      "BIRAI",
+      "HASYIAH",
+      "RUSUK"
+    ]
+  },
+  {
+    "word": "TERANG",
+    "answers": [
+      "BENDERANG",
+      "CERAH",
+      "GEMILANG"
+    ]
+  },
+  {
+    "word": "TERIPANG",
+    "answers": [
+      "BERONOK",
+      "MINTUNA"
+    ]
+  },
+  {
+    "word": "TIDUR",
+    "answers": [
+      "BOBO",
+      "GONDANG",
+      "SARE",
+      "SARÉ",
+      "SIREP",
+      "TADORON",
+      "TAMONG",
+      "TIDOR",
+      "TIDUA",
+      "TURU"
+    ]
+  },
+  {
+    "word": "TIGA",
+    "answers": [
+      "TELU",
+      "TIGA",
+      "TIGO",
+      "TILU"
+    ]
+  },
+  {
+    "word": "TINGGI",
+    "answers": [
+      "DHUWUR",
+      "GANJO",
+      "GELIK",
+      "JANGKUNG",
+      "LOAS",
+      "LUHUR",
+      "MENJULANG",
+      "SEMAMPAI",
+      "TEGEH",
+      "TENGGI",
+      "TIGI",
+      "TINGGI",
+      "TUNGGÉN"
+    ]
+  },
+  {
+    "word": "TIPIS",
+    "answers": [
+      "DINGKIL",
+      "IPIS",
+      "NIPIS",
+      "RANYED",
+      "TIPIA",
+      "TIPIS"
+    ]
+  },
+  {
+    "word": "TONJOL",
+    "answers": [
+      "MENONJOL",
+      "MUNCUL",
+      "TIMBUL"
+    ]
+  },
+  {
+    "word": "TUIL",
+    "answers": [
+      "BICU"
+    ]
+  },
+  {
+    "word": "TUKAR",
+    "answers": [
+      "BERGANTI",
+      "GANTI",
+      "SILIH"
+    ]
+  },
+  {
+    "word": "TULIS",
+    "answers": [
+      "MANURAT",
+      "NULIS",
+      "NULISKEUN",
+      "NYERAT"
+    ]
+  },
+  {
+    "word": "TUMBUHAN",
+    "answers": [
+      "FLORA",
+      "TANAMAN",
+      "VEGETASI"
+    ]
+  },
+  {
+    "word": "TUNANGAN",
+    "answers": [
+      "BIUMBAI",
+      "KINTE",
+      "PACANGAN"
+    ]
+  },
+  {
+    "word": "TUNTUN",
+    "answers": [
+      "BIMBING",
+      "MENUNTUN"
+    ]
+  },
+  {
+    "word": "TUNTUNAN",
+    "answers": [
+      "PANDUAN",
+      "PEDOMAN",
+      "PETUNJUK"
+    ]
+  },
+  {
+    "word": "TURUN",
+    "answers": [
+      "AMBLES",
+      "TEDAK"
+    ]
+  },
+  {
+    "word": "TUTUP",
+    "answers": [
+      "DUKUP",
+      "MANUTUP",
+      "NUTUP",
+      "PUTUPIN"
+    ]
+  },
+  {
+    "word": "UANG",
+    "answers": [
+      "DOKU",
+      "DUIT",
+      "FULUS"
+    ]
+  },
+  {
+    "word": "UBAH",
+    "answers": [
+      "GANTI",
+      "MODIFIKASI",
+      "RUBAH"
+    ]
+  },
+  {
+    "word": "UMPAMA",
+    "answers": [
+      "IBARAT",
+      "MISAL",
+      "SEPERTI"
+    ]
+  },
+  {
+    "word": "UNSUR",
+    "answers": [
+      "BAGIAN",
+      "ELEMEN",
+      "KOMPONEN"
+    ]
+  },
+  {
+    "word": "UPACARA",
+    "answers": [
+      "ACARA",
+      "RITUAL",
+      "SEREMONI"
+    ]
+  },
+  {
+    "word": "URUS",
+    "answers": [
+      "JAGA",
+      "KELOLA",
+      "RAWAT"
+    ]
+  },
+  {
+    "word": "URUT",
+    "answers": [
+      "PIJAT",
+      "PIJIT"
+    ]
+  },
+  {
+    "word": "USKUP",
+    "answers": [
+      "BISKOP",
+      "EPISKOP"
+    ]
+  },
+  {
+    "word": "USUL",
+    "answers": [
+      "ANJURAN",
+      "SARAN"
+    ]
+  },
+  {
+    "word": "WAJAH",
+    "answers": [
+      "MUKA",
+      "PARAS",
+      "RUPA",
+      "TAMPANG"
+    ]
+  },
+  {
+    "word": "[A] <JW>",
+    "answers": [
+      "BEDAH",
+      "BUNGKAK",
+      "CENGENG",
+      "GENDENG",
+      "KETEL",
+      "LANDUNG",
+      "LAWAS",
+      "PERDATA"
+    ]
+  },
+  {
+    "word": "[N] <ACH>",
+    "answers": [
+      "CAK",
+      "LANCANG"
+    ]
+  },
+  {
+    "word": "[N] <BJR>",
+    "answers": [
+      "CUNG",
+      "PAYA",
+      "SILAP"
+    ]
+  },
+  {
+    "word": "[N] <BL>",
+    "answers": [
+      "ACI",
+      "CUCUK",
+      "MELANTING"
+    ]
+  },
+  {
+    "word": "[N] <BT>",
+    "answers": [
+      "ARIH",
+      "ARON",
+      "BANGKAR",
+      "BIBI",
+      "BONDONG",
+      "LAYAR",
+      "LEDANG",
+      "OMBAK",
+      "SANGSANG",
+      "SASAP"
+    ]
+  },
+  {
+    "word": "[N] <DY>",
+    "answers": [
+      "ANGKAT",
+      "DUKUH",
+      "GALIH",
+      "KAJANG",
+      "KAKI",
+      "KUNTIT",
+      "LAMBE",
+      "MAMANG",
+      "PALIT",
+      "PETIK",
+      "URAK"
+    ]
+  },
+  {
+    "word": "[N] <JB>",
+    "answers": [
+      "JANGAT",
+      "TANJAK"
+    ]
+  },
+  {
+    "word": "[N] <JW>",
+    "answers": [
+      "CACAH",
+      "CACAK",
+      "CELENG",
+      "DADUK",
+      "GADING",
+      "GATRA",
+      "JAJAR",
+      "JALAN",
+      "JAYENG",
+      "KARAH",
+      "KARAT",
+      "KISA",
+      "LABUH",
+      "PASUNG",
+      "PATIK",
+      "PLONCO",
+      "SIMBAR",
+      "SUDUNG",
+      "SUH",
+      "TAWUR",
+      "TEMPONG",
+      "TIMPAL",
+      "TOTOK",
+      "TUNDA",
+      "TUNGGUL"
+    ]
+  },
+  {
+    "word": "[N] <KLM>",
+    "answers": [
+      "CAMPAH",
+      "KALANG",
+      "PATING"
+    ]
+  },
+  {
+    "word": "[N] <LDY>",
+    "answers": [
+      "GUGUT",
+      "SABET"
+    ]
+  },
+  {
+    "word": "[N] <MBL>",
+    "answers": [
+      "KIRIK",
+      "TUMANG"
+    ]
+  },
+  {
+    "word": "[N] <MDR>",
+    "answers": [
+      "EMBEL",
+      "LOMPONG",
+      "TAKAT"
+    ]
+  },
+  {
+    "word": "[N] <MN>",
+    "answers": [
+      "LALI",
+      "LUAR",
+      "SIAT"
+    ]
+  },
+  {
+    "word": "[N] <RI>",
+    "answers": [
+      "BUNTIL",
+      "CEKEL",
+      "DUGA",
+      "EMPING",
+      "GADING",
+      "GAMBUH",
+      "GARUT"
+    ]
+  },
+  {
+    "word": "[N] <SBW>",
+    "answers": [
+      "BABON",
+      "WUKU"
+    ]
+  },
+  {
+    "word": "[N] <SD>",
+    "answers": [
+      "CENTANG",
+      "DOGOL",
+      "ECEK",
+      "KIKIS",
+      "PELETEK",
+      "TATABAN",
+      "ULES",
+      "WEDANG"
+    ]
+  },
+  {
+    "word": "[N] <SS>",
+    "answers": [
+      "BARONG",
+      "PANDAK",
+      "SANGGIT"
+    ]
+  },
+  {
+    "word": "[N] <US>",
+    "answers": [
+      "BUNGKUK",
+      "CUKIL",
+      "JEJER"
+    ]
+  },
+  {
+    "word": "[N] AKR",
+    "answers": [
+      "ANJAL",
+      "BALON"
+    ]
+  },
+  {
+    "word": "[V] <ACH>",
+    "answers": [
+      "ANCAK",
+      "LAYU"
+    ]
+  },
+  {
+    "word": "[V] <JW>",
+    "answers": [
+      "BARAK",
+      "BATIL",
+      "DERES",
+      "IDER",
+      "SUNDA",
+      "URA-URA"
+    ]
+  },
+  {
+    "word": "[V] <KLM>",
+    "answers": [
+      "DUNGU",
+      "KALA"
+    ]
+  },
+  {
+    "word": "[V] <RI>",
+    "answers": [
+      "ASAK",
+      "CABUK"
+    ]
+  }
+]
