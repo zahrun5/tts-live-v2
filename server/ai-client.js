@@ -19,24 +19,11 @@ const API_KEY = process.env.OPENAI_API_KEY;
 // Urutan rotasi: dari yang paling diutamakan ke yang paling cadangan.
 // Model dari Kiro (prefix "kr/") SENGAJA tidak dimasukkan - kuotanya
 // mau disisakan buat project lain.
-const MODEL_ROTATION_HARD = [
-  'ag/gemini-3.8-flash',
-  'ag/claude-sonnet-4-6',
-  'ag/gemini-3.7-flash'
-];
+const MODEL_ROTATION_HARD = ['gemini/gemini-3.7-flash'];
 
-const MODEL_ROTATION_MEDIUM = [
-  'ag/gemini-3.7-flash-low',
-  'ag/gemini-3.6-flash',
-  'ag/gemini-3.8-flash-low'
-];
+const MODEL_ROTATION_MEDIUM = ['gemini/gemini-3.7-flash'];
 
-const MODEL_ROTATION_EASY = [
-  'ag/gemini-3.5-flash-low',
-  'ag/gemini-3.6-flash-low',
-  'ag/gemini-3.5-flash-extra-low',
-  'openrouter/openrouter/free'
-];
+const MODEL_ROTATION_EASY = ['gemini/gemini-3.7-flash'];
 
 const DEFAULT_ROTATION = MODEL_ROTATION_HARD;
 
