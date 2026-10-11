@@ -1,10 +1,12 @@
 const express = require('express');
 const router = express.Router();
 const User = require('../models/User');
+const Subscription = require('../models/Subscription');
 const auth = require('../middleware/auth');
 const tiktokManager = require('../services/tiktokManager');
 const roomManager = require('../services/roomManager');
 const { TIKTOK_RE, VALID_GAMES } = require('../config');
+const { getActiveSubscription } = require('../services/subscriptionHelper');
 
 // Bungkus handler async biar error nggak bikin request menggantung.
 const wrap = (fn) => (req, res) => fn(req, res).catch((err) => {
@@ -19,7 +21,12 @@ async function currentUser(req) {
 router.get('/me', auth, wrap(async (req, res) => {
   const user = await User.findById(req.user.id).select('-password');
   if (!user) return res.status(401).json({ error: 'User tidak ditemukan' });
-  res.json({ user: user.toObject(), isConnected: tiktokManager.getStatus(user.username) });
+  const subscription = await getActiveSubscription(user._id);
+  res.json({
+    user: user.toObject(),
+    isConnected: tiktokManager.getStatus(user.username),
+    subscription
+  });
 }));
 
 router.post('/settings', auth, wrap(async (req, res) => {

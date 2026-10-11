@@ -21,6 +21,16 @@ function loadJwtSecret() {
   return secret;
 }
 
+// Plan tiering: free = trial 30 hari, basic/pro = butuh Midtrans aktif
+const PLAN_PRICES = {
+  free: { id: 'free', label: 'Free (Trial 30 hari)', price: 0, durationDays: 30 },
+  basic: { id: 'basic', label: 'Basic', price: 49000, durationDays: 30 },
+  pro: { id: 'pro', label: 'Pro', price: 99000, durationDays: 30 }
+};
+
+const ALLOWED_ORIGINS = (process.env.ALLOWED_ORIGINS || 'http://localhost:5173,http://127.0.0.1:5173,http://localhost:3050')
+  .split(',').map(s => s.trim()).filter(Boolean);
+
 module.exports = {
   DATA_DIR,
   PORT: process.env.PORT || 3050,
@@ -29,6 +39,15 @@ module.exports = {
   ALLOW_REGISTER: process.env.ALLOW_REGISTER !== 'false',
   USERNAME_RE: /^[a-zA-Z0-9_-]{3,32}$/,
   TIKTOK_RE: /^[A-Za-z0-9._]{1,40}$/,
-  VALID_GAMES: ['tts', 'family100', 'susun-kata-acak', 'cari-kata', 'sambung-kata', 'susun-kalimat', 'hitung-cepat', 'spam-tap', 'memory-card', 'labirin', 'ular-tangga',  
-  'sinonim-dan-bahasa-daerah']
+  VALID_GAMES: ['tts', 'family100', 'susun-kata-acak', 'cari-kata', 'sambung-kata', 'susun-kalimat', 'hitung-cepat', 'spam-tap', 'memory-card', 'labirin', 'ular-tangga',  'sinonim-dan-bahasa-daerah'],
+  // Phase 1 additions
+  PLAN_PRICES,
+  ALLOWED_ORIGINS,
+  GOOGLE_CLIENT_ID: process.env.GOOGLE_CLIENT_ID || '',
+  GOOGLE_CLIENT_SECRET: process.env.GOOGLE_CLIENT_SECRET || '',
+  GOOGLE_REDIRECT_URI: process.env.GOOGLE_REDIRECT_URI || 'http://localhost:3050/api/auth/google/callback',
+  MIDTRANS_SERVER_KEY: process.env.MIDTRANS_SERVER_KEY || '',
+  MIDTRANS_CLIENT_KEY: process.env.MIDTRANS_CLIENT_KEY || '',
+  MIDTRANS_IS_PRODUCTION: process.env.MIDTRANS_IS_PRODUCTION === 'true',
+  APP_BASE_URL: process.env.APP_BASE_URL || 'http://localhost:3050'
 };

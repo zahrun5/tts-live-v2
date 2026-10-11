@@ -2,6 +2,8 @@
 // Satu koneksi TikTok Live per user. Semua urusan game diserahkan ke Room.
 const { TikTokLiveConnection, WebcastEvent, ControlEvent } = require('tiktok-live-connector');
 const roomManager = require('./roomManager');
+const User = require('../models/User');
+const giftTrigger = require('./giftTrigger');
 
 const sessions = new Map(); // username -> { conn, tiktokUsername, intentional, retries, timer }
 const MAX_RETRIES = 5;

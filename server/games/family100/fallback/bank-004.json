@@ -1,0 +1,2002 @@
+[
+  {
+    "question": "Sebutkan profesi di bidang kesehatan yang ada di sekitar kita",
+    "answers": [
+      "DOKTERMATA",
+      "APOTEKER",
+      "BIDAN",
+      "AHLI",
+      "DOKTERBEDAH",
+      "DOKTER",
+      "PARAMEDIK",
+      "DOKTERUMUM",
+      "PERAWAT",
+      "DOKTERKULIT",
+      "TERAPIS",
+      "DOKTERANAK",
+      "AHLIGIZI",
+      "DOKTERSARA",
+      "ILMUWAN"
+    ]
+  },
+  {
+    "question": "Sebutkan masakan Indonesia",
+    "answers": [
+      "MARTABAK",
+      "KROKET",
+      "REBUS",
+      "WINGKO",
+      "BAKAR",
+      "SOTO",
+      "GADOGADO",
+      "LEMPER",
+      "NASIGORENG",
+      "DAGING",
+      "KERAKTELOR",
+      "MIGORENG",
+      "OPAK",
+      "EMPING",
+      "KUAH"
+    ]
+  },
+  {
+    "question": "Sebutkan jenis minuman yang sering kita dengar",
+    "answers": [
+      "KRIM",
+      "JAMBU",
+      "CINCALAU",
+      "LECI",
+      "NANAS",
+      "SUSU",
+      "SEGAR",
+      "DINGIN",
+      "APEL",
+      "CINCAU",
+      "TELER",
+      "TEMULAWAK",
+      "DUREN",
+      "COKELAT",
+      "BAJIGUR"
+    ]
+  },
+  {
+    "question": "Sebutkan pakaian yang umum yang terkenal",
+    "answers": [
+      "JAM",
+      "TOPI",
+      "PAYUNG",
+      "KAOS",
+      "SABUK",
+      "SEPATU",
+      "JAKET",
+      "JILBAB",
+      "SARUNG",
+      "JAS",
+      "SELENDANG",
+      "SARUNGTANGAN",
+      "KACAMATA",
+      "SANDAL",
+      "ROK"
+    ]
+  },
+  {
+    "question": "Sebutkan macam-macam pakaian",
+    "answers": [
+      "JILBAB",
+      "TOPI",
+      "PAYUNG",
+      "SARUNGTANGAN",
+      "SELENDANG",
+      "KAOS",
+      "SEPATU",
+      "JAS",
+      "DASI",
+      "MANTEL",
+      "KAOSKAKI",
+      "SARUNG",
+      "CELANA",
+      "KERUDUNG",
+      "JAKET"
+    ]
+  },
+  {
+    "question": "Sebutkan binatang air yang kita kenal",
+    "answers": [
+      "PENGUIN",
+      "LUMBALUMBA",
+      "BERANG",
+      "BIASA",
+      "KATAK",
+      "PENYU",
+      "KELABANG",
+      "PAUS",
+      "HIU",
+      "UDANG",
+      "KURA",
+      "KALAJENGKING",
+      "KAPALAWAL",
+      "SALAMANDER",
+      "BERUANGLAUT"
+    ]
+  },
+  {
+    "question": "Sebutkan macam-macam sayur yang umum",
+    "answers": [
+      "BAYAM",
+      "KUBIS",
+      "KEDELAI",
+      "TIMUN",
+      "KEMBANGKOL",
+      "BROKOLI",
+      "KACANGTANAH",
+      "KEMANGI",
+      "BAWANG",
+      "TERONG",
+      "PARE",
+      "JAMUR",
+      "GANDUM",
+      "KENTANG",
+      "KACANGHIJAU"
+    ]
+  },
+  {
+    "question": "Sebutkan alat memasak yang ada di Indonesia",
+    "answers": [
+      "KUALI",
+      "TALENAN",
+      "ULEKAN",
+      "COOKER",
+      "LEMARIES",
+      "SERBET",
+      "RICECOOKER",
+      "WAJAN",
+      "PENGGORENGAN",
+      "SANGKU",
+      "PEMARUT",
+      "MIXER",
+      "GARPU",
+      "KOMPOR",
+      "MICROWAVE"
+    ]
+  },
+  {
+    "question": "Sebutkan beberapa instrumen musik",
+    "answers": [
+      "GAMELAN",
+      "KECAPI",
+      "GENDANG",
+      "PIANO",
+      "KENONG",
+      "TROMPET",
+      "SERULING",
+      "GITAR",
+      "KLARINET",
+      "SERUNAI",
+      "HARPA",
+      "SARON",
+      "REBAB",
+      "TROMBON",
+      "GONG"
+    ]
+  },
+  {
+    "question": "Sebutkan jenis serangga yang terkenal",
+    "answers": [
+      "JANGKRIK",
+      "TARANTULA",
+      "KUTUBUSUK",
+      "KUTUPADI",
+      "LABALABA",
+      "ULAR",
+      "KUNANG",
+      "BELALANG",
+      "KUTUBERAS",
+      "KUMBANG",
+      "KUTUDAUN",
+      "KALAJENGKING",
+      "CENGKERIK",
+      "KUTU",
+      "CAPUNG"
+    ]
+  },
+  {
+    "question": "Sebutkan buah yang umum yang populer",
+    "answers": [
+      "NANAS",
+      "RAMBUTAN",
+      "JACKFRUIT",
+      "NANGKA",
+      "KELENGKENG",
+      "DELIMA",
+      "MANGGA",
+      "PISANG",
+      "ANGGUR",
+      "SUKUN",
+      "GANDARIA",
+      "LECI",
+      "JERUK",
+      "KEPEL",
+      "APEL"
+    ]
+  },
+  {
+    "question": "Sebutkan profesi di bidang hukum yang populer di Indonesia",
+    "answers": [
+      "PEJABAT",
+      "JAKSA",
+      "JENDERAL",
+      "NOTARIS",
+      "PENGACARA",
+      "PENASIHAT",
+      "KAMTIBMAS",
+      "SATPAM",
+      "AGEN",
+      "HAKIM",
+      "MILITER",
+      "KEAMANAN",
+      "TENTARA",
+      "LETNAN",
+      "KOMANDAN"
+    ]
+  },
+  {
+    "question": "Sebutkan peralatan dapur yang ada",
+    "answers": [
+      "PANCI",
+      "RICECOOKER",
+      "SANGKU",
+      "PENGGORENGAN",
+      "WAJAN",
+      "COOKER",
+      "KUALI",
+      "MICROWAVE",
+      "MIXER",
+      "COBEK",
+      "GELAS",
+      "GARPU",
+      "JUICER",
+      "SENDOK",
+      "LEMARIES"
+    ]
+  },
+  {
+    "question": "Sebutkan sayuran yang umum yang menarik",
+    "answers": [
+      "CABAI",
+      "PARE",
+      "LABU",
+      "LOBAK",
+      "KENTANG",
+      "SAWI",
+      "BUNCIS",
+      "KACANGTANAH",
+      "SELADA",
+      "TAUGE",
+      "TERONG",
+      "PADI",
+      "JAGUNG",
+      "KACANGMERAH",
+      "KANGKUNG"
+    ]
+  },
+  {
+    "question": "Sebutkan hewan air yang sering dipakai",
+    "answers": [
+      "SALAMANDER",
+      "KAPALA",
+      "LUMBALUMBA",
+      "BUAYA",
+      "IKAN",
+      "KODOK",
+      "KEPITING",
+      "HIU",
+      "BERUANGLAUT",
+      "ANJINGLAUT",
+      "BAYAM",
+      "BINTANGLAUT",
+      "KURA",
+      "KAPALAWAL",
+      "BEAVER"
+    ]
+  },
+  {
+    "question": "Sebutkan nama pulau di Indonesia yang sering kita jumpai",
+    "answers": [
+      "NUSA",
+      "NATUNA",
+      "SERIBU",
+      "MALUKU",
+      "SUMATERA",
+      "KALIMANTAN",
+      "MADURA",
+      "KEPULAUAN",
+      "BATAM",
+      "LOMBOK",
+      "FLORES",
+      "JAWA",
+      "BANGKA",
+      "BALI",
+      "SUMBA"
+    ]
+  },
+  {
+    "question": "Sebutkan contoh sayuran yang umum",
+    "answers": [
+      "LOBAK",
+      "WORTEL",
+      "JAGUNG",
+      "TOMAT",
+      "TAUGE",
+      "TERONG",
+      "KACANGTANAH",
+      "KENTANG",
+      "SELDERI",
+      "PAPRIKA",
+      "KACANG",
+      "KEMBANG",
+      "PADI",
+      "SAWI",
+      "CABAI"
+    ]
+  },
+  {
+    "question": "Sebutkan bagian tubuh",
+    "answers": [
+      "KAKI",
+      "BETIS",
+      "GIGI",
+      "TELINGA",
+      "PERUT",
+      "PAHA",
+      "DADA",
+      "MATA",
+      "DAHI",
+      "LAMBUNG",
+      "LIMPA",
+      "GUSI",
+      "JARI",
+      "BULUMATA",
+      "HATI"
+    ]
+  },
+  {
+    "question": "Sebutkan nama-nama pekerjaan di bidang pendidikan",
+    "answers": [
+      "INSTRUKTUR",
+      "GURUKONTRAK",
+      "PENDIDIK",
+      "LEKTORKEPALA",
+      "PENGAJAR",
+      "PENELITIS",
+      "KEPALALAB",
+      "GURUHONORER",
+      "GURUTAMAN",
+      "PELATIH",
+      "GURUMUDA",
+      "PEMANDU",
+      "LEKTOR",
+      "ASISTEN",
+      "GURUBESAR"
+    ]
+  },
+  {
+    "question": "Sebutkan bagian tubuh yang terkenal",
+    "answers": [
+      "PINGGUL",
+      "KAKI",
+      "TANGAN",
+      "KEPALA",
+      "BAHU",
+      "LENGAN",
+      "KULIT",
+      "DAHI",
+      "PANKREAS",
+      "TELINGA",
+      "HIDUNG",
+      "LIMPA",
+      "LIDAH",
+      "GIGI",
+      "GINJAL"
+    ]
+  },
+  {
+    "question": "Sebutkan macam-macam hewan yang terbang",
+    "answers": [
+      "GELATIK",
+      "HANTU",
+      "RAKSAKSA",
+      "AYAM",
+      "EMPU",
+      "CIBLEK",
+      "MERAK",
+      "KASUARI",
+      "JALAK",
+      "PIPIT",
+      "ANGSA",
+      "ELANG",
+      "CENDRAWASIH",
+      "MERPATI",
+      "CENDERAWASIH"
+    ]
+  },
+  {
+    "question": "Sebutkan buah yang umum yang sering dipakai",
+    "answers": [
+      "NANAS",
+      "RAMBUTAN",
+      "BUAHNAGA",
+      "STROBERI",
+      "DELIMA",
+      "NANGKA",
+      "DURIAN",
+      "ANGGUR",
+      "KIWI",
+      "SALAK",
+      "FIG",
+      "SUKUN",
+      "SIRSAK",
+      "JAMBU",
+      "BUNI"
+    ]
+  },
+  {
+    "question": "Sebutkan hewan air yang ada di sekitar kita",
+    "answers": [
+      "BERUANGLAUT",
+      "KAPALAWAL",
+      "PENGUIN",
+      "SINGALAUT",
+      "LUMBALUMBA",
+      "GURITA",
+      "SIPUT",
+      "IKAN",
+      "BAYAM",
+      "BINTANGLAUT",
+      "PENYU",
+      "TRENGGILING",
+      "SALAMANDER",
+      "KAPALA",
+      "KATAK"
+    ]
+  },
+  {
+    "question": "Sebutkan tenaga hukum yang sering dijumpai",
+    "answers": [
+      "NOTARIS",
+      "PENYELIDIK",
+      "DETEKTIF",
+      "MILITER",
+      "JENDERAL",
+      "PENASIHAT",
+      "KEAMANAN",
+      "KOPRAL",
+      "MEDIATOR",
+      "INTELIJEN",
+      "LETNAN",
+      "PRADA",
+      "KOMANDAN",
+      "PEJABAT",
+      "SERGEAN"
+    ]
+  },
+  {
+    "question": "Sebutkan pekerjaan di bidang pendidikan yang sering dipakai",
+    "answers": [
+      "LEKTOR",
+      "TUTOR",
+      "GURUKONTRAK",
+      "PEMANDU",
+      "INSTRUKTUR",
+      "GURUPEMBINA",
+      "PEMBIMBING",
+      "GURU",
+      "PROFESOR",
+      "PENDIDIK",
+      "PENASIHAT",
+      "KEPALALAB",
+      "PELATIH",
+      "DOSEN",
+      "GURUTETAP"
+    ]
+  },
+  {
+    "question": "Sebutkan contoh jenis ruangan",
+    "answers": [
+      "KAMARIBADAH",
+      "HALAMAN",
+      "GUDANG",
+      "TERAS",
+      "RUANGTAMU",
+      "TAMAN",
+      "KOLAM",
+      "GARASI",
+      "KAMARTAMU",
+      "PERPUSTAKAAN",
+      "KAMARPELAYAN",
+      "LOTENG",
+      "RUANGKERJA",
+      "RUANGBACA",
+      "STUDI"
+    ]
+  },
+  {
+    "question": "Sebutkan hewan darat yang umum ada",
+    "answers": [
+      "ANJING",
+      "KUDA",
+      "AYAM",
+      "BADAK",
+      "SIMPANSE",
+      "GAJAH",
+      "KAMBING",
+      "KANGGURU",
+      "LUAK",
+      "KOALA",
+      "KUCING",
+      "BERANG",
+      "JERAPAH",
+      "DOMBA",
+      "SAPI"
+    ]
+  },
+  {
+    "question": "Sebutkan jenis burung yang sering kita jumpai",
+    "answers": [
+      "BURUNG",
+      "KALUNG",
+      "HANTU",
+      "CENDERAWASIH",
+      "AYAM",
+      "GAGAK",
+      "PIPIT",
+      "GELATIK",
+      "JALAK",
+      "BEBEK",
+      "CIBLEK",
+      "EMPU",
+      "KASUARI",
+      "CENDRAWASIH",
+      "RAKSAKSA"
+    ]
+  },
+  {
+    "question": "Sebutkan profesi di bidang kesehatan yang penting",
+    "answers": [
+      "APOTEKER",
+      "TERAPIS",
+      "AHLI",
+      "PERAWAT",
+      "DOKTERUMUM",
+      "DOKTERGIGI",
+      "PENELITI",
+      "DOKTERTHT",
+      "KONSULTAN",
+      "PARAMEDIK",
+      "ILMUWAN",
+      "DOKTERBEDAH",
+      "PSIKOLOG",
+      "GIZI",
+      "DOKTERHEWAN"
+    ]
+  },
+  {
+    "question": "Sebutkan kendaraan darat yang biasa",
+    "answers": [
+      "BMX",
+      "LIPAT",
+      "SUV",
+      "SEDAN",
+      "SEPEDA",
+      "KERETA",
+      "MOTOR",
+      "BUS",
+      "MOBIL",
+      "RODATIGA",
+      "BEBEK",
+      "TAKSI",
+      "GUNUNG",
+      "SPORT",
+      "LMPV"
+    ]
+  },
+  {
+    "question": "Sebutkan kendaraan air yang sering digunakan",
+    "answers": [
+      "SELAM",
+      "UAP",
+      "PESISIR",
+      "KARET",
+      "SAMPAN",
+      "NIAGA",
+      "KAYU",
+      "RUDAL",
+      "PERAHUTENGAH",
+      "BOM",
+      "PERAHUBAMBU",
+      "TORPEDO",
+      "KAPAL",
+      "LAYAR",
+      "MOTOR"
+    ]
+  },
+  {
+    "question": "Sebutkan tempat dan bentang alam yang biasa",
+    "answers": [
+      "DUSUN",
+      "DESA",
+      "KOTA",
+      "GUNUNG",
+      "LEMBAH",
+      "SELAT",
+      "GANG",
+      "SAMUDRA",
+      "SUNGAI",
+      "LAUT",
+      "PULAU",
+      "IBUKOTA",
+      "KECAMATAN",
+      "KELURAHAN",
+      "TELUK"
+    ]
+  },
+  {
+    "question": "Sebutkan jenis burung yang sering kita dengar",
+    "answers": [
+      "GOLDAH",
+      "BURUNG",
+      "BEBEK",
+      "EMPU",
+      "CIBLEK",
+      "CENDERAWASIH",
+      "MERPATI",
+      "GELATIK",
+      "KAKAKTUA",
+      "KEKET",
+      "GAGAK",
+      "KASUARI",
+      "RAKSAKSA",
+      "PERKUTUT",
+      "ELANG"
+    ]
+  },
+  {
+    "question": "Sebutkan ruangan dalam rumah yang terkenal",
+    "answers": [
+      "KAMARMANDI",
+      "GUDANG",
+      "HALAMAN",
+      "KAMARIBADAH",
+      "RUANGMAKAN",
+      "LOTENG",
+      "RUANGKERJA",
+      "DAPUR",
+      "TERAS",
+      "GARASI",
+      "JEMURAN",
+      "PERPUSTAKAAN",
+      "TAMAN",
+      "BALKON",
+      "RUANGBACA"
+    ]
+  },
+  {
+    "question": "Sebutkan macam-macam buah yang populer di Indonesia",
+    "answers": [
+      "JACKFRUIT",
+      "KELENGKENG",
+      "PERSIK",
+      "NANAS",
+      "NANGKA",
+      "CERI",
+      "RAMBUTAN",
+      "FIG",
+      "BLUBERI",
+      "GANDARIA",
+      "SAWO",
+      "STROBERI",
+      "JERUK",
+      "BELIMBING",
+      "APEL"
+    ]
+  },
+  {
+    "question": "Sebutkan beberapa kendaraan darat",
+    "answers": [
+      "RODATIGA",
+      "OFFROAD",
+      "LCGC",
+      "LMPV",
+      "CROSS",
+      "MPV",
+      "JEEP",
+      "ONTEL",
+      "LIPAT",
+      "SUV",
+      "BEBEK",
+      "TAKSI",
+      "MOTOR",
+      "KERETA",
+      "MOBIL"
+    ]
+  },
+  {
+    "question": "Sebutkan jenis pakaian yang umum",
+    "answers": [
+      "CELANA",
+      "DASI",
+      "JAS",
+      "JILBAB",
+      "SABUK",
+      "JAKET",
+      "KUPLUK",
+      "KERUDUNG",
+      "SARUNG",
+      "SELENDANG",
+      "KEMEJA",
+      "DOMPET",
+      "SARUNGTANGAN",
+      "KAOS",
+      "PAYUNG"
+    ]
+  },
+  {
+    "question": "Sebutkan instrumen musik yang sering digunakan",
+    "answers": [
+      "PIANO",
+      "SULING",
+      "GONG",
+      "TROMBON",
+      "GENDANG",
+      "BIOLA",
+      "TROMPET",
+      "HARPA",
+      "REBAB",
+      "SARON",
+      "SERULING",
+      "SAKSOFON",
+      "SERUNAI",
+      "KENDANG",
+      "GAMELAN"
+    ]
+  },
+  {
+    "question": "Sebutkan beberapa cuaca dan fenomena alam",
+    "answers": [
+      "HUJANBATU",
+      "TAIFUN",
+      "OMBAK",
+      "TOPAN",
+      "HALILINTAR",
+      "KABUT",
+      "PASANG",
+      "SURUT",
+      "TANAH",
+      "GERIMIS",
+      "BERAWAN",
+      "BADAI",
+      "GELOMBANG",
+      "PANAS",
+      "GUNTUR"
+    ]
+  },
+  {
+    "question": "Sebutkan tenaga kesehatan yang ada di sekitar kita",
+    "answers": [
+      "DOKTERBEDAH",
+      "AHLIGIZI",
+      "DOKTERHEWAN",
+      "KONSULTAN",
+      "TERAPIS",
+      "DOKTERUMUM",
+      "PSIKOLOG",
+      "AUDIOLOGIS",
+      "APOTEKER",
+      "PERAWAT",
+      "ILMUWAN",
+      "AHLI",
+      "DOKTERMATA",
+      "DOKTER",
+      "DOKTERGIGI"
+    ]
+  },
+  {
+    "question": "Sebutkan contoh olahraga yang populer",
+    "answers": [
+      "ZUMBA",
+      "RENANG",
+      "FUTSAL",
+      "TINGGI",
+      "JAUH",
+      "SENAM",
+      "LOMPAT",
+      "PANAHAN",
+      "KARATE",
+      "GYM",
+      "TINJU",
+      "DAYUNG",
+      "PILATES",
+      "AEROBIK",
+      "BULUTANGKIS"
+    ]
+  },
+  {
+    "question": "Sebutkan bagian-bagian rumah yang sering dipakai",
+    "answers": [
+      "RUANGKERJA",
+      "KACA",
+      "PEMBATAS",
+      "KOLAM",
+      "JEMURAN",
+      "PEGANGAN",
+      "ATAP",
+      "CEROBONG",
+      "BILIK",
+      "TAMAN",
+      "PERPUSTAKAAN",
+      "PINTU",
+      "LANGIT",
+      "KANTIN",
+      "KAMARIBADAH"
+    ]
+  },
+  {
+    "question": "Sebutkan kamar di rumah yang populer",
+    "answers": [
+      "DAPUR",
+      "RUANGBACA",
+      "KOLAM",
+      "GARASI",
+      "TAMAN",
+      "KAMARPELAYAN",
+      "GUDANG",
+      "RUANGTAMU",
+      "RUANGMAKAN",
+      "STUDI",
+      "PERPUSTAKAAN",
+      "TERAS",
+      "KAMARIBADAH",
+      "JEMURAN",
+      "RUANGKERJA"
+    ]
+  },
+  {
+    "question": "Sebutkan nama-nama warna yang ada di Indonesia",
+    "answers": [
+      "HIJAU",
+      "BIRU",
+      "HITAM",
+      "PEACH",
+      "KUNING",
+      "ABU",
+      "UNGU",
+      "CORAL",
+      "SILVER",
+      "MERAH",
+      "TOSCA",
+      "BRONZE",
+      "VIOLET",
+      "JINGGA",
+      "LAVENDER"
+    ]
+  },
+  {
+    "question": "Sebutkan jenis minuman yang ada di sekitar kita",
+    "answers": [
+      "SIRUP",
+      "TELER",
+      "BANDREK",
+      "MANGGIS",
+      "ENERGI",
+      "SERBUK",
+      "LARUTAN",
+      "MANGGA",
+      "SUSU",
+      "SEKOTENG",
+      "LECI",
+      "JAMBU",
+      "CINCAU",
+      "TUAK",
+      "SODA"
+    ]
+  },
+  {
+    "question": "Sebutkan hewan yang hidup di air yang umum dikenal",
+    "answers": [
+      "SINGALAUT",
+      "KELABANG",
+      "IKAN",
+      "KAPALAWAL",
+      "KODOK",
+      "BINTANGLAUT",
+      "KELALAWAR",
+      "LUMBALUMBA",
+      "ANJINGLAUT",
+      "KALAJENGKING",
+      "GURITA",
+      "BERUANGLAUT",
+      "HIU",
+      "CUMI",
+      "PENGUIN"
+    ]
+  },
+  {
+    "question": "Sebutkan jenis burung yang populer",
+    "answers": [
+      "KASUARI",
+      "PERKUTUT",
+      "CIBLEK",
+      "ANGSA",
+      "AYAM",
+      "RAKSAKSA",
+      "BURUNG",
+      "MERAK",
+      "KALUNG",
+      "EMPU",
+      "HANTU",
+      "GAGAK",
+      "KAKAKTUA",
+      "MERPATI",
+      "BEBEK"
+    ]
+  },
+  {
+    "question": "Sebutkan pulau-pulau Indonesia yang sering dijumpai",
+    "answers": [
+      "BORNEO",
+      "KEPULAUAN",
+      "NUSA",
+      "KALIMANTAN",
+      "SULAWESI",
+      "PAPUA",
+      "BELITUNG",
+      "LOMBOK",
+      "SUMBA",
+      "BATAM",
+      "BALI",
+      "TIMOR",
+      "RIAU",
+      "NATUNA",
+      "SERIBU"
+    ]
+  },
+  {
+    "question": "Sebutkan macam-macam makanan luar negeri",
+    "answers": [
+      "KEJU",
+      "SUP",
+      "COTO",
+      "NASIGORENG",
+      "PALLU",
+      "PISANGGORENG",
+      "PIZZA",
+      "KONRO",
+      "SUSU",
+      "PERKEDEL",
+      "TAHUGORENG",
+      "BAKWAN",
+      "LASAGNA",
+      "TEMPEGORENG",
+      "RAWON"
+    ]
+  },
+  {
+    "question": "Sebutkan jenis pakaian yang penting",
+    "answers": [
+      "SEPATU",
+      "KEMEJA",
+      "JAS",
+      "SARUNG",
+      "TAS",
+      "HIJAB",
+      "ROK",
+      "SELENDANG",
+      "BAJU",
+      "SANDAL",
+      "KAOSKAKI",
+      "DOMPET",
+      "MANTEL",
+      "SABUK",
+      "TOPI"
+    ]
+  },
+  {
+    "question": "Sebutkan tenaga kesehatan yang sering kita dengar",
+    "answers": [
+      "DOKTERHEWAN",
+      "FISIOTERAPIS",
+      "PERAWAT",
+      "DOKTER",
+      "DOKTERANAK",
+      "DOKTERKULIT",
+      "DOKTERSARA",
+      "PSIKOLOG",
+      "DOKTERMATA",
+      "AHLIGIZI",
+      "GIZI",
+      "ILMUWAN",
+      "DOKTERTHT",
+      "AUDIOLOGIS",
+      "DOKTERGIGI"
+    ]
+  },
+  {
+    "question": "Sebutkan keadaan cuaca yang ada",
+    "answers": [
+      "TOPAN",
+      "BANJIR",
+      "MENDUNG",
+      "SURUT",
+      "GELOMBANG",
+      "ANGINBADAI",
+      "PASANG",
+      "BERAWAN",
+      "PETIR",
+      "HUJANES",
+      "GUNTUR",
+      "KABUT",
+      "TSUNAMI",
+      "BADAI",
+      "SALJU"
+    ]
+  },
+  {
+    "question": "Sebutkan macam-macam serangga yang terkenal",
+    "answers": [
+      "TARANTULA",
+      "KUTUBUSUK",
+      "KUTUBATU",
+      "NYAMUK",
+      "CAPUNG",
+      "KUMBANG",
+      "JANGKRIK",
+      "LEBAH",
+      "LALAT",
+      "LABALABA",
+      "RAYAP",
+      "ULAR",
+      "CENGKERIK",
+      "KUTUBERAS",
+      "KUPU"
+    ]
+  },
+  {
+    "question": "Sebutkan minuman yang populer yang kita kenal",
+    "answers": [
+      "DUREN",
+      "APEL",
+      "BIR",
+      "AIR",
+      "ANGGUR",
+      "SERBAT",
+      "MANGGA",
+      "TEMULAWAK",
+      "COKELAT",
+      "KRIM",
+      "HANGAT",
+      "MANGGIS",
+      "TELER",
+      "BANDREK",
+      "TUAK"
+    ]
+  },
+  {
+    "question": "Sebutkan bagian tubuh yang kita kenal",
+    "answers": [
+      "JARI",
+      "MATA",
+      "PERUT",
+      "BETIS",
+      "DAHI",
+      "PARU",
+      "TELINGA",
+      "PIPI",
+      "LAMBUNG",
+      "GUSI",
+      "GIGI",
+      "GINJAL",
+      "BULUMATA",
+      "PANKREAS",
+      "JANTUNG"
+    ]
+  },
+  {
+    "question": "Sebutkan nama-nama olahraga yang populer",
+    "answers": [
+      "GOLF",
+      "LARI",
+      "TINJU",
+      "GYM",
+      "VOLI",
+      "BELADIRI",
+      "AEROBIK",
+      "FITNES",
+      "FUTSAL",
+      "TAEKWONDO",
+      "SEPAKBOLA",
+      "BULUTANGKIS",
+      "PENCAKSILAT",
+      "PILATES",
+      "KARATE"
+    ]
+  },
+  {
+    "question": "Sebutkan kendaraan di jalan yang sering dipakai",
+    "answers": [
+      "TRUK",
+      "TAKSI",
+      "MOTOR",
+      "LCGC",
+      "LIPAT",
+      "CROSS",
+      "JEEP",
+      "ANDONG",
+      "SEDAN",
+      "BEBEK",
+      "ONTEL",
+      "TRAIL",
+      "RODATIGA",
+      "LMPV",
+      "GUNUNG"
+    ]
+  },
+  {
+    "question": "Sebutkan jenis-jenis peralatan tulis",
+    "answers": [
+      "PENGOKOT",
+      "SPIDOL",
+      "PULPEN",
+      "KERTAS",
+      "MAP",
+      "TABUNG",
+      "STABILO",
+      "STEMPEL",
+      "PENGHAPUS",
+      "STAPLER",
+      "GUNTING",
+      "BUSUR",
+      "TINTA",
+      "BUKU",
+      "PENANDA"
+    ]
+  },
+  {
+    "question": "Sebutkan beberapa binatang peliharaan",
+    "answers": [
+      "CAPUNG",
+      "DOMBA",
+      "KALAJENGKING",
+      "RAYAP",
+      "ELANG",
+      "PENYU",
+      "BEBEK",
+      "LALAT",
+      "ARNAB",
+      "KELINCI",
+      "KUCING",
+      "KECOA",
+      "KAMBING",
+      "ULAR",
+      "BELALANG"
+    ]
+  },
+  {
+    "question": "Sebutkan tenaga kesehatan yang umum ada",
+    "answers": [
+      "DOKTER",
+      "KONSULTAN",
+      "DOKTERUMUM",
+      "ILMUWAN",
+      "TERAPIS",
+      "APOTEKER",
+      "DOKTERMATA",
+      "AUDIOLOGIS",
+      "PARAMEDIK",
+      "AHLIGIZI",
+      "FISIOTERAPIS",
+      "DOKTERKULIT",
+      "PERAWAT",
+      "DOKTERGIGI",
+      "BIDAN"
+    ]
+  },
+  {
+    "question": "Sebutkan hewan yang hidup di darat yang menarik",
+    "answers": [
+      "WALABI",
+      "PANDA",
+      "MUSANG",
+      "KUDA",
+      "AYAM",
+      "AJAG",
+      "ANGSA",
+      "KANGGURU",
+      "KAMBING",
+      "RUBIAH",
+      "RUSA",
+      "KERBAU",
+      "JERAPAH",
+      "GORILA",
+      "BABI"
+    ]
+  },
+  {
+    "question": "Sebutkan makanan tradisional Indonesia yang ada di sekitar kita",
+    "answers": [
+      "MIGORENG",
+      "MARTABAK",
+      "TEMPE",
+      "IKANGORENG",
+      "TELUR",
+      "KROKET",
+      "PANGGANG",
+      "REBUS",
+      "SATE",
+      "GORENG",
+      "GADOGADO",
+      "TAHUSUMEDANG",
+      "GUDEG",
+      "OPOR",
+      "EMPING"
+    ]
+  },
+  {
+    "question": "Sebutkan macam-macam buah yang biasa",
+    "answers": [
+      "BLUBERI",
+      "GANDARIA",
+      "PEPAYA",
+      "JACKFRUIT",
+      "LANGSEP",
+      "SALAK",
+      "MARKISA",
+      "STROBERI",
+      "SRIKAYA",
+      "RAMBUTAN",
+      "BACANG",
+      "MANGGA",
+      "PISANG",
+      "SEMANGKA",
+      "BUNI"
+    ]
+  },
+  {
+    "question": "Sebutkan jenis ruangan yang umum ada",
+    "answers": [
+      "KAMARPELAYAN",
+      "KAMARTAMU",
+      "GARASI",
+      "BALKON",
+      "RUANGTAMU",
+      "DAPUR",
+      "LOTENG",
+      "KAMARMANDI",
+      "RUANGMAKAN",
+      "PERPUSTAKAAN",
+      "TERAS",
+      "KAMARTIDUR",
+      "STUDI",
+      "RUANGBACA",
+      "JEMURAN"
+    ]
+  },
+  {
+    "question": "Sebutkan jenis buah-buahan yang sering dipakai",
+    "answers": [
+      "MARKISA",
+      "PERSIK",
+      "FIG",
+      "JAMBU",
+      "MELON",
+      "SRIKAYA",
+      "DELIMA",
+      "RAMBUTAN",
+      "PEPAYA",
+      "APEL",
+      "JERUK",
+      "GANDARIA",
+      "KEPEL",
+      "NANGKA",
+      "ANGGUR"
+    ]
+  },
+  {
+    "question": "Sebutkan macam-macam sayur yang populer",
+    "answers": [
+      "TOMAT",
+      "CABAI",
+      "KEDELAI",
+      "KACANGHIJAU",
+      "SAWI",
+      "BAYAM",
+      "KACANGTANAH",
+      "TIMUN",
+      "PETERSELI",
+      "SELADA",
+      "WORTEL",
+      "GANDUM",
+      "KACANG",
+      "BROKOLI",
+      "KANGKUNG"
+    ]
+  },
+  {
+    "question": "Sebutkan nama-nama profesi di bidang teknik",
+    "answers": [
+      "PENCIPTA",
+      "PENASIHAT",
+      "PENATAMUSIK",
+      "PILOT",
+      "PEJABAT",
+      "PENATARIAS",
+      "PENATADRAMA",
+      "ARSITEK",
+      "MONTIR",
+      "NAHKODA",
+      "FOTOGRAFER",
+      "PENATABUSANA",
+      "VIDEOGRAFER",
+      "PEMIMPIN",
+      "TATA"
+    ]
+  },
+  {
+    "question": "Sebutkan contoh masakan mancanegara",
+    "answers": [
+      "BURGER",
+      "COTO",
+      "NASIKUNING",
+      "NASIGORENG",
+      "KEJU",
+      "PISANGGORENG",
+      "BAKWAN",
+      "KERUPUK",
+      "RAWON",
+      "NASIPADANG",
+      "PERKEDEL",
+      "LASAGNA",
+      "SUSU",
+      "HOTDOG",
+      "SANDWICH"
+    ]
+  },
+  {
+    "question": "Sebutkan masakan Indonesia yang sering digunakan",
+    "answers": [
+      "ROTI",
+      "GULAI",
+      "TAHU",
+      "NASIKUNING",
+      "LONTONG",
+      "WINGKO",
+      "KETUPAT",
+      "TELUR",
+      "KERAKTELOR",
+      "LEMPER",
+      "MIGORENG",
+      "AYAMGORENG",
+      "PANGGANG",
+      "SAMBAL",
+      "IKANGORENG"
+    ]
+  },
+  {
+    "question": "Sebutkan nama-nama warna yang sering kita jumpai",
+    "answers": [
+      "KUNING",
+      "ZAMRUD",
+      "HIJAU",
+      "MINT",
+      "NAVY",
+      "VIOLET",
+      "MAGENTA",
+      "UNGU",
+      "HITAM",
+      "ABU",
+      "ORANGE",
+      "SILVER",
+      "COKLAT",
+      "COPPER",
+      "TURQUOISE"
+    ]
+  },
+  {
+    "question": "Sebutkan pulau yang ada di Indonesia",
+    "answers": [
+      "TENGGARA",
+      "NATUNA",
+      "TIMOR",
+      "SUMBA",
+      "BALI",
+      "BELITUNG",
+      "BORNEO",
+      "LOMBOK",
+      "BANGKA",
+      "BATAM",
+      "MADURA",
+      "RIAU",
+      "KEPULAUAN",
+      "JAWA",
+      "FLORES"
+    ]
+  },
+  {
+    "question": "Sebutkan contoh perlengkapan menulis",
+    "answers": [
+      "BUSUR",
+      "AMPLOP",
+      "PAPERCLIP",
+      "JANGKA",
+      "GUNTING",
+      "KERTAS",
+      "STABILO",
+      "PULPEN",
+      "PENGHAPUS",
+      "TABUNG",
+      "MAP",
+      "SPIDOL",
+      "PENGGARIS",
+      "PENSIL",
+      "LEM"
+    ]
+  },
+  {
+    "question": "Sebutkan kendaraan darat yang terkenal",
+    "answers": [
+      "BEBEK",
+      "BECAK",
+      "TRUK",
+      "SEDAN",
+      "LIPAT",
+      "TAKSI",
+      "BMX",
+      "MOTOR",
+      "MOBIL",
+      "GUNUNG",
+      "LCGC",
+      "BUS",
+      "JEEP",
+      "DELMAN",
+      "ONTEL"
+    ]
+  },
+  {
+    "question": "Sebutkan hewan air yang umum ada",
+    "answers": [
+      "TRENGGILING",
+      "UDANG",
+      "KATAK",
+      "SIPUT",
+      "BINTANGLAUT",
+      "GURITA",
+      "KEPITING",
+      "KADAL",
+      "ANJINGLAUT",
+      "BUAYA",
+      "BERUANGLAUT",
+      "SALAMANDER",
+      "KALAJENGKING",
+      "KALONG",
+      "BERANG"
+    ]
+  },
+  {
+    "question": "Sebutkan lokasi umum yang populer",
+    "answers": [
+      "KANTIN",
+      "KOLAMRENANG",
+      "TAMAN",
+      "MUSEUM",
+      "MALL",
+      "KELENTENG",
+      "GEREJA",
+      "STADIUM",
+      "GOR",
+      "TOKO",
+      "GALERI",
+      "SEKOLAH",
+      "SANGGAR",
+      "UNIVERSITAS",
+      "TAMANWISATA"
+    ]
+  },
+  {
+    "question": "Sebutkan peralatan kantor yang sering dijumpai",
+    "answers": [
+      "MOUSE",
+      "JENDELA",
+      "PAPAN",
+      "PRINTER",
+      "KURSI",
+      "SCANNER",
+      "KAMERA",
+      "NOTEBOOK",
+      "MESINKASIR",
+      "WEBCAM",
+      "LACI",
+      "MONITOR",
+      "PINTU",
+      "MESINKETIK",
+      "MESINFAX"
+    ]
+  },
+  {
+    "question": "Sebutkan macam-macam masakan Indonesia",
+    "answers": [
+      "NASIKUNING",
+      "TUMIS",
+      "GUDEG",
+      "TELUR",
+      "NASI",
+      "SOTO",
+      "GULAI",
+      "KROKET",
+      "RISOL",
+      "PECEL",
+      "DONAT",
+      "KETUPAT",
+      "JIPANG",
+      "IKANGORENG",
+      "WINGKO"
+    ]
+  },
+  {
+    "question": "Sebutkan profesi di bidang pendidikan yang penting",
+    "answers": [
+      "GURUKONTRAK",
+      "GURUTETAP",
+      "INSTRUKTUR",
+      "KEPALALAB",
+      "PEMBIMBING",
+      "PROFESOR",
+      "PENGAJAR",
+      "DOSEN",
+      "PENELITIS",
+      "GURU",
+      "GURUHONORER",
+      "PELATIH",
+      "GURUTAMAN",
+      "LEKTOR",
+      "GURUBESAR"
+    ]
+  },
+  {
+    "question": "Sebutkan nama-nama macam-macam buah",
+    "answers": [
+      "ANGGUR",
+      "PERSIK",
+      "SEMANGKA",
+      "LECI",
+      "SUKUN",
+      "JERUK",
+      "BACANG",
+      "NANAS",
+      "SIRSAK",
+      "DELIMA",
+      "JACKFRUIT",
+      "MANGGA",
+      "BELIMBING",
+      "MELON",
+      "GANDARIA"
+    ]
+  },
+  {
+    "question": "Sebutkan anggota badan yang sering digunakan",
+    "answers": [
+      "PIPI",
+      "LEHER",
+      "BAHU",
+      "GUSI",
+      "KAKI",
+      "MULUT",
+      "PAHA",
+      "HATI",
+      "RAMBUT",
+      "MATA",
+      "BULUMATA",
+      "KEPALA",
+      "LIDAH",
+      "HIDUNG",
+      "GINJAL"
+    ]
+  },
+  {
+    "question": "Sebutkan peralatan musik yang populer di Indonesia",
+    "answers": [
+      "SLENTHEM",
+      "SERUNAI",
+      "TROMBON",
+      "BIOLA",
+      "GITAR",
+      "SARON",
+      "SAKSOFON",
+      "HARPA",
+      "DRUM",
+      "TROMPET",
+      "GENDANG",
+      "PIANO",
+      "SERULING",
+      "KENONG",
+      "SULING"
+    ]
+  },
+  {
+    "question": "Sebutkan alat transportasi darat yang ada di sekitar kita",
+    "answers": [
+      "SEPEDA",
+      "CROSS",
+      "LCGC",
+      "OFFROAD",
+      "TAKSI",
+      "SPORT",
+      "BMX",
+      "ONTEL",
+      "LIPAT",
+      "SUV",
+      "MOTOR",
+      "DELMAN",
+      "ANDONG",
+      "GUNUNG",
+      "TRUK"
+    ]
+  },
+  {
+    "question": "Sebutkan makanan tradisional Indonesia yang umum dikenal",
+    "answers": [
+      "SOTO",
+      "OPOR",
+      "TEMPE",
+      "PANCONG",
+      "GUDEG",
+      "BAKSO",
+      "TELUR",
+      "NASIKUNING",
+      "WINGKO",
+      "RISOL",
+      "TAHUSUMEDANG",
+      "REBUS",
+      "KEMPLANG",
+      "IKANGORENG",
+      "GULAI"
+    ]
+  },
+  {
+    "question": "Sebutkan peralatan musik yang ada",
+    "answers": [
+      "GONG",
+      "SARON",
+      "SERUNAI",
+      "KENONG",
+      "TROMPET",
+      "KENDANG",
+      "HARPA",
+      "DRUM",
+      "ANGKLUNG",
+      "SULING",
+      "GENDANG",
+      "GAMELAN",
+      "GITAR",
+      "KLARINET",
+      "REBAB"
+    ]
+  },
+  {
+    "question": "Sebutkan bentang alam yang umum dikenal",
+    "answers": [
+      "GANG",
+      "LORONG",
+      "PANTAI",
+      "LAUT",
+      "PROVINSI",
+      "PULAU",
+      "TANAH",
+      "SELAT",
+      "TINGGI",
+      "DATARAN",
+      "DANAU",
+      "DESA",
+      "KECAMATAN",
+      "NEGARA",
+      "DUSUN"
+    ]
+  },
+  {
+    "question": "Sebutkan peralatan musik yang ada di sekitar kita",
+    "answers": [
+      "KECAPI",
+      "DRUM",
+      "KENDANG",
+      "ANGKLUNG",
+      "GONG",
+      "DEMUNG",
+      "SLENTHEM",
+      "REBAB",
+      "KLARINET",
+      "SERUNAI",
+      "TROMPET",
+      "GITAR",
+      "GAMELAN",
+      "HARPA",
+      "BONANG"
+    ]
+  },
+  {
+    "question": "Sebutkan jenis-jenis kendaraan di laut",
+    "answers": [
+      "KARET",
+      "ROKET",
+      "PERAHUBESI",
+      "NELAYAN",
+      "PERAHUBAMBU",
+      "PERAHUKAYU",
+      "HELIKOPTER",
+      "TORPEDO",
+      "PERANGKAP",
+      "RUDAL",
+      "MOTOR",
+      "LAYAR",
+      "PERAHUTENGAH",
+      "PERAHUKARET",
+      "PERANG"
+    ]
+  },
+  {
+    "question": "Sebutkan komponen rumah yang umum dikenal",
+    "answers": [
+      "TAMAN",
+      "PINTU",
+      "HALAMAN",
+      "KACA",
+      "LOTENG",
+      "KAMARTIDUR",
+      "STUDI",
+      "DINDING",
+      "GARASI",
+      "LANGIT",
+      "TERAS",
+      "PAGAR",
+      "DAPUR",
+      "KAMARIBADAH",
+      "PEMBATAS"
+    ]
+  },
+  {
+    "question": "Sebutkan kendaraan di jalan yang populer",
+    "answers": [
+      "MOBIL",
+      "SEDAN",
+      "KERETA",
+      "GUNUNG",
+      "DELMAN",
+      "MPV",
+      "BUS",
+      "ANDONG",
+      "TRUK",
+      "BMX",
+      "SUV",
+      "ANGKUT",
+      "TRAIL",
+      "SPORT",
+      "BECAK"
+    ]
+  },
+  {
+    "question": "Sebutkan macam-macam perlengkapan kantor",
+    "answers": [
+      "KEYBOARD",
+      "MEJA",
+      "MESINKASIR",
+      "HEADSET",
+      "PEMBUANGAN",
+      "KURSI",
+      "LEMARI",
+      "WEBCAM",
+      "LAPTOP",
+      "LACI",
+      "MONITOR",
+      "NOTEBOOK",
+      "PROYEKTOR",
+      "MIKROFON",
+      "RAK"
+    ]
+  },
+  {
+    "question": "Sebutkan fenomena alam yang umum dikenal",
+    "answers": [
+      "HUJAN",
+      "GERIMIS",
+      "BADAI",
+      "HUJANES",
+      "PANAS",
+      "ANGIN",
+      "ANGINBADAI",
+      "LONGSOR",
+      "TOPAN",
+      "HALILINTAR",
+      "HUJANBATU",
+      "PETIR",
+      "PASANG",
+      "ARUS",
+      "GELOMBANG"
+    ]
+  },
+  {
+    "question": "Sebutkan jenis-jenis tenaga pendidik",
+    "answers": [
+      "INSTRUKTUR",
+      "GURU",
+      "KEPALALAB",
+      "LEKTOR",
+      "GURUMUDA",
+      "PROFESOR",
+      "PEMBIMBING",
+      "GURUHONORER",
+      "GURUTETAP",
+      "GURUPEMBINA",
+      "PENGAJAR",
+      "PELATIH",
+      "GURUTAMAN",
+      "DOSEN",
+      "LEKTORKEPALA"
+    ]
+  },
+  {
+    "question": "Sebutkan binatang peliharaan",
+    "answers": [
+      "LEBAH",
+      "DOMBA",
+      "KECOA",
+      "SEMUT",
+      "ARNAB",
+      "BABI",
+      "BELALANG",
+      "KAKAKTUA",
+      "ANJING",
+      "JALAK",
+      "BUAYA",
+      "ELANG",
+      "BIAWAK",
+      "KUCING",
+      "RAYAP"
+    ]
+  },
+  {
+    "question": "Sebutkan nama pulau di Indonesia yang populer di Indonesia",
+    "answers": [
+      "BALI",
+      "BATAM",
+      "JAWA",
+      "TENGGARA",
+      "MALUKU",
+      "LOMBOK",
+      "BELITUNG",
+      "NUSA",
+      "KEPULAUAN",
+      "BORNEO",
+      "NATUNA",
+      "PAPUA",
+      "SULAWESI",
+      "SUMBA",
+      "FLORES"
+    ]
+  },
+  {
+    "question": "Sebutkan kamar di rumah yang sering dijumpai",
+    "answers": [
+      "KOLAM",
+      "PERPUSTAKAAN",
+      "KAMARMANDI",
+      "KAMARTIDUR",
+      "STUDI",
+      "LOTENG",
+      "TERAS",
+      "BALKON",
+      "HALAMAN",
+      "KAMARIBADAH",
+      "RUANGTAMU",
+      "TAMAN",
+      "KAMARTAMU",
+      "GUDANG",
+      "RUANGBACA"
+    ]
+  },
+  {
+    "question": "Sebutkan macam-macam warna yang populer di Indonesia",
+    "answers": [
+      "LAVENDER",
+      "ZAMRUD",
+      "MARUN",
+      "KREM",
+      "PERAK",
+      "PINK",
+      "NAVY",
+      "CYAN",
+      "HIJAU",
+      "TURQUOISE",
+      "SALMON",
+      "MINT",
+      "CORAL",
+      "SILVER",
+      "GOLD"
+    ]
+  },
+  {
+    "question": "Sebutkan jenis ruangan yang sering kita dengar",
+    "answers": [
+      "RUANGTAMU",
+      "KAMARTIDUR",
+      "RUANGKERJA",
+      "HALAMAN",
+      "TERAS",
+      "TAMAN",
+      "GARASI",
+      "JEMURAN",
+      "LOTENG",
+      "KAMARPELAYAN",
+      "RUANGBACA",
+      "BALKON",
+      "KAMARMANDI",
+      "RUANGMAKAN",
+      "GUDANG"
+    ]
+  },
+  {
+    "question": "Sebutkan tempat umum yang sering kita dengar",
+    "answers": [
+      "HALTE",
+      "TAMANBERMAIN",
+      "GALERI",
+      "PELABUHAN",
+      "KOLAMRENANG",
+      "VIHARAPAGODA",
+      "TERMINAL",
+      "GEREJA",
+      "MALL",
+      "GEDUNG",
+      "BIOSKOP",
+      "STADIUM",
+      "PASAR",
+      "MUSEUM",
+      "TOKO"
+    ]
+  },
+  {
+    "question": "Sebutkan nama pulau di Indonesia yang sering kita dengar",
+    "answers": [
+      "FLORES",
+      "MADURA",
+      "KALIMANTAN",
+      "TENGGARA",
+      "SUMBA",
+      "NATUNA",
+      "LOMBOK",
+      "NUSA",
+      "TIMOR",
+      "BALI",
+      "RIAU",
+      "PAPUA",
+      "SERIBU",
+      "BORNEO",
+      "BANGKA"
+    ]
+  },
+  {
+    "question": "Sebutkan cabang olahraga yang penting",
+    "answers": [
+      "BULUTANGKIS",
+      "PILATES",
+      "BELADIRI",
+      "LOMPAT",
+      "YOGA",
+      "BASKET",
+      "KARATE",
+      "TENIS",
+      "TAEKWONDO",
+      "VOLI",
+      "PANAHAN",
+      "FITNES",
+      "CATUR",
+      "TINGGI",
+      "SEPAKBOLA"
+    ]
+  }
+]

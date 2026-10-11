@@ -3017,5 +3017,1841 @@
         "clue": "x"
       }
     ]
+  },
+  {
+    "name": "humita-hasut-ismat",
+    "baseLetters": "AHIMSTU",
+    "words": [
+      {
+        "answer": "HUMITA",
+        "direction": "across",
+        "clue": "penganan khas Ekuador, terbuat dari tepung jagung yang dibumbui bawang merah, telur, dan lemak babi, dibungkus daun jagung, dimasak dengan cara dikukus atau direbus"
+      },
+      {
+        "answer": "HASUT",
+        "direction": "down",
+        "clue": "dengki"
+      },
+      {
+        "answer": "ISMAT",
+        "direction": "across",
+        "clue": "kemampuan untuk menghindari maksiat"
+      },
+      {
+        "answer": "MASIH",
+        "direction": "down",
+        "clue": "sedang dalam keadaan belum selesai atau sedang berlangsung"
+      },
+      {
+        "answer": "MUTAS",
+        "direction": "across",
+        "clue": "menangkap ikan menggunakan jenu"
+      },
+      {
+        "answer": "SAHUT",
+        "direction": "down",
+        "clue": "jawab (apabila dipanggil atau ditanya)"
+      }
+    ]
+  },
+  {
+    "name": "badui-abdi-abid",
+    "baseLetters": "ABCDEIU",
+    "words": [
+      {
+        "answer": "BADUI",
+        "direction": "across",
+        "clue": "suku bangsa pengembara di tanah Arab"
+      },
+      {
+        "answer": "ABDI",
+        "direction": "down",
+        "clue": "orang bawahan"
+      },
+      {
+        "answer": "ABID",
+        "direction": "across",
+        "clue": "beribadah"
+      },
+      {
+        "answer": "ABIU",
+        "direction": "down",
+        "clue": "sawo australia"
+      },
+      {
+        "answer": "ABUI",
+        "direction": "across",
+        "clue": "salah satu suku bangsa yang tinggal di Kabupaten Alor, Provinsi Nusa Tenggara Timur"
+      },
+      {
+        "answer": "ADIB",
+        "direction": "down",
+        "clue": "beradab"
+      }
+    ]
+  },
+  {
+    "name": "khas-lakh-slah",
+    "baseLetters": "AHKLMSW",
+    "words": [
+      {
+        "answer": "KHAS",
+        "direction": "across",
+        "clue": "khusus"
+      },
+      {
+        "answer": "LAKH",
+        "direction": "down",
+        "clue": "sistem bilangan India yang sama dengan seratus ribu"
+      },
+      {
+        "answer": "SLAH",
+        "direction": "across",
+        "clue": "kiat"
+      },
+      {
+        "answer": "SWAK",
+        "direction": "down",
+        "clue": "soak"
+      },
+      {
+        "answer": "WALS",
+        "direction": "across",
+        "clue": "tarian Barat dengan irama gerak tiga perempat hitungan"
+      },
+      {
+        "answer": "AKH",
+        "direction": "down",
+        "clue": "ah!"
+      }
+    ]
+  },
+  {
+    "name": "blitar-brutal-tarbil",
+    "baseLetters": "ABILRTU",
+    "words": [
+      {
+        "answer": "BLITAR",
+        "direction": "across",
+        "clue": "kota di Provinsi Jawa Timur, terkenal dengan sebutan Kota Proklamator"
+      },
+      {
+        "answer": "BRUTAL",
+        "direction": "down",
+        "clue": "kejam"
+      },
+      {
+        "answer": "TARBIL",
+        "direction": "across",
+        "clue": "busur untuk melepaskan bola-bola tanah liat"
+      },
+      {
+        "answer": "TRIBAL",
+        "direction": "down",
+        "clue": "berkenaan dengan suku atau budaya tertentu"
+      },
+      {
+        "answer": "BALUT",
+        "direction": "across",
+        "clue": "(kain dan sebagainya) pengikat atau pembebat luka"
+      },
+      {
+        "answer": "BARUT",
+        "direction": "down",
+        "clue": "kain pembalut luka"
+      }
+    ]
+  },
+  {
+    "name": "bilur-bugil-bulir",
+    "baseLetters": "BGIJLRU",
+    "words": [
+      {
+        "answer": "BILUR",
+        "direction": "across",
+        "clue": "luka panjang pada kulit (bekas kena cambuk)"
+      },
+      {
+        "answer": "BUGIL",
+        "direction": "down",
+        "clue": "tidak berpakaian sedikit pun"
+      },
+      {
+        "answer": "BULIR",
+        "direction": "across",
+        "clue": "tangkai beserta buah majemuk yang terdapat pada tangkai itu, seperti -- padi, -- jelai"
+      },
+      {
+        "answer": "GULIR",
+        "direction": "down",
+        "clue": "gelincir"
+      },
+      {
+        "answer": "LIBUR",
+        "direction": "across",
+        "clue": "bebas dari bekerja atau masuk sekolah"
+      },
+      {
+        "answer": "BIRU",
+        "direction": "down",
+        "clue": "warna dasar yang serupa dengan warna langit yang terang (tidak berawan dan sebagainya) serta merupakan warna asli (bukan hasil campuran beberapa warna)"
+      }
+    ]
+  },
+  {
+    "name": "kemput-tempuh-tumpek",
+    "baseLetters": "EHKMPTU",
+    "words": [
+      {
+        "answer": "KEMPUT",
+        "direction": "across",
+        "clue": "seluruhnya (sampai tuntas)"
+      },
+      {
+        "answer": "TEMPUH",
+        "direction": "down",
+        "clue": "menempuh"
+      },
+      {
+        "answer": "TUMPEK",
+        "direction": "across",
+        "clue": "hari raya umat Hindu dua minggu setelah hari raya Galungan (yang dirayakan setiap 210 hari sekali atau sekali tiap 6 bulan menurut penanggalan Bali)"
+      },
+      {
+        "answer": "EMPUK",
+        "direction": "down",
+        "clue": "lunak"
+      },
+      {
+        "answer": "KEMPU",
+        "direction": "across",
+        "clue": "kotak bundar bertutup untuk menyimpan pakaian, barang kecil-kecil, dan sebagainya"
+      },
+      {
+        "answer": "KETUP",
+        "direction": "down",
+        "clue": "tiruan bunyi seperti kaki yang dientakkan di atas papan dan sebagainya"
+      }
+    ]
+  },
+  {
+    "name": "comek-hemik-kemih",
+    "baseLetters": "CEHIKMO",
+    "words": [
+      {
+        "answer": "COMEK",
+        "direction": "across",
+        "clue": "bulu yang tumbuh di bawah bibir bawah (di atas dagu)"
+      },
+      {
+        "answer": "HEMIK",
+        "direction": "down",
+        "clue": "setengah matang (tentang jenis gambut), cocok untuk menanam tanaman pangan"
+      },
+      {
+        "answer": "KEMIH",
+        "direction": "across",
+        "clue": "air seni"
+      },
+      {
+        "answer": "OHMIK",
+        "direction": "down",
+        "clue": "berkaitan dengan elemen rangkaian yang mengikuti hukum Ohm"
+      },
+      {
+        "answer": "CEKI",
+        "direction": "across",
+        "clue": "kartu judi berbentuk empat persegi panjang kecil-kecil (sebanyak 180 helai)"
+      },
+      {
+        "answer": "CEKO",
+        "direction": "down",
+        "clue": "negara di Eropa Tengah, beribu kota Praha"
+      }
+    ]
+  },
+  {
+    "name": "jebio-sobei-besi",
+    "baseLetters": "BEIJOSW",
+    "words": [
+      {
+        "answer": "JEBIO",
+        "direction": "across",
+        "clue": "pisau dari besi yang berbentuk agak melengkung dan lebih panjang dari pisau biasa"
+      },
+      {
+        "answer": "SOBEI",
+        "direction": "down",
+        "clue": "suku bangsa yang mendiami wilayah pesisir Sarmi di Papua"
+      },
+      {
+        "answer": "BESI",
+        "direction": "across",
+        "clue": "logam yang keras dan kuat serta banyak sekali gunanya (sebagai bahan pembuat senjata, mesin, dan sebagainya)"
+      },
+      {
+        "answer": "BOIS",
+        "direction": "down",
+        "clue": "kelaki-lakian"
+      },
+      {
+        "answer": "BOSE",
+        "direction": "across",
+        "clue": "jagung yang ditumbuk kasar hingga terlepas kulit arinya"
+      },
+      {
+        "answer": "BOSI",
+        "direction": "down",
+        "clue": "pelepah sagu berbentuk tabung, digunakan untuk membawa barang (seperti kayu bakar, daun pisang), biasanya digunakan oleh perempuan"
+      }
+    ]
+  },
+  {
+    "name": "kits-trik-cir",
+    "baseLetters": "CDIKRST",
+    "words": [
+      {
+        "answer": "KITS",
+        "direction": "across",
+        "clue": "sesuatu yang menarik cita rasa kebanyakan orang, biasanya tidak bermutu tinggi"
+      },
+      {
+        "answer": "TRIK",
+        "direction": "down",
+        "clue": "akal, muslihat"
+      },
+      {
+        "answer": "CIR",
+        "direction": "across",
+        "clue": "kata seru untuk mengejek, menghinakan, dan sebagainya"
+      },
+      {
+        "answer": "CIS",
+        "direction": "down",
+        "clue": "kata seru untuk mencemoohkan dan sebagainya"
+      },
+      {
+        "answer": "CIT",
+        "direction": "across",
+        "clue": "tiruan bunyi suara tikus atau anak burung"
+      },
+      {
+        "answer": "KIR",
+        "direction": "down",
+        "clue": "pemeriksaan (misalnya pemeriksaan kesehatan atau pemeriksaan kendaraan)"
+      }
+    ]
+  },
+  {
+    "name": "cubit-gubit-timbu",
+    "baseLetters": "BCGIMTU",
+    "words": [
+      {
+        "answer": "CUBIT",
+        "direction": "across",
+        "clue": "yang dijepit dengan ujung jari atau ujung telunjuk dengan ibu jari"
+      },
+      {
+        "answer": "GUBIT",
+        "direction": "down",
+        "clue": "lambai"
+      },
+      {
+        "answer": "TIMBU",
+        "direction": "across",
+        "clue": "lemang khas Dompu, rasanya gurih, pulen, dan sedikit kenyal"
+      },
+      {
+        "answer": "BICU",
+        "direction": "down",
+        "clue": "dongkrak"
+      },
+      {
+        "answer": "BUCI",
+        "direction": "across",
+        "clue": "lesbian yang berperilaku dan berpenampilan maskulin"
+      },
+      {
+        "answer": "BUIT",
+        "direction": "down",
+        "clue": "tombak yang memiliki kait dari Bengkulu"
+      }
+    ]
+  },
+  {
+    "name": "lecuh-cedi-celi",
+    "baseLetters": "CDEHILU",
+    "words": [
+      {
+        "answer": "LECUH",
+        "direction": "across",
+        "clue": "agak layu (seperti sayuran disiram dengan air panas)"
+      },
+      {
+        "answer": "CEDI",
+        "direction": "down",
+        "clue": "mata uang Ghana"
+      },
+      {
+        "answer": "CELI",
+        "direction": "across",
+        "clue": "tajam intuisinya sehingga pandai memilih yang baik"
+      },
+      {
+        "answer": "CILE",
+        "direction": "down",
+        "clue": "negara yang terletak di Amerika Selatan, beribu kota Santiago"
+      },
+      {
+        "answer": "CUIL",
+        "direction": "across",
+        "clue": "gamit"
+      },
+      {
+        "answer": "DUEL",
+        "direction": "down",
+        "clue": "perkelahian antara dua orang untuk menyelesaikan persoalan (dengan pedang atau pistol, di tempat dan pada waktu yang telah ditetapkan)"
+      }
+    ]
+  },
+  {
+    "name": "siborg-sohib-biro",
+    "baseLetters": "BGHIORS",
+    "words": [
+      {
+        "answer": "SIBORG",
+        "direction": "across",
+        "clue": "makhluk yang tubuhnya setengah manusia dan setengah robot (tentang film fiksi)"
+      },
+      {
+        "answer": "SOHIB",
+        "direction": "down",
+        "clue": "sahabat"
+      },
+      {
+        "answer": "BIRO",
+        "direction": "across",
+        "clue": "kantor"
+      },
+      {
+        "answer": "BOGI",
+        "direction": "down",
+        "clue": "kereta kecil (biasanya beroda dua dan ditarik oleh seekor kuda)"
+      },
+      {
+        "answer": "BOIS",
+        "direction": "across",
+        "clue": "kelaki-lakian"
+      },
+      {
+        "answer": "BOSI",
+        "direction": "down",
+        "clue": "pelepah sagu berbentuk tabung, digunakan untuk membawa barang (seperti kayu bakar, daun pisang), biasanya digunakan oleh perempuan"
+      }
+    ]
+  },
+  {
+    "name": "jatuh-julat-lucah",
+    "baseLetters": "ACHJLTU",
+    "words": [
+      {
+        "answer": "JATUH",
+        "direction": "across",
+        "clue": "(terlepas dan) turun atau meluncur ke bawah dengan cepat karena gravitasi bumi (baik ketika masih dalam gerakan turun maupun sesudah sampai ke tanah dan sebagainya)"
+      },
+      {
+        "answer": "JULAT",
+        "direction": "down",
+        "clue": "seberapa jauhnya (panjangnya, lamanya)"
+      },
+      {
+        "answer": "LUCAH",
+        "direction": "across",
+        "clue": "hina sekali"
+      },
+      {
+        "answer": "TUJAH",
+        "direction": "down",
+        "clue": "menujah"
+      },
+      {
+        "answer": "TULAH",
+        "direction": "across",
+        "clue": "kemalangan yang disebabkan oleh kutuk, karena perbuatan yang kurang baik terhadap orang tua (orang suci dan sebagainya), atau karena perbuatan melanggar larangan"
+      },
+      {
+        "answer": "ACUH",
+        "direction": "down",
+        "clue": "peduli"
+      }
+    ]
+  },
+  {
+    "name": "subtil-bisul-bolus",
+    "baseLetters": "BILOSTU",
+    "words": [
+      {
+        "answer": "SUBTIL",
+        "direction": "across",
+        "clue": "halus"
+      },
+      {
+        "answer": "BISUL",
+        "direction": "down",
+        "clue": "bintil yang membengkak pada kulit yang berisi nanah dan bermata"
+      },
+      {
+        "answer": "BOLUS",
+        "direction": "across",
+        "clue": "makanan atau obat yang menggumpal sebesar kepalan"
+      },
+      {
+        "answer": "LISUT",
+        "direction": "down",
+        "clue": "kisut"
+      },
+      {
+        "answer": "LOTUS",
+        "direction": "across",
+        "clue": "teratai"
+      },
+      {
+        "answer": "SULIT",
+        "direction": "down",
+        "clue": "sukar sekali"
+      }
+    ]
+  },
+  {
+    "name": "brutal-bahul-baluh",
+    "baseLetters": "ABHLRTU",
+    "words": [
+      {
+        "answer": "BRUTAL",
+        "direction": "across",
+        "clue": "kejam"
+      },
+      {
+        "answer": "BAHUL",
+        "direction": "down",
+        "clue": "perut bayi"
+      },
+      {
+        "answer": "BALUH",
+        "direction": "across",
+        "clue": "kayu rangka tempat duduk (di punggung gajah)"
+      },
+      {
+        "answer": "BALUT",
+        "direction": "down",
+        "clue": "(kain dan sebagainya) pengikat atau pembebat luka"
+      },
+      {
+        "answer": "BARUH",
+        "direction": "across",
+        "clue": "tanah yang lebih rendah"
+      },
+      {
+        "answer": "BARUT",
+        "direction": "down",
+        "clue": "kain pembalut luka"
+      }
+    ]
+  },
+  {
+    "name": "hongi-ohmik-hoki",
+    "baseLetters": "GHIKMNO",
+    "words": [
+      {
+        "answer": "HONGI",
+        "direction": "across",
+        "clue": "tiba-tiba ribut"
+      },
+      {
+        "answer": "OHMIK",
+        "direction": "down",
+        "clue": "berkaitan dengan elemen rangkaian yang mengikuti hukum Ohm"
+      },
+      {
+        "answer": "HOKI",
+        "direction": "across",
+        "clue": "olahraga lapangan yang dimainkan oleh dua kesebelasan yang masing-masing terdiri atas sebelas orang pemain yang bertujuan memasukkan bola kecil ke dalam gawang lawan dengan menggunakan tongkat pemukul"
+      },
+      {
+        "answer": "HONG",
+        "direction": "down",
+        "clue": "foniks"
+      },
+      {
+        "answer": "IKON",
+        "direction": "across",
+        "clue": "lukisan, gambar, gambaran pada panel kayu yang digunakan dalam kebaktian gereja Kristen Ortodoks"
+      },
+      {
+        "answer": "KIMO",
+        "direction": "down",
+        "clue": "kulit kerang yang digunakan untuk menciduk nener dari seser dan digunakan pula pada saat penghitungan nener"
+      }
+    ]
+  },
+  {
+    "name": "celah-delah-lecah",
+    "baseLetters": "ACDEHLW",
+    "words": [
+      {
+        "answer": "CELAH",
+        "direction": "across",
+        "clue": "sela antara dua benda"
+      },
+      {
+        "answer": "DELAH",
+        "direction": "down",
+        "clue": "ikan laut jenis ikan pisang-pisang"
+      },
+      {
+        "answer": "LECAH",
+        "direction": "across",
+        "clue": "tanah yang berair dan berlumpur"
+      },
+      {
+        "answer": "LEWAH",
+        "direction": "down",
+        "clue": "limpah ruah"
+      },
+      {
+        "answer": "WALEH",
+        "direction": "across",
+        "clue": "mengaku terus terang"
+      },
+      {
+        "answer": "CELA",
+        "direction": "down",
+        "clue": "sesuatu yang menyebabkan kurang sempurna"
+      }
+    ]
+  },
+  {
+    "name": "compes-empos-sompe",
+    "baseLetters": "CEJMOPS",
+    "words": [
+      {
+        "answer": "COMPES",
+        "direction": "across",
+        "clue": "sumbing-sumbing pada tepi pisau (piring, cangkir, dan sebagainya)"
+      },
+      {
+        "answer": "EMPOS",
+        "direction": "down",
+        "clue": "embus"
+      },
+      {
+        "answer": "SOMPE",
+        "direction": "across",
+        "clue": "tradisi merantau pada suku Bugis"
+      },
+      {
+        "answer": "CEPO",
+        "direction": "down",
+        "clue": "habis uangnya (karena kalah dalam permainan)"
+      },
+      {
+        "answer": "EMPO",
+        "direction": "across",
+        "clue": "gendong di punggung"
+      },
+      {
+        "answer": "PESO",
+        "direction": "down",
+        "clue": "satuan mata uang di beberapa negara, seperti Argentina, Cile, Filipina, dan Meksiko"
+      }
+    ]
+  },
+  {
+    "name": "dok-dop-dot",
+    "baseLetters": "DGKMOPT",
+    "words": [
+      {
+        "answer": "DOK",
+        "direction": "across",
+        "clue": "galangan kapal (untuk menggalang kapal yang akan diperbaiki dan sebagainya)"
+      },
+      {
+        "answer": "DOP",
+        "direction": "down",
+        "clue": "penutup pangkal poros roda (mobil dan sebagainya)"
+      },
+      {
+        "answer": "DOT",
+        "direction": "across",
+        "clue": "alat dari karet untuk menyusui bayi"
+      },
+      {
+        "answer": "GOM",
+        "direction": "down",
+        "clue": "getah yang diperoleh dari dua jenis pohon akasia, berupa kristal bening yang mudah larut dalam air, larutannya bersifat asam, yang digunakan sebagai perekat"
+      },
+      {
+        "answer": "GOT",
+        "direction": "across",
+        "clue": "selokan"
+      },
+      {
+        "answer": "POM",
+        "direction": "down",
+        "clue": "suku bangsa yang mendiami daerah Kabupaten Yapen dan Waropen, Provinsi Papua"
+      }
+    ]
+  },
+  {
+    "name": "caripu-prusia-arpus",
+    "baseLetters": "ACIPRSU",
+    "words": [
+      {
+        "answer": "CARIPU",
+        "direction": "across",
+        "clue": "sandal jepit tradisional yang terbuat dari kayu, biasanya dipakai oleh masyarakat Desa Lisabata Maluku"
+      },
+      {
+        "answer": "PRUSIA",
+        "direction": "down",
+        "clue": "negara berbentuk kerajaan yang wilayahnya mencakup wilayah Jerman sekarang dan beberapa wilayah sekitarnya, berdiri pada tahun 1525–1947 Masehi"
+      },
+      {
+        "answer": "ARPUS",
+        "direction": "across",
+        "clue": "damar untuk menguatkan tali, seperti tali penggesek biola"
+      },
+      {
+        "answer": "ARSIP",
+        "direction": "down",
+        "clue": "dokumen tertulis (surat, akta, dan sebagainya), lisan (pidato, ceramah, dan sebagainya), atau bergambar (foto, film, dan sebagainya) dari waktu yang lampau, disimpan dalam media tulis (kertas), elektronik (pita kaset, pita video, disket komputer, dan sebagainya), biasanya dikeluarkan oleh instansi resmi, disimpan dan dipelihara di tempat khusus untuk referensi"
+      },
+      {
+        "answer": "CURAI",
+        "direction": "across",
+        "clue": "lepas"
+      },
+      {
+        "answer": "PACRI",
+        "direction": "down",
+        "clue": "masakan berbahan dasar nanas, dimasak dengan santan, bumbu, dan rempah"
+      }
+    ]
+  },
+  {
+    "name": "cemas-mawes-sejam",
+    "baseLetters": "ACEJMSW",
+    "words": [
+      {
+        "answer": "CEMAS",
+        "direction": "across",
+        "clue": "risau hati (karena khawatir, takut)"
+      },
+      {
+        "answer": "MAWES",
+        "direction": "down",
+        "clue": "suku bangsa yang mendiami daerah Kabupaten Jayapura, Papua"
+      },
+      {
+        "answer": "SEJAM",
+        "direction": "across",
+        "clue": "jam satu jam"
+      },
+      {
+        "answer": "CAEM",
+        "direction": "down",
+        "clue": "bagus, cantik, cakap"
+      },
+      {
+        "answer": "EMAS",
+        "direction": "across",
+        "clue": "logam mulia berwarna kuning yang dapat ditempa dan dibentuk, biasa dibuat perhiasan, seperti cincin, kalung, dengan nomor atom 79, berlambang Au"
+      },
+      {
+        "answer": "MACE",
+        "direction": "down",
+        "clue": "bibi"
+      }
+    ]
+  },
+  {
+    "name": "letih-liwet-selit",
+    "baseLetters": "EHILSTW",
+    "words": [
+      {
+        "answer": "LETIH",
+        "direction": "across",
+        "clue": "tidak bertenaga (karena baru selesai kerja berat dan sebagainya)"
+      },
+      {
+        "answer": "LIWET",
+        "direction": "down",
+        "clue": "memasak dengan direbus"
+      },
+      {
+        "answer": "SELIT",
+        "direction": "across",
+        "clue": "selip"
+      },
+      {
+        "answer": "SILET",
+        "direction": "down",
+        "clue": "pisau berupa lempengan baja kecil dan tipis, biasanya bermata dua (tanpa pegangan)"
+      },
+      {
+        "answer": "ETIS",
+        "direction": "across",
+        "clue": "berhubungan (sesuai) dengan etika"
+      },
+      {
+        "answer": "ILES",
+        "direction": "down",
+        "clue": "cara merontokkan padi dari malainya dengan menginjak-injak"
+      }
+    ]
+  },
+  {
+    "name": "ndom-stok-dok",
+    "baseLetters": "DKMNOST",
+    "words": [
+      {
+        "answer": "NDOM",
+        "direction": "across",
+        "clue": "suku bangsa yang mendiami Pulau Kolepom, Kabupaten Merauke, Provinsi Papua"
+      },
+      {
+        "answer": "STOK",
+        "direction": "down",
+        "clue": "persediaan barang keperluan untuk perbekalan"
+      },
+      {
+        "answer": "DOK",
+        "direction": "across",
+        "clue": "galangan kapal (untuk menggalang kapal yang akan diperbaiki dan sebagainya)"
+      },
+      {
+        "answer": "DOT",
+        "direction": "down",
+        "clue": "alat dari karet untuk menyusui bayi"
+      },
+      {
+        "answer": "KNO",
+        "direction": "across",
+        "clue": "kode nama Bandar Udara Internasional Kualanamu di Kota Medan, Sumatera Utara"
+      },
+      {
+        "answer": "MOS",
+        "direction": "down",
+        "clue": "masa orientasi siswa"
+      }
+    ]
+  },
+  {
+    "name": "judes-debu-sebu",
+    "baseLetters": "BDEJSUW",
+    "words": [
+      {
+        "answer": "JUDES",
+        "direction": "across",
+        "clue": "lekas marah dan suka membentak-bentak atau menyakiti hati orang"
+      },
+      {
+        "answer": "DEBU",
+        "direction": "down",
+        "clue": "serbuk halus (dari tanah dan sebagainya)"
+      },
+      {
+        "answer": "SEBU",
+        "direction": "across",
+        "clue": "penuh (oleh barang yang tertimbun)"
+      },
+      {
+        "answer": "SEDU",
+        "direction": "down",
+        "clue": "sedan"
+      },
+      {
+        "answer": "BUE",
+        "direction": "across",
+        "clue": "lapisan benang dalam tenunan"
+      },
+      {
+        "answer": "JUE",
+        "direction": "down",
+        "clue": "wadah yang dibuat dari perunggu, berbentuk oval, memiliki tiga kaki, digunakan untuk menyajikan anggur hangat, biasanya digunakan pada upacara di masa Dinasti Xia, Shang, dan Zhou"
+      }
+    ]
+  },
+  {
+    "name": "bum-dum-hus",
+    "baseLetters": "BDHJMSU",
+    "words": [
+      {
+        "answer": "BUM",
+        "direction": "across",
+        "clue": "kayu palang penghalang (perintang) di pelabuhan"
+      },
+      {
+        "answer": "DUM",
+        "direction": "down",
+        "clue": "sesuatu yang sudah tidak dipakai lagi"
+      },
+      {
+        "answer": "HUS",
+        "direction": "across",
+        "clue": "kata seru untuk menyatakan larangan, mengusir (ayam dan sebagainya)"
+      },
+      {
+        "answer": "JUS",
+        "direction": "down",
+        "clue": "sari dari buah atau sayur"
+      },
+      {
+        "answer": "MUS",
+        "direction": "across",
+        "clue": "penganan ringan yang dibuat dari agar-agar, putih telur, krim busa, perencah, dan sebagainya, biasanya dihidangkan sebagai makanan pencuci mulut"
+      },
+      {
+        "answer": "SUB",
+        "direction": "down",
+        "clue": "kode nama Bandar Udara Internasional Juanda, Surabaya"
+      }
+    ]
+  },
+  {
+    "name": "geluh-gubel-begu",
+    "baseLetters": "BEGHLUW",
+    "words": [
+      {
+        "answer": "GELUH",
+        "direction": "across",
+        "clue": "lumpur yang lekat"
+      },
+      {
+        "answer": "GUBEL",
+        "direction": "down",
+        "clue": "ikat atau pegang erat-erat"
+      },
+      {
+        "answer": "BEGU",
+        "direction": "across",
+        "clue": "mesin pengeruk tanah yang menggunakan sejenis ember besi yang menempel pada semacam tangan berengsel yang dioperasikan oleh manusia"
+      },
+      {
+        "answer": "BELU",
+        "direction": "down",
+        "clue": "suku bangsa yang mendiami daerah perbatasan antara Timor Barat dan Timor Leste"
+      },
+      {
+        "answer": "BUGE",
+        "direction": "across",
+        "clue": "peluru mainan terbuat dari karet"
+      },
+      {
+        "answer": "BULE",
+        "direction": "down",
+        "clue": "bulai"
+      }
+    ]
+  },
+  {
+    "name": "khipu-pucik-pukis",
+    "baseLetters": "CHIKPSU",
+    "words": [
+      {
+        "answer": "KHIPU",
+        "direction": "across",
+        "clue": "alat sensus atau pencatat tradisional pada suku Inka berupa untaian tali dari bulu lama, informasi ditandai dengan simpul pada untaian tali"
+      },
+      {
+        "answer": "PUCIK",
+        "direction": "down",
+        "clue": "pancang pada belat atau pada kelong"
+      },
+      {
+        "answer": "PUKIS",
+        "direction": "across",
+        "clue": "kue yang dibuat dari terigu, telur, ragi, gula, santan, dan sebagainya, biasanya dipanggang dalam cetakan berbentuk setengah lingkaran hingga kecokelatan pada bagian bawahnya, dapat diberi pugasan, seperti meses atau keju"
+      },
+      {
+        "answer": "CUKI",
+        "direction": "down",
+        "clue": "permainan seperti main dam"
+      },
+      {
+        "answer": "HIKS",
+        "direction": "across",
+        "clue": "tiruan bunyi isak tangis"
+      },
+      {
+        "answer": "KICU",
+        "direction": "down",
+        "clue": "kecoh"
+      }
+    ]
+  },
+  {
+    "name": "gips-grip-pris",
+    "baseLetters": "GHIPRST",
+    "words": [
+      {
+        "answer": "GIPS",
+        "direction": "across",
+        "clue": "kapur batu, biasanya dipakai untuk membalut bagian tubuh yang tulangnya retak atau patah agar tidak berubah posisinya"
+      },
+      {
+        "answer": "GRIP",
+        "direction": "down",
+        "clue": "tidak percaya pada kemampuan diri"
+      },
+      {
+        "answer": "PRIS",
+        "direction": "across",
+        "clue": "hadiah (dalam perlombaan, undian uang, dan sebagainya)"
+      },
+      {
+        "answer": "PRIT",
+        "direction": "down",
+        "clue": "tiruan bunyi peluit"
+      },
+      {
+        "answer": "GIH",
+        "direction": "across",
+        "clue": "kata seru untuk memberi tekanan atau menyuruh"
+      },
+      {
+        "answer": "GIR",
+        "direction": "down",
+        "clue": "bulatan logam pipih yang bergerigi tempat rantai berpaut untuk memutar roda (pada sepeda, mesin mobil, dan sebagainya)"
+      }
+    ]
+  },
+  {
+    "name": "pecai-cagu-cepu",
+    "baseLetters": "ACEGIPU",
+    "words": [
+      {
+        "answer": "PECAI",
+        "direction": "across",
+        "clue": "pakcoi"
+      },
+      {
+        "answer": "CAGU",
+        "direction": "down",
+        "clue": "penyakit kuku jari bernanah"
+      },
+      {
+        "answer": "CEPU",
+        "direction": "across",
+        "clue": "cembul yang dibuat dari kayu (perak dan sebagainya)"
+      },
+      {
+        "answer": "CIAP",
+        "direction": "down",
+        "clue": "tiruan bunyi anak ayam dan sebagainya"
+      },
+      {
+        "answer": "CUAI",
+        "direction": "across",
+        "clue": "remeh"
+      },
+      {
+        "answer": "GUCI",
+        "direction": "down",
+        "clue": "suku bangsa di Provinsi Sumatera Barat"
+      }
+    ]
+  },
+  {
+    "name": "drus-bur-cuh",
+    "baseLetters": "BCDHRSU",
+    "words": [
+      {
+        "answer": "DRUS",
+        "direction": "across",
+        "clue": "permukaan mineral yang ditutupi dengan kristal kecil yang menonjol"
+      },
+      {
+        "answer": "BUR",
+        "direction": "down",
+        "clue": "tiruan bunyi benda masuk ke air"
+      },
+      {
+        "answer": "CUH",
+        "direction": "across",
+        "clue": "kata seru untuk mengusir atau menggalakkan anjing"
+      },
+      {
+        "answer": "HUS",
+        "direction": "down",
+        "clue": "kata seru untuk menyatakan larangan, mengusir (ayam dan sebagainya)"
+      },
+      {
+        "answer": "SUB",
+        "direction": "across",
+        "clue": "kode nama Bandar Udara Internasional Juanda, Surabaya"
+      },
+      {
+        "answer": "SUH",
+        "direction": "down",
+        "clue": "panas badan"
+      }
+    ]
+  },
+  {
+    "name": "ganker-kareng-kraeng",
+    "baseLetters": "AEGKNRW",
+    "words": [
+      {
+        "answer": "GANKER",
+        "direction": "across",
+        "clue": "peran pemain yang menyerang dan menyergap lawan secara tidak terduga dalam permainan daring"
+      },
+      {
+        "answer": "KARENG",
+        "direction": "down",
+        "clue": "pijakan joki pada balapan kerbau di Sumbawa"
+      },
+      {
+        "answer": "KRAENG",
+        "direction": "across",
+        "clue": "golongan bangsawan suku Manggarai"
+      },
+      {
+        "answer": "ANGKE",
+        "direction": "down",
+        "clue": "sungai yang terletak di Jawa Barat, Tangerang, dan Jakarta (91 km), berhulu di Bogor, bermuara di pantai utara Jakarta"
+      },
+      {
+        "answer": "EKANG",
+        "direction": "across",
+        "clue": "batas-batas wilayah suatu suku"
+      },
+      {
+        "answer": "ERANG",
+        "direction": "down",
+        "clue": "biru kehitam-hitaman"
+      }
+    ]
+  },
+  {
+    "name": "bdo-bon-dop",
+    "baseLetters": "BDHNOPU",
+    "words": [
+      {
+        "answer": "BDO",
+        "direction": "across",
+        "clue": "kode nama Bandar Udara Internasional Husein Sastranegara, Bandung"
+      },
+      {
+        "answer": "BON",
+        "direction": "down",
+        "clue": "surat kecil berisi keterangan pengambilan barang, peminjaman uang, dan sebagainya"
+      },
+      {
+        "answer": "DOP",
+        "direction": "across",
+        "clue": "penutup pangkal poros roda (mobil dan sebagainya)"
+      },
+      {
+        "answer": "DOU",
+        "direction": "down",
+        "clue": "suku bangsa yang berasal dari atau mendiami wilayah aliran sungai-sungai di Kabupaten Paniai, Provinsi Papua Tengah"
+      },
+      {
+        "answer": "DUO",
+        "direction": "across",
+        "clue": "kolaborasi atau kemitraan antara dua orang (dalam musik, olahraga, dan sebagainya)"
+      },
+      {
+        "answer": "NOH",
+        "direction": "down",
+        "clue": "sana"
+      }
+    ]
+  },
+  {
+    "name": "capek-cekal-cepak",
+    "baseLetters": "ACEJKLP",
+    "words": [
+      {
+        "answer": "CAPEK",
+        "direction": "across",
+        "clue": "capai (2)"
+      },
+      {
+        "answer": "CEKAL",
+        "direction": "down",
+        "clue": "tahan menderita"
+      },
+      {
+        "answer": "CEPAK",
+        "direction": "across",
+        "clue": "tiruan bunyi orang mengunyah makanan"
+      },
+      {
+        "answer": "JELAK",
+        "direction": "down",
+        "clue": "jemu (akan makanan dan sebagainya)"
+      },
+      {
+        "answer": "KALEP",
+        "direction": "across",
+        "clue": "kulit yang telah disamak, khususnya kulit anak sapi"
+      },
+      {
+        "answer": "KECAP",
+        "direction": "down",
+        "clue": "cairan atau saus hasil olahan kacang kedelai yang diberi gula dan rempah-rempah untuk penyedap rasa masakan"
+      }
+    ]
+  },
+  {
+    "name": "chad-drat-hart",
+    "baseLetters": "ACDHJRT",
+    "words": [
+      {
+        "answer": "CHAD",
+        "direction": "across",
+        "clue": "negara yang terletak di Afrika Tengah, beribu kota N'Djamena"
+      },
+      {
+        "answer": "DRAT",
+        "direction": "down",
+        "clue": "uliran pada baut dan sekrup"
+      },
+      {
+        "answer": "HART",
+        "direction": "across",
+        "clue": "jenis kartu bridge dengan gambar hati (seperti daun waru), berwarna merah"
+      },
+      {
+        "answer": "TRAH",
+        "direction": "down",
+        "clue": "keturunan"
+      },
+      {
+        "answer": "CAD",
+        "direction": "across",
+        "clue": "negara yang terletak di Afrika Tengah, beribu kota N'Djamena"
+      },
+      {
+        "answer": "CAH",
+        "direction": "down",
+        "clue": "kata seru untuk menyatakan perasaan tidak suka, menghina, terkejut, dan sebagainya"
+      }
+    ]
+  },
+  {
+    "name": "ireks-keris-serik",
+    "baseLetters": "CEIKRSW",
+    "words": [
+      {
+        "answer": "IREKS",
+        "direction": "across",
+        "clue": "campuran solar dan minyak tanah untuk bahan bakar diesel"
+      },
+      {
+        "answer": "KERIS",
+        "direction": "down",
+        "clue": "senjata tajam bersarung, berujung tajam, dan bermata dua (bilahnya ada yang lurus, ada yang berkeluk-keluk)"
+      },
+      {
+        "answer": "SERIK",
+        "direction": "across",
+        "clue": "jera"
+      },
+      {
+        "answer": "CEKI",
+        "direction": "down",
+        "clue": "kartu judi berbentuk empat persegi panjang kecil-kecil (sebanyak 180 helai)"
+      },
+      {
+        "answer": "ERIK",
+        "direction": "across",
+        "clue": "jerit"
+      },
+      {
+        "answer": "KECI",
+        "direction": "down",
+        "clue": "kapal layar"
+      }
+    ]
+  },
+  {
+    "name": "biosel-jeblos-sejoli",
+    "baseLetters": "BEIJLOS",
+    "words": [
+      {
+        "answer": "BIOSEL",
+        "direction": "across",
+        "clue": "cabang biologi yang mempelajari segala hal tentang sel"
+      },
+      {
+        "answer": "JEBLOS",
+        "direction": "down",
+        "clue": "masuk"
+      },
+      {
+        "answer": "SEJOLI",
+        "direction": "across",
+        "clue": "joli sepasang"
+      },
+      {
+        "answer": "BELIO",
+        "direction": "down",
+        "clue": "sapaan untuk bapak yang anaknya meninggal di tempat lain (misalnya di perantauan)"
+      },
+      {
+        "answer": "JEBIO",
+        "direction": "across",
+        "clue": "pisau dari besi yang berbentuk agak melengkung dan lebih panjang dari pisau biasa"
+      },
+      {
+        "answer": "JEBOL",
+        "direction": "down",
+        "clue": "terangkat dari tempatnya tertanam (tentang tanaman) sampai ke akar-akarnya"
+      }
+    ]
+  },
+  {
+    "name": "isopal-apiol-lapis",
+    "baseLetters": "AILOPSW",
+    "words": [
+      {
+        "answer": "ISOPAL",
+        "direction": "across",
+        "clue": "garis yang menghubungkan kenaikan atau penurunan air tanah yang sama dalam satu periode"
+      },
+      {
+        "answer": "APIOL",
+        "direction": "down",
+        "clue": "zat kristal yang dihasilkan dari penyulingan biji peterseli"
+      },
+      {
+        "answer": "LAPIS",
+        "direction": "across",
+        "clue": "susun"
+      },
+      {
+        "answer": "LIPAS",
+        "direction": "down",
+        "clue": "kecoak"
+      },
+      {
+        "answer": "LOPIS",
+        "direction": "across",
+        "clue": "penganan yang dibuat dari ketan, dibungkus daun pisang atau daun tebu, biasa dimakan dengan kelapa parut dan kinca"
+      },
+      {
+        "answer": "PILAS",
+        "direction": "down",
+        "clue": "jari telunjuk yang bengkok, dipercaya sebagai ciri khas warga Penesak"
+      }
+    ]
+  },
+  {
+    "name": "citruk-cukit-kricu",
+    "baseLetters": "CIJKRTU",
+    "words": [
+      {
+        "answer": "CITRUK",
+        "direction": "across",
+        "clue": "penganan khas Tasikmalaya yang dibuat dari tepung tapioka, terigu, garam, dan penyedap rasa, berbentuk bulat pipih seperti koin, teksturnya renyah, rasanya asin"
+      },
+      {
+        "answer": "CUKIT",
+        "direction": "down",
+        "clue": "garpu (dipakai bersama sendok)"
+      },
+      {
+        "answer": "KRICU",
+        "direction": "across",
+        "clue": "keripik cumi khas Kepulauan Bangka Belitung yang berbahan dasar sagu dan telur cumi, berbentuk panjang dengan bagian tengah agak menggembung, berasa gurih"
+      },
+      {
+        "answer": "TURKI",
+        "direction": "down",
+        "clue": "negara di kawasan Eurasia, terbentang dari Semenanjung Anatolia di barat daya Asia sampai ke wilayah Balkan di Eropa bagian tenggara, beribu kota Ankara"
+      },
+      {
+        "answer": "CIUT",
+        "direction": "across",
+        "clue": "sempit"
+      },
+      {
+        "answer": "CUIT",
+        "direction": "down",
+        "clue": "gamit"
+      }
+    ]
+  },
+  {
+    "name": "jorim-biro-bois",
+    "baseLetters": "BIJMORS",
+    "words": [
+      {
+        "answer": "JORIM",
+        "direction": "across",
+        "clue": "makanan khas Korea yang terbuat dari sayuran, daging, ikan, makanan laut, atau tahu yang direbus dengan saus"
+      },
+      {
+        "answer": "BIRO",
+        "direction": "down",
+        "clue": "kantor"
+      },
+      {
+        "answer": "BOIS",
+        "direction": "across",
+        "clue": "kelaki-lakian"
+      },
+      {
+        "answer": "BOSI",
+        "direction": "down",
+        "clue": "pelepah sagu berbentuk tabung, digunakan untuk membawa barang (seperti kayu bakar, daun pisang), biasanya digunakan oleh perempuan"
+      },
+      {
+        "answer": "BRIM",
+        "direction": "across",
+        "clue": "pinggiran topi"
+      },
+      {
+        "answer": "BROS",
+        "direction": "down",
+        "clue": "perhiasan terbuat dari emas, perak, dan sebagainya, bermata intan (berlian, mutiara, dan sebagainya) yang disematkan pada pakaian (biasanya di bagian dada)"
+      }
+    ]
+  },
+  {
+    "name": "oplah-calo-halo",
+    "baseLetters": "ACHJLOP",
+    "words": [
+      {
+        "answer": "OPLAH",
+        "direction": "across",
+        "clue": "jumlah barang cetakan yang diedarkan"
+      },
+      {
+        "answer": "CALO",
+        "direction": "down",
+        "clue": "orang yang menjadi perantara dan memberikan jasanya untuk menguruskan sesuatu berdasarkan upah"
+      },
+      {
+        "answer": "HALO",
+        "direction": "across",
+        "clue": "kata yang digunakan untuk mengawali percakapan melalui telepon"
+      },
+      {
+        "answer": "HAPO",
+        "direction": "down",
+        "clue": "ritual pengakuan terhadap anak yang baru lahir di Suku Sabu, Nusa Tenggara Timur"
+      },
+      {
+        "answer": "OLAH",
+        "direction": "across",
+        "clue": "laku"
+      },
+      {
+        "answer": "PACO",
+        "direction": "down",
+        "clue": "makanan khas Luwu, Sulawesi Selatan, berbahan dasar ikan atau udang segar yang dicampur perasan jeruk nipis, cabai, dan garam, disajikan mentah"
+      }
+    ]
+  },
+  {
+    "name": "doku-dotu-klon",
+    "baseLetters": "DKLNOTU",
+    "words": [
+      {
+        "answer": "DOKU",
+        "direction": "across",
+        "clue": "uang"
+      },
+      {
+        "answer": "DOTU",
+        "direction": "down",
+        "clue": "posisi matahari tepat di atas kepala pada siang hari"
+      },
+      {
+        "answer": "KLON",
+        "direction": "across",
+        "clue": "suku bangsa yang mendiami Kabupaten Alor"
+      },
+      {
+        "answer": "KOLT",
+        "direction": "down",
+        "clue": "senjata api genggam yang otomatis kaliber 11,4 mm"
+      },
+      {
+        "answer": "KULO",
+        "direction": "across",
+        "clue": "perjanjian sebelum menikah untuk menentukan tempat tinggal dalam tradisi masyarakat Serawai"
+      },
+      {
+        "answer": "LUDO",
+        "direction": "down",
+        "clue": "permainan di atas papan atau karton berbentuk persegi yang dimainkan oleh dua hingga empat orang, masing-masing memakai orang-orangan berlainan warna berjumlah empat buah yang harus digerakkan dari tempat asal di sudut papan ke tempat tujuan di bagian tengah papan berdasarkan angka pada dadu yang dilemparkan"
+      }
+    ]
+  },
+  {
+    "name": "belati-belgia-geliat",
+    "baseLetters": "ABEGILT",
+    "words": [
+      {
+        "answer": "BELATI",
+        "direction": "across",
+        "clue": "buatan luar negeri"
+      },
+      {
+        "answer": "BELGIA",
+        "direction": "down",
+        "clue": "negara yang terletak di Eropa Barat, beribu kota Brussel"
+      },
+      {
+        "answer": "GELIAT",
+        "direction": "across",
+        "clue": "geliang"
+      },
+      {
+        "answer": "GELITA",
+        "direction": "down",
+        "clue": "gelap"
+      },
+      {
+        "answer": "GLIBET",
+        "direction": "across",
+        "clue": "sebutan untuk anak seniman karawitan, misalnya anak niyaga, anak pesinden, anak wirasuara, atau anak dalang"
+      },
+      {
+        "answer": "TABLIG",
+        "direction": "down",
+        "clue": "penyiaran ajaran agama Islam"
+      }
+    ]
+  },
+  {
+    "name": "bercap-bercat-baret",
+    "baseLetters": "ABCEPRT",
+    "words": [
+      {
+        "answer": "BERCAP",
+        "direction": "across",
+        "clue": "cap mempunyai cap"
+      },
+      {
+        "answer": "BERCAT",
+        "direction": "down",
+        "clue": "cat diwarnai dengan cat"
+      },
+      {
+        "answer": "BARET",
+        "direction": "across",
+        "clue": "goresan (pada kulit, kaca)"
+      },
+      {
+        "answer": "BERAT",
+        "direction": "down",
+        "clue": "besar ukurannya (di antara jenisnya atau benda-benda yang serupa)"
+      },
+      {
+        "answer": "CERAP",
+        "direction": "across",
+        "clue": "acuh"
+      },
+      {
+        "answer": "CERAT",
+        "direction": "down",
+        "clue": "bagian pada cerek (kendi, teko, karaf, dan sebagainya) yang berbentuk corong kecil untuk menuang air"
+      }
+    ]
+  },
+  {
+    "name": "ceki-keci-kemi",
+    "baseLetters": "CEIKMNW",
+    "words": [
+      {
+        "answer": "CEKI",
+        "direction": "across",
+        "clue": "kartu judi berbentuk empat persegi panjang kecil-kecil (sebanyak 180 helai)"
+      },
+      {
+        "answer": "KECI",
+        "direction": "down",
+        "clue": "kapal layar"
+      },
+      {
+        "answer": "KEMI",
+        "direction": "across",
+        "clue": "gemin"
+      },
+      {
+        "answer": "KENI",
+        "direction": "down",
+        "clue": "pipa berbentuk L yang berfungsi menghubungkan dua bagian pipa pada masing-masing ujungnya"
+      },
+      {
+        "answer": "MENI",
+        "direction": "across",
+        "clue": "cat merah yang dioleskan sebagai lapisan dasar pada permukaan suatu barang sebelum dicat"
+      },
+      {
+        "answer": "MINK",
+        "direction": "down",
+        "clue": "mamalia semiakuatik menyerupai cerpelai, bulunya dijadikan bahan utama bulu mata palsu"
+      }
+    ]
+  },
+  {
+    "name": "comel-emol-leco",
+    "baseLetters": "CELMOUW",
+    "words": [
+      {
+        "answer": "COMEL",
+        "direction": "across",
+        "clue": "kecil manis (cantik)"
+      },
+      {
+        "answer": "EMOL",
+        "direction": "down",
+        "clue": "ganggu"
+      },
+      {
+        "answer": "LECO",
+        "direction": "across",
+        "clue": "tidak mau besar"
+      },
+      {
+        "answer": "LEUW",
+        "direction": "down",
+        "clue": "tempat penyimpanan kacang dan padi di Desa Lisabata, Maluku, berukuran besar menyerupai drum, bagian luarnya terbuat dari anyaman kulit gaba-gaba sedangkan bagian dalamnya terbuat dari anyaman daun sagu"
+      },
+      {
+        "answer": "LOME",
+        "direction": "across",
+        "clue": "ibu kota negara Togo"
+      },
+      {
+        "answer": "MOLE",
+        "direction": "down",
+        "clue": "tembakau yang biasa diisap sebagai rokok"
+      }
+    ]
+  },
+  {
+    "name": "bum-jus-mus",
+    "baseLetters": "BJMNPSU",
+    "words": [
+      {
+        "answer": "BUM",
+        "direction": "across",
+        "clue": "kayu palang penghalang (perintang) di pelabuhan"
+      },
+      {
+        "answer": "JUS",
+        "direction": "down",
+        "clue": "sari dari buah atau sayur"
+      },
+      {
+        "answer": "MUS",
+        "direction": "across",
+        "clue": "penganan ringan yang dibuat dari agar-agar, putih telur, krim busa, perencah, dan sebagainya, biasanya dihidangkan sebagai makanan pencuci mulut"
+      },
+      {
+        "answer": "NUB",
+        "direction": "down",
+        "clue": "Mandobo"
+      },
+      {
+        "answer": "NUS",
+        "direction": "across",
+        "clue": "sotong"
+      },
+      {
+        "answer": "PUB",
+        "direction": "down",
+        "clue": "tempat hiburan khusus untuk mendengarkan musik sambil minum-minum yang dibuka pada waktu malam (sampai larut malam)"
+      }
+    ]
+  },
+  {
+    "name": "dram-bra-dam",
+    "baseLetters": "ABDJMRW",
+    "words": [
+      {
+        "answer": "DRAM",
+        "direction": "across",
+        "clue": "genderang"
+      },
+      {
+        "answer": "BRA",
+        "direction": "down",
+        "clue": "gelar bangsawan yang diberikan kepada anggota keluarga kerajaan Majapahit"
+      },
+      {
+        "answer": "DAM",
+        "direction": "across",
+        "clue": "jenis permainan dengan keping-keping bulat dan papan bertapak catur"
+      },
+      {
+        "answer": "DAR",
+        "direction": "down",
+        "clue": "tiruan bunyi ledakan"
+      },
+      {
+        "answer": "DRA",
+        "direction": "across",
+        "clue": "daftar revisi anggaran (dokumen yang memuat perincian perubahan anggaran yang ditetapkan oleh Direktur Jenderal Perbendaharaan sebagai dasar pengesahan revisi DIPA oleh Kepala Kantor Wilayah Direktorat Jenderal Perbendaharaan)"
+      },
+      {
+        "answer": "MAD",
+        "direction": "down",
+        "clue": "tanda bunyi panjang dalam bahasa Arab (bunyi pendek menjadi bunyi panjang)"
+      }
+    ]
+  },
+  {
+    "name": "skrub-bruk-krus",
+    "baseLetters": "BKRSTUW",
+    "words": [
+      {
+        "answer": "SKRUB",
+        "direction": "across",
+        "clue": "zat berupa krim dan sebagainya yang terbuat dari campuran berbagai bahan untuk menghaluskan kulit tubuh dengan cara mengangkat sel kulit yang mati"
+      },
+      {
+        "answer": "BRUK",
+        "direction": "down",
+        "clue": "tiruan bunyi barang berat atau kumpulan barang yang jatuh"
+      },
+      {
+        "answer": "KRUS",
+        "direction": "across",
+        "clue": "perangkat laboratorium berupa cawan yang terbuat dari bahan tahan api (biasanya porselen) untuk memanaskan logam atau bahan lain dengan titik leleh tinggi"
+      },
+      {
+        "answer": "KURS",
+        "direction": "down",
+        "clue": "nilai mata uang suatu negara yang dinyatakan dengan nilai mata uang negara yang lain"
+      },
+      {
+        "answer": "TRUK",
+        "direction": "across",
+        "clue": "mobil besar dengan bak besar di belakang (biasanya untuk mengangkut barang)"
+      },
+      {
+        "answer": "BKU",
+        "direction": "down",
+        "clue": "bahasa yang dituturkan di wilayah Kabupaten Sarmi, Provinsi Papua"
+      }
+    ]
+  },
+  {
+    "name": "deks-kern-ners",
+    "baseLetters": "DEKNPRS",
+    "words": [
+      {
+        "answer": "DEKS",
+        "direction": "across",
+        "clue": "tumpukan kartu dalam permainan"
+      },
+      {
+        "answer": "KERN",
+        "direction": "down",
+        "clue": "inti atau pusat dari sesuatu"
+      },
+      {
+        "answer": "NERS",
+        "direction": "across",
+        "clue": "gelar yang diperoleh setelah lulus pendidikan profesi perawat"
+      },
+      {
+        "answer": "PERS",
+        "direction": "down",
+        "clue": "usaha percetakan dan penerbitan"
+      },
+      {
+        "answer": "PRES",
+        "direction": "across",
+        "clue": "mesin cetak"
+      },
+      {
+        "answer": "SPEK",
+        "direction": "down",
+        "clue": "spesifikasi"
+      }
+    ]
+  },
+  {
+    "name": "krans-kans-kras",
+    "baseLetters": "AGKNRSW",
+    "words": [
+      {
+        "answer": "KRANS",
+        "direction": "across",
+        "clue": "karangan bunga berbentuk bulat lonjong dan sebagainya untuk ucapan selamat atau dukacita"
+      },
+      {
+        "answer": "KANS",
+        "direction": "down",
+        "clue": "kesempatan"
+      },
+      {
+        "answer": "KRAS",
+        "direction": "across",
+        "clue": "daerah batu gamping dan dolomit yang mempunyai topografi khas bagi pelarutan bawah tanah dan pelencongan air permukaan ke jalan bawah tanah dan bergantung kepadanya"
+      },
+      {
+        "answer": "RANG",
+        "direction": "down",
+        "clue": "gambar"
+      },
+      {
+        "answer": "SANG",
+        "direction": "across",
+        "clue": "kata yang dipakai di depan nama orang, binatang, atau benda yang dianggap hidup atau dimuliakan"
+      },
+      {
+        "answer": "SKAR",
+        "direction": "down",
+        "clue": "parut bekas luka"
+      }
+    ]
+  },
+  {
+    "name": "calit-calui-citul",
+    "baseLetters": "ACILOTU",
+    "words": [
+      {
+        "answer": "CALIT",
+        "direction": "across",
+        "clue": "cairan atau bubuk yang biasa ditempelkan untuk rias muka seperti celak mata, cat alis, cat bibir"
+      },
+      {
+        "answer": "CALUI",
+        "direction": "down",
+        "clue": "suka makan uang (suka menerima sogok atau suap)"
+      },
+      {
+        "answer": "CITUL",
+        "direction": "across",
+        "clue": "penganan yang terbuat dari tapioka dan daging ayam cincang yang dibumbui, dililitkan pada tulang paha ayam dan dibentuk seperti paha ayam, dibalut adonan telur dan tepung panir, kemudian digoreng"
+      },
+      {
+        "answer": "LAOCU",
+        "direction": "down",
+        "clue": "taoisme"
+      },
+      {
+        "answer": "LICAU",
+        "direction": "across",
+        "clue": "gilap"
+      },
+      {
+        "answer": "TAOCI",
+        "direction": "down",
+        "clue": "makanan Cina (selai dari ikan)"
+      }
+    ]
   }
 ]

@@ -7,19 +7,45 @@ process.env.NODE_PATH = [path.join(__dirname, 'node_modules'), process.env.NODE_
 require('module').Module._initPaths();
 
 const express = require('express');
+const helmet = require('helmet');
 const cors = require('cors');
 const http = require('http');
 const { Server } = require('socket.io');
 const mongoose = require('mongoose');
 const config = require('./config');
+const { globalLimiter } = require('./middleware/rateLimit');
 
 const app = express();
 const server = http.createServer(app);
-const io = new Server(server, { cors: { origin: '*', methods: ['GET', 'POST'] } });
+const io = new Server(server, {
+  cors: {
+    origin: config.ALLOWED_ORIGINS.length ? config.ALLOWED_ORIGINS : '*',
+    methods: ['GET', 'POST']
+  }
+});
 
 app.set('io', io);
-app.use(cors());
+
+// Security headers
+app.set('trust proxy', 1); // kalau di belakang reverse-proxy
+app.use(helmet({
+  contentSecurityPolicy: false, // SPA dashboard butuh inline style
+  crossOriginEmbedderPolicy: false
+}));
+
+// CORS whitelist
+const corsOrigins = config.ALLOWED_ORIGINS;
+app.use(cors({
+  origin: (origin, cb) => {
+    if (!origin) return cb(null, true); // mobile/curl/postman
+    if (corsOrigins.includes('*') || corsOrigins.includes(origin)) return cb(null, true);
+    cb(new Error('Origin tidak diizinkan: ' + origin));
+  },
+  credentials: false
+}));
+
 app.use(express.json({ limit: '100kb' }));
+app.use(globalLimiter); // rate limit global
 
 const User = require('./models/User');
 const roomManager = require('./services/roomManager');
@@ -39,8 +65,15 @@ mongoose.connect(config.MONGO_URI)
   .then(() => console.log('[DB] MongoDB Terhubung!'))
   .catch(err => console.error('[DB] Gagal:', err.message));
 
+// Legal pages (statis, no JS, SEO-friendly)
+app.use('/legal', express.static(path.join(PUBLIC_DIR, 'legal'), {
+  setHeaders: (res) => res.setHeader('Cache-Control', 'public, max-age=3600')
+}));
+
 app.use('/api/auth', require('./routes/auth'));
 app.use('/api/sys', require('./routes/api'));
+app.use('/api/billing', require('./routes/billing'));
+app.use('/api/gift-mappings', require('./routes/giftMapping'));
 
 // Script bersama yang dipanggil HTML game dengan path absolut (/shared/...).
 // (Di versi lama ini nggak ke-mount, jadi vote-overlay & watcher 404.)

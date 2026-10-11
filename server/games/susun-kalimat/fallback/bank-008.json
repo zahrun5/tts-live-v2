@@ -1,0 +1,982 @@
+[
+  {
+    "sentence": "Murid pergi ke restoran",
+    "words": [
+      "Murid",
+      "pergi",
+      "ke",
+      "restoran"
+    ]
+  },
+  {
+    "sentence": "Kakak minum air malam",
+    "words": [
+      "Kakak",
+      "minum",
+      "air",
+      "malam"
+    ]
+  },
+  {
+    "sentence": "Bapak pulang ke rumah",
+    "words": [
+      "Bapak",
+      "pulang",
+      "ke",
+      "rumah"
+    ]
+  },
+  {
+    "sentence": "Bayi bermain di taman",
+    "words": [
+      "Bayi",
+      "bermain",
+      "di",
+      "taman"
+    ]
+  },
+  {
+    "sentence": "Mereka menjual minuman di kios",
+    "words": [
+      "Mereka",
+      "menjual",
+      "minuman",
+      "di",
+      "kios"
+    ]
+  },
+  {
+    "sentence": "Dokter membersihkan meja setiap minggu",
+    "words": [
+      "Dokter",
+      "membersihkan",
+      "meja",
+      "setiap",
+      "minggu"
+    ]
+  },
+  {
+    "sentence": "Saya bermain di pantai setiap hari",
+    "words": [
+      "Saya",
+      "bermain",
+      "di",
+      "pantai",
+      "setiap",
+      "hari"
+    ]
+  },
+  {
+    "sentence": "Teman datang ke pertandingan",
+    "words": [
+      "Teman",
+      "datang",
+      "ke",
+      "pertandingan"
+    ]
+  },
+  {
+    "sentence": "Kamu belajar di kampus",
+    "words": [
+      "Kamu",
+      "belajar",
+      "di",
+      "kampus"
+    ]
+  },
+  {
+    "sentence": "Bapak menggambar peta di kanvas",
+    "words": [
+      "Bapak",
+      "menggambar",
+      "peta",
+      "di",
+      "kanvas"
+    ]
+  },
+  {
+    "sentence": "Murid pulang ke rumah",
+    "words": [
+      "Murid",
+      "pulang",
+      "ke",
+      "rumah"
+    ]
+  },
+  {
+    "sentence": "Tukang menjual sayur di mall",
+    "words": [
+      "Tukang",
+      "menjual",
+      "sayur",
+      "di",
+      "mall"
+    ]
+  },
+  {
+    "sentence": "Anak pergi ke stadion",
+    "words": [
+      "Anak",
+      "pergi",
+      "ke",
+      "stadion"
+    ]
+  },
+  {
+    "sentence": "Dia berlari setiap hari di pantai",
+    "words": [
+      "Dia",
+      "berlari",
+      "setiap",
+      "hari",
+      "di",
+      "pantai"
+    ]
+  },
+  {
+    "sentence": "Tetangga menangkap ikan di danau",
+    "words": [
+      "Tetangga",
+      "menangkap",
+      "ikan",
+      "di",
+      "danau"
+    ]
+  },
+  {
+    "sentence": "Siswa makan martabak hari ini",
+    "words": [
+      "Siswa",
+      "makan",
+      "martabak",
+      "hari",
+      "ini"
+    ]
+  },
+  {
+    "sentence": "Sahabat minum teh di kantor",
+    "words": [
+      "Sahabat",
+      "minum",
+      "teh",
+      "di",
+      "kantor"
+    ]
+  },
+  {
+    "sentence": "Tukang minum susu di kafe",
+    "words": [
+      "Tukang",
+      "minum",
+      "susu",
+      "di",
+      "kafe"
+    ]
+  },
+  {
+    "sentence": "Guru menanam sayur di sawah sore",
+    "words": [
+      "Guru",
+      "menanam",
+      "sayur",
+      "di",
+      "sawah",
+      "sore"
+    ]
+  },
+  {
+    "sentence": "Ibu masak sambal setiap pagi",
+    "words": [
+      "Ibu",
+      "masak",
+      "sambal",
+      "setiap",
+      "pagi"
+    ]
+  },
+  {
+    "sentence": "Penduduk mencuci handuk di rumah",
+    "words": [
+      "Penduduk",
+      "mencuci",
+      "handuk",
+      "di",
+      "rumah"
+    ]
+  },
+  {
+    "sentence": "Bibi menjual kue di kios sore",
+    "words": [
+      "Bibi",
+      "menjual",
+      "kue",
+      "di",
+      "kios",
+      "sore"
+    ]
+  },
+  {
+    "sentence": "Guru mencuci sepeda di rumah",
+    "words": [
+      "Guru",
+      "mencuci",
+      "sepeda",
+      "di",
+      "rumah"
+    ]
+  },
+  {
+    "sentence": "Adik mencuci lantai di garasi",
+    "words": [
+      "Adik",
+      "mencuci",
+      "lantai",
+      "di",
+      "garasi"
+    ]
+  },
+  {
+    "sentence": "Adik pulang ke rumah",
+    "words": [
+      "Adik",
+      "pulang",
+      "ke",
+      "rumah"
+    ]
+  },
+  {
+    "sentence": "Adik makan bubur malam",
+    "words": [
+      "Adik",
+      "makan",
+      "bubur",
+      "malam"
+    ]
+  },
+  {
+    "sentence": "Kakek tinggal di Jawa",
+    "words": [
+      "Kakek",
+      "tinggal",
+      "di",
+      "Jawa"
+    ]
+  },
+  {
+    "sentence": "Siswa makan sate di restoran",
+    "words": [
+      "Siswa",
+      "makan",
+      "sate",
+      "di",
+      "restoran"
+    ]
+  },
+  {
+    "sentence": "Kami belajar di perpustakaan",
+    "words": [
+      "Kami",
+      "belajar",
+      "di",
+      "perpustakaan"
+    ]
+  },
+  {
+    "sentence": "Siswa bermain di taman hari ini",
+    "words": [
+      "Siswa",
+      "bermain",
+      "di",
+      "taman",
+      "hari",
+      "ini"
+    ]
+  },
+  {
+    "sentence": "Majikan pulang ke rumah",
+    "words": [
+      "Majikan",
+      "pulang",
+      "ke",
+      "rumah"
+    ]
+  },
+  {
+    "sentence": "Mereka menjual buku di mall",
+    "words": [
+      "Mereka",
+      "menjual",
+      "buku",
+      "di",
+      "mall"
+    ]
+  },
+  {
+    "sentence": "Mahasiswa belajar dengan serius tiap hari",
+    "words": [
+      "Mahasiswa",
+      "belajar",
+      "dengan",
+      "serius",
+      "tiap",
+      "hari"
+    ]
+  },
+  {
+    "sentence": "Sopir minum teh di kafe",
+    "words": [
+      "Sopir",
+      "minum",
+      "teh",
+      "di",
+      "kafe"
+    ]
+  },
+  {
+    "sentence": "Kita mencari buku di kantor",
+    "words": [
+      "Kita",
+      "mencari",
+      "buku",
+      "di",
+      "kantor"
+    ]
+  },
+  {
+    "sentence": "Bos mencuci gelas di garasi",
+    "words": [
+      "Bos",
+      "mencuci",
+      "gelas",
+      "di",
+      "garasi"
+    ]
+  },
+  {
+    "sentence": "Aku datang ke mall",
+    "words": [
+      "Aku",
+      "datang",
+      "ke",
+      "mall"
+    ]
+  },
+  {
+    "sentence": "Penyanyi membaca artikel di taman sore",
+    "words": [
+      "Penyanyi",
+      "membaca",
+      "artikel",
+      "di",
+      "taman",
+      "sore"
+    ]
+  },
+  {
+    "sentence": "Tetangga pergi ke stasiun",
+    "words": [
+      "Tetangga",
+      "pergi",
+      "ke",
+      "stasiun"
+    ]
+  },
+  {
+    "sentence": "Pedagang pergi ke masjid",
+    "words": [
+      "Pedagang",
+      "pergi",
+      "ke",
+      "masjid"
+    ]
+  },
+  {
+    "sentence": "Dia bermain di pantai hari ini",
+    "words": [
+      "Dia",
+      "bermain",
+      "di",
+      "pantai",
+      "hari",
+      "ini"
+    ]
+  },
+  {
+    "sentence": "Aku makan lontong sore",
+    "words": [
+      "Aku",
+      "makan",
+      "lontong",
+      "sore"
+    ]
+  },
+  {
+    "sentence": "Supir bernyanyi dengan riang siang",
+    "words": [
+      "Supir",
+      "bernyanyi",
+      "dengan",
+      "riang",
+      "siang"
+    ]
+  },
+  {
+    "sentence": "Montir membersihkan halaman setiap hari",
+    "words": [
+      "Montir",
+      "membersihkan",
+      "halaman",
+      "setiap",
+      "hari"
+    ]
+  },
+  {
+    "sentence": "Mahasiswa membersihkan dapur setiap hari",
+    "words": [
+      "Mahasiswa",
+      "membersihkan",
+      "dapur",
+      "setiap",
+      "hari"
+    ]
+  },
+  {
+    "sentence": "Siswa mencuci lantai di rumah",
+    "words": [
+      "Siswa",
+      "mencuci",
+      "lantai",
+      "di",
+      "rumah"
+    ]
+  },
+  {
+    "sentence": "Mereka membaca puisi di rumah sore",
+    "words": [
+      "Mereka",
+      "membaca",
+      "puisi",
+      "di",
+      "rumah",
+      "sore"
+    ]
+  },
+  {
+    "sentence": "Bayi mencuci motor di garasi",
+    "words": [
+      "Bayi",
+      "mencuci",
+      "motor",
+      "di",
+      "garasi"
+    ]
+  },
+  {
+    "sentence": "Murid membawa bekal ke kantor",
+    "words": [
+      "Murid",
+      "membawa",
+      "bekal",
+      "ke",
+      "kantor"
+    ]
+  },
+  {
+    "sentence": "Ibu masak ikan sore",
+    "words": [
+      "Ibu",
+      "masak",
+      "ikan",
+      "sore"
+    ]
+  },
+  {
+    "sentence": "Aktor membawa minuman ke sekolah",
+    "words": [
+      "Aktor",
+      "membawa",
+      "minuman",
+      "ke",
+      "sekolah"
+    ]
+  },
+  {
+    "sentence": "Siswa membeli roti di pasar",
+    "words": [
+      "Siswa",
+      "membeli",
+      "roti",
+      "di",
+      "pasar"
+    ]
+  },
+  {
+    "sentence": "Remaja makan soto di warung",
+    "words": [
+      "Remaja",
+      "makan",
+      "soto",
+      "di",
+      "warung"
+    ]
+  },
+  {
+    "sentence": "Buruh menangkap kupu-kupu di danau",
+    "words": [
+      "Buruh",
+      "menangkap",
+      "kupu-kupu",
+      "di",
+      "danau"
+    ]
+  },
+  {
+    "sentence": "Penulis menjual buah di warung",
+    "words": [
+      "Penulis",
+      "menjual",
+      "buah",
+      "di",
+      "warung"
+    ]
+  },
+  {
+    "sentence": "Kamu bermain di rumah setiap sore",
+    "words": [
+      "Kamu",
+      "bermain",
+      "di",
+      "rumah",
+      "setiap",
+      "sore"
+    ]
+  },
+  {
+    "sentence": "Nenek membaca puisi di kafe",
+    "words": [
+      "Nenek",
+      "membaca",
+      "puisi",
+      "di",
+      "kafe"
+    ]
+  },
+  {
+    "sentence": "Montir membeli buku di kios",
+    "words": [
+      "Montir",
+      "membeli",
+      "buku",
+      "di",
+      "kios"
+    ]
+  },
+  {
+    "sentence": "Karyawan mencuci serbet di garasi",
+    "words": [
+      "Karyawan",
+      "mencuci",
+      "serbet",
+      "di",
+      "garasi"
+    ]
+  },
+  {
+    "sentence": "Warga menanam tanaman di sawah tadi",
+    "words": [
+      "Warga",
+      "menanam",
+      "tanaman",
+      "di",
+      "sawah",
+      "tadi"
+    ]
+  },
+  {
+    "sentence": "Nelayan membeli kue di kios pagi",
+    "words": [
+      "Nelayan",
+      "membeli",
+      "kue",
+      "di",
+      "kios",
+      "pagi"
+    ]
+  },
+  {
+    "sentence": "Ibu mencuci piring di dapur",
+    "words": [
+      "Ibu",
+      "mencuci",
+      "piring",
+      "di",
+      "dapur"
+    ]
+  },
+  {
+    "sentence": "Aktris menanam kacang di polybag siang",
+    "words": [
+      "Aktris",
+      "menanam",
+      "kacang",
+      "di",
+      "polybag",
+      "siang"
+    ]
+  },
+  {
+    "sentence": "Kakak minum es pagi",
+    "words": [
+      "Kakak",
+      "minum",
+      "es",
+      "pagi"
+    ]
+  },
+  {
+    "sentence": "Teman menjual pakaian di warung malam",
+    "words": [
+      "Teman",
+      "menjual",
+      "pakaian",
+      "di",
+      "warung",
+      "malam"
+    ]
+  },
+  {
+    "sentence": "Adik makan bakso sore",
+    "words": [
+      "Adik",
+      "makan",
+      "bakso",
+      "sore"
+    ]
+  },
+  {
+    "sentence": "Aku tinggal di Jakarta",
+    "words": [
+      "Aku",
+      "tinggal",
+      "di",
+      "Jakarta"
+    ]
+  },
+  {
+    "sentence": "Dia menjual pakaian di kios",
+    "words": [
+      "Dia",
+      "menjual",
+      "pakaian",
+      "di",
+      "kios"
+    ]
+  },
+  {
+    "sentence": "Ibu masak opor setiap hari",
+    "words": [
+      "Ibu",
+      "masak",
+      "opor",
+      "setiap",
+      "hari"
+    ]
+  },
+  {
+    "sentence": "Ibu masak sayur sore",
+    "words": [
+      "Ibu",
+      "masak",
+      "sayur",
+      "sore"
+    ]
+  },
+  {
+    "sentence": "Kami bekerja di laut",
+    "words": [
+      "Kami",
+      "bekerja",
+      "di",
+      "laut"
+    ]
+  },
+  {
+    "sentence": "Adik makan roti malam",
+    "words": [
+      "Adik",
+      "makan",
+      "roti",
+      "malam"
+    ]
+  },
+  {
+    "sentence": "Pelukis mencuci pakaian di halaman",
+    "words": [
+      "Pelukis",
+      "mencuci",
+      "pakaian",
+      "di",
+      "halaman"
+    ]
+  },
+  {
+    "sentence": "Warga membawa buku ke sekolah",
+    "words": [
+      "Warga",
+      "membawa",
+      "buku",
+      "ke",
+      "sekolah"
+    ]
+  },
+  {
+    "sentence": "Kami belajar di sekolah",
+    "words": [
+      "Kami",
+      "belajar",
+      "di",
+      "sekolah"
+    ]
+  },
+  {
+    "sentence": "Dia minum cendol di restoran siang",
+    "words": [
+      "Dia",
+      "minum",
+      "cendol",
+      "di",
+      "restoran",
+      "siang"
+    ]
+  },
+  {
+    "sentence": "Manajer menjual kue di warung",
+    "words": [
+      "Manajer",
+      "menjual",
+      "kue",
+      "di",
+      "warung"
+    ]
+  },
+  {
+    "sentence": "Kakak minum bandrek sore",
+    "words": [
+      "Kakak",
+      "minum",
+      "bandrek",
+      "sore"
+    ]
+  },
+  {
+    "sentence": "Ibu masak ikan malam",
+    "words": [
+      "Ibu",
+      "masak",
+      "ikan",
+      "malam"
+    ]
+  },
+  {
+    "sentence": "Direktur membawa makanan ke mall",
+    "words": [
+      "Direktur",
+      "membawa",
+      "makanan",
+      "ke",
+      "mall"
+    ]
+  },
+  {
+    "sentence": "Anak menjual buku di pasar",
+    "words": [
+      "Anak",
+      "menjual",
+      "buku",
+      "di",
+      "pasar"
+    ]
+  },
+  {
+    "sentence": "Karyawan minum bandrek di sekolah",
+    "words": [
+      "Karyawan",
+      "minum",
+      "bandrek",
+      "di",
+      "sekolah"
+    ]
+  },
+  {
+    "sentence": "Kamu bermain di sekolah hari ini",
+    "words": [
+      "Kamu",
+      "bermain",
+      "di",
+      "sekolah",
+      "hari",
+      "ini"
+    ]
+  },
+  {
+    "sentence": "Bapak tinggal di Manado",
+    "words": [
+      "Bapak",
+      "tinggal",
+      "di",
+      "Manado"
+    ]
+  },
+  {
+    "sentence": "Adik makan nasi besok",
+    "words": [
+      "Adik",
+      "makan",
+      "nasi",
+      "besok"
+    ]
+  },
+  {
+    "sentence": "Bapak minum air pagi",
+    "words": [
+      "Bapak",
+      "minum",
+      "air",
+      "pagi"
+    ]
+  },
+  {
+    "sentence": "Pelajar menanam sayur di sawah",
+    "words": [
+      "Pelajar",
+      "menanam",
+      "sayur",
+      "di",
+      "sawah"
+    ]
+  },
+  {
+    "sentence": "Mereka tinggal di Yogyakarta",
+    "words": [
+      "Mereka",
+      "tinggal",
+      "di",
+      "Yogyakarta"
+    ]
+  },
+  {
+    "sentence": "Kakak minum sirup sore",
+    "words": [
+      "Kakak",
+      "minum",
+      "sirup",
+      "sore"
+    ]
+  },
+  {
+    "sentence": "Bapak membaca berita di kelas",
+    "words": [
+      "Bapak",
+      "membaca",
+      "berita",
+      "di",
+      "kelas"
+    ]
+  },
+  {
+    "sentence": "Bibi pulang ke rumah",
+    "words": [
+      "Bibi",
+      "pulang",
+      "ke",
+      "rumah"
+    ]
+  },
+  {
+    "sentence": "Tetangga menjual minuman di mall",
+    "words": [
+      "Tetangga",
+      "menjual",
+      "minuman",
+      "di",
+      "mall"
+    ]
+  },
+  {
+    "sentence": "Adik makan nasi malam",
+    "words": [
+      "Adik",
+      "makan",
+      "nasi",
+      "malam"
+    ]
+  },
+  {
+    "sentence": "Kami tinggal di Papua",
+    "words": [
+      "Kami",
+      "tinggal",
+      "di",
+      "Papua"
+    ]
+  },
+  {
+    "sentence": "Manajer menulis lagu di kelas",
+    "words": [
+      "Manajer",
+      "menulis",
+      "lagu",
+      "di",
+      "kelas"
+    ]
+  },
+  {
+    "sentence": "Petani mendengarkan pelajaran setiap hari",
+    "words": [
+      "Petani",
+      "mendengarkan",
+      "pelajaran",
+      "setiap",
+      "hari"
+    ]
+  },
+  {
+    "sentence": "Ibu masak gulai sore",
+    "words": [
+      "Ibu",
+      "masak",
+      "gulai",
+      "sore"
+    ]
+  },
+  {
+    "sentence": "Kakak membawa kunci ke pasar",
+    "words": [
+      "Kakak",
+      "membawa",
+      "kunci",
+      "ke",
+      "pasar"
+    ]
+  },
+  {
+    "sentence": "Pelajar membangun kantor tahun depan",
+    "words": [
+      "Pelajar",
+      "membangun",
+      "kantor",
+      "tahun",
+      "depan"
+    ]
+  },
+  {
+    "sentence": "Pedagang membaca puisi di kantor",
+    "words": [
+      "Pedagang",
+      "membaca",
+      "puisi",
+      "di",
+      "kantor"
+    ]
+  }
+]
