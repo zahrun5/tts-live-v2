@@ -73,7 +73,10 @@ function verifySignature(notif) {
   if (!order_id || !status_code || !gross_amount || !signature_key) return false;
   const input = `${order_id}${status_code}${gross_amount}${config.MIDTRANS_SERVER_KEY}`;
   const expected = crypto.createHash('sha512').update(input).digest('hex');
-  return expected === signature_key;
+  const a = Buffer.from(expected);
+  const b = Buffer.from(String(signature_key));
+  // timingSafeEqual wajib sama panjang; beda panjang = pasti salah.
+  return a.length === b.length && crypto.timingSafeEqual(a, b);
 }
 
 // Translate notif -> action string buat Subscription.update

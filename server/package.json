@@ -4,7 +4,8 @@
   "description": "TTS-Live V2 server (SaaS Phase 1: Google OAuth, Midtrans, gift trigger, onboarding, anti-spam, email skeleton).",
   "main": "index.js",
   "scripts": {
-    "test": "node test/smoke.js",
+    "test": "node test/unit.js",
+    "test:smoke": "node test/smoke.js",
     "start": "node index.js",
     "migrate:phase1": "node scripts/migrate-phase1.js"
   },

@@ -10,6 +10,7 @@
 // (puzzle.json, used-*.json, state.json, fallback/) nggak bentrok antar user,
 // dan tiap user otomatis punya instance modul sendiri.
 
+const { cleanPlayerName, cleanProfileUrl } = require('./sanitize');
 const fs = require('fs');
 const path = require('path');
 
@@ -641,7 +642,8 @@ class Room {
   // Setara alur CHAT di tiktok-connector.js V1: bubble komentar -> vote ->
   // parse -> validasi jawaban. Dipakai TikTok asli maupun tombol test dashboard.
   async handleChat({ player, text, profileUrl }) {
-    const name = player || 'Anonim';
+    const name = cleanPlayerName(player);
+    profileUrl = cleanProfileUrl(profileUrl);
     const msg = (text || '').toString().slice(0, 120);
     if (!msg) return;
 

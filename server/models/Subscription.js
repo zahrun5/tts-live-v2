@@ -5,7 +5,8 @@ const mongoose = require('mongoose');
 const subscriptionSchema = new mongoose.Schema({
   userId: { type: mongoose.Schema.Types.ObjectId, ref: 'User', required: true, index: true },
   plan: { type: String, enum: ['free', 'basic', 'pro'], default: 'free' },
-  status: { type: String, enum: ['active', 'past_due', 'canceled', 'trialing', 'expired'], default: 'active' },
+  // 'pending' = Snap token sudah dibuat tapi belum dibayar (menunggu webhook Midtrans)
+  status: { type: String, enum: ['active', 'past_due', 'canceled', 'trialing', 'expired', 'pending'], default: 'active' },
   midtransOrderId: { type: String, default: '', index: true, sparse: true },
   midtransTransactionId: { type: String, default: '' },
   startedAt: { type: Date, default: Date.now },

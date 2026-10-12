@@ -9,6 +9,7 @@ module.exports = {
       autorestart: true,
       watch: false,
       max_restarts: 10,
+      restart_delay: 5000, // beri waktu Mongo/jaringan pulih sebelum restart berikutnya
       env: { NODE_ENV: 'production' }
     }
   ]

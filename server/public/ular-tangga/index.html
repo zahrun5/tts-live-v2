@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
+  <script src="/shared/safe.js"></script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <title>Ular Tangga V2</title>
@@ -847,11 +848,11 @@ document.addEventListener('keydown', function(e) {
       const isTurn = game.turn === l.name || (game.currentTeam !== null && game.mode === 'team');
       const staminaPercent = Math.min(100, l.stamina);
       return '<div class="lead ' + (l.rank ? 'done' : '') + ' ' + (isTurn ? 'turn' : '') + '">' +
-        '<div class="av" style="border-color: ' + l.color + '">' + l.name + '</div>' +
+        '<div class="av" style="border-color: ' + l.color + '">' + escapeHtml(l.name) + '</div>' +
         '<div class="bar" style="background: ' + l.color + '"></div>' +
         (!l.isTeam ? '<div class="staminaBar"><div class="staminaFill" style="width: ' + staminaPercent + '%"></div></div>' : '') +
-        '<div class="nm">' + l.fullName + '</div>' +
-        '<div class="ps">' + (l.isTeam ? l.members.join(', ') : 'Pos ' + l.pos) + '</div>' +
+        '<div class="nm">' + escapeHtml(l.fullName) + '</div>' +
+        '<div class="ps">' + (l.isTeam ? escapeHtml(l.members.join(', ')) : 'Pos ' + escapeHtml(l.pos)) + '</div>' +
         '</div>';
     }).join('');
   }
@@ -989,7 +990,7 @@ document.addEventListener('keydown', function(e) {
     for (const w of winners) {
       html += '<div class="podium-row">' +
         '<span class="medal">' + MEDALS[w.rank - 1] + '</span>' +
-        '<span class="nm">' + (w.team || w.player) + '</span>' +
+        '<span class="nm">' + escapeHtml(w.team || w.player) + '</span>' +
         '<span class="pt">+' + w.points + '</span>' +
         '</div>';
     }

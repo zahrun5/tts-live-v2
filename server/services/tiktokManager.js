@@ -4,6 +4,7 @@ const { TikTokLiveConnection, WebcastEvent, ControlEvent } = require('tiktok-liv
 const roomManager = require('./roomManager');
 const User = require('../models/User');
 const giftTrigger = require('./giftTrigger');
+const { cleanPlayerName, cleanProfileUrl } = require('./sanitize');
 
 const sessions = new Map(); // username -> { conn, tiktokUsername, intentional, retries, timer }
 const MAX_RETRIES = 5;
@@ -19,7 +20,7 @@ function extractPlayerInfo(data) {
   if (!profileUrl && data.avatarThumb && data.avatarThumb.urlList) profileUrl = data.avatarThumb.urlList[0];
   if (!profileUrl && data.userDetails && data.userDetails.profilePictureUrls) profileUrl = data.userDetails.profilePictureUrls[0] || data.userDetails.profilePictureUrls;
   if (!profileUrl && data.user && data.user.userDetails && data.user.userDetails.profilePictureUrls) profileUrl = data.user.userDetails.profilePictureUrls[0] || data.user.userDetails.profilePictureUrls;
-  return { name, profileUrl };
+  return { name: cleanPlayerName(name, 'TikTokUser'), profileUrl: cleanProfileUrl(profileUrl) };
 }
 
 function buildConnection(tiktokUsername) {
@@ -39,27 +40,38 @@ function attachHandlers(username, room, session) {
     const text = data.comment || data.content;
     if (!text) return;
     const info = extractPlayerInfo(data);
-    console.log(`[TikTok] Chat dari ${info.name}, URL profil: ${info.profileUrl ? 'ADA' : 'KOSONG'} (length: ${info.profileUrl?.length})`);
-    if (!info.profileUrl) console.log('[TikTok DEBUG DATA]', JSON.stringify(data.profilePictureUrl || data.user || 'Tidak ada info user', null, 2).slice(0, 500));
     room.handleChat({ player: info.name, profileUrl: info.profileUrl, text });
   });
 
   conn.on(WebcastEvent.LIKE, (data) => {
     const info = extractPlayerInfo(data);
     const likeCount = data.likeCount || 1;
-    console.log(`[TikTok] Like dari ${info.name}, count: ${likeCount}`);
     room.handleLike({ player: info.name, profileUrl: info.profileUrl, count: likeCount });
   });
 
   // Gift event: lookup mapping default + user, lalu delegasi ke giftTrigger.
   // Library tiktok-live-connector mengirim event 'gift' (1 detail per gift individual
   // atau 'giftEvent' (kumulatif per streak)). Kita tangani dua-duanya.
+  const seenGifts = session.seenGifts || (session.seenGifts = new Map()); // msgId -> waktu
   const onGift = async (data) => {
     try {
-      const giftName = (data.giftName || data.name || 'unknown').toString();
-      // diamondCount / coins: library pakai diamondCount di v2
-      const coins = Number(data.diamondCount || data.coins || data.giftCoins || 0);
-      const sender = (data.user && (data.user.nickname || data.user.uniqueId)) || data.uniqueId || 'anonymous';
+      // Gift streak (giftType 1): TikTok mengirim 1 event per kali tap selama streak.
+      // Proses SEKALI saat streak selesai (repeatEnd), kalau tidak satu streak 10x
+      // akan memicu skip/next 10x.
+      if (Number(data.giftType) === 1 && !data.repeatEnd) return;
+      // Dedupe event yang terkirim ganda (reconnect/replay).
+      const msgId = data.msgId != null ? String(data.msgId) : '';
+      if (msgId) {
+        if (seenGifts.has(msgId)) return;
+        seenGifts.set(msgId, Date.now());
+        if (seenGifts.size > 500) seenGifts.delete(seenGifts.keys().next().value);
+      }
+      const giftName = (data.giftName || data.name || 'unknown').toString().slice(0, 60);
+      // diamondCount / coins: library pakai diamondCount di v2. Streak = harga x jumlah ulang.
+      const unit = Number(data.diamondCount || data.coins || data.giftCoins || 0);
+      const repeat = Number(data.giftType) === 1 ? Math.max(1, Number(data.repeatCount) || 1) : 1;
+      const coins = unit * repeat;
+      const sender = cleanPlayerName((data.user && (data.user.nickname || data.user.uniqueId)) || data.uniqueId, 'anonymous');
       const user = await User.findOne({ username }).select('_id').lean();
       if (!user) return;
       const result = await giftTrigger.handleGiftEvent({

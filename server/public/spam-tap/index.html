@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <script src="/shared/safe.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Battle Tap - Spam Tap LOV</title>
@@ -165,18 +166,18 @@
             redPlayers.forEach(p => {
                 const avatar = document.createElement('div');
                 avatar.className = 'avatar';
-                avatar.innerHTML = `<div class="avatar-emoji">${getRandomEmoji(p.player)}</div><div class="avatar-name">${p.player}</div><div class="avatar-taps">${p.count ?? p.taps ?? 0} taps</div>`;
+                avatar.innerHTML = `<div class="avatar-emoji">${getRandomEmoji(p.player)}</div><div class="avatar-name">${escapeHtml(p.player)}</div><div class="avatar-taps">${p.count ?? p.taps ?? 0} taps</div>`;
                 redZoneEl.appendChild(avatar);
             });
             blueZoneEl.innerHTML = '';
             bluePlayers.forEach(p => {
                 const avatar = document.createElement('div');
                 avatar.className = 'avatar';
-                avatar.innerHTML = `<div class="avatar-emoji">${getRandomEmoji(p.player)}</div><div class="avatar-name">${p.player}</div><div class="avatar-taps">${p.count ?? p.taps ?? 0} taps</div>`;
+                avatar.innerHTML = `<div class="avatar-emoji">${getRandomEmoji(p.player)}</div><div class="avatar-name">${escapeHtml(p.player)}</div><div class="avatar-taps">${p.count ?? p.taps ?? 0} taps</div>`;
                 blueZoneEl.appendChild(avatar);
             });
             const allPlayers = [...redPlayers, ...bluePlayers].sort((a, b) => (b.count ?? b.taps ?? 0) - (a.count ?? a.taps ?? 0)).slice(0, 10);
-            leaderboardContentEl.innerHTML = allPlayers.map((p, i) => `<div class="leaderboard-item"><span>${i + 1}. ${p.player}</span><span>${p.count ?? p.taps ?? 0}</span></div>`).join('');
+            leaderboardContentEl.innerHTML = allPlayers.map((p, i) => `<div class="leaderboard-item"><span>${i + 1}. ${escapeHtml(p.player)}</span><span>${p.count ?? p.taps ?? 0}</span></div>`).join('');
         }
         socket.on('update', (state) => {
             updateCounters(state.redTaps || 0, state.blueTaps || 0);

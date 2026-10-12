@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <script src="/shared/safe.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Memory Card - Matching Pairs</title>
@@ -420,7 +421,7 @@
                         const photo = card.matchedByPhoto || (typeof mb === 'object' ? mb.profileUrl : null);
                         const nm = typeof mb === 'object' ? mb.name : mb;
                         if (photo) {
-                            cardAvatar.innerHTML = `<img src="${photo}" alt="${nm}">`;
+                            cardAvatar.innerHTML = `<img src="${safeUrl(photo)}" alt="${escapeHtml(nm)}">`;
                         } else {
                             cardAvatar.innerHTML = `<span class="emoji">${(typeof mb === 'object' && mb.emoji) || '😎'}</span>`;
                         }
@@ -460,9 +461,9 @@
                 const avatar = document.createElement('div');
                 avatar.className = 'mini-avatar';
                 if (p.profilePictureUrl) {
-                    avatar.innerHTML = `<img src="${p.profilePictureUrl}" alt="${p.player}"><div class="name-tag">${p.player}</div>`;
+                    avatar.innerHTML = `<img src="${safeUrl(p.profilePictureUrl)}" alt="${escapeHtml(p.player)}"><div class="name-tag">${escapeHtml(p.player)}</div>`;
                 } else {
-                    avatar.innerHTML = `<span class="emoji">🎮</span><div class="name-tag">${p.player}</div>`;
+                    avatar.innerHTML = `<span class="emoji">🎮</span><div class="name-tag">${escapeHtml(p.player)}</div>`;
                 }
                 avatarZoneEl.appendChild(avatar);
             });
@@ -477,7 +478,7 @@
             lbListEl.innerHTML = players.slice(0, 10).map((p, i) => `
                 <div class="lb-row">
                     <span class="lb-rank">${i + 1}.</span>
-                    <span class="lb-name">${p.player}</span>
+                    <span class="lb-name">${escapeHtml(p.player)}</span>
                     <span class="lb-score">${p.score || 0}</span>
                 </div>
             `).join('');
@@ -499,9 +500,9 @@
             const avatar = document.createElement('div');
             avatar.className = 'mini-avatar';
             if (data.profilePictureUrl) {
-                avatar.innerHTML = `<img src="${data.profilePictureUrl}" alt="${data.player}"><div class="name-tag">${data.player}</div>`;
+                avatar.innerHTML = `<img src="${safeUrl(data.profilePictureUrl)}" alt="${escapeHtml(data.player)}"><div class="name-tag">${escapeHtml(data.player)}</div>`;
             } else {
-                avatar.innerHTML = `<span class="emoji">🎮</span><div class="name-tag">${data.player}</div>`;
+                avatar.innerHTML = `<span class="emoji">🎮</span><div class="name-tag">${escapeHtml(data.player)}</div>`;
             }
             avatarZoneEl.appendChild(avatar);
         });

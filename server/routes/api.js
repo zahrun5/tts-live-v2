@@ -3,6 +3,7 @@ const router = express.Router();
 const User = require('../models/User');
 const Subscription = require('../models/Subscription');
 const auth = require('../middleware/auth');
+const { requireActiveSubscription } = auth;
 const tiktokManager = require('../services/tiktokManager');
 const roomManager = require('../services/roomManager');
 const { TIKTOK_RE, VALID_GAMES } = require('../config');
@@ -14,7 +15,7 @@ const { getActiveSubscription } = require('../services/subscriptionHelper');
 // Bungkus handler async biar error nggak bikin request menggantung.
 const wrap = (fn) => (req, res) => fn(req, res).catch((err) => {
   console.error('[API] error:', err);
-  res.status(500).json({ error: err.message || 'Server error' });
+  res.status(500).json({ error: 'Server error' });
 });
 
 async function currentUser(req) {
@@ -68,7 +69,7 @@ router.post('/settings', auth, wrap(async (req, res) => {
   res.json({ message: 'Pengaturan disimpan', user, ...result });
 }));
 
-router.post('/tiktok/toggle', auth, wrap(async (req, res) => {
+router.post('/tiktok/toggle', auth, requireActiveSubscription('free'), wrap(async (req, res) => {
   const { action } = req.body || {};
   const user = await currentUser(req);
   if (!user) return res.status(401).json({ error: 'User tidak ditemukan' });
@@ -83,7 +84,7 @@ router.post('/tiktok/toggle', auth, wrap(async (req, res) => {
   res.json({ message: 'Terputus dari TikTok', isConnected: false });
 }));
 
-router.post('/tiktok/test-connect', auth, wrap(async (req, res) => {
+router.post('/tiktok/test-connect', auth, requireActiveSubscription('free'), wrap(async (req, res) => {
   const name = String((req.body || {}).tiktokUsername || '').trim().replace(/^@/, '');
   if (!name || !TIKTOK_RE.test(name)) return res.status(400).json({ error: 'Username tidak valid' });
   const user = await currentUser(req);

@@ -13,32 +13,30 @@ function Login() {
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
 
-  // Tangkap ?oauth=success&token=...&user=... dari redirect backend
+  // Tangkap ?oauth=success&code=... dari redirect backend, lalu tukar code
+  // sekali-pakai itu jadi token (token tidak pernah lewat URL).
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
     const status = params.get('oauth');
-    const token = params.get('token');
-    const userParam = params.get('user');
-    if (status === 'success' && token) {
-      localStorage.setItem('token', token);
-      // Simpan info user biar Dashboard bisa baca nama & avatar
-      if (userParam) {
-        try {
-          const u = JSON.parse(decodeURIComponent(userParam));
+    const code = params.get('code');
+    if (status === 'success' && code) {
+      window.history.replaceState({}, '', '/login'); // buang code dari URL secepatnya
+      axios.post('/api/auth/google/exchange', { code })
+        .then(({ data }) => {
+          localStorage.setItem('token', data.token);
+          const u = data.user;
+          // Simpan info user biar Dashboard bisa baca nama & avatar
           if (u?.username) localStorage.setItem('username', u.username);
           if (u?.id) localStorage.setItem('userId', u.id);
           if (u?.avatar) localStorage.setItem('avatar', u.avatar);
           if (u?.tiktokUsername) localStorage.setItem('tiktokUsername', u.tiktokUsername);
-        } catch (e) { /* ignore */ }
-      }
-      // Bersihkan URL & masuk dashboard
-      window.history.replaceState({}, '', '/dashboard');
-      navigate('/dashboard', { replace: true });
+          navigate('/dashboard', { replace: true });
+        })
+        .catch((e) => setError(e?.response?.data?.error || 'Login Google gagal.'));
       return;
     }
     if (status === 'error') {
       setError(params.get('reason') || 'Login Google gagal.');
-      // Bersihkan URL
       window.history.replaceState({}, '', '/login');
     }
   }, [navigate]);

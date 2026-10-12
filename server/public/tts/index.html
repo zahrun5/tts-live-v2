@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
+  <script src="/shared/safe.js"></script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>TTS Live</title>
@@ -293,9 +294,9 @@ body::before{content:'';position:absolute;inset:0;background:radial-gradient(cir
       el.className = 'mini-avatar';
       let avatarHtml = `<span class="emoji">${emoji}</span>`;
       if (avatarType === 'tiktok' && profileUrl) {
-         avatarHtml = `<img src="${profileUrl}" onerror="this.outerHTML='<span class=\'emoji\'>${emoji}</span>'" style="width:24px;height:24px;border-radius:50%;object-fit:cover;margin-right:2px;border:1px solid #fff;display:inline-block;vertical-align:middle;" />`;
+         avatarHtml = `<img src="${safeUrl(profileUrl)}" onerror="this.outerHTML='<span class=\'emoji\'>${emoji}</span>'" style="width:24px;height:24px;border-radius:50%;object-fit:cover;margin-right:2px;border:1px solid #fff;display:inline-block;vertical-align:middle;" />`;
       }
-      el.innerHTML = `${avatarHtml}<span class="name-tag">${player}</span>`;
+      el.innerHTML = `${avatarHtml}<span class="name-tag">${escapeHtml(player)}</span>`;
       avatarZone.appendChild(el);
       el.style.left = (Math.random() * Math.max(0, avatarZone.clientWidth - 40)) + 'px';
       activeAvatars[player] = { el, timer: null };

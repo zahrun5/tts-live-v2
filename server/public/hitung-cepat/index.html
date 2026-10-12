@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
+  <script src="/shared/safe.js"></script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Hitung Cepat Live</title>
@@ -148,7 +149,7 @@ function spawnAvatar(player, emoji, profileUrl, avatarType) {
   el.className = 'mini-avatar';
   let avatarHtml = `<span class="emoji">${emoji}</span>`;
   if (avatarType === 'tiktok' && profileUrl) {
-    avatarHtml = `<img src="${profileUrl}" onerror="this.outerHTML='<span class=\\'emoji\\'>${emoji}</span>'" style="width:24px;height:24px;border-radius:50%;object-fit:cover;border:1px solid #fff;display:block;" />`;
+    avatarHtml = `<img src="${safeUrl(profileUrl)}" onerror="this.outerHTML='<span class=\\'emoji\\'>${emoji}</span>'" style="width:24px;height:24px;border-radius:50%;object-fit:cover;border:1px solid #fff;display:block;" />`;
   }
   el.innerHTML = `${avatarHtml}<span class="name-tag">${escapeHtml(player)}</span>`;
   avatarZone.appendChild(el);

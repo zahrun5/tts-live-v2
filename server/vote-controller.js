@@ -27,13 +27,15 @@ const TICK_MS = 1000;
 function createVoteController({ safeEmit, performSwitchGame, performForceNext, performReveal, votableGames }) {
   // votableGames contoh: [{ num: 1, id: 'family100', label: 'Family 100' }, { num: 2, id: 'sambung-kata', label: 'Sambung Kata' }]
 
+  // players = Set nama pemain yang sudah ikut (1 pemain = 1 suara per putaran),
+  // supaya satu akun tidak bisa spam "skip" 10x lalu memaksa ganti soal sendirian.
   const gantiSkip = {
-    ganti: { count: 0, deadline: null, tickId: null },
-    skip: { count: 0, deadline: null, tickId: null },
-    nyerah: { count: 0, deadline: null, tickId: null }
+    ganti: { count: 0, deadline: null, tickId: null, players: new Set() },
+    skip: { count: 0, deadline: null, tickId: null, players: new Set() },
+    nyerah: { count: 0, deadline: null, tickId: null, players: new Set() }
   };
 
-  let gameSelect = null; // { votes: {1:0,2:0}, deadline, tickId }
+  let gameSelect = null; // { votes: {1:0,2:0}, voters: Map(pemain -> nomor), deadline, tickId }
 
   function clearGantiSkip(type) {
     const s = gantiSkip[type];
@@ -41,6 +43,7 @@ function createVoteController({ safeEmit, performSwitchGame, performForceNext, p
     s.count = 0;
     s.deadline = null;
     s.tickId = null;
+    s.players.clear();
   }
 
   function emitGantiSkipTick(type) {
@@ -54,8 +57,11 @@ function createVoteController({ safeEmit, performSwitchGame, performForceNext, p
     }
   }
 
-  async function bumpGantiSkip(type) {
+  async function bumpGantiSkip(type, player) {
     const s = gantiSkip[type];
+    const who = String(player || 'anonim');
+    if (s.players.has(who)) return; // pemain ini sudah memberi suara
+    s.players.add(who);
     s.count += 1;
     s.deadline = Date.now() + GANTI_SKIP_WINDOW_MS; // reset window tiap komen baru masuk
 
@@ -99,6 +105,7 @@ function createVoteController({ safeEmit, performSwitchGame, performForceNext, p
 
     gameSelect = {
       votes,
+      voters: new Map(),
       deadline: Date.now() + GAMESELECT_DURATION_MS
     };
 
@@ -129,6 +136,12 @@ function createVoteController({ safeEmit, performSwitchGame, performForceNext, p
     if (gameSelect && /^[0-9]+$/.test(clean)) {
       const num = Number(clean);
       if (Object.prototype.hasOwnProperty.call(gameSelect.votes, num)) {
+        // 1 pemain = 1 suara; kalau pindah pilihan, suara lama dipindah (bukan ditambah).
+        const who = String(player || 'anonim');
+        const prev = gameSelect.voters.get(who);
+        if (prev === num) return { handled: true };
+        if (prev !== undefined) gameSelect.votes[prev] = Math.max(0, gameSelect.votes[prev] - 1);
+        gameSelect.voters.set(who, num);
         gameSelect.votes[num] += 1;
         safeEmit('gameselect:vote', { num, player, votes: gameSelect.votes });
 
@@ -151,15 +164,15 @@ function createVoteController({ safeEmit, performSwitchGame, performForceNext, p
 
     // --- Komen "ganti" / "skip" / "nyerah" ---
     if (clean === 'ganti') {
-      await bumpGantiSkip('ganti');
+      await bumpGantiSkip('ganti', player);
       return { handled: true };
     }
     if (clean === 'skip') {
-      await bumpGantiSkip('skip');
+      await bumpGantiSkip('skip', player);
       return { handled: true };
     }
     if (clean === 'nyerah') {
-      await bumpGantiSkip('nyerah');
+      await bumpGantiSkip('nyerah', player);
       return { handled: true };
     }
 

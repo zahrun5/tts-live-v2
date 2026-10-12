@@ -7,3 +7,14 @@ db-data/
 .pm2/
 server/data/
 *.bak
+
+# Backup manual & artefak lokal (jangan ikut commit; riwayat sudah ada di git)
+*.bak
+*.bak-*
+*.backup
+*.backup-*
+daily-report-*.json
+
+# Secret & env (hanya .env.example yang boleh di-commit)
+.env.*
+!.env.example
