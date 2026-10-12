@@ -3,6 +3,7 @@
 // Dipakai handler WebcastEvent.GIFT di tiktokManager. Tidak mengubah gameplay inti;
 // cuma delegasi ke method yang sudah ada di Room.
 const GiftMapping = require('../models/GiftMapping');
+const { COIN_NEXT_QUESTION_THRESHOLD } = require('../gifts/defaults');
 
 /**
  * Ambil mapping aktif untuk (userId, giftName). giftName dicocokkan case-insensitive.
@@ -65,9 +66,28 @@ async function applyMapping(room, mapping) {
 
 /**
  * Top-level: dipanggil tiktokManager saat event GIFT.
+ * Aturan coin threshold: kalau giftCoins >= COIN_NEXT_QUESTION_THRESHOLD,
+ * langsung trigger next_question (override mapping by name).
  * Return seperti applyMapping.
  */
 async function handleGiftEvent({ room, userId, giftName, giftCoins, sender }) {
+  // Rule 1: total coin tinggi -> next_question
+  if (Number(giftCoins) >= COIN_NEXT_QUESTION_THRESHOLD) {
+    const r = await applyMapping(room, { action: 'next_question', value: 0 });
+    try {
+      room.emit('gift:triggered', {
+        giftName: giftName || 'coin-storm',
+        giftCoins: giftCoins || 0,
+        sender: sender || 'anonymous',
+        action: 'next_question',
+        value: COIN_NEXT_QUESTION_THRESHOLD,
+        message: `🎁 ${giftCoins} coin -> soal baru!`
+      });
+    } catch (e) { /* noop */ }
+    return r;
+  }
+
+  // Rule 2: lookup by gift name
   const mapping = await findMapping(userId, giftName);
   if (!mapping) return { handled: false, reason: 'no-mapping' };
   const result = await applyMapping(room, mapping);

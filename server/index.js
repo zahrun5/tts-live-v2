@@ -7,13 +7,11 @@ process.env.NODE_PATH = [path.join(__dirname, 'node_modules'), process.env.NODE_
 require('module').Module._initPaths();
 
 const express = require('express');
-const helmet = require('helmet');
-const cors = require('cors');
 const http = require('http');
 const { Server } = require('socket.io');
 const mongoose = require('mongoose');
 const config = require('./config');
-const { globalLimiter } = require('./middleware/rateLimit');
+const security = require('./middleware/security');
 
 const app = express();
 const server = http.createServer(app);
@@ -26,26 +24,11 @@ const io = new Server(server, {
 
 app.set('io', io);
 
-// Security headers
+// Security headers + CORS whitelist + global rate limit
 app.set('trust proxy', 1); // kalau di belakang reverse-proxy
-app.use(helmet({
-  contentSecurityPolicy: false, // SPA dashboard butuh inline style
-  crossOriginEmbedderPolicy: false
-}));
-
-// CORS whitelist
-const corsOrigins = config.ALLOWED_ORIGINS;
-app.use(cors({
-  origin: (origin, cb) => {
-    if (!origin) return cb(null, true); // mobile/curl/postman
-    if (corsOrigins.includes('*') || corsOrigins.includes(origin)) return cb(null, true);
-    cb(new Error('Origin tidak diizinkan: ' + origin));
-  },
-  credentials: false
-}));
+security.applyAll(app);
 
 app.use(express.json({ limit: '100kb' }));
-app.use(globalLimiter); // rate limit global
 
 const User = require('./models/User');
 const roomManager = require('./services/roomManager');
@@ -71,9 +54,27 @@ app.use('/legal', express.static(path.join(PUBLIC_DIR, 'legal'), {
 }));
 
 app.use('/api/auth', require('./routes/auth'));
-app.use('/api/sys', require('./routes/api'));
+// Google OAuth: route didefinisikan di /auth/google.js, di-mount lewat routes/auth.js
+// (lihat require di atas) — tidak di-mount terpisah di sini untuk hindari double-route.
+
+// Health check endpoint (publik, tanpa auth) — buat monitoring/docker/uptime-kuma.
+app.get('/api/health', (req, res) => {
+  const billing = require('./billing/midtrans');
+  res.json({
+    ok: true,
+    service: 'tts-live-v2',
+    version: require('./package.json').version,
+    uptime: Math.round(process.uptime()),
+    mongo: mongoose.connection.readyState === 1 ? 'connected' : 'disconnected',
+    midtrans: billing.status(),
+    timestamp: new Date().toISOString()
+  });
+});
+
+app.use('/api/sys', require('./routes/api'));     // /api/sys/me, /api/sys/settings, ...
 app.use('/api/billing', require('./routes/billing'));
 app.use('/api/gift-mappings', require('./routes/giftMapping'));
+app.use('/api/onboarding', require('./onboarding'));
 
 // Script bersama yang dipanggil HTML game dengan path absolut (/shared/...).
 // (Di versi lama ini nggak ke-mount, jadi vote-overlay & watcher 404.)

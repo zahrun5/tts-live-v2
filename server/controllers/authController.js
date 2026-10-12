@@ -5,7 +5,8 @@ const jwt = require('jsonwebtoken');
 const { OAuth2Client } = require('google-auth-library');
 const { JWT_SECRET, ALLOW_REGISTER, USERNAME_RE, GOOGLE_CLIENT_ID, GOOGLE_CLIENT_SECRET, GOOGLE_REDIRECT_URI } = require('../config');
 const { ensureFreeSubscription } = require('../services/subscriptionHelper');
-const email = require('../services/email');
+const { ensureDefaults: ensureGiftDefaults } = require('../gifts/defaults');
+const emailService = require('../services/email');
 
 function signToken(user) {
   return jwt.sign(
@@ -50,8 +51,10 @@ exports.register = async (req, res) => {
     await user.save();
     // Bikin subscription free 30 hari
     await ensureFreeSubscription(user._id);
+    // Seed default gift mapping (rose/tiktok/lion)
+    await ensureGiftDefaults(user._id);
     // Kirim welcome email (kalau ada)
-    if (user.email) email.welcome({ to: user.email, username: user.username });
+    if (user.email) emailService.welcome({ to: user.email, username: user.username });
     res.status(201).json({ message: 'Registrasi berhasil, silakan login.' });
   } catch (err) {
     console.error('[Auth] register error:', err.message);
@@ -72,6 +75,8 @@ exports.login = async (req, res) => {
 
     // Pastikan ada subscription (kalau migrasi user lama belum punya)
     await ensureFreeSubscription(user._id);
+    // Seed default gift mapping (idempotent)
+    await ensureGiftDefaults(user._id);
 
     const token = signToken(user);
     res.json({ message: 'Login berhasil', token, user: publicUser(user) });
@@ -95,6 +100,8 @@ exports.me = async (req, res) => {
  * Google OAuth: alur authorization code.
  * GET /api/auth/google -> redirect ke Google.
  * GET /api/auth/google/callback -> tukar code, dapat profile, upsert user, return JWT.
+ *
+ * Logic dipindah ke handleGoogleProfile (dipakai juga oleh /auth/google.js).
  */
 exports.googleStart = (req, res) => {
   if (!GOOGLE_CLIENT_ID) return res.status(501).json({ error: 'Google OAuth belum dikonfigurasi (GOOGLE_CLIENT_ID kosong)' });
@@ -107,6 +114,44 @@ exports.googleStart = (req, res) => {
   res.redirect(url);
 };
 
+/** Reusable: dari profile Google -> { token, user }. Dipakai routes/auth.js & auth/google.js. */
+exports.handleGoogleProfile = async ({ googleId, email, name, picture }) => {
+  if (!googleId) throw new Error('googleId kosong');
+  if (!email) throw new Error('email kosong');
+
+  let user = await User.findOne({ googleId });
+  if (!user) user = await User.findOne({ email: email.toLowerCase() });
+  if (!user) {
+    let baseUsername = (email.split('@')[0] || 'user').replace(/[^a-zA-Z0-9_-]/g, '').slice(0, 24) || 'user';
+    let username = baseUsername;
+    let n = 0;
+    while (await User.findOne({ username })) {
+      n += 1;
+      username = (baseUsername + n).slice(0, 32);
+    }
+    user = new User({
+      username,
+      password: null,
+      email: email.toLowerCase(),
+      googleId,
+      avatar: picture || ''
+    });
+    await user.save();
+    await ensureFreeSubscription(user._id);
+    await ensureGiftDefaults(user._id);
+    emailService.welcome({ to: email, username });
+  } else if (!user.googleId) {
+    user.googleId = googleId;
+    if (!user.avatar && picture) user.avatar = picture;
+    if (!user.email) user.email = email.toLowerCase();
+    await user.save();
+    await ensureFreeSubscription(user._id);
+    await ensureGiftDefaults(user._id);
+  }
+  const token = signToken(user);
+  return { token, user: publicUser(user) };
+};
+
 exports.googleCallback = async (req, res) => {
   try {
     if (!GOOGLE_CLIENT_ID) return res.status(501).json({ error: 'Google OAuth belum dikonfigurasi' });
@@ -115,47 +160,11 @@ exports.googleCallback = async (req, res) => {
     const client = new OAuth2Client(GOOGLE_CLIENT_ID, GOOGLE_CLIENT_SECRET, GOOGLE_REDIRECT_URI);
     const { tokens } = await client.getToken(code);
     client.setCredentials(tokens);
-    // Ambil profile via userinfo
     const ticket = await client.verifyIdToken({ idToken: tokens.id_token, audience: GOOGLE_CLIENT_ID });
     const payload = ticket.getPayload();
-    const { sub: googleId, email, name, picture } = payload;
-    if (!email) return res.status(400).json({ error: 'Email Google tidak tersedia' });
-
-    // Cari user: by googleId dulu, lalu by email (link akun).
-    let user = await User.findOne({ googleId });
-    if (!user) user = await User.findOne({ email: email.toLowerCase() });
-    if (!user) {
-      // Bikin user baru. Username = bagian lokal dari email, fallback 'user'+rand.
-      let baseUsername = (email.split('@')[0] || 'user').replace(/[^a-zA-Z0-9_-]/g, '').slice(0, 24) || 'user';
-      let username = baseUsername;
-      let n = 0;
-      while (await User.findOne({ username })) {
-        n += 1;
-        username = (baseUsername + n).slice(0, 32);
-      }
-      user = new User({
-        username,
-        password: null,
-        email: email.toLowerCase(),
-        googleId,
-        avatar: picture || ''
-      });
-      await user.save();
-      await ensureFreeSubscription(user._id);
-      email.welcome({ to: email, username });
-    } else if (!user.googleId) {
-      // Link akun existing
-      user.googleId = googleId;
-      if (!user.avatar && picture) user.avatar = picture;
-      if (!user.email) user.email = email.toLowerCase();
-      await user.save();
-      await ensureFreeSubscription(user._id);
-    }
-
-    const token = signToken(user);
-    // Redirect ke frontend dengan token (fragment biar JS yg ambil)
+    const result = await exports.handleGoogleProfile(payload);
     const appUrl = process.env.APP_BASE_URL || 'http://localhost:3050';
-    res.redirect(`${appUrl}/login?oauth=success&token=${encodeURIComponent(token)}&user=${encodeURIComponent(JSON.stringify(publicUser(user)))}`);
+    res.redirect(`${appUrl}/login?oauth=success&token=${encodeURIComponent(result.token)}&user=${encodeURIComponent(JSON.stringify(result.user))}`);
   } catch (err) {
     console.error('[Auth] google callback error:', err.message);
     res.status(500).json({ error: 'Google OAuth gagal: ' + err.message });

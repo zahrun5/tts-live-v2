@@ -8,6 +8,9 @@ const roomManager = require('../services/roomManager');
 const { TIKTOK_RE, VALID_GAMES } = require('../config');
 const { getActiveSubscription } = require('../services/subscriptionHelper');
 
+// Health check di-mount langsung di index.js pada /api/health (publik).
+// Endpoint di sini (di bawah /api/sys) butuh auth.
+
 // Bungkus handler async biar error nggak bikin request menggantung.
 const wrap = (fn) => (req, res) => fn(req, res).catch((err) => {
   console.error('[API] error:', err);

@@ -51,6 +51,29 @@ function attachHandlers(username, room, session) {
     room.handleLike({ player: info.name, profileUrl: info.profileUrl, count: likeCount });
   });
 
+  // Gift event: lookup mapping default + user, lalu delegasi ke giftTrigger.
+  // Library tiktok-live-connector mengirim event 'gift' (1 detail per gift individual
+  // atau 'giftEvent' (kumulatif per streak)). Kita tangani dua-duanya.
+  const onGift = async (data) => {
+    try {
+      const giftName = (data.giftName || data.name || 'unknown').toString();
+      // diamondCount / coins: library pakai diamondCount di v2
+      const coins = Number(data.diamondCount || data.coins || data.giftCoins || 0);
+      const sender = (data.user && (data.user.nickname || data.user.uniqueId)) || data.uniqueId || 'anonymous';
+      const user = await User.findOne({ username }).select('_id').lean();
+      if (!user) return;
+      const result = await giftTrigger.handleGiftEvent({
+        room, userId: user._id, giftName, giftCoins: coins, sender
+      });
+      if (result.handled) {
+        console.log(`[TikTok:Gift] ${sender} -> ${giftName} (${coins} coin) => ${result.action} ${result.value || ''}`);
+      }
+    } catch (err) {
+      console.error('[TikTok] gift handler error:', err.message);
+    }
+  };
+  if (WebcastEvent.GIFT) conn.on(WebcastEvent.GIFT, onGift);
+
   const onDown = (reason) => {
     if (sessions.get(username) !== session) return; // sesi lama, abaikan
     room.setLiveStatus(false, session.tiktokUsername);

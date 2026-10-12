@@ -21,9 +21,9 @@ const subscriptionSchema = new mongoose.Schema({
 subscriptionSchema.index({ userId: 1, status: 1 });
 subscriptionSchema.index({ expiresAt: 1 });
 
-subscriptionSchema.pre('save', function (next) {
+// Mongoose 9: pre('save') tanpa parameter `next` -> gunakan async middleware.
+subscriptionSchema.pre('save', function () {
   this.updatedAt = new Date();
-  next();
 });
 
 module.exports = mongoose.model('Subscription', subscriptionSchema);

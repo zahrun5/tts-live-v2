@@ -22,11 +22,10 @@ function loadJwtSecret() {
 }
 
 // Plan tiering: free = trial 30 hari, basic/pro = butuh Midtrans aktif
-const PLAN_PRICES = {
-  free: { id: 'free', label: 'Free (Trial 30 hari)', price: 0, durationDays: 30 },
-  basic: { id: 'basic', label: 'Basic', price: 49000, durationDays: 30 },
-  pro: { id: 'pro', label: 'Pro', price: 99000, durationDays: 30 }
-};
+// Definisi lengkap ada di config/plans.js (sumber tunggal) — config.js re-export
+// supaya module lain yang lama import dari './config' tetap kompatibel.
+const { PLAN_PRICES: _PLAN_PRICES } = require('./config/plans');
+const PLAN_PRICES = _PLAN_PRICES;
 
 const ALLOWED_ORIGINS = (process.env.ALLOWED_ORIGINS || 'http://localhost:5173,http://127.0.0.1:5173,http://localhost:3050')
   .split(',').map(s => s.trim()).filter(Boolean);
@@ -45,9 +44,10 @@ module.exports = {
   ALLOWED_ORIGINS,
   GOOGLE_CLIENT_ID: process.env.GOOGLE_CLIENT_ID || '',
   GOOGLE_CLIENT_SECRET: process.env.GOOGLE_CLIENT_SECRET || '',
-  GOOGLE_REDIRECT_URI: process.env.GOOGLE_REDIRECT_URI || 'http://localhost:3050/api/auth/google/callback',
+  GOOGLE_REDIRECT_URI: process.env.GOOGLE_CALLBACK_URL || process.env.GOOGLE_REDIRECT_URI || 'http://localhost:3050/api/auth/google/callback',
   MIDTRANS_SERVER_KEY: process.env.MIDTRANS_SERVER_KEY || '',
   MIDTRANS_CLIENT_KEY: process.env.MIDTRANS_CLIENT_KEY || '',
   MIDTRANS_IS_PRODUCTION: process.env.MIDTRANS_IS_PRODUCTION === 'true',
-  APP_BASE_URL: process.env.APP_BASE_URL || 'http://localhost:3050'
+  APP_BASE_URL: process.env.APP_BASE_URL || 'http://localhost:3050',
+  COOKIE_SECRET: process.env.COOKIE_SECRET || ''
 };
