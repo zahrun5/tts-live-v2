@@ -73,6 +73,19 @@ router.post('/tiktok/toggle', auth, wrap(async (req, res) => {
   const user = await currentUser(req);
   if (!user) return res.status(401).json({ error: 'User tidak ditemukan' });
   if (action === 'start') {
+    // Pakai username dari kolom di layar kalau dikirim client, jadi nggak
+    // wajib tekan Simpan dulu. Kalau valid, sekalian disimpan ke database.
+    const raw = (req.body || {}).tiktokUsername;
+    if (typeof raw === 'string') {
+      const name = raw.trim().replace(/^@/, '');
+      if (name && !TIKTOK_RE.test(name)) {
+        return res.status(400).json({ error: 'Username TikTok tidak valid' });
+      }
+      if (name && name !== user.tiktokUsername) {
+        user.tiktokUsername = name;
+        await user.save();
+      }
+    }
     if (!user.tiktokUsername) {
       return res.status(400).json({ error: 'Isi username TikTok target terlebih dahulu' });
     }

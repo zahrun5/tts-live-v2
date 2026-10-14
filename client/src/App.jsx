@@ -197,7 +197,7 @@ function Dashboard() {
     setStatusMsg({ text: 'Memproses...', type: 'info' });
     try {
       const action = isConnected ? 'stop' : 'start';
-      const res = await axios.post('/api/sys/tiktok/toggle', { action });
+      const res = await axios.post('/api/sys/tiktok/toggle', { action, tiktokUsername });
       setIsConnected(res.data.isConnected);
       setStatusMsg({ text: res.data.message, type: 'success' });
       if (user) await refreshActiveSoal(user.username);
