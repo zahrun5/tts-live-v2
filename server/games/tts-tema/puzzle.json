@@ -1,0 +1,110 @@
+{
+  "theme": "Bagian tubuh",
+  "rows": 11,
+  "cols": 14,
+  "words": [
+    {
+      "number": 1,
+      "direction": "down",
+      "row": 0,
+      "col": 8,
+      "answer": "HIDUNG",
+      "clue": "Untuk mencium bau",
+      "found": false
+    },
+    {
+      "number": 2,
+      "direction": "down",
+      "row": 3,
+      "col": 10,
+      "answer": "RAMBUT",
+      "clue": "Tumbuh di kepala",
+      "found": false
+    },
+    {
+      "number": 3,
+      "direction": "across",
+      "row": 4,
+      "col": 6,
+      "answer": "TANGAN",
+      "clue": "Ada lima jari di ujungnya",
+      "found": false
+    },
+    {
+      "number": 3,
+      "direction": "down",
+      "row": 4,
+      "col": 6,
+      "answer": "TELINGA",
+      "clue": "Untuk mendengar suara",
+      "found": false
+    },
+    {
+      "number": 4,
+      "direction": "down",
+      "row": 5,
+      "col": 13,
+      "answer": "MATA",
+      "clue": "Untuk melihat",
+      "found": false
+    },
+    {
+      "number": 5,
+      "direction": "across",
+      "row": 7,
+      "col": 3,
+      "answer": "KULIT",
+      "clue": "Selimut tubuh paling luar",
+      "found": false
+    },
+    {
+      "number": 5,
+      "direction": "down",
+      "row": 7,
+      "col": 3,
+      "answer": "KAKI",
+      "clue": "Untuk berjalan dan berlari",
+      "found": false
+    },
+    {
+      "number": 6,
+      "direction": "across",
+      "row": 7,
+      "col": 9,
+      "answer": "MULUT",
+      "clue": "Untuk makan dan bicara",
+      "found": false
+    },
+    {
+      "number": 7,
+      "direction": "across",
+      "row": 9,
+      "col": 6,
+      "answer": "GIGI",
+      "clue": "Untuk mengunyah makanan",
+      "found": false
+    },
+    {
+      "number": 8,
+      "direction": "across",
+      "row": 10,
+      "col": 0,
+      "answer": "JARI",
+      "clue": "Bagian ujung tangan",
+      "found": false
+    }
+  ],
+  "sourceWords": [
+    "TANGAN",
+    "KAKI",
+    "MATA",
+    "HIDUNG",
+    "TELINGA",
+    "MULUT",
+    "RAMBUT",
+    "JARI",
+    "KULIT",
+    "GIGI"
+  ],
+  "createdAt": "2026-10-14T19:59:54.238Z"
+}

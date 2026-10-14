@@ -1,0 +1,194 @@
+[
+  {
+    "theme": "Buah-buahan",
+    "words": ["MANGGA", "PIR", "JERUK", "APEL", "NANAS", "MELON", "ANGGUR", "SEMANGKA", "PISANG", "DURIAN"],
+    "clues": {
+      "MANGGA": "Buah yang sering jadi rujak",
+      "PIR": "Buah hijau/kuning, bentuknya seperti lampu",
+      "JERUK": "Buah bulat kecil, rasa asam manis",
+      "APEL": "Buah merah/hijau dari Malang",
+      "NANAS": "Buah berduri, sering dibuat rujak",
+      "MELON": "Buah bulat besar, kulitnya jala",
+      "ANGGUR": "Buah kecil tumbuh bergerombol",
+      "SEMANGKA": "Buah besar, isinya merah, biji hitam",
+      "PISANG": "Buah kuning panjang, monyet suka",
+      "DURIAN": "Buah berduri tajam, baunya kuat"
+    }
+  },
+  {
+    "theme": "Hewan peliharaan",
+    "words": ["KUCING", "ANJING", "IKAN", "BURUNG", "KELINCI", "HAMSTER", "AYAM", "KUDA", "SAPI", "KAMBING"],
+    "clues": {
+      "KUCING": "Hewan suka menangkap tikus",
+      "ANJING": "Hewan setia, penjaga rumah",
+      "IKAN": "Hewan yang hidup di air",
+      "BURUNG": "Hewan bersayap yang bisa terbang",
+      "KELINCI": "Hewan lucu, telinganya panjang, suka wortel",
+      "HAMSTER": "Hewan kecil, suka masuk roda putar",
+      "AYAM": "Hewan berkokok di pagi hari",
+      "KUDA": "Hewan tunggangan, berlari di padang rumput",
+      "SAPI": "Hewan penghasil susu dan daging",
+      "KAMBING": "Hewan yang suka makan daun muda"
+    }
+  },
+  {
+    "theme": "Benda di dapur",
+    "words": ["PANCI", "PIRING", "GELAS", "SENDOK", "GARPU", "PISAU", "KOMPOR", "KULKAS", "WAJAN", "TALENAS"],
+    "clues": {
+      "PANCI": "Wadah masak bulat dengan pegangan",
+      "PIRING": "Tempat menaruh nasi",
+      "GELAS": "Tempat minum dari kaca/plastik",
+      "SENDOK": "Alat makan untuk sup",
+      "GARPU": "Alat makan bertangkai banyak",
+      "PISAU": "Alat potong tajam",
+      "KOMPOR": "Alat masak di dapur",
+      "KULKAS": "Lemari pendingin untuk makanan",
+      "WAJAN": "Wadah masak untuk menggoreng",
+      "TALENAS": "Alat untuk meniriskan nasi"
+    }
+  },
+  {
+    "theme": "Profesi",
+    "words": ["DOKTER", "GURU", "POLISI", "TENTARA", "PILOT", "KOKI", "PENJAHIT", "TUKANG", "NELAYAN", "PETANI"],
+    "clues": {
+      "DOKTER": "Profesi yang memeriksa pasien",
+      "GURU": "Profesi yang mengajar di sekolah",
+      "POLISI": "Profesi penjaga keamanan",
+      "TENTARA": "Profesi penjaga negara",
+      "PILOT": "Profesi penerbang pesawat",
+      "KOKI": "Profesi yang memasak di restoran",
+      "PENJAHIT": "Profesi yang membuat pakaian",
+      "TUKANG": "Pekerja bangunan/kayu",
+      "NELAYAN": "Profesi yang menangkap ikan di laut",
+      "PETANI": "Profesi yang menanam padi di sawah"
+    }
+  },
+  {
+    "theme": "Benda di ruang tamu",
+    "words": ["SOFA", "MEJA", "KURSI", "LAMPU", "GORDEN", "KARPET", "JENDELA", "LEMARI", "JAM", "BINGKAI"],
+    "clues": {
+      "SOFA": "Tempat duduk empuk, biasanya panjang",
+      "MEJA": "Benda datar berkaki untuk menaruh barang",
+      "KURSI": "Tempat duduk berkaki empat",
+      "LAMPU": "Penerang ruangan di malam hari",
+      "GORDEN": "Kain penutup jendela",
+      "KARPET": "Alas lantai yang lembut",
+      "JENDELA": "Lubang di dinding untuk keluar masuk udara dan cahaya",
+      "LEMARI": "Lemari besar untuk menyimpan pakaian",
+      "JAM": "Alat penunjuk waktu",
+      "BINGKAI": "Bingkai untuk foto"
+    }
+  },
+  {
+    "theme": "Makanan ringan",
+    "words": ["KERUPUK", "BAKWAN", "GORENGAN", "CIRENG", "TAHU", "TEMPE", "KACANG", "SEBLAK", "BASO", "RISOL"],
+    "clues": {
+      "KERUPUK": "Makanan renyah dari tepung",
+      "BAKWAN": "Gorengan isi sayur",
+      "GORENGAN": "Makanan yang digoreng",
+      "CIRENG": "Makanan dari tepung kanji, kenyal",
+      "TAHU": "Makanan putih dari kedelai",
+      "TEMPE": "Makanan fermentasi dari kedelai",
+      "KACANG": "Biji-bijian yang sering direbus",
+      "SEBLAK": "Makanan kuah pedas khas Bandung",
+      "BASO": "Bola daging dalam kuah",
+      "RISOL": "Lumpur gulung isi sayur/sosis"
+    }
+  },
+  {
+    "theme": "Alat musik",
+    "words": ["GITAR", "PIANO", "DRUM", "BIOLA", "SERULING", "SAXOPHONE", "TRUMPET", "HARPA", "KENDANG", "REBAB"],
+    "clues": {
+      "GITAR": "Alat musik petik bersenar",
+      "PIANO": "Alat musik tuts, hitam putih",
+      "DRUM": "Alat musik yang dipukul",
+      "BIOLA": "Alat musik gesek bersenar empat",
+      "SERULING": "Alat musik tiup dari bambu",
+      "SAXOPHONE": "Alat musik tiup warna emas",
+      "TRUMPET": "Alat musik tiup warna perak",
+      "HARPA": "Alat musik petik berseni banyak",
+      "KENDANG": "Alat musik pukul tradisional",
+      "REBAB": "Alat musik gesek tradisional"
+    }
+  },
+  {
+    "theme": "Kendaraan",
+    "words": ["MOBIL", "MOTOR", "SEPEDA", "BUS", "TRUK", "KERETA", "KAPAL", "PESAWAT", "HELIKOPTER", "BECAK"],
+    "clues": {
+      "MOBIL": "Kendaraan beroda empat bermesin",
+      "MOTOR": "Kendaraan beroda dua bermesin",
+      "SEPEDA": "Kendaraan beroda dua tanpa mesin",
+      "BUS": "Kendaraan besar untuk penumpang",
+      "TRUK": "Kendaraan besar untuk mengangkut barang",
+      "KERETA": "Kendaraan di atas rel besi",
+      "KAPAL": "Kendaraan di atas air/laut",
+      "PESAWAT": "Kendaraan terbang bermesin jet",
+      "HELIKOPTER": "Kendaraan terbang dengan baling-baling atas",
+      "BECAK": "Kendaraan beroda tiga tradisional"
+    }
+  },
+  {
+    "theme": "Bagian tubuh",
+    "words": ["TANGAN", "KAKI", "MATA", "HIDUNG", "TELINGA", "MULUT", "RAMBUT", "JARI", "KULIT", "GIGI"],
+    "clues": {
+      "TANGAN": "Ada lima jari di ujungnya",
+      "KAKI": "Untuk berjalan dan berlari",
+      "MATA": "Untuk melihat",
+      "HIDUNG": "Untuk mencium bau",
+      "TELINGA": "Untuk mendengar suara",
+      "MULUT": "Untuk makan dan bicara",
+      "RAMBUT": "Tumbuh di kepala",
+      "JARI": "Bagian ujung tangan",
+      "KULIT": "Selimut tubuh paling luar",
+      "GIGI": "Untuk mengunyah makanan"
+    }
+  },
+  {
+    "theme": "Warna",
+    "words": ["MERAH", "BIRU", "KUNING", "HIJAU", "PUTIH", "HITAM", "UNGU", "ORANYE", "COKLAT", "ABU"],
+    "clues": {
+      "MERAH": "Warna darah, stop lampu",
+      "BIRU": "Warna langit cerah",
+      "KUNING": "Warna matahari, buah pisang",
+      "HIJAU": "Warna daun, lampu lalu lintas",
+      "PUTIH": "Warna susu, bersih",
+      "HITAM": "Warna gelap, arang",
+      "UNGU": "Warna campur merah biru",
+      "ORANYE": "Warna campur merah kuning, buah wortel",
+      "COKLAT": "Warna kayu, kopi",
+      "ABU": "Warna sisa pembakaran"
+    }
+  },
+  {
+    "theme": "Benda di sekolah",
+    "words": ["BUKU", "PENSIL", "PULPEN", "PENGHAPUS", "RAUTAN", "TAS", "MEJA", "KURSI", "PAPAN", "PETA"],
+    "clues": {
+      "BUKU": "Tempat menulis dan membaca",
+      "PENSIL": "Alat tulis dari grafit",
+      "PULPEN": "Alat tulis dengan tinta",
+      "PENGHAPUS": "Untuk menghapus tulisan salah",
+      "RAUTAN": "Untuk meraut pensil",
+      "TAS": "Tempat membawa buku",
+      "MEJA": "Tempat menulis di kelas",
+      "KURSI": "Tempat duduk di kelas",
+      "PAPAN": "Tempat guru menulis",
+      "PETA": "Gambar wilayah/geografi"
+    }
+  },
+  {
+    "theme": "Cuaca dan alam",
+    "words": ["HUJAN", "PANAS", "DINGIN", "ANGIN", "PETIR", "GELAP", "TERANG", "AWAN", "MATAHARI", "BULAN"],
+    "clues": {
+      "HUJAN": "Air yang turun dari langit",
+      "PANAS": "Suhu udara tinggi",
+      "DINGIN": "Suhu udara rendah",
+      "ANGIN": "Udara yang bergerak",
+      "PETIR": "Kilatan cahaya di langit saat hujan",
+      "GELAP": "Tidak ada cahaya",
+      "TERANG": "Banyak cahaya",
+      "AWAN": "Kumpulan uap air di langit",
+      "MATAHARI": "Bintang di siang hari",
+      "BULAN": "Bintang di malam hari"
+    }
+  }
+]

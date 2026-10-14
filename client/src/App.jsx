@@ -101,7 +101,7 @@ function Dashboard() {
   const [user, setUser] = useState(null);
   const [tiktokUsername, setTiktokUsername] = useState('');
   const [activeGame, setActiveGame] = useState('tts');
-  const [randomGames, setRandomGames] = useState(['tts', 'susun-kata-acak', 'family100', 'cari-kata', 'sambung-kata', 'susun-kalimat']);
+  const [randomGames, setRandomGames] = useState(['tts', 'susun-kata-acak', 'family100', 'cari-kata', 'sambung-kata', 'tts-tema', 'susun-kalimat']);
   const [avatarType, setAvatarType] = useState('emoji');
   const [isConnected, setIsConnected] = useState(false);
   const [activeSoal, setActiveSoal] = useState(null);
@@ -122,6 +122,7 @@ function Dashboard() {
     { id: 'susun-kata-acak', label: '🔤 Susun Kata Acak', icon: '🔤', color: 'from-amber-500 to-orange-600' },
     { id: 'cari-kata', label: '🔍 Cari Kata', icon: '🔍', color: 'from-pink-500 to-rose-600' },
     { id: 'sambung-kata', label: '⛓️ Sambung Kata', icon: '⛓️', color: 'from-indigo-500 to-blue-600' },
+    { id: 'tts-tema', label: '🎯 TTS Tema', icon: '🎯', color: 'from-cyan-500 to-teal-600' },
     { id: 'susun-kalimat', label: '📑 Susun Kalimat', icon: '📑', color: 'from-purple-500 to-pink-600' },
     { id: 'sinonim-dan-bahasa-daerah', label: '🔄 Sinonim dan Bahasa Daerah', icon: '🔄', color: 'from-purple-500 to-blue-500' },
     { id: 'hitung-cepat', label: '🧮 Hitung Cepat', icon: '🧮', color: 'from-red-500 to-orange-600' },
@@ -166,7 +167,7 @@ function Dashboard() {
         setUser(res.data.user);
         setTiktokUsername(res.data.user.tiktokUsername || '');
         setActiveGame(res.data.user.activeGame || 'tts');
-        setRandomGames(res.data.user.randomGames || ['tts', 'susun-kata-acak', 'family100', 'cari-kata', 'sambung-kata', 'susun-kalimat']);
+        setRandomGames(res.data.user.randomGames || ['tts', 'susun-kata-acak', 'family100', 'cari-kata', 'sambung-kata', 'tts-tema', 'susun-kalimat']);
         setAvatarType(res.data.user.avatarType || 'emoji');
         setIsConnected(res.data.isConnected);
         refreshActiveSoal(res.data.user.username);

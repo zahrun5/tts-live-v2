@@ -8,7 +8,7 @@ const userSchema = new mongoose.Schema({
   avatar: { type: String, default: '' }, // URL foto profil (kalau ada)
   tiktokUsername: { type: String, default: '' },
   activeGame: { type: String, default: 'tts' },
-  randomGames: { type: [String], default: ['tts', 'susun-kata-acak', 'family100', 'trivia', 'cari-kata', 'sambung-kata', 'susun-kalimat', 'sinonim-kata'] },
+  randomGames: { type: [String], default: ['tts', 'susun-kata-acak', 'family100', 'trivia', 'cari-kata', 'sambung-kata', 'tts-tema', 'susun-kalimat', 'sinonim-kata'] },
   role: { type: String, default: 'user' },
   avatarType: { type: String, default: 'emoji' },
   // Onboarding: false sampai user selesai 4-step wizard
