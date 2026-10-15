@@ -1,0 +1,110 @@
+{
+  "theme": "Bagian tubuh",
+  "rows": 13,
+  "cols": 11,
+  "words": [
+    {
+      "number": 1,
+      "direction": "down",
+      "row": 0,
+      "col": 5,
+      "answer": "HIDUNG",
+      "clue": "Untuk mencium bau, mencuat di tengah wajah",
+      "found": false
+    },
+    {
+      "number": 2,
+      "direction": "down",
+      "row": 3,
+      "col": 7,
+      "answer": "RAMBUT",
+      "clue": "Tumbuh di kepala, bisa dikepang",
+      "found": false
+    },
+    {
+      "number": 3,
+      "direction": "down",
+      "row": 4,
+      "col": 3,
+      "answer": "TELINGA",
+      "clue": "Untuk mendengar suara, ada di sisi kepala",
+      "found": false
+    },
+    {
+      "number": 3,
+      "direction": "across",
+      "row": 4,
+      "col": 3,
+      "answer": "TANGAN",
+      "clue": "Ada lima jari di ujungnya, untuk memegang",
+      "found": false
+    },
+    {
+      "number": 4,
+      "direction": "down",
+      "row": 6,
+      "col": 9,
+      "answer": "KULIT",
+      "clue": "Selimut tubuh paling luar, merasakan sentuhan",
+      "found": false
+    },
+    {
+      "number": 5,
+      "direction": "across",
+      "row": 7,
+      "col": 0,
+      "answer": "KAKI",
+      "clue": "Untuk berjalan dan berlari, ada telapak di bawah",
+      "found": false
+    },
+    {
+      "number": 6,
+      "direction": "across",
+      "row": 7,
+      "col": 6,
+      "answer": "MULUT",
+      "clue": "Untuk makan dan bicara, ada gigi di dalam",
+      "found": false
+    },
+    {
+      "number": 7,
+      "direction": "down",
+      "row": 9,
+      "col": 5,
+      "answer": "GIGI",
+      "clue": "Tulang kecil di mulut, untuk mengunyah",
+      "found": false
+    },
+    {
+      "number": 8,
+      "direction": "across",
+      "row": 10,
+      "col": 2,
+      "answer": "JARI",
+      "clue": "Bagian ujung tangan, ada sepuluh semuanya",
+      "found": false
+    },
+    {
+      "number": 9,
+      "direction": "across",
+      "row": 10,
+      "col": 7,
+      "answer": "MATA",
+      "clue": "Untuk melihat dunia sekitar",
+      "found": false
+    }
+  ],
+  "sourceWords": [
+    "TANGAN",
+    "KAKI",
+    "MATA",
+    "HIDUNG",
+    "TELINGA",
+    "MULUT",
+    "RAMBUT",
+    "JARI",
+    "KULIT",
+    "GIGI"
+  ],
+  "createdAt": "2026-10-14T20:03:06.255Z"
+}

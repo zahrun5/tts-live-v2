@@ -3,8 +3,9 @@
 const express = require('express');
 const router = express.Router();
 const auth = require('../middleware/auth');
+const { requireActiveSubscription } = auth;
+const { getPlanLimits } = require('../services/subscriptionHelper');
 const GiftMapping = require('../models/GiftMapping');
-const { TIKTOK_RE } = require('../config');
 
 const VALID_ACTIONS = ['skip_round', 'bonus_score', 'next_question', 'reveal_answer'];
 
@@ -17,16 +18,30 @@ router.get('/', auth, async (req, res) => {
   }
 });
 
-router.post('/', auth, async (req, res) => {
+router.post('/', auth, requireActiveSubscription('free'), async (req, res) => {
   try {
     const { giftName, action, value, enabled } = req.body || {};
-    if (typeof giftName !== 'string' || !giftName.trim()) {
-      return res.status(400).json({ error: 'giftName wajib' });
+    if (typeof giftName !== 'string' || !giftName.trim() || giftName.trim().length > 60) {
+      return res.status(400).json({ error: 'giftName wajib (maks 60 karakter)' });
     }
     if (!VALID_ACTIONS.includes(action)) {
       return res.status(400).json({ error: 'action tidak valid' });
     }
     const v = Number(value) || 0;
+
+    // Batas jumlah mapping sesuai paket (mapping yang sudah ada boleh di-update).
+    const name = giftName.trim();
+    const exists = await GiftMapping.exists({ userId: req.user.id, giftName: name });
+    if (!exists) {
+      const max = getPlanLimits(req.subscription.plan).maxGiftMappings;
+      const total = await GiftMapping.countDocuments({ userId: req.user.id });
+      if (total >= max) {
+        return res.status(402).json({
+          error: `Batas gift mapping paket ${req.subscription.plan} adalah ${max}. Upgrade untuk menambah.`,
+          code: 'LIMIT_GIFT_MAPPINGS', limit: max
+        });
+      }
+    }
     // upsert by (userId, giftName)
     const mapping = await GiftMapping.findOneAndUpdate(
       { userId: req.user.id, giftName: giftName.trim() },

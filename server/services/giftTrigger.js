@@ -13,11 +13,29 @@ async function findMapping(userId, giftName) {
   if (!userId || !giftName) return null;
   const norm = String(giftName).trim().toLowerCase();
   const list = await GiftMapping.find({ userId, enabled: true }).lean();
-  // Cari exact match duluan, lalu fallback contains
+  // Exact match duluan. Fallback: nama mapping harus kata utuh (bukan sekadar potongan
+  // huruf) dan minimal 3 karakter, supaya mapping "a" tidak cocok ke semua gift.
   const exact = list.find(m => m.giftName.toLowerCase() === norm);
   if (exact) return exact;
-  const partial = list.find(m => norm.includes(m.giftName.toLowerCase()));
+  const esc = (t) => t.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  const partial = list
+    .filter(m => {
+      const g = m.giftName.trim().toLowerCase();
+      return g.length >= 3 && new RegExp('(^|[^\\p{L}\\p{N}])' + esc(g) + '($|[^\\p{L}\\p{N}])', 'u').test(norm);
+    })
+    .sort((a, b) => b.giftName.length - a.giftName.length)[0]; // yang paling spesifik menang
   return partial || null;
+}
+
+// Cooldown aksi yang mengubah soal (skip/next/reveal) per room: 1 gift besar bisa
+// memicu beberapa event berdekatan, dan soal tidak boleh loncat dua kali.
+const ACTION_COOLDOWN_MS = 3000;
+const lastAction = new WeakMap(); // room -> timestamp
+function onCooldown(room) {
+  const now = Date.now();
+  if (now - (lastAction.get(room) || 0) < ACTION_COOLDOWN_MS) return true;
+  lastAction.set(room, now);
+  return false;
 }
 
 /**
@@ -27,6 +45,9 @@ async function findMapping(userId, giftName) {
 async function applyMapping(room, mapping) {
   if (!room || !mapping) return { handled: false };
   const out = { handled: true, action: mapping.action, value: mapping.value, message: '' };
+  if (['skip_round', 'next_question', 'reveal_answer'].includes(mapping.action) && onCooldown(room)) {
+    return { handled: false, reason: 'cooldown', message: 'Aksi gift terlalu cepat, diabaikan' };
+  }
   try {
     switch (mapping.action) {
       case 'skip_round': {

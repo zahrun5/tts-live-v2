@@ -1,0 +1,1 @@
+../sambung-kata/validator.js

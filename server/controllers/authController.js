@@ -2,8 +2,7 @@ const User = require('../models/User');
 const Subscription = require('../models/Subscription');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
-const { OAuth2Client } = require('google-auth-library');
-const { JWT_SECRET, ALLOW_REGISTER, USERNAME_RE, GOOGLE_CLIENT_ID, GOOGLE_CLIENT_SECRET, GOOGLE_REDIRECT_URI } = require('../config');
+const { JWT_SECRET, ALLOW_REGISTER, USERNAME_RE, TIKTOK_RE, VALID_GAMES } = require('../config');
 const { ensureFreeSubscription } = require('../services/subscriptionHelper');
 const { ensureDefaults: ensureGiftDefaults } = require('../gifts/defaults');
 const emailService = require('../services/email');
@@ -96,33 +95,30 @@ exports.me = async (req, res) => {
   }
 };
 
-/**
- * Google OAuth: alur authorization code.
- * GET /api/auth/google -> redirect ke Google.
- * GET /api/auth/google/callback -> tukar code, dapat profile, upsert user, return JWT.
- *
- * Logic dipindah ke handleGoogleProfile (dipakai juga oleh /auth/google.js).
- */
-exports.googleStart = (req, res) => {
-  if (!GOOGLE_CLIENT_ID) return res.status(501).json({ error: 'Google OAuth belum dikonfigurasi (GOOGLE_CLIENT_ID kosong)' });
-  const client = new OAuth2Client(GOOGLE_CLIENT_ID, GOOGLE_CLIENT_SECRET, GOOGLE_REDIRECT_URI);
-  const url = client.generateAuthUrl({
-    access_type: 'offline',
-    prompt: 'consent',
-    scope: ['openid', 'email', 'profile']
-  });
-  res.redirect(url);
-};
-
 /** Reusable: dari profile Google -> { token, user }. Dipakai routes/auth.js & auth/google.js. */
 exports.handleGoogleProfile = async ({ googleId, email, name, picture }) => {
   if (!googleId) throw new Error('googleId kosong');
   if (!email) throw new Error('email kosong');
 
+  email = String(email).toLowerCase().trim();
   let user = await User.findOne({ googleId });
-  if (!user) user = await User.findOne({ email: email.toLowerCase() });
+  if (!user) {
+    // Email di akun password TIDAK diverifikasi saat registrasi. Kalau langsung
+    // ditautkan ke Google, orang bisa mendaftar dengan email korban lalu ikut
+    // masuk saat korban login Google. Jadi akun berpassword tidak ditautkan otomatis.
+    const byEmail = await User.findOne({ email });
+    if (byEmail) {
+      if (byEmail.password) {
+        const err = new Error('Email ini sudah terdaftar dengan password. Login dengan username dan password.');
+        err.code = 'EMAIL_USED_BY_PASSWORD_ACCOUNT';
+        throw err;
+      }
+      user = byEmail; // akun sebelumnya dibuat via Google (tanpa password): aman ditautkan
+    }
+  }
   if (!user) {
     let baseUsername = (email.split('@')[0] || 'user').replace(/[^a-zA-Z0-9_-]/g, '').slice(0, 24) || 'user';
+    if (baseUsername.length < 3) baseUsername = (baseUsername + 'user').slice(0, 24);
     let username = baseUsername;
     let n = 0;
     while (await User.findOne({ username })) {
@@ -152,34 +148,28 @@ exports.handleGoogleProfile = async ({ googleId, email, name, picture }) => {
   return { token, user: publicUser(user) };
 };
 
-exports.googleCallback = async (req, res) => {
-  try {
-    if (!GOOGLE_CLIENT_ID) return res.status(501).json({ error: 'Google OAuth belum dikonfigurasi' });
-    const code = req.query.code;
-    if (!code) return res.status(400).json({ error: 'Kode OAuth tidak ada' });
-    const client = new OAuth2Client(GOOGLE_CLIENT_ID, GOOGLE_CLIENT_SECRET, GOOGLE_REDIRECT_URI);
-    const { tokens } = await client.getToken(code);
-    client.setCredentials(tokens);
-    const ticket = await client.verifyIdToken({ idToken: tokens.id_token, audience: GOOGLE_CLIENT_ID });
-    const payload = ticket.getPayload();
-    const result = await exports.handleGoogleProfile(payload);
-    const appUrl = process.env.APP_BASE_URL || 'http://localhost:3050';
-    res.redirect(`${appUrl}/login?oauth=success&token=${encodeURIComponent(result.token)}&user=${encodeURIComponent(JSON.stringify(result.user))}`);
-  } catch (err) {
-    console.error('[Auth] google callback error:', err.message);
-    res.status(500).json({ error: 'Google OAuth gagal: ' + err.message });
-  }
-};
-
 // Onboarding: tandai selesai, simpan tiktokUsername & activeGame.
 exports.completeOnboarding = async (req, res) => {
   try {
     const { tiktokUsername, activeGame, randomGames } = req.body || {};
     const user = await User.findById(req.user.id);
     if (!user) return res.status(401).json({ error: 'User tidak ditemukan' });
-    if (typeof tiktokUsername === 'string') user.tiktokUsername = tiktokUsername.replace(/^@/, '').trim();
-    if (typeof activeGame === 'string') user.activeGame = activeGame;
-    if (Array.isArray(randomGames)) user.randomGames = randomGames;
+    if (typeof tiktokUsername === 'string') {
+      const name = tiktokUsername.replace(/^@/, '').trim();
+      if (name && !TIKTOK_RE.test(name)) return res.status(400).json({ error: 'Username TikTok tidak valid' });
+      user.tiktokUsername = name;
+    }
+    if (typeof activeGame === 'string') {
+      // activeGame dipakai menyusun path file overlay, wajib dari daftar game resmi.
+      if (activeGame !== 'game-random' && !VALID_GAMES.includes(activeGame)) {
+        return res.status(400).json({ error: 'Game tidak dikenal' });
+      }
+      user.activeGame = activeGame;
+    }
+    if (Array.isArray(randomGames)) {
+      const clean = [...new Set(randomGames.filter(g => VALID_GAMES.includes(g)))];
+      if (clean.length > 0) user.randomGames = clean;
+    }
     user.onboardingCompleted = true;
     await user.save();
     res.json({ message: 'Onboarding selesai', user: publicUser(user) });

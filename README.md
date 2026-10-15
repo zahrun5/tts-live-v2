@@ -33,16 +33,20 @@ cd ../client && npm install && npm run build
 docker run -d --name ttslive-mongo -p 27017:27017 \
   -v /home/harun/tts-live-v2/db-data:/data/db --restart unless-stopped mongo:4.4.18
 
-# 3. Config (opsional): salin server/.env.example ke server/.env
+# 3. Config: salin server/.env.example ke server/.env, isi nilai asli (JANGAN di-commit)
 # 4. Jalankan
 pm2 start server/ecosystem.config.js && pm2 save
 ```
 
-Tes tanpa MongoDB/TikTok: `cd server && npm test` (Express + Socket.IO + semua game beneran jalan).
+Tes tanpa MongoDB/TikTok/Google: `cd server && npm test` (unit: sanitasi, vote, gift, webhook Midtrans, OAuth).
+`npm run test:smoke` = smoke test lama (Express + Socket.IO + semua game); saat ini 8 cek di dalamnya gagal sejak sebelum perbaikan keamanan, perlu disesuaikan dengan alur game terbaru.
 
 ## Catatan
 
-- **Ganti JWT secret lama** (`mamang_harun_rahasia_v2_2026`) kalau repo pernah publik; token lama otomatis invalid.
+- JWT secret dibaca dari `JWT_SECRET` di `.env` (atau dibuat acak sekali di `data/.jwt-secret`). Jangan pernah menaruh secret di repo; kalau ada secret yang pernah ter-commit, anggap sudah bocor dan ganti.
 - Cloudflare Tunnel + WebSocket: ingress butuh `originRequest: { noTLSVerify: true, http2Origin: false }`.
 - Generate soal AI (`ai-client.js`) tetap seperti V1 (URL & model hardcode); ronde otomatis pakai bank soal, tanpa AI.
-- Belum ada rate-limit login; tutup registrasi dengan `ALLOW_REGISTER=false` kalau sudah cukup user.
+- Rate limit sudah aktif (login 5/menit, registrasi 3/jam, global 200/menit per IP). Tutup registrasi dengan `ALLOW_REGISTER=false` kalau sudah cukup user.
+- Login Google memakai `state` anti-CSRF dan kode sekali-pakai (60 detik) yang ditukar lewat `POST /api/auth/google/exchange`; token tidak lagi lewat URL. Setelah update, **build ulang client** (`cd client && npm run build`).
+- Nama dan foto penonton selalu di-escape (`public/shared/safe.js`) dan dibersihkan di server (`services/sanitize.js`). Game baru wajib memuat `<script src="/shared/safe.js">` dan memakai `escapeHtml()`/`safeUrl()` untuk apa pun yang masuk `innerHTML`.
+- Akun berpassword tidak otomatis ditautkan ke Google lewat email (email belum diverifikasi saat daftar).

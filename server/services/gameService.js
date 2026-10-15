@@ -1,7 +1,7 @@
 const gameProxy = require('./gameProxy');
 
 const activeGames = new Map();
-const ALL_GAMES = ['tts', 'susun-kata-acak', 'family100', 'trivia', 'cari-kata', 'sambung-kata', 'susun-kalimat'];
+const ALL_GAMES = ['tts', 'susun-kata-acak', 'family100', 'trivia', 'cari-kata', 'sambung-kata', 'tts-tema', 'susun-kalimat'];
 
 function pickRandom(pool) {
   return pool[Math.floor(Math.random() * pool.length)];
@@ -23,6 +23,8 @@ function emitUpdate(io, username, state) {
     room.emit('update', { type: 'sambung-kata', rows: state.rows, cols: state.cols, words: state.words });
   } else if (a === 'susun-kalimat') {
     room.emit('update', { type: 'susun-kalimat', items: state.items, totalSoal: state.totalSoal, solvedSoal: state.solvedSoal });
+  } else if (a === 'tts-tema') {
+    room.emit('update', { type: 'tts-tema', theme: state.theme, rows: state.rows, cols: state.cols, words: state.words });
   } else if (a === 'trivia') {
     room.emit('update', { type: 'trivia', category: state.category, question: state.question, options: state.options, correctLetter: state.correctLetter });
   }

@@ -13,32 +13,30 @@ function Login() {
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
 
-  // Tangkap ?oauth=success&token=...&user=... dari redirect backend
+  // Tangkap ?oauth=success&code=... dari redirect backend, lalu tukar code
+  // sekali-pakai itu jadi token (token tidak pernah lewat URL).
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
     const status = params.get('oauth');
-    const token = params.get('token');
-    const userParam = params.get('user');
-    if (status === 'success' && token) {
-      localStorage.setItem('token', token);
-      // Simpan info user biar Dashboard bisa baca nama & avatar
-      if (userParam) {
-        try {
-          const u = JSON.parse(decodeURIComponent(userParam));
+    const code = params.get('code');
+    if (status === 'success' && code) {
+      window.history.replaceState({}, '', '/login'); // buang code dari URL secepatnya
+      axios.post('/api/auth/google/exchange', { code })
+        .then(({ data }) => {
+          localStorage.setItem('token', data.token);
+          const u = data.user;
+          // Simpan info user biar Dashboard bisa baca nama & avatar
           if (u?.username) localStorage.setItem('username', u.username);
           if (u?.id) localStorage.setItem('userId', u.id);
           if (u?.avatar) localStorage.setItem('avatar', u.avatar);
           if (u?.tiktokUsername) localStorage.setItem('tiktokUsername', u.tiktokUsername);
-        } catch (e) { /* ignore */ }
-      }
-      // Bersihkan URL & masuk dashboard
-      window.history.replaceState({}, '', '/dashboard');
-      navigate('/dashboard', { replace: true });
+          navigate('/dashboard', { replace: true });
+        })
+        .catch((e) => setError(e?.response?.data?.error || 'Login Google gagal.'));
       return;
     }
     if (status === 'error') {
       setError(params.get('reason') || 'Login Google gagal.');
-      // Bersihkan URL
       window.history.replaceState({}, '', '/login');
     }
   }, [navigate]);
@@ -103,7 +101,7 @@ function Dashboard() {
   const [user, setUser] = useState(null);
   const [tiktokUsername, setTiktokUsername] = useState('');
   const [activeGame, setActiveGame] = useState('tts');
-  const [randomGames, setRandomGames] = useState(['tts', 'susun-kata-acak', 'family100', 'cari-kata', 'sambung-kata', 'susun-kalimat']);
+  const [randomGames, setRandomGames] = useState(['tts', 'susun-kata-acak', 'family100', 'cari-kata', 'sambung-kata', 'tts-tema', 'susun-kalimat']);
   const [avatarType, setAvatarType] = useState('emoji');
   const [isConnected, setIsConnected] = useState(false);
   const [activeSoal, setActiveSoal] = useState(null);
@@ -124,6 +122,7 @@ function Dashboard() {
     { id: 'susun-kata-acak', label: '🔤 Susun Kata Acak', icon: '🔤', color: 'from-amber-500 to-orange-600' },
     { id: 'cari-kata', label: '🔍 Cari Kata', icon: '🔍', color: 'from-pink-500 to-rose-600' },
     { id: 'sambung-kata', label: '⛓️ Sambung Kata', icon: '⛓️', color: 'from-indigo-500 to-blue-600' },
+    { id: 'tts-tema', label: '🎯 TTS Tema', icon: '🎯', color: 'from-cyan-500 to-teal-600' },
     { id: 'susun-kalimat', label: '📑 Susun Kalimat', icon: '📑', color: 'from-purple-500 to-pink-600' },
     { id: 'sinonim-dan-bahasa-daerah', label: '🔄 Sinonim dan Bahasa Daerah', icon: '🔄', color: 'from-purple-500 to-blue-500' },
     { id: 'hitung-cepat', label: '🧮 Hitung Cepat', icon: '🧮', color: 'from-red-500 to-orange-600' },
@@ -168,7 +167,7 @@ function Dashboard() {
         setUser(res.data.user);
         setTiktokUsername(res.data.user.tiktokUsername || '');
         setActiveGame(res.data.user.activeGame || 'tts');
-        setRandomGames(res.data.user.randomGames || ['tts', 'susun-kata-acak', 'family100', 'cari-kata', 'sambung-kata', 'susun-kalimat']);
+        setRandomGames(res.data.user.randomGames || ['tts', 'susun-kata-acak', 'family100', 'cari-kata', 'sambung-kata', 'tts-tema', 'susun-kalimat']);
         setAvatarType(res.data.user.avatarType || 'emoji');
         setIsConnected(res.data.isConnected);
         refreshActiveSoal(res.data.user.username);

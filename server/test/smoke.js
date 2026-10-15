@@ -11,10 +11,10 @@ const TMP = fs.mkdtempSync(path.join(os.tmpdir(), 'ttslive-test-'));
 process.env.DATA_DIR = TMP;
 process.env.PORT = '3199';
 const BASE = 'http://127.0.0.1:3199';
-const ALL = ['tts', 'family100', 'susun-kata-acak', 'cari-kata', 'sambung-kata', 'susun-kalimat', 'trivia'];
+const ALL = ['tts', 'family100', 'susun-kata-acak', 'cari-kata', 'sambung-kata', 'susun-kalimat']; // 'trivia' sudah dihapus dari proyek
 
 const users = {
-  alice: { activeGame: 'trivia', randomGames: ALL },
+  alice: { activeGame: 'tts', randomGames: ALL },
   bob: { activeGame: 'game-random', randomGames: ['tts', 'family100'] }
 };
 require('mongoose').connect = async () => {};
@@ -52,7 +52,6 @@ function answersFor(game, roomDir) {
   if (game === 'tts' || game === 'sambung-kata') return rj('puzzle.json').words.map(w => w.answer);
   if (game === 'family100') return rj('question.json').answers.map(a => a.text);
   if (game === 'cari-kata') return rj('puzzle.json').words.map(w => (typeof w === 'string' ? w : w.word || w.answer));
-  if (game === 'trivia') return [rj('puzzle.json').correctLetter];
   if (game === 'susun-kalimat') return rj('state.json').items.map(i => i.sentence);
   return null;
 }
@@ -92,8 +91,8 @@ function answersFor(game, roomDir) {
   await Promise.all([new Promise(res => sa.on('connect', res)), new Promise(res => sb.on('connect', res))]);
   sa.emit('join-overlay', 'alice'); sb.emit('join-overlay', 'bob');
   const upA = await waitFor(evA, 'update');
-  ok(upA && upA.payload && upA.payload.options && upA.payload.question, 'alice dapat state trivia lewat join-overlay');
-  ok(upA && upA.payload.correctLetter == null, 'jawaban trivia TIDAK bocor di payload');
+  ok(upA && upA.payload && upA.payload.words, 'alice dapat state tts lewat join-overlay');
+  ok(upA && !JSON.stringify(upA.payload).includes('"answer":"'), 'jawaban tts yang belum terjawab TIDAK bocor di payload');
   ok(!!(await waitFor(evA, 'leaderboard:update')), 'alice dapat leaderboard:update');
   ok(!!(await waitFor(evB, 'update')), 'bob dapat state (game random)');
   const mark = evA.length;
@@ -175,7 +174,7 @@ function answersFor(game, roomDir) {
     // overlay TIDAK boleh menerima jawaban yang belum terjawab
     const st = JSON.stringify(alice.activeGame.buildStatePayload());
     const unsolved = j.items.filter(i => !i.solved).map(i => i.answer);
-    const leaked = g === 'trivia' ? [] : unsolved.filter(a => st.includes('"' + a + '"'));
+    const leaked = unsolved.filter(a => st.includes('"' + a + '"'));
     ok(leaked.length === 0, `${g}: payload overlay tidak memuat jawaban yang belum terjawab`);
   }
   await alice.performSwitchGame('family100');

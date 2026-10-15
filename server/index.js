@@ -11,13 +11,14 @@ const http = require('http');
 const { Server } = require('socket.io');
 const mongoose = require('mongoose');
 const config = require('./config');
+const { USERNAME_RE, VALID_GAMES } = config;
 const security = require('./middleware/security');
 
 const app = express();
 const server = http.createServer(app);
 const io = new Server(server, {
   cors: {
-    origin: config.ALLOWED_ORIGINS.length ? config.ALLOWED_ORIGINS : '*',
+    origin: config.ALLOWED_ORIGINS, // whitelist dari .env, tidak pernah '*'
     methods: ['GET', 'POST']
   }
 });
@@ -25,7 +26,9 @@ const io = new Server(server, {
 app.set('io', io);
 
 // Security headers + CORS whitelist + global rate limit
-app.set('trust proxy', 1); // kalau di belakang reverse-proxy
+// Jumlah hop proxy di depan app (Cloudflare Tunnel/nginx = 1). Salah set bikin semua
+// user terlihat dari satu IP (rate limit ikut berbagi) atau IP bisa dipalsukan.
+app.set('trust proxy', Number(process.env.TRUST_PROXY ?? 1));
 security.applyAll(app);
 
 app.use(express.json({ limit: '100kb' }));
@@ -46,7 +49,10 @@ roomManager.init({
 
 mongoose.connect(config.MONGO_URI)
   .then(() => console.log('[DB] MongoDB Terhubung!'))
-  .catch(err => console.error('[DB] Gagal:', err.message));
+  .catch(err => {
+    console.error('[DB] Gagal konek MongoDB, proses dihentikan agar PM2 restart:', err.message);
+    process.exit(1);
+  });
 
 // Legal pages (statis, no JS, SEO-friendly)
 app.use('/legal', express.static(path.join(PUBLIC_DIR, 'legal'), {
@@ -66,7 +72,7 @@ app.get('/api/health', (req, res) => {
     version: require('./package.json').version,
     uptime: Math.round(process.uptime()),
     mongo: mongoose.connection.readyState === 1 ? 'connected' : 'disconnected',
-    midtrans: billing.status(),
+    midtrans: { ready: billing.status().ready },
     timestamp: new Date().toISOString()
   });
 });
@@ -124,8 +130,9 @@ app.get('/overlay-shell/:username', async (req, res) => {
     const room = await roomManager.getRoom(req.params.username);
     if (!room) return res.status(404).send('User tidak ditemukan');
     let html = fs.readFileSync(path.join(PUBLIC_DIR, 'shared/overlay-shell.html'), 'utf8');
-    const inject = '<script>window.__SHELL_USERNAME__ = ' + JSON.stringify(req.params.username) + ';</script>\n';
-    html = html.replace('</head>', inject + '</head>');
+    const safeName = JSON.stringify(room.username).replace(/</g, '\\u003c');
+    const inject = '<script>window.__SHELL_USERNAME__ = ' + safeName + ';</script>\n';
+    html = html.replace('</head>', () => inject + '</head>');
     res.type('html').send(html);
   } catch (err) { res.status(500).send('Error'); }
 });
@@ -137,9 +144,12 @@ app.get('/overlay-game/:username/:gameId', async (req, res) => {
     const room = await roomManager.getRoom(req.params.username);
     if (!room) return res.status(404).send('User tidak ditemukan');
     const gameId = req.params.gameId;
+    // Whitelist: gameId tidak boleh dipakai langsung untuk menyusun path file.
+    if (!VALID_GAMES.includes(gameId)) return res.status(404).send('Game tidak ditemukan');
     const gamePath = path.join(PUBLIC_DIR, gameId, 'index.html');
-    if (!fs.existsSync(gamePath)) return res.status(404).send('Game tidak ditemukan: ' + gameId);
-    const cfg = JSON.stringify({ username: room.username }).replace(/</g, '\u003c');
+    if (!fs.existsSync(gamePath)) return res.status(404).send('Game tidak ditemukan');
+    const cfg = JSON.stringify({ username: room.username })
+      .replace(/</g, '\\u003c').replace(/\u2028/g, '\\u2028').replace(/\u2029/g, '\\u2029');
     const injection = '<script>window.TTS_LIVE_V2_CONFIG = ' + cfg + ';</script>\n';
     let html = fs.readFileSync(gamePath, 'utf8');
     html = html.includes('</head>') ? html.replace('</head>', () => injection + '</head>') : injection + html;

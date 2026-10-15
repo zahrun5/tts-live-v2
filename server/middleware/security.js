@@ -30,7 +30,7 @@ function applyAll(app, opts = {}) {
     origin: (origin, cb) => {
       if (!origin) return cb(null, true);              // curl / postman / mobile
       if (origins.includes('*') || origins.includes(origin)) return cb(null, true);
-      cb(new Error('Origin tidak diizinkan: ' + origin));
+      cb(null, false); // tanpa header CORS -> browser menolak; bukan 500
     },
     credentials: false
   }));
