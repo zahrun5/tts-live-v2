@@ -1,0 +1,27 @@
+diff --git a/server/public/shared/overlay-shell.html b/server/public/shared/overlay-shell.html
+index 7bffc2c..f1df206 100644
+--- a/server/public/shared/overlay-shell.html
++++ b/server/public/shared/overlay-shell.html
+@@ -48,12 +48,20 @@ var banner = document.getElementById('switching-banner');
+ var fsLocked = false;
+ var currentGameId = null;
+ 
+-// ---- Fit stage 412x732 ke layar (rasio 9:16 dijaga, tidak dipotong) ----
+-var STAGE_W = 412, STAGE_H = 732;
++// ---- Fit stage ke layar, ikut orientasi (rasio dijaga, tidak dipotong) ----
++// Portrait  -> stage 412x732 (9:16)
++// Landscape -> stage 732x412 (16:9), jadi @media (orientation:landscape) di game ikut aktif
+ var stageEl = document.getElementById('stage');
+ function fitStage() {
+   var w = window.innerWidth || document.documentElement.clientWidth;
+   var h = window.innerHeight || document.documentElement.clientHeight;
++  var landscape = w > h;
++  var STAGE_W = landscape ? 732 : 412;
++  var STAGE_H = landscape ? 412 : 732;
++  stageEl.style.width = STAGE_W + 'px';
++  stageEl.style.height = STAGE_H + 'px';
++  frame.style.width = STAGE_W + 'px';
++  frame.style.height = STAGE_H + 'px';
+   var k = Math.min(w / STAGE_W, h / STAGE_H);
+   // translate(-50%,-50%) dihitung dari ukuran SEBELUM scale, jadi harus dikali k
+   stageEl.style.transform = 'translate(' + (-STAGE_W * k / 2) + 'px,' + (-STAGE_H * k / 2) + 'px) scale(' + k + ')';
