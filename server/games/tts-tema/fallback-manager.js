@@ -2,11 +2,10 @@
  * Fallback Manager - TTS Tema
  *
  * Bank tema + kata untuk TTS Tema (satu pertanyaan, banyak jawaban menyilang).
- * Format grup: { theme, words, clues }
- * - theme: nama tema (misal "Buah-buahan")
+ * Format grup: { theme, words }
+ * - theme: lanjutan kalimat "Sebutkan ..." (misal "Buah-buahan")
  * - words: array kata yang harus ditempatkan ke grid menyilang
- * - clues: { word: clueText } -- clue variatif per kata (supaya gak ngulang
- *          "Buah X" terus; bisa dari template, sinonim, atau pool acak).
+ * (Grup lama yang masih punya field `clues` tetap aman: field itu diabaikan.)
  *
  * Bank disimpan di banyak file kecil (bank-001.json, bank-002.json, dst,
  * maks MAX_GROUPS_PER_FILE grup per file) -- sama persis pola Family 100 &

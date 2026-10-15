@@ -15,17 +15,17 @@
 *{margin:0;padding:0;box-sizing:border-box}
 body{font-family:'Poppins',sans-serif;background:linear-gradient(160deg,#120d22,#1b1233);color:var(--text);overflow:hidden;height:100vh;height:100dvh}
 #app{height:100vh;height:100dvh;display:flex;flex-direction:column;gap:10px;padding:10px 12px calc(6px + env(safe-area-inset-bottom))}
-#themePanel{flex:none;display:grid;grid-template-columns:1fr auto auto;gap:8px 14px;align-items:center;background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:12px 14px;min-width:0}
-#themeLeft{display:flex;flex-direction:column;gap:4px;min-width:0}
+#themePanel{flex:none;display:grid;grid-template-columns:auto 1fr;gap:8px 14px;align-items:center;background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:12px 14px;min-width:0}
+#themeLeft{grid-column:1/-1;display:flex;flex-direction:column;gap:4px;min-width:0}
 #themeLabel{font-size:.66rem;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:1px}
-#themeText{font-size:1.05rem;font-weight:800;color:var(--gold);line-height:1.2;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+#themeText{font-size:clamp(1.25rem,6vw,2rem);font-weight:800;color:var(--gold);line-height:1.25;word-break:break-word;overflow-wrap:anywhere}
 #themeText.empty{color:var(--muted);font-weight:600}
 #progressBox{display:flex;align-items:center;gap:8px;padding:6px 12px;background:rgba(255,255,255,.04);border:1px solid var(--line);border-radius:999px;flex:none}
 #progressBox .num{font-size:1rem;font-weight:800;color:var(--ok)}
 #progressBox .of{font-size:.72rem;font-weight:600;color:var(--muted)}
 #progressBox.done{border-color:var(--ok);background:rgba(52,211,153,.12)}
 #progressBox.done .num{color:var(--ok)}
-#leaderboardBox{display:flex;align-items:center;gap:8px;flex:none;max-width:42vw;overflow:hidden}
+#leaderboardBox{display:flex;align-items:center;gap:8px;min-width:0;max-width:100%;overflow:hidden;justify-self:end}
 #lbRows{display:flex;gap:6px;min-width:0;overflow:hidden}
 .lb-pill{display:inline-flex;align-items:center;gap:6px;padding:4px 10px;background:rgba(255,255,255,.04);border:1px solid var(--line);border-radius:999px;font-size:.74rem;font-weight:700;white-space:nowrap;min-width:0}
 .lb-pill .lb-rank{color:var(--gold);font-size:.78rem}
@@ -34,17 +34,6 @@ body{font-family:'Poppins',sans-serif;background:linear-gradient(160deg,#120d22,
 .lb-pill:nth-child(1){border-color:rgba(245,184,74,.5);background:rgba(245,184,74,.12)}
 .lb-pill:nth-child(1) .lb-rank{color:var(--gold)}
 .lb-empty{color:var(--muted);font-size:.76rem;font-weight:600;font-style:italic}
-#cluePanel{flex:1;min-height:0;display:flex;flex-direction:column;gap:8px;background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:10px 12px;overflow:hidden}
-#clueList{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:6px;overflow-y:auto;align-content:start;padding-right:4px}
-.clue-slot{display:flex;align-items:flex-start;gap:8px;padding:8px 10px;background:var(--clue-bg);border:1px solid var(--line);border-radius:10px;font-size:.78rem;line-height:1.3;transition:all .25s}
-.clue-slot:hover{background:var(--clue-hover)}
-.clue-number{flex:none;width:22px;height:22px;display:flex;align-items:center;justify-content:center;border-radius:50%;background:var(--line);font-size:.7rem;font-weight:800;color:var(--muted)}
-.clue-text{flex:1;min-width:0;font-weight:600;color:var(--text);word-break:break-word}
-.clue-slot.found{background:rgba(52,211,153,.12);border-color:rgba(52,211,153,.55)}
-.clue-slot.found .clue-number{background:var(--ok);color:#062b1d}
-.clue-slot.found .clue-text{color:var(--muted);text-decoration:line-through}
-.clue-slot.reveal{animation:pop .35s ease-out}
-.clue-empty{padding:18px 8px;text-align:center;color:var(--muted);font-size:.85rem;grid-column:1/-1}
 @keyframes pop{0%{transform:scale(.85)}60%{transform:scale(1.08)}100%{transform:scale(1)}}
 #gridWrap{flex:1;min-height:0;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
 #grid{display:grid;gap:3px}
@@ -68,9 +57,8 @@ body{font-family:'Poppins',sans-serif;background:linear-gradient(160deg,#120d22,
 #voteHintInline .marquee-track{display:inline-block;padding-left:100%;animation:marqueeScroll 22s linear infinite}
 @keyframes marqueeScroll{to{transform:translateX(-100%)}}
 @media (orientation:landscape) and (min-aspect-ratio:1/1){
-#app{display:grid;grid-template-columns:minmax(230px,38%) 1fr;grid-template-rows:auto 1fr;grid-template-areas:"top grid" "clue grid";gap:10px 14px}
-#themePanel{grid-area:top}#gridWrap{grid-area:grid}#cluePanel{grid-area:clue}#avatarZone{grid-column:1/-1}
-#clueList{grid-template-columns:1fr}
+#app{display:grid;grid-template-columns:minmax(260px,38%) 1fr;grid-template-rows:1fr auto;grid-template-areas:"top grid" "avatars avatars";gap:10px 14px}
+#themePanel{grid-area:top;align-self:start}#gridWrap{grid-area:grid}#avatarZone{grid-area:avatars}
 }
 </style>
 </head>
@@ -78,7 +66,7 @@ body{font-family:'Poppins',sans-serif;background:linear-gradient(160deg,#120d22,
   <div id="app">
     <div id="themePanel">
       <div id="themeLeft">
-        <div id="themeLabel">TEMA RONDE INI</div>
+        <div id="themeLabel">PERTANYAAN</div>
         <div id="themeText" class="empty">Menunggu soal...</div>
       </div>
       <div id="progressBox">
@@ -88,9 +76,6 @@ body{font-family:'Poppins',sans-serif;background:linear-gradient(160deg,#120d22,
         <div id="lbRows"><div class="lb-empty">—</div></div>
       </div>
       <div id="voteHintInline"><div class="marquee-track">💬 Jawab di kolom komentar dengan kata yang sesuai tema &nbsp;•&nbsp; ketik <b>SKIP 10x</b> rame-rame kalo kesulitan &nbsp;•&nbsp; kalo kalian nggak bisa nerima kenyataan dari kekalahan, komen <b>NYERAH 10x</b> 🤣🤣🤣 niscaya aku kasih jawabannya</div></div>
-    </div>
-    <div id="cluePanel">
-      <div id="clueList"><div class="clue-empty">Belum ada soal</div></div>
     </div>
     <div id="gridWrap"><div id="grid"></div><div id="toast"></div></div>
     <div id="avatarZone"></div>
@@ -108,7 +93,6 @@ body{font-family:'Poppins',sans-serif;background:linear-gradient(160deg,#120d22,
     const themeTextEl = document.getElementById('themeText');
     const progressBoxEl = document.getElementById('progressBox');
     const lbRowsEl = document.getElementById('lbRows');
-    const clueListEl = document.getElementById('clueList');
     const gridEl = document.getElementById('grid');
     const gridWrap = document.getElementById('gridWrap');
     const toastEl = document.getElementById('toast');
@@ -117,42 +101,17 @@ body{font-family:'Poppins',sans-serif;background:linear-gradient(160deg,#120d22,
 
     let toastTimer = null;
     let lastGridData = null;
-    let lastCluesRender = null; // untuk deteksi reveal animation
     const prevAnswerStates = new Map(); // wordKey -> bool
 
     function escapeHtml(s) {
       return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
     }
 
-    // Render clue list di panel bawah tema. Untuk kata yang SUDAH dijawab,
-    // clue-nya tetep keliatan tapi di-strikethrough + warna muted.
-    function renderClues(words) {
-      if (!Array.isArray(words) || words.length === 0) {
-        clueListEl.innerHTML = '<div class="clue-empty">Belum ada soal</div>';
-        return;
-      }
-      // Sort by number
-      const sorted = [...words].sort((a, b) => (a.number || 0) - (b.number || 0));
-      const html = sorted.map(w => {
-        const isFound = !!w.answer;
-        const key = `${w.number}-${w.direction}`;
-        const isNewReveal = lastCluesRender && lastCluesRender.get(key) === false && isFound;
-        return `<div class="clue-slot ${isFound ? 'found' : ''} ${isNewReveal ? 'reveal' : ''}" data-key="${key}">
-          <span class="clue-number">${w.number}</span>
-          <span class="clue-text">${escapeHtml(w.clue || '?')}</span>
-        </div>`;
-      }).join('');
-      clueListEl.innerHTML = html;
-
-      // Update state map untuk next reveal detection
-      lastCluesRender = new Map(sorted.map(w => [w.number + '-' + w.direction, !!w.answer]));
-    }
-
     // Render tema + progress (counter)
     function renderHeader(data) {
       const theme = data.theme || '';
       if (theme) {
-        themeTextEl.textContent = 'Sebutkan: ' + theme;
+        themeTextEl.textContent = /^sebutkan/i.test(theme) ? theme : 'Sebutkan ' + theme.charAt(0).toLowerCase() + theme.slice(1);
         themeTextEl.classList.remove('empty');
       } else {
         themeTextEl.textContent = 'Menunggu soal...';
@@ -190,11 +149,18 @@ body{font-family:'Poppins',sans-serif;background:linear-gradient(160deg,#120d22,
     // overflow dan di desktop gak kekecilan.
     function renderGrid(data) {
       lastGridData = data;
-      const { rows, cols, words } = data || {};
+      let { rows, cols, words } = data || {};
       if (!rows || !cols || !words) { gridEl.innerHTML = ''; return; }
       const gap = 3;
       const availW = gridWrap.clientWidth, availH = gridWrap.clientHeight;
       if (!availW || !availH) return;
+      // Putar grid 90 derajat kalau itu bikin kotak lebih besar di layar ini
+      // (HP portrait + grid melebar ke samping = kotak kecil). Nomor tetap.
+      const fit = (r, c) => Math.min((availW - gap * (c - 1)) / c, (availH - gap * (r - 1)) / r);
+      if (fit(cols, rows) > fit(rows, cols) * 1.03) {
+        words = words.map(w => ({ ...w, row: w.col, col: w.row, direction: w.direction === 'down' ? 'across' : 'down' }));
+        [rows, cols] = [cols, rows];
+      }
       const cellSize = Math.max(10, Math.min(72, Math.floor(Math.min((availW - gap * (cols - 1)) / cols, (availH - gap * (rows - 1)) / rows))));
       const map = buildCellMap(rows, cols, words);
       gridEl.style.gridTemplateColumns = `repeat(${cols}, ${cellSize}px)`;
@@ -305,7 +271,6 @@ body{font-family:'Poppins',sans-serif;background:linear-gradient(160deg,#120d22,
     socket.on('game:switched', () => window.location.reload());
     socket.on('update', (data) => {
       renderHeader(data);
-      renderClues(data.words || []);
       renderGrid(data);
     });
     function renderLeaderboard(list) {
@@ -325,7 +290,7 @@ body{font-family:'Poppins',sans-serif;background:linear-gradient(160deg,#120d22,
     socket.on('answer:correct', (data) => showToast(data));
     socket.on('leaderboard:update', (list) => renderLeaderboard(list));
     socket.on('puzzle:completed', () => showBanner('🎉 Semua kata ketemu! Menyiapkan tema baru...'));
-    socket.on('puzzle:new', () => { prevAnswerStates.clear(); lastCluesRender = null; hideBanner(); });
+    socket.on('puzzle:new', () => { prevAnswerStates.clear(); hideBanner(); });
     socket.on('puzzle:error', (data) => { showBanner('⚠️ ' + data.message); setTimeout(hideBanner, 4000); });
 
     // -------- Wake lock / fullscreen (sama Sambung Kata) --------

@@ -1,7 +1,18 @@
 [
   {
     "theme": "Buah-buahan",
-    "words": ["MANGGA", "PIR", "JERUK", "APEL", "NANAS", "MELON", "ANGGUR", "SEMANGKA", "PISANG", "DURIAN"],
+    "words": [
+      "MANGGA",
+      "PIR",
+      "JERUK",
+      "APEL",
+      "NANAS",
+      "MELON",
+      "ANGGUR",
+      "SEMANGKA",
+      "PISANG",
+      "DURIAN"
+    ],
     "clues": {
       "MANGGA": "Sering diolah jadi rujak, berwarna hijau atau kuning",
       "PIR": "Bentuknya seperti lampu, hijau atau kuning",
@@ -17,7 +28,18 @@
   },
   {
     "theme": "Hewan peliharaan",
-    "words": ["KUCING", "ANJING", "IKAN", "BURUNG", "KELINCI", "HAMSTER", "AYAM", "KUDA", "SAPI", "KAMBING"],
+    "words": [
+      "KUCING",
+      "ANJING",
+      "IKAN",
+      "BURUNG",
+      "KELINCI",
+      "HAMSTER",
+      "AYAM",
+      "KUDA",
+      "SAPI",
+      "KAMBING"
+    ],
     "clues": {
       "KUCING": "Suka menangkap tikus, berkumis panjang",
       "ANJING": "Sangat setia, sering menjaga rumah",
@@ -33,7 +55,18 @@
   },
   {
     "theme": "Benda di dapur",
-    "words": ["PANCI", "PIRING", "GELAS", "SENDOK", "GARPU", "PISAU", "KOMPOR", "KULKAS", "WAJAN", "TALENAS"],
+    "words": [
+      "PANCI",
+      "PIRING",
+      "GELAS",
+      "SENDOK",
+      "GARPU",
+      "PISAU",
+      "KOMPOR",
+      "KULKAS",
+      "WAJAN",
+      "TALENAS"
+    ],
     "clues": {
       "PANCI": "Wadah masak bulat dengan pegangan di sisi",
       "PIRING": "Tatakan nasi sebelum disantap",
@@ -49,7 +82,18 @@
   },
   {
     "theme": "Profesi",
-    "words": ["DOKTER", "GURU", "POLISI", "TENTARA", "PILOT", "KOKI", "PENJAHIT", "TUKANG", "NELAYAN", "PETANI"],
+    "words": [
+      "DOKTER",
+      "GURU",
+      "POLISI",
+      "TENTARA",
+      "PILOT",
+      "KOKI",
+      "PENJAHIT",
+      "TUKANG",
+      "NELAYAN",
+      "PETANI"
+    ],
     "clues": {
       "DOKTER": "Memeriksa pasien dan memberi obat",
       "GURU": "Mengajar murid di sekolah setiap hari",
@@ -65,7 +109,18 @@
   },
   {
     "theme": "Benda di ruang tamu",
-    "words": ["SOFA", "MEJA", "KURSI", "LAMPU", "GORDEN", "KARPET", "JENDELA", "LEMARI", "JAM", "BINGKAI"],
+    "words": [
+      "SOFA",
+      "MEJA",
+      "KURSI",
+      "LAMPU",
+      "GORDEN",
+      "KARPET",
+      "JENDELA",
+      "LEMARI",
+      "JAM",
+      "BINGKAI"
+    ],
     "clues": {
       "SOFA": "Tempat duduk empuk dan panjang, untuk menerima tamu",
       "MEJA": "Benda datar berkaki untuk menaruh barang",
@@ -81,7 +136,18 @@
   },
   {
     "theme": "Makanan ringan",
-    "words": ["KERUPUK", "BAKWAN", "GORENGAN", "CIRENG", "TAHU", "TEMPE", "KACANG", "SEBLAK", "BASO", "RISOL"],
+    "words": [
+      "KERUPUK",
+      "BAKWAN",
+      "GORENGAN",
+      "CIRENG",
+      "TAHU",
+      "TEMPE",
+      "KACANG",
+      "SEBLAK",
+      "BASO",
+      "RISOL"
+    ],
     "clues": {
       "KERUPUK": "Renyah dari tepung, sering jadi pelengkap",
       "BAKWAN": "Gorengan isi sayur, sering di pasar",
@@ -97,7 +163,18 @@
   },
   {
     "theme": "Alat musik",
-    "words": ["GITAR", "PIANO", "DRUM", "BIOLA", "SERULING", "SAXOPHONE", "TRUMPET", "HARPA", "KENDANG", "REBAB"],
+    "words": [
+      "GITAR",
+      "PIANO",
+      "DRUM",
+      "BIOLA",
+      "SERULING",
+      "SAXOPHONE",
+      "TRUMPET",
+      "HARPA",
+      "KENDANG",
+      "REBAB"
+    ],
     "clues": {
       "GITAR": "Bersenar, dipetik untuk menghasilkan nada",
       "PIANO": "Berderetan tuts hitam putih, dimainkan dengan jari",
@@ -113,7 +190,18 @@
   },
   {
     "theme": "Kendaraan",
-    "words": ["MOBIL", "MOTOR", "SEPEDA", "BUS", "TRUK", "KERETA", "KAPAL", "PESAWAT", "HELIKOPTER", "BECAK"],
+    "words": [
+      "MOBIL",
+      "MOTOR",
+      "SEPEDA",
+      "BUS",
+      "TRUK",
+      "KERETA",
+      "KAPAL",
+      "PESAWAT",
+      "HELIKOPTER",
+      "BECAK"
+    ],
     "clues": {
       "MOBIL": "Beroda empat, bermesin, jalan di aspal",
       "MOTOR": "Beroda dua, bermesin, lincah di jalan",
@@ -129,7 +217,18 @@
   },
   {
     "theme": "Bagian tubuh",
-    "words": ["TANGAN", "KAKI", "MATA", "HIDUNG", "TELINGA", "MULUT", "RAMBUT", "JARI", "KULIT", "GIGI"],
+    "words": [
+      "TANGAN",
+      "KAKI",
+      "MATA",
+      "HIDUNG",
+      "TELINGA",
+      "MULUT",
+      "RAMBUT",
+      "JARI",
+      "KULIT",
+      "GIGI"
+    ],
     "clues": {
       "TANGAN": "Ada lima jari di ujungnya, untuk memegang",
       "KAKI": "Untuk berjalan dan berlari, ada telapak di bawah",
@@ -145,7 +244,18 @@
   },
   {
     "theme": "Benda di sekolah",
-    "words": ["BUKU", "PENSIL", "PULPEN", "PENGHAPUS", "RAUTAN", "TAS", "KURSI", "PAPAN", "PETA", "PENGGARIS"],
+    "words": [
+      "BUKU",
+      "PENSIL",
+      "PULPEN",
+      "PENGHAPUS",
+      "RAUTAN",
+      "TAS",
+      "KURSI",
+      "PAPAN",
+      "PETA",
+      "PENGGARIS"
+    ],
     "clues": {
       "BUKU": "Tempat menulis dan membaca, penuh halaman",
       "PENSIL": "Berisi grafit, tulisannya bisa dihapus",
@@ -161,7 +271,18 @@
   },
   {
     "theme": "Cuaca dan alam",
-    "words": ["HUJAN", "PANAS", "DINGIN", "ANGIN", "PETIR", "GELAP", "TERANG", "AWAN", "MATAHARI", "BULAN"],
+    "words": [
+      "HUJAN",
+      "PANAS",
+      "DINGIN",
+      "ANGIN",
+      "PETIR",
+      "GELAP",
+      "TERANG",
+      "AWAN",
+      "MATAHARI",
+      "BULAN"
+    ],
     "clues": {
       "HUJAN": "Air yang turun dari langit, membuat basah",
       "PANAS": "Suhu udara sangat tinggi, bikin gerah",
@@ -177,7 +298,18 @@
   },
   {
     "theme": "Pekerjaan rumah",
-    "words": ["MENYAPU", "MENCUCI", "MENGGOSOK", "MEMASAK", "MENYETRIKA", "MENABUR", "MENGEPEL", "MENGGALI", "MEMINDAH", "MERAPIKAN"],
+    "words": [
+      "MENYAPU",
+      "MENCUCI",
+      "MENGGOSOK",
+      "MEMASAK",
+      "MENYETRIKA",
+      "MENABUR",
+      "MENGEPEL",
+      "MENGGALI",
+      "MEMINDAH",
+      "MERAPIKAN"
+    ],
     "clues": {
       "MENYAPU": "Membersihkan lantai dengan sikat panjang",
       "MENCUCI": "Membersihkan pakaian dengan air dan sabun",
@@ -193,7 +325,18 @@
   },
   {
     "theme": "Aktivitas sehari-hari",
-    "words": ["MAKAN", "TIDUR", "MANDI", "OLAHRAGA", "BELAJAR", "MEMBACA", "MENULIS", "BERJALAN", "BERLARI", "BERMAIN"],
+    "words": [
+      "MAKAN",
+      "TIDUR",
+      "MANDI",
+      "OLAHRAGA",
+      "BELAJAR",
+      "MEMBACA",
+      "MENULIS",
+      "BERJALAN",
+      "BERLARI",
+      "BERMAIN"
+    ],
     "clues": {
       "MAKAN": "Mengunyah dan menelan makanan",
       "TIDUR": "Berbaring memejamkan mata di malam hari",
@@ -209,7 +352,18 @@
   },
   {
     "theme": "Sifat dan karakter",
-    "words": ["BAIK", "JAHAT", "CERDAS", "MALAS", "RAJIN", "PEMARAH", "SABAR", "SOMBONG", "RAMAH", "DERMAWAN"],
+    "words": [
+      "BAIK",
+      "JAHAT",
+      "CERDAS",
+      "MALAS",
+      "RAJIN",
+      "PEMARAH",
+      "SABAR",
+      "SOMBONG",
+      "RAMAH",
+      "DERMAWAN"
+    ],
     "clues": {
       "BAIK": "Selalu berbuat positif, suka menolong",
       "JAHAT": "Suka menyakiti, berperilaku negatif",
@@ -225,7 +379,18 @@
   },
   {
     "theme": "Emosi dan perasaan",
-    "words": ["SENANG", "SEDIH", "MARAH", "TAKUT", "CINTA", "BENCI", "JIJIK", "KAGET", "MALU", "BANGGA"],
+    "words": [
+      "SENANG",
+      "SEDIH",
+      "MARAH",
+      "TAKUT",
+      "CINTA",
+      "BENCI",
+      "JIJIK",
+      "KAGET",
+      "MALU",
+      "BANGGA"
+    ],
     "clues": {
       "SENANG": "Perasaan suka, ingin terus melakukannya",
       "SEDIH": "Perasaan pilu, ingin menangis",
@@ -241,7 +406,18 @@
   },
   {
     "theme": "Rumah dan bagiannya",
-    "words": ["ATAP", "PINTU", "LANTAI", "DINDING", "KAMAR", "DAPUR", "GARASI", "TERAS", "TAMAN", "PAGAR"],
+    "words": [
+      "ATAP",
+      "PINTU",
+      "LANTAI",
+      "DINDING",
+      "KAMAR",
+      "DAPUR",
+      "GARASI",
+      "TERAS",
+      "TAMAN",
+      "PAGAR"
+    ],
     "clues": {
       "ATAP": "Bagian paling atas rumah, melindungi dari hujan",
       "PINTU": "Untuk keluar masuk ruangan, ada gagangnya",
@@ -257,7 +433,18 @@
   },
   {
     "theme": "Peralatan makan",
-    "words": ["SENDOK", "GARPU", "PISAU", "PANCI", "WAJAN", "PIRING", "GELAS", "KOMPOR", "SERBET", "KUKUSAN"],
+    "words": [
+      "SENDOK",
+      "GARPU",
+      "PISAU",
+      "PANCI",
+      "WAJAN",
+      "PIRING",
+      "GELAS",
+      "KOMPOR",
+      "SERBET",
+      "KUKUSAN"
+    ],
     "clues": {
       "SENDOK": "Sendok ini untuk menyendok sup hangat",
       "GARPU": "Berkepala tangkai, untuk menyantap mi",
@@ -270,5 +457,570 @@
       "SERBET": "Kain kecil untuk mengelap tangan",
       "KUKUSAN": "Tingkat di atas panci, untuk mengukus"
     }
+  },
+  {
+    "theme": "Warna",
+    "words": [
+      "MERAH",
+      "BIRU",
+      "KUNING",
+      "UNGU",
+      "HITAM",
+      "PUTIH",
+      "COKLAT",
+      "ABU"
+    ]
+  },
+  {
+    "theme": "Sayur-sayuran",
+    "words": [
+      "BAYAM",
+      "KANGKUNG",
+      "WORTEL",
+      "BROKOLI",
+      "TOMAT",
+      "TIMUN",
+      "TERONG",
+      "BUNCIS",
+      "SAWI",
+      "KUBIS"
+    ]
+  },
+  {
+    "theme": "Hewan di kebun binatang",
+    "words": [
+      "SINGA",
+      "HARIMAU",
+      "GAJAH",
+      "JERAPAH",
+      "ZEBRA",
+      "BERUANG",
+      "MONYET",
+      "BADAK",
+      "UNTA",
+      "KANGURU"
+    ]
+  },
+  {
+    "theme": "Hewan di laut",
+    "words": [
+      "PAUS",
+      "HIU",
+      "GURITA",
+      "KEPITING",
+      "PENYU",
+      "UDANG",
+      "CUMI",
+      "TIRAM",
+      "KERANG",
+      "LUMBA"
+    ]
+  },
+  {
+    "theme": "Hewan berkaki empat",
+    "words": [
+      "KUCING",
+      "ANJING",
+      "SAPI",
+      "KAMBING",
+      "KUDA",
+      "KERBAU",
+      "DOMBA",
+      "SINGA",
+      "HARIMAU",
+      "BABI"
+    ]
+  },
+  {
+    "theme": "Jenis burung",
+    "words": [
+      "ELANG",
+      "MERPATI",
+      "GAGAK",
+      "BEBEK",
+      "ANGSA",
+      "KAKATUA",
+      "NURI",
+      "PIPIT",
+      "MERAK",
+      "KUTILANG"
+    ]
+  },
+  {
+    "theme": "Serangga",
+    "words": [
+      "LALAT",
+      "NYAMUK",
+      "SEMUT",
+      "LEBAH",
+      "KUMBANG",
+      "KECOA",
+      "BELALANG",
+      "JANGKRIK",
+      "CAPUNG",
+      "KUPU"
+    ]
+  },
+  {
+    "theme": "Makanan khas Indonesia",
+    "words": [
+      "RENDANG",
+      "SATE",
+      "SOTO",
+      "BAKSO",
+      "RAWON",
+      "TEMPE",
+      "SERABI"
+    ]
+  },
+  {
+    "theme": "Perabot rumah",
+    "words": [
+      "KURSI",
+      "MEJA",
+      "LEMARI",
+      "KASUR",
+      "SOFA",
+      "RAK",
+      "LAMPU",
+      "KIPAS",
+      "KARPET",
+      "BANTAL"
+    ]
+  },
+  {
+    "theme": "Nama bulan",
+    "words": [
+      "JANUARI",
+      "FEBRUARI",
+      "MARET",
+      "APRIL",
+      "JUNI",
+      "JULI",
+      "AGUSTUS",
+      "SEPTEMBER",
+      "OKTOBER",
+      "DESEMBER"
+    ]
+  },
+  {
+    "theme": "Nama hari dalam seminggu",
+    "words": [
+      "SENIN",
+      "SELASA",
+      "RABU",
+      "KAMIS",
+      "JUMAT",
+      "SABTU",
+      "MINGGU"
+    ]
+  },
+  {
+    "theme": "Kota di Indonesia",
+    "words": [
+      "JAKARTA",
+      "BANDUNG",
+      "SURABAYA",
+      "MEDAN",
+      "SEMARANG",
+      "MALANG",
+      "BOGOR",
+      "MAKASSAR",
+      "PALEMBANG",
+      "MANADO"
+    ]
+  },
+  {
+    "theme": "Pulau di Indonesia",
+    "words": [
+      "JAWA",
+      "SUMATERA",
+      "BALI",
+      "SULAWESI",
+      "LOMBOK",
+      "PAPUA",
+      "BORNEO",
+      "MADURA",
+      "SUMBA",
+      "FLORES"
+    ]
+  },
+  {
+    "theme": "Cabang olahraga",
+    "words": [
+      "SEPAKBOLA",
+      "BASKET",
+      "VOLI",
+      "BADMINTON",
+      "RENANG",
+      "TENIS",
+      "SILAT",
+      "KARATE",
+      "CATUR",
+      "TINJU"
+    ]
+  },
+  {
+    "theme": "Pakaian",
+    "words": [
+      "BAJU",
+      "CELANA",
+      "ROK",
+      "KAOS",
+      "JAKET",
+      "SEPATU",
+      "KEMEJA",
+      "TOPI",
+      "SARUNG",
+      "SWEATER"
+    ]
+  },
+  {
+    "theme": "Peralatan mandi",
+    "words": [
+      "SABUN",
+      "SIKAT",
+      "SAMPO",
+      "HANDUK",
+      "GAYUNG",
+      "SISIR",
+      "CERMIN",
+      "SHOWER"
+    ]
+  },
+  {
+    "theme": "Rempah dan bumbu",
+    "words": [
+      "JAHE",
+      "KUNYIT",
+      "LENGKUAS",
+      "KENCUR",
+      "SEREH",
+      "CENGKEH",
+      "LADA",
+      "PALA",
+      "KEMIRI",
+      "BAWANG"
+    ]
+  },
+  {
+    "theme": "Jenis ikan",
+    "words": [
+      "LELE",
+      "NILA",
+      "GURAME",
+      "BANDENG",
+      "TUNA",
+      "KAKAP",
+      "SALMON",
+      "TONGKOL",
+      "PATIN",
+      "TENGGIRI"
+    ]
+  },
+  {
+    "theme": "Jenis bunga",
+    "words": [
+      "MAWAR",
+      "MELATI",
+      "ANGGREK",
+      "TULIP",
+      "KAMBOJA",
+      "TERATAI",
+      "MATAHARI",
+      "SEROJA"
+    ]
+  },
+  {
+    "theme": "Planet di tata surya",
+    "words": [
+      "MERKURIUS",
+      "VENUS",
+      "BUMI",
+      "MARS",
+      "JUPITER",
+      "SATURNUS",
+      "URANUS",
+      "NEPTUNUS"
+    ]
+  },
+  {
+    "theme": "Anggota keluarga",
+    "words": [
+      "AYAH",
+      "IBU",
+      "KAKAK",
+      "ADIK",
+      "NENEK",
+      "KAKEK",
+      "PAMAN",
+      "SEPUPU"
+    ]
+  },
+  {
+    "theme": "Perkakas tukang",
+    "words": [
+      "PALU",
+      "OBENG",
+      "GERGAJI",
+      "TANG",
+      "PAKU",
+      "CANGKUL",
+      "SEKOP",
+      "KAPAK"
+    ]
+  },
+  {
+    "theme": "Benda di langit",
+    "words": [
+      "BULAN",
+      "BINTANG",
+      "MATAHARI",
+      "AWAN",
+      "PELANGI",
+      "KOMET",
+      "PETIR",
+      "LAYANGAN",
+      "BALON"
+    ]
+  },
+  {
+    "theme": "Barang elektronik",
+    "words": [
+      "TELEVISI",
+      "RADIO",
+      "KULKAS",
+      "KIPAS",
+      "SETRIKA",
+      "LAPTOP",
+      "KOMPUTER",
+      "PONSEL",
+      "BLENDER",
+      "KAMERA"
+    ]
+  },
+  {
+    "theme": "Tempat umum",
+    "words": [
+      "PASAR",
+      "SEKOLAH",
+      "MASJID",
+      "GEREJA",
+      "STASIUN",
+      "BANDARA",
+      "TAMAN",
+      "KANTOR",
+      "TERMINAL",
+      "BANK"
+    ]
+  },
+  {
+    "theme": "Rasa makanan",
+    "words": [
+      "MANIS",
+      "ASIN",
+      "PAHIT",
+      "ASAM",
+      "PEDAS",
+      "GURIH",
+      "SEPAT",
+      "HAMBAR"
+    ]
+  },
+  {
+    "theme": "Hewan yang bertelur",
+    "words": [
+      "AYAM",
+      "BEBEK",
+      "BURUNG",
+      "ULAR",
+      "PENYU",
+      "BUAYA",
+      "KADAL",
+      "KATAK",
+      "ANGSA",
+      "IKAN"
+    ]
+  },
+  {
+    "theme": "Hewan yang bisa terbang",
+    "words": [
+      "ELANG",
+      "LEBAH",
+      "KELELAWAR",
+      "CAPUNG",
+      "KUPU",
+      "LALAT",
+      "NYAMUK",
+      "MERPATI",
+      "GAGAK",
+      "BURUNG"
+    ]
+  },
+  {
+    "theme": "Buah berwarna merah",
+    "words": [
+      "STROBERI",
+      "APEL",
+      "SEMANGKA",
+      "CERI",
+      "DELIMA",
+      "TOMAT",
+      "RAMBUTAN",
+      "JAMBU"
+    ]
+  },
+  {
+    "theme": "Benda di kamar tidur",
+    "words": [
+      "KASUR",
+      "BANTAL",
+      "GULING",
+      "SELIMUT",
+      "LEMARI",
+      "LAMPU",
+      "CERMIN",
+      "SPREI"
+    ]
+  },
+  {
+    "theme": "Gunung di Indonesia",
+    "words": [
+      "MERAPI",
+      "BROMO",
+      "SEMERU",
+      "RINJANI",
+      "KRAKATAU",
+      "TAMBORA",
+      "SINABUNG",
+      "KERINCI",
+      "SLAMET",
+      "MERBABU"
+    ]
+  },
+  {
+    "theme": "Negara di Asia Tenggara",
+    "words": [
+      "INDONESIA",
+      "MALAYSIA",
+      "SINGAPURA",
+      "THAILAND",
+      "VIETNAM",
+      "FILIPINA",
+      "LAOS",
+      "KAMBOJA",
+      "MYANMAR",
+      "BRUNEI"
+    ]
+  },
+  {
+    "theme": "Permainan tradisional",
+    "words": [
+      "ENGKLEK",
+      "KELERENG",
+      "GASING",
+      "LAYANGAN",
+      "CONGKLAK",
+      "BENTENGAN"
+    ]
+  },
+  {
+    "theme": "Kendaraan air",
+    "words": [
+      "KAPAL",
+      "PERAHU",
+      "SAMPAN",
+      "RAKIT",
+      "KANO",
+      "JUKUNG"
+    ]
+  },
+  {
+    "theme": "Bumbu dapur",
+    "words": [
+      "GARAM",
+      "GULA",
+      "MERICA",
+      "KECAP",
+      "SAMBAL",
+      "SAUS",
+      "CUKA",
+      "MINYAK",
+      "TERASI",
+      "SANTAN"
+    ]
+  },
+  {
+    "theme": "Hewan pemakan rumput",
+    "words": [
+      "SAPI",
+      "KAMBING",
+      "KUDA",
+      "KERBAU",
+      "DOMBA",
+      "JERAPAH",
+      "GAJAH",
+      "KELINCI",
+      "ZEBRA",
+      "UNTA"
+    ]
+  },
+  {
+    "theme": "Hewan buas",
+    "words": [
+      "SINGA",
+      "HARIMAU",
+      "BUAYA",
+      "SERIGALA",
+      "BERUANG",
+      "HIU",
+      "ULAR",
+      "MACAN",
+      "LEOPARD",
+      "KOMODO"
+    ]
+  },
+  {
+    "theme": "Makanan berkuah",
+    "words": [
+      "SOTO",
+      "RAWON",
+      "SOP",
+      "SAYUR",
+      "SEMUR",
+      "OPOR",
+      "RAMEN",
+      "CAPCAY"
+    ]
+  },
+  {
+    "theme": "Bahan makanan pokok",
+    "words": [
+      "NASI",
+      "JAGUNG",
+      "SINGKONG",
+      "KENTANG",
+      "GANDUM",
+      "SAGU",
+      "ROTI",
+      "MIE",
+      "UBI",
+      "TALAS"
+    ]
+  },
+  {
+    "theme": "Makhluk di hutan",
+    "words": [
+      "HARIMAU",
+      "GAJAH",
+      "MONYET",
+      "ULAR",
+      "BURUNG",
+      "RUSA",
+      "BABI",
+      "KANCIL",
+      "BERUANG",
+      "TUPAI"
+    ]
   }
 ]

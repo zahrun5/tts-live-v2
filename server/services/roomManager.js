@@ -1,6 +1,7 @@
 // services/roomManager.js
 // Nyimpen satu Room per user. Room dibuat malas (lazy) saat pertama dibutuhkan
 // (overlay dibuka, dashboard dibuka, atau connect ke TikTok).
+const fs = require('fs');
 const path = require('path');
 const { Room } = require('./room');
 const { DATA_DIR, USERNAME_RE } = require('../config');
@@ -48,3 +49,28 @@ exports.getRoom = async (username) => {
 };
 
 exports.peekRoom = (username) => rooms.get(username) || null;
+
+// Dipanggil sekali saat server naik. Room dibuat malas (lazy), jadi setelah restart
+// nggak ada Room sampai overlay/dashboard dibuka. Di sini kita cari room yang
+// terakhir punya target live (room-state.json -> liveTarget) dan bangunkan sekarang;
+// Room.start() sendiri yang memicu auto-reconnect TikTok.
+exports.restoreLiveRooms = async () => {
+  if (!ctx) return;
+  const roomsDir = path.join(ctx.dataDir, 'rooms');
+  let names = [];
+  try { names = fs.readdirSync(roomsDir); } catch (e) { return; }
+  let found = 0;
+  for (const name of names) {
+    if (!USERNAME_RE.test(name)) continue;
+    try {
+      const state = JSON.parse(fs.readFileSync(path.join(roomsDir, name, 'room-state.json'), 'utf8'));
+      if (!state.liveTarget) continue;
+      found++;
+      console.log(`[Room] ${name} punya target live @${state.liveTarget}, bangunkan room untuk auto-reconnect`);
+      await exports.getRoom(name);
+    } catch (e) {
+      if (e.code !== 'ENOENT') console.error(`[Room] restoreLiveRooms ${name} gagal:`, e.message);
+    }
+  }
+  if (!found) console.log(`[Room] restoreLiveRooms: ${names.length} room diperiksa, tidak ada yang punya target live (belum pernah Sambungkan sejak update?)`);
+};

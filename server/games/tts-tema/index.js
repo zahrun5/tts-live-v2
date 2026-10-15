@@ -1,15 +1,15 @@
 /**
  * TTS Tema - main module
  *
- * Game: "TTS Family 100" -- satu tema / satu pertanyaan, tapi jawabannya
- * bisa banyak kata yang saling menyilang di grid TTS.
+ * Game: "TTS Family 100" -- SATU pertanyaan per ronde (mis. "Sebutkan nama
+ * buah-buahan"), jawabannya banyak kata yang saling menyilang di grid TTS.
+ * Tidak ada clue per kata; kata apa pun yang cocok dengan pertanyaan boleh dijawab.
  *
  * Pool kata: gabungan dari fallback-themes.json (bank statis yang sudah
  * disiapkan) + hasil AI worker (bank-*.json) + KBBI + pool Cari Kata /
  * Family 100 (di-extract kemudian).
  *
  * Aturan penting (Mamang):
- *  - clue variatif per kata, gak boleh ngulang kategori/frasa prefix
  *  - CSS mirip dengan Sambung Kata (bukan TTS yang sekarang, supaya gak
  *    keluar layar di HP)
  *  - Grid gak boleh dempetan / ujung nyentuh ujung kata lain (sudah
@@ -60,7 +60,6 @@ function buildStatePayload() {
       row: w.row,
       col: w.col,
       length: w.answer.length,
-      clue: w.clue, // clue SELALU dikirim (biar frontend bisa display clue box)
       answer: state[wordKey(w)] ? w.answer : null,
       found: !!state[wordKey(w)]
     })),
@@ -111,8 +110,7 @@ function handleAnswer({ answer }) {
     meta: {
       number: match.number,
       answer: match.answer,
-      direction: match.direction,
-      clue: match.clue
+      direction: match.direction
     }
   };
 }
@@ -196,8 +194,8 @@ function getAdminAnswers() {
   return {
     title: `TTS Tema: ${puzzle.theme}`,
     items: puzzle.words.map(w => ({
-      label: `${w.number} ${w.direction === 'across' ? 'Mendatar' : 'Menurun'}`,
-      hint: w.clue,
+      label: `Kata ${w.number}`,
+      hint: `${w.answer.length} huruf`,
       answer: w.answer,
       solved: !!state[wordKey(w)]
     }))

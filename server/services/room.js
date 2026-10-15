@@ -106,6 +106,10 @@ class Room {
     this.unlockedLevels = { 2: false, 3: false };
     this.sessionAvatars = {};
     this.liveStatus = { active: false, username: null, error: null, updatedAt: null };
+    // Akun TikTok yang HARUSNYA tersambung. Beda dari liveStatus (kondisi saat ini):
+    // liveTarget cuma dikosongkan kalau user menekan Putuskan / live-nya memang selesai,
+    // jadi tetap tersimpan di room-state.json walau server restart atau koneksi putus.
+    this.liveTarget = null;
     this.isGeneratingNext = false;
     this.summaryActive = false;
     this.roundStats = { scores: {}, answers: [] };
@@ -128,6 +132,7 @@ class Room {
     const allIds = Object.keys(this.games);
 
     const saved = this.loadSaved();
+    this.liveTarget = saved.liveTarget || saved.liveUsername || null;
     this.leaderboard = saved.leaderboard || {};
     this.initialized = new Set(saved.initialized || []);
 
@@ -162,27 +167,31 @@ class Room {
     });
     this.saveState();
 
-    // Auto-reconnect TikTok Live: kalau room-state.json nyimpen username target
-    // dan streamer memang sedang live, langsung konek lagi tanpa user harus
-    // klik tombol "Sambungkan" di dashboard. Kalau connect gagal (misal target
-    // sudah offline / ganti akun), log aja -- user bisa manual retry nanti.
-    // Pakai lazy require karena tiktokManager -> roomManager -> room (circular).
-    const stateForReconnect = this.loadSaved();
-    if (stateForReconnect && stateForReconnect.liveUsername) {
-      setImmediate(() => this.autoReconnectTikTok(stateForReconnect.liveUsername));
+    // Auto-reconnect TikTok Live setelah server restart. Target dibaca dari
+    // this.liveTarget (di-load di atas, SEBELUM saveState() pertama), jadi nggak
+    // ketimpa null lagi. Retry-nya sabar (lihat tiktokManager.restoreLive) karena
+    // setelah restart jaringan / TikTok kadang belum siap di percobaan pertama.
+    if (this.liveTarget) {
+      const target = this.liveTarget;
+      setImmediate(() => this.autoReconnectTikTok(target));
     }
+  }
+
+  // Dipanggil tiktokManager: set/hapus target koneksi dan simpan ke disk.
+  setLiveTarget(tiktokUsername) {
+    const next = tiktokUsername || null;
+    if (this.liveTarget === next) return;
+    this.liveTarget = next;
+    this.saveState();
   }
 
   async autoReconnectTikTok(tiktokUsername) {
     try {
       const tiktokManager = require('./tiktokManager');
       console.log(`[Room ${this.username}] auto-reconnect ke TikTok @${tiktokUsername}...`);
-      await tiktokManager.startLive(this.username, tiktokUsername);
-      console.log(`[Room ${this.username}] ✓ auto-reconnect TikTok sukses`);
+      await tiktokManager.restoreLive(this.username, tiktokUsername);
     } catch (err) {
-      console.log(`[Room ${this.username}] ⚠️ auto-reconnect TikTok gagal: ${err.message}`);
-      // Jangan setLiveStatus(false) di sini -- startLive() sudah handle itu
-      // kalau connect gagal. Yang penting: room tetap jalan, user bisa manual retry.
+      console.log(`[Room ${this.username}] ⚠️ auto-reconnect TikTok error: ${err.message}`);
     }
   }
 
@@ -251,12 +260,9 @@ class Room {
         pool: this.pool,
         leaderboard: this.leaderboard,
         initialized: [...this.initialized],
-        // Simpan status live biar server bisa auto-reconnect setelah restart.
-        // Username disimpan kalau pernah connect supaya bisa coba lagi, tapi
-        // active flag default false (kita tidak bisa tau apakah user beneran
-        // masih live setelah server mati -- flag active akan di-set ulang ke
-        // true setelah startLive() berhasil).
-        liveUsername: this.liveStatus?.username || null
+        // Target live yang harus disambung ulang setelah restart (bukan status
+        // sesaat -- lihat komentar liveTarget di constructor).
+        liveTarget: this.liveTarget
       }, null, 2), 'utf8');
     } catch (e) {
       console.error(`[Room ${this.username}] gagal simpan room-state.json:`, e.message);

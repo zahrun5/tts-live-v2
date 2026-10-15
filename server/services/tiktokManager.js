@@ -7,7 +7,8 @@ const giftTrigger = require('./giftTrigger');
 const { cleanPlayerName, cleanProfileUrl } = require('./sanitize');
 
 const sessions = new Map(); // username -> { conn, tiktokUsername, intentional, retries, timer }
-const MAX_RETRIES = 5;
+const MAX_RETRIES = 10; // reconnect saat koneksi putus di tengah live (delay naik sampai maks 60 dtk)
+const restoring = new Map(); // username -> token (cegah dua loop restore jalan bareng)
 
 function extractPlayerInfo(data) {
   const name = (data.user && (data.user.nickname || data.user.uniqueId))
@@ -90,7 +91,7 @@ function attachHandlers(username, room, session) {
     if (sessions.get(username) !== session) return; // sesi lama, abaikan
     room.setLiveStatus(false, session.tiktokUsername);
     if (session.intentional) return;
-    if (reason === 'stream_end') { sessions.delete(username); return; }
+    if (reason === 'stream_end') { sessions.delete(username); room.setLiveTarget(null); return; }
     scheduleReconnect(username, room, session);
   };
   conn.on(ControlEvent.DISCONNECTED, () => onDown('disconnected'));
@@ -124,10 +125,23 @@ function scheduleReconnect(username, room, session) {
   if (session.timer.unref) session.timer.unref();
 }
 
+// Bongkar sesi tanpa menyentuh liveTarget (dipakai startLive & stopLive).
+function teardown(username) {
+  const session = sessions.get(username);
+  if (!session) return null;
+  session.intentional = true;
+  if (session.timer) clearTimeout(session.timer);
+  try { session.conn.disconnect(); } catch (e) {}
+  sessions.delete(username);
+  return session;
+}
+
 exports.startLive = async (username, tiktokUsername) => {
   const room = await roomManager.getRoom(username);
   if (!room) throw new Error('User tidak ditemukan');
-  exports.stopLive(username);
+  restoring.delete(username); // koneksi manual membatalkan loop restore yang sedang jalan
+  const old = teardown(username);
+  if (old) room.setLiveStatus(false, old.tiktokUsername);
 
   const session = { conn: buildConnection(tiktokUsername), tiktokUsername, intentional: false, retries: 0, timer: null };
   attachHandlers(username, room, session);
@@ -144,20 +158,62 @@ exports.startLive = async (username, tiktokUsername) => {
   }
 
   sessions.set(username, session);
+  room.setLiveTarget(tiktokUsername); // simpan ke disk: server restart pun akan sambung lagi
   room.setLiveStatus(true, tiktokUsername);
   console.log(`[TikTok] ${username} terhubung ke live @${tiktokUsername}`);
   return true;
 };
 
+// Dipanggil Room saat start (setelah server restart). Mencoba menyambung ulang ke
+// target yang tersimpan, dengan retry sabar: 5s, 10s, 20s, 30s, lalu tiap 30s
+// sampai ~15 menit. Berhenti kalau user menyambung manual / menekan Putuskan.
+const RESTORE_DELAYS = [5000, 10000, 20000, 30000];
+const RESTORE_MAX_MS = 15 * 60 * 1000;
+
+exports.restoreLive = async (username, tiktokUsername) => {
+  if (sessions.has(username) || restoring.has(username)) return false;
+  const room = roomManager.peekRoom(username) || await roomManager.getRoom(username);
+  if (!room) return false;
+  const token = {};
+  restoring.set(username, token);
+  const startedAt = Date.now();
+  let attempt = 0;
+
+  const stillWanted = () =>
+    restoring.get(username) === token && room.liveTarget === tiktokUsername && !sessions.has(username);
+
+  while (stillWanted() && Date.now() - startedAt < RESTORE_MAX_MS) {
+    try {
+      await exports.startLive(username, tiktokUsername);
+      console.log(`[TikTok] ${username} auto-reconnect sukses ke @${tiktokUsername} (percobaan ${attempt + 1})`);
+      return true;
+    } catch (err) {
+      console.log(`[TikTok] ${username} auto-reconnect #${attempt + 1} gagal: ${String(err.message).slice(0, 100)}`);
+    }
+    // startLive() menghapus token restore -> pasang lagi supaya loop tetap sah
+    if (!sessions.has(username) && room.liveTarget === tiktokUsername) restoring.set(username, token);
+    else break;
+    const delay = RESTORE_DELAYS[Math.min(attempt, RESTORE_DELAYS.length - 1)];
+    attempt += 1;
+    await new Promise(r => setTimeout(r, delay));
+  }
+  if (restoring.get(username) === token) restoring.delete(username);
+  if (!sessions.has(username) && room.liveTarget === tiktokUsername) {
+    console.log(`[TikTok] ${username} menyerah auto-reconnect ke @${tiktokUsername}. Sambungkan manual dari dashboard.`);
+  }
+  return false;
+};
+
+// Dipanggil dari dashboard (tombol Putuskan): ini pilihan sengaja user,
+// jadi target dihapus dan server tidak akan menyambung ulang sendiri.
 exports.stopLive = (username) => {
-  const session = sessions.get(username);
-  if (!session) return;
-  session.intentional = true;
-  if (session.timer) clearTimeout(session.timer);
-  try { session.conn.disconnect(); } catch (e) {}
-  sessions.delete(username);
+  restoring.delete(username);
+  const session = teardown(username);
   const room = roomManager.peekRoom(username);
-  if (room) room.setLiveStatus(false, session.tiktokUsername);
+  if (room) {
+    room.setLiveTarget(null);
+    if (session) room.setLiveStatus(false, session.tiktokUsername);
+  }
 };
 
 exports.getStatus = (username) => sessions.has(username) && !sessions.get(username).intentional;

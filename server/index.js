@@ -48,7 +48,11 @@ roomManager.init({
 });
 
 mongoose.connect(config.MONGO_URI)
-  .then(() => console.log('[DB] MongoDB Terhubung!'))
+  .then(() => {
+    console.log('[DB] MongoDB Terhubung!');
+    // Setelah restart: bangunkan room yang tadinya sedang live supaya TikTok tersambung lagi.
+    roomManager.restoreLiveRooms().catch(err => console.error('[Room] restoreLiveRooms error:', err.message));
+  })
   .catch(err => {
     console.error('[DB] Gagal konek MongoDB, proses dihentikan agar PM2 restart:', err.message);
     process.exit(1);

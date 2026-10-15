@@ -1,17 +1,18 @@
 /**
  * AI Theme Generator - TTS Tema
  *
- * Minta AI kasih 1 tema + daftar kata + clue VARIATIF per kata. Penting:
- * clue untuk satu ronde HARUS variatif (gak boleh semua "Buah X", gak boleh
- * "ada di dapur X" doang), sesuai aturan Mamang.
+ * Format game: SATU pertanyaan per ronde (gaya Family 100), contoh
+ * "Sebutkan nama buah-buahan". Jawabannya banyak kata yang saling menyilang di
+ * grid. TIDAK ada clue per kata -- penonton cukup menebak kata apa pun yang
+ * cocok dengan pertanyaan itu.
  *
- * Output: { theme, words, clues: { word: [clue1, clue2, ...] } }
- * - words : array kata (4-10 kata, panjang 3-9 huruf)
- * - clues : minimal 2 variasi clue per kata dengan angle berbeda
+ * Output AI: { theme, words }
+ * - theme : lanjutan kalimat "Sebutkan ..." (mis. "nama buah-buahan")
+ * - words : array kata (4-8 kata, panjang 3-9 huruf)
  *
- * Output dilempar ke word-placement.js (re-use dari sambung-kata) buat
- * naro kata ke grid menyilang. Yang simpan ke puzzle.json cuma kata yang
- * BERHASIL ditempatkan, lengkap dengan clue hasil assignCluesForRound().
+ * Kata dilempar ke word-placement.js (re-use dari sambung-kata) buat ditaruh
+ * ke grid menyilang. Yang disimpan ke puzzle.json cuma kata yang BERHASIL
+ * ditempatkan.
  */
 
 const fs = require('fs');
@@ -21,13 +22,12 @@ const { normalizeGrid } = require('./grid-normalization');
 const { validateTTS } = require('./validator');
 const { callAI: requestAI } = require('../../ai-client');
 const { saveFallbackGroup, pickFallbackGroup } = require('./fallback-manager');
-const { assignCluesForRound, hasRepetitiveCategory } = require('./clue-variation');
 
 const PUZZLE_PATH = path.join(__dirname, 'puzzle.json');
 const USED_THEMES_FILE = path.join(__dirname, 'used-themes.json');
 
 const MAX_AI_ATTEMPTS = 3;
-const USED_HISTORY_LIMIT = 20;
+const USED_HISTORY_LIMIT = 40; // jangan ulang tema dalam 40 ronde terakhir (bank sudah cukup besar)
 const MIN_WORDS = 4;
 const MAX_WORDS = 8;
 const MIN_LEN = 3;
@@ -103,39 +103,30 @@ function buildPrompt(usedThemes = []) {
     ? `\n\nJANGAN pakai tema ini (udah pernah dipakai): ${usedThemes.join(', ')}`
     : '';
 
-  // Prompt eksplisit soal clue variation -- ini aturan Mamang.
-  return `Buat 1 tema SPESIFIK untuk game "TTS Tema" (semacam Family 100 versi TTS) bahasa Indonesia.
+  return `Buat 1 soal untuk game "TTS Tema" bahasa Indonesia. Formatnya seperti Family 100: SATU pertanyaan, jawabannya banyak kata.
 
 TEMA IDE:
 "${themeIdea}"
 
-SYARAT KATA:
-1. Kasih ${targetWords} kata bahasa Indonesia yang sesuai tema.
-2. Tiap kata cuma huruf A-Z (tanpa spasi, tanpa tanda hubung, tanpa angka).
-3. Panjang tiap kata ${MIN_LEN}-${MAX_LEN} huruf.
-4. Kata harus UMUM & dikenal anak SMP/SMA (bukan istilah teknis/jarang/bahasa daerah).
-5. Jangan ulangi kata.
-6. PENTING: kata-katanya harus BISA saling menyilang (minimal 2 huruf yang sama). Kalau semua kata gak ada huruf yang sama, game-nya gak bisa dibikin.
+CONTOH SOAL YANG BENAR:
+Pertanyaan: "Sebutkan nama buah-buahan" -> jawaban: MANGGA, JERUK, APEL, NANAS, PISANG
+Pertanyaan: "Sebutkan hewan peliharaan" -> jawaban: KUCING, ANJING, IKAN, BURUNG
 
-SYARAT CLUE (INI PENTING):
-1. Setiap kata HARUS punya MINIMAL 2 clue dengan sudut pandang BERBEDA.
-2. CONTOH clue untuk kata "MANGGA":
-   - Sudut definisi: "Buah yang sering jadi rujak"
-   - Sudut sifat: "Warnanya hijau atau kuning, bijinya berserat"
-   - Sudut kegunaan: "Bisa diolah jadi jus atau manisan"
-   - Sudut perumpamaan: "Manis asam menyegarkan"
-3. JANGAN buat clue yang dimulai dengan kata/frasa yang sama. Misal semua clue gak boleh mulai "Buah yang..." atau "Hewan yang...". Variasi-in!
-4. JANGAN sebut kategori besar secara eksplisit di clue (misal jangan "Buah..." kalau tema bisa ditebak dari clue). Pakai sifat/ciri/lokasi kegunaan.
-5. Panjang clue MAKSIMAL 12 kata.${excludeList}
+SYARAT:
+1. Tulis "theme" = lanjutan kalimat "Sebutkan ..." tanpa kata "Sebutkan" (contoh: "nama buah-buahan", "hewan peliharaan", "alat dapur"). Maksimal 6 kata.
+2. Kasih ${targetWords} kata jawaban bahasa Indonesia yang cocok dengan pertanyaan itu.
+3. Tiap kata cuma huruf A-Z (tanpa spasi, tanpa tanda hubung, tanpa angka).
+4. Panjang tiap kata ${MIN_LEN}-${MAX_LEN} huruf.
+5. Kata harus UMUM & dikenal anak SMP/SMA (bukan istilah teknis/jarang/bahasa daerah).
+6. Jangan ulangi kata.
+7. Semua kata harus benar-benar jawaban yang masuk akal untuk pertanyaan itu.
+8. Kata-katanya harus BISA saling menyilang (minimal ada huruf yang sama antar kata).
+9. JANGAN bikin clue / petunjuk per kata. Cukup pertanyaan + daftar kata.${excludeList}
 
 Jawab HANYA dalam format JSON (tanpa teks lain, tanpa markdown backticks):
 {
-  "theme": "tema spesifik di sini",
-  "words": ["KATA1", "KATA2", ...],
-  "clues": {
-    "KATA1": ["clue variasi 1 untuk KATA1", "clue variasi 2 untuk KATA1"],
-    "KATA2": ["clue variasi 1 untuk KATA2", "clue variasi 2 untuk KATA2"]
-  }
+  "theme": "nama buah-buahan",
+  "words": ["MANGGA", "JERUK", "APEL"]
 }`;
 }
 
@@ -145,7 +136,7 @@ async function callAIGenerator(usedThemes = []) {
   const { content } = await requestAI([
     {
       role: 'system',
-      content: 'Kamu adalah pembuat soal TTS Tema (Family 100 versi TTS) bahasa Indonesia. Selalu jawab dalam format JSON object saja, tanpa teks tambahan, tanpa markdown backticks.'
+      content: 'Kamu adalah pembuat soal TTS Tema (satu pertanyaan, banyak jawaban, gaya Family 100) bahasa Indonesia. Selalu jawab dalam format JSON object saja, tanpa teks tambahan, tanpa markdown backticks.'
     },
     { role: 'user', content: prompt }
   ], { temperature: 0.9, max_tokens: 1500, timeout: 30000, difficulty: 'easy' });
@@ -180,55 +171,62 @@ async function callAIGenerator(usedThemes = []) {
     throw new Error(`Kata valid cuma ${validWords.length}, minimal ${MIN_WORDS}`);
   }
 
-  // Validasi clue per kata: minimal 1 clue per kata. Kalau clue per kata
-  // adalah string (bukan array), bungkus jadi array.
-  const cleanedClues = {};
-  if (parsed.clues && typeof parsed.clues === 'object') {
-    for (const word of validWords) {
-      const clue = parsed.clues[word] || parsed.clues[word.toUpperCase()] || parsed.clues[word.toLowerCase()];
-      if (Array.isArray(clue)) {
-        cleanedClues[word] = clue.filter(c => typeof c === 'string' && c.trim().length > 0);
-      } else if (typeof clue === 'string' && clue.trim().length > 0) {
-        cleanedClues[word] = [clue.trim()];
-      } else {
-        cleanedClues[word] = [];
-      }
-    }
-  }
-
-  return { theme, words: validWords, clues: cleanedClues };
+  return { theme, words: validWords };
 }
 
 // Bangun input untuk word-placement (pakai direction random -- kata pertama
 // always across, berikutnya alternate biar visual grid-nya gak monoton).
-function buildPlacementInput(words, cluesByWord) {
-  // Acak urutan kata, tapi simpan index aslinya supaya clue mapping tetep bener
-  const indexed = words.map((w, i) => ({ word: w, originalIndex: i }));
-  for (let i = indexed.length - 1; i > 0; i--) {
+function buildPlacementInput(words) {
+  const shuffled = [...words];
+  for (let i = shuffled.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
-    [indexed[i], indexed[j]] = [indexed[j], indexed[i]];
+    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
   }
-
-  return indexed.map((entry, i) => ({
-    answer: entry.word,
-    direction: i % 2 === 0 ? 'across' : 'down',
-    clue: '' // clue di-assign setelah placement biar gak nyangkut di placement logic
+  return shuffled.map((word, i) => ({
+    answer: word,
+    direction: i % 2 === 0 ? 'across' : 'down'
   }));
 }
 
-function writePuzzle(theme, normalized, clues, words, sourceWords) {
-  // Inject clue ke hasil normalized -- clue per kata matching dengan answer
-  const enrichedWords = normalized.words.map(w => ({
-    ...w,
-    clue: clues[w.answer] || `Salah satu ${theme.toLowerCase()}`,
-    found: false
-  }));
+// Coba beberapa susunan acak lalu pilih grid yang paling "gemuk" (kotak terbesar di
+// layar HP). Grid yang melebar ke samping (mis. 19x7) bikin kotak kecil. Skor memakai
+// area acuan 9x12 dan boleh diputar 90 derajat (overlay sendiri memutar sesuai layar).
+const PLACEMENT_TRIES = 20;
+const REF_W = 9, REF_H = 12;
+
+function gridScore(rows, cols) {
+  return Math.max(
+    Math.min(REF_W / cols, REF_H / rows),
+    Math.min(REF_W / rows, REF_H / cols)
+  );
+}
+
+function placeBest(words) {
+  let best = null;
+  let lastError = null;
+  for (let i = 0; i < PLACEMENT_TRIES; i++) {
+    const placementResult = placeWords(buildPlacementInput(words), { maxGridSize: 50 });
+    if (!placementResult.success) { lastError = placementResult.error; continue; }
+    const normalized = normalizeGrid(placementResult.placement);
+    const validation = validateTTS(normalized);
+    if (!validation.valid) { lastError = validation.reason; continue; }
+    const score = gridScore(normalized.rows, normalized.cols);
+    if (!best || score > best.score) best = { normalized, score };
+  }
+  return best ? { success: true, normalized: best.normalized } : { success: false, error: lastError };
+}
+
+function writePuzzle(theme, normalized, sourceWords) {
+  const words = normalized.words.map(w => {
+    const { clue, ...rest } = w; // pastikan tidak ada clue yang ikut
+    return { ...rest, found: false };
+  });
 
   const puzzle = {
     theme,
     rows: normalized.rows,
     cols: normalized.cols,
-    words: enrichedWords,
+    words,
     sourceWords, // untuk validasi jawaban (supaya konsisten dengan input)
     createdAt: new Date().toISOString()
   };
@@ -264,40 +262,22 @@ async function generateNewRound(skipAI = false) {
       try {
         console.log(`🤖 [TTS Tema] Percobaan ${attempt}/${MAX_AI_ATTEMPTS}...`);
 
-        const { theme, words, clues } = await callAIGenerator(usedThemes);
+        const { theme, words } = await callAIGenerator(usedThemes);
         console.log(`   Tema: ${theme}, ${words.length} kata valid`);
 
-        // Build placement input dengan direction
-        const inputWords = buildPlacementInput(words, clues);
-        const placementResult = placeWords(inputWords, { maxGridSize: 50 });
-
-        if (!placementResult.success) {
-          lastError = placementResult.error;
-          console.warn(`⚠️  [TTS Tema] Gagal placement: ${lastError}`);
+        const placed = placeBest(words);
+        if (!placed.success) {
+          lastError = placed.error;
+          console.warn(`⚠️  [TTS Tema] Gagal placement/validasi: ${lastError}`);
           continue;
         }
-
-        const normalized = normalizeGrid(placementResult.placement);
-        const validation = validateTTS(normalized);
-        if (!validation.valid) {
-          lastError = validation.reason;
-          console.warn(`⚠️  [TTS Tema] Gagal validasi: ${lastError}`);
-          continue;
-        }
-
-        // Assign clue variatif per kata untuk ronde ini
-        const assignedClues = assignCluesForRound(words, clues, theme);
-
-        // Cek apakah clue repetitive -- kalau iya, coba lagi (max 1 retry)
-        if (hasRepetitiveCategory(assignedClues)) {
-          console.log(`   ⚠️  Clue masih repetitive setelah assign, lanjut aja`);
-        }
+        const normalized = placed.normalized;
 
         saveUsedThemes(usedThemes, theme);
         // Simpan ke bank (gak masuk used kalau duplikat)
-        saveFallbackGroup({ theme, words, clues });
+        saveFallbackGroup({ theme, words });
 
-        const puzzle = writePuzzle(theme, normalized, assignedClues, words, words);
+        const puzzle = writePuzzle(theme, normalized, words);
         console.log(`✓ [TTS Tema] Berhasil (tema: ${theme}, ${puzzle.words.length} kata di grid ${normalized.rows}x${normalized.cols})`);
         return { success: true, puzzle, source: 'ai' };
       } catch (err) {
@@ -316,25 +296,16 @@ async function generateNewRound(skipAI = false) {
     const group = pickFallbackGroup(usedThemes, MIN_WORDS);
     if (!group) break;
 
-    const inputWords = buildPlacementInput(group.words, group.clues || {});
-    const placementResult = placeWords(inputWords, { maxGridSize: 50 });
-
-    if (!placementResult.success) {
-      lastError = placementResult.error;
+    const placed = placeBest(group.words);
+    if (!placed.success) {
+      lastError = placed.error;
       continue;
     }
+    const normalized = placed.normalized;
 
-    const normalized = normalizeGrid(placementResult.placement);
-    const validation = validateTTS(normalized);
-    if (!validation.valid) {
-      lastError = validation.reason;
-      continue;
-    }
-
-    const assignedClues = assignCluesForRound(group.words, group.clues || {}, group.theme);
     saveUsedThemes(usedThemes, group.theme);
 
-    const puzzle = writePuzzle(group.theme, normalized, assignedClues, group.words, group.words);
+    const puzzle = writePuzzle(group.theme, normalized, group.words);
     console.log(`✓ [TTS Tema] Berhasil pakai bank "${group.theme}" (${puzzle.words.length} kata)`);
     return { success: true, puzzle, source: `bank:${group.theme}` };
   }
