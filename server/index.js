@@ -94,6 +94,12 @@ app.use('/shared', express.static(path.join(PUBLIC_DIR, 'shared'), {
   }
 }));
 
+// Gambar bendera Tebak Bendera. Nama file = token acak yang nggak berubah, jadi aman di-cache lama.
+app.use('/flags', express.static(path.join(PUBLIC_DIR, 'tebak-bendera/flags'), {
+  maxAge: '30d',
+  immutable: true
+}));
+
 // Dashboard React (hasil `npm run build` di folder client)
 app.use(express.static(path.join(__dirname, '../client/dist')));
 

@@ -132,6 +132,7 @@ function Dashboard() {
     { id: 'labirin', label: '🌀 Labirin', icon: '🌀', color: 'from-violet-500 to-fuchsia-600' },
     { id: 'ular-tangga', label: '🐍 Ular Tangga', icon: '🐍', color: 'from-emerald-500 to-lime-600' },
     { id: 'huruf-hilang', label: '🔠 Huruf Hilang', icon: '🔠', color: 'from-sky-500 to-indigo-600' },
+    { id: 'tebak-bendera', label: '🚩 Tebak Bendera', icon: '🚩', color: 'from-rose-500 to-amber-500' },
   ];
   const refreshActiveSoal = async (username) => {
     if (!username) return;
