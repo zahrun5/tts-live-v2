@@ -27,10 +27,11 @@
       '#lbList .lb-rank{font-size:.6rem !important;width:14px !important}' +
       '#lbList .lb-name{font-size:.6rem !important;max-width:80px !important}' +
       '#lbList .lb-score{font-size:.6rem !important}' +
-      /* HP / portrait: jadi strip tipis di bawah, top 3 aja */
+      /* HP / portrait: jadi strip tipis di bawah, top 3 aja.
+         Naik ±40px dari dasar supaya tidak ketimpa watermark PRISM Live di 16:9. */
       '@media (max-width:760px), (orientation:portrait){' +
-      '#app{padding-bottom:56px !important;box-sizing:border-box}' +
-      '#leaderboard{top:auto !important;bottom:6px !important;left:6px !important;right:6px !important;' +
+      '#app{padding-bottom:92px !important;box-sizing:border-box}' +
+      '#leaderboard{top:auto !important;bottom:40px !important;left:6px !important;right:6px !important;' +
       'max-width:none !important;width:auto !important}' +
       '#leaderboard .label{display:none !important}' +
       '#lbList{flex-direction:row !important;flex-wrap:nowrap !important;gap:.3rem !important;overflow:hidden}' +
