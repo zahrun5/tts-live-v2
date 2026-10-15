@@ -16,7 +16,7 @@ const path = require('path');
 
 // ── Ghost Bot (Nindy cs) ─────────────────────────────────────────────────────
 const GHOST_NAMES = ['Nindy', 'Rara', 'Sinta', 'Amel', 'Devi', 'Tiara', 'Nisa', 'Putri', 'Lala', 'Mega'];
-const GHOST_TIMEOUT_MS = 30 * 1000; // 2 menit tidak ada jawaban
+const GHOST_TIMEOUT_MS = 10 * 1000; // 10 detik tidak ada jawaban benar
 const GHOST_SKIP_GAMES = new Set(['ular-tangga', 'labirin', 'memory-card', 'spam-tap']);
 function ghostName() { return GHOST_NAMES[Math.floor(Math.random() * GHOST_NAMES.length)]; }
 // ─────────────────────────────────────────────────────────────────────────────
@@ -161,6 +161,29 @@ class Room {
       votableGames: VOTABLE_GAMES.filter(g => this.games[g.id])
     });
     this.saveState();
+
+    // Auto-reconnect TikTok Live: kalau room-state.json nyimpen username target
+    // dan streamer memang sedang live, langsung konek lagi tanpa user harus
+    // klik tombol "Sambungkan" di dashboard. Kalau connect gagal (misal target
+    // sudah offline / ganti akun), log aja -- user bisa manual retry nanti.
+    // Pakai lazy require karena tiktokManager -> roomManager -> room (circular).
+    const stateForReconnect = this.loadSaved();
+    if (stateForReconnect && stateForReconnect.liveUsername) {
+      setImmediate(() => this.autoReconnectTikTok(stateForReconnect.liveUsername));
+    }
+  }
+
+  async autoReconnectTikTok(tiktokUsername) {
+    try {
+      const tiktokManager = require('./tiktokManager');
+      console.log(`[Room ${this.username}] auto-reconnect ke TikTok @${tiktokUsername}...`);
+      await tiktokManager.startLive(this.username, tiktokUsername);
+      console.log(`[Room ${this.username}] ✓ auto-reconnect TikTok sukses`);
+    } catch (err) {
+      console.log(`[Room ${this.username}] ⚠️ auto-reconnect TikTok gagal: ${err.message}`);
+      // Jangan setLiveStatus(false) di sini -- startLive() sudah handle itu
+      // kalau connect gagal. Yang penting: room tetap jalan, user bisa manual retry.
+    }
   }
 
   dispose() {
@@ -227,7 +250,13 @@ class Room {
         mode: this.mode,
         pool: this.pool,
         leaderboard: this.leaderboard,
-        initialized: [...this.initialized]
+        initialized: [...this.initialized],
+        // Simpan status live biar server bisa auto-reconnect setelah restart.
+        // Username disimpan kalau pernah connect supaya bisa coba lagi, tapi
+        // active flag default false (kita tidak bisa tau apakah user beneran
+        // masih live setelah server mati -- flag active akan di-set ulang ke
+        // true setelah startLive() berhasil).
+        liveUsername: this.liveStatus?.username || null
       }, null, 2), 'utf8');
     } catch (e) {
       console.error(`[Room ${this.username}] gagal simpan room-state.json:`, e.message);
@@ -410,6 +439,9 @@ class Room {
     } else {
       this.stopGhostBot();
     }
+    // Persist username ke room-state.json supaya auto-reconnect setelah restart
+    // server bisa nemuin target live yang terakhir.
+    this.saveState();
   }
 
   // ---------- pengaturan dari dashboard ----------
