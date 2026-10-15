@@ -3,55 +3,14 @@
     "theme": "Buah-buahan",
     "words": [
       "MANGGA",
-      "PIR",
       "JERUK",
       "APEL",
       "NANAS",
       "MELON",
       "ANGGUR",
-      "SEMANGKA",
       "PISANG",
       "DURIAN"
-    ],
-    "clues": {
-      "MANGGA": "Sering diolah jadi rujak, berwarna hijau atau kuning",
-      "PIR": "Bentuknya seperti lampu, hijau atau kuning",
-      "JERUK": "Bulat kecil, rasa asam manis, kulitnya tebal",
-      "APEL": "Merah atau hijau, terkenal dari Malang",
-      "NANAS": "Berdaun pendek di atasnya, berduri di luar",
-      "MELON": "Bulat besar, kulitnya jala hijau, daging oranye",
-      "ANGGUR": "Tumbuh bergerombol di pohon merambat",
-      "SEMANGKA": "Sangat besar, daging merah dan biji hitam",
-      "PISANG": "Panjang dan kuning, monyet sangat menyukainya",
-      "DURIAN": "Kulitnya berduri tajam, aromanya sangat kuat"
-    }
-  },
-  {
-    "theme": "Hewan peliharaan",
-    "words": [
-      "KUCING",
-      "ANJING",
-      "IKAN",
-      "BURUNG",
-      "KELINCI",
-      "HAMSTER",
-      "AYAM",
-      "KUDA",
-      "SAPI",
-      "KAMBING"
-    ],
-    "clues": {
-      "KUCING": "Suka menangkap tikus, berkumis panjang",
-      "ANJING": "Sangat setia, sering menjaga rumah",
-      "IKAN": "Hidup di air, punya sisik dan sirip",
-      "BURUNG": "Punya sayap, bisa terbang tinggi",
-      "KELINCI": "Lucu, telinganya panjang, suka wortel",
-      "HAMSTER": "Sangat kecil, suka berlari di roda putar",
-      "AYAM": "Berkokok di pagi hari, bertelur setiap hari",
-      "KUDA": "Tunggangan yang kuat, berlari di padang rumput",
-      "SAPI": "Penghasil susu dan daging, hidup di peternakan",
-      "KAMBING": "Suka makan daun muda, suka memanjat"
-    }
+    ]
   },
   {
     "theme": "Benda di dapur",
@@ -64,21 +23,8 @@
       "PISAU",
       "KOMPOR",
       "KULKAS",
-      "WAJAN",
-      "TALENAS"
-    ],
-    "clues": {
-      "PANCI": "Wadah masak bulat dengan pegangan di sisi",
-      "PIRING": "Tatakan nasi sebelum disantap",
-      "GELAS": "Tempat minum, biasanya dari kaca atau plastik",
-      "SENDOK": "Sendok ini dipakai untuk makan sup",
-      "GARPU": "Berkepala banyak tangkai, untuk menyantap",
-      "PISAU": "Pisau ini tajam, untuk memotong",
-      "KOMPOR": "Sumber api untuk memasak",
-      "KULKAS": "Lemari pendingin untuk menyimpan makanan",
-      "WAJAN": "Wadah masak untuk menggoreng dengan minyak",
-      "TALENAS": "Alat untuk meniriskan nasi yang sudah matang"
-    }
+      "WAJAN"
+    ]
   },
   {
     "theme": "Profesi",
@@ -93,19 +39,7 @@
       "TUKANG",
       "NELAYAN",
       "PETANI"
-    ],
-    "clues": {
-      "DOKTER": "Memeriksa pasien dan memberi obat",
-      "GURU": "Mengajar murid di sekolah setiap hari",
-      "POLISI": "Menjaga keamanan dan ketertiban",
-      "TENTARA": "Menjaga kedaulatan negara, dilatih perang",
-      "PILOT": "Menerbangkan pesawat di langit",
-      "KOKI": "Memasak hidangan lezat di restoran",
-      "PENJAHIT": "Menjahit pakaian dari kain",
-      "TUKANG": "Membangun rumah dari kayu dan batu",
-      "NELAYAN": "Menangkap ikan di laut lepas",
-      "PETANI": "Menanam padi di sawah, pencetak beras"
-    }
+    ]
   },
   {
     "theme": "Benda di ruang tamu",
@@ -118,21 +52,8 @@
       "KARPET",
       "JENDELA",
       "LEMARI",
-      "JAM",
       "BINGKAI"
-    ],
-    "clues": {
-      "SOFA": "Tempat duduk empuk dan panjang, untuk menerima tamu",
-      "MEJA": "Benda datar berkaki untuk menaruh barang",
-      "KURSI": "Tempat duduk berkaki empat, untuk satu orang",
-      "LAMPU": "Penerang ruangan saat malam hari",
-      "GORDEN": "Kain panjang untuk menutup jendela",
-      "KARPET": "Alas lantai yang lembut dan berbulu",
-      "JENDELA": "Lubang di dinding untuk keluar masuk udara dan cahaya",
-      "LEMARI": "Tinggi besar, menyimpan pakaian di dalamnya",
-      "JAM": "Penunjuk waktu, selalu ada di dinding",
-      "BINGKAI": "Tempat foto keluarga, tergantung di dinding"
-    }
+    ]
   },
   {
     "theme": "Makanan ringan",
@@ -140,53 +61,12 @@
       "KERUPUK",
       "BAKWAN",
       "GORENGAN",
-      "CIRENG",
       "TAHU",
       "TEMPE",
       "KACANG",
-      "SEBLAK",
       "BASO",
       "RISOL"
-    ],
-    "clues": {
-      "KERUPUK": "Renyah dari tepung, sering jadi pelengkap",
-      "BAKWAN": "Gorengan isi sayur, sering di pasar",
-      "GORENGAN": "Digoreng dengan minyak, jajanan pinggir jalan",
-      "CIRENG": "Dari tepung kanji, kenyal dan pedas",
-      "TAHU": "Putih dari kedelai, lembut saat digoreng",
-      "TEMPE": "Fermentasi kedelai, kaya protein nabati",
-      "KACANG": "Biji-bijian yang sering direbus atau digoreng",
-      "SEBLAK": "Kuah pedas khas Bandung, berisi kerupuk",
-      "BASO": "Bola daging dalam kuah panas",
-      "RISOL": "Lumpur gulung, isi sayur atau sosis"
-    }
-  },
-  {
-    "theme": "Alat musik",
-    "words": [
-      "GITAR",
-      "PIANO",
-      "DRUM",
-      "BIOLA",
-      "SERULING",
-      "SAXOPHONE",
-      "TRUMPET",
-      "HARPA",
-      "KENDANG",
-      "REBAB"
-    ],
-    "clues": {
-      "GITAR": "Bersenar, dipetik untuk menghasilkan nada",
-      "PIANO": "Berderetan tuts hitam putih, dimainkan dengan jari",
-      "DRUM": "Dipukul dengan stik, iramanya menghentak",
-      "BIOLA": "Bersenar empat, dimainkan dengan gesek",
-      "SERULING": "Dari bambu, ditiup untuk menghasilkan nada",
-      "SAXOPHONE": "Tiup berwarna emas, sering di jazz",
-      "TRUMPET": "Tiup berwarna perak, sering di marching band",
-      "HARPA": "Petik berseni banyak, bentuknya segitiga",
-      "KENDANG": "Pukul tradisional, pengiring gamelan",
-      "REBAB": "Gesek tradisional, sering di keroncong"
-    }
+    ]
   },
   {
     "theme": "Kendaraan",
@@ -194,26 +74,13 @@
       "MOBIL",
       "MOTOR",
       "SEPEDA",
-      "BUS",
       "TRUK",
       "KERETA",
       "KAPAL",
       "PESAWAT",
       "HELIKOPTER",
       "BECAK"
-    ],
-    "clues": {
-      "MOBIL": "Beroda empat, bermesin, jalan di aspal",
-      "MOTOR": "Beroda dua, bermesin, lincah di jalan",
-      "SEPEDA": "Beroda dua, tanpa mesin, dikayuh",
-      "BUS": "Besar untuk penumpang, trayek jauh",
-      "TRUK": "Besar untuk mengangkut barang berat",
-      "KERETA": "Berjalan di atas rel besi, panjang berderet",
-      "KAPAL": "Berlayar di permukaan air",
-      "PESAWAT": "Terbang tinggi dengan mesin jet",
-      "HELIKOPTER": "Terbang dengan baling-baling di atas",
-      "BECAK": "Beroda tiga tradisional, dikayuh tukang"
-    }
+    ]
   },
   {
     "theme": "Bagian tubuh",
@@ -228,19 +95,7 @@
       "JARI",
       "KULIT",
       "GIGI"
-    ],
-    "clues": {
-      "TANGAN": "Ada lima jari di ujungnya, untuk memegang",
-      "KAKI": "Untuk berjalan dan berlari, ada telapak di bawah",
-      "MATA": "Untuk melihat dunia sekitar",
-      "HIDUNG": "Untuk mencium bau, mencuat di tengah wajah",
-      "TELINGA": "Untuk mendengar suara, ada di sisi kepala",
-      "MULUT": "Untuk makan dan bicara, ada gigi di dalam",
-      "RAMBUT": "Tumbuh di kepala, bisa dikepang",
-      "JARI": "Bagian ujung tangan, ada sepuluh semuanya",
-      "KULIT": "Selimut tubuh paling luar, merasakan sentuhan",
-      "GIGI": "Tulang kecil di mulut, untuk mengunyah"
-    }
+    ]
   },
   {
     "theme": "Benda di sekolah",
@@ -250,24 +105,11 @@
       "PULPEN",
       "PENGHAPUS",
       "RAUTAN",
-      "TAS",
       "KURSI",
       "PAPAN",
       "PETA",
       "PENGGARIS"
-    ],
-    "clues": {
-      "BUKU": "Tempat menulis dan membaca, penuh halaman",
-      "PENSIL": "Berisi grafit, tulisannya bisa dihapus",
-      "PULPEN": "Berisi tinta, sekali pakai tulis permanen",
-      "PENGHAPUS": "Putih atau warna, menghapus tulisan salah",
-      "RAUTAN": "Mempertajam ujung pensil yang tumpul",
-      "TAS": "Digendong ke sekolah, menyimpan buku",
-      "KURSI": "Tempat duduk murid di dalam kelas",
-      "PAPAN": "Tempat guru menulis, ada kapur di samping",
-      "PETA": "Gambar wilayah, dilihat saat pelajaran geografi",
-      "PENGGARIS": "Panjang dan lurus, untuk mengukur dan menarik garis"
-    }
+    ]
   },
   {
     "theme": "Cuaca dan alam",
@@ -280,21 +122,8 @@
       "GELAP",
       "TERANG",
       "AWAN",
-      "MATAHARI",
       "BULAN"
-    ],
-    "clues": {
-      "HUJAN": "Air yang turun dari langit, membuat basah",
-      "PANAS": "Suhu udara sangat tinggi, bikin gerah",
-      "DINGIN": "Suhu udara sangat rendah, bikin kedinginan",
-      "ANGIN": "Udara yang bergerak, terasa di kulit",
-      "PETIR": "Kilatan cahaya di langit saat hujan deras",
-      "GELAP": "Tidak ada cahaya sama sekali",
-      "TERANG": "Banyak cahaya, semua terlihat jelas",
-      "AWAN": "Kumpulan uap air yang bergantungan di langit",
-      "MATAHARI": "Bintang yang bersinar di siang hari",
-      "BULAN": "Bintang yang bersinar di malam hari"
-    }
+    ]
   },
   {
     "theme": "Pekerjaan rumah",
@@ -309,19 +138,7 @@
       "MENGGALI",
       "MEMINDAH",
       "MERAPIKAN"
-    ],
-    "clues": {
-      "MENYAPU": "Membersihkan lantai dengan sikat panjang",
-      "MENCUCI": "Membersihkan pakaian dengan air dan sabun",
-      "MENGGOSOK": "Membersihkan gigi setiap pagi dan malam",
-      "MEMASAK": "Mengolah bahan mentah menjadi hidangan",
-      "MENYETRIKA": "Melicinkan pakaian yang kusut",
-      "MENABUR": "Menyebarkan bibit di sawah",
-      "MENGEPEL": "Membersihkan lantai dengan kain basah",
-      "MENGGALI": "Membuat lubang di tanah dengan cangkul",
-      "MEMINDAH": "Mengangkat barang dari satu tempat ke lain",
-      "MERAPIKAN": "Membalikan tempat tidur yang berantakan"
-    }
+    ]
   },
   {
     "theme": "Aktivitas sehari-hari",
@@ -336,19 +153,7 @@
       "BERJALAN",
       "BERLARI",
       "BERMAIN"
-    ],
-    "clues": {
-      "MAKAN": "Mengunyah dan menelan makanan",
-      "TIDUR": "Berbaring memejamkan mata di malam hari",
-      "MANDI": "Membersihkan tubuh dengan air dan sabun",
-      "OLAHRAGA": "Gerakan tubuh untuk menjaga kesehatan",
-      "BELAJAR": "Mencari ilmu supaya pintar",
-      "MEMBACA": "Melihat dan memahami tulisan",
-      "MENULIS": "Membuat tulisan dengan pena atau pensil",
-      "BERJALAN": "Melangkah santai di atas kedua kaki",
-      "BERLARI": "Melangkah cepat, kaki tidak menyentuh lama",
-      "BERMAIN": "Bersenang-senang dengan teman atau mainan"
-    }
+    ]
   },
   {
     "theme": "Sifat dan karakter",
@@ -363,19 +168,7 @@
       "SOMBONG",
       "RAMAH",
       "DERMAWAN"
-    ],
-    "clues": {
-      "BAIK": "Selalu berbuat positif, suka menolong",
-      "JAHAT": "Suka menyakiti, berperilaku negatif",
-      "CERDAS": "Pintar, mudah memahami sesuatu",
-      "MALAS": "Tidak suka bekerja keras, suka rebahan",
-      "RAJIN": "Suka bekerja keras, tidak pernah mengeluh",
-      "PEMARAH": "Mudah sekali emosi dan meledak-ledak",
-      "SABAR": "Mampu menahan diri saat kesal",
-      "SOMBONG": "Merasa paling hebat, meremehkan orang lain",
-      "RAMAH": "Mudah senyum, suka menyapa orang",
-      "DERMAWAN": "Suka berbagi dengan orang lain"
-    }
+    ]
   },
   {
     "theme": "Emosi dan perasaan",
@@ -390,19 +183,7 @@
       "KAGET",
       "MALU",
       "BANGGA"
-    ],
-    "clues": {
-      "SENANG": "Perasaan suka, ingin terus melakukannya",
-      "SEDIH": "Perasaan pilu, ingin menangis",
-      "MARAH": "Perasaan kesal yang sangat kuat",
-      "TAKUT": "Perasaan khawatir akan bahaya",
-      "CINTA": "Perasaan sayang yang paling dalam",
-      "BENCI": "Perasaan sangat tidak suka",
-      "JIJIK": "Perasaan tidak suka, ingin menjauh",
-      "KAGET": "Terkejut tiba-tiba, jantung berdebar",
-      "MALU": "Perasaan sungkan karena dilihat orang",
-      "BANGGA": "Perasaan puas atas pencapaian sendiri"
-    }
+    ]
   },
   {
     "theme": "Rumah dan bagiannya",
@@ -417,19 +198,7 @@
       "TERAS",
       "TAMAN",
       "PAGAR"
-    ],
-    "clues": {
-      "ATAP": "Bagian paling atas rumah, melindungi dari hujan",
-      "PINTU": "Untuk keluar masuk ruangan, ada gagangnya",
-      "LANTAI": "Tempat berpijak di dalam rumah",
-      "DINDING": "Pemisah antar ruangan, tegak lurus",
-      "KAMAR": "Ruangan untuk beristirahat di malam hari",
-      "DAPUR": "Ruangan untuk memasak hidangan",
-      "GARASI": "Tempat menyimpan mobil di rumah",
-      "TERAS": "Area depan rumah, untuk menerima tamu",
-      "TAMAN": "Area hijau dengan bunga dan tanaman",
-      "PAGAR": "Batas terluar rumah, melindungi halaman"
-    }
+    ]
   },
   {
     "theme": "Peralatan makan",
@@ -444,91 +213,6 @@
       "KOMPOR",
       "SERBET",
       "KUKUSAN"
-    ],
-    "clues": {
-      "SENDOK": "Sendok ini untuk menyendok sup hangat",
-      "GARPU": "Berkepala tangkai, untuk menyantap mi",
-      "PISAU": "Tajam sekali, untuk memotong sayuran",
-      "PANCI": "Tinggi dan dalam, untuk merebus air",
-      "WAJAN": "Lebar dan dangkal, untuk menggoreng",
-      "PIRING": "Pipih bulat, untuk alas makanan",
-      "GELAS": "Tinggi kecil, untuk minum teh atau kopi",
-      "KOMPOR": "Sumber panas untuk memasak",
-      "SERBET": "Kain kecil untuk mengelap tangan",
-      "KUKUSAN": "Tingkat di atas panci, untuk mengukus"
-    }
-  },
-  {
-    "theme": "Warna",
-    "words": [
-      "MERAH",
-      "BIRU",
-      "KUNING",
-      "UNGU",
-      "HITAM",
-      "PUTIH",
-      "COKLAT",
-      "ABU"
-    ]
-  },
-  {
-    "theme": "Sayur-sayuran",
-    "words": [
-      "BAYAM",
-      "KANGKUNG",
-      "WORTEL",
-      "BROKOLI",
-      "TOMAT",
-      "TIMUN",
-      "TERONG",
-      "BUNCIS",
-      "SAWI",
-      "KUBIS"
-    ]
-  },
-  {
-    "theme": "Hewan di kebun binatang",
-    "words": [
-      "SINGA",
-      "HARIMAU",
-      "GAJAH",
-      "JERAPAH",
-      "ZEBRA",
-      "BERUANG",
-      "MONYET",
-      "BADAK",
-      "UNTA",
-      "KANGURU"
-    ]
-  },
-  {
-    "theme": "Hewan di laut",
-    "words": [
-      "PAUS",
-      "HIU",
-      "GURITA",
-      "KEPITING",
-      "PENYU",
-      "UDANG",
-      "CUMI",
-      "TIRAM",
-      "KERANG",
-      "LUMBA"
-    ]
-  },
-  {
-    "theme": "Hewan berkaki empat",
-    "words": [
-      "KUCING",
-      "ANJING",
-      "SAPI",
-      "KAMBING",
-      "KUDA",
-      "KERBAU",
-      "DOMBA",
-      "SINGA",
-      "HARIMAU",
-      "BABI"
     ]
   },
   {
@@ -536,13 +220,11 @@
     "words": [
       "ELANG",
       "MERPATI",
-      "GAGAK",
       "BEBEK",
       "ANGSA",
       "KAKATUA",
       "NURI",
       "PIPIT",
-      "MERAK",
       "KUTILANG"
     ]
   },
@@ -556,21 +238,8 @@
       "KUMBANG",
       "KECOA",
       "BELALANG",
-      "JANGKRIK",
       "CAPUNG",
       "KUPU"
-    ]
-  },
-  {
-    "theme": "Makanan khas Indonesia",
-    "words": [
-      "RENDANG",
-      "SATE",
-      "SOTO",
-      "BAKSO",
-      "RAWON",
-      "TEMPE",
-      "SERABI"
     ]
   },
   {
@@ -581,7 +250,6 @@
       "LEMARI",
       "KASUR",
       "SOFA",
-      "RAK",
       "LAMPU",
       "KIPAS",
       "KARPET",
@@ -601,18 +269,6 @@
       "SEPTEMBER",
       "OKTOBER",
       "DESEMBER"
-    ]
-  },
-  {
-    "theme": "Nama hari dalam seminggu",
-    "words": [
-      "SENIN",
-      "SELASA",
-      "RABU",
-      "KAMIS",
-      "JUMAT",
-      "SABTU",
-      "MINGGU"
     ]
   },
   {
@@ -646,46 +302,16 @@
     ]
   },
   {
-    "theme": "Cabang olahraga",
-    "words": [
-      "SEPAKBOLA",
-      "BASKET",
-      "VOLI",
-      "BADMINTON",
-      "RENANG",
-      "TENIS",
-      "SILAT",
-      "KARATE",
-      "CATUR",
-      "TINJU"
-    ]
-  },
-  {
     "theme": "Pakaian",
     "words": [
       "BAJU",
       "CELANA",
-      "ROK",
       "KAOS",
       "JAKET",
       "SEPATU",
       "KEMEJA",
       "TOPI",
-      "SARUNG",
-      "SWEATER"
-    ]
-  },
-  {
-    "theme": "Peralatan mandi",
-    "words": [
-      "SABUN",
-      "SIKAT",
-      "SAMPO",
-      "HANDUK",
-      "GAYUNG",
-      "SISIR",
-      "CERMIN",
-      "SHOWER"
+      "SARUNG"
     ]
   },
   {
@@ -693,7 +319,6 @@
     "words": [
       "JAHE",
       "KUNYIT",
-      "LENGKUAS",
       "KENCUR",
       "SEREH",
       "CENGKEH",
@@ -701,34 +326,6 @@
       "PALA",
       "KEMIRI",
       "BAWANG"
-    ]
-  },
-  {
-    "theme": "Jenis ikan",
-    "words": [
-      "LELE",
-      "NILA",
-      "GURAME",
-      "BANDENG",
-      "TUNA",
-      "KAKAP",
-      "SALMON",
-      "TONGKOL",
-      "PATIN",
-      "TENGGIRI"
-    ]
-  },
-  {
-    "theme": "Jenis bunga",
-    "words": [
-      "MAWAR",
-      "MELATI",
-      "ANGGREK",
-      "TULIP",
-      "KAMBOJA",
-      "TERATAI",
-      "MATAHARI",
-      "SEROJA"
     ]
   },
   {
@@ -745,19 +342,6 @@
     ]
   },
   {
-    "theme": "Anggota keluarga",
-    "words": [
-      "AYAH",
-      "IBU",
-      "KAKAK",
-      "ADIK",
-      "NENEK",
-      "KAKEK",
-      "PAMAN",
-      "SEPUPU"
-    ]
-  },
-  {
     "theme": "Perkakas tukang",
     "words": [
       "PALU",
@@ -768,20 +352,6 @@
       "CANGKUL",
       "SEKOP",
       "KAPAK"
-    ]
-  },
-  {
-    "theme": "Benda di langit",
-    "words": [
-      "BULAN",
-      "BINTANG",
-      "MATAHARI",
-      "AWAN",
-      "PELANGI",
-      "KOMET",
-      "PETIR",
-      "LAYANGAN",
-      "BALON"
     ]
   },
   {
@@ -815,28 +385,13 @@
     ]
   },
   {
-    "theme": "Rasa makanan",
-    "words": [
-      "MANIS",
-      "ASIN",
-      "PAHIT",
-      "ASAM",
-      "PEDAS",
-      "GURIH",
-      "SEPAT",
-      "HAMBAR"
-    ]
-  },
-  {
     "theme": "Hewan yang bertelur",
     "words": [
-      "AYAM",
       "BEBEK",
       "BURUNG",
       "ULAR",
       "PENYU",
       "BUAYA",
-      "KADAL",
       "KATAK",
       "ANGSA",
       "IKAN"
@@ -853,49 +408,7 @@
       "LALAT",
       "NYAMUK",
       "MERPATI",
-      "GAGAK",
       "BURUNG"
-    ]
-  },
-  {
-    "theme": "Buah berwarna merah",
-    "words": [
-      "STROBERI",
-      "APEL",
-      "SEMANGKA",
-      "CERI",
-      "DELIMA",
-      "TOMAT",
-      "RAMBUTAN",
-      "JAMBU"
-    ]
-  },
-  {
-    "theme": "Benda di kamar tidur",
-    "words": [
-      "KASUR",
-      "BANTAL",
-      "GULING",
-      "SELIMUT",
-      "LEMARI",
-      "LAMPU",
-      "CERMIN",
-      "SPREI"
-    ]
-  },
-  {
-    "theme": "Gunung di Indonesia",
-    "words": [
-      "MERAPI",
-      "BROMO",
-      "SEMERU",
-      "RINJANI",
-      "KRAKATAU",
-      "TAMBORA",
-      "SINABUNG",
-      "KERINCI",
-      "SLAMET",
-      "MERBABU"
     ]
   },
   {
@@ -909,19 +422,7 @@
       "FILIPINA",
       "LAOS",
       "KAMBOJA",
-      "MYANMAR",
-      "BRUNEI"
-    ]
-  },
-  {
-    "theme": "Permainan tradisional",
-    "words": [
-      "ENGKLEK",
-      "KELERENG",
-      "GASING",
-      "LAYANGAN",
-      "CONGKLAK",
-      "BENTENGAN"
+      "MYANMAR"
     ]
   },
   {
@@ -940,67 +441,8 @@
     ]
   },
   {
-    "theme": "Hewan pemakan rumput",
-    "words": [
-      "SAPI",
-      "KAMBING",
-      "KUDA",
-      "KERBAU",
-      "DOMBA",
-      "JERAPAH",
-      "GAJAH",
-      "KELINCI",
-      "ZEBRA",
-      "UNTA"
-    ]
-  },
-  {
-    "theme": "Hewan buas",
-    "words": [
-      "SINGA",
-      "HARIMAU",
-      "BUAYA",
-      "SERIGALA",
-      "BERUANG",
-      "HIU",
-      "ULAR",
-      "MACAN",
-      "LEOPARD",
-      "KOMODO"
-    ]
-  },
-  {
-    "theme": "Makanan berkuah",
-    "words": [
-      "SOTO",
-      "RAWON",
-      "SOP",
-      "SAYUR",
-      "SEMUR",
-      "OPOR",
-      "RAMEN",
-      "CAPCAY"
-    ]
-  },
-  {
-    "theme": "Bahan makanan pokok",
-    "words": [
-      "NASI",
-      "JAGUNG",
-      "SINGKONG",
-      "KENTANG",
-      "GANDUM",
-      "SAGU",
-      "ROTI",
-      "MIE",
-      "UBI",
-      "TALAS"
-    ]
-  },
-  {
     "theme": "Makhluk di hutan",
     "words": [
-      "HARIMAU",
       "GAJAH",
       "MONYET",
       "ULAR",
@@ -1017,15 +459,12 @@
     "words": [
       "BAJIGUR",
       "BANDREK",
-      "WEDANG",
       "SEKOTENG",
       "CENDOL",
-      "DAWET",
       "JAMU",
       "BREM",
       "TUAK",
       "TAPE",
-      "LEGEN",
       "SAGUER",
       "SOPI",
       "KOPI",
@@ -1036,44 +475,22 @@
     "theme": "Jenis kue basah",
     "words": [
       "KLEPON",
-      "CENIL",
       "GETUK",
       "LUPIS",
       "WAJIK",
       "NAGASARI",
-      "ONDE",
       "PUTU",
       "BIKANG",
       "APEM",
-      "KLEMBEN",
       "LEMPER",
-      "AREM",
       "LAPIS",
       "JONGKONG"
-    ]
-  },
-  {
-    "theme": "Jenis nasi",
-    "words": [
-      "NASI",
-      "NASI GORENG",
-      "NASI UDUK",
-      "NASI LIWET",
-      "NASI KUNING",
-      "NASI TUMPENG",
-      "NASI BAKAR",
-      "NASI PADANG",
-      "NASI KEBULI",
-      "NASI TEMPONG",
-      "NASI KUCING"
     ]
   },
   {
     "theme": "Jenis sup dan soto",
     "words": [
       "SOTO",
-      "SOTO BETAWI",
-      "SOTO LAMONGAN",
       "OPOR",
       "RAWON",
       "GARANG",
@@ -1082,8 +499,7 @@
       "LONTONG",
       "TONGSENG",
       "GADO",
-      "SIOMAY",
-      "EMPEK"
+      "SIOMAY"
     ]
   },
   {
@@ -1110,19 +526,13 @@
     "theme": "Sayuran akar dan umbi",
     "words": [
       "SINGKONG",
-      "KENTANG",
       "TALAS",
-      "LOBAK",
-      "WORTEL",
       "BENGKUANG",
       "BAWANG",
       "KUNYIT",
       "JAHE",
       "KENCUR",
-      "LENGKUAS",
-      "TEMULAWAK",
-      "GADUNG",
-      "GANYONG"
+      "GADUNG"
     ]
   },
   {
@@ -1130,18 +540,12 @@
     "words": [
       "TEMPE",
       "TAHU",
-      "AYAM",
       "IKAN",
       "DAGING",
       "TELUR",
-      "CUMI",
       "UDANG",
-      "KERANG",
       "KEPITING",
-      "LELE",
-      "BANDENG",
       "TONGKOL",
-      "GURAMI",
       "NILA"
     ]
   },
@@ -1159,7 +563,6 @@
       "KISMIS",
       "MADU",
       "RAGI",
-      "BAKING",
       "MAIZENA",
       "SODA",
       "KAYU"
@@ -1176,8 +579,6 @@
       "BAWANG",
       "LOMBOK",
       "PETAI",
-      "MATAH",
-      "DABU",
       "MERAH",
       "GORENG",
       "BAJAK",
@@ -1197,42 +598,8 @@
       "RAMBAK",
       "BIKANG",
       "GENDAR",
-      "UYEL",
       "PEYEK",
       "JANGEK"
-    ]
-  },
-  {
-    "theme": "Minuman berkafein",
-    "words": [
-      "KOPI",
-      "TEKO",
-      "ESPRESSO",
-      "CAPPUCCINO",
-      "LATTE",
-      "ARABIKA",
-      "ROBUSTA",
-      "LIBERIKA",
-      "MOKA",
-      "KAFE",
-      "AMERICANO"
-    ]
-  },
-  {
-    "theme": "Jenis teh",
-    "words": [
-      "HIJAU",
-      "HITAM",
-      "PUTIH",
-      "OOLONG",
-      "CHAMOMILE",
-      "JAHE",
-      "PEPPERMINT",
-      "LEMON",
-      "MAWAR",
-      "MELATI",
-      "HERBAL",
-      "ROSEHIP"
     ]
   },
   {
@@ -1245,13 +612,11 @@
       "KUNYIT",
       "KENCUR",
       "SEREH",
-      "LENGKUAS",
       "DAUN",
       "SALAM",
       "PALA",
       "CENGKEH",
       "MERICA",
-      "KAPULAGA",
       "JINTEN"
     ]
   },
@@ -1262,34 +627,27 @@
       "BAKARAN",
       "IKAN",
       "DAGING",
-      "AYAM",
       "JAGUNG",
       "SINGKONG",
       "PISANG",
       "ROTI",
       "SOSIS",
-      "KERANG",
       "UDANG",
-      "CUMI",
       "PENTOL"
     ]
   },
   {
     "theme": "Bencana alam",
     "words": [
-      "GEMPA",
       "TSUNAMI",
       "BANJIR",
       "LONGSOR",
       "GUNUNG",
       "LETUSAN",
       "BADAI",
-      "TOPAN",
       "TORNADO",
       "KEKERINGAN",
-      "ABRASI",
-      "EROSI",
-      "PUTTING"
+      "EROSI"
     ]
   },
   {
@@ -1327,7 +685,6 @@
       "ANGIN",
       "AWAN",
       "BADAI",
-      "TOPAN",
       "AURORA",
       "GERHANA"
     ]
@@ -1337,7 +694,6 @@
     "words": [
       "SUNGAI",
       "KAPUAS",
-      "MAHAKAM",
       "BARITO",
       "CITARUM",
       "CILIWUNG",
@@ -1345,7 +701,6 @@
       "BRANTAS",
       "MUSI",
       "BATANGHARI",
-      "MEMBERAMO",
       "DIGUL",
       "SERUYAN",
       "KAYAN"
@@ -1357,29 +712,20 @@
       "DANAU",
       "TOBA",
       "RANAU",
-      "SINGKARAK",
-      "MANINJAU",
       "KERINCI",
       "POSO",
-      "TOWUTI",
-      "MATANO",
       "SENTANI",
       "BATUR",
-      "BRATAN",
-      "TAMBLINGAN",
-      "TEMPE",
-      "LIMBOTO"
+      "TEMPE"
     ]
   },
   {
     "theme": "Hewan liar Kalimantan",
     "words": [
       "ORANGUTAN",
-      "BEKANTAN",
       "BERUANG",
       "MACAN",
       "RUSA",
-      "KIJANG",
       "BABI",
       "BUAYA",
       "ULAR",
@@ -1394,19 +740,13 @@
   {
     "theme": "Hewan endemik Sulawesi",
     "words": [
-      "ANOA",
-      "BABIRUSA",
-      "MALEO",
       "KUSKUS",
-      "TARSIUS",
       "RANGKONG",
       "LORI",
       "KAKATUA",
-      "SAPI",
       "RUSA",
       "BABI",
       "KERA",
-      "KADAL",
       "SIPUT"
     ]
   },
@@ -1419,15 +759,12 @@
       "IGUANA",
       "BUNGLON",
       "TOKEK",
-      "CECAK",
-      "KADAL",
       "ULAR",
       "KODOK",
       "KATAK",
       "SALAMANDER",
       "PENYU",
-      "KURA",
-      "KROKODIL"
+      "KURA"
     ]
   },
   {
@@ -1435,7 +772,6 @@
     "words": [
       "JAHE",
       "KUNYIT",
-      "TEMULAWAK",
       "KENCUR",
       "LIDAH",
       "SAMBILOTO",
@@ -1444,29 +780,20 @@
       "MAHKOTA",
       "KAYU",
       "SAMBUNG",
-      "BROTOWALI",
-      "BINAHONG",
-      "PEGAGAN",
-      "MENGKUDU"
+      "PEGAGAN"
     ]
   },
   {
     "theme": "Jenis bambu",
     "words": [
       "BAMBU",
-      "PETUNG",
       "WULUNG",
       "APUS",
       "TALI",
-      "BETUNG",
       "HITAM",
       "KUNING",
-      "CENDANI",
       "GOMBONG",
-      "HAUR",
-      "PRING",
       "ANDONG",
-      "MAYAN",
       "JAWA"
     ]
   },
@@ -1476,17 +803,12 @@
       "WAYANG",
       "ARJUNA",
       "BIMA",
-      "GATOTKACA",
-      "WERKUDARA",
-      "NAKULA",
-      "SADEWA",
       "KRESNA",
       "SEMAR",
       "GARENG",
       "PETRUK",
       "BAGONG",
       "HANOMAN",
-      "RAHWANA",
       "SRIKANDI"
     ]
   },
@@ -1495,38 +817,15 @@
     "words": [
       "PARANG",
       "KAWUNG",
-      "SIDO",
       "TRUNTUM",
       "SEMEN",
       "MEGA",
-      "CEPLOK",
       "NITIK",
       "TAMBAL",
       "SEKAR",
       "LERENG",
-      "SLOBOG",
       "WAHYU",
-      "GURDA",
       "BANJI"
-    ]
-  },
-  {
-    "theme": "Rumah adat Indonesia",
-    "words": [
-      "JOGLO",
-      "GADANG",
-      "TORAJA",
-      "TONGKONAN",
-      "LIMAS",
-      "BETANG",
-      "BAILEO",
-      "HONAI",
-      "MUSALAKI",
-      "MBARU",
-      "BALE",
-      "PANGGUNG",
-      "SURAMBI",
-      "ADAT"
     ]
   },
   {
@@ -1535,8 +834,6 @@
       "KERIS",
       "PARANG",
       "PEDANG",
-      "MANDAU",
-      "RENCONG",
       "BADIK",
       "TRISULA",
       "TOMBAK",
@@ -1545,45 +842,20 @@
       "GOLOK",
       "PISAU",
       "CLURIT",
-      "KUJANG",
-      "CALUNG"
-    ]
-  },
-  {
-    "theme": "Upacara adat Jawa",
-    "words": [
-      "SEKATEN",
-      "GREBEG",
-      "SYAWALAN",
-      "RUWATAN",
-      "MITONI",
-      "TEDAK",
-      "SITEN",
-      "MIDODARENI",
-      "SIRAMAN",
-      "WILUJENGAN",
-      "SLAMETAN",
-      "LABUHAN",
-      "TIRAKATAN",
-      "NYADRAN"
+      "KUJANG"
     ]
   },
   {
     "theme": "Kesenian Betawi",
     "words": [
       "LENONG",
-      "ONDEL",
-      "GAMBANG",
       "KROMONG",
-      "TANJIDOR",
       "TOPENG",
       "BLANTEK",
       "KETOPRAK",
       "LUDRUK",
       "SENI",
       "REOG",
-      "MARAWIS",
-      "HADROH",
       "REBANA",
       "ORKES"
     ]
@@ -1597,7 +869,6 @@
       "BIOLOGI",
       "SEJARAH",
       "GEOGRAFI",
-      "EKONOMI",
       "SOSIOLOGI",
       "BAHASA",
       "SENI",
@@ -1620,8 +891,7 @@
       "BOTANI",
       "GENETIKA",
       "PALEONTOLOGI",
-      "METEOROLOGI",
-      "OCEANOGRAFI"
+      "METEOROLOGI"
     ]
   },
   {
@@ -1630,13 +900,10 @@
       "TABUNG",
       "GELAS",
       "PIPET",
-      "BUNSEN",
-      "MIKOSKOP",
       "TIMBANGAN",
       "PENJEPIT",
       "SPATULA",
       "KAWAT",
-      "STATIF",
       "KLEM",
       "CAWAN",
       "TERMOMETER",
@@ -1649,7 +916,6 @@
       "SEGITIGA",
       "PERSEGI",
       "LINGKARAN",
-      "TRAPESIUM",
       "LAYANG",
       "BELAH",
       "KETUPAT",
@@ -1659,28 +925,7 @@
       "BALOK",
       "TABUNG",
       "KERUCUT",
-      "BOLA",
-      "PRISMA"
-    ]
-  },
-  {
-    "theme": "Unsur kimia populer",
-    "words": [
-      "OKSIGEN",
-      "HIDROGEN",
-      "KARBON",
-      "NITROGEN",
-      "NATRIUM",
-      "KALSIUM",
-      "BESI",
-      "TEMBAGA",
-      "EMAS",
-      "PERAK",
-      "ALUMINIUM",
-      "SULFUR",
-      "FOSFOR",
-      "KLORIN",
-      "HELIUM"
+      "BOLA"
     ]
   },
   {
@@ -1690,34 +935,14 @@
       "PANAS",
       "CAHAYA",
       "BUNYI",
-      "KINETIK",
       "POTENSIAL",
       "NUKLIR",
       "SURYA",
       "ANGIN",
-      "GEOTHERMAL",
       "BIOMASSA",
       "GELOMBANG",
       "KIMIA",
       "MEKANIK"
-    ]
-  },
-  {
-    "theme": "Bagian otak manusia",
-    "words": [
-      "OTAK",
-      "SEREBRUM",
-      "SEREBELUM",
-      "HIPOTALAMUS",
-      "HIPOKAMPUS",
-      "AMIGDALA",
-      "KORTEKS",
-      "THALAMUS",
-      "PONS",
-      "MEDULLA",
-      "BATANG",
-      "LOBUS",
-      "SINAPS"
     ]
   },
   {
@@ -1726,44 +951,22 @@
       "TELEPON",
       "RADIO",
       "TELEVISI",
-      "INTERNET",
       "EMAIL",
       "SURAT",
       "TELEGRAM",
       "FAKS",
-      "WALKIE",
       "PENGERAS",
       "SATELIT",
-      "ANTENA",
-      "MODEM"
-    ]
-  },
-  {
-    "theme": "Bagian komputer",
-    "words": [
-      "HARDDISK",
-      "MONITOR",
-      "KEYBOARD",
-      "MOUSE",
-      "SPEAKER",
-      "PRINTER",
-      "SCANNER",
-      "WEBCAM",
-      "MODEM",
-      "ROUTER",
-      "BATERAI",
-      "CHARGER"
+      "ANTENA"
     ]
   },
   {
     "theme": "Jenis aplikasi smartphone",
     "words": [
       "KAMERA",
-      "MAPS",
       "MUSIK",
       "VIDEO",
       "BELANJA",
-      "CHATTING",
       "EMAIL",
       "KALENDER",
       "CATATAN",
@@ -1781,15 +984,11 @@
       "GELANDANG",
       "PENYERANG",
       "STRIKER",
-      "LIBERO",
-      "SWEEPER",
       "KAPTEN",
-      "KIPER",
       "SAYAP",
       "PEMAIN",
       "CADANGAN",
-      "WASIT",
-      "LINESMAN"
+      "WASIT"
     ]
   },
   {
@@ -1807,26 +1006,7 @@
       "SEPATU",
       "KOSTUM",
       "PELUIT",
-      "STOPWATCH",
       "PAPAN"
-    ]
-  },
-  {
-    "theme": "Event olahraga dunia",
-    "words": [
-      "OLIMPIADE",
-      "PIALA",
-      "DUNIA",
-      "ASIAN",
-      "GAMES",
-      "KEJUARAAN",
-      "TURNAMEN",
-      "GRAND",
-      "PRIX",
-      "MARATHON",
-      "TRIATHLON",
-      "TOUR",
-      "WIMBLEDON"
     ]
   },
   {
@@ -1857,7 +1037,6 @@
       "PURA",
       "WIHARA",
       "KLENTENG",
-      "RUMAH SAKIT",
       "PUSKESMAS",
       "SEKOLAH",
       "KAMPUS",
@@ -1874,7 +1053,6 @@
     "words": [
       "PANTAI",
       "GUNUNG",
-      "AIR TERJUN",
       "DANAU",
       "HUTAN",
       "LEMBAH",
@@ -1886,31 +1064,6 @@
       "SAVANA",
       "TAMAN",
       "CAGAR"
-    ]
-  },
-  {
-    "theme": "Provinsi di Pulau Jawa",
-    "words": [
-      "BANTEN",
-      "JAKARTA",
-      "JAWA BARAT",
-      "JAWA TENGAH",
-      "YOGYAKARTA",
-      "JAWA TIMUR"
-    ]
-  },
-  {
-    "theme": "Provinsi di Sumatera",
-    "words": [
-      "ACEH",
-      "SUMATRA UTARA",
-      "SUMATRA BARAT",
-      "RIAU",
-      "JAMBI",
-      "BENGKULU",
-      "LAMPUNG",
-      "BANGKA",
-      "SUMATRA SELATAN"
     ]
   },
   {
@@ -1934,16 +1087,12 @@
   {
     "theme": "Negara di Amerika Latin",
     "words": [
-      "BRAZIL",
       "ARGENTINA",
       "KOLOMBIA",
       "PERU",
       "VENEZUELA",
-      "CHILE",
       "EKUADOR",
       "BOLIVIA",
-      "PARAGUAY",
-      "URUGUAY",
       "KUBA",
       "MEKSIKO"
     ]
@@ -1958,12 +1107,10 @@
       "ANTARTIKA",
       "MERAH",
       "HITAM",
-      "KASPIA",
       "KARIBIA",
       "MEDITERANIA",
       "CINA",
       "ARAB",
-      "CORAL",
       "SELATAN"
     ]
   },
@@ -1971,20 +1118,14 @@
     "theme": "Organ dalam tubuh",
     "words": [
       "JANTUNG",
-      "PARU",
       "HATI",
       "GINJAL",
       "LAMBUNG",
       "USUS",
       "LIMPA",
-      "PANKREAS",
       "EMPEDU",
       "KANDUNG",
-      "KELENJAR",
-      "TIROID",
-      "PROSTAT",
-      "RAHIM",
-      "OVARIUM"
+      "RAHIM"
     ]
   },
   {
@@ -1995,26 +1136,20 @@
       "BELAKANG",
       "RUSUK",
       "SELANGKA",
-      "HUMERUS",
       "RADIUS",
       "ULNA",
       "FEMUR",
       "TIBIA",
       "FIBULA",
-      "STERNUM",
-      "PATELA",
-      "PELVIS"
+      "PATELA"
     ]
   },
   {
     "theme": "Jenis penyakit menular",
     "words": [
-      "COVID",
       "INFLUENZA",
-      "TUBERKULOSIS",
       "MALARIA",
       "DENGUE",
-      "HEPATITIS",
       "CAMPAK",
       "CACAR",
       "KOLERA",
@@ -2025,40 +1160,22 @@
     ]
   },
   {
-    "theme": "Vitamin dan mineral penting",
-    "words": [
-      "KALSIUM",
-      "ZAT BESI",
-      "FOSFOR",
-      "MAGNESIUM",
-      "ZINC",
-      "KALIUM",
-      "NATRIUM"
-    ]
-  },
-  {
     "theme": "Jenis lembaga keuangan",
     "words": [
       "BANK",
       "KOPERASI",
       "PEGADAIAN",
       "ASURANSI",
-      "LEASING",
-      "SEKURITAS",
-      "REKSA",
       "DANA",
       "PASAR",
       "MODAL",
       "BURSA",
-      "PINJOL",
-      "FINTECH"
+      "PINJOL"
     ]
   },
   {
     "theme": "Istilah ekonomi dasar",
     "words": [
-      "INFLASI",
-      "DEFLASI",
       "RESESI",
       "EKSPOR",
       "IMPOR",
@@ -2079,13 +1196,11 @@
       "PASAR",
       "SWALAYAN",
       "MINIMARKET",
-      "HYPERMARKET",
       "TRADISIONAL",
       "MODERN",
       "MALAM",
       "PAGI",
       "TERAPUNG",
-      "ONLINE",
       "BURSA",
       "LELANG",
       "GROSIR",
@@ -2098,32 +1213,13 @@
       "KOPERASI",
       "FIRMA",
       "PERSERO",
-      "COMMANDITAIRE",
       "YAYASAN",
       "PERSEROAN",
       "BUMN",
       "BUMD",
       "UMKM",
-      "STARTUP",
       "KONGLOMERAT",
       "PERUSAHAAN"
-    ]
-  },
-  {
-    "theme": "Tokoh ulama Indonesia",
-    "words": [
-      "HAMKA",
-      "WAHID",
-      "HASYIM",
-      "NURCHOLISH",
-      "QURAISH",
-      "ZAINUDDIN",
-      "SYAFII",
-      "MUSTHAFA",
-      "AHMAD",
-      "DAHLAN",
-      "WAHAB",
-      "HASJIM"
     ]
   },
   {
@@ -2141,26 +1237,19 @@
       "MADRASAH",
       "WALI",
       "TAFAKUR",
-      "ZIKIR",
-      "JIHAD"
+      "ZIKIR"
     ]
   },
   {
     "theme": "Hari besar agama",
     "words": [
-      "IDUL",
       "FITRI",
-      "IDUL ADHA",
       "NATAL",
       "NYEPI",
       "WAISAK",
-      "IMLEK",
       "GALUNGAN",
       "KUNINGAN",
       "MAULID",
-      "ISRA",
-      "MIRAJ",
-      "PASKAH",
       "WAFAT"
     ]
   },
@@ -2192,14 +1281,10 @@
       "LISTRIK",
       "TANAM",
       "POHON",
-      "KURANGI",
       "SAMPAH",
       "SEPEDA",
       "SOLAR",
-      "WIND",
-      "TENDA",
-      "IRIGASI",
-      "GREEN"
+      "TENDA"
     ]
   },
   {
@@ -2213,7 +1298,6 @@
       "HUTAN",
       "LUMUT",
       "PAKU",
-      "FUNGI",
       "JAMUR",
       "TANAH",
       "HUMUS",
@@ -2236,110 +1320,21 @@
       "RACUN",
       "LOGAM",
       "BERAT",
-      "PESTISIDA",
       "PLASTIK",
       "SAMPAH"
     ]
   },
   {
-    "theme": "Istilah media sosial",
-    "words": [
-      "KONTEN",
-      "POSTINGAN",
-      "STORY",
-      "REEL",
-      "FEED",
-      "FOLLOWERS",
-      "LIKES",
-      "COMMENT",
-      "SHARE",
-      "HASHTAG",
-      "LIVE",
-      "COLLAB",
-      "ENDORSE"
-    ]
-  },
-  {
-    "theme": "Jenis game populer",
-    "words": [
-      "BATTLE",
-      "ROYALE",
-      "MOBA",
-      "STRATEGI",
-      "PUZZLE",
-      "RACING",
-      "SPORT",
-      "HORROR",
-      "SANDBOX",
-      "FIGHTING",
-      "PLATFORMER",
-      "SIMULATION"
-    ]
-  },
-  {
-    "theme": "Istilah internet dan jaringan",
-    "words": [
-      "WIFI",
-      "ROUTER",
-      "MODEM",
-      "SERVER",
-      "CLOUD",
-      "BANDWIDTH",
-      "LATENCY",
-      "FIREWALL",
-      "PROXY",
-      "DOMAIN",
-      "HOSTING",
-      "HTTP"
-    ]
-  },
-  {
-    "theme": "Jenis robot dan AI",
-    "words": [
-      "ROBOT",
-      "DRONE",
-      "CHATBOT",
-      "ALGORITMA",
-      "NEURAL",
-      "NETWORK",
-      "MACHINE",
-      "LEARNING",
-      "DATA",
-      "SENSOR",
-      "ACTUATOR",
-      "HUMANOID",
-      "ANDROID"
-    ]
-  },
-  {
-    "theme": "Aliran seni lukis",
-    "words": [
-      "REALISME",
-      "IMPRESIONISME",
-      "EKSPRESIONISME",
-      "KUBISME",
-      "SUREALISME",
-      "ABSTRAK",
-      "DADAISME",
-      "FUTURISME",
-      "ROMANTISME",
-      "NATURALISME"
-    ]
-  },
-  {
     "theme": "Jenis karya sastra",
     "words": [
-      "NOVEL",
       "CERPEN",
       "PUISI",
       "PANTUN",
       "GURINDAM",
-      "SYAIR",
       "DRAMA",
       "HIKAYAT",
       "DONGENG",
       "LEGENDA",
-      "FABEL",
       "ANEKDOT",
       "BIOGRAFI",
       "ESAI",
@@ -2347,51 +1342,10 @@
     ]
   },
   {
-    "theme": "Instrumen musik orkestra",
-    "words": [
-      "BIOLA",
-      "VIOLA",
-      "CELLO",
-      "BASS",
-      "KLARINET",
-      "OBOE",
-      "FAGOT",
-      "FLUTE",
-      "HORN",
-      "TROMPET",
-      "TROMBON",
-      "TUBA",
-      "HARPA",
-      "PIANO",
-      "PERKUSI"
-    ]
-  },
-  {
-    "theme": "Genre musik",
-    "words": [
-      "ROCK",
-      "JAZZ",
-      "BLUES",
-      "KLASIK",
-      "METAL",
-      "PUNK",
-      "HIPHOP",
-      "REGGAE",
-      "DANGDUT",
-      "FOLK",
-      "COUNTRY",
-      "ELECTRONIC",
-      "INDIE"
-    ]
-  },
-  {
     "theme": "Genre film dan serial",
     "words": [
       "AKSI",
       "KOMEDI",
-      "HORROR",
-      "ROMANCE",
-      "THRILLER",
       "DRAMA",
       "ANIMASI",
       "DOKUMENTER",
@@ -2545,14 +1499,11 @@
       "KATUN",
       "SUTRA",
       "LINEN",
-      "POLYESTER",
       "NILON",
       "RAYON",
       "DENIM",
       "VELVET",
       "SATIN",
-      "CHIFFON",
-      "ORGANZA",
       "TENUN",
       "BATIK",
       "LURIK"
@@ -2574,8 +1525,7 @@
       "KABIN",
       "MESIN",
       "PROPELER",
-      "RADAR",
-      "SONAR"
+      "RADAR"
     ]
   },
   {
@@ -2585,33 +1535,12 @@
       "PERAK",
       "TEMBAGA",
       "BESI",
-      "NIKEL",
       "BAUKSIT",
       "TIMAH",
       "INTAN",
-      "BATU BARA",
       "MINYAK",
       "BELERANG",
-      "FOSFAT",
-      "MANGAN",
-      "KOBALT"
-    ]
-  },
-  {
-    "theme": "Jenis plastik dan polimer",
-    "words": [
-      "PLASTIK",
-      "HDPE",
-      "LDPE",
-      "POLYPROPYLENE",
-      "POLYSTYRENE",
-      "KARET",
-      "SILIKON",
-      "TEFLON",
-      "EPOXY",
-      "NILON",
-      "AKRILIK",
-      "FIBERGLASS"
+      "FOSFAT"
     ]
   },
   {
@@ -2639,33 +1568,11 @@
       "HELM",
       "KOPIAH",
       "BLANGKON",
-      "UDENG",
       "BARET",
       "MAHKOTA",
       "TURBAN",
       "KERUDUNG",
-      "CAPING",
-      "TOPI COWBOY",
-      "BEANIE"
-    ]
-  },
-  {
-    "theme": "Jenis tas",
-    "words": [
-      "RANSEL",
-      "KOPER",
-      "DOMPET",
-      "CLUTCH",
-      "TOTE",
-      "BACKPACK",
-      "HANDBAG",
-      "SLING",
-      "POUCH",
-      "TRAVEL",
-      "LAPTOP",
-      "JANSPORT",
-      "GUCCI",
-      "SELEMPANG"
+      "CAPING"
     ]
   },
   {
@@ -2678,12 +1585,10 @@
       "POLKADOT",
       "ABSTRAK",
       "GEOMETRIS",
-      "PAISLEY",
       "BATIK",
       "TENUN",
       "SONGKET",
       "TARTAN",
-      "ZEBRA",
       "MACAN"
     ]
   },
@@ -2699,7 +1604,6 @@
       "TANGAN",
       "RANTAI",
       "LIONTIN",
-      "GELANG KAKI",
       "TUSUK",
       "KONDE",
       "JEPIT"
@@ -2717,11 +1621,1869 @@
       "GEMURUH",
       "DENTUM",
       "KICAUAN",
-      "DECITAN",
       "DENTING",
       "GEMA",
       "GAUNG",
       "SIULAN"
+    ]
+  },
+  {
+    "theme": "Adik",
+    "words": [
+      "ADIKA",
+      "CADIK",
+      "MADIK",
+      "SADIK",
+      "ADIKIA",
+      "RADIKS",
+      "ADIKARA",
+      "ADIKONG",
+      "ADIKTIF",
+      "BERADIK",
+      "JERADIK",
+      "MADIKSA",
+      "NOMADIK",
+      "RADIKAL",
+      "ADIKANDA"
+    ]
+  },
+  {
+    "theme": "Agama",
+    "words": [
+      "AGAMAIS",
+      "AGAMANI",
+      "AGAMAWI",
+      "SEAGAMA",
+      "AGAMAWAN",
+      "AWAAGAMA",
+      "BERAGAMA",
+      "NIRAGAMA",
+      "NONAGAMA",
+      "YUDAGAMA",
+      "AGAMAISME",
+      "ANTIAGAMA",
+      "KEAGAMAAN",
+      "KERAGAMAN",
+      "AGAMAISASI"
+    ]
+  },
+  {
+    "theme": "Akar",
+    "words": [
+      "BAKAR",
+      "CAKAR",
+      "DAKAR",
+      "KAKAR",
+      "MAKAR",
+      "PAKAR",
+      "SAKAR",
+      "TAKAR",
+      "GAKARI",
+      "LAKARA",
+      "MAKARA",
+      "NAKARA",
+      "SEAKAR",
+      "SYAKAR",
+      "AILAKAR"
+    ]
+  },
+  {
+    "theme": "Alat",
+    "words": [
+      "ALAT",
+      "BALAT",
+      "GALAT",
+      "PALAT",
+      "RALAT",
+      "WALAT",
+      "ALATUD",
+      "BALATO",
+      "CIALAT",
+      "FTALAT",
+      "RIALAT",
+      "SHALAT",
+      "BERALAT",
+      "JELALAT",
+      "KUWALAT"
+    ]
+  },
+  {
+    "theme": "Ambil",
+    "words": [
+      "AMBIL",
+      "SAMBIL",
+      "AMBILAN",
+      "KERAMBIL",
+      "SAMBILAN",
+      "TERAMBIL",
+      "MENGAMBIL",
+      "MENYAMBIL",
+      "PENGAMBIL",
+      "TERSAMBIL",
+      "MENGAMBILI",
+      "AMBILINGUAL",
+      "PENGAMBILAN",
+      "MENGAMBILKAN",
+      "MENYAMBILKAN"
+    ]
+  },
+  {
+    "theme": "Anak",
+    "words": [
+      "ANAK",
+      "SANAK",
+      "TANAK",
+      "AKANAK",
+      "ANAKAN",
+      "ANAKDA",
+      "RANAKA",
+      "TANAKH",
+      "ALMANAK",
+      "BERANAK",
+      "JELANAK",
+      "KEKANAK",
+      "KEMANAK",
+      "MANAKAN",
+      "MENANAK"
+    ]
+  },
+  {
+    "theme": "Angin",
+    "words": [
+      "RANGIN",
+      "EMANGIN",
+      "RANGINA",
+      "SEANGIN",
+      "BERANGIN",
+      "MERANGIN",
+      "PERANGIN",
+      "RANGINAN",
+      "SENANGIN",
+      "TERANGIN",
+      "ANTIANGIN",
+      "KEANGINAN",
+      "MENGANGIN",
+      "SERMANGIN",
+      "ANTIANGINA"
+    ]
+  },
+  {
+    "theme": "Ayah",
+    "words": [
+      "BAYAH",
+      "DAYAH",
+      "GAYAH",
+      "LAYAH",
+      "PAYAH",
+      "RAYAH",
+      "DIAYAH",
+      "SEAYAH",
+      "ULAYAH",
+      "BERAYAH",
+      "BINAYAH",
+      "GERAYAH",
+      "HIDAYAH",
+      "JENAYAH",
+      "KIFAYAH"
+    ]
+  },
+  {
+    "theme": "Ayam",
+    "words": [
+      "GAYAM",
+      "MAYAM",
+      "NAYAM",
+      "AYAMARU",
+      "MELAYAM",
+      "SEMAYAM",
+      "BERLAYAM",
+      "CENDAYAM",
+      "KAYAMBANG",
+      "PRANAYAMA",
+      "BERSEMAYAM",
+      "BERTAYAMUM",
+      "WIJAYAMALA",
+      "AYAMURASAKI",
+      "WIJAYAMULIA"
+    ]
+  },
+  {
+    "theme": "Babi",
+    "words": [
+      "BABIL",
+      "ABABIL",
+      "BABINSA",
+      "MEMBABI",
+      "BABINKAM",
+      "BABINKUM",
+      "BABINMAS",
+      "BERBABIL",
+      "MEMBABIL",
+      "PEMBABIL",
+      "TERBABIT",
+      "BABILONIA",
+      "SERBABISA",
+      "BABINDESIR",
+      "KABABINKUM"
+    ]
+  },
+  {
+    "theme": "Barang",
+    "words": [
+      "BARANG",
+      "AMBARANG",
+      "BARANGAN",
+      "SEBARANG",
+      "SEMBARANG",
+      "BARANGKALI",
+      "PRAMUBARANG",
+      "SEMBARANGAN"
+    ]
+  },
+  {
+    "theme": "Batik",
+    "words": [
+      "BATIKAN",
+      "ANABATIK",
+      "BERBATIK",
+      "EKOBATIK",
+      "MEMBATIK",
+      "PEMBATIK",
+      "ADIABATIK",
+      "AEROBATIK",
+      "AKROBATIK",
+      "KATABATIK",
+      "SABATIKAL",
+      "PEMBATIKAN",
+      "PERBATIKAN",
+      "BERAEROBATIK"
+    ]
+  },
+  {
+    "theme": "Batu",
+    "words": [
+      "BATUI",
+      "BATUK",
+      "BATUNG",
+      "BATUTU",
+      "BATULEY",
+      "BATUMIN",
+      "BEBATUR",
+      "BERBATU",
+      "KEMBATU",
+      "KUBATUR",
+      "MEMBATU",
+      "TEMBATU",
+      "TOMBATU",
+      "BATUBARA",
+      "BATUTARA"
+    ]
+  },
+  {
+    "theme": "Beri",
+    "words": [
+      "BERI",
+      "BERIA",
+      "BERIK",
+      "BERIAK",
+      "BERIAN",
+      "BERIAS",
+      "BERIBA",
+      "BERIBU",
+      "BERIDA",
+      "BERIDE",
+      "BERILE",
+      "BERIMA",
+      "BERION",
+      "BERISI",
+      "IBERIA"
+    ]
+  },
+  {
+    "theme": "Besar",
+    "words": [
+      "BESARAN",
+      "SEBESAR",
+      "MABESART",
+      "MEMBESAR",
+      "PEMBESAR",
+      "TERBESAR",
+      "KEBESARAN",
+      "PEMBESARAN",
+      "PEMERBESAR",
+      "MEMBESARKAN",
+      "MEMPERBESAR"
+    ]
+  },
+  {
+    "theme": "Besi",
+    "words": [
+      "BESIT",
+      "BESING",
+      "MEMBESI",
+      "SEMBESI",
+      "MEMBESIT",
+      "OBESITAS",
+      "TERBESIT",
+      "TREMBESI",
+      "MEREMBESI",
+      "IMBESILITAS"
+    ]
+  },
+  {
+    "theme": "Bidan",
+    "words": [
+      "BIDAN",
+      "BIDANG",
+      "BERBIDAN",
+      "KARBIDAN",
+      "SEBIDANG",
+      "BERBIDANG",
+      "KEBIDANAN",
+      "LEMBIDANG",
+      "MEMBIDANI",
+      "PEMBIDANG",
+      "SUBBIDANG",
+      "KEBIDANGAN",
+      "MEMBIDANGI",
+      "MULTIBIDANG",
+      "PEMBIDANGAN"
+    ]
+  },
+  {
+    "theme": "Bintang",
+    "words": [
+      "BINTANGAN",
+      "BINTANGOR",
+      "SEBINTANG",
+      "ADIBINTANG",
+      "BERBINTANG",
+      "KEBINTANGAN",
+      "MAHABINTANG",
+      "MEGABINTANG",
+      "MEMBINTANGI",
+      "PERBINTANGAN"
+    ]
+  },
+  {
+    "theme": "Bola",
+    "words": [
+      "BOLAK",
+      "BOLAR",
+      "BOLAS",
+      "BOLANG",
+      "KABOLA",
+      "PEBOLA",
+      "BERBOLA",
+      "BOBOLAN",
+      "BOLATIK",
+      "JEBOLAN",
+      "MEMBOLA",
+      "TEMBOLA",
+      "TOMBOLA",
+      "GEMBOLAN",
+      "PARABOLA"
+    ]
+  },
+  {
+    "theme": "Buang",
+    "words": [
+      "BUANG",
+      "BUANGAN",
+      "KEBUANG",
+      "BUANGONG",
+      "MEMBUANG",
+      "PEMBUANG",
+      "SIMBUANG",
+      "TERBUANG",
+      "TOTOBUANG",
+      "PEMBUANGAN",
+      "MEMBUANGKAN",
+      "KETERBUANGAN"
+    ]
+  },
+  {
+    "theme": "Buka",
+    "words": [
+      "BUKA",
+      "BUKAL",
+      "BUKAN",
+      "BUKAT",
+      "BUKAU",
+      "BUKAAN",
+      "KEBUKA",
+      "BERBUKA",
+      "BUBUKAN",
+      "BUKARES",
+      "DARBUKA",
+      "GEBUKAN",
+      "LUBUKAN",
+      "MEMBUKA",
+      "PEMBUKA"
+    ]
+  },
+  {
+    "theme": "Buku",
+    "words": [
+      "BUKUR",
+      "BUKUT",
+      "BEBUKU",
+      "BUKUTE",
+      "BERBUKU",
+      "KRABUKU",
+      "LIABUKU",
+      "MEMBUKU",
+      "NONBUKU",
+      "TERBUKU",
+      "MEMBUKUT",
+      "PEMBUKUT",
+      "KADAMBUKU",
+      "PEMBUKUAN",
+      "PERBUKUAN"
+    ]
+  },
+  {
+    "theme": "Bulan",
+    "words": [
+      "BULANG",
+      "AMBULAN",
+      "BEBULAN",
+      "BULANAN",
+      "KIBULAN",
+      "SEBULAN",
+      "AMBULANS",
+      "BERBULAN",
+      "MEMBULAN",
+      "TIMBULAN",
+      "TRIBULAN",
+      "BERBULANG",
+      "BULANSING",
+      "KECABULAN",
+      "MEMBULANG"
+    ]
+  },
+  {
+    "theme": "Bulat",
+    "words": [
+      "BULATAN",
+      "MEMBULAT",
+      "TERBULAT",
+      "KEBULATAN",
+      "MEMBULATI",
+      "TABULATOR",
+      "TABULATUR",
+      "AMBULATORI",
+      "PEMBULATAN",
+      "MEMBULATKAN",
+      "MEMPERBULAT"
+    ]
+  },
+  {
+    "theme": "Bunga",
+    "words": [
+      "BUNGAH",
+      "BEBUNGA",
+      "BUNGALO",
+      "BERBUNGA",
+      "BUBUNGAN",
+      "BUNGALAN",
+      "GABUNGAN",
+      "HUBUNGAN",
+      "MEMBUNGA",
+      "PEMBUNGA",
+      "SABUNGAN",
+      "TABUNGAN",
+      "BAMBUNGAN",
+      "BEBUNGAAN",
+      "CEMBUNGAN"
+    ]
+  },
+  {
+    "theme": "Cinta",
+    "words": [
+      "PECINTA",
+      "BERCINTA",
+      "MENCINTA",
+      "PENCINTA",
+      "TAKCINTA",
+      "TERCINTA",
+      "CINTAMANI",
+      "KECINTAAN",
+      "MENCINTAI",
+      "BERCINTAAN",
+      "PERCINTAAN",
+      "BERCINTAKAN",
+      "MENCINTAKAN",
+      "KETAKCINTAAN"
+    ]
+  },
+  {
+    "theme": "Dam",
+    "words": [
+      "ADAM",
+      "DAMI",
+      "IDAM",
+      "PDAM",
+      "ANDAM",
+      "BADAM",
+      "DAMAI",
+      "DAMAK",
+      "DAMAL",
+      "DAMAR",
+      "DAMAS",
+      "DAMAT",
+      "DAMBA",
+      "DAMIR",
+      "DAMIU"
+    ]
+  },
+  {
+    "theme": "Desa",
+    "words": [
+      "DESA",
+      "DESAH",
+      "DESAK",
+      "DESAR",
+      "DESAU",
+      "DESAIN",
+      "DESARI",
+      "SEDESA",
+      "DESAHAN",
+      "DESAKAN",
+      "DESAUAN",
+      "MERDESA",
+      "PRADESA",
+      "BERDESAH",
+      "BERDESAK"
+    ]
+  },
+  {
+    "theme": "Detik",
+    "words": [
+      "DETIKAN",
+      "SEDETIK",
+      "BERDETIK",
+      "GEODETIK",
+      "MENDETIK",
+      "GEODETIKA",
+      "MILIDETIK",
+      "NANODETIK",
+      "FEMTODETIK",
+      "MIKRODETIK",
+      "ZEPTODETIK"
+    ]
+  },
+  {
+    "theme": "Dua",
+    "words": [
+      "DUAL",
+      "DUAR",
+      "ADUAN",
+      "DUAFA",
+      "DUANE",
+      "KEDUA",
+      "BERDUA",
+      "BIDUAN",
+      "JADUAL",
+      "MENDUA",
+      "PADUAN",
+      "PENDUA",
+      "PERDUA",
+      "BENDUAN",
+      "CENDUAI"
+    ]
+  },
+  {
+    "theme": "Emas",
+    "words": [
+      "CEMAS",
+      "GEMAS",
+      "KEMAS",
+      "LEMAS",
+      "REMAS",
+      "TEMAS",
+      "SEMASA",
+      "TEMASA",
+      "BEREMAS",
+      "KEMASAN",
+      "KREMASI",
+      "MEMASAM",
+      "MEMASAP",
+      "MEMASOK",
+      "MEMASUK"
+    ]
+  },
+  {
+    "theme": "Empat",
+    "words": [
+      "EMPAT",
+      "SEMPAT",
+      "TEMPAT",
+      "KEEMPAT",
+      "BEREMPAT",
+      "PENEMPAT",
+      "PEREMPAT",
+      "SETEMPAT",
+      "TEMPATAN",
+      "BEREMPATI",
+      "BERTEMPAT",
+      "MEMPATUHI",
+      "MENEMPATI",
+      "MENYEMPAT",
+      "NIREMPATI"
+    ]
+  },
+  {
+    "theme": "Enam",
+    "words": [
+      "ENAM",
+      "BENAM",
+      "SENAM",
+      "ENAMEL",
+      "JENAMA",
+      "KEENAM",
+      "MENAMU",
+      "SENAMA",
+      "BENAMAN",
+      "BERENAM",
+      "MENAMAI",
+      "MENAMPI",
+      "MENAMUI",
+      "PENAMAT",
+      "PENAMPI"
+    ]
+  },
+  {
+    "theme": "Foto",
+    "words": [
+      "FOTO",
+      "FOTON",
+      "BERFOTO",
+      "FOTONIK",
+      "FOTOPIA",
+      "MEMFOTO",
+      "NONFOTO",
+      "PASFOTO",
+      "SWAFOTO",
+      "FOTOGRAF",
+      "FOTOKOPI",
+      "FOTOSFER",
+      "FOTOSTAT",
+      "MEMFOTOI",
+      "ORTOFOTO"
+    ]
+  },
+  {
+    "theme": "Gunting",
+    "words": [
+      "GUNTING",
+      "GUNTINGAN",
+      "BERGUNTING",
+      "MENGUNTING",
+      "TERGUNTING",
+      "MENGGUNTING",
+      "PENGGUNTING",
+      "SERIGUNTING",
+      "MENGGUNTINGI"
+    ]
+  },
+  {
+    "theme": "Gunung",
+    "words": [
+      "GUNUNGAN",
+      "SEGUNUNG",
+      "BERGUNUNG",
+      "GUNUNGMAS",
+      "MENGGUNUNG",
+      "PEGUNUNGAN",
+      "GUNUNGKIDUL",
+      "PERGUNUNGAN",
+      "GUNUNGSITOLI",
+      "PENGGUNUNGAN"
+    ]
+  },
+  {
+    "theme": "Guru",
+    "words": [
+      "GURUK",
+      "GURUN",
+      "GURUNG",
+      "MAGURU",
+      "BERGURU",
+      "GURUNDA",
+      "KANGGURU",
+      "KEGURUAN",
+      "MAHAGURU",
+      "MENGURUK",
+      "MENGURUP",
+      "MENGURUS",
+      "MENGURUT",
+      "PENGURUN",
+      "PENGURUP"
+    ]
+  },
+  {
+    "theme": "Hari",
+    "words": [
+      "HARIS",
+      "BAHARI",
+      "BIHARI",
+      "CAHARI",
+      "GAHARI",
+      "HARIAN",
+      "HARING",
+      "HARINI",
+      "ISHARI",
+      "JOHARI",
+      "SEHARI",
+      "AMHARIK",
+      "BERHARI",
+      "HARISAH",
+      "JAUHARI"
+    ]
+  },
+  {
+    "theme": "Hujan",
+    "words": [
+      "BERHUJAN",
+      "KEHUJANAN",
+      "MENGHUJAN",
+      "PENGHUJAN",
+      "MENGHUJANI",
+      "PASCAHUJAN",
+      "PENGHUJANAN",
+      "MENGHUJANKAN"
+    ]
+  },
+  {
+    "theme": "Hutan",
+    "words": [
+      "BHUTAN",
+      "HUTANG",
+      "SAHUTAN",
+      "AWAHUTAN",
+      "BERHUTAN",
+      "NONHUTAN",
+      "BERHUTANG",
+      "KEHUTANAN",
+      "MENGHUTAN",
+      "PERHUTANI",
+      "BERSAHUTAN",
+      "PENYAHUTAN",
+      "PERHUTANAN",
+      "PENGHUTANAN",
+      "DEHUTANISASI"
+    ]
+  },
+  {
+    "theme": "Ibu",
+    "words": [
+      "IBUK",
+      "IBUN",
+      "IBUS",
+      "RIBU",
+      "CIBUK",
+      "HIBUR",
+      "JIBUN",
+      "KIBUL",
+      "KIBUS",
+      "KIBUT",
+      "LIBUR",
+      "RIBUN",
+      "RIBUT",
+      "SIBUK",
+      "SIBUR"
+    ]
+  },
+  {
+    "theme": "Ikan",
+    "words": [
+      "KIKAN",
+      "TIKAN",
+      "GLIKAN",
+      "IKANAN",
+      "KLIKAN",
+      "USIKAN",
+      "BALIKAN",
+      "BARIKAN",
+      "BELIKAN",
+      "BERIKAN",
+      "BIDIKAN",
+      "BISIKAN",
+      "CABIKAN",
+      "CARIKAN",
+      "CEKIKAN"
+    ]
+  },
+  {
+    "theme": "Islam",
+    "words": [
+      "ISLAM",
+      "ISLAMI",
+      "BISLAMA",
+      "ISLAMIS",
+      "BERISLAM",
+      "ISLAMIAH",
+      "ISTISLAM",
+      "ISLAMISME",
+      "ISLAMIYAH",
+      "ISLAMOLOG",
+      "KEISLAMAN",
+      "PENGISLAM",
+      "ISLAMISASI",
+      "ISLAMOLOGI",
+      "KEISLAMIAN"
+    ]
+  },
+  {
+    "theme": "Jalan",
+    "words": [
+      "JALAN",
+      "JALANG",
+      "JALANAN",
+      "JEJALAN",
+      "PEJALAN",
+      "SEJALAN",
+      "GANJALAN",
+      "KEANJALAN",
+      "KEPEJALAN",
+      "MENJALANG",
+      "MENJALANI",
+      "PEMEJALAN",
+      "BERJEJALAN",
+      "GERONJALAN",
+      "JALANGKUNG"
+    ]
+  },
+  {
+    "theme": "Juta",
+    "words": [
+      "JUTA",
+      "JUTAAN",
+      "SEJUTA",
+      "JUTAWAN",
+      "KEJUTAN",
+      "RAJUTAN",
+      "LANJUTAN",
+      "BERJUTAAN",
+      "KEKEJUTAN",
+      "PERAJUTAN",
+      "BERKEJUTAN",
+      "KELANJUTAN",
+      "PELANJUTAN",
+      "BERLANJUTAN",
+      "PERLANJUTAN"
+    ]
+  },
+  {
+    "theme": "Kain",
+    "words": [
+      "KAIN",
+      "KAING",
+      "KAINIT",
+      "KOKAIN",
+      "BERKAIN",
+      "OBOKAIN",
+      "BERKAING",
+      "KOKAINISME"
+    ]
+  },
+  {
+    "theme": "Kamera",
+    "words": [
+      "KAMERAD",
+      "BERKAMERA",
+      "BIKAMERAL",
+      "KAMERAMAN",
+      "KAMERAMEN",
+      "KAMERAWAN",
+      "TELEKAMERA",
+      "TRIKAMERAL",
+      "MIKROKAMERA",
+      "MULTIKAMERA"
+    ]
+  },
+  {
+    "theme": "Kayu",
+    "words": [
+      "KAYUH",
+      "KAYUN",
+      "KAYUNG",
+      "SEKAYU",
+      "BERKAYU",
+      "NIRKAYU",
+      "BECAKAYU",
+      "BERKAYUH",
+      "KEKAYUAN",
+      "KAYUPULAU",
+      "PERKAYUAN",
+      "KAYUMWUNGAN",
+      "TERKAYUHKAN"
+    ]
+  },
+  {
+    "theme": "Kebun",
+    "words": [
+      "KEBUN",
+      "PEKEBUN",
+      "SEKEBUN",
+      "BERKEBUN",
+      "KEBUNTUAN",
+      "KEBUNDARAN",
+      "PERKEBUNAN",
+      "KEBUNGKAMAN",
+      "KEBUNGKUKAN",
+      "KEBUNTINGAN",
+      "KEBUNTUNGAN",
+      "MEMPERKEBUNI"
+    ]
+  },
+  {
+    "theme": "Kelas",
+    "words": [
+      "KELAS",
+      "KELASA",
+      "KELASI",
+      "KELASAH",
+      "KELASAK",
+      "KELASAN",
+      "SEKELAS",
+      "BERKELAS",
+      "SUBKELAS",
+      "INFRAKELAS",
+      "KELASKARAN",
+      "BERSUBKELAS"
+    ]
+  },
+  {
+    "theme": "Kota",
+    "words": [
+      "KOTA",
+      "KOTAB",
+      "KOTAI",
+      "KOTAM",
+      "MAKOTA",
+      "BERKOTA",
+      "IBUKOTA",
+      "SEKOTAH",
+      "SEKOTAK",
+      "DESAKOTA",
+      "KEKOTAAN",
+      "KOTABARU",
+      "KOTAGEDE",
+      "KOTAMARA",
+      "MEGAKOTA"
+    ]
+  },
+  {
+    "theme": "Kris",
+    "words": [
+      "KRISAN",
+      "KRISIS",
+      "KRISNA",
+      "KRISPI",
+      "JAMKRIS",
+      "KRISMON",
+      "KRISTAL",
+      "KRISTEN",
+      "KRISTIK",
+      "ROHKRIS",
+      "KRISALID",
+      "KRISALIS",
+      "KRISOFIL",
+      "KRISOTIL",
+      "HIPOKRISI"
+    ]
+  },
+  {
+    "theme": "Kue",
+    "words": [
+      "CAKUE",
+      "KUENI",
+      "SEKUEL",
+      "AKUEDUK",
+      "BARKUET",
+      "FREKUEN",
+      "KUETIAU",
+      "PREKUEL",
+      "SEKUENS",
+      "TANGKUE",
+      "INSEKUEN",
+      "BERSEKUEL",
+      "DELINKUEN",
+      "ELOKUENSI",
+      "FREKUENSI"
+    ]
+  },
+  {
+    "theme": "Lamp",
+    "words": [
+      "LAMPAI",
+      "LAMPAS",
+      "LAMPAU",
+      "LAMPES",
+      "LAMPIK",
+      "LAMPIN",
+      "LAMPIT",
+      "LAMPANG",
+      "LAMPENI",
+      "LAMPIAS",
+      "LAMPION",
+      "LAMPONG",
+      "LAMPURA",
+      "SELAMPE",
+      "TOLAMPU"
+    ]
+  },
+  {
+    "theme": "Lari",
+    "words": [
+      "LARI",
+      "LARIS",
+      "KULARI",
+      "LARIAN",
+      "NALARI",
+      "PALARI",
+      "PELARI",
+      "SELARI",
+      "FILARIA",
+      "KLARINO",
+      "LARIKAN",
+      "MELARIH",
+      "MELARIK",
+      "PELARIK",
+      "PELARIS"
+    ]
+  },
+  {
+    "theme": "Layar",
+    "words": [
+      "PELAYAR",
+      "SELAYAR",
+      "BERLAYAR",
+      "MELAYARI",
+      "GELAYARAN",
+      "PELAYARAN",
+      "MELAYARKAN",
+      "MULTILAYAR",
+      "PERLAYARAN",
+      "BERLAYARKAN",
+      "BERPELAYARAN"
+    ]
+  },
+  {
+    "theme": "Lebar",
+    "words": [
+      "GELEBAR",
+      "LEBARAN",
+      "MELEBAR",
+      "PELEBAR",
+      "SELEBAR",
+      "PERLEBAR",
+      "TERLEBAR",
+      "KELEBARAN",
+      "PELEBARAN",
+      "SELEBARAN",
+      "BERGELEBAR",
+      "BERLEBARAN",
+      "MELEBARKAN",
+      "PEMERLEBAR",
+      "TERGELEBAR"
+    ]
+  },
+  {
+    "theme": "Lima",
+    "words": [
+      "LIMA",
+      "LIMAI",
+      "LIMAU",
+      "ALIMAN",
+      "LIMANO",
+      "WALIMA",
+      "BERLIMA",
+      "KALIMAH",
+      "KALIMAT",
+      "KELIMAN",
+      "KLIMAKS",
+      "LIMASAN",
+      "POLIMAT",
+      "WALIMAT",
+      "AKLIMASI"
+    ]
+  },
+  {
+    "theme": "Luka",
+    "words": [
+      "LUKA",
+      "LUKAH",
+      "LUKAT",
+      "GLUKAN",
+      "BELUKAR",
+      "BERLUKA",
+      "BULUKAN",
+      "JULUKAN",
+      "MELUKAH",
+      "MELUKAI",
+      "MELUKAT",
+      "PELUKAN",
+      "SELUKAT",
+      "TERLUKA",
+      "BELUKANG"
+    ]
+  },
+  {
+    "theme": "Lukis",
+    "words": [
+      "LUKIS",
+      "LUKISAN",
+      "MELUKIS",
+      "PELUKIS",
+      "TERLUKIS",
+      "PELUKISAN",
+      "BERLUKISAN",
+      "MELUKISKAN",
+      "TERLUKISKAN"
+    ]
+  },
+  {
+    "theme": "Makan",
+    "words": [
+      "DIMAKAN",
+      "KEMAKAN",
+      "MAKANAN",
+      "MAKANYA",
+      "MEMAKAN",
+      "PEMAKAN",
+      "SAMAKAN",
+      "SIMAKAN",
+      "MAKANIWE",
+      "MEMAKANI",
+      "PERMAKAN",
+      "TERMAKAN",
+      "KEJAMAKAN",
+      "KETAMAKAN",
+      "MENAMAKAN"
+    ]
+  },
+  {
+    "theme": "Mandi",
+    "words": [
+      "MANDIR",
+      "MANDIRI",
+      "PEMANDI",
+      "ALMANDIN",
+      "BERMANDI",
+      "MANDIANG",
+      "MANDIBEL",
+      "MANDIGURI",
+      "PEMANDIAN",
+      "SUKAMANDI",
+      "KOMANDITER",
+      "MEMANDIKAN",
+      "PERMANDIAN",
+      "BERMANDIKAN",
+      "KEMANDIRIAN"
+    ]
+  },
+  {
+    "theme": "Marah",
+    "words": [
+      "AMARAH",
+      "IMARAH",
+      "SEMARAH",
+      "TIMARAH",
+      "MEMARAHI",
+      "KEMARAHAN",
+      "BERMARAHAN",
+      "MEMARAHKAN"
+    ]
+  },
+  {
+    "theme": "Meja",
+    "words": [
+      "MEJAM",
+      "MEJAN",
+      "SEMEJA",
+      "KEMEJAN",
+      "MEMEJAL",
+      "SEMEJAK",
+      "SEMEJANA",
+      "BERKEMEJA",
+      "PRAMUMEJA",
+      "MEMEJALKAN",
+      "MEMEJAMKAN",
+      "BERKEMEJAKAN"
+    ]
+  },
+  {
+    "theme": "Menit",
+    "words": [
+      "MENITI",
+      "MENITAH",
+      "MENITAN",
+      "MENITIK",
+      "MENITIP",
+      "MENITIR",
+      "MENITIS",
+      "SEMENIT",
+      "AMENITAS",
+      "MENITIKI",
+      "MENITIPI",
+      "MENITAHKAN",
+      "MENITIKKAN",
+      "MENITIPKAN",
+      "MENITISKAN"
+    ]
+  },
+  {
+    "theme": "Merah",
+    "words": [
+      "MEMERAH",
+      "MERAHAP",
+      "MERAHIM",
+      "PEMERAH",
+      "SEMERAH",
+      "JASMERAH",
+      "MEMERAHI",
+      "MEMERAHU",
+      "MERAHIMI",
+      "KEMERAHAN",
+      "MERAHASIA",
+      "MERAHMATI",
+      "PEMERAHAN",
+      "MEMERAHKAN",
+      "MERAHAPKAN"
+    ]
+  },
+  {
+    "theme": "Minum",
+    "words": [
+      "MINUM",
+      "INMINUM",
+      "KEMINUM",
+      "MEMINUM",
+      "MINUMAN",
+      "PEMINUM",
+      "ALUMINUM",
+      "JUKMINUM",
+      "MEMINUMI",
+      "TERMINUM",
+      "PEMINUMAN",
+      "MEMINUMKAN"
+    ]
+  },
+  {
+    "theme": "Mobil",
+    "words": [
+      "MOBILET",
+      "PEMOBIL",
+      "SEMOBIL",
+      "BERMOBIL",
+      "OTOMOBIL",
+      "AUTOMOBIL",
+      "LOKOMOBIL",
+      "MOBILITAS",
+      "MOBILISASI",
+      "PERMOBILAN",
+      "AMOBILISASI",
+      "DEMOBILISAN",
+      "MOBILISATOR",
+      "DEMOBILISASI",
+      "MEMOBILISASI"
+    ]
+  },
+  {
+    "theme": "Motor",
+    "words": [
+      "MOTORIK",
+      "MOTORIS",
+      "PEMOTOR",
+      "BERMOTOR",
+      "BIOMOTOR",
+      "MEMOTORI",
+      "PROMOTOR",
+      "IDEOMOTOR",
+      "PARAMOTOR",
+      "PILOMOTOR",
+      "BIOMOTORIK",
+      "KOPROMOTOR",
+      "MOTORISASI",
+      "OKULOMOTOR",
+      "PERMOTORAN"
+    ]
+  },
+  {
+    "theme": "Musik",
+    "words": [
+      "MUSIKAL",
+      "MUSIKAN",
+      "MUSIKUS",
+      "PEMUSIK",
+      "BERMUSIK",
+      "MEMUSIKI",
+      "MUSIKOLOG",
+      "MEMUSIKKAN",
+      "MUSIKOLOGI",
+      "PERMUSIKAN",
+      "MUSIKALITAS",
+      "MUSIKOLOGIS",
+      "MUSIKALISASI"
+    ]
+  },
+  {
+    "theme": "Naik",
+    "words": [
+      "NAIK",
+      "MENAIK",
+      "MENAIKI",
+      "KENAIKAN",
+      "PENAIKAN",
+      "MENAIKKAN",
+      "MENUNAIKAN",
+      "MERINAIKAN"
+    ]
+  },
+  {
+    "theme": "Nasi",
+    "words": [
+      "ANASI",
+      "NASIB",
+      "ANASIR",
+      "DONASI",
+      "KONASI",
+      "NASION",
+      "ZONASI",
+      "EMANASI",
+      "KLONASI",
+      "KRENASI",
+      "NASIHAT",
+      "OZONASI",
+      "PRONASI",
+      "SENASIB",
+      "URINASI"
+    ]
+  },
+  {
+    "theme": "Negara",
+    "words": [
+      "NEGARA",
+      "MENEGARA",
+      "BERNEGARA",
+      "NEGARAWAN",
+      "NONNEGARA",
+      "ANTINEGARA",
+      "KENEGARAAN",
+      "NEGARAWATI",
+      "ANTARNEGARA",
+      "KERTANEGARA",
+      "MANCANEGARA",
+      "MULTINEGARA",
+      "BANJARNEGARA",
+      "TARUMANEGARA"
+    ]
+  },
+  {
+    "theme": "Obat",
+    "words": [
+      "OBAT",
+      "BOBAT",
+      "NOBAT",
+      "SOBAT",
+      "TOBAT",
+      "BOBATO",
+      "TOBATI",
+      "AKROBAT",
+      "BEROBAT",
+      "PETOBAT",
+      "TEROBAT",
+      "BERSOBAT",
+      "BERTOBAT",
+      "MENYOBAT",
+      "PENGOBAT"
+    ]
+  },
+  {
+    "theme": "Om",
+    "words": [
+      "ANOM",
+      "ATOM",
+      "BPOM",
+      "DOMO",
+      "DOMS",
+      "DOMU",
+      "EDOM",
+      "HOMO",
+      "JOMO",
+      "KOMA",
+      "KOMI",
+      "KOMO",
+      "KROM",
+      "LOME",
+      "LOMO"
+    ]
+  },
+  {
+    "theme": "Paku",
+    "words": [
+      "PAKUH",
+      "PAKUS",
+      "PAKUAN",
+      "BERPAKU",
+      "MEMPAKU",
+      "TERPAKU",
+      "HIPAKUSIA",
+      "PAKUALAMAN",
+      "KETERPAKUAN"
+    ]
+  },
+  {
+    "theme": "Pasar",
+    "words": [
+      "PASARA",
+      "PASARAN",
+      "ADIPASAR",
+      "BERPASAR",
+      "DENPASAR",
+      "NONPASAR",
+      "PASARAYA",
+      "PROPASAR",
+      "KEPASARAN",
+      "LOKAPASAR",
+      "PERPASARAN"
+    ]
+  },
+  {
+    "theme": "Pena",
+    "words": [
+      "PENA",
+      "PENAD",
+      "PENAK",
+      "PENAS",
+      "PENAT",
+      "PENAGA",
+      "PENAJA",
+      "PENAKA",
+      "PENALA",
+      "PENALI",
+      "PENANG",
+      "PENARI",
+      "PENATA",
+      "PENATO",
+      "PENATU"
+    ]
+  },
+  {
+    "theme": "Perak",
+    "words": [
+      "PERAKA",
+      "PERAKIT",
+      "PERAKSI",
+      "SEPERAK",
+      "PERAKUIK",
+      "KEPERAKAN",
+      "PERAKARAN",
+      "PERAKITAN",
+      "PERAKUNAN",
+      "HIPERAKTIF",
+      "PERAKYATAN",
+      "HIPERAKUSIS",
+      "HIPERAKUITAS",
+      "PERAKUNTANAN"
+    ]
+  },
+  {
+    "theme": "Polisi",
+    "words": [
+      "LIPOLISIS",
+      "KEPOLISIAN",
+      "POLISIKLIK",
+      "POLISIKLIS",
+      "POLISIONAL",
+      "POLISIONIL",
+      "MEMPOLISIKAN",
+      "POLISINAPTIK"
+    ]
+  },
+  {
+    "theme": "Rabu",
+    "words": [
+      "PRABU",
+      "RABUK",
+      "RABUN",
+      "RABUT",
+      "BERABU",
+      "KERABU",
+      "RABUNG",
+      "CERABUT",
+      "MERABUK",
+      "MERABUT",
+      "PERABUN",
+      "SERABUT",
+      "MERABUKI",
+      "MERABUNG",
+      "MERABUNI"
+    ]
+  },
+  {
+    "theme": "Racun",
+    "words": [
+      "MERACUN",
+      "PERACUN",
+      "RACUNAN",
+      "TERACUN",
+      "AWARACUN",
+      "MERACUNI",
+      "TERACUNI",
+      "KERACUNAN",
+      "PERACUNAN",
+      "MERACUNKAN"
+    ]
+  },
+  {
+    "theme": "Radang",
+    "words": [
+      "RADANG",
+      "MERADANG",
+      "PERADANG",
+      "MERADANGI",
+      "ANTIRADANG",
+      "KERADANGAN",
+      "PERADANGAN",
+      "MERADANGKAN"
+    ]
+  },
+  {
+    "theme": "Ratus",
+    "words": [
+      "RATUS",
+      "MERATUS",
+      "PERATUS",
+      "RATUSAN",
+      "SERATUS",
+      "APARATUS",
+      "KESERATUS",
+      "KUADRATUS",
+      "SEPERATUS",
+      "SERATUSAN",
+      "MENYERATUS",
+      "PERSERATUS",
+      "SEPERSERATUS"
+    ]
+  },
+  {
+    "theme": "Ribu",
+    "words": [
+      "RIBUAN",
+      "SERIBU",
+      "TRIBUN",
+      "ATRIBUT",
+      "BERIBUN",
+      "MERIBUT",
+      "PRIBUMI",
+      "TRIBUNE",
+      "TRIBUTA",
+      "ATRIBUSI",
+      "BERIBUAN",
+      "KESERIBU",
+      "PERIBUAN",
+      "PERIBUDI",
+      "SERIBUAN"
+    ]
+  },
+  {
+    "theme": "Roti",
+    "words": [
+      "BEROTI",
+      "EROTIK",
+      "EROTIS",
+      "KAROTID",
+      "KAROTIN",
+      "PAROTIA",
+      "EROTISME",
+      "MEMOROTI",
+      "NEFROTIK",
+      "NEKROTIK",
+      "PEROTIAN",
+      "MENYOROTI",
+      "SEROTINAL",
+      "SEROTINUS",
+      "TEREROTIS"
+    ]
+  },
+  {
+    "theme": "Rumput",
+    "words": [
+      "RUMPUT",
+      "BERUMPUT",
+      "MERUMPUT",
+      "PERUMPUT",
+      "RUMPUTAN",
+      "MERUMPUTI",
+      "PERUMPUTAN",
+      "RERUMPUTAN"
+    ]
+  },
+  {
+    "theme": "Rusa",
+    "words": [
+      "RUSAK",
+      "TRUSA",
+      "URUSAN",
+      "BARUSAN",
+      "BERUSAK",
+      "GERUSAN",
+      "JURUSAN",
+      "KURUSAN",
+      "MERUSAK",
+      "PERUSAK",
+      "RUSAKAN",
+      "SERUSAK",
+      "TERUSAK",
+      "TERUSAN",
+      "BERUSAHA"
+    ]
+  },
+  {
+    "theme": "Satu",
+    "words": [
+      "SATU",
+      "KESATU",
+      "SATUAN",
+      "BERSATU",
+      "KESATUAN",
+      "SATURASI",
+      "PEMERSATU",
+      "PERSATUAN",
+      "DESATURASE",
+      "DESATURASI",
+      "BERKESATUAN",
+      "BERSATURASI",
+      "KEBERSATUAN",
+      "MULTISATUAN",
+      "PEMERSATUAN"
+    ]
+  },
+  {
+    "theme": "Sepak",
+    "words": [
+      "SEPAK",
+      "PESEPAK",
+      "SEPAKAN",
+      "SEPAKAT",
+      "SEPAKET",
+      "SEPAKBOR",
+      "TERSEPAK",
+      "BERSEPAKAT",
+      "KESEPAKATAN",
+      "TERSEPAKATI",
+      "PERSEPAKATAN"
+    ]
+  },
+  {
+    "theme": "Simpan",
+    "words": [
+      "SIMPAN",
+      "SIMPANG",
+      "KESIMPAN",
+      "SIMPANAN",
+      "BERSIMPAN",
+      "SIMPANGAN",
+      "TERSIMPAN",
+      "BERSIMPANG",
+      "BERSIMPANGAN",
+      "PERSIMPANGAN"
+    ]
+  },
+  {
+    "theme": "Singa",
+    "words": [
+      "DESINGAN",
+      "PUSINGAN",
+      "KEASINGAN",
+      "SINGASARI",
+      "SISINGAAN",
+      "KEBISINGAN",
+      "KEPUSINGAN",
+      "PEMUSINGAN",
+      "PERASINGAN",
+      "SINGSINGAN",
+      "BERDESINGAN",
+      "PENGASINGAN",
+      "PERPUSINGAN",
+      "KELANGSINGAN",
+      "KETERASINGAN"
+    ]
+  },
+  {
+    "theme": "Taman",
+    "words": [
+      "TAMANU",
+      "BERTAMAN",
+      "DENTAMAN",
+      "HANTAMAN",
+      "KHATAMAN",
+      "KEHITAMAN",
+      "KINTAMANI",
+      "KELANTAMAN",
+      "PENGETAMAN",
+      "PERTAMANAN",
+      "BERDENTAMAN",
+      "KARTAMANTUL",
+      "PENGHITAMAN",
+      "PENGHANTAMAN",
+      "PENGKHATAMAN"
+    ]
+  },
+  {
+    "theme": "Tari",
+    "words": [
+      "TARI",
+      "TARIK",
+      "TARIM",
+      "TARIP",
+      "TARIS",
+      "ANTARI",
+      "BATARI",
+      "BETARI",
+      "METARI",
+      "TARIAN",
+      "TARIKH",
+      "TARING",
+      "BERTARI",
+      "BESTARI",
+      "CITARIK"
+    ]
+  },
+  {
+    "theme": "Tidur",
+    "words": [
+      "TIDURAN",
+      "PRATIDUR",
+      "TERTIDUR",
+      "KETIDURAN",
+      "PETIDURAN",
+      "TERTIDURI",
+      "MIKROTIDUR",
+      "SEKETIDURAN"
+    ]
+  },
+  {
+    "theme": "Tiga",
+    "words": [
+      "TIGA",
+      "TIGAS",
+      "KETIGA",
+      "TIGARI",
+      "BERTIGA",
+      "PERTIGA",
+      "LITIGASI",
+      "MITIGASI",
+      "MULTIGAS",
+      "SALATIGA",
+      "ANTIGAGAL",
+      "ANTIGALAU",
+      "ANTIGATAL",
+      "LITIGATOR",
+      "NIKTIGAMI"
+    ]
+  },
+  {
+    "theme": "Tinggi",
+    "words": [
+      "TINGGIR",
+      "PETINGGI",
+      "SETINGGI",
+      "SETINGGIL",
+      "TERTINGGI",
+      "KETINGGIAN",
+      "BUKITTINGGI",
+      "PEMERTINGGI",
+      "ULTRATINGGI",
+      "MEMPERTINGGI",
+      "TERTINGGIKAN"
+    ]
+  },
+  {
+    "theme": "Turun",
+    "words": [
+      "TURUN",
+      "PETURUN",
+      "TURUNAN",
+      "BERTURUN",
+      "BENTURUNG",
+      "KETURUNAN",
+      "MENTURUNG",
+      "BERKETURUNAN"
+    ]
+  },
+  {
+    "theme": "Ujian",
+    "words": [
+      "UJIAN",
+      "PUJIAN",
+      "SUJIAN",
+      "KEPUJIAN",
+      "PEMUJIAN",
+      "PENGUJIAN",
+      "KETERUJIAN",
+      "KETERPUJIAN"
+    ]
+  },
+  {
+    "theme": "Ukir",
+    "words": [
+      "UKIR",
+      "CUKIR",
+      "JUKIR",
+      "LUKIR",
+      "UKIRAN",
+      "BERUKIR",
+      "TERUKIR",
+      "MENGUKIR",
+      "PENGUKIR",
+      "MENGUKIRI",
+      "PENGUKIRAN",
+      "MENGUKIRKAN"
+    ]
+  },
+  {
+    "theme": "Ular",
+    "words": [
+      "BULAR",
+      "FIBULAR",
+      "MAKULAR",
+      "MENULAR",
+      "MODULAR",
+      "PENULAR",
+      "POPULAR",
+      "SELULAR",
+      "TABULAR",
+      "TUBULAR",
+      "ADULARIA",
+      "ASELULAR",
+      "GRANULAR",
+      "MENGULAR",
+      "MENULARI"
+    ]
+  },
+  {
+    "theme": "Ungu",
+    "words": [
+      "BUNGU",
+      "DUNGU",
+      "RUNGU",
+      "TUNGU",
+      "WUNGU",
+      "CUNGUK",
+      "FUNGUS",
+      "JUNGUR",
+      "LUNGUN",
+      "PUNGUT",
+      "RUNGUS",
+      "RUNGUT",
+      "SUNGUT",
+      "SEDUNGU",
+      "BERUNGUT"
     ]
   }
 ]

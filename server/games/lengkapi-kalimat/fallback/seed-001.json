@@ -1,11 +1,5 @@
 [
   {
-    "sentence": "____ terbit dari timur dan tenggelam di barat.",
-    "answers": [
-      "matahari"
-    ]
-  },
-  {
     "sentence": "____ payung sebelum hujan.",
     "answers": [
       "sedia"
@@ -21,13 +15,6 @@
     "sentence": "____ adalah ibu kota Provinsi Jawa Barat.",
     "answers": [
       "Bandung"
-    ]
-  },
-  {
-    "sentence": "____ dijuluki raja hutan karena keberaniannya.",
-    "answers": [
-      "singa",
-      "harimau"
     ]
   },
   {
@@ -98,7 +85,6 @@
   {
     "sentence": "____ adalah hewan darat tercepat di dunia.",
     "answers": [
-      "cheetah",
       "cita"
     ]
   },
@@ -118,18 +104,6 @@
     "sentence": "____ bernapas menggunakan insang.",
     "answers": [
       "ikan"
-    ]
-  },
-  {
-    "sentence": "____ dibuat dari bambu dan dimainkan dengan cara digoyangkan.",
-    "answers": [
-      "angklung"
-    ]
-  },
-  {
-    "sentence": "____ membeku pada suhu nol derajat Celsius.",
-    "answers": [
-      "air"
     ]
   },
   {
@@ -191,22 +165,13 @@
     "sentence": "Gudeg adalah makanan khas kota ____ yang rasanya manis.",
     "answers": [
       "Yogyakarta",
-      "Jogja",
-      "Yogya",
-      "Jogjakarta",
-      "Jogya"
+      "Jogjakarta"
     ]
   },
   {
     "sentence": "Kesenian reog berasal dari kota ____ di Jawa Timur.",
     "answers": [
       "Ponorogo"
-    ]
-  },
-  {
-    "sentence": "Hewan ____ dikenal sebagai hewan berkantung dari Australia.",
-    "answers": [
-      "kanguru"
     ]
   },
   {
@@ -285,12 +250,6 @@
     ]
   },
   {
-    "sentence": "Di mana bumi dipijak, di situ langit ____.",
-    "answers": [
-      "dijunjung"
-    ]
-  },
-  {
     "sentence": "Bersatu kita teguh, bercerai kita ____.",
     "answers": [
       "runtuh"
@@ -305,7 +264,6 @@
   {
     "sentence": "Buah jatuh tidak jauh dari ____.",
     "answers": [
-      "pohonnya",
       "pohon"
     ]
   },
@@ -319,12 +277,6 @@
     "sentence": "Nasi sudah menjadi ____.",
     "answers": [
       "bubur"
-    ]
-  },
-  {
-    "sentence": "Sambil menyelam minum ____.",
-    "answers": [
-      "air"
     ]
   },
   {
@@ -354,7 +306,6 @@
   {
     "sentence": "Presiden pertama Republik Indonesia adalah ____.",
     "answers": [
-      "Soekarno",
       "Sukarno"
     ]
   },
@@ -407,12 +358,6 @@
     ]
   },
   {
-    "sentence": "Burung yang tidak bisa terbang dan berasal dari Selandia Baru adalah ____.",
-    "answers": [
-      "kiwi"
-    ]
-  },
-  {
     "sentence": "Kami berangkat pagi-pagi supaya tidak ____.",
     "answers": [
       "terlambat",
@@ -425,6 +370,1692 @@
     "answers": [
       "sore",
       "pagi"
+    ]
+  },
+  {
+    "sentence": "______ adalah mata uang resmi Republik Indonesia.",
+    "answers": [
+      "RUPIAH"
+    ]
+  },
+  {
+    "sentence": "Mata uang resmi Indonesia adalah ______.",
+    "answers": [
+      "RUPIAH"
+    ]
+  },
+  {
+    "sentence": "____ adalah planet ketiga dalam tata surya.",
+    "answers": [
+      "BUMI"
+    ]
+  },
+  {
+    "sentence": "_______ adalah planet terbesar dalam tata surya.",
+    "answers": [
+      "JUPITER"
+    ]
+  },
+  {
+    "sentence": "________ adalah planet dengan cincin yang terkenal.",
+    "answers": [
+      "SATURNUS"
+    ]
+  },
+  {
+    "sentence": "____ adalah sungai terpanjang di Pulau Jawa.",
+    "answers": [
+      "SOLO"
+    ]
+  },
+  {
+    "sentence": "__________ adalah gunung tertinggi di Indonesia.",
+    "answers": [
+      "JAYAWIJAYA"
+    ]
+  },
+  {
+    "sentence": "_____ adalah selat yang memisahkan Jawa dan Sumatra.",
+    "answers": [
+      "SUNDA"
+    ]
+  },
+  {
+    "sentence": "_______ adalah samudra terbesar di dunia.",
+    "answers": [
+      "PASIFIK"
+    ]
+  },
+  {
+    "sentence": "______ adalah laut yang membentang di selatan Indonesia.",
+    "answers": [
+      "HINDIA"
+    ]
+  },
+  {
+    "sentence": "______ adalah bentuk muka bumi yang menjulang tinggi.",
+    "answers": [
+      "GUNUNG"
+    ]
+  },
+  {
+    "sentence": "_____ adalah dataran tinggi yang luas di tengah Pulau Jawa.",
+    "answers": [
+      "DIENG"
+    ]
+  },
+  {
+    "sentence": "____ adalah pantai yang terkenal di Bali.",
+    "answers": [
+      "KUTA"
+    ]
+  },
+  {
+    "sentence": "_______ adalah gunung berapi tertinggi di dunia.",
+    "answers": [
+      "EVEREST"
+    ]
+  },
+  {
+    "sentence": "____ adalah benua terbesar di dunia.",
+    "answers": [
+      "ASIA"
+    ]
+  },
+  {
+    "sentence": "_________ adalah benua terkecil di dunia.",
+    "answers": [
+      "AUSTRALIA"
+    ]
+  },
+  {
+    "sentence": "_____ adalah negara terbesar di dunia.",
+    "answers": [
+      "RUSIA"
+    ]
+  },
+  {
+    "sentence": "_________ adalah negara kepulauan terbesar di dunia.",
+    "answers": [
+      "INDONESIA"
+    ]
+  },
+  {
+    "sentence": "_______ adalah ibu kota Indonesia.",
+    "answers": [
+      "JAKARTA"
+    ]
+  },
+  {
+    "sentence": "_______ adalah ibu kota Provinsi Jawa Barat.",
+    "answers": [
+      "BANDUNG"
+    ]
+  },
+  {
+    "sentence": "________ adalah ibu kota Provinsi Jawa Timur.",
+    "answers": [
+      "SURABAYA"
+    ]
+  },
+  {
+    "sentence": "____ adalah danau terbesar di Indonesia.",
+    "answers": [
+      "TOBA"
+    ]
+  },
+  {
+    "sentence": "____ adalah pulau terbesar di Indonesia.",
+    "answers": [
+      "JAWA"
+    ]
+  },
+  {
+    "sentence": "_____ adalah selat yang menghubungkan Laut Jawa dan Samudra Hindia.",
+    "answers": [
+      "SUNDA"
+    ]
+  },
+  {
+    "sentence": "______ adalah teluk yang terkenal di Indonesia.",
+    "answers": [
+      "TOMINI"
+    ]
+  },
+  {
+    "sentence": "_____ adalah hewan yang bisa menghasilkan madu.",
+    "answers": [
+      "LEBAH"
+    ]
+  },
+  {
+    "sentence": "______ adalah reptil terbesar di dunia.",
+    "answers": [
+      "KOMODO"
+    ]
+  },
+  {
+    "sentence": "______ adalah hewan yang paling setia kepada pemiliknya.",
+    "answers": [
+      "ANJING"
+    ]
+  },
+  {
+    "sentence": "_____ adalah serangga yang hidup berkoloni.",
+    "answers": [
+      "RAYAP"
+    ]
+  },
+  {
+    "sentence": "____ adalah kupu-kupu yang memiliki sayap berwarna-warni.",
+    "answers": [
+      "KUPU"
+    ]
+  },
+  {
+    "sentence": "______ adalah capung yang memiliki sayap transparan.",
+    "answers": [
+      "CAPUNG"
+    ]
+  },
+  {
+    "sentence": "_________ adalah mamalia yang bisa terbang dan hidup di gua.",
+    "answers": [
+      "KELELAWAR"
+    ]
+  },
+  {
+    "sentence": "____ adalah animal yang hidup di air dan bernapas dengan insang.",
+    "answers": [
+      "IKAN"
+    ]
+  },
+  {
+    "sentence": "_____ adalah burung pemangsa yang identik dengan kebijaksanaan.",
+    "answers": [
+      "ELANG"
+    ]
+  },
+  {
+    "sentence": "_______ adalah penguin yang hidup di kutub selatan.",
+    "answers": [
+      "PINGUIN"
+    ]
+  },
+  {
+    "sentence": "____ adalah pohon yang kayunya keras dan tahan lama.",
+    "answers": [
+      "JATI"
+    ]
+  },
+  {
+    "sentence": "______ adalah bunga nasional Indonesia.",
+    "answers": [
+      "MELATI"
+    ]
+  },
+  {
+    "sentence": "_____ adalah jenis buah yang berwarna kuning dan kaya vitamin C.",
+    "answers": [
+      "JERUK"
+    ]
+  },
+  {
+    "sentence": "____ adalah tanaman yang menghasilkan kopi.",
+    "answers": [
+      "KOPI"
+    ]
+  },
+  {
+    "sentence": "____ adalah tanaman pangan utama di Indonesia.",
+    "answers": [
+      "PADI"
+    ]
+  },
+  {
+    "sentence": "________ adalah umbi-umbian yang populer di Indonesia.",
+    "answers": [
+      "SINGKONG"
+    ]
+  },
+  {
+    "sentence": "____ adalah tanaman yang hidup di air dan berakar di lumpur.",
+    "answers": [
+      "PADI"
+    ]
+  },
+  {
+    "sentence": "_____ adalah tanaman obat yang sering digunakan untuk jahe.",
+    "answers": [
+      "EMBEK"
+    ]
+  },
+  {
+    "sentence": "_____ adalah sayuran hijau yang kaya zat besi.",
+    "answers": [
+      "BAYAM"
+    ]
+  },
+  {
+    "sentence": "_____ adalah buah yang memiliki banyak biji kecil.",
+    "answers": [
+      "PISAH"
+    ]
+  },
+  {
+    "sentence": "______ adalah pohon palma penghasil buah matang.",
+    "answers": [
+      "KELAPA"
+    ]
+  },
+  {
+    "sentence": "_______ adalah tanaman hias yang sering dipajang di taman.",
+    "answers": [
+      "ANGGREK"
+    ]
+  },
+  {
+    "sentence": "______ adalah tanaman yang bisa hidup di gurun.",
+    "answers": [
+      "KAKTUS"
+    ]
+  },
+  {
+    "sentence": "_____ adalah jamur yang bisa dimakan dan rasanya enak.",
+    "answers": [
+      "TIRAM"
+    ]
+  },
+  {
+    "sentence": "______ adalah rumput yang tumbuh liar di padang.",
+    "answers": [
+      "RUMPUT"
+    ]
+  },
+  {
+    "sentence": "______ adalah kacang-kacangan yang kaya protein.",
+    "answers": [
+      "KACANG"
+    ]
+  },
+  {
+    "sentence": "____ adalah bumbu dapur yang beraroma kuat.",
+    "answers": [
+      "JAHE"
+    ]
+  },
+  {
+    "sentence": "______ adalah bumbu dapur yang berwarna kuning.",
+    "answers": [
+      "KUNING"
+    ]
+  },
+  {
+    "sentence": "______ adalah daun yang biasa digunakan untuk lalapan.",
+    "answers": [
+      "SAMBAL"
+    ]
+  },
+  {
+    "sentence": "____ adalah makanan khas Indonesia dari beras.",
+    "answers": [
+      "NASI"
+    ]
+  },
+  {
+    "sentence": "_______ adalah makanan ringan yang digoreng dan renyah.",
+    "answers": [
+      "KERIPIK"
+    ]
+  },
+  {
+    "sentence": "_______ adalah minuman tradisional dari jahe dan gula merah.",
+    "answers": [
+      "BANDREK"
+    ]
+  },
+  {
+    "sentence": "______ adalah kue kering yang biasa dibuat saat hari Raya.",
+    "answers": [
+      "NASTAR"
+    ]
+  },
+  {
+    "sentence": "____ adalah gorengan yang terbuat dari tahu.",
+    "answers": [
+      "BEGO"
+    ]
+  },
+  {
+    "sentence": "_____ adalah makanan yang terbuat dari kedelai yang difermentasi.",
+    "answers": [
+      "TEMPE"
+    ]
+  },
+  {
+    "sentence": "____ adalah makanan yang terbuat dari tahu dan dibungkus.",
+    "answers": [
+      "TAHU"
+    ]
+  },
+  {
+    "sentence": "____ adalah makanan berkuah kuning khas Betawi.",
+    "answers": [
+      "SOTO"
+    ]
+  },
+  {
+    "sentence": "_____ adalah kuaci yang dibuat dari biji bunga matahari.",
+    "answers": [
+      "KUACI"
+    ]
+  },
+  {
+    "sentence": "____ adalah roti yang上面 ditaburi gula.",
+    "answers": [
+      "ROTI"
+    ]
+  },
+  {
+    "sentence": "____ adalah minuman yang tinggi kafeinnya.",
+    "answers": [
+      "KOPI"
+    ]
+  },
+  {
+    "sentence": "____ adalah minuman tradisional dari beras ketan.",
+    "answers": [
+      "TUAK"
+    ]
+  },
+  {
+    "sentence": "_____ adalah kolak yang biasa dimakan saat bulan Ramadhan.",
+    "answers": [
+      "KOLAK"
+    ]
+  },
+  {
+    "sentence": "______ adalah pakaian adat Jawa untuk wanita.",
+    "answers": [
+      "KEBAYA"
+    ]
+  },
+  {
+    "sentence": "_____ adalah kain batik yang dipakai sebagai pakaian.",
+    "answers": [
+      "BATIK"
+    ]
+  },
+  {
+    "sentence": "_______ adalah tutup kepala khas Melayu.",
+    "answers": [
+      "SONGKOK"
+    ]
+  },
+  {
+    "sentence": "______ adalah alas kaki yang melindungi telapak kaki.",
+    "answers": [
+      "SEPATU"
+    ]
+  },
+  {
+    "sentence": "______ adalah aksesoris yang melingkari leher.",
+    "answers": [
+      "KALUNG"
+    ]
+  },
+  {
+    "sentence": "______ adalah gelang yang dipakai di pergelangan tangan.",
+    "answers": [
+      "GELANG"
+    ]
+  },
+  {
+    "sentence": "______ adalah tas yang dibawa di punggung.",
+    "answers": [
+      "RANTAI"
+    ]
+  },
+  {
+    "sentence": "______ adalah sandal yang casual dan nyaman.",
+    "answers": [
+      "SANDAL"
+    ]
+  },
+  {
+    "sentence": "_________ adalah selendang yang biasa dipakai wanita.",
+    "answers": [
+      "SELENDANG"
+    ]
+  },
+  {
+    "sentence": "______ adalah sarung yang biasa dipakai pria.",
+    "answers": [
+      "SARUNG"
+    ]
+  },
+  {
+    "sentence": "_______ adalah seragam sekolah untuk SD.",
+    "answers": [
+      "SERAGAM"
+    ]
+  },
+  {
+    "sentence": "_____ adalah jaket yang hangat saat cuaca dingin.",
+    "answers": [
+      "JAKET"
+    ]
+  },
+  {
+    "sentence": "_____ adalah kendaraan roda empat yang berjalan di jalan.",
+    "answers": [
+      "MOBIL"
+    ]
+  },
+  {
+    "sentence": "_____ adalah kendaraan roda dua yang populer di Indonesia.",
+    "answers": [
+      "MOTOR"
+    ]
+  },
+  {
+    "sentence": "______ adalah kendaraan yang berjalan di atas rel.",
+    "answers": [
+      "KERETA"
+    ]
+  },
+  {
+    "sentence": "_____ adalah alat transportasi air yang besar.",
+    "answers": [
+      "KAPAL"
+    ]
+  },
+  {
+    "sentence": "_______ adalah alat transportasi yang terbang di udara.",
+    "answers": [
+      "PESAWAT"
+    ]
+  },
+  {
+    "sentence": "______ adalah stasiun yang menjadi pusat kereta api.",
+    "answers": [
+      "GAMBIR"
+    ]
+  },
+  {
+    "sentence": "_______ adalah tempat pesawat lepas landas dan mendarat.",
+    "answers": [
+      "BANDARA"
+    ]
+  },
+  {
+    "sentence": "_________ adalah tempat berlabuh kapal di pelabuhan.",
+    "answers": [
+      "PELABUHAN"
+    ]
+  },
+  {
+    "sentence": "_____ adalah tempat pemberhentian bus di jalan.",
+    "answers": [
+      "HALTE"
+    ]
+  },
+  {
+    "sentence": "____ adalah helm yang wajib dipakai saat berkendara.",
+    "answers": [
+      "HELM"
+    ]
+  },
+  {
+    "sentence": "______ adalah bahan bakar untuk mesin bensin.",
+    "answers": [
+      "BENSIN"
+    ]
+  },
+  {
+    "sentence": "____ adalah tempat pengisian bahan bakar kendaraan.",
+    "answers": [
+      "SPBU"
+    ]
+  },
+  {
+    "sentence": "_____ adalah rambu yang mengatur lalu lintas di jalan.",
+    "answers": [
+      "LAMPU"
+    ]
+  },
+  {
+    "sentence": "______ adalah orang yang menyembuhkan penyakit pasien.",
+    "answers": [
+      "DOKTER"
+    ]
+  },
+  {
+    "sentence": "____ adalah pendidik yang mengajar di sekolah.",
+    "answers": [
+      "GURU"
+    ]
+  },
+  {
+    "sentence": "______ adalah penegak hukum yang menjaga keamanan.",
+    "answers": [
+      "POLISI"
+    ]
+  },
+  {
+    "sentence": "_______ adalah tentara yang mempertahankan negara.",
+    "answers": [
+      "TENTARA"
+    ]
+  },
+  {
+    "sentence": "_______ adalah orang yang menangkap ikan di laut.",
+    "answers": [
+      "NELAYAN"
+    ]
+  },
+  {
+    "sentence": "_______ adalah orang yang mengelola keuangan perusahaan.",
+    "answers": [
+      "AKUNTAN"
+    ]
+  },
+  {
+    "sentence": "_________ adalah pengacara yang mewakili klien di pengadilan.",
+    "answers": [
+      "PENGACARA"
+    ]
+  },
+  {
+    "sentence": "________ adalah pedagang yang menjual barang di pasar.",
+    "answers": [
+      "PEDAGANG"
+    ]
+  },
+  {
+    "sentence": "_______ adalah arsitek yang merancang bangunan.",
+    "answers": [
+      "ARSITEK"
+    ]
+  },
+  {
+    "sentence": "________ adalah insinyur yang merancang infrastruktur.",
+    "answers": [
+      "INSINYUR"
+    ]
+  },
+  {
+    "sentence": "_____ adalah piloto yang menerbangkan pesawat.",
+    "answers": [
+      "PILOT"
+    ]
+  },
+  {
+    "sentence": "______ adalah kapten yang memimpin kapal.",
+    "answers": [
+      "KAPTEN"
+    ]
+  },
+  {
+    "sentence": "_______ adalah kapster yang memotong rambut.",
+    "answers": [
+      "KAPSTER"
+    ]
+  },
+  {
+    "sentence": "_______ adalah penulis yang menulis artikel.",
+    "answers": [
+      "PENULIS"
+    ]
+  },
+  {
+    "sentence": "________ adalah jurnalis yang memberitakan berita.",
+    "answers": [
+      "JURNALIS"
+    ]
+  },
+  {
+    "sentence": "__________ adalah fotografer yang mengambil foto.",
+    "answers": [
+      "FOTOGRAFER"
+    ]
+  },
+  {
+    "sentence": "______ adalah montir yang memperbaiki kendaraan.",
+    "answers": [
+      "MONTIR"
+    ]
+  },
+  {
+    "sentence": "______ adalah tukang yang memperbaiki rumah.",
+    "answers": [
+      "TUKANG"
+    ]
+  },
+  {
+    "sentence": "_________ adalah pengrajin yang membuat kerajinan tangan.",
+    "answers": [
+      "PENGRAJIN"
+    ]
+  },
+  {
+    "sentence": "_______ adalah masinis yang mengoperasikan lokomotif.",
+    "answers": [
+      "MASINIS"
+    ]
+  },
+  {
+    "sentence": "_____ adalah hakim yang memimpin persidangan.",
+    "answers": [
+      "HAKIM"
+    ]
+  },
+  {
+    "sentence": "_____ adalah jaksa yang menuntut pidana.",
+    "answers": [
+      "JAKSA"
+    ]
+  },
+  {
+    "sentence": "_______ adalah notaris yang membuat akta legal.",
+    "answers": [
+      "NOTARIS"
+    ]
+  },
+  {
+    "sentence": "________ adalah apoteker yang meracik obat.",
+    "answers": [
+      "APOTEKER"
+    ]
+  },
+  {
+    "sentence": "_____ adalah bidan yang membantu persalinan.",
+    "answers": [
+      "BIDAN"
+    ]
+  },
+  {
+    "sentence": "_______ adalah perawat yang merawat pasien.",
+    "answers": [
+      "PERAWAT"
+    ]
+  },
+  {
+    "sentence": "______ adalah suster yang bekerja di rumah sakit.",
+    "answers": [
+      "SUSTER"
+    ]
+  },
+  {
+    "sentence": "_____ adalah kasir yang melayani pembayaran.",
+    "answers": [
+      "KASIR"
+    ]
+  },
+  {
+    "sentence": "___________ adalah resepsionis yang menyambut tamu.",
+    "answers": [
+      "RESEPSIONIS"
+    ]
+  },
+  {
+    "sentence": "__________ adalah sekretaris yang mengelola administrasi.",
+    "answers": [
+      "SEKRETARIS"
+    ]
+  },
+  {
+    "sentence": "_______ adalah manajer yang memimpin tim.",
+    "answers": [
+      "MANAJER"
+    ]
+  },
+  {
+    "sentence": "________ adalah direktur yang memimpin perusahaan.",
+    "answers": [
+      "DIREKTUR"
+    ]
+  },
+  {
+    "sentence": "_______ adalah老板 yang memimpin usaha.",
+    "answers": [
+      "PEMILIK"
+    ]
+  },
+  {
+    "sentence": "________ adalah pekerja yang bekerja di kantor.",
+    "answers": [
+      "KARYAWAN"
+    ]
+  },
+  {
+    "sentence": "_______ adalah tempat anak-anak belajar.",
+    "answers": [
+      "SEKOLAH"
+    ]
+  },
+  {
+    "sentence": "______ adalah tempat mahasiswa belajar di tingkat tinggi.",
+    "answers": [
+      "KAMPUS"
+    ]
+  },
+  {
+    "sentence": "_____ adalah ruangan tempat belajar di sekolah.",
+    "answers": [
+      "KELAS"
+    ]
+  },
+  {
+    "sentence": "_____ adalah tes yang harus dihadapi siswa.",
+    "answers": [
+      "UJIAN"
+    ]
+  },
+  {
+    "sentence": "_______ adalah proses kegiatan belajar mengajar.",
+    "answers": [
+      "BELAJAR"
+    ]
+  },
+  {
+    "sentence": "_______ adalah kegiatan ekstrakurikuler olahraga di sekolah.",
+    "answers": [
+      "PRAMUKA"
+    ]
+  },
+  {
+    "sentence": "____ adalah kegiatan seni tari di sekolah.",
+    "answers": [
+      "SENI"
+    ]
+  },
+  {
+    "sentence": "______ adalah pelajaran bahasa Indonesia di sekolah.",
+    "answers": [
+      "BAHASA"
+    ]
+  },
+  {
+    "sentence": "__________ adalah pelajaran menghitung angka.",
+    "answers": [
+      "MATEMATIKA"
+    ]
+  },
+  {
+    "sentence": "_____ adalah absensi untuk mencatat kehadiran siswa.",
+    "answers": [
+      "ABSEN"
+    ]
+  },
+  {
+    "sentence": "_____ adalah rapor yang menampilkan nilai siswa.",
+    "answers": [
+      "RAPOR"
+    ]
+  },
+  {
+    "sentence": "_______ adalah seragam yang dipakai siswa ke sekolah.",
+    "answers": [
+      "SERAGAM"
+    ]
+  },
+  {
+    "sentence": "______ adalah tas yang digunakan siswa ke sekolah.",
+    "answers": [
+      "RANTAI"
+    ]
+  },
+  {
+    "sentence": "____ adalah maps yang digunakan untuk navigasi.",
+    "answers": [
+      "PETA"
+    ]
+  },
+  {
+    "sentence": "_____ adalah globe yang memperbesar bentuk bumi.",
+    "answers": [
+      "GLOBE"
+    ]
+  },
+  {
+    "sentence": "________ adalah alat elektronik yang digunakan untuk komputasi.",
+    "answers": [
+      "KOMPUTER"
+    ]
+  },
+  {
+    "sentence": "_____ adalah layar yang menampilkan gambar.",
+    "answers": [
+      "LAYAR"
+    ]
+  },
+  {
+    "sentence": "______ adalah kamera yang digunakan untuk foto.",
+    "answers": [
+      "KAMERA"
+    ]
+  },
+  {
+    "sentence": "_______ adalah sumber energi untuk perangkat.",
+    "answers": [
+      "BATERAI"
+    ]
+  },
+  {
+    "sentence": "_____ adalah perangkat yang menyala saat ada listrik.",
+    "answers": [
+      "LAMPU"
+    ]
+  },
+  {
+    "sentence": "_____ adalah email untuk mengirim surat elektronik.",
+    "answers": [
+      "EMAIL"
+    ]
+  },
+  {
+    "sentence": "_______ adalah printer yang mencetak dokumen.",
+    "answers": [
+      "PRINTER"
+    ]
+  },
+  {
+    "sentence": "_______ adalah organ yang memompa darah ke seluruh tubuh.",
+    "answers": [
+      "JANTUNG"
+    ]
+  },
+  {
+    "sentence": "____ adalah organ yang digunakan untuk berpikir.",
+    "answers": [
+      "OTAK"
+    ]
+  },
+  {
+    "sentence": "_______ adalah organ yang mencerna makanan.",
+    "answers": [
+      "LAMBUNG"
+    ]
+  },
+  {
+    "sentence": "____ adalah indera untuk melihat.",
+    "answers": [
+      "MATA"
+    ]
+  },
+  {
+    "sentence": "_______ adalah indera untuk mendengar.",
+    "answers": [
+      "TELINGA"
+    ]
+  },
+  {
+    "sentence": "______ adalah indera untuk mencium bau.",
+    "answers": [
+      "HIDUNG"
+    ]
+  },
+  {
+    "sentence": "_____ adalah indera untuk merasakan rasa.",
+    "answers": [
+      "LIDAH"
+    ]
+  },
+  {
+    "sentence": "_____ adalah lapisan luar yang melindungi tubuh.",
+    "answers": [
+      "KULIT"
+    ]
+  },
+  {
+    "sentence": "__________ adalah alat untuk mengukur suhu tubuh.",
+    "answers": [
+      "TERMOMETER"
+    ]
+  },
+  {
+    "sentence": "_______ adalah vitamin yang baik untuk tulang.",
+    "answers": [
+      "KALSIUM"
+    ]
+  },
+  {
+    "sentence": "_______ adalah zat yang dibutuhkan tubuh untuk hidup.",
+    "answers": [
+      "MAKANAN"
+    ]
+  },
+  {
+    "sentence": "_____ adalah penyakit yang disebabkan virus.",
+    "answers": [
+      "DEMAM"
+    ]
+  },
+  {
+    "sentence": "______ adalah penyakit yang disebabkan kurang olahraga.",
+    "answers": [
+      "STROKE"
+    ]
+  },
+  {
+    "sentence": "______ adalah klinik untuk pemeriksaan umum.",
+    "answers": [
+      "KLINIK"
+    ]
+  },
+  {
+    "sentence": "______ adalah apotek tempat membeli obat.",
+    "answers": [
+      "APOTEK"
+    ]
+  },
+  {
+    "sentence": "_________ adalah olahraga bola yang dimainkan dengan kaki.",
+    "answers": [
+      "SEPAKBOLA"
+    ]
+  },
+  {
+    "sentence": "________ adalah olahraga di air yang menyehatkan.",
+    "answers": [
+      "BERENANG"
+    ]
+  },
+  {
+    "sentence": "____ adalah cabang atletik yang berlari.",
+    "answers": [
+      "LARI"
+    ]
+  },
+  {
+    "sentence": "____ adalah olahraga yang menggunakan bola dan net.",
+    "answers": [
+      "VOLI"
+    ]
+  },
+  {
+    "sentence": "______ adalah seni bela diri dari Jepang.",
+    "answers": [
+      "KARATE"
+    ]
+  },
+  {
+    "sentence": "_________ adalah bela diri dari Korea.",
+    "answers": [
+      "TAEKWONDO"
+    ]
+  },
+  {
+    "sentence": "_____ adalah bela diri dari Indonesia.",
+    "answers": [
+      "SILAT"
+    ]
+  },
+  {
+    "sentence": "_______ adalah tempat olahraga yang memiliki tribun.",
+    "answers": [
+      "STADION"
+    ]
+  },
+  {
+    "sentence": "____ adalah kegiatan peregangan untuk tubuh.",
+    "answers": [
+      "YOGA"
+    ]
+  },
+  {
+    "sentence": "_____ adalah alat untuk bermain badminton.",
+    "answers": [
+      "RAKET"
+    ]
+  },
+  {
+    "sentence": "____ adalah bola yang digunakan untuk sepak bola.",
+    "answers": [
+      "BOLA"
+    ]
+  },
+  {
+    "sentence": "______ adalah sarung tangan untuk boxing.",
+    "answers": [
+      "SARUNG"
+    ]
+  },
+  {
+    "sentence": "______ adalah matras untuk olahraga lantai.",
+    "answers": [
+      "MATRAS"
+    ]
+  },
+  {
+    "sentence": "______ adalah seni pertunjukan dari Jawa.",
+    "answers": [
+      "WAYANG"
+    ]
+  },
+  {
+    "sentence": "____ adalah alat musik tradisional dari Bali.",
+    "answers": [
+      "GONG"
+    ]
+  },
+  {
+    "sentence": "_____ adalah tarian dari Bali yang dilakukan berekor.",
+    "answers": [
+      "KECAK"
+    ]
+  },
+  {
+    "sentence": "_____ adalah batik tulis dari Yogyakarta.",
+    "answers": [
+      "BATIK"
+    ]
+  },
+  {
+    "sentence": "_____ adalah senjata tradisional dari Jawa.",
+    "answers": [
+      "KERIS"
+    ]
+  },
+  {
+    "sentence": "____ adalah kaligrafi untuk menulis huruf Arab.",
+    "answers": [
+      "KHAT"
+    ]
+  },
+  {
+    "sentence": "______ adalah patung yang berdiri tegak.",
+    "answers": [
+      "PATUNG"
+    ]
+  },
+  {
+    "sentence": "_____ adalah film Indonesia yang Horor.",
+    "answers": [
+      "HOROR"
+    ]
+  },
+  {
+    "sentence": "______ adalah film komedi yang lucu.",
+    "answers": [
+      "KOMEDI"
+    ]
+  },
+  {
+    "sentence": "_____ adalah drama yang mengharukan.",
+    "answers": [
+      "DRAMA"
+    ]
+  },
+  {
+    "sentence": "____ adalah film aksi yang penuh ketegangan.",
+    "answers": [
+      "AKSI"
+    ]
+  },
+  {
+    "sentence": "_______ adalah film animasi yang dibuat dengan komputer.",
+    "answers": [
+      "ANIMASI"
+    ]
+  },
+  {
+    "sentence": "____ adalah panggilan untuk ayah.",
+    "answers": [
+      "ABAH"
+    ]
+  },
+  {
+    "sentence": "________ adalah kata untuk suami atau istri.",
+    "answers": [
+      "PASANGAN"
+    ]
+  },
+  {
+    "sentence": "_____ adalah kata untuk nenek dari pihak ayah.",
+    "answers": [
+      "NENEK"
+    ]
+  },
+  {
+    "sentence": "____ adalah kata untuk conmem.",
+    "answers": [
+      "ADEM"
+    ]
+  },
+  {
+    "sentence": "____ adalah alat tulis untuk menulis.",
+    "answers": [
+      "PENA"
+    ]
+  },
+  {
+    "sentence": "______ adalah alat tulis yang bisa dihapus.",
+    "answers": [
+      "PENSIL"
+    ]
+  },
+  {
+    "sentence": "_________ adalah alat untuk menghapus tulisan.",
+    "answers": [
+      "PENGHAPUS"
+    ]
+  },
+  {
+    "sentence": "_______ adalah alat untuk memotong kertas.",
+    "answers": [
+      "GUNTING"
+    ]
+  },
+  {
+    "sentence": "______ adalah tempat menyimpan pakaian.",
+    "answers": [
+      "LEMARI"
+    ]
+  },
+  {
+    "sentence": "_____ adalah tempat duduk di ruang tamu.",
+    "answers": [
+      "KURSI"
+    ]
+  },
+  {
+    "sentence": "____ adalah tempat makan di rumah.",
+    "answers": [
+      "MEJA"
+    ]
+  },
+  {
+    "sentence": "_____ adalah tempat tidur yang nyaman.",
+    "answers": [
+      "KASUR"
+    ]
+  },
+  {
+    "sentence": "______ adalah bantal yang dipakai saat tidur.",
+    "answers": [
+      "BANTAL"
+    ]
+  },
+  {
+    "sentence": "______ adalah cermin yang besar di dinding.",
+    "answers": [
+      "CERMIN"
+    ]
+  },
+  {
+    "sentence": "______ adalah tempat menyimpan uang.",
+    "answers": [
+      "DOMPET"
+    ]
+  },
+  {
+    "sentence": "_____ adalah alat untuk membuka kunci.",
+    "answers": [
+      "KUNCI"
+    ]
+  },
+  {
+    "sentence": "______ adalah kompor yang menggunakan gas.",
+    "answers": [
+      "KOMPOR"
+    ]
+  },
+  {
+    "sentence": "_____ adalah wajan untuk menggoreng.",
+    "answers": [
+      "WAJAN"
+    ]
+  },
+  {
+    "sentence": "_______ adalah talenan untuk memotong.",
+    "answers": [
+      "TALENAN"
+    ]
+  },
+  {
+    "sentence": "________ adalah saringan untuk menyaring.",
+    "answers": [
+      "SARINGAN"
+    ]
+  },
+  {
+    "sentence": "_____ adalah tempat air minum.",
+    "answers": [
+      "GELAS"
+    ]
+  },
+  {
+    "sentence": "______ adalah tempat menyimpan minuman dingin.",
+    "answers": [
+      "KULKAS"
+    ]
+  },
+  {
+    "sentence": "____ adalah oven untuk memanggang.",
+    "answers": [
+      "OVEN"
+    ]
+  },
+  {
+    "sentence": "_______ adalah blender untuk menghaluskan食物.",
+    "answers": [
+      "BLENDER"
+    ]
+  },
+  {
+    "sentence": "_________ adalah dispenser untuk air minum.",
+    "answers": [
+      "DISPENSER"
+    ]
+  },
+  {
+    "sentence": "____ adalah sapu untuk membersihkan lantai.",
+    "answers": [
+      "SAPU"
+    ]
+  },
+  {
+    "sentence": "______ adalah tempat sampah untuk membuang sampah.",
+    "answers": [
+      "TEMPAT"
+    ]
+  },
+  {
+    "sentence": "_____ adalah ember untuk menyimpan air.",
+    "answers": [
+      "EMBER"
+    ]
+  },
+  {
+    "sentence": "_____ adalah hari pertama dalam seminggu.",
+    "answers": [
+      "SENIN"
+    ]
+  },
+  {
+    "sentence": "_____ adalah hari besar umat Kristen.",
+    "answers": [
+      "NATAL"
+    ]
+  },
+  {
+    "sentence": "_______ adalah hari besar nasional Indonesia.",
+    "answers": [
+      "MERDEKA"
+    ]
+  },
+  {
+    "sentence": "_______ adalah bulan pertama dalam setahun.",
+    "answers": [
+      "JANUARI"
+    ]
+  },
+  {
+    "sentence": "________ adalah bulan puasa umat Islam.",
+    "answers": [
+      "RAMADHAN"
+    ]
+  },
+  {
+    "sentence": "________ adalah alat untuk melihat tanggal.",
+    "answers": [
+      "KALENDER"
+    ]
+  },
+  {
+    "sentence": "_____ adalah menit yang terdiri dari 60 detik.",
+    "answers": [
+      "MENIT"
+    ]
+  },
+  {
+    "sentence": "_____ adalah detik yang paling kecil.",
+    "answers": [
+      "DETIK"
+    ]
+  },
+  {
+    "sentence": "____ adalah angka pertama dari satu hingga sepuluh.",
+    "answers": [
+      "SATU"
+    ]
+  },
+  {
+    "sentence": "____ adalah angka ganjil yang kecil.",
+    "answers": [
+      "TIGA"
+    ]
+  },
+  {
+    "sentence": "________ adalah bentuk geometri yang memiliki tiga sisi.",
+    "answers": [
+      "SEGITIGA"
+    ]
+  },
+  {
+    "sentence": "_______ adalah bentuk geometri yang memiliki empat sisi sama.",
+    "answers": [
+      "PERSEGI"
+    ]
+  },
+  {
+    "sentence": "_________ adalah bentuk geometri yang bulat.",
+    "answers": [
+      "LINGKARAN"
+    ]
+  },
+  {
+    "sentence": "____ adalah bangun datar dengan banyak sudut.",
+    "answers": [
+      "SEGI"
+    ]
+  },
+  {
+    "sentence": "______ adalah perasaan saat mendapat kebahagiaan.",
+    "answers": [
+      "SENANG"
+    ]
+  },
+  {
+    "sentence": "_____ adalah perasaan saat berduka.",
+    "answers": [
+      "SEDIH"
+    ]
+  },
+  {
+    "sentence": "_____ adalah perasaan saat marah.",
+    "answers": [
+      "MARAH"
+    ]
+  },
+  {
+    "sentence": "_____ adalah perasaan saat takut.",
+    "answers": [
+      "TAKUT"
+    ]
+  },
+  {
+    "sentence": "_____ adalah perasaan saat terkejut.",
+    "answers": [
+      "KAGET"
+    ]
+  },
+  {
+    "sentence": "_____ adalah perasaan saat rindu.",
+    "answers": [
+      "RINDU"
+    ]
+  },
+  {
+    "sentence": "____ adalah perasaan saat malu.",
+    "answers": [
+      "MALU"
+    ]
+  },
+  {
+    "sentence": "______ adalah perasaan saat grateful.",
+    "answers": [
+      "SYUKUR"
+    ]
+  },
+  {
+    "sentence": "_____ adalah perasaan saat bosan.",
+    "answers": [
+      "BOSAN"
+    ]
+  },
+  {
+    "sentence": "_____ adalah kegiatan yang dilakukan saat bangun tidur.",
+    "answers": [
+      "MANDI"
+    ]
+  },
+  {
+    "sentence": "________ adalah kegiatan yang dilakukan sebelum tidur.",
+    "answers": [
+      "BERBISIK"
+    ]
+  },
+  {
+    "sentence": "_____ adalah kegiatan yang dilakukan saat lapar.",
+    "answers": [
+      "MAKAN"
+    ]
+  },
+  {
+    "sentence": "_____ adalah kegiatan yang dilakukan saat haus.",
+    "answers": [
+      "MINUM"
+    ]
+  },
+  {
+    "sentence": "________ adalah kegiatan yang dilakukan saat pagi.",
+    "answers": [
+      "BERJALAN"
+    ]
+  },
+  {
+    "sentence": "_________ adalah kegiatan yang dilakukan saat sore.",
+    "answers": [
+      "BERSEPEDA"
+    ]
+  },
+  {
+    "sentence": "_______ adalah kegiatan yang dilakukan saat malam.",
+    "answers": [
+      "MEMBACA"
+    ]
+  },
+  {
+    "sentence": "________ adalah kegiatan yang dilakukan saat weekend.",
+    "answers": [
+      "BERLIBUR"
+    ]
+  },
+  {
+    "sentence": "______ adalah kegiatan yang dilakukan saat hari libur.",
+    "answers": [
+      "PIKNIK"
+    ]
+  },
+  {
+    "sentence": "_______ adalah kegiatan yang dilakukan saat rajin.",
+    "answers": [
+      "BELAJAR"
+    ]
+  },
+  {
+    "sentence": "______ adalah bahasa resmi Indonesia.",
+    "answers": [
+      "BAHASA"
+    ]
+  },
+  {
+    "sentence": "_______ adalah bahasa internasional yang digunakan di seluruh dunia.",
+    "answers": [
+      "INGGRIS"
+    ]
+  },
+  {
+    "sentence": "______ adalah bahasa yang digunakan di Jepang.",
+    "answers": [
+      "JEPANG"
+    ]
+  },
+  {
+    "sentence": "____ adalah bahasa yang digunakan di Arab.",
+    "answers": [
+      "ARAB"
+    ]
+  },
+  {
+    "sentence": "____ adalah kamus besar bahasa Indonesia.",
+    "answers": [
+      "KBBI"
+    ]
+  },
+  {
+    "sentence": "________ adalah pemimpin tertinggi negara.",
+    "answers": [
+      "PRESIDEN"
+    ]
+  },
+  {
+    "sentence": "________ adalah pemimpin tertinggi di daerah.",
+    "answers": [
+      "GUBERNUR"
+    ]
+  },
+  {
+    "sentence": "________ adalah pemimpin tertinggi di kota.",
+    "answers": [
+      "WALIKOTA"
+    ]
+  },
+  {
+    "sentence": "______ adalah pemimpin tertinggi di kabupaten.",
+    "answers": [
+      "BUPATI"
+    ]
+  },
+  {
+    "sentence": "______ adalah pemimpin tertinggi desa.",
+    "answers": [
+      "KEPALA"
+    ]
+  },
+  {
+    "sentence": "______ adalah gedung pemerintahan di Jakarta.",
+    "answers": [
+      "ISTANA"
+    ]
+  },
+  {
+    "sentence": "________ adalah pengadilan tertinggi di Indonesia.",
+    "answers": [
+      "MAHKAMAH"
+    ]
+  },
+  {
+    "sentence": "______ adalah aturan yang dibuat oleh pemerintah.",
+    "answers": [
+      "UNDANG"
+    ]
+  },
+  {
+    "sentence": "______ adalah dokumen untuk naik pesawat.",
+    "answers": [
+      "PASPOR"
+    ]
+  },
+  {
+    "sentence": "____ adalah surat izin usaha.",
+    "answers": [
+      "SIUP"
+    ]
+  },
+  {
+    "sentence": "____ adalah NPWP untuk perpajakan.",
+    "answers": [
+      "NPWP"
+    ]
+  },
+  {
+    "sentence": "_____ adalah agama terbesar di Indonesia.",
+    "answers": [
+      "ISLAM"
+    ]
+  },
+  {
+    "sentence": "_______ adalah kitab suci umat Islam.",
+    "answers": [
+      "ALQURAN"
+    ]
+  },
+  {
+    "sentence": "_____ adalah puasa wajib bagi umat Islam.",
+    "answers": [
+      "PUASA"
+    ]
+  },
+  {
+    "sentence": "_____ adalah zakat yang wajib ditunaikan.",
+    "answers": [
+      "ZAKAT"
+    ]
+  },
+  {
+    "sentence": "____ adalah perjalanan ke Mekah.",
+    "answers": [
+      "HAJI"
+    ]
+  },
+  {
+    "sentence": "______ adalah tempat ibadah umat Islam.",
+    "answers": [
+      "MASJID"
+    ]
+  },
+  {
+    "sentence": "______ adalah tempat ibadah umat Kristen.",
+    "answers": [
+      "GEREJA"
+    ]
+  },
+  {
+    "sentence": "______ adalah tempat ibadah umat Buddha.",
+    "answers": [
+      "VIHARA"
+    ]
+  },
+  {
+    "sentence": "________ adalah nabi terakhir dalam Islam.",
+    "answers": [
+      "MUHAMMAD"
+    ]
+  },
+  {
+    "sentence": "_____ adalah garam dapur yang biasa dipakai.",
+    "answers": [
+      "GARAM"
+    ]
+  },
+  {
+    "sentence": "____ adalah gula yang biasa dipakai untuk manis.",
+    "answers": [
+      "GULA"
+    ]
+  },
+  {
+    "sentence": "______ adalah minyak goreng untuk menggoreng.",
+    "answers": [
+      "MINYAK"
+    ]
+  },
+  {
+    "sentence": "______ adalah terasi untuk bumbu masakan.",
+    "answers": [
+      "TERASI"
+    ]
+  },
+  {
+    "sentence": "____ adalah lengkuas yang wangi.",
+    "answers": [
+      "LAOS"
+    ]
+  },
+  {
+    "sentence": "_____ adalah sereh yang harum.",
+    "answers": [
+      "SERAI"
+    ]
+  },
+  {
+    "sentence": "_____ adalah jeruk nipis yang asam.",
+    "answers": [
+      "NIPIS"
     ]
   }
 ]
