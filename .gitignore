@@ -18,3 +18,7 @@ daily-report-*.json
 # Secret & env (hanya .env.example yang boleh di-commit)
 .env.*
 !.env.example
+
+# File temp editor/agen
+.hermes-tmp.*
+client/src/.hermes-tmp.*
