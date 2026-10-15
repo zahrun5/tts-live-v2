@@ -1,0 +1,430 @@
+[
+  {
+    "sentence": "____ terbit dari timur dan tenggelam di barat.",
+    "answers": [
+      "matahari"
+    ]
+  },
+  {
+    "sentence": "____ payung sebelum hujan.",
+    "answers": [
+      "sedia"
+    ]
+  },
+  {
+    "sentence": "____ Raya adalah lagu kebangsaan negara kita.",
+    "answers": [
+      "Indonesia"
+    ]
+  },
+  {
+    "sentence": "____ adalah ibu kota Provinsi Jawa Barat.",
+    "answers": [
+      "Bandung"
+    ]
+  },
+  {
+    "sentence": "____ dijuluki raja hutan karena keberaniannya.",
+    "answers": [
+      "singa",
+      "harimau"
+    ]
+  },
+  {
+    "sentence": "____ merah putih dikibarkan setiap hari kemerdekaan.",
+    "answers": [
+      "bendera"
+    ]
+  },
+  {
+    "sentence": "____ adalah bulan pertama dalam setahun.",
+    "answers": [
+      "Januari"
+    ]
+  },
+  {
+    "sentence": "____ digunakan untuk menulis di papan tulis hitam.",
+    "answers": [
+      "kapur",
+      "spidol"
+    ]
+  },
+  {
+    "sentence": "____ hujan deras, kami tetap berangkat ke sekolah.",
+    "answers": [
+      "meskipun",
+      "walaupun",
+      "kendati",
+      "kendatipun",
+      "biarpun",
+      "sekalipun",
+      "meski",
+      "walau",
+      "biar"
+    ]
+  },
+  {
+    "sentence": "____ lampu lalu lintas menyala merah, semua kendaraan harus berhenti.",
+    "answers": [
+      "ketika",
+      "saat",
+      "bila",
+      "jika",
+      "apabila",
+      "manakala",
+      "tatkala",
+      "sewaktu",
+      "begitu"
+    ]
+  },
+  {
+    "sentence": "____ rajin belajar, dia meraih juara kelas.",
+    "answers": [
+      "karena",
+      "berkat",
+      "lantaran",
+      "sebab"
+    ]
+  },
+  {
+    "sentence": "____ membuat kue, ibu menyiapkan telur, tepung, dan gula.",
+    "answers": [
+      "untuk",
+      "guna",
+      "buat",
+      "sebelum"
+    ]
+  },
+  {
+    "sentence": "____ adalah hewan darat tercepat di dunia.",
+    "answers": [
+      "cheetah",
+      "cita"
+    ]
+  },
+  {
+    "sentence": "____ pangkal pandai, hemat pangkal kaya.",
+    "answers": [
+      "rajin"
+    ]
+  },
+  {
+    "sentence": "____ adalah candi Buddha terbesar di dunia yang ada di Jawa Tengah.",
+    "answers": [
+      "Borobudur"
+    ]
+  },
+  {
+    "sentence": "____ bernapas menggunakan insang.",
+    "answers": [
+      "ikan"
+    ]
+  },
+  {
+    "sentence": "____ dibuat dari bambu dan dimainkan dengan cara digoyangkan.",
+    "answers": [
+      "angklung"
+    ]
+  },
+  {
+    "sentence": "____ membeku pada suhu nol derajat Celsius.",
+    "answers": [
+      "air"
+    ]
+  },
+  {
+    "sentence": "____ adalah makanan khas kota Palembang yang disantap dengan cuko.",
+    "answers": [
+      "pempek"
+    ]
+  },
+  {
+    "sentence": "____ adalah alat untuk melihat bintang di langit malam.",
+    "answers": [
+      "teleskop",
+      "teropong"
+    ]
+  },
+  {
+    "sentence": "Berakit-rakit ke hulu, berenang-renang ke ____, bersakit-sakit dahulu, bersenang-senang kemudian.",
+    "answers": [
+      "tepian"
+    ]
+  },
+  {
+    "sentence": "Tak ada ____ yang tak retak.",
+    "answers": [
+      "gading"
+    ]
+  },
+  {
+    "sentence": "Gajah di pelupuk mata tidak tampak, ____ di seberang lautan tampak.",
+    "answers": [
+      "semut"
+    ]
+  },
+  {
+    "sentence": "Rajin pangkal pandai, ____ pangkal kaya.",
+    "answers": [
+      "hemat"
+    ]
+  },
+  {
+    "sentence": "Pucuk dicinta ____ tiba.",
+    "answers": [
+      "ulam"
+    ]
+  },
+  {
+    "sentence": "Besar ____ daripada tiang.",
+    "answers": [
+      "pasak"
+    ]
+  },
+  {
+    "sentence": "Ringan sama dijinjing, ____ sama dipikul.",
+    "answers": [
+      "berat"
+    ]
+  },
+  {
+    "sentence": "Gudeg adalah makanan khas kota ____ yang rasanya manis.",
+    "answers": [
+      "Yogyakarta",
+      "Jogja",
+      "Yogya",
+      "Jogjakarta",
+      "Jogya"
+    ]
+  },
+  {
+    "sentence": "Kesenian reog berasal dari kota ____ di Jawa Timur.",
+    "answers": [
+      "Ponorogo"
+    ]
+  },
+  {
+    "sentence": "Hewan ____ dikenal sebagai hewan berkantung dari Australia.",
+    "answers": [
+      "kanguru"
+    ]
+  },
+  {
+    "sentence": "Air laut rasanya ____ karena mengandung banyak garam.",
+    "answers": [
+      "asin"
+    ]
+  },
+  {
+    "sentence": "Pada siang hari yang cerah, langit berwarna ____ terang.",
+    "answers": [
+      "biru"
+    ]
+  },
+  {
+    "sentence": "Pak Guru menjelaskan pelajaran di depan ____ dengan suara lantang.",
+    "answers": [
+      "kelas",
+      "murid",
+      "siswa",
+      "papan"
+    ]
+  },
+  {
+    "sentence": "Ibu membeli sayur dan buah di ____ dekat rumah.",
+    "answers": [
+      "pasar",
+      "warung",
+      "toko",
+      "swalayan",
+      "supermarket",
+      "minimarket"
+    ]
+  },
+  {
+    "sentence": "Kupu-kupu berasal dari ____ yang berubah menjadi kepompong.",
+    "answers": [
+      "ulat"
+    ]
+  },
+  {
+    "sentence": "Pelangi muncul setelah ____ reda dan matahari bersinar.",
+    "answers": [
+      "hujan"
+    ]
+  },
+  {
+    "sentence": "Kami berbuka puasa ketika waktu ____ tiba.",
+    "answers": [
+      "Maghrib",
+      "Magrib"
+    ]
+  },
+  {
+    "sentence": "Dokter memeriksa pasien memakai ____ untuk mendengar detak jantung.",
+    "answers": [
+      "stetoskop"
+    ]
+  },
+  {
+    "sentence": "Pak Tani menanam padi di ____ yang berair.",
+    "answers": [
+      "sawah"
+    ]
+  },
+  {
+    "sentence": "Kami membaca buku di ____ supaya suasana tenang saat belajar.",
+    "answers": [
+      "perpustakaan"
+    ]
+  },
+  {
+    "sentence": "Malu bertanya sesat di ____.",
+    "answers": [
+      "jalan"
+    ]
+  },
+  {
+    "sentence": "Di mana bumi dipijak, di situ langit ____.",
+    "answers": [
+      "dijunjung"
+    ]
+  },
+  {
+    "sentence": "Bersatu kita teguh, bercerai kita ____.",
+    "answers": [
+      "runtuh"
+    ]
+  },
+  {
+    "sentence": "Sedikit demi sedikit, lama-lama menjadi ____.",
+    "answers": [
+      "bukit"
+    ]
+  },
+  {
+    "sentence": "Buah jatuh tidak jauh dari ____.",
+    "answers": [
+      "pohonnya",
+      "pohon"
+    ]
+  },
+  {
+    "sentence": "Ada gula ada ____.",
+    "answers": [
+      "semut"
+    ]
+  },
+  {
+    "sentence": "Nasi sudah menjadi ____.",
+    "answers": [
+      "bubur"
+    ]
+  },
+  {
+    "sentence": "Sambil menyelam minum ____.",
+    "answers": [
+      "air"
+    ]
+  },
+  {
+    "sentence": "Bahasa resmi negara kita adalah bahasa ____.",
+    "answers": [
+      "Indonesia"
+    ]
+  },
+  {
+    "sentence": "Hari Kemerdekaan Indonesia diperingati setiap tanggal 17 ____.",
+    "answers": [
+      "Agustus"
+    ]
+  },
+  {
+    "sentence": "Candi Borobudur terletak di Jawa ____.",
+    "answers": [
+      "Tengah"
+    ]
+  },
+  {
+    "sentence": "Danau Toba berada di Provinsi Sumatra ____.",
+    "answers": [
+      "Utara"
+    ]
+  },
+  {
+    "sentence": "Presiden pertama Republik Indonesia adalah ____.",
+    "answers": [
+      "Soekarno",
+      "Sukarno"
+    ]
+  },
+  {
+    "sentence": "Planet tempat kita tinggal bernama ____.",
+    "answers": [
+      "Bumi"
+    ]
+  },
+  {
+    "sentence": "Arah mata angin yang berlawanan dengan barat adalah ____.",
+    "answers": [
+      "timur"
+    ]
+  },
+  {
+    "sentence": "Alat untuk mengukur suhu badan disebut ____.",
+    "answers": [
+      "termometer"
+    ]
+  },
+  {
+    "sentence": "Setiap pagi dan malam kita harus menggosok ____.",
+    "answers": [
+      "gigi"
+    ]
+  },
+  {
+    "sentence": "Orang yang mengajar murid di sekolah disebut ____.",
+    "answers": [
+      "guru"
+    ]
+  },
+  {
+    "sentence": "Alat musik angklung terbuat dari ____.",
+    "answers": [
+      "bambu"
+    ]
+  },
+  {
+    "sentence": "Denpasar adalah ibu kota Provinsi ____.",
+    "answers": [
+      "Bali"
+    ]
+  },
+  {
+    "sentence": "Tulang yang melindungi otak adalah tulang ____.",
+    "answers": [
+      "tengkorak"
+    ]
+  },
+  {
+    "sentence": "Burung yang tidak bisa terbang dan berasal dari Selandia Baru adalah ____.",
+    "answers": [
+      "kiwi"
+    ]
+  },
+  {
+    "sentence": "Kami berangkat pagi-pagi supaya tidak ____.",
+    "answers": [
+      "terlambat",
+      "telat",
+      "kesiangan"
+    ]
+  },
+  {
+    "sentence": "Ibu menyiram bunga di halaman setiap ____.",
+    "answers": [
+      "sore",
+      "pagi"
+    ]
+  }
+]

@@ -1,0 +1,865 @@
+[
+  {
+    "question": "Sebutkan jenis pasta atau mi",
+    "answers": [
+      "SPAGHETTI",
+      "MIE-GORENG",
+      "MIE-AYAM",
+      "MACARONI",
+      "KWETIAU",
+      "BIHUN",
+      "FETUCCINE",
+      "LASAGNA",
+      "RAMEN",
+      "SOUN",
+      "UDON"
+    ]
+  },
+  {
+    "question": "Sebutkan nama bank di Indonesia",
+    "answers": [
+      "BCA",
+      "MANDIRI",
+      "BRI",
+      "BNI",
+      "CIMB",
+      "DANAMON",
+      "PERMATA",
+      "MEGA",
+      "PANIN",
+      "BTN",
+      "BSI"
+    ]
+  },
+  {
+    "question": "Sebutkan jenis batu permata",
+    "answers": [
+      "BERLIAN",
+      "RUBY",
+      "SAFIR",
+      "ZAMRUD",
+      "MUTIARA",
+      "TOPAZ",
+      "OPAL",
+      "GIOK",
+      "AMETIS",
+      "AKIK",
+      "KRISTAL"
+    ]
+  },
+  {
+    "question": "Sebutkan peralatan tidur",
+    "answers": [
+      "BANTAL",
+      "KASUR",
+      "GULING",
+      "SELIMUT",
+      "SPREI",
+      "BED-COVER",
+      "SARUNG-BANTAL",
+      "TIKAR",
+      "MATRAS",
+      "KELAMBU"
+    ]
+  },
+  {
+    "question": "Sebutkan profesi kreatif",
+    "answers": [
+      "DESAINER",
+      "FOTOGRAFER",
+      "PELUKIS",
+      "PENULIS",
+      "MUSISI",
+      "YOUTUBER",
+      "ANIMATOR",
+      "SUTRADARA",
+      "KOREOGRAFER",
+      "PEMATUNG",
+      "ARSITEK"
+    ]
+  },
+  {
+    "question": "Sebutkan jenis tanaman hias",
+    "answers": [
+      "ANGGREK",
+      "KAKTUS",
+      "LIDAH-MERTUA",
+      "SIRIH-GADING",
+      "SUKULEN",
+      "PURING",
+      "AGLAONEMA",
+      "CALATHEA",
+      "MONSTERA",
+      "JANDA-BOLONG",
+      "PEACE-LILY"
+    ]
+  },
+  {
+    "question": "Sebutkan nama stasiun televisi Indonesia",
+    "answers": [
+      "RCTI",
+      "SCTV",
+      "TRANS7",
+      "TRANSTV",
+      "INDOSIAR",
+      "ANTV",
+      "METROTV",
+      "TVONE",
+      "KOMPASTV",
+      "NET",
+      "GTV"
+    ]
+  },
+  {
+    "question": "Sebutkan jenis sambal",
+    "answers": [
+      "TERASI",
+      "MATAH",
+      "BAJAK",
+      "BAWANG",
+      "IJO",
+      "DABU-DABU",
+      "RICA-RICA",
+      "KECAP",
+      "TOMAT",
+      "ROA",
+      "PENCIT"
+    ]
+  },
+  {
+    "question": "Sebutkan nama toko retail Indonesia",
+    "answers": [
+      "INDOMARET",
+      "ALFAMART",
+      "LAWSON",
+      "HYPERMART",
+      "CARREFOUR",
+      "GIANT",
+      "LOTTE",
+      "SUPERINDO",
+      "RANCH-MARKET",
+      "FOODHALL"
+    ]
+  },
+  {
+    "question": "Sebutkan bagian mobil",
+    "answers": [
+      "MESIN",
+      "RODA",
+      "STIR",
+      "LAMPU",
+      "SPION",
+      "BUMPER",
+      "KACA",
+      "PINTU",
+      "KURSI",
+      "KNALPOT",
+      "KACA-SPION",
+      "DASHBOARD"
+    ]
+  },
+  {
+    "question": "Sebutkan jenis nasi",
+    "answers": [
+      "GORENG",
+      "PUTIH",
+      "UDUK",
+      "KUNING",
+      "KEBULI",
+      "BIRYANI",
+      "LIWET",
+      "BAKAR",
+      "TUMPENG",
+      "HAINAN",
+      "PECEL"
+    ]
+  },
+  {
+    "question": "Sebutkan alat berkebun",
+    "answers": [
+      "CANGKUL",
+      "SEKOP",
+      "GUNTING",
+      "SABIT",
+      "GARPU-TANAH",
+      "GEMBOR",
+      "SELANG",
+      "POT",
+      "SPRAYER",
+      "TROWEL",
+      "RAKE"
+    ]
+  },
+  {
+    "question": "Sebutkan nama universitas di Indonesia",
+    "answers": [
+      "UI",
+      "ITB",
+      "UGM",
+      "UNAIR",
+      "UNDIP",
+      "IPB",
+      "ITS",
+      "UNPAD",
+      "UB",
+      "UNHAS",
+      "BINUS"
+    ]
+  },
+  {
+    "question": "Sebutkan jenis keripik",
+    "answers": [
+      "SINGKONG",
+      "KENTANG",
+      "PISANG",
+      "TEMPE",
+      "JAMUR",
+      "TAHU",
+      "USUS",
+      "UBI",
+      "TALAS",
+      "CEKER",
+      "MAKARONI"
+    ]
+  },
+  {
+    "question": "Sebutkan profesi entertainer",
+    "answers": [
+      "PENYANYI",
+      "AKTOR",
+      "KOMEDIAN",
+      "PRESENTER",
+      "DJ",
+      "MC",
+      "DANCER",
+      "MODEL",
+      "INFLUENCER",
+      "VLOGGER",
+      "SELEBGRAM"
+    ]
+  },
+  {
+    "question": "Sebutkan benda di masjid",
+    "answers": [
+      "SAJADAH",
+      "MUKENA",
+      "SARUNG",
+      "KARPET",
+      "MIMBAR",
+      "PECI",
+      "ALQURAN",
+      "BEDUG",
+      "KOTAK-AMAL",
+      "KENTONGAN",
+      "PENGERAS-SUARA"
+    ]
+  },
+  {
+    "question": "Sebutkan jenis sup atau sop",
+    "answers": [
+      "AYAM",
+      "IGA",
+      "BUNTUT",
+      "SEAFOOD",
+      "JAGUNG",
+      "KIMCHI",
+      "TOMAT",
+      "JAMUR",
+      "KRIM",
+      "KACANG-MERAH",
+      "BROKOLI"
+    ]
+  },
+  {
+    "question": "Sebutkan jenis film atau genre",
+    "answers": [
+      "ACTION",
+      "HOROR",
+      "KOMEDI",
+      "DRAMA",
+      "ROMANCE",
+      "THRILLER",
+      "ANIMASI",
+      "FANTASI",
+      "SCI-FI",
+      "DOKUMENTER",
+      "MISTERI"
+    ]
+  },
+  {
+    "question": "Sebutkan nama mall atau pusat perbelanjaan",
+    "answers": [
+      "GRAND-INDONESIA",
+      "PLAZA-INDONESIA",
+      "SENAYAN-CITY",
+      "MALL-TAMAN-ANGGREK",
+      "CENTRAL-PARK",
+      "PONDOK-INDAH-MALL",
+      "GANDARIA-CITY",
+      "PLAZA-SENAYAN",
+      "KOTA-KASABLANKA",
+      "KELAPA-GADING-MALL"
+    ]
+  },
+  {
+    "question": "Sebutkan jenis cokelat atau merk cokelat",
+    "answers": [
+      "SILVERQUEEN",
+      "TOBLERONE",
+      "KITKAT",
+      "CADBURY",
+      "FERRERO",
+      "SNICKERS",
+      "DAIRY-MILK",
+      "HERSHEY",
+      "DELFI",
+      "MARS",
+      "MILKA"
+    ]
+  },
+  {
+    "question": "Sebutkan benda elektronik di rumah",
+    "answers": [
+      "TV",
+      "KULKAS",
+      "KIPAS",
+      "AC",
+      "RICE-COOKER",
+      "SETRIKA",
+      "BLENDER",
+      "MESIN-CUCI",
+      "MICROWAVE",
+      "DISPENSER",
+      "VACUUM"
+    ]
+  },
+  {
+    "question": "Sebutkan alat fotografi",
+    "answers": [
+      "KAMERA",
+      "LENSA",
+      "TRIPOD",
+      "FLASH",
+      "MEMORY-CARD",
+      "FILTER",
+      "LIGHTBOX",
+      "REFLECTOR",
+      "BATTERY",
+      "DRONE",
+      "GIMBAL"
+    ]
+  },
+  {
+    "question": "Sebutkan benda di taman",
+    "answers": [
+      "BANGKU",
+      "AYUNAN",
+      "PEROSOTAN",
+      "JUNGKAT-JUNGKIT",
+      "TIANG",
+      "LAMPU",
+      "KOLAM",
+      "RUMPUT",
+      "BUNGA",
+      "TEMPAT-SAMPAH",
+      "GAZEBO"
+    ]
+  },
+  {
+    "question": "Sebutkan benda di rumah sakit",
+    "answers": [
+      "TEMPAT-TIDUR",
+      "KURSI-RODA",
+      "INFUS",
+      "STETOSKOP",
+      "TERMOMETER",
+      "JARUM-SUNTIK",
+      "OBAT",
+      "SELANG-OKSIGEN",
+      "BRANKAR",
+      "TENSIMETER",
+      "MASKER"
+    ]
+  },
+  {
+    "question": "Sebutkan jenis transportasi laut",
+    "answers": [
+      "KAPAL",
+      "PERAHU",
+      "FERRY",
+      "SPEEDBOAT",
+      "YACHT",
+      "TONGKANG",
+      "SAMPAN",
+      "JETSKI",
+      "KAPAL-SELAM",
+      "KANO",
+      "PERAHU-KARET"
+    ]
+  },
+  {
+    "question": "Sebutkan nama jenis sepeda motor",
+    "answers": [
+      "MATIC",
+      "SPORT",
+      "BEBEK",
+      "TRAIL",
+      "TOURING",
+      "CHOPPER",
+      "ADVENTURE",
+      "CROSS",
+      "SCRAMBLER",
+      "CAFE-RACER"
+    ]
+  },
+  {
+    "question": "Sebutkan benda di gym atau tempat fitness",
+    "answers": [
+      "TREADMILL",
+      "BARBEL",
+      "DUMBEL",
+      "MATRAS",
+      "SEPEDA-STATIS",
+      "BENCH-PRESS",
+      "PULL-UP-BAR",
+      "KETTLEBELL",
+      "ROWING-MACHINE",
+      "BEBAN",
+      "CABLE"
+    ]
+  },
+  {
+    "question": "Sebutkan jenis olahan ayam",
+    "answers": [
+      "GORENG",
+      "BAKAR",
+      "GEPREK",
+      "RICA-RICA",
+      "PANGGANG",
+      "PENYET",
+      "KFC",
+      "NUGGET",
+      "SATE",
+      "OPOR",
+      "RENDANG"
+    ]
+  },
+  {
+    "question": "Sebutkan warna yang sering digunakan",
+    "answers": [
+      "MERAH",
+      "BIRU",
+      "KUNING",
+      "HIJAU",
+      "PUTIH",
+      "HITAM",
+      "ORANGE",
+      "UNGU",
+      "PINK",
+      "COKLAT",
+      "ABU",
+      "SILVER"
+    ]
+  },
+  {
+    "question": "Sebutkan buah tropis Indonesia",
+    "answers": [
+      "MANGGA",
+      "PISANG",
+      "JERUK",
+      "PEPAYA",
+      "JAMBU",
+      "DURIAN",
+      "RAMBUTAN",
+      "SALAK",
+      "MANGGIS",
+      "NANAS",
+      "BELIMBING",
+      "KEDONDONG"
+    ]
+  },
+  {
+    "question": "Sebutkan benda elektronik rumah tangga",
+    "answers": [
+      "TELEVISI",
+      "KULKAS",
+      "MESIN",
+      "SETRIKA",
+      "KIPAS",
+      "RADIO",
+      "KOMPUTER",
+      "HANDPHONE",
+      "BLENDER",
+      "MICROWAVE",
+      "DISPENSER",
+      "RICE"
+    ]
+  },
+  {
+    "question": "Sebutkan kendaraan bermesin dua roda",
+    "answers": [
+      "MOTOR",
+      "VESPA",
+      "MOPED",
+      "SKUTER",
+      "TRAIL",
+      "NINJA",
+      "MATIC",
+      "SPORT",
+      "BEBEK",
+      "CHOPPERS",
+      "TOURING",
+      "CROSS"
+    ]
+  },
+  {
+    "question": "Sebutkan pakaian sehari-hari",
+    "answers": [
+      "BAJU",
+      "CELANA",
+      "KAOS",
+      "KEMEJA",
+      "ROK",
+      "JAKET",
+      "DASTER",
+      "SWEATER",
+      "JEANS",
+      "DRESS",
+      "BLUS",
+      "KAUS"
+    ]
+  },
+  {
+    "question": "Sebutkan hewan liar di hutan",
+    "answers": [
+      "HARIMAU",
+      "GAJAH",
+      "ULAR",
+      "MONYET",
+      "BERUANG",
+      "RUSA",
+      "BABI",
+      "BUAYA",
+      "SERIGALA",
+      "MACAN",
+      "KERA",
+      "MUSANG"
+    ]
+  },
+  {
+    "question": "Sebutkan pekerjaan di kantor",
+    "answers": [
+      "MANAJER",
+      "SEKRETARIS",
+      "AKUNTAN",
+      "ADMINISTRASI",
+      "DIREKTUR",
+      "SUPERVISOR",
+      "STAFF",
+      "RESEPSIONIS",
+      "KASIR",
+      "MARKETING",
+      "HRD",
+      "ANALIS"
+    ]
+  },
+  {
+    "question": "Sebutkan aktivitas di pagi hari",
+    "answers": [
+      "MANDI",
+      "SARAPAN",
+      "OLAHRAGA",
+      "KERJA",
+      "SEKOLAH",
+      "SHOLAT",
+      "BANGUN",
+      "GOSOK",
+      "MASAK",
+      "BERSIHKAN",
+      "JALAN",
+      "NYAPU"
+    ]
+  },
+  {
+    "question": "Sebutkan cuaca dan iklim",
+    "answers": [
+      "HUJAN",
+      "PANAS",
+      "MENDUNG",
+      "CERAH",
+      "DINGIN",
+      "BERANGIN",
+      "BADAI",
+      "GERIMIS",
+      "PETIR",
+      "KABUT",
+      "KERING",
+      "LEMBAB"
+    ]
+  },
+  {
+    "question": "Sebutkan alat musik tradisional Indonesia",
+    "answers": [
+      "ANGKLUNG",
+      "GAMELAN",
+      "GENDANG",
+      "KENDANG",
+      "SASANDO",
+      "KOLINTANG",
+      "SARON",
+      "SULING",
+      "REBAB",
+      "KECAPI",
+      "GONG",
+      "BONANG",
+      "CALUNG",
+      "DEMUNG",
+      "GAMBANG"
+    ]
+  },
+  {
+    "question": "Sebutkan olahraga menggunakan bola",
+    "answers": [
+      "SEPAK",
+      "BASKET",
+      "VOLI",
+      "FUTSAL",
+      "TENIS",
+      "GOLF",
+      "BASEBALL",
+      "BOWLING",
+      "BILIAR",
+      "RUGBY",
+      "SOFTBALL",
+      "POLO",
+      "HANDBALL",
+      "DODGEBALL",
+      "BOLA"
+    ]
+  },
+  {
+    "question": "Sebutkan profesi di rumah sakit",
+    "answers": [
+      "DOKTER",
+      "SUSTER",
+      "PERAWAT",
+      "BIDAN",
+      "APOTEKER",
+      "ANALIS",
+      "RADIOLOGI",
+      "ADMIN",
+      "SATPAM",
+      "CLEANING",
+      "GIZI",
+      "FISIOTERAPI",
+      "LABORATORIUM",
+      "RESEPSIONIS",
+      "SOPIR"
+    ]
+  },
+  {
+    "question": "Sebutkan pekerjaan yang berhubungan dengan makanan",
+    "answers": [
+      "KOKI",
+      "CHEF",
+      "PELAYAN",
+      "KASIR",
+      "TUKANG",
+      "BAKER",
+      "BARISTA",
+      "WAITRESS",
+      "JURU",
+      "PEDAGANG",
+      "PENJUAL",
+      "DELIVERY",
+      "BARTENDER",
+      "FOOD",
+      "CATERING"
+    ]
+  },
+  {
+    "question": "Sebutkan jenis kue tradisional Indonesia",
+    "answers": [
+      "KLEPON",
+      "ONDE",
+      "LEMPER",
+      "RISOLES",
+      "DADAR",
+      "PUTU",
+      "LAPIS",
+      "KELEPON",
+      "SERABI",
+      "LUPIS",
+      "NAGASARI",
+      "APEM",
+      "CUCUR",
+      "PUKIS",
+      "PANCONG"
+    ]
+  },
+  {
+    "question": "Sebutkan aplikasi chat yang populer",
+    "answers": [
+      "WHATSAPP",
+      "TELEGRAM",
+      "LINE",
+      "INSTAGRAM",
+      "FACEBOOK",
+      "TWITTER",
+      "DISCORD",
+      "SNAPCHAT",
+      "WECHAT",
+      "SIGNAL",
+      "TIKTOK",
+      "MESSENGER"
+    ]
+  },
+  {
+    "question": "Sebutkan alat musik tiup",
+    "answers": [
+      "SULING",
+      "TROMPET",
+      "SERULING",
+      "HARMONIKA",
+      "SAXOPHONE",
+      "KLARINET",
+      "TROMBONE",
+      "FLUTE",
+      "RECORDER",
+      "OBOE",
+      "TEROMPET",
+      "PIANIKA"
+    ]
+  },
+  {
+    "question": "Sebutkan makanan yang digoreng",
+    "answers": [
+      "TEMPE",
+      "TAHU",
+      "PISANG",
+      "AYAM",
+      "TELUR",
+      "BAKWAN",
+      "KENTANG",
+      "IKAN",
+      "MENDOAN",
+      "CIRENG",
+      "RISOLES",
+      "NUGGET",
+      "SOSIS",
+      "SINGKONG"
+    ]
+  },
+  {
+    "question": "Sebutkan buah yang rasanya asam",
+    "answers": [
+      "JERUK",
+      "LEMON",
+      "KEDONDONG",
+      "MANGGA",
+      "BELIMBING",
+      "NANAS",
+      "APEL",
+      "STRAWBERRY",
+      "ANGGUR",
+      "KIWI",
+      "TOMAT",
+      "JAMBU"
+    ]
+  },
+  {
+    "question": "Sebutkan pekerjaan rumah tangga",
+    "answers": [
+      "MASAK",
+      "CUCI",
+      "SAPU",
+      "PEL",
+      "SETRIKA",
+      "BERSIH",
+      "NYUCI",
+      "GOSOK",
+      "NGELAP",
+      "NGEPEL",
+      "NYAPU",
+      "NGEPAK"
+    ]
+  },
+  {
+    "question": "Sebutkan negara di Asia Tenggara",
+    "answers": [
+      "INDONESIA",
+      "MALAYSIA",
+      "THAILAND",
+      "SINGAPURA",
+      "FILIPINA",
+      "VIETNAM",
+      "BRUNEI",
+      "MYANMAR",
+      "LAOS",
+      "KAMBOJA",
+      "TIMOR"
+    ]
+  },
+  {
+    "question": "Sebutkan alat untuk membersihkan",
+    "answers": [
+      "SAPU",
+      "PEL",
+      "KAIN",
+      "KEMOCENG",
+      "SIKAT",
+      "VACUM",
+      "SPONS",
+      "KANEBO",
+      "LAP",
+      "SULAK",
+      "SEKOP",
+      "KESET"
+    ]
+  },
+  {
+    "question": "SEBUTKAN BENDA YANG BIASANYA ADA DI DALAM KOTAK PENSIL",
+    "answers": [
+      "PENSIL",
+      "PULPEN",
+      "PENGHAPUS",
+      "PENGGARIS",
+      "RAUTAN",
+      "TIPE-X",
+      "SPIDOL",
+      "STABILO",
+      "GUNTING",
+      "LEM"
+    ]
+  },
+  {
+    "question": "SEBUTKAN PERLENGKAPAN YANG BIASA DITEMUKAN DI KAMAR MANDI",
+    "answers": [
+      "SABUN",
+      "SAMPO",
+      "SIKAT GIGI",
+      "PASTA GIGI",
+      "HANDUK",
+      "GAYUNG",
+      "EMBER",
+      "SPON MANDI",
+      "PEMBERSIH WAJAH",
+      "CERMIN"
+    ]
+  },
+  {
+    "question": "SEBUTKAN PERLENGKAPAN ALAT TULIS YANG BIASA DIBAWA SISWA KE SEKOLAH?",
+    "answers": [
+      "BUKU",
+      "PULPEN",
+      "PENSIL",
+      "PENGHAPUS",
+      "PENGGARIS",
+      "TIPE-X",
+      "RAUTAN",
+      "KOTAK PENSIL",
+      "SPIDOL",
+      "STABILO"
+    ]
+  }
+]

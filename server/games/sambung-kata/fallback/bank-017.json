@@ -1,0 +1,3597 @@
+[
+  {
+    "name": "aduan-adun-adunan",
+    "baseLetters": "ADNU",
+    "words": [
+      {
+        "answer": "ADUAN",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "ADUN",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "ADUNAN",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "ANDUN",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "DANAU",
+        "direction": "across",
+        "clue": "x"
+      }
+    ]
+  },
+  {
+    "name": "adutan-datun-tandu",
+    "baseLetters": "ADNTU",
+    "words": [
+      {
+        "answer": "ADUTAN",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "DATUN",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "TANDU",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "TANDUN",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "TUNDA",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "UDUTAN",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "UNTAD",
+        "direction": "across",
+        "clue": "x"
+      }
+    ]
+  },
+  {
+    "name": "agal-alg-alga",
+    "baseLetters": "AGL",
+    "words": [
+      {
+        "answer": "AGAL",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "ALG",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "ALGA",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "GAGAL",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "GALA",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "GALGAL",
+        "direction": "down",
+        "clue": "x"
+      }
+    ]
+  },
+  {
+    "name": "agel-aleg-galela",
+    "baseLetters": "AEGL",
+    "words": [
+      {
+        "answer": "AGEL",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "ALEG",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "GALELA",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "GEGALA",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "GELA",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "LAGE",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "LEGAL",
+        "direction": "across",
+        "clue": "x"
+      }
+    ]
+  },
+  {
+    "name": "agraria-agri-argari",
+    "baseLetters": "AGIR",
+    "words": [
+      {
+        "answer": "AGRARIA",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "AGRI",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "ARGARI",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "GARAI",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "GARI",
+        "direction": "across",
+        "clue": "x"
+      }
+    ]
+  },
+  {
+    "name": "agraris-garasi-gasir",
+    "baseLetters": "AGIRS",
+    "words": [
+      {
+        "answer": "AGRARIS",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "GARASI",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "GASIR",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "GIRAS",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "GISAR",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "GRASI",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "SIGAR",
+        "direction": "across",
+        "clue": "x"
+      }
+    ]
+  },
+  {
+    "name": "ahlak-akhlak-halak",
+    "baseLetters": "AHKL",
+    "words": [
+      {
+        "answer": "AHLAK",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "AKHLAK",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "HALAK",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "HALAKHA",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "HALKAH",
+        "direction": "across",
+        "clue": "x"
+      }
+    ]
+  },
+  {
+    "name": "ailakar-akrilik-kalkir",
+    "baseLetters": "AIKLR",
+    "words": [
+      {
+        "answer": "AILAKAR",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "AKRILIK",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "KALKIR",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "KILAR",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "LAKRI",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "LIKRA",
+        "direction": "down",
+        "clue": "x"
+      }
+    ]
+  },
+  {
+    "name": "ajian-anjani-janin",
+    "baseLetters": "AIJN",
+    "words": [
+      {
+        "answer": "AJIAN",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "ANJANI",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "JANIN",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "JANJI",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "JANJIAN",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "JINA",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "NINJA",
+        "direction": "across",
+        "clue": "x"
+      }
+    ]
+  },
+  {
+    "name": "akarurit-aktuaria-autarki",
+    "baseLetters": "AIKRTU",
+    "words": [
+      {
+        "answer": "AKARURIT",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "AKTUARIA",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "AUTARKI",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "KUARTIR",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "KUATIR",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "KUATRIK",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "RUKIAT",
+        "direction": "across",
+        "clue": "x"
+      }
+    ]
+  },
+  {
+    "name": "akmal-alamak-kalam",
+    "baseLetters": "AKLM",
+    "words": [
+      {
+        "answer": "AKMAL",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "ALAMAK",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "KALAM",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "KAMLA",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "MALAK",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "MALAKA",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "MALKA",
+        "direction": "across",
+        "clue": "x"
+      }
+    ]
+  },
+  {
+    "name": "ako-kakao-kao",
+    "baseLetters": "AKO",
+    "words": [
+      {
+        "answer": "AKO",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "KAKAO",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "KAO",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "KAOK",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "KOA",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "KOAK",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "KOKA",
+        "direction": "across",
+        "clue": "x"
+      }
+    ]
+  },
+  {
+    "name": "akord-ardok-dokar",
+    "baseLetters": "ADKOR",
+    "words": [
+      {
+        "answer": "AKORD",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "ARDOK",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "DOKAR",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "DRAKOR",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "KARDO",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "KORDA",
+        "direction": "down",
+        "clue": "x"
+      }
+    ]
+  },
+  {
+    "name": "akpem-mekap-memapak",
+    "baseLetters": "AEKMP",
+    "words": [
+      {
+        "answer": "AKPEM",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "MEKAP",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "MEMAPAK",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "MEMEPAK",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "PAKEM",
+        "direction": "across",
+        "clue": "x"
+      }
+    ]
+  },
+  {
+    "name": "aktip-aptika-kapita",
+    "baseLetters": "AIKPT",
+    "words": [
+      {
+        "answer": "AKTIP",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "APTIKA",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "KAPITA",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "KITAP",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "PATIK",
+        "direction": "across",
+        "clue": "x"
+      }
+    ]
+  },
+  {
+    "name": "akualung-glukan-kalung",
+    "baseLetters": "AGKLNU",
+    "words": [
+      {
+        "answer": "AKUALUNG",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "GLUKAN",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "KALUNG",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "LANGGUK",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "LANGKUNG",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "LUNGKANG",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "UNGKAL",
+        "direction": "across",
+        "clue": "x"
+      }
+    ]
+  },
+  {
+    "name": "alimun-almunium-aluminum",
+    "baseLetters": "AILMNU",
+    "words": [
+      {
+        "answer": "ALIMUN",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "ALMUNIUM",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "ALUMINUM",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "ALUMNI",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "ILMUAN",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "LIMUNAN",
+        "direction": "down",
+        "clue": "x"
+      }
+    ]
+  },
+  {
+    "name": "alir-alri-aralia",
+    "baseLetters": "AILR",
+    "words": [
+      {
+        "answer": "ALIR",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "ALRI",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "ARALIA",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "ARIL",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "ILAR",
+        "direction": "across",
+        "clue": "x"
+      }
+    ]
+  },
+  {
+    "name": "alopa-apolo-lapo",
+    "baseLetters": "ALOP",
+    "words": [
+      {
+        "answer": "ALOPA",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "APOLO",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "LAPO",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "PALOLO",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "PALOPO",
+        "direction": "across",
+        "clue": "x"
+      }
+    ]
+  },
+  {
+    "name": "amah-ham-hama",
+    "baseLetters": "AHM",
+    "words": [
+      {
+        "answer": "AMAH",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "HAM",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "HAMA",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "HAMAM",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "MAH",
+        "direction": "across",
+        "clue": "x"
+      }
+    ]
+  },
+  {
+    "name": "amanitin-manti-minat",
+    "baseLetters": "AIMNT",
+    "words": [
+      {
+        "answer": "AMANITIN",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "MANTI",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "MINAT",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "MINATANI",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "MITAN",
+        "direction": "across",
+        "clue": "x"
+      }
+    ]
+  },
+  {
+    "name": "amar-aram-mamar",
+    "baseLetters": "AMR",
+    "words": [
+      {
+        "answer": "AMAR",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "ARAM",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "MAMAR",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "MARA",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "MARMAR",
+        "direction": "across",
+        "clue": "x"
+      }
+    ]
+  },
+  {
+    "name": "ambat-atbm-batam",
+    "baseLetters": "ABMT",
+    "words": [
+      {
+        "answer": "AMBAT",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "ATBM",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "BATAM",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "BATMAT",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "MATBAT",
+        "direction": "across",
+        "clue": "x"
+      }
+    ]
+  },
+  {
+    "name": "ambekan-ebekanem-kemban",
+    "baseLetters": "ABEKMN",
+    "words": [
+      {
+        "answer": "AMBEKAN",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "EBEKANEM",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "KEMBAN",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "MENABAK",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "MENAMBAK",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "MENEBAK",
+        "direction": "down",
+        "clue": "x"
+      }
+    ]
+  },
+  {
+    "name": "ambelau-beluam-embalau",
+    "baseLetters": "ABELMU",
+    "words": [
+      {
+        "answer": "AMBELAU",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "BELUAM",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "EMBALAU",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "LABELUM",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "MELABU",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "MEMBELAU",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "MEMBUAL",
+        "direction": "across",
+        "clue": "x"
+      }
+    ]
+  },
+  {
+    "name": "ampuan-ampunan-maupun",
+    "baseLetters": "AMNPU",
+    "words": [
+      {
+        "answer": "AMPUAN",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "AMPUNAN",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "MAUPUN",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "PUMPUNAN",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "PUUMNANA",
+        "direction": "across",
+        "clue": "x"
+      }
+    ]
+  },
+  {
+    "name": "amusia-asimus-asumsi",
+    "baseLetters": "AIMSU",
+    "words": [
+      {
+        "answer": "AMUSIA",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "ASIMUS",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "ASUMSI",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "MISUA",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "SIMAU",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "SUAMI",
+        "direction": "down",
+        "clue": "x"
+      }
+    ]
+  },
+  {
+    "name": "ancur-cucuran-racauan",
+    "baseLetters": "ACNRU",
+    "words": [
+      {
+        "answer": "ANCUR",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "CUCURAN",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "RACAUAN",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "RACUN",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "RACUNAN",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "RANCAU",
+        "direction": "down",
+        "clue": "x"
+      }
+    ]
+  },
+  {
+    "name": "anemer-eraman-menara",
+    "baseLetters": "AEMNR",
+    "words": [
+      {
+        "answer": "ANEMER",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "ERAMAN",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "MENARA",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "MENERA",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "MENERAN",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "MERANA",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "RAMEN",
+        "direction": "across",
+        "clue": "x"
+      }
+    ]
+  },
+  {
+    "name": "angkup-kupang-pakpung",
+    "baseLetters": "AGKNPU",
+    "words": [
+      {
+        "answer": "ANGKUP",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "KUPANG",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "PAKPUNG",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "PANGKUAN",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "PUKANG",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "UNGKAP",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "UNGKAPAN",
+        "direction": "across",
+        "clue": "x"
+      }
+    ]
+  },
+  {
+    "name": "anglamil-angmil-linggam",
+    "baseLetters": "AGILMN",
+    "words": [
+      {
+        "answer": "ANGLAMIL",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "ANGMIL",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "LINGGAM",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "MALIGNAN",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "MALING",
+        "direction": "across",
+        "clue": "x"
+      }
+    ]
+  },
+  {
+    "name": "anjing-gajian-ganjing",
+    "baseLetters": "AGIJN",
+    "words": [
+      {
+        "answer": "ANJING",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "GAJIAN",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "GANJING",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "JANGGI",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "JANGIAN",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "JINGGA",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "JINJANG",
+        "direction": "across",
+        "clue": "x"
+      }
+    ]
+  },
+  {
+    "name": "anjong-gonjang-jagoan",
+    "baseLetters": "AGJNO",
+    "words": [
+      {
+        "answer": "ANJONG",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "GONJANG",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "JAGOAN",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "JOANG",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "JOGAN",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "JONGANG",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "JONGGA",
+        "direction": "across",
+        "clue": "x"
+      }
+    ]
+  },
+  {
+    "name": "ankara-arakan-karan",
+    "baseLetters": "AKNR",
+    "words": [
+      {
+        "answer": "ANKARA",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "ARAKAN",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "KARAN",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "KRAN",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "NAKARA",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "RAKNA",
+        "direction": "down",
+        "clue": "x"
+      }
+    ]
+  },
+  {
+    "name": "anpan-apaan-nanap",
+    "baseLetters": "ANP",
+    "words": [
+      {
+        "answer": "ANPAN",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "APAAN",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "NANAP",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "NPA",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "PAN",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "PANAN",
+        "direction": "down",
+        "clue": "x"
+      }
+    ]
+  },
+  {
+    "name": "antah-athan-tahan",
+    "baseLetters": "AHNT",
+    "words": [
+      {
+        "answer": "ANTAH",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "ATHAN",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "TAHAN",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "TAHANA",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "TAHANAN",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "TANAH",
+        "direction": "down",
+        "clue": "x"
+      }
+    ]
+  },
+  {
+    "name": "antelas-lanset-selatan",
+    "baseLetters": "AELNST",
+    "words": [
+      {
+        "answer": "ANTELAS",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "LANSET",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "SELATAN",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "SENTAL",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "SETELAN",
+        "direction": "across",
+        "clue": "x"
+      }
+    ]
+  },
+  {
+    "name": "antih-antihan-hantai",
+    "baseLetters": "AHINT",
+    "words": [
+      {
+        "answer": "ANTIH",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "ANTIHAN",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "HANTAI",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "INTIHA",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "TAHINI",
+        "direction": "across",
+        "clue": "x"
+      }
+    ]
+  },
+  {
+    "name": "apartel-lapter-teralpa",
+    "baseLetters": "AELPRT",
+    "words": [
+      {
+        "answer": "APARTEL",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "LAPTER",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "TERALPA",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "TERAPAL",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "TERLELAP",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "TERLEPAP",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "TERPAL",
+        "direction": "across",
+        "clue": "x"
+      }
+    ]
+  },
+  {
+    "name": "apasili-aplasia-aplsi",
+    "baseLetters": "AILPS",
+    "words": [
+      {
+        "answer": "APASILI",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "APLASIA",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "APLSI",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "SALIP",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "SILAP",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "SILPA",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "SPASIAL",
+        "direction": "across",
+        "clue": "x"
+      }
+    ]
+  },
+  {
+    "name": "arau-aru-aur",
+    "baseLetters": "ARU",
+    "words": [
+      {
+        "answer": "ARAU",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "ARU",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "AUR",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "AURA",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "RAU",
+        "direction": "across",
+        "clue": "x"
+      }
+    ]
+  },
+  {
+    "name": "arkitraf-artifak-atraktif",
+    "baseLetters": "AFIKRT",
+    "words": [
+      {
+        "answer": "ARKITRAF",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "ARTIFAK",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "ATRAKTIF",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "KIFARAT",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "TAKARIF",
+        "direction": "across",
+        "clue": "x"
+      }
+    ]
+  },
+  {
+    "name": "armel-lamer-leram",
+    "baseLetters": "AELMR",
+    "words": [
+      {
+        "answer": "ARMEL",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "LAMER",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "LERAM",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "MELAMAR",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "MELAR",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "MELARAM",
+        "direction": "down",
+        "clue": "x"
+      }
+    ]
+  },
+  {
+    "name": "aselular-sealur-selaru",
+    "baseLetters": "AELRSU",
+    "words": [
+      {
+        "answer": "ASELULAR",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "SEALUR",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "SELARU",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "SELAUR",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "SELUAR",
+        "direction": "across",
+        "clue": "x"
+      }
+    ]
+  },
+  {
+    "name": "asetilin-asintel-latensi",
+    "baseLetters": "AEILNST",
+    "words": [
+      {
+        "answer": "ASETILIN",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "ASINTEL",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "LATENSI",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "LESITINA",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "SELANTAI",
+        "direction": "across",
+        "clue": "x"
+      }
+    ]
+  },
+  {
+    "name": "asongan-gangsos-gosongan",
+    "baseLetters": "AGNOS",
+    "words": [
+      {
+        "answer": "ASONGAN",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "GANGSOS",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "GOSONGAN",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "SAGON",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "SANGON",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "SOGAN",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "SOGANG",
+        "direction": "across",
+        "clue": "x"
+      }
+    ]
+  },
+  {
+    "name": "aspal-lapas-lpsal",
+    "baseLetters": "ALPS",
+    "words": [
+      {
+        "answer": "ASPAL",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "LAPAS",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "LPSAL",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "PASAL",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "PASPAL",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "SALAP",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "SALAPSAP",
+        "direction": "across",
+        "clue": "x"
+      }
+    ]
+  },
+  {
+    "name": "asus-aus-sasau",
+    "baseLetters": "ASU",
+    "words": [
+      {
+        "answer": "ASUS",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "AUS",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "SASAU",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "SAUS",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "SUA",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "SUASA",
+        "direction": "down",
+        "clue": "x"
+      }
+    ]
+  },
+  {
+    "name": "atb-babat-bata",
+    "baseLetters": "ABT",
+    "words": [
+      {
+        "answer": "ATB",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "BABAT",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "BATA",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "TAB",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "TABA",
+        "direction": "across",
+        "clue": "x"
+      }
+    ]
+  },
+  {
+    "name": "autumnal-lumatan-lumutan",
+    "baseLetters": "ALMNTU",
+    "words": [
+      {
+        "answer": "AUTUMNAL",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "LUMATAN",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "LUMUTAN",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "LUNATUM",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "LUNTAM",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "MANTUALA",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "MANTUL",
+        "direction": "across",
+        "clue": "x"
+      }
+    ]
+  },
+  {
+    "name": "awaair-irawa-rawai",
+    "baseLetters": "AIRW",
+    "words": [
+      {
+        "answer": "AWAAIR",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "IRAWA",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "RAWAI",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "RAWI",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "WARI",
+        "direction": "across",
+        "clue": "x"
+      }
+    ]
+  },
+  {
+    "name": "bakal-balak-kabala",
+    "baseLetters": "ABKL",
+    "words": [
+      {
+        "answer": "BAKAL",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "BALAK",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "KABALA",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "KABALAK",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "KLAB",
+        "direction": "across",
+        "clue": "x"
+      }
+    ]
+  },
+  {
+    "name": "bangker-bengkar-berangka",
+    "baseLetters": "ABEGKNR",
+    "words": [
+      {
+        "answer": "BANGKER",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "BENGKAR",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "BERANGKA",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "BERKANG",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "GEBRAKAN",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "KERABANG",
+        "direction": "down",
+        "clue": "x"
+      }
+    ]
+  },
+  {
+    "name": "bankir-barikan-binkar",
+    "baseLetters": "ABIKNR",
+    "words": [
+      {
+        "answer": "BANKIR",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "BARIKAN",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "BINKAR",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "KARABIN",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "KARBIN",
+        "direction": "across",
+        "clue": "x"
+      }
+    ]
+  },
+  {
+    "name": "bantai-bantaian-bantib",
+    "baseLetters": "ABINT",
+    "words": [
+      {
+        "answer": "BANTAI",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "BANTAIAN",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "BANTIB",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "BINTITAN",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "NABATI",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "TATIBIN",
+        "direction": "down",
+        "clue": "x"
+      }
+    ]
+  },
+  {
+    "name": "bantea-banten-bantet",
+    "baseLetters": "ABENT",
+    "words": [
+      {
+        "answer": "BANTEA",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "BANTEN",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "BANTET",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "BEBATAN",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "BENTAN",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "BENTENAN",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "TEBANAN",
+        "direction": "across",
+        "clue": "x"
+      }
+    ]
+  },
+  {
+    "name": "baper-barep-beberapa",
+    "baseLetters": "ABEPR",
+    "words": [
+      {
+        "answer": "BAPER",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "BAREP",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "BEBERAPA",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "BERAPA",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "BERPARAP",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "PERABA",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "PEREBAB",
+        "direction": "across",
+        "clue": "x"
+      }
+    ]
+  },
+  {
+    "name": "barbuk-burak-burka",
+    "baseLetters": "ABKRU",
+    "words": [
+      {
+        "answer": "BARBUK",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "BURAK",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "BURKA",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "KARBU",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "KRABUKU",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "KUBRA",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "RABUK",
+        "direction": "across",
+        "clue": "x"
+      }
+    ]
+  },
+  {
+    "name": "batau-batutu-baut",
+    "baseLetters": "ABTU",
+    "words": [
+      {
+        "answer": "BATAU",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "BATUTU",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "BAUT",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "TABUT",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "TAUBAT",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "TUBA",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "UBAT",
+        "direction": "across",
+        "clue": "x"
+      }
+    ]
+  },
+  {
+    "name": "beberes-berberes-beres",
+    "baseLetters": "BERS",
+    "words": [
+      {
+        "answer": "BEBERES",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "BERBERES",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "BERES",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "BESER",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "BESERE",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "BREBES",
+        "direction": "down",
+        "clue": "x"
+      }
+    ]
+  },
+  {
+    "name": "bedar-berada-beradab",
+    "baseLetters": "ABDER",
+    "words": [
+      {
+        "answer": "BEDAR",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "BERADA",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "BERADAB",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "BERBEDA",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "BERDADA",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "BERDEBAR",
+        "direction": "down",
+        "clue": "x"
+      }
+    ]
+  },
+  {
+    "name": "belerik-berbilik-berkelik",
+    "baseLetters": "BEIKLR",
+    "words": [
+      {
+        "answer": "BELERIK",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "BERBILIK",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "BERKELIK",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "BERKIL",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "BERLIK",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "BERLIRIK",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "KERBIL",
+        "direction": "across",
+        "clue": "x"
+      }
+    ]
+  },
+  {
+    "name": "bemban-benaman-manbae",
+    "baseLetters": "ABEMN",
+    "words": [
+      {
+        "answer": "BEMBAN",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "BENAMAN",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "MANBAE",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "MBABANE",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "MEMBABAN",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "MEMBENAM",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "MENEBAN",
+        "direction": "across",
+        "clue": "x"
+      }
+    ]
+  },
+  {
+    "name": "berambin-beramin-beriman",
+    "baseLetters": "ABEIMNR",
+    "words": [
+      {
+        "answer": "BERAMBIN",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "BERAMIN",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "BERIMAN",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "BERMAIN",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "MENABIRI",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "MENEBARI",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "MINERBA",
+        "direction": "across",
+        "clue": "x"
+      }
+    ]
+  },
+  {
+    "name": "beranah-berbahan-berbenah",
+    "baseLetters": "ABEHNR",
+    "words": [
+      {
+        "answer": "BERANAH",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "BERBAHAN",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "BERBENAH",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "BERHANA",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "BERNANAH",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "REBAHAN",
+        "direction": "down",
+        "clue": "x"
+      }
+    ]
+  },
+  {
+    "name": "berantam-berantem-bertaman",
+    "baseLetters": "ABEMNRT",
+    "words": [
+      {
+        "answer": "BERANTAM",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "BERANTEM",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "BERTAMAN",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "BERTANAM",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "BERTEMAN",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "REMBETAN",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "TERBENAM",
+        "direction": "across",
+        "clue": "x"
+      }
+    ]
+  },
+  {
+    "name": "berbalik-berkail-berkial",
+    "baseLetters": "ABEIKLR",
+    "words": [
+      {
+        "answer": "BERBALIK",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "BERKAIL",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "BERKIAL",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "BERLAKI",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "BERLARIK",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "KALIBER",
+        "direction": "down",
+        "clue": "x"
+      }
+    ]
+  },
+  {
+    "name": "berembuk-berkumur-membruk",
+    "baseLetters": "BEKMRU",
+    "words": [
+      {
+        "answer": "BEREMBUK",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "BERKUMUR",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "MEMBRUK",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "MEMBURUK",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "MERBUK",
+        "direction": "across",
+        "clue": "x"
+      }
+    ]
+  },
+  {
+    "name": "berkukus-berkusuk-bersuku",
+    "baseLetters": "BEKRSU",
+    "words": [
+      {
+        "answer": "BERKUKUS",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "BERKUSUK",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "BERSUKU",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "BERSUSUK",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "BESERBUK",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "BESUREK",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "SERBUK",
+        "direction": "across",
+        "clue": "x"
+      }
+    ]
+  },
+  {
+    "name": "berlulut-berlutu-berlutut",
+    "baseLetters": "BELRTU",
+    "words": [
+      {
+        "answer": "BERLULUT",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "BERLUTU",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "BERLUTUT",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "BERTELUR",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "BERTELUT",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "TERBUL",
+        "direction": "down",
+        "clue": "x"
+      }
+    ]
+  },
+  {
+    "name": "berlumur-lembur-lemburu",
+    "baseLetters": "BELMRU",
+    "words": [
+      {
+        "answer": "BERLUMUR",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "LEMBUR",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "LEMBURU",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "MELEBUR",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "MELEMBUR",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "MELUBER",
+        "direction": "down",
+        "clue": "x"
+      }
+    ]
+  },
+  {
+    "name": "bineka-ikebana-keabaian",
+    "baseLetters": "ABEIKN",
+    "words": [
+      {
+        "answer": "BINEKA",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "IKEBANA",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "KEABAIAN",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "KEAIBAN",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "KEBAIKAN",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "KEIBAAN",
+        "direction": "down",
+        "clue": "x"
+      }
+    ]
+  },
+  {
+    "name": "bkl-bkll-blk",
+    "baseLetters": "BKL",
+    "words": [
+      {
+        "answer": "BKL",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "BKLL",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "BLK",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "KBL",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "KLB",
+        "direction": "across",
+        "clue": "x"
+      }
+    ]
+  },
+  {
+    "name": "cauk-cucak-cuka",
+    "baseLetters": "ACKU",
+    "words": [
+      {
+        "answer": "CAUK",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "CUCAK",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "CUKA",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "KACAU",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "KACU",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "KACUK",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "KUCAK",
+        "direction": "across",
+        "clue": "x"
+      }
+    ]
+  },
+  {
+    "name": "ceker-cekrek-cerecek",
+    "baseLetters": "CEKR",
+    "words": [
+      {
+        "answer": "CEKER",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "CEKREK",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "CERECEK",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "CEREK",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "KECER",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "KECREK",
+        "direction": "down",
+        "clue": "x"
+      }
+    ]
+  },
+  {
+    "name": "cepekan-kecapan-kecapean",
+    "baseLetters": "ACEKNP",
+    "words": [
+      {
+        "answer": "CEPEKAN",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "KECAPAN",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "KECAPEAN",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "PENCACAK",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "PENCAK",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "PENCAKAK",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "PENCECAK",
+        "direction": "across",
+        "clue": "x"
+      }
+    ]
+  },
+  {
+    "name": "cerapan-cerpan-pencacar",
+    "baseLetters": "ACENPR",
+    "words": [
+      {
+        "answer": "CERAPAN",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "CERPAN",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "PENCACAR",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "PENCAR",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "PENCECAR",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "PENCERCA",
+        "direction": "down",
+        "clue": "x"
+      }
+    ]
+  },
+  {
+    "name": "dakung-dangkung-dukungan",
+    "baseLetters": "ADGKNU",
+    "words": [
+      {
+        "answer": "DAKUNG",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "DANGKUNG",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "DUKUNGAN",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "GUNDUKAN",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "KANDUNG",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "KUDUNGGA",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "KUNDANG",
+        "direction": "across",
+        "clue": "x"
+      }
+    ]
+  },
+  {
+    "name": "damai-dami-diam",
+    "baseLetters": "ADIM",
+    "words": [
+      {
+        "answer": "DAMAI",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "DAMI",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "DIAM",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "IDAM",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "MADI",
+        "direction": "across",
+        "clue": "x"
+      }
+    ]
+  },
+  {
+    "name": "daur-duar-dura",
+    "baseLetters": "ADRU",
+    "words": [
+      {
+        "answer": "DAUR",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "DUAR",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "DURA",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "RADU",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "RUDRA",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "UDAR",
+        "direction": "down",
+        "clue": "x"
+      }
+    ]
+  },
+  {
+    "name": "degung-dengu-dengue",
+    "baseLetters": "DEGNU",
+    "words": [
+      {
+        "answer": "DEGUNG",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "DENGU",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "DENGUE",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "DENGUNG",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "DUGDENG",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "GEDUNG",
+        "direction": "down",
+        "clue": "x"
+      }
+    ]
+  },
+  {
+    "name": "derapan-pendar-pendaran",
+    "baseLetters": "ADENPR",
+    "words": [
+      {
+        "answer": "DERAPAN",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "PENDAR",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "PENDARAN",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "PENDERA",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "PERDANA",
+        "direction": "across",
+        "clue": "x"
+      }
+    ]
+  },
+  {
+    "name": "desak-kades-kaskade",
+    "baseLetters": "ADEKS",
+    "words": [
+      {
+        "answer": "DESAK",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "KADES",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "KASKADE",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "KESADA",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "SEDAK",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "SEDEKADE",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "SEKDA",
+        "direction": "across",
+        "clue": "x"
+      }
+    ]
+  },
+  {
+    "name": "diaspora-dispora-paradiso",
+    "baseLetters": "ADIOPRS",
+    "words": [
+      {
+        "answer": "DIASPORA",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "DISPORA",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "PARADISO",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "PODSIAR",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "PORDASI",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "RAPSODI",
+        "direction": "down",
+        "clue": "x"
+      }
+    ]
+  },
+  {
+    "name": "dps-ppds-psdp",
+    "baseLetters": "DPS",
+    "words": [
+      {
+        "answer": "DPS",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "PPDS",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "PSDP",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "SPD",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "SPDP",
+        "direction": "across",
+        "clue": "x"
+      }
+    ]
+  },
+  {
+    "name": "duduk-duk-duku",
+    "baseLetters": "DKU",
+    "words": [
+      {
+        "answer": "DUDUK",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "DUK",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "DUKU",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "KUD",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "KUDU",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "KUDUK",
+        "direction": "down",
+        "clue": "x"
+      }
+    ]
+  },
+  {
+    "name": "ekoton-entok-konten",
+    "baseLetters": "EKNOT",
+    "words": [
+      {
+        "answer": "EKOTON",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "ENTOK",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "KONTEN",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "KONTET",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "NEKTON",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "TENOK",
+        "direction": "down",
+        "clue": "x"
+      }
+    ]
+  },
+  {
+    "name": "eksesis-eksis-kekisi",
+    "baseLetters": "EIKS",
+    "words": [
+      {
+        "answer": "EKSESIS",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "EKSIS",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "KEKISI",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "KESI",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "KESIK",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "KIKES",
+        "direction": "down",
+        "clue": "x"
+      }
+    ]
+  },
+  {
+    "name": "ekspor-keropos-kespro",
+    "baseLetters": "EKOPRS",
+    "words": [
+      {
+        "answer": "EKSPOR",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "KEROPOS",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "KESPRO",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "PREKOKS",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "PROKES",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "PROSPEK",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "REEKSPOR",
+        "direction": "across",
+        "clue": "x"
+      }
+    ]
+  },
+  {
+    "name": "ekstensi-ekstin-kinetis",
+    "baseLetters": "EIKNST",
+    "words": [
+      {
+        "answer": "EKSTENSI",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "EKSTIN",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "KINETIS",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "SINTEK",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "SINTETIK",
+        "direction": "across",
+        "clue": "x"
+      }
+    ]
+  },
+  {
+    "name": "eluk-kelu-keluk",
+    "baseLetters": "EKLU",
+    "words": [
+      {
+        "answer": "ELUK",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "KELU",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "KELUK",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "KELULU",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "LEKU",
+        "direction": "across",
+        "clue": "x"
+      }
+    ]
+  },
+  {
+    "name": "embuk-kembu-kembuk",
+    "baseLetters": "BEKMU",
+    "words": [
+      {
+        "answer": "EMBUK",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "KEMBU",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "KEMBUK",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "MEMBEKU",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "MEMBEKUK",
+        "direction": "across",
+        "clue": "x"
+      }
+    ]
+  },
+  {
+    "name": "energik-generik-gerenik",
+    "baseLetters": "EGIKNR",
+    "words": [
+      {
+        "answer": "ENERGIK",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "GENERIK",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "GERENIK",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "KENIRENG",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "KERING",
+        "direction": "across",
+        "clue": "x"
+      }
+    ]
+  },
+  {
+    "name": "enggan-enggang-gane",
+    "baseLetters": "AEGN",
+    "words": [
+      {
+        "answer": "ENGGAN",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "ENGGANG",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "GANE",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "GEGANA",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "GENANGAN",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "GENGGANG",
+        "direction": "down",
+        "clue": "x"
+      }
+    ]
+  },
+  {
+    "name": "engkaras-kasreng-kerangas",
+    "baseLetters": "AEGKNRS",
+    "words": [
+      {
+        "answer": "ENGKARAS",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "KASRENG",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "KERANGAS",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "KERSANG",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "RANGSEK",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "SEANGKER",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "SEKARANG",
+        "direction": "across",
+        "clue": "x"
+      }
+    ]
+  },
+  {
+    "name": "enter-entre-eternet",
+    "baseLetters": "ENRT",
+    "words": [
+      {
+        "answer": "ENTER",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "ENTRE",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "ETERNET",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "RENTE",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "RENTEN",
+        "direction": "across",
+        "clue": "x"
+      }
+    ]
+  },
+  {
+    "name": "epilasi-pelapis-pelasi",
+    "baseLetters": "AEILPS",
+    "words": [
+      {
+        "answer": "EPILASI",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "PELAPIS",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "PELASI",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "PELIAS",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "SELAPIS",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "SELIAP",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "SPESIAL",
+        "direction": "across",
+        "clue": "x"
+      }
+    ]
+  },
+  {
+    "name": "ereksi-kerisik-kersik",
+    "baseLetters": "EIKRS",
+    "words": [
+      {
+        "answer": "EREKSI",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "KERISIK",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "KERSIK",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "RESIK",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "RIKES",
+        "direction": "across",
+        "clue": "x"
+      }
+    ]
+  },
+  {
+    "name": "eseni-esensi-inses",
+    "baseLetters": "EINS",
+    "words": [
+      {
+        "answer": "ESENI",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "ESENSI",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "INSES",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "ISEN",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "SEIN",
+        "direction": "across",
+        "clue": "x"
+      }
+    ]
+  },
+  {
+    "name": "gangsar-rangas-ranggas",
+    "baseLetters": "AGNRS",
+    "words": [
+      {
+        "answer": "GANGSAR",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "RANGAS",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "RANGGAS",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "RANGSANG",
+        "direction": "down",
+        "clue": "x"
+      },
+      {
+        "answer": "SANGAR",
+        "direction": "across",
+        "clue": "x"
+      },
+      {
+        "answer": "SARANG",
+        "direction": "down",
+        "clue": "x"
+      }
+    ]
+  }
+]

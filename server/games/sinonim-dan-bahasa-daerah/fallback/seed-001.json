@@ -99,12 +99,6 @@
     ]
   },
   {
-    "word": "ALKITAB",
-    "answers": [
-      "BIBEL"
-    ]
-  },
-  {
     "word": "AMBIGUITAS",
     "answers": [
       "KERAGUAN",
@@ -490,12 +484,6 @@
     ]
   },
   {
-    "word": "BANDEL",
-    "answers": [
-      "BERENGSEK"
-    ]
-  },
-  {
     "word": "BANDIT",
     "answers": [
       "GANGSTER",
@@ -552,12 +540,6 @@
     ]
   },
   {
-    "word": "BASUH",
-    "answers": [
-      "BILAS"
-    ]
-  },
-  {
     "word": "BAWA",
     "answers": [
       "ANGKUT",
@@ -578,12 +560,6 @@
     "answers": [
       "BERSEKOLAH",
       "MENGAJI"
-    ]
-  },
-  {
-    "word": "BELIGO",
-    "answers": [
-      "BLONCENG"
     ]
   },
   {
@@ -629,36 +605,6 @@
     ]
   },
   {
-    "word": "BEPERKARA",
-    "answers": [
-      "BERHUKUM"
-    ]
-  },
-  {
-    "word": "BERAK",
-    "answers": [
-      "BERTELUR"
-    ]
-  },
-  {
-    "word": "BERAKAR",
-    "answers": [
-      "BERURAT"
-    ]
-  },
-  {
-    "word": "BERALASAN",
-    "answers": [
-      "BERLANDASAN"
-    ]
-  },
-  {
-    "word": "BERALIH",
-    "answers": [
-      "BERKISAR"
-    ]
-  },
-  {
     "word": "BERANGKAT",
     "answers": [
       "BERLEPAS",
@@ -683,88 +629,10 @@
     ]
   },
   {
-    "word": "BERBENTROK",
-    "answers": [
-      "BERTENTANGAN"
-    ]
-  },
-  {
-    "word": "BERBENTROKAN",
-    "answers": [
-      "BERSELISIH"
-    ]
-  },
-  {
-    "word": "BERBILANG",
-    "answers": [
-      "PERHITUNGAN"
-    ]
-  },
-  {
-    "word": "BERCANGGAH",
-    "answers": [
-      "BERTENTANGAN"
-    ]
-  },
-  {
-    "word": "BERCEROTEH",
-    "answers": [
-      "MERENGEK"
-    ]
-  },
-  {
     "word": "BERCINTA",
     "answers": [
       "BERSANGGAMA",
       "BERSETUBUH"
-    ]
-  },
-  {
-    "word": "BERCINTAAN",
-    "answers": [
-      "BERPACARAN"
-    ]
-  },
-  {
-    "word": "BERCUKUR",
-    "answers": [
-      "BERGUNTING"
-    ]
-  },
-  {
-    "word": "BERDAKI",
-    "answers": [
-      "BERPUYAN"
-    ]
-  },
-  {
-    "word": "BERDALIH",
-    "answers": [
-      "BERHELAT"
-    ]
-  },
-  {
-    "word": "BERDANDAN",
-    "answers": [
-      "BERPAKAIAN"
-    ]
-  },
-  {
-    "word": "BERDASAR",
-    "answers": [
-      "BERLANDASAN"
-    ]
-  },
-  {
-    "word": "BERDAYUNG",
-    "answers": [
-      "BERSEPEDA"
-    ]
-  },
-  {
-    "word": "BERDINAS",
-    "answers": [
-      "BERKANTOR"
     ]
   },
   {
@@ -805,64 +673,10 @@
     ]
   },
   {
-    "word": "BERFAEDAH",
-    "answers": [
-      "BERJASA"
-    ]
-  },
-  {
-    "word": "BERGELUNDUNGAN",
-    "answers": [
-      "BERGULINGAN"
-    ]
-  },
-  {
     "word": "BERGESER",
     "answers": [
       "BERKISAR",
       "GINGSIR"
-    ]
-  },
-  {
-    "word": "BERGIDIK",
-    "answers": [
-      "NGERI"
-    ]
-  },
-  {
-    "word": "BERGULINGAN",
-    "answers": [
-      "BERGELUNDUNGAN"
-    ]
-  },
-  {
-    "word": "BERGUNA",
-    "answers": [
-      "BERJASA"
-    ]
-  },
-  {
-    "word": "BERGUNTING",
-    "answers": [
-      "BERCUKUR"
-    ]
-  },
-  {
-    "word": "BERGURU",
-    "answers": [
-      "BERSEKOLAH"
-    ]
-  },
-  {
-    "word": "BERHELAT",
-    "answers": [
-      "BERDALIH"
-    ]
-  },
-  {
-    "word": "BERHIMPUN",
-    "answers": [
-      "BERJUMAT"
     ]
   },
   {
@@ -879,12 +693,6 @@
       "NGASIH",
       "PARINGI",
       "WENEH"
-    ]
-  },
-  {
-    "word": "BERIAN",
-    "answers": [
-      "MASKAWIN"
     ]
   },
   {
@@ -910,12 +718,6 @@
     ]
   },
   {
-    "word": "BERJANTAN",
-    "answers": [
-      "BERSEMBURIT"
-    ]
-  },
-  {
     "word": "BERJASA",
     "answers": [
       "BERFAEDAH",
@@ -927,12 +729,6 @@
     "answers": [
       "BERPUSING",
       "BERPUTAR"
-    ]
-  },
-  {
-    "word": "BERJODOH",
-    "answers": [
-      "KAWIN"
     ]
   },
   {
@@ -950,48 +746,12 @@
     ]
   },
   {
-    "word": "BERKANTOR",
-    "answers": [
-      "BERDINAS"
-    ]
-  },
-  {
-    "word": "BERKAWAN",
-    "answers": [
-      "BERSYARIKAT"
-    ]
-  },
-  {
-    "word": "BERKEINGINAN",
-    "answers": [
-      "BERSELERA"
-    ]
-  },
-  {
-    "word": "BERKENDURI",
-    "answers": [
-      "BERSEDEKAH"
-    ]
-  },
-  {
-    "word": "BERKIL",
-    "answers": [
-      "BAMBANGAN"
-    ]
-  },
-  {
     "word": "BERKISAR",
     "answers": [
       "BERALIH",
       "BERGESER",
       "BERPINDAH",
       "BERTUKAR"
-    ]
-  },
-  {
-    "word": "BERKOMPLOT",
-    "answers": [
-      "BERKONGSI"
     ]
   },
   {
@@ -1002,28 +762,10 @@
     ]
   },
   {
-    "word": "BERKUMPUL",
-    "answers": [
-      "BERJUMAT"
-    ]
-  },
-  {
     "word": "BERLANDASAN",
     "answers": [
       "BERALASAN",
       "BERDASAR"
-    ]
-  },
-  {
-    "word": "BERLANTARAN",
-    "answers": [
-      "BERPOKOK"
-    ]
-  },
-  {
-    "word": "BERLAWAN",
-    "answers": [
-      "BERJUAK"
     ]
   },
   {
@@ -1034,52 +776,10 @@
     ]
   },
   {
-    "word": "BERMA",
-    "answers": [
-      "MERAH"
-    ]
-  },
-  {
-    "word": "BERMODAL",
-    "answers": [
-      "BERPOKOK"
-    ]
-  },
-  {
     "word": "BERNAPAS",
     "answers": [
       "BERNAFAS",
       "RESPIRASI"
-    ]
-  },
-  {
-    "word": "BERONOK",
-    "answers": [
-      "TERIPANG"
-    ]
-  },
-  {
-    "word": "BERPACARAN",
-    "answers": [
-      "BERCINTAAN"
-    ]
-  },
-  {
-    "word": "BERPAKAIAN",
-    "answers": [
-      "BERDANDAN"
-    ]
-  },
-  {
-    "word": "BERPENDAR",
-    "answers": [
-      "PUSING"
-    ]
-  },
-  {
-    "word": "BERPINDAH",
-    "answers": [
-      "BERKISAR"
     ]
   },
   {
@@ -1091,22 +791,10 @@
     ]
   },
   {
-    "word": "BERPUSING",
-    "answers": [
-      "BERJENTERA"
-    ]
-  },
-  {
     "word": "BERPUTAR",
     "answers": [
       "BERJENTERA",
       "PIVOT"
-    ]
-  },
-  {
-    "word": "BERPUYAN",
-    "answers": [
-      "BERDAKI"
     ]
   },
   {
@@ -1125,28 +813,10 @@
     ]
   },
   {
-    "word": "BERSAWAH",
-    "answers": [
-      "MENYAWAH"
-    ]
-  },
-  {
-    "word": "BERSEBAB",
-    "answers": [
-      "BERPOKOK"
-    ]
-  },
-  {
     "word": "BERSEDEKAH",
     "answers": [
       "BERKENDURI",
       "BERSELAMATAN"
-    ]
-  },
-  {
-    "word": "BERSEKETIDURAN",
-    "answers": [
-      "BERSETUBUH"
     ]
   },
   {
@@ -1164,52 +834,10 @@
     ]
   },
   {
-    "word": "BERSELAMATAN",
-    "answers": [
-      "BERSEDEKAH"
-    ]
-  },
-  {
-    "word": "BERSELERA",
-    "answers": [
-      "BERKEINGINAN"
-    ]
-  },
-  {
-    "word": "BERSELISIH",
-    "answers": [
-      "BERBENTROKAN"
-    ]
-  },
-  {
-    "word": "BERSEMBURIT",
-    "answers": [
-      "BERJANTAN"
-    ]
-  },
-  {
     "word": "BERSENGKETA",
     "answers": [
       "BERHUKUM",
       "KONKUREN"
-    ]
-  },
-  {
-    "word": "BERSENTUH",
-    "answers": [
-      "BERSETUBUH"
-    ]
-  },
-  {
-    "word": "BERSEPEDA",
-    "answers": [
-      "BERDAYUNG"
-    ]
-  },
-  {
-    "word": "BERSEREGANG",
-    "answers": [
-      "BERKELAHI"
     ]
   },
   {
@@ -1225,12 +853,6 @@
     "answers": [
       "MELAYANI",
       "MENGHAMBA"
-    ]
-  },
-  {
-    "word": "BERSIASAT",
-    "answers": [
-      "BERTANYA"
     ]
   },
   {
@@ -1250,64 +872,10 @@
     ]
   },
   {
-    "word": "BERTANDING",
-    "answers": [
-      "BERJUAK"
-    ]
-  },
-  {
-    "word": "BERTANYA",
-    "answers": [
-      "BERSIASAT"
-    ]
-  },
-  {
-    "word": "BERTELUR",
-    "answers": [
-      "BERAK"
-    ]
-  },
-  {
     "word": "BERTENTANGAN",
     "answers": [
       "BERBENTROK",
       "BERCANGGAH"
-    ]
-  },
-  {
-    "word": "BERTUKAR",
-    "answers": [
-      "BERKISAR"
-    ]
-  },
-  {
-    "word": "BERTUMIS",
-    "answers": [
-      "MENUMIS"
-    ]
-  },
-  {
-    "word": "BERUJU",
-    "answers": [
-      "BUNGSU"
-    ]
-  },
-  {
-    "word": "BERUNTUN",
-    "answers": [
-      "BERURUT"
-    ]
-  },
-  {
-    "word": "BERURAT",
-    "answers": [
-      "BERAKAR"
-    ]
-  },
-  {
-    "word": "BERURUT",
-    "answers": [
-      "BERUNTUN"
     ]
   },
   {
@@ -1337,46 +905,10 @@
     ]
   },
   {
-    "word": "BESTI",
-    "answers": [
-      "SAHABAT"
-    ]
-  },
-  {
     "word": "BETOT",
     "answers": [
       "CABUT",
       "TARIK"
-    ]
-  },
-  {
-    "word": "BIANGLALA",
-    "answers": [
-      "PELANGI"
-    ]
-  },
-  {
-    "word": "BIARPUN",
-    "answers": [
-      "MESKIPUN"
-    ]
-  },
-  {
-    "word": "BIATAH",
-    "answers": [
-      "BIDAYUH"
-    ]
-  },
-  {
-    "word": "BIAWAN",
-    "answers": [
-      "TAMBAKAN"
-    ]
-  },
-  {
-    "word": "BIBEL",
-    "answers": [
-      "ALKITAB"
     ]
   },
   {
@@ -1389,18 +921,6 @@
       "PUANG",
       "TANTE",
       "UNI"
-    ]
-  },
-  {
-    "word": "BIBIT",
-    "answers": [
-      "BIJA"
-    ]
-  },
-  {
-    "word": "BIBLIOKLASME",
-    "answers": [
-      "BIBLIOSIDA"
     ]
   },
   {
@@ -1439,24 +959,6 @@
     ]
   },
   {
-    "word": "BIDAYUH",
-    "answers": [
-      "BIATAH"
-    ]
-  },
-  {
-    "word": "BIDUR",
-    "answers": [
-      "GELEGATA"
-    ]
-  },
-  {
-    "word": "BIGA",
-    "answers": [
-      "MATBAT"
-    ]
-  },
-  {
     "word": "BIGAIR",
     "answers": [
       "KECUALI",
@@ -1469,12 +971,6 @@
     "answers": [
       "BENIH",
       "BIBIT"
-    ]
-  },
-  {
-    "word": "BIKANG",
-    "answers": [
-      "BINGKA"
     ]
   },
   {
@@ -1492,28 +988,10 @@
     ]
   },
   {
-    "word": "BIKUSPID",
-    "answers": [
-      "PREMOLAR"
-    ]
-  },
-  {
-    "word": "BILANG",
-    "answers": [
-      "HITUNG"
-    ]
-  },
-  {
     "word": "BILAS",
     "answers": [
       "BASUH",
       "CUCI"
-    ]
-  },
-  {
-    "word": "BILITONIT",
-    "answers": [
-      "SATAM"
     ]
   },
   {
@@ -1532,52 +1010,10 @@
     ]
   },
   {
-    "word": "BINAWAN",
-    "answers": [
-      "PEMBINA"
-    ]
-  },
-  {
     "word": "BINCANG",
     "answers": [
       "BICARA",
       "RUNDING"
-    ]
-  },
-  {
-    "word": "BINCUT",
-    "answers": [
-      "BENJOL"
-    ]
-  },
-  {
-    "word": "BINGKA",
-    "answers": [
-      "BIKANG"
-    ]
-  },
-  {
-    "word": "BINGKAI",
-    "answers": [
-      "BIRAI"
-    ]
-  },
-  {
-    "word": "BINGKIS",
-    "answers": [
-      "KIRIM"
-    ]
-  },
-  {
-    "word": "BINJAT",
-    "answers": [
-      "ANGKAT"
-    ]
-  },
-  {
-    "word": "BIOPLASMA",
-    "answers": [
-      "PROTOPLASMA"
     ]
   },
   {
@@ -1592,48 +1028,6 @@
     "answers": [
       "GAJAH",
       "MERAH"
-    ]
-  },
-  {
-    "word": "BIRIT",
-    "answers": [
-      "PANTAT"
-    ]
-  },
-  {
-    "word": "BIRO",
-    "answers": [
-      "KANTOR"
-    ]
-  },
-  {
-    "word": "BISIKAN",
-    "answers": [
-      "ILHAM"
-    ]
-  },
-  {
-    "word": "BISKOP",
-    "answers": [
-      "USKUP"
-    ]
-  },
-  {
-    "word": "BIUMBAI",
-    "answers": [
-      "TUNANGAN"
-    ]
-  },
-  {
-    "word": "BLOGER",
-    "answers": [
-      "NARABLOG"
-    ]
-  },
-  {
-    "word": "BLONCENG",
-    "answers": [
-      "BELIGO"
     ]
   },
   {
@@ -1713,12 +1107,6 @@
     "answers": [
       "JEPUN",
       "RINGSANG"
-    ]
-  },
-  {
-    "word": "BUNGSU",
-    "answers": [
-      "BERUJU"
     ]
   },
   {
@@ -1918,12 +1306,6 @@
       "SAJUAK",
       "SEJUK",
       "TIIS"
-    ]
-  },
-  {
-    "word": "DONGKRAK",
-    "answers": [
-      "BICU"
     ]
   },
   {
@@ -2521,28 +1903,10 @@
     ]
   },
   {
-    "word": "KARCIS",
-    "answers": [
-      "BILYET"
-    ]
-  },
-  {
-    "word": "KARTU",
-    "answers": [
-      "BILYET"
-    ]
-  },
-  {
     "word": "KATAPEL",
     "answers": [
       "PELINTENG",
       "PLINTENG"
-    ]
-  },
-  {
-    "word": "KAWIN",
-    "answers": [
-      "BERJODOH"
     ]
   },
   {
@@ -2585,12 +1949,6 @@
       "OTIK",
       "PACER",
       "UTÔ"
-    ]
-  },
-  {
-    "word": "KECUALI",
-    "answers": [
-      "BIGAIR"
     ]
   },
   {
@@ -2692,12 +2050,6 @@
     ]
   },
   {
-    "word": "KONKRET",
-    "answers": [
-      "BERWUJUD"
-    ]
-  },
-  {
     "word": "KOPI",
     "answers": [
       "KAWA",
@@ -2735,12 +2087,6 @@
       "KEKAR",
       "KOKOH",
       "TANGGUH"
-    ]
-  },
-  {
-    "word": "KUMIS",
-    "answers": [
-      "BERENGOS"
     ]
   },
   {
@@ -3035,12 +2381,6 @@
     ]
   },
   {
-    "word": "MASKAWIN",
-    "answers": [
-      "BERIAN"
-    ]
-  },
-  {
     "word": "MASUK",
     "answers": [
       "ASUP",
@@ -3071,12 +2411,6 @@
     ]
   },
   {
-    "word": "MATBAT",
-    "answers": [
-      "BIGA"
-    ]
-  },
-  {
     "word": "MEGAH",
     "answers": [
       "BESAR",
@@ -3088,18 +2422,6 @@
     "answers": [
       "MURIK",
       "NAI"
-    ]
-  },
-  {
-    "word": "MELAINKAN",
-    "answers": [
-      "BIGAIR"
-    ]
-  },
-  {
-    "word": "MELAYANI",
-    "answers": [
-      "BERSEWAKA"
     ]
   },
   {
@@ -3121,12 +2443,6 @@
     "answers": [
       "MENGGEMBALAKAN",
       "TERNAK"
-    ]
-  },
-  {
-    "word": "MENGHAMBA",
-    "answers": [
-      "BERSEWAKA"
     ]
   },
   {
@@ -3152,18 +2468,6 @@
     ]
   },
   {
-    "word": "MENUMIS",
-    "answers": [
-      "BERTUMIS"
-    ]
-  },
-  {
-    "word": "MENYAWAH",
-    "answers": [
-      "BERSAWAH"
-    ]
-  },
-  {
     "word": "MENYENTUH",
     "answers": [
       "ARAS",
@@ -3175,18 +2479,6 @@
     "answers": [
       "BERMA",
       "BIRAM"
-    ]
-  },
-  {
-    "word": "MERENGEK",
-    "answers": [
-      "BERCEROTEH"
-    ]
-  },
-  {
-    "word": "MESKIPUN",
-    "answers": [
-      "BIARPUN"
     ]
   },
   {
@@ -3216,12 +2508,6 @@
       "NGENOM",
       "NGINUM",
       "NGOMBE"
-    ]
-  },
-  {
-    "word": "MISAI",
-    "answers": [
-      "BERENGOS"
     ]
   },
   {
@@ -3288,12 +2574,6 @@
     ]
   },
   {
-    "word": "NARABLOG",
-    "answers": [
-      "BLOGER"
-    ]
-  },
-  {
     "word": "NASI",
     "answers": [
       "NASI",
@@ -3320,12 +2600,6 @@
       "OMA",
       "OPUNG",
       "SIMBAH"
-    ]
-  },
-  {
-    "word": "NGERI",
-    "answers": [
-      "BERGIDIK"
     ]
   },
   {
@@ -3450,12 +2724,6 @@
     ]
   },
   {
-    "word": "PEMBINA",
-    "answers": [
-      "BINAWAN"
-    ]
-  },
-  {
     "word": "PENCURI",
     "answers": [
       "BANDIT",
@@ -3536,18 +2804,6 @@
     ]
   },
   {
-    "word": "PENGUNGKIT",
-    "answers": [
-      "BICU"
-    ]
-  },
-  {
-    "word": "PENGUTUSAN",
-    "answers": [
-      "BIKSAH"
-    ]
-  },
-  {
     "word": "PENJAHAT",
     "answers": [
       "BANDIT",
@@ -3569,12 +2825,6 @@
     "answers": [
       "JURIT",
       "PALAGAN"
-    ]
-  },
-  {
-    "word": "PERAWAN",
-    "answers": [
-      "BIKIR"
     ]
   },
   {
@@ -3689,12 +2939,6 @@
     ]
   },
   {
-    "word": "PERUTUSAN",
-    "answers": [
-      "BIKSAH"
-    ]
-  },
-  {
     "word": "PETUNJUK",
     "answers": [
       "ARAHAN",
@@ -3780,18 +3024,6 @@
     "answers": [
       "AS",
       "SUMBU"
-    ]
-  },
-  {
-    "word": "PREMOLAR",
-    "answers": [
-      "BIKUSPID"
-    ]
-  },
-  {
-    "word": "PROTOPLASMA",
-    "answers": [
-      "BIOPLASMA"
     ]
   },
   {
@@ -3929,18 +3161,6 @@
     ]
   },
   {
-    "word": "RENTAK",
-    "answers": [
-      "BERENTANG"
-    ]
-  },
-  {
-    "word": "REWEL",
-    "answers": [
-      "BERENGSEK"
-    ]
-  },
-  {
     "word": "RINGAN",
     "answers": [
       "ENTENG",
@@ -4058,12 +3278,6 @@
     ]
   },
   {
-    "word": "SATAM",
-    "answers": [
-      "BILITONIT"
-    ]
-  },
-  {
     "word": "SATU",
     "answers": [
       "CIEK",
@@ -4171,12 +3385,6 @@
       "SANANG",
       "SENENG",
       "SENNANG"
-    ]
-  },
-  {
-    "word": "SENTAK",
-    "answers": [
-      "BERENTANG"
     ]
   },
   {
@@ -4353,12 +3561,6 @@
     ]
   },
   {
-    "word": "TAMBAKAN",
-    "answers": [
-      "BIAWAN"
-    ]
-  },
-  {
     "word": "TANGAN",
     "answers": [
       "ASTA",
@@ -4376,12 +3578,6 @@
       "CEKELAN",
       "MANANGKOK",
       "TANGKEP"
-    ]
-  },
-  {
-    "word": "TANPA",
-    "answers": [
-      "BIGAIR"
     ]
   },
   {
@@ -4577,12 +3773,6 @@
       "MENONJOL",
       "MUNCUL",
       "TIMBUL"
-    ]
-  },
-  {
-    "word": "TUIL",
-    "answers": [
-      "BICU"
     ]
   },
   {

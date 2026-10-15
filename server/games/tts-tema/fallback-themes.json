@@ -925,17 +925,6 @@
     ]
   },
   {
-    "theme": "Kendaraan air",
-    "words": [
-      "KAPAL",
-      "PERAHU",
-      "SAMPAN",
-      "RAKIT",
-      "KANO",
-      "JUKUNG"
-    ]
-  },
-  {
     "theme": "Bumbu dapur",
     "words": [
       "GARAM",
@@ -1021,6 +1010,1718 @@
       "KANCIL",
       "BERUANG",
       "TUPAI"
+    ]
+  },
+  {
+    "theme": "Minuman tradisional Indonesia",
+    "words": [
+      "BAJIGUR",
+      "BANDREK",
+      "WEDANG",
+      "SEKOTENG",
+      "CENDOL",
+      "DAWET",
+      "JAMU",
+      "BREM",
+      "TUAK",
+      "TAPE",
+      "LEGEN",
+      "SAGUER",
+      "SOPI",
+      "KOPI",
+      "TEMU"
+    ]
+  },
+  {
+    "theme": "Jenis kue basah",
+    "words": [
+      "KLEPON",
+      "CENIL",
+      "GETUK",
+      "LUPIS",
+      "WAJIK",
+      "NAGASARI",
+      "ONDE",
+      "PUTU",
+      "BIKANG",
+      "APEM",
+      "KLEMBEN",
+      "LEMPER",
+      "AREM",
+      "LAPIS",
+      "JONGKONG"
+    ]
+  },
+  {
+    "theme": "Jenis nasi",
+    "words": [
+      "NASI",
+      "NASI GORENG",
+      "NASI UDUK",
+      "NASI LIWET",
+      "NASI KUNING",
+      "NASI TUMPENG",
+      "NASI BAKAR",
+      "NASI PADANG",
+      "NASI KEBULI",
+      "NASI TEMPONG",
+      "NASI KUCING"
+    ]
+  },
+  {
+    "theme": "Jenis sup dan soto",
+    "words": [
+      "SOTO",
+      "SOTO BETAWI",
+      "SOTO LAMONGAN",
+      "OPOR",
+      "RAWON",
+      "GARANG",
+      "SAYUR",
+      "LODEH",
+      "LONTONG",
+      "TONGSENG",
+      "GADO",
+      "SIOMAY",
+      "EMPEK"
+    ]
+  },
+  {
+    "theme": "Buah tropis",
+    "words": [
+      "MANGGA",
+      "RAMBUTAN",
+      "DURIAN",
+      "SALAK",
+      "MANGGIS",
+      "NANGKA",
+      "KEDONDONG",
+      "BELIMBING",
+      "SUKUN",
+      "JAMBU",
+      "PEPAYA",
+      "SIRSAK",
+      "MARKISA",
+      "LANGSAT",
+      "DUKU"
+    ]
+  },
+  {
+    "theme": "Sayuran akar dan umbi",
+    "words": [
+      "SINGKONG",
+      "KENTANG",
+      "TALAS",
+      "LOBAK",
+      "WORTEL",
+      "BENGKUANG",
+      "BAWANG",
+      "KUNYIT",
+      "JAHE",
+      "KENCUR",
+      "LENGKUAS",
+      "TEMULAWAK",
+      "GADUNG",
+      "GANYONG"
+    ]
+  },
+  {
+    "theme": "Lauk pauk sehari-hari",
+    "words": [
+      "TEMPE",
+      "TAHU",
+      "AYAM",
+      "IKAN",
+      "DAGING",
+      "TELUR",
+      "CUMI",
+      "UDANG",
+      "KERANG",
+      "KEPITING",
+      "LELE",
+      "BANDENG",
+      "TONGKOL",
+      "GURAMI",
+      "NILA"
+    ]
+  },
+  {
+    "theme": "Bahan kue dan roti",
+    "words": [
+      "TEPUNG",
+      "GULA",
+      "TELUR",
+      "MENTEGA",
+      "SUSU",
+      "VANILA",
+      "COKELAT",
+      "KEJU",
+      "KISMIS",
+      "MADU",
+      "RAGI",
+      "BAKING",
+      "MAIZENA",
+      "SODA",
+      "KAYU"
+    ]
+  },
+  {
+    "theme": "Jenis sambal",
+    "words": [
+      "SAMBAL",
+      "TERASI",
+      "TOMAT",
+      "HIJAU",
+      "KECAP",
+      "BAWANG",
+      "LOMBOK",
+      "PETAI",
+      "MATAH",
+      "DABU",
+      "MERAH",
+      "GORENG",
+      "BAJAK",
+      "MANGGA"
+    ]
+  },
+  {
+    "theme": "Jenis kerupuk dan keripik",
+    "words": [
+      "KERUPUK",
+      "KERIPIK",
+      "REMPEYEK",
+      "OPAK",
+      "AMPLANG",
+      "EMPING",
+      "RENGGINANG",
+      "RAMBAK",
+      "BIKANG",
+      "GENDAR",
+      "UYEL",
+      "PEYEK",
+      "JANGEK"
+    ]
+  },
+  {
+    "theme": "Minuman berkafein",
+    "words": [
+      "KOPI",
+      "TEKO",
+      "ESPRESSO",
+      "CAPPUCCINO",
+      "LATTE",
+      "ARABIKA",
+      "ROBUSTA",
+      "LIBERIKA",
+      "MOKA",
+      "KAFE",
+      "AMERICANO"
+    ]
+  },
+  {
+    "theme": "Jenis teh",
+    "words": [
+      "HIJAU",
+      "HITAM",
+      "PUTIH",
+      "OOLONG",
+      "CHAMOMILE",
+      "JAHE",
+      "PEPPERMINT",
+      "LEMON",
+      "MAWAR",
+      "MELATI",
+      "HERBAL",
+      "ROSEHIP"
+    ]
+  },
+  {
+    "theme": "Bumbu masakan Asia",
+    "words": [
+      "JAHE",
+      "BAWANG",
+      "KEMIRI",
+      "KETUMBAR",
+      "KUNYIT",
+      "KENCUR",
+      "SEREH",
+      "LENGKUAS",
+      "DAUN",
+      "SALAM",
+      "PALA",
+      "CENGKEH",
+      "MERICA",
+      "KAPULAGA",
+      "JINTEN"
+    ]
+  },
+  {
+    "theme": "Makanan bakar",
+    "words": [
+      "SATE",
+      "BAKARAN",
+      "IKAN",
+      "DAGING",
+      "AYAM",
+      "JAGUNG",
+      "SINGKONG",
+      "PISANG",
+      "ROTI",
+      "SOSIS",
+      "KERANG",
+      "UDANG",
+      "CUMI",
+      "PENTOL"
+    ]
+  },
+  {
+    "theme": "Bencana alam",
+    "words": [
+      "GEMPA",
+      "TSUNAMI",
+      "BANJIR",
+      "LONGSOR",
+      "GUNUNG",
+      "LETUSAN",
+      "BADAI",
+      "TOPAN",
+      "TORNADO",
+      "KEKERINGAN",
+      "ABRASI",
+      "EROSI",
+      "PUTTING"
+    ]
+  },
+  {
+    "theme": "Bagian pantai",
+    "words": [
+      "PASIR",
+      "BATU",
+      "KARANG",
+      "OMBAK",
+      "GELOMBANG",
+      "LAUT",
+      "TEPI",
+      "TELUK",
+      "TANJUNG",
+      "MUARA",
+      "DELTA",
+      "LAGUNA",
+      "SELAT",
+      "DERMAGA",
+      "PELABUHAN"
+    ]
+  },
+  {
+    "theme": "Fenomena alam",
+    "words": [
+      "PELANGI",
+      "PETIR",
+      "KILAT",
+      "GURUH",
+      "HALILINTAR",
+      "KABUT",
+      "EMBUN",
+      "SALJU",
+      "HUJAN",
+      "ANGIN",
+      "AWAN",
+      "BADAI",
+      "TOPAN",
+      "AURORA",
+      "GERHANA"
+    ]
+  },
+  {
+    "theme": "Sungai di Indonesia",
+    "words": [
+      "SUNGAI",
+      "KAPUAS",
+      "MAHAKAM",
+      "BARITO",
+      "CITARUM",
+      "CILIWUNG",
+      "BENGAWAN",
+      "BRANTAS",
+      "MUSI",
+      "BATANGHARI",
+      "MEMBERAMO",
+      "DIGUL",
+      "SERUYAN",
+      "KAYAN"
+    ]
+  },
+  {
+    "theme": "Danau di Indonesia",
+    "words": [
+      "DANAU",
+      "TOBA",
+      "RANAU",
+      "SINGKARAK",
+      "MANINJAU",
+      "KERINCI",
+      "POSO",
+      "TOWUTI",
+      "MATANO",
+      "SENTANI",
+      "BATUR",
+      "BRATAN",
+      "TAMBLINGAN",
+      "TEMPE",
+      "LIMBOTO"
+    ]
+  },
+  {
+    "theme": "Hewan liar Kalimantan",
+    "words": [
+      "ORANGUTAN",
+      "BEKANTAN",
+      "BERUANG",
+      "MACAN",
+      "RUSA",
+      "KIJANG",
+      "BABI",
+      "BUAYA",
+      "ULAR",
+      "ELANG",
+      "RANGKONG",
+      "KANCIL",
+      "LANDAK",
+      "BIAWAK",
+      "MUSANG"
+    ]
+  },
+  {
+    "theme": "Hewan endemik Sulawesi",
+    "words": [
+      "ANOA",
+      "BABIRUSA",
+      "MALEO",
+      "KUSKUS",
+      "TARSIUS",
+      "RANGKONG",
+      "LORI",
+      "KAKATUA",
+      "SAPI",
+      "RUSA",
+      "BABI",
+      "KERA",
+      "KADAL",
+      "SIPUT"
+    ]
+  },
+  {
+    "theme": "Reptil dan amfibi",
+    "words": [
+      "BUAYA",
+      "BIAWAK",
+      "KOMODO",
+      "IGUANA",
+      "BUNGLON",
+      "TOKEK",
+      "CECAK",
+      "KADAL",
+      "ULAR",
+      "KODOK",
+      "KATAK",
+      "SALAMANDER",
+      "PENYU",
+      "KURA",
+      "KROKODIL"
+    ]
+  },
+  {
+    "theme": "Tanaman obat Indonesia",
+    "words": [
+      "JAHE",
+      "KUNYIT",
+      "TEMULAWAK",
+      "KENCUR",
+      "LIDAH",
+      "SAMBILOTO",
+      "SIRIH",
+      "KUMIS",
+      "MAHKOTA",
+      "KAYU",
+      "SAMBUNG",
+      "BROTOWALI",
+      "BINAHONG",
+      "PEGAGAN",
+      "MENGKUDU"
+    ]
+  },
+  {
+    "theme": "Jenis bambu",
+    "words": [
+      "BAMBU",
+      "PETUNG",
+      "WULUNG",
+      "APUS",
+      "TALI",
+      "BETUNG",
+      "HITAM",
+      "KUNING",
+      "CENDANI",
+      "GOMBONG",
+      "HAUR",
+      "PRING",
+      "ANDONG",
+      "MAYAN",
+      "JAWA"
+    ]
+  },
+  {
+    "theme": "Wayang dan tokohnya",
+    "words": [
+      "WAYANG",
+      "ARJUNA",
+      "BIMA",
+      "GATOTKACA",
+      "WERKUDARA",
+      "NAKULA",
+      "SADEWA",
+      "KRESNA",
+      "SEMAR",
+      "GARENG",
+      "PETRUK",
+      "BAGONG",
+      "HANOMAN",
+      "RAHWANA",
+      "SRIKANDI"
+    ]
+  },
+  {
+    "theme": "Motif batik terkenal",
+    "words": [
+      "PARANG",
+      "KAWUNG",
+      "SIDO",
+      "TRUNTUM",
+      "SEMEN",
+      "MEGA",
+      "CEPLOK",
+      "NITIK",
+      "TAMBAL",
+      "SEKAR",
+      "LERENG",
+      "SLOBOG",
+      "WAHYU",
+      "GURDA",
+      "BANJI"
+    ]
+  },
+  {
+    "theme": "Rumah adat Indonesia",
+    "words": [
+      "JOGLO",
+      "GADANG",
+      "TORAJA",
+      "TONGKONAN",
+      "LIMAS",
+      "BETANG",
+      "BAILEO",
+      "HONAI",
+      "MUSALAKI",
+      "MBARU",
+      "BALE",
+      "PANGGUNG",
+      "SURAMBI",
+      "ADAT"
+    ]
+  },
+  {
+    "theme": "Senjata tradisional",
+    "words": [
+      "KERIS",
+      "PARANG",
+      "PEDANG",
+      "MANDAU",
+      "RENCONG",
+      "BADIK",
+      "TRISULA",
+      "TOMBAK",
+      "PANAH",
+      "SUMPIT",
+      "GOLOK",
+      "PISAU",
+      "CLURIT",
+      "KUJANG",
+      "CALUNG"
+    ]
+  },
+  {
+    "theme": "Upacara adat Jawa",
+    "words": [
+      "SEKATEN",
+      "GREBEG",
+      "SYAWALAN",
+      "RUWATAN",
+      "MITONI",
+      "TEDAK",
+      "SITEN",
+      "MIDODARENI",
+      "SIRAMAN",
+      "WILUJENGAN",
+      "SLAMETAN",
+      "LABUHAN",
+      "TIRAKATAN",
+      "NYADRAN"
+    ]
+  },
+  {
+    "theme": "Kesenian Betawi",
+    "words": [
+      "LENONG",
+      "ONDEL",
+      "GAMBANG",
+      "KROMONG",
+      "TANJIDOR",
+      "TOPENG",
+      "BLANTEK",
+      "KETOPRAK",
+      "LUDRUK",
+      "SENI",
+      "REOG",
+      "MARAWIS",
+      "HADROH",
+      "REBANA",
+      "ORKES"
+    ]
+  },
+  {
+    "theme": "Mata pelajaran sekolah",
+    "words": [
+      "MATEMATIKA",
+      "FISIKA",
+      "KIMIA",
+      "BIOLOGI",
+      "SEJARAH",
+      "GEOGRAFI",
+      "EKONOMI",
+      "SOSIOLOGI",
+      "BAHASA",
+      "SENI",
+      "OLAHRAGA",
+      "AGAMA",
+      "PPKN",
+      "INFORMATIKA"
+    ]
+  },
+  {
+    "theme": "Cabang ilmu pengetahuan",
+    "words": [
+      "FISIKA",
+      "KIMIA",
+      "BIOLOGI",
+      "GEOLOGI",
+      "ASTRONOMI",
+      "EKOLOGI",
+      "ZOOLOGI",
+      "BOTANI",
+      "GENETIKA",
+      "PALEONTOLOGI",
+      "METEOROLOGI",
+      "OCEANOGRAFI"
+    ]
+  },
+  {
+    "theme": "Alat laboratorium",
+    "words": [
+      "TABUNG",
+      "GELAS",
+      "PIPET",
+      "BUNSEN",
+      "MIKOSKOP",
+      "TIMBANGAN",
+      "PENJEPIT",
+      "SPATULA",
+      "KAWAT",
+      "STATIF",
+      "KLEM",
+      "CAWAN",
+      "TERMOMETER",
+      "BAROMETER"
+    ]
+  },
+  {
+    "theme": "Bentuk geometri",
+    "words": [
+      "SEGITIGA",
+      "PERSEGI",
+      "LINGKARAN",
+      "TRAPESIUM",
+      "LAYANG",
+      "BELAH",
+      "KETUPAT",
+      "JAJARAN",
+      "SEGI",
+      "KUBUS",
+      "BALOK",
+      "TABUNG",
+      "KERUCUT",
+      "BOLA",
+      "PRISMA"
+    ]
+  },
+  {
+    "theme": "Unsur kimia populer",
+    "words": [
+      "OKSIGEN",
+      "HIDROGEN",
+      "KARBON",
+      "NITROGEN",
+      "NATRIUM",
+      "KALSIUM",
+      "BESI",
+      "TEMBAGA",
+      "EMAS",
+      "PERAK",
+      "ALUMINIUM",
+      "SULFUR",
+      "FOSFOR",
+      "KLORIN",
+      "HELIUM"
+    ]
+  },
+  {
+    "theme": "Jenis energi",
+    "words": [
+      "LISTRIK",
+      "PANAS",
+      "CAHAYA",
+      "BUNYI",
+      "KINETIK",
+      "POTENSIAL",
+      "NUKLIR",
+      "SURYA",
+      "ANGIN",
+      "GEOTHERMAL",
+      "BIOMASSA",
+      "GELOMBANG",
+      "KIMIA",
+      "MEKANIK"
+    ]
+  },
+  {
+    "theme": "Bagian otak manusia",
+    "words": [
+      "OTAK",
+      "SEREBRUM",
+      "SEREBELUM",
+      "HIPOTALAMUS",
+      "HIPOKAMPUS",
+      "AMIGDALA",
+      "KORTEKS",
+      "THALAMUS",
+      "PONS",
+      "MEDULLA",
+      "BATANG",
+      "LOBUS",
+      "SINAPS"
+    ]
+  },
+  {
+    "theme": "Alat komunikasi",
+    "words": [
+      "TELEPON",
+      "RADIO",
+      "TELEVISI",
+      "INTERNET",
+      "EMAIL",
+      "SURAT",
+      "TELEGRAM",
+      "FAKS",
+      "WALKIE",
+      "PENGERAS",
+      "SATELIT",
+      "ANTENA",
+      "MODEM"
+    ]
+  },
+  {
+    "theme": "Bagian komputer",
+    "words": [
+      "HARDDISK",
+      "MONITOR",
+      "KEYBOARD",
+      "MOUSE",
+      "SPEAKER",
+      "PRINTER",
+      "SCANNER",
+      "WEBCAM",
+      "MODEM",
+      "ROUTER",
+      "BATERAI",
+      "CHARGER"
+    ]
+  },
+  {
+    "theme": "Jenis aplikasi smartphone",
+    "words": [
+      "KAMERA",
+      "MAPS",
+      "MUSIK",
+      "VIDEO",
+      "BELANJA",
+      "CHATTING",
+      "EMAIL",
+      "KALENDER",
+      "CATATAN",
+      "KALKULATOR",
+      "CUACA",
+      "BERITA",
+      "MEDSOS",
+      "GAME"
+    ]
+  },
+  {
+    "theme": "Posisi dalam sepak bola",
+    "words": [
+      "PENJAGA",
+      "GELANDANG",
+      "PENYERANG",
+      "STRIKER",
+      "LIBERO",
+      "SWEEPER",
+      "KAPTEN",
+      "KIPER",
+      "SAYAP",
+      "PEMAIN",
+      "CADANGAN",
+      "WASIT",
+      "LINESMAN"
+    ]
+  },
+  {
+    "theme": "Peralatan olahraga",
+    "words": [
+      "BOLA",
+      "RAKET",
+      "TONGKAT",
+      "RING",
+      "JALA",
+      "MATRAS",
+      "SARUNG",
+      "PELINDUNG",
+      "HELM",
+      "SEPATU",
+      "KOSTUM",
+      "PELUIT",
+      "STOPWATCH",
+      "PAPAN"
+    ]
+  },
+  {
+    "theme": "Event olahraga dunia",
+    "words": [
+      "OLIMPIADE",
+      "PIALA",
+      "DUNIA",
+      "ASIAN",
+      "GAMES",
+      "KEJUARAAN",
+      "TURNAMEN",
+      "GRAND",
+      "PRIX",
+      "MARATHON",
+      "TRIATHLON",
+      "TOUR",
+      "WIMBLEDON"
+    ]
+  },
+  {
+    "theme": "Bagian rumah",
+    "words": [
+      "RUANG",
+      "TAMU",
+      "DAPUR",
+      "KAMAR",
+      "MANDI",
+      "GARASI",
+      "TERAS",
+      "BALKON",
+      "ATAP",
+      "LANTAI",
+      "DINDING",
+      "PINTU",
+      "JENDELA",
+      "TANGGA",
+      "GUDANG"
+    ]
+  },
+  {
+    "theme": "Bangunan umum",
+    "words": [
+      "MASJID",
+      "GEREJA",
+      "PURA",
+      "WIHARA",
+      "KLENTENG",
+      "RUMAH SAKIT",
+      "PUSKESMAS",
+      "SEKOLAH",
+      "KAMPUS",
+      "KANTOR",
+      "POLISI",
+      "BANK",
+      "PASAR",
+      "MALL",
+      "HOTEL"
+    ]
+  },
+  {
+    "theme": "Tempat wisata alam",
+    "words": [
+      "PANTAI",
+      "GUNUNG",
+      "AIR TERJUN",
+      "DANAU",
+      "HUTAN",
+      "LEMBAH",
+      "BUKIT",
+      "NGARAI",
+      "RAWA",
+      "KARANG",
+      "PADANG",
+      "SAVANA",
+      "TAMAN",
+      "CAGAR"
+    ]
+  },
+  {
+    "theme": "Provinsi di Pulau Jawa",
+    "words": [
+      "BANTEN",
+      "JAKARTA",
+      "JAWA BARAT",
+      "JAWA TENGAH",
+      "YOGYAKARTA",
+      "JAWA TIMUR"
+    ]
+  },
+  {
+    "theme": "Provinsi di Sumatera",
+    "words": [
+      "ACEH",
+      "SUMATRA UTARA",
+      "SUMATRA BARAT",
+      "RIAU",
+      "JAMBI",
+      "BENGKULU",
+      "LAMPUNG",
+      "BANGKA",
+      "SUMATRA SELATAN"
+    ]
+  },
+  {
+    "theme": "Negara di Eropa Barat",
+    "words": [
+      "PERANCIS",
+      "JERMAN",
+      "INGGRIS",
+      "ITALIA",
+      "SPANYOL",
+      "BELANDA",
+      "BELGIA",
+      "PORTUGAL",
+      "SWISS",
+      "AUSTRIA",
+      "DENMARK",
+      "SWEDIA",
+      "NORWEGIA"
+    ]
+  },
+  {
+    "theme": "Negara di Amerika Latin",
+    "words": [
+      "BRAZIL",
+      "ARGENTINA",
+      "KOLOMBIA",
+      "PERU",
+      "VENEZUELA",
+      "CHILE",
+      "EKUADOR",
+      "BOLIVIA",
+      "PARAGUAY",
+      "URUGUAY",
+      "KUBA",
+      "MEKSIKO"
+    ]
+  },
+  {
+    "theme": "Lautan di dunia",
+    "words": [
+      "PASIFIK",
+      "ATLANTIK",
+      "HINDIA",
+      "ARKTIK",
+      "ANTARTIKA",
+      "MERAH",
+      "HITAM",
+      "KASPIA",
+      "KARIBIA",
+      "MEDITERANIA",
+      "CINA",
+      "ARAB",
+      "CORAL",
+      "SELATAN"
+    ]
+  },
+  {
+    "theme": "Organ dalam tubuh",
+    "words": [
+      "JANTUNG",
+      "PARU",
+      "HATI",
+      "GINJAL",
+      "LAMBUNG",
+      "USUS",
+      "LIMPA",
+      "PANKREAS",
+      "EMPEDU",
+      "KANDUNG",
+      "KELENJAR",
+      "TIROID",
+      "PROSTAT",
+      "RAHIM",
+      "OVARIUM"
+    ]
+  },
+  {
+    "theme": "Tulang rangka manusia",
+    "words": [
+      "TENGKORAK",
+      "TULANG",
+      "BELAKANG",
+      "RUSUK",
+      "SELANGKA",
+      "HUMERUS",
+      "RADIUS",
+      "ULNA",
+      "FEMUR",
+      "TIBIA",
+      "FIBULA",
+      "STERNUM",
+      "PATELA",
+      "PELVIS"
+    ]
+  },
+  {
+    "theme": "Jenis penyakit menular",
+    "words": [
+      "COVID",
+      "INFLUENZA",
+      "TUBERKULOSIS",
+      "MALARIA",
+      "DENGUE",
+      "HEPATITIS",
+      "CAMPAK",
+      "CACAR",
+      "KOLERA",
+      "TIFUS",
+      "LEPRA",
+      "RABIES",
+      "EBOLA"
+    ]
+  },
+  {
+    "theme": "Vitamin dan mineral penting",
+    "words": [
+      "KALSIUM",
+      "ZAT BESI",
+      "FOSFOR",
+      "MAGNESIUM",
+      "ZINC",
+      "KALIUM",
+      "NATRIUM"
+    ]
+  },
+  {
+    "theme": "Jenis lembaga keuangan",
+    "words": [
+      "BANK",
+      "KOPERASI",
+      "PEGADAIAN",
+      "ASURANSI",
+      "LEASING",
+      "SEKURITAS",
+      "REKSA",
+      "DANA",
+      "PASAR",
+      "MODAL",
+      "BURSA",
+      "PINJOL",
+      "FINTECH"
+    ]
+  },
+  {
+    "theme": "Istilah ekonomi dasar",
+    "words": [
+      "INFLASI",
+      "DEFLASI",
+      "RESESI",
+      "EKSPOR",
+      "IMPOR",
+      "NERACA",
+      "SUBSIDI",
+      "PAJAK",
+      "TARIF",
+      "DEVISA",
+      "CADANGAN",
+      "OBLIGASI",
+      "SAHAM",
+      "KURS"
+    ]
+  },
+  {
+    "theme": "Jenis pasar",
+    "words": [
+      "PASAR",
+      "SWALAYAN",
+      "MINIMARKET",
+      "HYPERMARKET",
+      "TRADISIONAL",
+      "MODERN",
+      "MALAM",
+      "PAGI",
+      "TERAPUNG",
+      "ONLINE",
+      "BURSA",
+      "LELANG",
+      "GROSIR",
+      "ECERAN"
+    ]
+  },
+  {
+    "theme": "Bentuk badan usaha",
+    "words": [
+      "KOPERASI",
+      "FIRMA",
+      "PERSERO",
+      "COMMANDITAIRE",
+      "YAYASAN",
+      "PERSEROAN",
+      "BUMN",
+      "BUMD",
+      "UMKM",
+      "STARTUP",
+      "KONGLOMERAT",
+      "PERUSAHAAN"
+    ]
+  },
+  {
+    "theme": "Tokoh ulama Indonesia",
+    "words": [
+      "HAMKA",
+      "WAHID",
+      "HASYIM",
+      "NURCHOLISH",
+      "QURAISH",
+      "ZAINUDDIN",
+      "SYAFII",
+      "MUSTHAFA",
+      "AHMAD",
+      "DAHLAN",
+      "WAHAB",
+      "HASJIM"
+    ]
+  },
+  {
+    "theme": "Istilah keagamaan Islam",
+    "words": [
+      "MASJID",
+      "SURAU",
+      "PESANTREN",
+      "USTADZ",
+      "KYAI",
+      "IMAM",
+      "MUADZIN",
+      "JAMAAH",
+      "PONDOK",
+      "MADRASAH",
+      "WALI",
+      "TAFAKUR",
+      "ZIKIR",
+      "JIHAD"
+    ]
+  },
+  {
+    "theme": "Hari besar agama",
+    "words": [
+      "IDUL",
+      "FITRI",
+      "IDUL ADHA",
+      "NATAL",
+      "NYEPI",
+      "WAISAK",
+      "IMLEK",
+      "GALUNGAN",
+      "KUNINGAN",
+      "MAULID",
+      "ISRA",
+      "MIRAJ",
+      "PASKAH",
+      "WAFAT"
+    ]
+  },
+  {
+    "theme": "Jenis sampah dan limbah",
+    "words": [
+      "ORGANIK",
+      "ANORGANIK",
+      "PLASTIK",
+      "KERTAS",
+      "LOGAM",
+      "KACA",
+      "BATERAI",
+      "ELEKTRONIK",
+      "MEDIS",
+      "INDUSTRI",
+      "NUKLIR",
+      "MINYAK",
+      "BERACUN"
+    ]
+  },
+  {
+    "theme": "Cara menjaga lingkungan",
+    "words": [
+      "DAUR",
+      "ULANG",
+      "KOMPOS",
+      "HEMAT",
+      "LISTRIK",
+      "TANAM",
+      "POHON",
+      "KURANGI",
+      "SAMPAH",
+      "SEPEDA",
+      "SOLAR",
+      "WIND",
+      "TENDA",
+      "IRIGASI",
+      "GREEN"
+    ]
+  },
+  {
+    "theme": "Hutan dan ekosistemnya",
+    "words": [
+      "KANOPI",
+      "TAJUK",
+      "POHON",
+      "SEMAK",
+      "LANTAI",
+      "HUTAN",
+      "LUMUT",
+      "PAKU",
+      "FUNGI",
+      "JAMUR",
+      "TANAH",
+      "HUMUS",
+      "AKAR",
+      "DAUN",
+      "RANTING"
+    ]
+  },
+  {
+    "theme": "Polusi dan pencemaran",
+    "words": [
+      "POLUSI",
+      "UDARA",
+      "TANAH",
+      "SUARA",
+      "CAHAYA",
+      "LIMBAH",
+      "ASAP",
+      "DEBU",
+      "RACUN",
+      "LOGAM",
+      "BERAT",
+      "PESTISIDA",
+      "PLASTIK",
+      "SAMPAH"
+    ]
+  },
+  {
+    "theme": "Istilah media sosial",
+    "words": [
+      "KONTEN",
+      "POSTINGAN",
+      "STORY",
+      "REEL",
+      "FEED",
+      "FOLLOWERS",
+      "LIKES",
+      "COMMENT",
+      "SHARE",
+      "HASHTAG",
+      "LIVE",
+      "COLLAB",
+      "ENDORSE"
+    ]
+  },
+  {
+    "theme": "Jenis game populer",
+    "words": [
+      "BATTLE",
+      "ROYALE",
+      "MOBA",
+      "STRATEGI",
+      "PUZZLE",
+      "RACING",
+      "SPORT",
+      "HORROR",
+      "SANDBOX",
+      "FIGHTING",
+      "PLATFORMER",
+      "SIMULATION"
+    ]
+  },
+  {
+    "theme": "Istilah internet dan jaringan",
+    "words": [
+      "WIFI",
+      "ROUTER",
+      "MODEM",
+      "SERVER",
+      "CLOUD",
+      "BANDWIDTH",
+      "LATENCY",
+      "FIREWALL",
+      "PROXY",
+      "DOMAIN",
+      "HOSTING",
+      "HTTP"
+    ]
+  },
+  {
+    "theme": "Jenis robot dan AI",
+    "words": [
+      "ROBOT",
+      "DRONE",
+      "CHATBOT",
+      "ALGORITMA",
+      "NEURAL",
+      "NETWORK",
+      "MACHINE",
+      "LEARNING",
+      "DATA",
+      "SENSOR",
+      "ACTUATOR",
+      "HUMANOID",
+      "ANDROID"
+    ]
+  },
+  {
+    "theme": "Aliran seni lukis",
+    "words": [
+      "REALISME",
+      "IMPRESIONISME",
+      "EKSPRESIONISME",
+      "KUBISME",
+      "SUREALISME",
+      "ABSTRAK",
+      "DADAISME",
+      "FUTURISME",
+      "ROMANTISME",
+      "NATURALISME"
+    ]
+  },
+  {
+    "theme": "Jenis karya sastra",
+    "words": [
+      "NOVEL",
+      "CERPEN",
+      "PUISI",
+      "PANTUN",
+      "GURINDAM",
+      "SYAIR",
+      "DRAMA",
+      "HIKAYAT",
+      "DONGENG",
+      "LEGENDA",
+      "FABEL",
+      "ANEKDOT",
+      "BIOGRAFI",
+      "ESAI",
+      "ARTIKEL"
+    ]
+  },
+  {
+    "theme": "Instrumen musik orkestra",
+    "words": [
+      "BIOLA",
+      "VIOLA",
+      "CELLO",
+      "BASS",
+      "KLARINET",
+      "OBOE",
+      "FAGOT",
+      "FLUTE",
+      "HORN",
+      "TROMPET",
+      "TROMBON",
+      "TUBA",
+      "HARPA",
+      "PIANO",
+      "PERKUSI"
+    ]
+  },
+  {
+    "theme": "Genre musik",
+    "words": [
+      "ROCK",
+      "JAZZ",
+      "BLUES",
+      "KLASIK",
+      "METAL",
+      "PUNK",
+      "HIPHOP",
+      "REGGAE",
+      "DANGDUT",
+      "FOLK",
+      "COUNTRY",
+      "ELECTRONIC",
+      "INDIE"
+    ]
+  },
+  {
+    "theme": "Genre film dan serial",
+    "words": [
+      "AKSI",
+      "KOMEDI",
+      "HORROR",
+      "ROMANCE",
+      "THRILLER",
+      "DRAMA",
+      "ANIMASI",
+      "DOKUMENTER",
+      "FIKSI",
+      "ILMIAH",
+      "PETUALANGAN",
+      "FANTASI",
+      "MISTERI"
+    ]
+  },
+  {
+    "theme": "Kata sifat bentuk fisik",
+    "words": [
+      "BESAR",
+      "KECIL",
+      "TINGGI",
+      "RENDAH",
+      "PANJANG",
+      "PENDEK",
+      "LEBAR",
+      "SEMPIT",
+      "TEBAL",
+      "TIPIS",
+      "BERAT",
+      "RINGAN",
+      "BULAT",
+      "LONJONG",
+      "PIPIH"
+    ]
+  },
+  {
+    "theme": "Kata sifat rasa dan tekstur",
+    "words": [
+      "MANIS",
+      "ASIN",
+      "ASAM",
+      "PAHIT",
+      "PEDAS",
+      "GURIH",
+      "HAMBAR",
+      "RENYAH",
+      "KENYAL",
+      "LEMBUT",
+      "KERAS",
+      "GARING",
+      "KERING",
+      "LEMBAB",
+      "BASAH"
+    ]
+  },
+  {
+    "theme": "Konsep waktu",
+    "words": [
+      "DETIK",
+      "MENIT",
+      "HARI",
+      "MINGGU",
+      "BULAN",
+      "TAHUN",
+      "DEKADE",
+      "ABAD",
+      "MILENIUM",
+      "MASA",
+      "KINI",
+      "LALU",
+      "DEPAN",
+      "SAAT",
+      "MOMEN"
+    ]
+  },
+  {
+    "theme": "Kata penghubung dan preposisi",
+    "words": [
+      "KARENA",
+      "SEHINGGA",
+      "MESKIPUN",
+      "WALAUPUN",
+      "TETAPI",
+      "NAMUN",
+      "SEDANGKAN",
+      "MELAINKAN",
+      "BAHWA",
+      "KETIKA",
+      "SEBELUM",
+      "SESUDAH",
+      "AGAR"
+    ]
+  },
+  {
+    "theme": "Jenis tali dan simpul",
+    "words": [
+      "TALI",
+      "SIMPUL",
+      "IKATAN",
+      "JANGKAR",
+      "MATI",
+      "HIDUP",
+      "DELAPAN",
+      "ANYAMAN",
+      "TANDA",
+      "PENGIKAT",
+      "PELAUT",
+      "GANTUNG",
+      "LASO",
+      "JERAT"
+    ]
+  },
+  {
+    "theme": "Bahan bangunan",
+    "words": [
+      "BATU",
+      "BATA",
+      "PASIR",
+      "SEMEN",
+      "BESI",
+      "BAJA",
+      "KAYU",
+      "BAMBU",
+      "GENTENG",
+      "KERAMIK",
+      "MARMER",
+      "GRANIT",
+      "ASPAL",
+      "KACA",
+      "ALUMINIUM"
+    ]
+  },
+  {
+    "theme": "Alat pertanian",
+    "words": [
+      "CANGKUL",
+      "BAJAK",
+      "SABIT",
+      "ARIT",
+      "PARANG",
+      "GARU",
+      "SEMPROT",
+      "POMPA",
+      "SELANG",
+      "EMBER",
+      "KERANJANG",
+      "KARUNG",
+      "TRAKTOR",
+      "MESIN",
+      "DODOS"
+    ]
+  },
+  {
+    "theme": "Jenis kain dan tekstil",
+    "words": [
+      "KATUN",
+      "SUTRA",
+      "LINEN",
+      "POLYESTER",
+      "NILON",
+      "RAYON",
+      "DENIM",
+      "VELVET",
+      "SATIN",
+      "CHIFFON",
+      "ORGANZA",
+      "TENUN",
+      "BATIK",
+      "LURIK"
+    ]
+  },
+  {
+    "theme": "Bagian kapal",
+    "words": [
+      "LAMBUNG",
+      "LUNAS",
+      "GELADAK",
+      "HALUAN",
+      "BURITAN",
+      "KEMUDI",
+      "LAYAR",
+      "JANGKAR",
+      "TIANG",
+      "SEKOCI",
+      "KABIN",
+      "MESIN",
+      "PROPELER",
+      "RADAR",
+      "SONAR"
+    ]
+  },
+  {
+    "theme": "Jenis tambang dan mineral",
+    "words": [
+      "EMAS",
+      "PERAK",
+      "TEMBAGA",
+      "BESI",
+      "NIKEL",
+      "BAUKSIT",
+      "TIMAH",
+      "INTAN",
+      "BATU BARA",
+      "MINYAK",
+      "BELERANG",
+      "FOSFAT",
+      "MANGAN",
+      "KOBALT"
+    ]
+  },
+  {
+    "theme": "Jenis plastik dan polimer",
+    "words": [
+      "PLASTIK",
+      "HDPE",
+      "LDPE",
+      "POLYPROPYLENE",
+      "POLYSTYRENE",
+      "KARET",
+      "SILIKON",
+      "TEFLON",
+      "EPOXY",
+      "NILON",
+      "AKRILIK",
+      "FIBERGLASS"
+    ]
+  },
+  {
+    "theme": "Kata kerja aktivitas fisik",
+    "words": [
+      "BERLARI",
+      "MELOMPAT",
+      "BERENANG",
+      "MENDAKI",
+      "MEMANJAT",
+      "MENARI",
+      "BERGULING",
+      "MELEMPAR",
+      "MENENDANG",
+      "MEMUKUL",
+      "MENDORONG",
+      "MENARIK"
+    ]
+  },
+  {
+    "theme": "Jenis topi dan penutup kepala",
+    "words": [
+      "TOPI",
+      "PECI",
+      "HELM",
+      "KOPIAH",
+      "BLANGKON",
+      "UDENG",
+      "BARET",
+      "MAHKOTA",
+      "TURBAN",
+      "KERUDUNG",
+      "CAPING",
+      "TOPI COWBOY",
+      "BEANIE"
+    ]
+  },
+  {
+    "theme": "Jenis tas",
+    "words": [
+      "RANSEL",
+      "KOPER",
+      "DOMPET",
+      "CLUTCH",
+      "TOTE",
+      "BACKPACK",
+      "HANDBAG",
+      "SLING",
+      "POUCH",
+      "TRAVEL",
+      "LAPTOP",
+      "JANSPORT",
+      "GUCCI",
+      "SELEMPANG"
+    ]
+  },
+  {
+    "theme": "Motif dan corak kain",
+    "words": [
+      "KOTAK",
+      "GARIS",
+      "POLOS",
+      "BUNGA",
+      "POLKADOT",
+      "ABSTRAK",
+      "GEOMETRIS",
+      "PAISLEY",
+      "BATIK",
+      "TENUN",
+      "SONGKET",
+      "TARTAN",
+      "ZEBRA",
+      "MACAN"
+    ]
+  },
+  {
+    "theme": "Jenis perhiasan",
+    "words": [
+      "CINCIN",
+      "KALUNG",
+      "GELANG",
+      "ANTING",
+      "MAHKOTA",
+      "BROS",
+      "TANGAN",
+      "RANTAI",
+      "LIONTIN",
+      "GELANG KAKI",
+      "TUSUK",
+      "KONDE",
+      "JEPIT"
+    ]
+  },
+  {
+    "theme": "Jenis suara dan bunyi",
+    "words": [
+      "BISIK",
+      "TERIAK",
+      "NYANYIAN",
+      "TANGIS",
+      "TAWA",
+      "DESIS",
+      "GEMURUH",
+      "DENTUM",
+      "KICAUAN",
+      "DECITAN",
+      "DENTING",
+      "GEMA",
+      "GAUNG",
+      "SIULAN"
     ]
   }
 ]

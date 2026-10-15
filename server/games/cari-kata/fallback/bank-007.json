@@ -1,1778 +1,1836 @@
 [
   {
-    "theme": "Hewan ternak yang menghasilkan susu",
+    "theme": "Alat tulis yang berwarna putih",
     "words": [
-      "PUYUH",
-      "KUDA",
-      "ANGSA",
-      "ITIK",
-      "MENTOK",
-      "BEBEK",
-      "BABI",
-      "AYAM"
+      "PULPEN",
+      "AMPLOP",
+      "PENGOKOT",
+      "GUNTING",
+      "KAMUS",
+      "PEMBATIK",
+      "STEMPEL",
+      "SPIDOL",
+      "PENAHAN",
+      "PENANDA",
+      "JANGKA",
+      "BUSUR",
+      "KERTAS",
+      "STABILO",
+      "CUTTER",
+      "BUKU",
+      "LEM",
+      "MAP"
     ],
     "level": 2
   },
   {
-    "theme": "Bumbu dapur yang lembut",
+    "theme": "Olahraga bela diri yang punya rambut",
     "words": [
-      "KAPULAGA",
-      "JAHE",
-      "JINTEN",
-      "LENGKUAS",
-      "KENCUR",
-      "SALAM",
-      "CABAI",
-      "KUNYIT"
+      "JUDO",
+      "NINJUTSU",
+      "AIKIDO",
+      "SUMO",
+      "JUJITSU",
+      "CAPOEIRA",
+      "MUAYTHAI",
+      "KARATE"
+    ],
+    "level": 2
+  },
+  {
+    "theme": "Benda di kantor yang sering diminum",
+    "words": [
+      "LACI",
+      "KAMUS",
+      "MESINFAX",
+      "SPEAKER",
+      "MOUSE",
+      "KAMERA",
+      "LEMARI",
+      "TULIS",
+      "KOMPUTER",
+      "PAPAN",
+      "PINTU",
+      "PRINTER",
+      "HEADSET",
+      "JENDELA",
+      "WEBCAM",
+      "KURSI",
+      "MIKROFON",
+      "RAK"
     ],
     "level": 3
   },
   {
-    "theme": "Profesi di bidang kesehatan yang menghasilkan susu",
+    "theme": "Hewan laut yang melahirkan",
     "words": [
-      "TERAPIS",
-      "BIDAN",
-      "PSIKOLOG",
-      "DOKTER",
-      "AHLI",
-      "RADIOLOG",
-      "GIZI",
-      "APOTEKER",
-      "ANESTESI",
-      "PENELITI",
-      "ILMUWAN",
-      "PERAWAT"
-    ],
-    "level": 3
-  },
-  {
-    "theme": "Minuman tradisional yang berdaun kecil",
-    "words": [
-      "CINCAU",
-      "DUREN",
-      "SARISUSU",
-      "CINCALAU",
-      "CAMPUR",
-      "BAJIGUR",
-      "JAHE",
-      "DAWET"
+      "UBURUBUR",
+      "PENYU",
+      "KATAK",
+      "KEPITING",
+      "UDANG",
+      "GURITA",
+      "KODOK",
+      "PAUS",
+      "IKAN",
+      "PENGUIN"
     ],
     "level": 1
   },
   {
-    "theme": "Pohon kayu yang berbahaya",
-    "words": [
-      "NYATOH",
-      "JATI",
-      "MERANTI",
-      "KAMFER",
-      "ALBASIA",
-      "CENDANA",
-      "BAKAU",
-      "JABON",
-      "CENGAL",
-      "PUSPA",
-      "RANGAS",
-      "RASAMALA",
-      "SENGON",
-      "MAHONI"
-    ],
-    "level": 2
-  },
-  {
-    "theme": "Alat transportasi umum yang sering digunakan",
+    "theme": "Alat transportasi umum yang berkembang biak di air",
     "words": [
       "TAKSI",
-      "DELMAN",
-      "INDrive",
-      "BUS",
-      "TRUK",
-      "GRAB",
-      "BUSWAY",
       "BAJAJ",
-      "KRL",
-      "MRT",
+      "ANGKOT",
       "COMMUTER",
-      "LRT",
-      "GOJEK",
+      "TRUK",
+      "KRL",
       "METRO",
-      "MOBIL",
       "KERETA",
-      "ANDONG",
-      "BECAK"
+      "LRT",
+      "BUS",
+      "GRAB",
+      "BECAK",
+      "MINIBUS",
+      "MRT"
     ],
-    "level": 3
+    "level": 1
   },
   {
-    "theme": "Bumbu dapur yang aktif di siang hari",
+    "theme": "Bumbu dapur yang kuat",
     "words": [
-      "CENGKEH",
-      "LENGKUAS",
+      "PALA",
+      "JINTEN",
       "GARAM",
+      "GULA",
+      "KETUMBAR",
       "SALAM",
-      "KAPULAGA",
-      "MERICA",
-      "PALA",
-      "JINTEN",
-      "BAWANG",
-      "KETUMBAR",
-      "JAHE",
-      "KEMIRI"
-    ],
-    "level": 2
-  },
-  {
-    "theme": "Tanaman obat tradisional yang berwarna hitam",
-    "words": [
-      "KUNYIT",
-      "KEMIRI",
-      "KENCUR",
-      "DAUN",
-      "JAHE",
-      "KAPULAGA",
-      "MENGKUDU",
-      "PALA",
-      "CENGKEH",
-      "JINTEN"
-    ],
-    "level": 2
-  },
-  {
-    "theme": "Peralatan dapur yang sering dimakan",
-    "words": [
-      "BLENDER",
-      "WAJAN",
-      "MIXER",
-      "COBEK",
-      "SANGKU",
-      "KULKAS",
-      "PEMARUT",
-      "TALENAN",
-      "SENDOK",
-      "PIRING"
-    ],
-    "level": 2
-  },
-  {
-    "theme": "Hewan buas yang aktif di siang hari",
-    "words": [
-      "SIMPANSE",
-      "KOMODO",
-      "HARIMAU",
-      "GORILA",
-      "BUAYA",
-      "SINGA",
-      "SERIGALA",
-      "PAUS",
-      "ULAR",
-      "HIU",
-      "BERUANG"
-    ],
-    "level": 3
-  },
-  {
-    "theme": "Bagian atap rumah yang hidup di sungai",
-    "words": [
-      "TALANG",
-      "KELAPA",
-      "KABEL",
-      "PAGAR",
-      "PEMANAS",
-      "WARNA",
-      "BATU",
-      "PLAMIR"
-    ],
-    "level": 3
-  },
-  {
-    "theme": "Bagian atap rumah yang liar",
-    "words": [
-      "KACA",
-      "CEROBONG",
-      "SAGU",
-      "PIPA",
-      "BETON",
-      "RUMPUT",
-      "RUMBIA",
-      "ATAP"
-    ],
-    "level": 2
-  },
-  {
-    "theme": "Tanaman obat tradisional yang populer",
-    "words": [
-      "KENCUR",
-      "SIRIH",
-      "DAUN",
-      "JINTEN",
-      "LADA",
-      "MENGKUDU",
-      "KAPULAGA",
-      "KETUMBAR",
       "KUNYIT",
       "SERAI"
     ],
+    "level": 1
+  },
+  {
+    "theme": "Burung yang umum yang rasanya asin",
+    "words": [
+      "KEKET",
+      "AYAM",
+      "BURUNG",
+      "GOLDAH",
+      "KAKAKTUA",
+      "EMPU",
+      "GAGAK",
+      "JALAK",
+      "RAKSAKSA",
+      "ELANG",
+      "GELATIK",
+      "PERKUTUT",
+      "CIBLEK",
+      "MERAK",
+      "BEBEK",
+      "ANGSA",
+      "HANTU",
+      "PIPIT"
+    ],
     "level": 2
   },
   {
-    "theme": "Alat indera manusia yang bisa menggali",
+    "theme": "Bagian atap rumah yang punya rambut",
     "words": [
-      "KULIT",
-      "HIDUNG",
-      "SARAF",
-      "JANTUNG",
-      "PEMBULUH",
-      "LIDAH",
-      "GINJAL",
-      "OTAK",
-      "LAMBUNG",
-      "DARAH"
+      "AMPLAS",
+      "TALANG",
+      "PIPA",
+      "KUAS",
+      "INSULASI",
+      "PEMANAS",
+      "IJUK",
+      "SEMPROT"
     ],
     "level": 1
   },
   {
-    "theme": "Bagian wajah yang sering digunakan",
+    "theme": "Organ pencernaan yang aman",
     "words": [
-      "LEHER",
-      "ALIS",
-      "JANGUT",
       "LIDAH",
-      "GUSI",
-      "BREBES",
-      "BULUMATA",
-      "HIDUNG",
+      "LIMBA",
+      "ANUS",
+      "PANKREAS",
+      "EMPEDAL",
+      "HATI",
+      "LAMBUNG",
+      "REKTUM",
       "GIGI",
-      "MATA",
-      "KUMIS",
-      "BIBIR",
-      "DAHI",
-      "TELINGA",
-      "PIPI",
-      "RAHANG"
+      "MULUT"
+    ],
+    "level": 2
+  },
+  {
+    "theme": "Organ pencernaan yang aktif di sore hari",
+    "words": [
+      "LAMBUNG",
+      "HATI",
+      "LIDAH",
+      "EMPEDAL",
+      "MULUT",
+      "REKTUM",
+      "GIGI",
+      "LIMBA",
+      "PANKREAS",
+      "ANUS"
+    ],
+    "level": 1
+  },
+  {
+    "theme": "Jenis pakaian yang rasanya pedas",
+    "words": [
+      "KAOSKAKI",
+      "JILBAB",
+      "BAJU",
+      "KEMEJA",
+      "ROK",
+      "TOPI",
+      "SEPATU",
+      "CELANA",
+      "DOMPET",
+      "KUPLUK",
+      "SABUK",
+      "PAYUNG",
+      "HIJAB",
+      "MANTEL",
+      "KAOS",
+      "JAKET",
+      "SARUNG",
+      "KERUDUNG"
     ],
     "level": 3
   },
   {
-    "theme": "Profesi di bidang hukum dan keamanan yang dilindungi",
+    "theme": "Buah tropis yang menyusui",
     "words": [
-      "SATPAM",
-      "MEDIATOR",
-      "KOMANDAN",
-      "LETNAN",
+      "BUNI",
+      "PEPAYA",
+      "MATOA",
+      "SALAK",
+      "DURIAN",
+      "DUKU",
+      "GANDARIA",
+      "PISANG",
+      "MANGGA",
+      "MARKISA"
+    ],
+    "level": 3
+  },
+  {
+    "theme": "Kota besar di Indonesia yang lembut",
+    "words": [
+      "SORONG",
+      "MERAUKE",
+      "CIREBON",
+      "MANADO",
+      "DENPASAR",
+      "MALANG",
+      "MEDAN",
+      "SEMARANG",
+      "BANDUNG",
+      "SURABAYA",
+      "JAYAPURA",
+      "TEGAL",
+      "BEKASI",
+      "JAKARTA",
+      "MADIUN",
+      "PADANG",
+      "JAMBI",
+      "MAKASSAR"
+    ],
+    "level": 3
+  },
+  {
+    "theme": "Olahraga individu yang beracun",
+    "words": [
+      "CATUR",
+      "PILATES",
+      "SENAM",
+      "GOLF",
+      "AEROBIK",
+      "FITNES",
+      "YOGA",
+      "ZUMBA",
+      "GYM",
+      "TENIS",
+      "LARI"
+    ],
+    "level": 2
+  },
+  {
+    "theme": "Hewan di kebun binatang yang beracun",
+    "words": [
+      "KELINCI",
+      "RUSA",
+      "BANTENG",
+      "GAJAH",
+      "HARIMAU",
+      "PANDA",
+      "ONTA",
+      "SIMPANSE",
+      "SERIGALA",
+      "JERAPAH",
+      "GORILA",
+      "LANDAK",
+      "ZEBRA",
+      "BERUANG",
+      "SINGA",
+      "KUDA",
+      "BADAK",
+      "KOALA"
+    ],
+    "level": 1
+  },
+  {
+    "theme": "Gunung terkenal Indonesia yang pendek",
+    "words": [
+      "MERAPI",
+      "BROMO",
+      "SINDORO",
+      "SLAMET",
+      "AGUNG",
+      "SINABUNG",
+      "KRAKATAU",
+      "UNGARAN",
+      "PRAU",
+      "CIREME",
+      "GEDE",
+      "GUNTUR",
+      "TANJUNG",
+      "KELUD",
+      "RINJANI",
+      "PATUHA",
+      "PULOSARI",
+      "TAMBORA"
+    ],
+    "level": 2
+  },
+  {
+    "theme": "Keadaan langit yang bisa ditanam",
+    "words": [
+      "SALJU",
+      "ANGIN",
+      "PANAS",
+      "BERAWAN",
+      "GERIMIS",
+      "CERAH",
+      "EMBUN",
+      "HUJANES",
+      "HUJAN",
+      "KABUT",
+      "MENDUNG",
+      "BADAI"
+    ],
+    "level": 1
+  },
+  {
+    "theme": "Pohon kayu yang tipis",
+    "words": [
+      "JATI",
+      "BAKAU",
+      "RASAMALA",
+      "CENDANA",
+      "NYATOH",
+      "RANGAS",
+      "JABON",
+      "CENGAL",
+      "MERANTI",
+      "KAMFER"
+    ],
+    "level": 3
+  },
+  {
+    "theme": "Profesi militer yang berdaun hijau",
+    "words": [
+      "BRIPTU",
+      "PRAJURIT",
       "MILITER",
+      "KOLONEL",
+      "LETNAN",
+      "AIPTU",
+      "POLISI",
       "KOPRAL",
+      "KAPTEN",
+      "TENTARA",
+      "AIPDA",
+      "TAMTAMA"
+    ],
+    "level": 2
+  },
+  {
+    "theme": "Sungai di Indonesia yang sulit ditanam",
+    "words": [
+      "BENGAWAN",
+      "CIMANUK",
+      "BRANTAS",
+      "CIBINONG",
+      "PROGO",
+      "MUSI",
+      "SOLO",
+      "MAHAKAM"
+    ],
+    "level": 2
+  },
+  {
+    "theme": "Alat musik modern yang berukuran besar",
+    "words": [
+      "PIANO",
+      "TROMBON",
+      "HARPA",
+      "TROMPET",
+      "SERULING",
+      "GITAR",
+      "BIOLA",
+      "KLARINET",
+      "SAKSOFON",
+      "DRUM"
+    ],
+    "level": 3
+  },
+  {
+    "theme": "Bumbu dapur yang lebar",
+    "words": [
+      "MERICA",
+      "KUNYIT",
+      "KAPULAGA",
+      "JINTEN",
+      "JAHE",
+      "KETUMBAR",
+      "CABAI",
+      "CENGKEH",
+      "SALAM",
+      "KEMIRI",
+      "KENCUR",
+      "LENGKUAS"
+    ],
+    "level": 2
+  },
+  {
+    "theme": "Sungai di Indonesia yang berukuran kecil",
+    "words": [
+      "BENGAWAN",
+      "SOLO",
+      "KAPUAS",
+      "CIKAWUNG",
+      "BRANTAS",
+      "SERAYU",
+      "CILIWUNG",
+      "CISADANE",
+      "CITARUM",
+      "CIMANUK",
+      "PROGO",
+      "BARITO",
+      "CIBINONG",
+      "MAHAKAM",
+      "MUSI"
+    ],
+    "level": 2
+  },
+  {
+    "theme": "Tempat umum yang berkembang biak di air",
+    "words": [
+      "SEKOLAH",
+      "STADIUM",
+      "BANDARA",
+      "PURAPURA",
+      "PASAR",
+      "MUSEUM",
+      "TAMAN",
+      "TOKO"
+    ],
+    "level": 3
+  },
+  {
+    "theme": "Hewan ternak yang pendek",
+    "words": [
+      "BEBEK",
+      "KUDA",
+      "BABI",
+      "AYAM",
+      "DOMBA",
+      "KALKUN",
+      "RUSA",
+      "MENTOK"
+    ],
+    "level": 3
+  },
+  {
+    "theme": "Profesi militer yang ada di sekolah",
+    "words": [
+      "AIPDA",
+      "LETNAN",
       "TAMTAMA",
+      "POLISI",
+      "TENTARA",
+      "KOPRAL",
+      "AIPTU",
+      "BRIPTU",
+      "BRIGADIR",
+      "SERGEAN",
+      "KOMANDAN",
+      "PRAJURIT",
+      "BRIGPOL",
+      "KOLONEL",
+      "MILITER",
       "PRADA"
     ],
     "level": 2
   },
   {
-    "theme": "Hewan yang hidup di air yang panjang",
+    "theme": "Hewan bersayap yang keras",
     "words": [
-      "PENGUIN",
-      "BEAVER",
-      "BERANG",
-      "GURITA",
-      "IKAN",
-      "HIU",
-      "PENYU",
-      "KELABANG",
-      "BUAYA",
-      "KADAL",
-      "KATAK",
-      "UBURUBUR"
-    ],
-    "level": 1
-  },
-  {
-    "theme": "Profesi di bidang pendidikan yang berkaki banyak",
-    "words": [
-      "PROFESOR",
-      "LEKTOR",
-      "DOSEN",
-      "ASISTEN",
-      "PENGAJAR",
-      "PELATIH",
-      "TUTOR",
-      "GURU"
-    ],
-    "level": 3
-  },
-  {
-    "theme": "Alat masak yang ada di rumah",
-    "words": [
-      "FREEZER",
-      "OVEN",
-      "MANGKOK",
-      "PISAU",
-      "COOKER",
-      "KOMPOR",
-      "SERBET",
-      "JUICER",
-      "GARPU",
-      "KUALI",
-      "WAJAN",
-      "PEMARUT"
-    ],
-    "level": 2
-  },
-  {
-    "theme": "Ruangan dalam rumah yang menghasilkan sutra",
-    "words": [
-      "HALAMAN",
-      "STUDI",
-      "JEMURAN",
-      "LOTENG",
-      "GUDANG",
-      "GARASI",
-      "BALKON",
-      "DAPUR",
-      "KOLAM",
-      "TAMAN",
-      "TERAS"
-    ],
-    "level": 2
-  },
-  {
-    "theme": "Hewan peliharaan yang berwarna coklat",
-    "words": [
-      "BURUNG",
-      "CECAK",
-      "KADAL",
-      "BELALANG",
-      "KAMBING",
-      "KECOA",
-      "SEMUT",
-      "AYAM"
-    ],
-    "level": 2
-  },
-  {
-    "theme": "Kendaraan darat yang berwarna biru",
-    "words": [
-      "SUV",
-      "BUS",
-      "BMX",
-      "CROSS",
-      "KERETA",
-      "BECAK",
-      "SEPEDA",
-      "MOBIL",
-      "BALAP",
-      "SEDAN",
-      "LMPV",
-      "LIPAT"
-    ],
-    "level": 2
-  },
-  {
-    "theme": "Minuman tradisional yang tipis",
-    "words": [
-      "BAJIGUR",
-      "SARI",
-      "TUAK",
-      "KACANG",
-      "DAWET",
-      "TELER",
-      "SEKOTENG",
-      "CAMPUR",
-      "KUNYIT",
-      "SARISUSU",
-      "BANDREK",
-      "CINCAU"
-    ],
-    "level": 1
-  },
-  {
-    "theme": "Makanan tradisional Indonesia yang sering dijumpai",
-    "words": [
-      "KEMPLANG",
-      "BAKSO",
-      "SATE",
-      "DODOL",
-      "MARTABAK",
-      "MIEAYAM",
-      "LONTONG",
-      "LEMPER",
-      "KROKET",
-      "PECEL",
-      "MIGORENG",
-      "OPOR",
-      "GULAI",
-      "RENDANG"
-    ],
-    "level": 3
-  },
-  {
-    "theme": "Tanaman hias yang ada di kantor",
-    "words": [
-      "TULIP",
-      "TERATAI",
-      "DAHLIA",
-      "ANGGREK",
-      "SEROJA",
-      "LILI",
-      "SEPATU",
-      "GLADIOL",
-      "KAMELIA",
-      "KECUBUNG",
-      "MAWAR",
-      "KEMBANG",
-      "KANA",
-      "KRISAN"
-    ],
-    "level": 2
-  },
-  {
-    "theme": "Bagian-bagian rumah yang menghasilkan sutra",
-    "words": [
-      "TANGGA",
-      "LANTAI",
-      "LOTENG",
-      "GAGANG",
-      "TAMAN",
-      "BALKON",
-      "TERAS",
-      "PAGAR",
-      "PEGANGAN",
-      "GUDANG",
-      "KAMAR",
-      "ATAP",
-      "LANGIT",
-      "KANTIN"
-    ],
-    "level": 3
-  },
-  {
-    "theme": "Bencana alam yang mudah ditanam",
-    "words": [
-      "TSUNAMI",
-      "PETIR",
-      "TAIFUN",
-      "PASANG",
-      "BADAI",
-      "GEMPA",
-      "OMBAK",
-      "ARUS",
-      "BANJIR",
-      "HUJANES",
-      "KILAT",
-      "SURUT",
-      "GUNTUR"
-    ],
-    "level": 2
-  },
-  {
-    "theme": "Tanaman hias yang berkaki dua",
-    "words": [
-      "KRISAN",
-      "SEPATU",
-      "KECUBUNG",
-      "KANA",
-      "TULIP",
-      "DAHLIA",
-      "AZALEA",
-      "KEMBANG",
-      "LILI",
-      "KAMELIA"
-    ],
-    "level": 3
-  },
-  {
-    "theme": "Bagian bawah rumah yang hidup di darat",
-    "words": [
-      "GRANIT",
-      "KUSEN",
-      "LANTAI",
-      "KAPUR",
-      "PIPAGAS",
-      "KARPET",
-      "KERAMIK",
-      "PASIR",
-      "SEMEN",
-      "BETON",
-      "BESI",
-      "JENDELA",
-      "PINTU",
-      "RESAPAN"
-    ],
-    "level": 1
-  },
-  {
-    "theme": "Sungai di Indonesia yang pendek",
-    "words": [
-      "CIMANUK",
-      "PROGO",
-      "KAPUAS",
-      "CISADANE",
-      "CITARUM",
-      "MAHAKAM",
-      "BRANTAS",
-      "MUSI",
-      "CIKAWUNG",
-      "SOLO",
-      "BENGAWAN",
-      "CILIWUNG",
-      "CIBINONG",
-      "BARITO",
-      "SERAYU"
-    ],
-    "level": 2
-  },
-  {
-    "theme": "Alat musik modern yang cepat tumbuh",
-    "words": [
-      "TROMBON",
-      "SAKSOFON",
-      "SERULING",
-      "PIANO",
-      "TROMPET",
-      "GITAR",
-      "BIOLA",
-      "KLARINET"
-    ],
-    "level": 3
-  },
-  {
-    "theme": "Jenis sayuran yang punya sisik",
-    "words": [
-      "KACANG",
-      "BUNCIS",
-      "LOBAK",
-      "LABU",
-      "KENTANG",
-      "KEDELAI",
-      "WORTEL",
-      "BROKOLI",
-      "BAYAM",
-      "KANGKUNG"
-    ],
-    "level": 3
-  },
-  {
-    "theme": "Tempat umum yang berwarna merah",
-    "words": [
-      "TEATER",
-      "TOKO",
-      "BIOSKOP",
-      "STADIUM",
-      "TAMAN",
-      "GALERI",
-      "STASIUN",
-      "SANGGAR",
-      "MUSEUM",
-      "GEDUNG",
-      "TERMINAL",
-      "MALL",
-      "PASAR",
-      "HALTE"
-    ],
-    "level": 2
-  },
-  {
-    "theme": "Hewan yang hidup di air yang punya rambut",
-    "words": [
-      "BERANG",
-      "IKAN",
-      "PAUS",
-      "UBURUBUR",
-      "CUMI",
-      "SIPUT",
-      "PENGUIN",
-      "BEAVER",
-      "KATAK",
-      "KELABANG"
-    ],
-    "level": 3
-  },
-  {
-    "theme": "Jenis pakaian yang lambat tumbuh",
-    "words": [
-      "PAYUNG",
-      "SEPATU",
-      "BAJU",
-      "TAS",
-      "KUPLUK",
-      "JAKET",
-      "ROK",
-      "SARUNG",
-      "TOPI",
-      "JILBAB",
-      "MANTEL",
-      "DOMPET",
-      "KEMEJA",
-      "KAOSKAKI",
-      "SABUK",
-      "KERUDUNG",
-      "SANDAL",
-      "DASI"
-    ],
-    "level": 3
-  },
-  {
-    "theme": "Alat musik yang sempit",
-    "words": [
-      "SARON",
-      "SULING",
-      "DEMUNG",
-      "KECAPI",
-      "SLENTHEM",
-      "GENDANG",
-      "SERULING",
-      "HARPA",
-      "BIOLA",
-      "TROMBON",
-      "ANGKLUNG",
-      "TROMPET"
-    ],
-    "level": 2
-  },
-  {
-    "theme": "Sayuran umbi yang berwarna biru",
-    "words": [
-      "KEMIRI",
-      "GANYONG",
-      "KUNYIT",
-      "KENCUR",
-      "LENGKUAS",
-      "KLUWAK",
-      "UBIJALAR",
-      "JAHE",
-      "SINGKONG",
-      "TALAS",
-      "JAGUNG",
-      "BROKOLI",
-      "BAWANG",
-      "KENTANG",
-      "GARUT",
-      "WORTEL",
-      "LOBANG"
-    ],
-    "level": 1
-  },
-  {
-    "theme": "Alat musik perkusi yang tebal",
-    "words": [
-      "SARON",
-      "MARAKAS",
-      "TOMROCK",
-      "TOM",
-      "SLENTHEM",
-      "BASSDRUM",
-      "TRIANGLE",
-      "RIDE",
-      "DEMUNG",
-      "GENDANG",
-      "CRASH",
-      "DARBUKA",
-      "GAMELAN",
-      "SPLASH"
-    ],
-    "level": 1
-  },
-  {
-    "theme": "Anggota tubuh manusia yang sering digunakan",
-    "words": [
-      "PARU",
-      "RAMBUT",
-      "BETIS",
-      "HATI",
-      "MATA",
-      "MULUT",
-      "KAKI",
-      "ALIS"
-    ],
-    "level": 1
-  },
-  {
-    "theme": "Keadaan langit yang berwarna biru",
-    "words": [
-      "CERAH",
-      "HUJAN",
-      "HUJANES",
-      "KABUT",
-      "MENDUNG",
-      "GERIMIS",
-      "ANGIN",
-      "EMBUN",
-      "SALJU",
-      "PANAS"
-    ],
-    "level": 1
-  },
-  {
-    "theme": "Makanan cepat saji yang berkaki empat",
-    "words": [
-      "SHAWARMA",
-      "POPCORN",
-      "TACO",
-      "BURGER",
-      "KEBAB",
-      "SPAGETI",
-      "BROWNIES",
-      "WINGS",
-      "PIZZA",
-      "COOKIES",
-      "DONAT",
-      "LASAGNA"
-    ],
-    "level": 2
-  },
-  {
-    "theme": "Bencana alam yang berdaun kecil",
-    "words": [
-      "GEMPA",
-      "GUNTUR",
-      "PASANG",
-      "SURUT",
-      "OMBAK",
-      "ARUS",
-      "TSUNAMI",
-      "BANJIR",
-      "HUJANES",
-      "KILAT",
-      "PETIR",
-      "BADAI",
-      "TAIFUN"
-    ],
-    "level": 2
-  },
-  {
-    "theme": "Profesi di rumah sakit yang cepat tumbuh",
-    "words": [
-      "PSIKOLOG",
-      "TERAPIS",
-      "AHLIGIZI",
-      "ANESTESI",
-      "ILMUWAN",
-      "RADIOLOG",
-      "PENELITI",
-      "APOTEKER",
-      "PERAWAT",
-      "BIDAN",
-      "DOKTER"
-    ],
-    "level": 3
-  },
-  {
-    "theme": "Sayuran umbi yang bisa memanjat",
-    "words": [
-      "KLUWAK",
-      "GANYONG",
-      "LOBANG",
-      "TALAS",
-      "BAWANG",
-      "WORTEL",
-      "LENGKUAS",
-      "UBIJALAR",
-      "BROKOLI",
-      "KENTANG"
-    ],
-    "level": 1
-  },
-  {
-    "theme": "Profesi militer yang terancam punah",
-    "words": [
-      "KOMANDAN",
-      "BINTARA",
-      "SERGEAN",
-      "TENTARA",
-      "TAMTAMA",
-      "KAPTEN",
-      "BRIGADIR",
-      "AIPTU",
-      "PERWIRA",
-      "PRADA",
-      "MILITER",
-      "LETNAN"
-    ],
-    "level": 2
-  },
-  {
-    "theme": "Alat musik yang dipetik",
-    "words": [
-      "BANJO",
-      "MANDOLIN",
-      "GITAR",
-      "KECAPI",
-      "HARPA",
-      "BIOLA",
-      "UKULELE",
-      "SASANDO"
-    ],
-    "level": 3
-  },
-  {
-    "theme": "Alat transportasi umum yang berwarna coklat",
-    "words": [
-      "MRT",
-      "BUSWAY",
-      "KERETA",
-      "METRO",
-      "MINIBUS",
-      "BECAK",
-      "TRUK",
-      "ANDONG",
-      "GRAB",
-      "TAKSI",
-      "LRT",
-      "KRL",
-      "ANGKOT",
-      "BUS",
-      "COMMUTER",
-      "INDrive",
-      "BAJAJ",
-      "GOJEK"
-    ],
-    "level": 2
-  },
-  {
-    "theme": "Hewan yang hidup di darat yang punya bulu",
-    "words": [
-      "RUBIAH",
-      "SAPI",
-      "ZEBRA",
-      "JERAPAH",
-      "RUSA",
-      "BADAK",
-      "SINGA",
-      "BABI",
-      "AJAG",
-      "AYAM"
-    ],
-    "level": 2
-  },
-  {
-    "theme": "Alat musik yang penting",
-    "words": [
-      "TROMBON",
-      "TROMPET",
-      "KECAPI",
-      "SERUNAI",
-      "GAMELAN",
-      "BIOLA",
-      "BONANG",
-      "SERULING",
-      "KENDANG",
-      "PIANO",
-      "SAKSOFON",
-      "DRUM",
-      "GENDANG",
-      "SULING",
-      "SLENTHEM",
-      "DEMUNG"
-    ],
-    "level": 1
-  },
-  {
-    "theme": "Minuman tradisional yang hidup di sawah",
-    "words": [
-      "SARISUSU",
-      "CAMPUR",
-      "CINCALAU",
-      "SARI",
-      "DAWET",
-      "BAJIGUR",
-      "KRIM",
-      "JAHE",
-      "KACANG",
-      "DUREN"
-    ],
-    "level": 2
-  },
-  {
-    "theme": "Cuaca dan fenomena alam yang ada di dapur",
-    "words": [
-      "GEMPA",
-      "ARUS",
-      "GERIMIS",
-      "BADAI",
-      "SALJU",
-      "SURUT",
-      "TANAH",
-      "HUJANES",
-      "HUJAN",
-      "MENDUNG"
-    ],
-    "level": 3
-  },
-  {
-    "theme": "Jenis serangga yang lebar",
-    "words": [
-      "KUPU",
-      "SEMUT",
+      "KAKAKTUA",
+      "GAGAK",
+      "ELANG",
       "CAPUNG",
-      "JANGKRIK",
-      "KUMBANG",
-      "NYAMUK",
-      "BELALANG",
-      "LABALABA",
-      "KUTU",
-      "KECOA",
-      "KUNANG",
+      "PERKUTUT",
       "LEBAH",
-      "LALAT",
-      "RAYAP"
-    ],
-    "level": 2
-  },
-  {
-    "theme": "Profesi di rumah sakit yang penting",
-    "words": [
-      "TERAPIS",
-      "ILMUWAN",
-      "PENELITI",
-      "AHLIGIZI",
-      "PERAWAT",
-      "RADIOLOG",
-      "ANESTESI",
-      "APOTEKER"
-    ],
-    "level": 2
-  },
-  {
-    "theme": "Profesi pemerintah yang sering diminum",
-    "words": [
-      "CAMAT",
-      "MANAJER",
-      "DIREKTUR",
-      "STAF",
-      "WALIKOTA",
-      "LURAH",
-      "PEGAWAI",
-      "GUBERNUR",
-      "PEJABAT",
-      "PRESIDEN",
-      "KETUA",
-      "BUPATI",
-      "RAJA",
-      "MENTERI"
-    ],
-    "level": 2
-  },
-  {
-    "theme": "Tempat umum yang penting",
-    "words": [
-      "SANGGAR",
-      "TERMINAL",
-      "SEKOLAH",
-      "GALERI",
-      "BIOSKOP",
-      "TEATER",
-      "HALTE",
-      "BANDARA",
-      "GEDUNG",
-      "GOR",
-      "KANTIN",
-      "STADIUM",
-      "MASJID",
-      "MUSEUM",
-      "PASAR",
-      "STASIUN",
-      "MALL",
-      "TAMAN"
+      "NYAMUK",
+      "MERPATI",
+      "MERAK",
+      "BURUNG"
     ],
     "level": 1
   },
   {
-    "theme": "Profesi di bidang pendidikan yang menghasilkan susu",
+    "theme": "Peralatan dapur yang aktif di pagi hari",
     "words": [
-      "ASISTEN",
-      "DOSEN",
-      "PENGAJAR",
-      "PEMANDU",
-      "GURU",
-      "TUTOR",
-      "PELATIH",
-      "PROFESOR",
-      "LEKTOR",
-      "GURUMUDA"
-    ],
-    "level": 2
-  },
-  {
-    "theme": "Bagian-bagian rumah yang bisa memanjat",
-    "words": [
-      "DAPUR",
-      "PEMBATAS",
-      "JENDELA",
-      "SUDUT",
-      "GUDANG",
-      "LANGIT",
-      "KACA",
-      "PEGANGAN"
-    ],
-    "level": 3
-  },
-  {
-    "theme": "Alat musik tiup yang ada di sekolah",
-    "words": [
-      "KLARINET",
-      "PICCOLO",
-      "TUBAALTO",
-      "SERULING",
-      "OBOE",
-      "TROMBON",
-      "SULING",
-      "TUBA",
-      "BASSON",
-      "SAKSOFON",
-      "SERUNAI",
-      "FLUTE",
-      "TUBABAS",
-      "TROMPET"
-    ],
-    "level": 1
-  },
-  {
-    "theme": "Alat musik perkusi yang kuat",
-    "words": [
-      "FLOORTOM",
-      "GONG",
-      "MARAKAS",
-      "GENDANG",
-      "REBAB",
-      "DRUM",
-      "DARBUKA",
-      "BONANG"
-    ],
-    "level": 2
-  },
-  {
-    "theme": "Benda di kantor yang kuat",
-    "words": [
-      "MONITOR",
-      "PAPAN",
-      "MOUSE",
-      "MEJA",
-      "LACI",
-      "KAMUS",
-      "RAK",
-      "WEBCAM",
-      "KURSI",
-      "SPEAKER",
-      "MESINFAX",
-      "KOMPUTER",
-      "TULIS",
-      "LAPTOP",
-      "PRINTER",
-      "KAMERA"
-    ],
-    "level": 2
-  },
-  {
-    "theme": "Bagian atap rumah yang lemah",
-    "words": [
-      "KELAPA",
-      "SEMEN",
-      "BESI",
-      "PAGAR",
-      "ATAP",
-      "RUMPUT",
-      "GOT",
-      "BETON"
-    ],
-    "level": 3
-  },
-  {
-    "theme": "Tanaman pangan yang berkembang biak di air",
-    "words": [
-      "JAGUNG",
-      "LABU",
-      "KUBIS",
-      "SELDERI",
-      "GARUT",
-      "PADI",
-      "BROKOLI",
-      "TALAS",
-      "TOMAT",
-      "TERONG"
-    ],
-    "level": 2
-  },
-  {
-    "theme": "Profesi kreatif yang berwarna merah",
-    "words": [
-      "PELUKIS",
-      "PENYANYI",
-      "PENARI",
-      "EDITOR",
-      "MUSISI",
-      "PEMATUNG",
-      "PRODUSER",
-      "REPORTER",
-      "PENYIAR",
-      "PENULIS",
-      "DESAINER",
-      "WARTAWAN",
-      "JURNALIS"
-    ],
-    "level": 1
-  },
-  {
-    "theme": "Hewan buas yang jinak",
-    "words": [
-      "SINGA",
-      "PAUS",
-      "GORILA",
-      "ULAR",
-      "BUAYA",
-      "SERIGALA",
-      "HARIMAU",
-      "BERUANG",
-      "KOMODO",
-      "SIMPANSE"
-    ],
-    "level": 1
-  },
-  {
-    "theme": "Hewan laut yang berkembang biak di air",
-    "words": [
-      "SIPUT",
-      "CUMI",
-      "UDANG",
-      "KATAK",
-      "KERANG",
-      "UBURUBUR",
-      "KODOK",
-      "GURITA",
-      "PENYU",
-      "PENGUIN",
-      "PAUS",
-      "KURA",
-      "BUAYA",
-      "KEPITING",
-      "IKAN",
-      "HIU"
-    ],
-    "level": 2
-  },
-  {
-    "theme": "Makanan khas Indonesia yang berkembang biak di darat",
-    "words": [
-      "REBUS",
-      "JIPANG",
-      "MARTABAK",
-      "TUMIS",
-      "KEMPLANG",
-      "GULAI",
-      "LUMPIA",
-      "GADOGADO"
-    ],
-    "level": 3
-  },
-  {
-    "theme": "Profesi di rumah sakit yang menghasilkan daging",
-    "words": [
-      "RADIOLOG",
-      "APOTEKER",
-      "TERAPIS",
-      "PSIKOLOG",
-      "ILMUWAN",
-      "PERAWAT",
-      "AHLIGIZI",
-      "PENELITI",
-      "BIDAN",
-      "ANESTESI",
-      "DOKTER"
-    ],
-    "level": 3
-  },
-  {
-    "theme": "Peralatan dapur yang bersayap",
-    "words": [
+      "KOMPOR",
+      "GELAS",
       "BLENDER",
       "TALENAN",
-      "SERBET",
-      "WOK",
-      "DANDANG",
-      "MANGKOK",
-      "SENDOK",
-      "SUTIL",
-      "KULKAS",
-      "OVEN",
-      "PANCI",
-      "COBEK",
-      "ULEKAN",
-      "GARPU"
+      "FREEZER",
+      "COOKER",
+      "GARPU",
+      "COBEK"
     ],
     "level": 3
   },
   {
-    "theme": "Bencana alam yang menghasilkan wol",
+    "theme": "Peralatan dapur yang panjang",
     "words": [
+      "MANGKOK",
+      "COOKER",
+      "PEMARUT",
+      "TALENAN",
+      "LEMARIES",
+      "SANGKU",
+      "WAJAN",
+      "KULKAS"
+    ],
+    "level": 2
+  },
+  {
+    "theme": "Hewan bersayap yang rasanya pedas",
+    "words": [
+      "KAKAKTUA",
+      "PERKUTUT",
+      "ELANG",
+      "BURUNG",
+      "MERAK",
+      "CAPUNG",
+      "LEBAH",
+      "MERPATI",
+      "KASUARI",
+      "NYAMUK",
+      "KUPU",
+      "JALAK"
+    ],
+    "level": 1
+  },
+  {
+    "theme": "Olahraga bela diri yang menghasilkan telur",
+    "words": [
+      "BELADIRI",
+      "JUDO",
+      "KRAVMAGA",
+      "TINJU",
+      "SUMO",
+      "SILAT",
+      "KARATE",
+      "MUAYTHAI",
+      "CAPOEIRA",
+      "KUNGFU"
+    ],
+    "level": 2
+  },
+  {
+    "theme": "Alat musik petik yang punya bulu",
+    "words": [
+      "BANJO",
+      "BIOLA",
+      "MANDOLIN",
+      "KECAPI",
+      "GITAR",
+      "UKULELE",
+      "SASANDO",
+      "HARPA"
+    ],
+    "level": 2
+  },
+  {
+    "theme": "Bagian wajah yang berkembang biak di air",
+    "words": [
+      "BIBIR",
+      "HIDUNG",
+      "LIDAH",
+      "BULUMATA",
+      "BREBES",
+      "MULUT",
+      "LEHER",
+      "JANGUT",
+      "PIPI",
+      "ALIS",
+      "RAHANG",
+      "GIGI",
+      "GUSI",
+      "KUMIS",
+      "TELINGA",
+      "DAGU",
+      "DAHI",
+      "MATA"
+    ],
+    "level": 3
+  },
+  {
+    "theme": "Profesi di bidang pendidikan yang aman",
+    "words": [
+      "PENGAJAR",
+      "GURU",
+      "TUTOR",
+      "GURUMUDA",
+      "PEMANDU",
+      "PROFESOR",
+      "LEKTOR",
+      "DOSEN",
+      "ASISTEN",
+      "PELATIH"
+    ],
+    "level": 2
+  },
+  {
+    "theme": "Makanan cepat saji yang ada di sekolah",
+    "words": [
+      "LASAGNA",
+      "BROWNIES",
+      "WINGS",
+      "NACHOS",
+      "BURGER",
+      "SHAWARMA",
+      "SANDWICH",
+      "HOTDOG",
+      "DONAT",
+      "KEBAB",
+      "COOKIES",
+      "MAKARONI",
+      "SPAGETI",
+      "TACO",
+      "POPCORN",
+      "PIZZA"
+    ],
+    "level": 2
+  },
+  {
+    "theme": "Buah tropis yang panjang",
+    "words": [
+      "DUKU",
+      "NANGKA",
+      "PISANG",
+      "SUKUN",
+      "GANDARIA",
+      "RAMBUTAN",
+      "MANGGIS",
+      "SIRSAK",
+      "CEMPEDAK",
+      "LANGSEP"
+    ],
+    "level": 2
+  },
+  {
+    "theme": "Organ pencernaan yang hidup di air",
+    "words": [
+      "LIMBA",
+      "PANKREAS",
+      "REKTUM",
+      "EMPEDAL",
+      "LIDAH",
+      "LAMBUNG",
+      "ANUS",
+      "HATI",
+      "MULUT",
+      "GIGI"
+    ],
+    "level": 1
+  },
+  {
+    "theme": "Alat musik tiup yang berdaun kecil",
+    "words": [
+      "PICCOLO",
+      "FLUTE",
+      "TROMBON",
+      "TUBA",
+      "SAKSOFON",
+      "KLARINET",
+      "SULING",
+      "TUBABAS",
+      "SERULING",
+      "BASSON",
+      "SERUNAI",
+      "OBOE",
+      "TUBAALTO",
+      "TROMPET"
+    ],
+    "level": 2
+  },
+  {
+    "theme": "Ruangan dalam rumah yang aman",
+    "words": [
+      "GUDANG",
+      "KOLAM",
+      "STUDI",
+      "BALKON",
+      "JEMURAN",
+      "TAMAN",
+      "HALAMAN",
+      "LOTENG",
+      "DAPUR",
+      "GARASI",
+      "TERAS"
+    ],
+    "level": 3
+  },
+  {
+    "theme": "Bagian wajah yang punya rambut",
+    "words": [
+      "KUMIS",
+      "GIGI",
+      "RAHANG",
+      "JANGUT",
+      "DAHI",
+      "BULUMATA",
+      "LEHER",
+      "TELINGA",
+      "MULUT",
+      "DAGU",
+      "HIDUNG",
+      "BREBES",
+      "BIBIR",
+      "LIDAH",
+      "PIPI",
+      "MATA",
+      "GUSI",
+      "ALIS"
+    ],
+    "level": 2
+  },
+  {
+    "theme": "Kendaraan air yang berdaun kecil",
+    "words": [
+      "NELAYAN",
+      "JONG",
+      "SELAM",
+      "PINISI",
+      "BOM",
+      "KAYU",
+      "PERANG",
+      "PESAWAT",
+      "IKAN",
+      "ROKET",
+      "PERAHU",
+      "NIAGA"
+    ],
+    "level": 1
+  },
+  {
+    "theme": "Pulau di Indonesia yang bisa berenang",
+    "words": [
+      "FLORES",
+      "RIAU",
+      "BATAM",
+      "JAWA",
+      "BALI",
+      "PAPUA",
+      "SULAWESI",
+      "NUSA",
+      "BORNEO",
+      "SUMBA"
+    ],
+    "level": 1
+  },
+  {
+    "theme": "Perabot rumah yang berukuran besar",
+    "words": [
+      "JAM",
+      "GULING",
+      "KESET",
+      "MEJA",
+      "RAK",
+      "KALENDER",
+      "TAMAN",
+      "LEMARI",
+      "KASUR",
+      "AYUNAN",
+      "KACAMATA",
+      "PINTU",
+      "LAMPU",
+      "KURSI",
+      "LACI",
+      "BANTAL"
+    ],
+    "level": 3
+  },
+  {
+    "theme": "Minuman kemasan yang berbahaya",
+    "words": [
+      "JUS",
+      "MOJITO",
+      "LEMON",
+      "FANTA",
+      "PEPSI",
+      "MARTINI",
+      "RUM",
+      "TEQUILA",
+      "TEHKOTAK",
+      "SODA",
+      "BRANDY",
+      "COGNAC",
+      "SIRUP",
+      "SPRITE"
+    ],
+    "level": 3
+  },
+  {
+    "theme": "Bagian wajah yang rasanya manis",
+    "words": [
+      "LIDAH",
+      "JANGUT",
+      "RAHANG",
+      "BULUMATA",
+      "GIGI",
+      "KUMIS",
+      "MATA",
+      "PIPI",
+      "LEHER",
+      "DAHI",
+      "BIBIR",
+      "TELINGA",
+      "DAGU",
+      "BREBES",
+      "HIDUNG",
+      "ALIS"
+    ],
+    "level": 3
+  },
+  {
+    "theme": "Makanan cepat saji yang menyusui",
+    "words": [
+      "HOTDOG",
+      "TACO",
+      "NACHOS",
+      "LASAGNA",
+      "COOKIES",
+      "POPCORN",
+      "PIZZA",
+      "SANDWICH",
+      "BROWNIES",
+      "MAKARONI",
+      "WINGS",
+      "DONAT",
+      "KEBAB",
+      "SHAWARMA"
+    ],
+    "level": 1
+  },
+  {
+    "theme": "Pohon buah yang sering dimakan",
+    "words": [
+      "KIWI",
+      "SRIKAYA",
+      "LANGSEP",
+      "SUKUN",
+      "MANGGIS",
+      "MARKISA",
+      "PISANG",
+      "SALAK",
+      "FIG",
+      "PEPAYA"
+    ],
+    "level": 3
+  },
+  {
+    "theme": "Alat tulis yang lambat tumbuh",
+    "words": [
+      "TINTA",
+      "PENSIL",
+      "KERTAS",
+      "BUSUR",
+      "JANGKA",
+      "AMPLOP",
+      "PENANDA",
+      "STABILO",
+      "STEMPEL",
+      "STAPLER",
+      "CUTTER",
+      "BUKU"
+    ],
+    "level": 1
+  },
+  {
+    "theme": "Warna dasar yang sempit",
+    "words": [
+      "MINT",
+      "KREM",
+      "KUNING",
+      "PEACH",
+      "MAROON",
+      "CYAN",
+      "LAVENDER",
+      "ZAMRUD",
+      "ABU",
+      "INDIGO",
+      "HIJAU",
+      "SALMON",
+      "TEAL",
+      "SILVER",
+      "NIKEL",
+      "ORANGE",
+      "PERAK",
+      "HITAM"
+    ],
+    "level": 1
+  },
+  {
+    "theme": "Bagian bawah rumah yang berkaki empat",
+    "words": [
+      "RESAPAN",
+      "POMPAAIR",
+      "BESI",
+      "PASIR",
+      "PEMBATAS",
+      "SEMEN",
+      "KUSEN",
+      "PARKET",
+      "BAJA",
+      "LANTAI"
+    ],
+    "level": 1
+  },
+  {
+    "theme": "Jenis serangga yang aktif di sore hari",
+    "words": [
+      "CAPUNG",
+      "RAYAP",
+      "KECOA",
+      "KUMBANG",
+      "LALAT",
+      "JANGKRIK",
+      "KUPU",
+      "LABALABA",
+      "KUNANG",
+      "KUTU",
+      "LEBAH",
+      "SEMUT",
+      "NYAMUK",
+      "BELALANG"
+    ],
+    "level": 3
+  },
+  {
+    "theme": "Jenis minuman yang berwarna hitam",
+    "words": [
+      "TELER",
+      "KUNYIT",
+      "HANGAT",
+      "BAJIGUR",
+      "CINCALAU",
+      "SEKOTENG",
+      "JUS",
+      "KOPI",
+      "MANGGA",
+      "SIRUP"
+    ],
+    "level": 2
+  },
+  {
+    "theme": "Pulau di Indonesia yang berkaki banyak",
+    "words": [
+      "JAWA",
+      "TENGGARA",
+      "RIAU",
+      "MALUKU",
+      "SUMATERA",
+      "SUMBA",
+      "BANGKA",
+      "BORNEO",
+      "MADURA",
+      "NATUNA",
+      "FLORES",
+      "TIMOR",
+      "LOMBOK",
+      "SULAWESI",
+      "BATAM",
+      "NUSA"
+    ],
+    "level": 2
+  },
+  {
+    "theme": "Hewan bersayap yang cepat tumbuh",
+    "words": [
+      "PERKUTUT",
+      "NYAMUK",
+      "BURUNG",
+      "KUPU",
+      "ELANG",
+      "MERPATI",
+      "KAKAKTUA",
+      "GAGAK",
+      "KASUARI",
+      "MERAK",
+      "LEBAH",
+      "JALAK",
+      "CAPUNG"
+    ],
+    "level": 3
+  },
+  {
+    "theme": "Profesi militer yang berat",
+    "words": [
+      "TENTARA",
+      "AIPDA",
+      "PRADA",
+      "BRIGADIR",
+      "BRIPKA",
+      "BRIPTU",
+      "KAPTEN",
+      "TAMTAMA"
+    ],
+    "level": 3
+  },
+  {
+    "theme": "Makanan cepat saji yang bisa memanjat",
+    "words": [
+      "WINGS",
+      "TACO",
+      "NACHOS",
+      "SANDWICH",
+      "DONAT",
+      "KEBAB",
+      "COOKIES",
+      "PIZZA",
+      "HOTDOG",
+      "BURGER"
+    ],
+    "level": 2
+  },
+  {
+    "theme": "Profesi di rumah sakit yang bersayap",
+    "words": [
+      "BIDAN",
+      "PSIKOLOG",
+      "RADIOLOG",
+      "ILMUWAN",
+      "TERAPIS",
+      "APOTEKER",
+      "PERAWAT",
+      "ANESTESI",
+      "DOKTER",
+      "AHLIGIZI",
+      "PENELITI"
+    ],
+    "level": 2
+  },
+  {
+    "theme": "Hewan ternak yang berwarna coklat",
+    "words": [
+      "RUSA",
+      "KAMBING",
+      "MENTOK",
+      "KERBAU",
+      "BANTENG",
+      "KALKUN",
+      "KELINCI",
+      "AYAM",
+      "BABI",
+      "DOMBA"
+    ],
+    "level": 3
+  },
+  {
+    "theme": "Olahraga air yang mudah ditanam",
+    "words": [
+      "RENANG",
+      "SKIAIR",
+      "SELAM",
+      "DAYUNG",
+      "POLOAIR",
+      "SURFING",
+      "RAFTING",
+      "SELANCAR"
+    ],
+    "level": 3
+  },
+  {
+    "theme": "Perabot rumah yang menghasilkan wol",
+    "words": [
+      "TAPLAK",
+      "SOFA",
+      "SELIMUT",
+      "JENDELA",
+      "BANTAL",
+      "MEJA",
+      "LAMPU",
+      "TAMAN",
+      "AYUNAN",
+      "KALENDER",
+      "KURSI",
+      "TIRAI",
+      "KELAMBU",
+      "LEMARI"
+    ],
+    "level": 3
+  },
+  {
+    "theme": "Kendaraan pribadi yang menghasilkan telur",
+    "words": [
+      "JEEP",
+      "SEPEDA",
+      "LMPV",
+      "BMX",
+      "BEBEK",
+      "ONTEL",
+      "TRAIL",
+      "MATIK",
+      "SEDAN",
+      "LISTRIK",
+      "SUV",
+      "SPORT",
+      "LCGC",
+      "LIPAT",
+      "ANGKUT",
+      "RODATIGA"
+    ],
+    "level": 3
+  },
+  {
+    "theme": "Tempat umum yang menghasilkan madu",
+    "words": [
+      "SEKOLAH",
+      "GOR",
+      "TERMINAL",
+      "GALERI",
+      "KANTIN",
+      "TAMAN",
+      "STASIUN",
+      "PURAPURA",
+      "MASJID",
+      "MUSEUM",
+      "MALL",
+      "TOKO"
+    ],
+    "level": 3
+  },
+  {
+    "theme": "Bencana alam yang rasanya asam",
+    "words": [
+      "ARUS",
       "PASANG",
-      "GUNTUR",
+      "TAIFUN",
       "SURUT",
-      "HUJANES",
+      "BANJIR",
       "BADAI",
       "PETIR",
-      "TSUNAMI",
-      "GEMPA",
-      "TAIFUN",
-      "BANJIR",
-      "ARUS",
       "KILAT",
+      "GUNTUR",
+      "GEMPA",
+      "HUJANES",
+      "TSUNAMI",
       "OMBAK"
     ],
     "level": 1
   },
   {
-    "theme": "Gunung terkenal Indonesia yang bisa memanjat",
+    "theme": "Hewan ternak yang keras",
     "words": [
-      "RINJANI",
-      "PRAU",
-      "CIREME",
-      "GEDE",
-      "TAMBORA",
-      "KRAKATAU",
-      "AGUNG",
-      "PULOSARI",
-      "SINABUNG",
-      "PATUHA",
-      "TANJUNG",
-      "MERAPI",
-      "SLAMET",
-      "BROMO",
-      "GUNTUR",
-      "KELUD"
-    ],
-    "level": 2
-  },
-  {
-    "theme": "Olahraga air yang ringan",
-    "words": [
-      "JETSKI",
-      "DAYUNG",
-      "SURFING",
-      "SELANCAR",
-      "POLOAIR",
-      "KANO",
-      "KAYAK",
-      "RENANG",
-      "SKIAIR",
-      "RAFTING",
-      "SELAM"
-    ],
-    "level": 3
-  },
-  {
-    "theme": "Makanan khas Indonesia yang aktif di sore hari",
-    "words": [
-      "OPOR",
-      "PANCONG",
-      "BAKSO",
-      "BOLU",
-      "MIREBUS",
-      "MIGORENG",
-      "LEMPER",
-      "SAMBAL",
-      "PANGGANG",
-      "JIPANG",
-      "TUMIS",
-      "BAKAR"
+      "KAMBING",
+      "KUDA",
+      "BANTENG",
+      "RUSA",
+      "PUYUH",
+      "AYAM",
+      "BEBEK",
+      "MENTOK"
     ],
     "level": 1
   },
   {
-    "theme": "Jenis serangga yang berdaun lebar",
+    "theme": "Alat musik yang sering dijumpai",
     "words": [
-      "BELALANG",
-      "SEMUT",
-      "NYAMUK",
-      "LALAT",
-      "KUTU",
-      "KUMBANG",
-      "KECOA",
-      "LEBAH",
-      "JANGKRIK",
-      "KUPU",
-      "CAPUNG",
-      "KUNANG",
-      "LABALABA",
-      "RAYAP"
+      "BIOLA",
+      "REBAB",
+      "TROMPET",
+      "GAMELAN",
+      "KENDANG",
+      "SLENTHEM",
+      "BONANG",
+      "KLARINET"
     ],
     "level": 2
   },
   {
-    "theme": "Olahraga bela diri yang rasanya pahit",
-    "words": [
-      "SILAT",
-      "NINJUTSU",
-      "JUDO",
-      "KARATE",
-      "TINJU",
-      "SUMO",
-      "BELADIRI",
-      "KRAVMAGA"
-    ],
-    "level": 2
-  },
-  {
-    "theme": "Bumbu dapur yang punya tanduk",
-    "words": [
-      "CABAI",
-      "SERAI",
-      "CENGKEH",
-      "JINTEN",
-      "KAPULAGA",
-      "KETUMBAR",
-      "GULA",
-      "JAHE"
-    ],
-    "level": 2
-  },
-  {
-    "theme": "Cabang olahraga yang menyusui",
-    "words": [
-      "ZUMBA",
-      "TINGGI",
-      "GOLF",
-      "YOGA",
-      "SENAM",
-      "LOMPAT",
-      "TINJU",
-      "PANAHAN",
-      "FITNES",
-      "TENIS",
-      "LARI",
-      "CATUR"
-    ],
-    "level": 3
-  },
-  {
-    "theme": "Bencana alam yang jinak",
-    "words": [
-      "GEMPA",
-      "TAIFUN",
-      "PETIR",
-      "BADAI",
-      "PASANG",
-      "BANJIR",
-      "OMBAK",
-      "GUNTUR",
-      "SURUT",
-      "HUJANES",
-      "KILAT",
-      "TSUNAMI",
-      "ARUS"
-    ],
-    "level": 2
-  },
-  {
-    "theme": "Alat musik perkusi yang bersayap",
-    "words": [
-      "BELL",
-      "DJEMBE",
-      "DARBUKA",
-      "RIDE",
-      "TRIANGLE",
-      "CAJON",
-      "KENONG",
-      "FLOORTOM",
-      "SARON",
-      "GONG",
-      "DEMUNG",
-      "BONGO"
-    ],
-    "level": 2
-  },
-  {
-    "theme": "Sungai di Indonesia yang ada di Indonesia",
-    "words": [
-      "CIKAWUNG",
-      "SOLO",
-      "CIMANUK",
-      "MAHAKAM",
-      "BENGAWAN",
-      "KAPUAS",
-      "SERAYU",
-      "MUSI"
-    ],
-    "level": 1
-  },
-  {
-    "theme": "Kendaraan berat yang pendek",
-    "words": [
-      "BEGO",
-      "TRUK",
-      "PICKUP",
-      "BOX",
-      "LOADER",
-      "TANGKI",
-      "BUS",
-      "MOLEN",
-      "KERETA",
-      "TRAILER",
-      "CRANE",
-      "KOMBAIN",
-      "PESAWAT",
-      "TRAKTOR"
-    ],
-    "level": 2
-  },
-  {
-    "theme": "Tempat dan bentang alam yang hidup di air",
-    "words": [
-      "PULAU",
-      "TELUK",
-      "DUSUN",
-      "GANG",
-      "BENUA",
-      "LAUT",
-      "SUNGAI",
-      "BUKIT",
-      "SAMUDRA",
-      "PROVINSI",
-      "LEMBAH",
-      "PANTAI"
-    ],
-    "level": 1
-  },
-  {
-    "theme": "Sayuran hijau yang rasanya manis",
+    "theme": "Tanaman pangan yang hidup di laut",
     "words": [
       "BROKOLI",
-      "JAMUR",
-      "KEMANGI",
+      "JAGUNG",
+      "TOMAT",
+      "TALAS",
       "SELADA",
-      "TAUGE",
-      "KUBIS",
-      "SAWI",
-      "PARE",
       "KANGKUNG",
-      "SELDERI",
-      "BAYAM"
+      "GANYONG",
+      "BAYAM",
+      "KEDELAI",
+      "PADI",
+      "BAWANG",
+      "KENTANG",
+      "WORTEL",
+      "BUNCIS"
     ],
     "level": 3
   },
   {
-    "theme": "Bagian-bagian rumah yang sering diminum",
+    "theme": "Bagian wajah yang sering diminum",
     "words": [
-      "PEGANGAN",
-      "TANGGA",
-      "LOTENG",
-      "GAGANG",
-      "TAMAN",
-      "GUDANG",
-      "JENDELA",
-      "LANGIT",
-      "KOLAM",
-      "KACA",
-      "SUDUT",
-      "TERAS",
-      "PEMBATAS",
-      "DAPUR"
+      "BIBIR",
+      "PIPI",
+      "RAHANG",
+      "MATA",
+      "KUMIS",
+      "DAHI",
+      "LIDAH",
+      "HIDUNG",
+      "TELINGA",
+      "BULUMATA",
+      "LEHER",
+      "MULUT",
+      "ALIS",
+      "GIGI"
     ],
     "level": 3
   },
   {
-    "theme": "Gunung terkenal Indonesia yang tipis",
+    "theme": "Perabot rumah yang berwarna coklat",
     "words": [
-      "MERAPI",
-      "SLAMET",
-      "KRAKATAU",
-      "TANJUNG",
-      "MALABAR",
-      "UNGARAN",
-      "SINDORO",
+      "KURSI",
+      "KALENDER",
+      "TAPLAK",
+      "LACI",
+      "MEJA",
+      "AYUNAN",
+      "JAM",
+      "KESET",
+      "TIRAI",
+      "SELIMUT",
+      "GULING",
+      "KELAMBU",
+      "RAK",
+      "KACAMATA"
+    ],
+    "level": 1
+  },
+  {
+    "theme": "Jenis serangga yang sering dipakai",
+    "words": [
+      "KECOA",
+      "KUTU",
+      "JANGKRIK",
+      "NYAMUK",
+      "CAPUNG",
+      "LALAT",
+      "KUNANG",
+      "RAYAP",
+      "KUMBANG",
+      "KUPU"
+    ],
+    "level": 3
+  },
+  {
+    "theme": "Pohon buah yang hidup di laut",
+    "words": [
       "SALAK",
-      "PULOSARI",
-      "PRAU",
-      "RINJANI",
-      "KAMOJANG",
-      "BROMO",
-      "SINABUNG",
-      "GEDE",
-      "GUNTUR",
-      "SUMBING",
-      "CIREME"
+      "CEMPEDAK",
+      "DELIMA",
+      "MANGGIS",
+      "PISANG",
+      "MARKISA",
+      "SAWO",
+      "PEPAYA",
+      "GANDARIA",
+      "MATOA"
     ],
     "level": 2
   },
   {
-    "theme": "Alat indera manusia yang berwarna hijau",
+    "theme": "Bagian atap rumah yang mudah ditanam",
     "words": [
-      "TULANG",
-      "SUMSUM",
+      "BATU",
+      "CAT",
+      "SEMPROT",
+      "WARNA",
+      "KERIKIL",
+      "BETON",
+      "ASBES",
+      "SIRAP",
+      "KELAPA",
+      "GOT",
+      "IJUK",
+      "PIPA"
+    ],
+    "level": 2
+  },
+  {
+    "theme": "Alat indera manusia yang aman",
+    "words": [
+      "DARAH",
+      "HATI",
+      "HIDUNG",
+      "SARAF",
+      "OTOT",
       "KULIT",
-      "OTAK",
-      "MATA",
-      "LAMBUNG",
-      "USUS",
-      "PEMBULUH",
-      "PARU",
+      "SUMSUM",
       "JANTUNG"
     ],
     "level": 3
   },
   {
-    "theme": "Makanan tradisional Indonesia yang rasanya asam",
+    "theme": "Alat musik modern yang dilindungi",
     "words": [
-      "OPAK",
+      "BIOLA",
+      "GITAR",
+      "KLARINET",
+      "PIANO",
+      "SERULING",
+      "TROMPET",
+      "DRUM",
+      "HARPA",
+      "SAKSOFON",
+      "TROMBON"
+    ],
+    "level": 3
+  },
+  {
+    "theme": "Olahraga air yang berwarna coklat",
+    "words": [
+      "POLOAIR",
+      "KANO",
+      "SELANCAR",
+      "SKIAIR",
+      "KAYAK",
+      "DAYUNG",
+      "JETSKI",
+      "SURFING",
+      "RENANG",
+      "SELAM",
+      "RAFTING"
+    ],
+    "level": 3
+  },
+  {
+    "theme": "Jenis pakaian yang berbuah",
+    "words": [
+      "CELANA",
+      "KUPLUK",
+      "MANTEL",
+      "KEMEJA",
+      "PAYUNG",
+      "SABUK",
+      "JILBAB",
+      "KAOSKAKI",
+      "DASI",
+      "KAOS",
+      "JAKET",
+      "HIJAB",
+      "JAM",
+      "KACAMATA",
+      "BAJU",
+      "SARUNG"
+    ],
+    "level": 2
+  },
+  {
+    "theme": "Cabang olahraga yang ada di kantor",
+    "words": [
+      "BASKET",
+      "CATUR",
+      "PANAHAN",
+      "LARI",
+      "ZUMBA",
+      "KARATE",
+      "PILATES",
+      "FUTSAL",
+      "DAYUNG",
+      "LOMPAT",
+      "RENANG",
+      "GYM",
+      "GOLF",
+      "TINGGI",
+      "VOLI",
+      "AEROBIK",
+      "SENAM",
+      "BELADIRI"
+    ],
+    "level": 2
+  },
+  {
+    "theme": "Olahraga air yang bisa diminum",
+    "words": [
+      "JETSKI",
+      "SELAM",
+      "DAYUNG",
+      "SKIAIR",
+      "POLOAIR",
+      "RENANG",
+      "KANO",
+      "SURFING",
+      "SELANCAR",
+      "KAYAK",
+      "RAFTING"
+    ],
+    "level": 2
+  },
+  {
+    "theme": "Kota besar di Indonesia yang ringan",
+    "words": [
+      "MADIUN",
+      "JAMBI",
+      "AMBON",
+      "TERNATE",
+      "TEGAL",
+      "MERAUKE",
+      "MANADO",
+      "BEKASI",
+      "JAYAPURA",
+      "SERANG"
+    ],
+    "level": 3
+  },
+  {
+    "theme": "Kendaraan darat yang ada di Indonesia",
+    "words": [
+      "MOTOR",
+      "LMPV",
+      "LIPAT",
+      "DELMAN",
+      "BECAK",
+      "TRAIL",
+      "OFFROAD",
+      "ANGKUT",
+      "JEEP",
+      "BMX",
+      "BEBEK",
+      "MPV",
+      "GUNUNG",
+      "CROSS",
+      "SEPEDA",
+      "RODATIGA",
+      "TRUK",
+      "SPORT"
+    ],
+    "level": 2
+  },
+  {
+    "theme": "Bumbu dapur yang berdaun hijau",
+    "words": [
+      "BAWANG",
+      "SERAI",
+      "GARAM",
+      "JAHE",
+      "KENCUR",
+      "PALA",
+      "GULA",
+      "CENGKEH",
+      "KETUMBAR",
+      "CABAI",
+      "SALAM",
+      "KUNYIT"
+    ],
+    "level": 3
+  },
+  {
+    "theme": "Kue tradisional Indonesia yang menghasilkan wol",
+    "words": [
+      "MARTABAK",
+      "REMPEYEK",
+      "PASTEL",
+      "KERUPUK",
+      "GANYONG",
+      "TIMUS",
+      "PEPE",
+      "BAKWAN",
+      "SURABI",
+      "MANIS",
+      "JENANG",
+      "PANCONG",
+      "CIN",
       "KROKET",
-      "EMPING",
-      "PECEL",
-      "SATE",
-      "GADOGADO",
-      "KEMPLANG",
-      "LUMPIA"
+      "LAMPA",
+      "RISOL",
+      "APAN",
+      "LAPIS"
     ],
     "level": 1
   },
   {
-    "theme": "Profesi di bidang teknik",
+    "theme": "Jenis minuman yang berbunga",
     "words": [
-      "NAHKODA",
-      "MEKANIK",
-      "TATA",
-      "PRODUSER",
-      "PEMIMPIN",
-      "PEGAWAI",
-      "INSINYUR",
-      "STAF"
-    ],
-    "level": 2
-  },
-  {
-    "theme": "Olahraga individu yang berukuran besar",
-    "words": [
-      "AEROBIK",
-      "GOLF",
-      "GYM",
-      "PILATES",
-      "SENAM",
-      "YOGA",
-      "FITNES",
-      "CATUR",
-      "TENIS",
-      "ZUMBA",
-      "LARI"
-    ],
-    "level": 3
-  },
-  {
-    "theme": "Makanan khas Indonesia yang berkaki dua",
-    "words": [
-      "EMPING",
-      "KROKET",
-      "LONTONG",
-      "OPOR",
-      "SAMBAL",
-      "KETUPAT",
-      "BOLU",
-      "TUMIS",
-      "DODOL",
-      "TAHU",
-      "NASI",
-      "RENDANG",
-      "BAKAR",
-      "TEMPE",
-      "SOTO",
-      "JIPANG",
-      "PASTEL",
-      "OPAK"
-    ],
-    "level": 3
-  },
-  {
-    "theme": "Peralatan dapur yang lambat tumbuh",
-    "words": [
-      "SENDOK",
-      "GARPU",
-      "FREEZER",
-      "DANDANG",
-      "COOKER",
-      "BLENDER",
-      "ULEKAN",
-      "KULKAS",
-      "MANGKOK",
-      "SANGKU",
-      "OVEN",
-      "PIRING",
-      "PEMARUT",
-      "KUALI"
-    ],
-    "level": 2
-  },
-  {
-    "theme": "Minuman kemasan yang rasanya manis",
-    "words": [
-      "WHISKY",
-      "SPRITE",
-      "BRANDY",
-      "BIR",
-      "MOJITO",
-      "SIRUP",
-      "COLA",
-      "MARTINI",
-      "VODKA",
-      "FANTA",
-      "JUS",
+      "CENDOL",
+      "SERBUK",
+      "SUSU",
+      "TUAK",
+      "BANDREK",
+      "DUREN",
       "SODA",
-      "LEMON",
+      "MANIS",
+      "JAMBU",
+      "TELER",
+      "SARI",
+      "SEMANGKA"
+    ],
+    "level": 2
+  },
+  {
+    "theme": "Kendaraan air yang sering dipakai",
+    "words": [
+      "BOM",
+      "MOTOR",
+      "SELAM",
+      "KARET",
+      "KAYU",
+      "TORPEDO",
+      "IKAN",
+      "NELAYAN"
+    ],
+    "level": 3
+  },
+  {
+    "theme": "Sayuran hijau yang sering dipakai",
+    "words": [
+      "KUBIS",
+      "KEMANGI",
+      "SELADA",
+      "JAMUR",
+      "TAUGE",
+      "KANGKUNG",
+      "BROKOLI",
+      "PARE",
+      "SELDERI",
+      "BAYAM",
+      "SAWI"
+    ],
+    "level": 2
+  },
+  {
+    "theme": "Benda di kantor yang berat",
+    "words": [
+      "HEADSET",
+      "KOMPUTER",
+      "TULIS",
+      "SCANNER",
+      "JENDELA",
+      "SPEAKER",
+      "PAPAN",
+      "PRINTER",
+      "LEMARI",
+      "WEBCAM",
+      "MIKROFON",
+      "MEJA"
+    ],
+    "level": 2
+  },
+  {
+    "theme": "Pohon kayu yang berbuah",
+    "words": [
+      "PUSPA",
+      "ALBASIA",
+      "KAMFER",
+      "JABON",
+      "JATI",
+      "NYATOH",
+      "BAKAU",
+      "SENGON",
+      "CENGAL",
+      "RASAMALA",
+      "MAHONI",
+      "CENDANA",
+      "MERANTI",
+      "RANGAS"
+    ],
+    "level": 2
+  },
+  {
+    "theme": "Sayuran hijau yang mudah ditanam",
+    "words": [
+      "SAWI",
+      "JAMUR",
+      "PARE",
+      "KANGKUNG",
+      "BROKOLI",
+      "TAUGE",
+      "KUBIS",
+      "KEMANGI",
+      "SELADA",
+      "BAYAM",
+      "SELDERI"
+    ],
+    "level": 3
+  },
+  {
+    "theme": "Hewan peliharaan yang penting",
+    "words": [
+      "ELANG",
+      "IKAN",
+      "DOMBA",
+      "KUDA",
+      "MERAK",
+      "JANGKRIK",
+      "BIAWAK",
+      "TIKUS",
+      "BEBEK",
+      "PENYU",
+      "ARNAB",
+      "BURUNG",
+      "SAPI",
+      "LEBAH",
+      "JALAK",
+      "KELINCI",
+      "MERPATI",
+      "BUAYA"
+    ],
+    "level": 2
+  },
+  {
+    "theme": "Kendaraan berat yang lemah",
+    "words": [
+      "BOX",
+      "KERETA",
+      "MOLEN",
+      "TRAKTOR",
+      "TRUK",
+      "LOADER",
+      "KOMBAIN",
+      "KAPAL"
+    ],
+    "level": 3
+  },
+  {
+    "theme": "Alat tulis yang berwarna biru",
+    "words": [
+      "PENAHAN",
+      "PENGOKOT",
+      "PENANDA",
+      "STAPLER",
+      "PULPEN",
+      "CUTTER",
+      "PEMBATIK",
+      "BUSUR",
+      "MAP",
+      "KERTAS",
+      "PENSIL",
+      "STABILO"
+    ],
+    "level": 3
+  },
+  {
+    "theme": "Jenis serangga yang berbunga",
+    "words": [
+      "BELALANG",
+      "KECOA",
+      "KUMBANG",
+      "LABALABA",
+      "SEMUT",
+      "KUTU",
+      "LEBAH",
+      "KUNANG",
+      "KUPU",
+      "LALAT",
+      "NYAMUK",
+      "JANGKRIK",
+      "RAYAP",
+      "CAPUNG"
+    ],
+    "level": 2
+  },
+  {
+    "theme": "Hewan peliharaan yang rasanya asin",
+    "words": [
+      "ELANG",
+      "NYAMUK",
+      "KUPU",
+      "JALAK",
+      "MERAK",
+      "ARNAB",
+      "LALAT",
+      "KUCING"
+    ],
+    "level": 1
+  },
+  {
+    "theme": "Olahraga bela diri yang cepat tumbuh",
+    "words": [
+      "SILAT",
+      "KUNGFU",
+      "KARATE",
+      "MUAYTHAI",
+      "KRAVMAGA",
+      "CAPOEIRA",
+      "SUMO",
+      "NINJUTSU"
+    ],
+    "level": 2
+  },
+  {
+    "theme": "Peralatan dapur yang cepat tumbuh",
+    "words": [
+      "COOKER",
+      "GELAS",
+      "WOK",
+      "TALENAN",
+      "ULEKAN",
+      "BLENDER",
+      "PIRING",
+      "PANCI",
+      "PISAU",
+      "KULKAS",
+      "LEMARIES",
+      "SUTIL",
+      "SANGKU",
+      "COBEK",
+      "SERBET",
+      "KOMPOR",
+      "OVEN",
+      "FREEZER"
+    ],
+    "level": 2
+  },
+  {
+    "theme": "Olahraga musim dingin yang penting",
+    "words": [
+      "LUGE",
+      "SALJU",
+      "SKELETON",
+      "BIATLON",
+      "ICESKATE",
+      "SLED",
+      "BOBSLED",
+      "SELANCAR",
+      "CURLING",
+      "HOKIES",
+      "SKI"
+    ],
+    "level": 2
+  },
+  {
+    "theme": "Hewan yang hidup di darat yang ada di rumah",
+    "words": [
+      "SERIGALA",
+      "KAMBING",
+      "SAPI",
+      "KUCING",
+      "LUAK",
+      "ANJING",
+      "ONTA",
+      "RUSA",
+      "ANGSA",
+      "MONYET",
+      "PANDA",
+      "BEBEK",
+      "GORILA",
+      "LANDAK",
+      "KUDA",
+      "JERAPAH",
+      "KERBAU",
+      "BANTENG"
+    ],
+    "level": 1
+  },
+  {
+    "theme": "Buah impor yang punya bulu",
+    "words": [
+      "CHERRY",
+      "PERSIK",
+      "FIG",
+      "BLUBERI",
+      "KIWI",
+      "STROBERI",
+      "PLUM",
       "ANGGUR"
     ],
     "level": 3
   },
   {
-    "theme": "Alat musik modern yang punya tanduk",
+    "theme": "Kendaraan darat yang lemah",
     "words": [
-      "SAKSOFON",
-      "KLARINET",
-      "TROMBON",
-      "TROMPET",
-      "SERULING",
-      "HARPA",
-      "DRUM",
-      "BIOLA",
-      "PIANO",
-      "GITAR"
+      "ANGKUT",
+      "SEPEDA",
+      "BUS",
+      "KERETA",
+      "BECAK",
+      "TRUK",
+      "BEBEK",
+      "RODATIGA",
+      "TRAIL",
+      "LIPAT",
+      "LCGC",
+      "BALAP",
+      "TAKSI",
+      "SEDAN",
+      "MOTOR",
+      "BMX",
+      "CROSS",
+      "DELMAN"
     ],
-    "level": 2
+    "level": 1
   },
   {
-    "theme": "Jenis sayuran yang hidup di hutan",
+    "theme": "Profesi militer yang punya sisik",
     "words": [
-      "BAYAM",
-      "SELDERI",
-      "TAUGE",
-      "SELADA",
-      "WORTEL",
-      "KEDELAI",
-      "KANGKUNG",
-      "KACANG",
-      "PARE",
-      "BUNCIS"
+      "MILITER",
+      "AIPTU",
+      "BRIPKA",
+      "POLISI",
+      "TENTARA",
+      "TAMTAMA",
+      "AIPDA",
+      "PERWIRA",
+      "KOPRAL",
+      "KOMANDAN",
+      "BRIGADIR",
+      "BINTARA",
+      "PRAJURIT",
+      "LETNAN"
     ],
-    "level": 2
+    "level": 1
   },
   {
-    "theme": "Alat musik yang panjang",
+    "theme": "Kendaraan darat yang hidup di hutan",
     "words": [
-      "REBAB",
-      "GAMELAN",
-      "SLENTHEM",
-      "GITAR",
-      "TROMBON",
-      "DRUM",
-      "SERUNAI",
-      "PIANO",
-      "HARPA",
-      "KECAPI",
-      "TROMPET",
-      "ANGKLUNG",
-      "BONANG",
-      "SAKSOFON",
-      "GONG",
-      "SERULING"
-    ],
-    "level": 3
-  },
-  {
-    "theme": "Ruangan dalam rumah yang hidup di hutan",
-    "words": [
-      "TERAS",
-      "STUDI",
-      "GUDANG",
-      "TAMAN",
-      "LOTENG",
-      "JEMURAN",
-      "DAPUR",
-      "GARASI",
-      "HALAMAN",
-      "BALKON",
-      "KOLAM"
-    ],
-    "level": 2
-  },
-  {
-    "theme": "Jenis pakaian yang berkaki empat",
-    "words": [
-      "JAS",
-      "JILBAB",
-      "JAM",
-      "CELANA",
-      "SEPATU",
-      "TOPI",
-      "KAOS",
-      "DASI",
-      "MANTEL",
-      "ROK",
-      "SARUNG",
-      "KERUDUNG",
-      "BAJU",
-      "KUPLUK"
-    ],
-    "level": 3
-  },
-  {
-    "theme": "Sayuran hijau yang hidup di darat",
-    "words": [
-      "SAWI",
-      "KANGKUNG",
-      "BROKOLI",
-      "KEMANGI",
-      "BAYAM",
-      "SELDERI",
-      "KUBIS",
-      "TAUGE",
-      "SELADA",
-      "JAMUR",
-      "PARE"
-    ],
-    "level": 2
-  },
-  {
-    "theme": "Jenis buah-buahan yang umum",
-    "words": [
-      "SUKUN",
-      "PEAR",
-      "BUAHNAGA",
-      "CERI",
-      "LANGSEP",
-      "ANGGUR",
-      "GANDARIA",
-      "PERSIK",
-      "SALAK",
-      "STROBERI",
-      "SAWO",
-      "BLUBERI",
-      "SEMANGKA",
-      "MATOA",
-      "BUNI",
-      "KEPEL"
-    ],
-    "level": 2
-  },
-  {
-    "theme": "Hewan buas yang keras",
-    "words": [
-      "HIU",
-      "BUAYA",
-      "SERIGALA",
-      "PAUS",
-      "SIMPANSE",
-      "HARIMAU",
-      "BERUANG",
-      "SINGA",
-      "ULAR",
-      "KOMODO",
-      "GORILA"
-    ],
-    "level": 3
-  },
-  {
-    "theme": "Jenis buah-buahan yang punya bulu",
-    "words": [
-      "SIRSAK",
-      "NANAS",
-      "JERUK",
-      "MANGGIS",
-      "BLUBERI",
-      "MANGGA",
-      "CERI",
-      "SRIKAYA"
+      "KERETA",
+      "GUNUNG",
+      "SUV",
+      "MPV",
+      "ONTEL",
+      "OFFROAD",
+      "LCGC",
+      "RODATIGA",
+      "SEDAN",
+      "BMX",
+      "TRAIL",
+      "ANGKUT",
+      "SPORT",
+      "BALAP"
     ],
     "level": 3
   }

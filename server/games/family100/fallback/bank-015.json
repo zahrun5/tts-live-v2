@@ -1,0 +1,1517 @@
+[
+  {
+    "question": "Berbagai bentuk geometri yang favorit",
+    "answers": [
+      "LINGKARAN",
+      "PANAH",
+      "SEGI DELAPAN",
+      "SEGI ENAM",
+      "SEGI TUJUH",
+      "KERUCUT",
+      "GELOMBANG",
+      "JAJAR GENJANG"
+    ]
+  },
+  {
+    "question": "Berbagai makanan indonesia yang populer",
+    "answers": [
+      "ROTI",
+      "RENDANG",
+      "GULE",
+      "TEMPE",
+      "PECEL",
+      "RUJAK",
+      "NASGOR",
+      "GADO-GADO",
+      "TAHU",
+      "GUDENGAN",
+      "SOTO"
+    ]
+  },
+  {
+    "question": "Contoh suku di indonesia yang umum",
+    "answers": [
+      "MADURA",
+      "MINANGKABAU",
+      "GORONTALO",
+      "JAWA",
+      "RIAU",
+      "SUNDA",
+      "DAYAK",
+      "BIMA",
+      "ACEH",
+      "BETAWI"
+    ]
+  },
+  {
+    "question": "Berbagai benda elektronik yang khas",
+    "answers": [
+      "LAPTOP",
+      "RADIO",
+      "BLENDER",
+      "SETRIKA",
+      "KIPAS",
+      "HANDPHONE",
+      "TABLET",
+      "MESIN CUCI",
+      "TELEVISI",
+      "MICROWAVE"
+    ]
+  },
+  {
+    "question": "Jenis buah tropis yang tradisional",
+    "answers": [
+      "PISANG",
+      "JERUK",
+      "MANGGIS",
+      "PEPAYA",
+      "DUKU",
+      "SEMANGKA",
+      "JAMBU",
+      "RAMBUTAN"
+    ]
+  },
+  {
+    "question": "Berbagai bagian tubuh manusia yang modern",
+    "answers": [
+      "PARU",
+      "RAMBUT",
+      "TANGAN",
+      "JANTUNG",
+      "TULANG",
+      "GIGI",
+      "TELINGA",
+      "HIDUNG"
+    ]
+  },
+  {
+    "question": "Sebutkan buah tropis yang spesial",
+    "answers": [
+      "NANAS",
+      "PEPAYA",
+      "MANGGIS",
+      "LANGSAT",
+      "DURIAN",
+      "BUAH NAGA",
+      "SIRSAK",
+      "MARKISA",
+      "SAWO",
+      "SEMANGKA",
+      "MANGGA"
+    ]
+  },
+  {
+    "question": "Jenis alat tulis yang populer",
+    "answers": [
+      "AMPLOP",
+      "TIPE-X",
+      "PULPEN",
+      "STABILO",
+      "PENGHAPUS",
+      "BUKU",
+      "BUKU CATATAN",
+      "PERFORATOR",
+      "PENGGARIS",
+      "PENSIL"
+    ]
+  },
+  {
+    "question": "Macam-macam bentuk geometri yang favorit",
+    "answers": [
+      "SEGI ENAM",
+      "JAJAR GENJANG",
+      "TRAPESIUM",
+      "OVAL",
+      "HATI",
+      "SEGI LIMA",
+      "KERUCUT",
+      "KOTAK",
+      "BINTANG",
+      "BELAH KETUPAT",
+      "PERSEGI PANJANG",
+      "SPIRAL"
+    ]
+  },
+  {
+    "question": "Jenis bumbu dapur yang populer",
+    "answers": [
+      "JAHE",
+      "LENGKUAS",
+      "JINTEN",
+      "BAWANG",
+      "CABAI",
+      "KETUMBAR",
+      "KUNYIT",
+      "TERASI",
+      "DAUN SALAM"
+    ]
+  },
+  {
+    "question": "Jenis makanan indonesia yang tradisional",
+    "answers": [
+      "BAKSO",
+      "TAHU",
+      "RAWON",
+      "ROTI",
+      "AYAM BAKAR",
+      "TEMPE",
+      "PECEL",
+      "PEMPEK"
+    ]
+  },
+  {
+    "question": "Contoh makanan indonesia yang favorit",
+    "answers": [
+      "RAWON",
+      "ROTI",
+      "PEMPEK",
+      "NASI",
+      "OPOR",
+      "MIE",
+      "TEMPE",
+      "LONTONG"
+    ]
+  },
+  {
+    "question": "Berbagai lokasi di indonesia yang tradisional",
+    "answers": [
+      "MANADO",
+      "BANDUNG",
+      "PADANG",
+      "MATARAM",
+      "JAYAPURA",
+      "JAKARTA",
+      "PALEMBANG",
+      "AMBON",
+      "SEMARANG",
+      "PONTIANAK"
+    ]
+  },
+  {
+    "question": "Contoh bagian rumah yang tradisional",
+    "answers": [
+      "DINDING",
+      "RUANG TAMU",
+      "RUANG MAKAN",
+      "TERAS",
+      "HALAMAN",
+      "DAPUR",
+      "PINTU",
+      "KAMAR MANDI"
+    ]
+  },
+  {
+    "question": "Sebutkan lokasi di indonesia yang modern",
+    "answers": [
+      "PADANG",
+      "PONTIANAK",
+      "SURABAYA",
+      "SEMARANG",
+      "MALANG",
+      "MAKASSAR",
+      "BANDUNG",
+      "KUPANG",
+      "DENPASAR",
+      "MATARAM"
+    ]
+  },
+  {
+    "question": "Sebutkan hewan unggas yang populer",
+    "answers": [
+      "JALAK",
+      "NURI",
+      "ELANG",
+      "BEBEK",
+      "MERPATI",
+      "KASUARI",
+      "BANGKOK",
+      "AYAM",
+      "GELATIK",
+      "KUTILANG",
+      "PERKUTUT"
+    ]
+  },
+  {
+    "question": "Jenis lokasi di indonesia yang tradisional",
+    "answers": [
+      "DENPASAR",
+      "MANADO",
+      "SURABAYA",
+      "PONTIANAK",
+      "MATARAM",
+      "KUPANG",
+      "JAKARTA",
+      "PEKANBARU",
+      "MALANG",
+      "SEMARANG",
+      "PALEMBANG",
+      "YOGYAKARTA"
+    ]
+  },
+  {
+    "question": "Sebutkan profesi kesehatan yang favorit",
+    "answers": [
+      "PSIKOLOG",
+      "FISIOTERAPIS",
+      "DOKTER GIGI",
+      "BIDAN",
+      "AHLI GIZI",
+      "PERAWAT",
+      "SPESIALIS",
+      "MIROBIOLOG",
+      "DOKTER HEWAN",
+      "PARAMEDIS"
+    ]
+  },
+  {
+    "question": "Berbagai lagu daerah yang modern",
+    "answers": [
+      "GUNDHUL PACUL",
+      "JAIPONG",
+      "KAMPUNG",
+      "PANTING",
+      "TIUP-TIUP",
+      "SASANDO",
+      "GENDING",
+      "CENDRAWASIH"
+    ]
+  },
+  {
+    "question": "Macam-macam benda elektronik yang favorit",
+    "answers": [
+      "RADIO",
+      "SETRIKA",
+      "BLENDER",
+      "TELEVISI",
+      "LAPTOP",
+      "SMARTPHONE",
+      "LAPTOP",
+      "MICROWAVE",
+      "KOMPOR",
+      "KAMERA"
+    ]
+  },
+  {
+    "question": "Macam-macam benda di rumah yang khas",
+    "answers": [
+      "GULING",
+      "LANGIT-LANGIT",
+      "KURSI",
+      "PEL",
+      "KESET",
+      "BANTAL",
+      "CERMIN",
+      "LEMARI",
+      "SELIMUT",
+      "RAK",
+      "LACI"
+    ]
+  },
+  {
+    "question": "Berbagai lokasi di indonesia yang modern",
+    "answers": [
+      "PEKANBARU",
+      "JAYAPURA",
+      "BALIKPAPAN",
+      "PALEMBANG",
+      "PONTIANAK",
+      "MAKASSAR",
+      "PADANG",
+      "JAKARTA",
+      "YOGYAKARTA",
+      "MEDAN",
+      "DENPASAR"
+    ]
+  },
+  {
+    "question": "Sebutkan benda di rumah yang populer",
+    "answers": [
+      "MEJA",
+      "GANTUNGAN",
+      "GULING",
+      "BANTAL",
+      "LANGIT-LANGIT",
+      "SAPU",
+      "CERMIN",
+      "KESET",
+      "KURSI",
+      "PINTU"
+    ]
+  },
+  {
+    "question": "Berbagai lagu daerah yang spesifik",
+    "answers": [
+      "GAMBYANG",
+      "CUBLAK-CUBLAK SUENG",
+      "JANGER",
+      "ONDEL-ONDEL",
+      "GENDING",
+      "GUNDHUL PACUL",
+      "KECAK",
+      "TIUP-TIUP",
+      "KAMPUNG NANO"
+    ]
+  },
+  {
+    "question": "Macam-macam hewan langka yang umum",
+    "answers": [
+      "KANCIL",
+      "KOMODO",
+      "ELANG JAWA",
+      "BANTENG",
+      "BADAK",
+      "BERUANG",
+      "ORANGUTAN KALIMANTAN",
+      "GAJAH",
+      "HARIMAU SUMATERA",
+      "CENDRAWASIH",
+      "ANOA",
+      "KUKANG"
+    ]
+  },
+  {
+    "question": "Berbagai makanan indonesia yang spesial",
+    "answers": [
+      "GADO-GADO",
+      "PEMPEK",
+      "PECEL",
+      "AYAM BAKAR",
+      "RUJAK",
+      "ROTI",
+      "RAWON",
+      "TAHU",
+      "RENDANG",
+      "GUDENGAN",
+      "LONTONG"
+    ]
+  },
+  {
+    "question": "Sebutkan hewan mamalia yang tradisional",
+    "answers": [
+      "DOMBA",
+      "KUCING",
+      "SIMPANSE",
+      "KERA",
+      "RUSAK",
+      "MONYET",
+      "KUDA",
+      "GAJAH",
+      "SINGA",
+      "KELINCI"
+    ]
+  },
+  {
+    "question": "Sebutkan profesi umum yang modern",
+    "answers": [
+      "HUKUM",
+      "PERAWAT",
+      "PETANI",
+      "AKUNTAN",
+      "PEDAGANG",
+      "KOKI",
+      "WARTAWAN",
+      "PENGACARA"
+    ]
+  },
+  {
+    "question": "Berbagai cuaca yang modern",
+    "answers": [
+      "DINGIN",
+      "REDUP",
+      "KABUT",
+      "PANAS",
+      "KILAT",
+      "MENDUNG",
+      "HUJAN DERAS",
+      "PETIR",
+      "BENCANA",
+      "BERAWAN",
+      "HUJAN RINGAN"
+    ]
+  },
+  {
+    "question": "Macam-macam hewan unggas yang alami",
+    "answers": [
+      "GELATIK",
+      "GAGAK",
+      "ANGSA",
+      "BANGKOK",
+      "AYAM",
+      "PERKUTUT",
+      "MERAK",
+      "MERPATI",
+      "BANGKOK",
+      "KASUARI",
+      "RAJAWALI",
+      "NURI"
+    ]
+  },
+  {
+    "question": "Berbagai benda di rumah yang populer",
+    "answers": [
+      "LEMARI",
+      "BANTAL",
+      "JENDELA",
+      "CERMIN",
+      "LANGIT-LANGIT",
+      "PINTU",
+      "KURSI",
+      "PEL",
+      "RAK",
+      "MEJA"
+    ]
+  },
+  {
+    "question": "Contoh hewan unggas yang khas",
+    "answers": [
+      "PEKAKAK",
+      "BEBEK",
+      "BANGKOK",
+      "CENDRAWASIH",
+      "KASUARI",
+      "MERPATI",
+      "PERKUTUT",
+      "JALAK",
+      "GELATIK"
+    ]
+  },
+  {
+    "question": "Macam-macam bentuk geometri yang umum",
+    "answers": [
+      "PERSEGI",
+      "KERUCUT",
+      "SEGI TUJUH",
+      "GELOMBANG",
+      "BELAH KETUPAT",
+      "PANAH",
+      "LINGKARAN",
+      "BINTANG",
+      "OVAL",
+      "SEGITIGA",
+      "SPIRAL",
+      "PERSEGI PANJANG"
+    ]
+  },
+  {
+    "question": "Jenis bumbu dapur yang tradisional",
+    "answers": [
+      "GULA",
+      "JINTEN",
+      "LADA",
+      "JAHE",
+      "KETUMBAR",
+      "GARAM",
+      "BAWANG PUTIH",
+      "BAWANG"
+    ]
+  },
+  {
+    "question": "Jenis rasa makanan yang alami",
+    "answers": [
+      "RASA ASIN",
+      "RASA PEDAS",
+      "ASIN",
+      "RASA GURIH",
+      "GURIH",
+      "RASA BUMBU",
+      "ASAM",
+      "PEDAS",
+      "RASA DAGING"
+    ]
+  },
+  {
+    "question": "Contoh benda elektronik yang modern",
+    "answers": [
+      "TELEVISI",
+      "SMARTPHONE",
+      "TABLET",
+      "KULKAS",
+      "KOMPUTER",
+      "SETRIKA",
+      "LAPTOP",
+      "KIPAS",
+      "KAMERA",
+      "HANDPHONE",
+      "LAPTOP"
+    ]
+  },
+  {
+    "question": "Jenis hewan mamalia yang modern",
+    "answers": [
+      "GORILA",
+      "SINGA",
+      "SIMPANSE",
+      "RUSAK",
+      "KAMBING",
+      "MONYET",
+      "KELINCI",
+      "DOMBA",
+      "TIKUS"
+    ]
+  },
+  {
+    "question": "Jenis benda di rumah yang khas",
+    "answers": [
+      "SAPU",
+      "CERMIN",
+      "GANTUNGAN",
+      "GULING",
+      "KASUR",
+      "LEMARI",
+      "TEMPAT SAMPAH",
+      "KURSI",
+      "JENDELA",
+      "PINTU",
+      "LANGIT-LANGIT",
+      "KESET"
+    ]
+  },
+  {
+    "question": "Jenis benda elektronik yang favorit",
+    "answers": [
+      "RADIO",
+      "TELEVISI",
+      "LAPTOP",
+      "BLENDER",
+      "KULKAS",
+      "KIPAS",
+      "LAPTOP",
+      "KOMPUTER",
+      "KOMPOR"
+    ]
+  },
+  {
+    "question": "Berbagai hewan air yang umum",
+    "answers": [
+      "BULU BABI",
+      "SIPUT",
+      "KODOK",
+      "CUMI-CUMI",
+      "LUMBA-LUMBA",
+      "IKAN HIU",
+      "BUAYA",
+      "UBUR-UBUR",
+      "KERANG",
+      "HIU"
+    ]
+  },
+  {
+    "question": "Berbagai sumber energi yang spesifik",
+    "answers": [
+      "LISTRIK",
+      "TENAGA SURYA",
+      "TENAGA ANGIN",
+      "SOLAR",
+      "MINYAK",
+      "MATAHARI",
+      "AIR",
+      "ANGIN"
+    ]
+  },
+  {
+    "question": "Jenis hewan air yang spesial",
+    "answers": [
+      "PAUS",
+      "IKAN",
+      "UBUR-UBUR",
+      "BULU BABI",
+      "GURITA",
+      "IKAN HIU",
+      "CUMI-CUMI",
+      "KATAK",
+      "KEPITING",
+      "KODOK",
+      "KERANG",
+      "BUAYA"
+    ]
+  },
+  {
+    "question": "Macam-macam bagian rumah yang spesial",
+    "answers": [
+      "RUANG TAMU",
+      "RUANG KERJA",
+      "RUANG KELUARGA",
+      "GUDANG",
+      "GARASI",
+      "JENDELA",
+      "TERAS",
+      "KAMAR MANDI"
+    ]
+  },
+  {
+    "question": "Contoh kendaraan umum yang tradisional",
+    "answers": [
+      "TAKSI",
+      "MOTOR",
+      "BEMO",
+      "METRO",
+      "BUS",
+      "SKUTER",
+      "SEPEDA",
+      "ANDONG",
+      "PESAWAT"
+    ]
+  },
+  {
+    "question": "Contoh benda di rumah yang umum",
+    "answers": [
+      "KESET",
+      "GANTUNGAN",
+      "MEJA",
+      "LACI",
+      "PEL",
+      "EMBER",
+      "KASUR",
+      "KURSI"
+    ]
+  },
+  {
+    "question": "Berbagai cuaca yang umum",
+    "answers": [
+      "KEPULAN ASAP",
+      "GERIMIS",
+      "ANGIN",
+      "KABUT TIPIS",
+      "MENDUNG",
+      "KILAT",
+      "BADA",
+      "KABUT",
+      "SALJU",
+      "CERAH",
+      "PANAS"
+    ]
+  },
+  {
+    "question": "Contoh hewan unggas yang modern",
+    "answers": [
+      "GAGAK",
+      "CENDRAWASIH",
+      "PERKUTUT",
+      "BANGKOK",
+      "BEBEK",
+      "KUTILANG",
+      "ELANG",
+      "GELATIK",
+      "MERPATI"
+    ]
+  },
+  {
+    "question": "Macam-macam warna dasar yang modern",
+    "answers": [
+      "MARUN",
+      "MERAH",
+      "VIOLET",
+      "TURKIS",
+      "ORANYE",
+      "PINK",
+      "ABU-ABU",
+      "UNGU",
+      "PERAK",
+      "PUTIH",
+      "KUNING",
+      "KREM"
+    ]
+  },
+  {
+    "question": "Macam-macam cuaca yang lengkap",
+    "answers": [
+      "HUJAN DERAS",
+      "KEPULAN ASAP",
+      "KILAT",
+      "DINGIN",
+      "TERANG",
+      "PETIR",
+      "SALJU",
+      "GERIMIS",
+      "MENDUNG",
+      "HUJAN",
+      "KABUT"
+    ]
+  },
+  {
+    "question": "Macam-macam minuman yang modern",
+    "answers": [
+      "SIRUP",
+      "BAJIGUR",
+      "BIR",
+      "SMOOTHIE",
+      "AIR",
+      "ES TEH",
+      "ES JERUK",
+      "WEDANG"
+    ]
+  },
+  {
+    "question": "Jenis mata uang yang tradisional",
+    "answers": [
+      "RINGGIT",
+      "TAKA",
+      "MARK",
+      "DOLLAR",
+      "POUND",
+      "DIRHAM",
+      "YUAN",
+      "GULDEN"
+    ]
+  },
+  {
+    "question": "Contoh cabang olahraga yang spesifik",
+    "answers": [
+      "LARI",
+      "POLO",
+      "GULAT",
+      "BASEBALL",
+      "BADMINTON",
+      "CATUR",
+      "RENANG",
+      "TENIS MEJA",
+      "ATLETIK",
+      "TENIS"
+    ]
+  },
+  {
+    "question": "Berbagai peralatan dapur yang favorit",
+    "answers": [
+      "GARPU",
+      "PARUT",
+      "WOK",
+      "PENGGORENGAN",
+      "PANCI",
+      "PRGOG",
+      "TALENAN",
+      "ULEKAN",
+      "PIRING",
+      "SENDOK"
+    ]
+  },
+  {
+    "question": "Macam-macam benda di kantor yang modern",
+    "answers": [
+      "LEMARI",
+      "GUNTING",
+      "KOMPUTER",
+      "ORDNER",
+      "STAPLER",
+      "KLIP",
+      "KURSI",
+      "PENSIL",
+      "KERTAS FOTO",
+      "TELEPON"
+    ]
+  },
+  {
+    "question": "Jenis bunga yang umum",
+    "answers": [
+      "ANGGREK",
+      "ANGGREK HITAM",
+      "SERUNI",
+      "KAMBOJA",
+      "LILI",
+      "BOUGENVIL",
+      "MAWAR PUTIH",
+      "MELATI",
+      "FLAMBOYAN",
+      "BUNGA MATAHARI"
+    ]
+  },
+  {
+    "question": "Jenis lagu daerah yang alami",
+    "answers": [
+      "CUBLAK-CUBLAK SUENG",
+      "TIUP-TIUP",
+      "KARATAGAN",
+      "GAMELAN",
+      "CANGGUNG",
+      "PANTING",
+      "ONDEL-ONDEL",
+      "LIR-ILIR",
+      "GUNDHUL PACUL",
+      "JANGER",
+      "JAIPONG"
+    ]
+  },
+  {
+    "question": "Jenis bentuk geometri yang khas",
+    "answers": [
+      "PERSEGI",
+      "SEGI ENAM",
+      "OVAL",
+      "TRAPESIUM",
+      "KOTAK",
+      "SEGI LIMA",
+      "SEGITIGA",
+      "LINGKARAN"
+    ]
+  },
+  {
+    "question": "Berbagai pulau di indonesia yang modern",
+    "answers": [
+      "BALI",
+      "SUMATERA",
+      "MADURA",
+      "PAPUA",
+      "JAWA",
+      "SULAWESI",
+      "MALUKU",
+      "KALIMANTAN",
+      "NUSA TENGGARA"
+    ]
+  },
+  {
+    "question": "Jenis lokasi di indonesia yang umum",
+    "answers": [
+      "MANADO",
+      "SURABAYA",
+      "DENPASAR",
+      "PADANG",
+      "JAKARTA",
+      "YOGYAKARTA",
+      "PALEMBANG",
+      "BANDUNG",
+      "MEDAN",
+      "MALANG",
+      "SEMARANG"
+    ]
+  },
+  {
+    "question": "Sebutkan pulau di indonesia yang lengkap",
+    "answers": [
+      "KALIMANTAN",
+      "PAPUA",
+      "MALUKU",
+      "JAWA",
+      "SULAWESI",
+      "MADURA",
+      "BALI",
+      "SUMATERA"
+    ]
+  },
+  {
+    "question": "Sebutkan alat dapur",
+    "answers": [
+      "PANCI",
+      "WAJAN",
+      "SENDOK",
+      "GARPU",
+      "PISAU",
+      "PIRING",
+      "GELAS",
+      "MANGKUK",
+      "SPATULA",
+      "KOMPOR"
+    ]
+  },
+  {
+    "question": "Sebutkan minuman dingin",
+    "answers": [
+      "ES",
+      "JUS",
+      "SODA",
+      "TEH",
+      "KOPI",
+      "SUSU",
+      "AIR",
+      "MILKSHAKE",
+      "SMOOTHIE",
+      "SIRUP"
+    ]
+  },
+  {
+    "question": "Sebutkan warna pelangi",
+    "answers": [
+      "MERAH",
+      "JINGGA",
+      "KUNING",
+      "HIJAU",
+      "BIRU",
+      "NILA",
+      "UNGU",
+      "ORANGE",
+      "VIOLET",
+      "INDIGO"
+    ]
+  },
+  {
+    "question": "Sebutkan hari dalam seminggu",
+    "answers": [
+      "SENIN",
+      "SELASA",
+      "RABU",
+      "KAMIS",
+      "JUMAT",
+      "SABTU",
+      "MINGGU",
+      "AHAD",
+      "SABAT",
+      "LIBUR"
+    ]
+  },
+  {
+    "question": "Sebutkan bulan dalam setahun",
+    "answers": [
+      "JANUARI",
+      "FEBRUARI",
+      "MARET",
+      "APRIL",
+      "MEI",
+      "JUNI",
+      "JULI",
+      "AGUSTUS",
+      "OKTOBER",
+      "DESEMBER"
+    ]
+  },
+  {
+    "question": "Sebutkan makanan cepat saji",
+    "answers": [
+      "BURGER",
+      "PIZZA",
+      "HOTDOG",
+      "KENTANG",
+      "NUGGET",
+      "AYAM",
+      "SANDWICH",
+      "TACO",
+      "KEBAB",
+      "SUSHI"
+    ]
+  },
+  {
+    "question": "Sebutkan jenis ikan",
+    "answers": [
+      "LELE",
+      "NILA",
+      "GURAME",
+      "MAS",
+      "TUNA",
+      "SALMON",
+      "BANDENG",
+      "MUJAIR",
+      "BAWAL",
+      "PATIN"
+    ]
+  },
+  {
+    "question": "Sebutkan benda di sekolah",
+    "answers": [
+      "BUKU",
+      "MEJA",
+      "KURSI",
+      "PAPAN",
+      "PENGHAPUS",
+      "PENGGARIS",
+      "TAS",
+      "LOKER",
+      "LEMARI",
+      "PETA"
+    ]
+  },
+  {
+    "question": "Sebutkan anggota keluarga",
+    "answers": [
+      "AYAH",
+      "IBU",
+      "KAKAK",
+      "ADIK",
+      "NENEK",
+      "KAKEK",
+      "PAMAN",
+      "BIBI",
+      "SEPUPU",
+      "ANAK"
+    ]
+  },
+  {
+    "question": "Sebutkan negara tetangga Indonesia",
+    "answers": [
+      "MALAYSIA",
+      "SINGAPURA",
+      "FILIPINA",
+      "THAILAND",
+      "BRUNEI",
+      "TIMOR",
+      "PAPUA",
+      "VIETNAM",
+      "AUSTRALIA",
+      "INDIA"
+    ]
+  },
+  {
+    "question": "Sebutkan aplikasi chatting",
+    "answers": [
+      "WHATSAPP",
+      "TELEGRAM",
+      "LINE",
+      "INSTAGRAM",
+      "FACEBOOK",
+      "MESSENGER",
+      "WECHAT",
+      "DISCORD",
+      "SIGNAL",
+      "SKYPE"
+    ]
+  },
+  {
+    "question": "Sebutkan merek handphone",
+    "answers": [
+      "SAMSUNG",
+      "IPHONE",
+      "XIAOMI",
+      "OPPO",
+      "VIVO",
+      "REALME",
+      "ASUS",
+      "NOKIA",
+      "HUAWEI",
+      "SONY"
+    ]
+  },
+  {
+    "question": "Sebutkan hobi",
+    "answers": [
+      "MEMBACA",
+      "MENULIS",
+      "MENGGAMBAR",
+      "BERNYANYI",
+      "MASAK",
+      "OLAHRAGA",
+      "TRAVELING",
+      "GAMING",
+      "FOTO",
+      "KOLEKSI"
+    ]
+  },
+  {
+    "question": "Sebutkan jenis bunga",
+    "answers": [
+      "MAWAR",
+      "MELATI",
+      "ANGGREK",
+      "TULIP",
+      "LILY",
+      "DAHLIA",
+      "KAMBOJA",
+      "LOTUS",
+      "SAKURA",
+      "SEDAP"
+    ]
+  },
+  {
+    "question": "Sebutkan mata pelajaran",
+    "answers": [
+      "MATEMATIKA",
+      "BAHASA",
+      "FISIKA",
+      "KIMIA",
+      "BIOLOGI",
+      "SEJARAH",
+      "GEOGRAFI",
+      "SENI",
+      "OLAHRAGA",
+      "AGAMA"
+    ]
+  },
+  {
+    "question": "Sebutkan alat elektronik",
+    "answers": [
+      "TV",
+      "KULKAS",
+      "MESIN",
+      "AC",
+      "KIPAS",
+      "KOMPOR",
+      "SETRIKA",
+      "BLENDER",
+      "MIXER",
+      "OVEN"
+    ]
+  },
+  {
+    "question": "Sebutkan jenis tarian",
+    "answers": [
+      "JAIPONG",
+      "SAMAN",
+      "PENDET",
+      "KECAK",
+      "REOG",
+      "PIRING",
+      "LILIN",
+      "SALSA",
+      "BALLET",
+      "TANGO"
+    ]
+  },
+  {
+    "question": "Sebutkan media sosial",
+    "answers": [
+      "FACEBOOK",
+      "INSTAGRAM",
+      "TWITTER",
+      "TIKTOK",
+      "YOUTUBE",
+      "LINKEDIN",
+      "SNAPCHAT",
+      "PINTEREST",
+      "REDDIT",
+      "TUMBLR"
+    ]
+  },
+  {
+    "question": "Sebutkan tempat wisata",
+    "answers": [
+      "PANTAI",
+      "GUNUNG",
+      "DANAU",
+      "TAMAN",
+      "MUSEUM",
+      "CANDI",
+      "MALL",
+      "KEBUN",
+      "AIR",
+      "KOLAM"
+    ]
+  },
+  {
+    "question": "Sebutkan jenis sepatu",
+    "answers": [
+      "SNEAKERS",
+      "SANDAL",
+      "SEPATU",
+      "BOOT",
+      "HEEL",
+      "FLAT",
+      "SLIP",
+      "FORMAL",
+      "FUTSAL",
+      "LARI"
+    ]
+  },
+  {
+    "question": "Sebutkan benda tajam",
+    "answers": [
+      "PISAU",
+      "GUNTING",
+      "SILET",
+      "GOLOK",
+      "PEDANG",
+      "PARANG",
+      "KAPAK",
+      "JARUM",
+      "PAKU",
+      "DURI"
+    ]
+  },
+  {
+    "question": "Sebutkan jenis pohon yang sering ditemui",
+    "answers": [
+      "MANGGA",
+      "JAMBU",
+      "KELAPA",
+      "PISANG",
+      "RAMBUTAN",
+      "DURIAN",
+      "JATI",
+      "MAHONI",
+      "BAMBU",
+      "BERINGIN",
+      "CEMARA",
+      "PALEM"
+    ]
+  },
+  {
+    "question": "Sebutkan nama bumbu dapur",
+    "answers": [
+      "GARAM",
+      "MERICA",
+      "BAWANG",
+      "JAHE",
+      "KUNYIT",
+      "LENGKUAS",
+      "KEMIRI",
+      "KETUMBAR",
+      "CENGKEH",
+      "PALA",
+      "KAYU-MANIS",
+      "LADA"
+    ]
+  },
+  {
+    "question": "Sebutkan jenis makanan ringan atau snack",
+    "answers": [
+      "KERIPIK",
+      "BISKUIT",
+      "COKELAT",
+      "PERMEN",
+      "KACANG",
+      "WAFER",
+      "KRUPUK",
+      "POPCORN",
+      "CILOK",
+      "CIRENG",
+      "GORENGAN",
+      "MARTABAK-MINI"
+    ]
+  },
+  {
+    "question": "Sebutkan alat untuk mandi",
+    "answers": [
+      "SABUN",
+      "SAMPO",
+      "HANDUK",
+      "SIKAT-GIGI",
+      "GAYUNG",
+      "PASTA-GIGI",
+      "SHOWER",
+      "SPONS",
+      "KONDISIONER",
+      "WASLAP",
+      "EMBER"
+    ]
+  },
+  {
+    "question": "Sebutkan nama provinsi di Indonesia",
+    "answers": [
+      "JAKARTA",
+      "JAWA-BARAT",
+      "JAWA-TENGAH",
+      "JAWA-TIMUR",
+      "BALI",
+      "SUMATRA-UTARA",
+      "SUMATRA-BARAT",
+      "ACEH",
+      "LAMPUNG",
+      "KALIMANTAN-TIMUR",
+      "SULAWESI-SELATAN",
+      "PAPUA"
+    ]
+  },
+  {
+    "question": "Sebutkan mainan anak-anak",
+    "answers": [
+      "BONEKA",
+      "MOBIL-MOBILAN",
+      "BOLA",
+      "ROBOT",
+      "LEGO",
+      "PUZZLE",
+      "YOYO",
+      "LAYANGAN",
+      "KELERENG",
+      "BEKEL",
+      "PISTOL-MAINAN",
+      "GUNDU"
+    ]
+  },
+  {
+    "question": "Sebutkan jenis roti atau kue",
+    "answers": [
+      "ROTI-TAWAR",
+      "DONAT",
+      "CROISSANT",
+      "BOLU",
+      "KUE-LAPIS",
+      "BROWNIES",
+      "NASTAR",
+      "KASTENGEL",
+      "KLAPPERTART",
+      "BIKA",
+      "PUTRI-SALJU",
+      "SERABI"
+    ]
+  },
+  {
+    "question": "Sebutkan alat kebersihan rumah",
+    "answers": [
+      "SAPU",
+      "PEL",
+      "KAIN-LAP",
+      "KEMOCENG",
+      "PENGKI",
+      "SIKAT",
+      "VACUUM",
+      "SAPU-LIDI",
+      "SULAK",
+      "KANEBO",
+      "WIPER"
+    ]
+  },
+  {
+    "question": "Sebutkan alat olahraga",
+    "answers": [
+      "BOLA",
+      "RAKET",
+      "MATRAS",
+      "BARBEL",
+      "SEPATU",
+      "SHUTTLECOCK",
+      "NET",
+      "HELM",
+      "SARUNG-TINJU",
+      "DUMBEL",
+      "PELAMPUNG",
+      "PELINDUNG"
+    ]
+  },
+  {
+    "question": "Sebutkan bagian komputer atau laptop",
+    "answers": [
+      "MONITOR",
+      "KEYBOARD",
+      "MOUSE",
+      "CPU",
+      "LAYAR",
+      "SPEAKER",
+      "HARDISK",
+      "RAM",
+      "PROCESSOR",
+      "MOTHERBOARD",
+      "WEBCAM",
+      "TOUCHPAD"
+    ]
+  },
+  {
+    "question": "Sebutkan jenis es krim",
+    "answers": [
+      "VANILLA",
+      "COKELAT",
+      "STRAWBERRY",
+      "DURIAN",
+      "MINT",
+      "KOPI",
+      "MANGGA",
+      "COOKIES",
+      "MATCHA",
+      "TIRAMISU",
+      "RUM-KISMIS"
+    ]
+  },
+  {
+    "question": "Sebutkan profesi di sekolah",
+    "answers": [
+      "GURU",
+      "KEPALA-SEKOLAH",
+      "SATPAM",
+      "PENJAGA",
+      "TATA-USAHA",
+      "PERPUSTAKAAN",
+      "KEBERSIHAN",
+      "KANTIN",
+      "BENDAHARA",
+      "LABORAN",
+      "KONSELING"
+    ]
+  },
+  {
+    "question": "Sebutkan makanan berkuah",
+    "answers": [
+      "SOTO",
+      "BAKSO",
+      "RAWON",
+      "GULAI",
+      "SAYUR-ASEM",
+      "TONGSENG",
+      "SOP",
+      "GADO-GADO",
+      "LAKSA",
+      "COTO",
+      "PEMPEK"
+    ]
+  },
+  {
+    "question": "Sebutkan aksesoris fashion",
+    "answers": [
+      "KALUNG",
+      "GELANG",
+      "ANTING",
+      "CINCIN",
+      "JAM-TANGAN",
+      "BROS",
+      "IKAT-PINGGANG",
+      "TOPI",
+      "SYAL",
+      "KACAMATA",
+      "JEPIT-RAMBUT",
+      "BANDO"
+    ]
+  },
+  {
+    "question": "Sebutkan jenis kopi",
+    "answers": [
+      "HITAM",
+      "SUSU",
+      "CAPPUCCINO",
+      "LATTE",
+      "ESPRESSO",
+      "AMERICANO",
+      "TUBRUK",
+      "MOCHACCINO",
+      "ARABICA",
+      "ROBUSTA",
+      "MACCHIATO"
+    ]
+  },
+  {
+    "question": "Sebutkan aktivitas di pantai",
+    "answers": [
+      "BERENANG",
+      "BERMAIN-PASIR",
+      "MEMANCING",
+      "SNORKELING",
+      "BERJEMUR",
+      "SURFING",
+      "VOLI-PANTAI",
+      "PIKNIK",
+      "FOTO-FOTO",
+      "BANANA-BOAT",
+      "DIVING"
+    ]
+  },
+  {
+    "question": "Sebutkan nama sungai di Indonesia",
+    "answers": [
+      "CILIWUNG",
+      "BENGAWAN-SOLO",
+      "KAPUAS",
+      "MAHAKAM",
+      "BRANTAS",
+      "CITARUM",
+      "MUSI",
+      "KAMPAR",
+      "BARITO",
+      "SERAYU",
+      "ASAHAN"
+    ]
+  },
+  {
+    "question": "Sebutkan alat makeup atau kosmetik",
+    "answers": [
+      "LIPSTIK",
+      "BEDAK",
+      "MASKARA",
+      "EYELINER",
+      "FOUNDATION",
+      "BLUSH-ON",
+      "EYESHADOW",
+      "PENSIL-ALIS",
+      "CONCEALER",
+      "PRIMER",
+      "HIGHLIGHTER"
+    ]
+  },
+  {
+    "question": "Sebutkan permainan tradisional Indonesia",
+    "answers": [
+      "PETAK-UMPET",
+      "GOBAK-SODOR",
+      "CONGKLAK",
+      "BENTENGAN",
+      "GUNDU",
+      "KELERENG",
+      "LOMPAT-TALI",
+      "EGRANG",
+      "GALASIN",
+      "RANGKU-ALU",
+      "BAKIAK"
+    ]
+  }
+]

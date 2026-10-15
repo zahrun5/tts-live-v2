@@ -14,5 +14,6 @@ module.exports = {
   labirin: require("./labirin"),
   "ular-tangga": require("./ular-tangga"),
   "sinonim-dan-bahasa-daerah": require("./sinonim-dan-bahasa-daerah"),
+  "lengkapi-kalimat": require("./lengkapi-kalimat"),
   "tts-tema": require("./tts-tema"),
 };

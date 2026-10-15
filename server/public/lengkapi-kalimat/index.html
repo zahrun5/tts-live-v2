@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <script src="/shared/safe.js"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Lengkapi Kalimat Live</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="theme-color" content="#14101f">
+<style>
+:root{--bg-start:#0f0a1f;--bg-end:#1a0f2e;--glass-bg:rgba(26,15,46,0.35);--glass-border:rgba(139,92,246,0.25);--accent-purple:#8b5cf6;--accent-blue:#6366f1;--success:#10b981;--gold:#f59e0b;--text-primary:#f3f4f6;--text-muted:#9ca3af}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{height:100%}
+body{font-family:'Poppins',sans-serif;background:linear-gradient(135deg,var(--bg-start) 0%,var(--bg-end) 100%);color:var(--text-primary);overflow:hidden;position:relative}
+/* Semua bagian ditumpuk vertikal & berbagi tinggi layar -> nggak ada yang nutupin soal */
+#app{position:fixed;inset:0;display:flex;flex-direction:column;padding:max(1.2vh,env(safe-area-inset-top)) 3vw max(1.2vh,env(safe-area-inset-bottom));gap:1vh;z-index:1}
+#headerBar{flex:0 0 auto;display:flex;align-items:center;justify-content:center;gap:.5rem}
+#headerBar .title{font-weight:800;font-size:clamp(.85rem,4.2vw,1.3rem);background:linear-gradient(135deg,var(--accent-purple),var(--accent-blue));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;padding:.3rem 1rem;border-radius:50px;border:1px solid var(--glass-border);letter-spacing:.5px;white-space:nowrap}
+#progress{font-weight:700;font-size:clamp(.65rem,3vw,.85rem);color:var(--text-muted);white-space:nowrap}
+#progress b{color:var(--gold);font-weight:800}
+#voteHintInline{flex:0 0 auto;overflow:hidden;white-space:nowrap;font-size:clamp(.65rem,3vw,.85rem);font-weight:600;color:var(--text-muted);-webkit-mask-image:linear-gradient(90deg,transparent,black 4%,black 96%,transparent);mask-image:linear-gradient(90deg,transparent,black 4%,black 96%,transparent)}
+#voteHintInline b{color:var(--gold);font-weight:800}
+#voteHintInline .marquee-track{display:inline-block;padding-left:100%;animation:marqueeScroll 22s linear infinite}
+@keyframes marqueeScroll{0%{transform:translateX(0)}100%{transform:translateX(-100%)}}
+#lbStrip{flex:0 0 auto;display:flex;gap:.4rem;justify-content:center;overflow:hidden}
+.lb-chip{display:flex;align-items:center;gap:.3rem;background:var(--glass-bg);border:1px solid var(--glass-border);border-radius:50px;padding:.15rem .6rem;font-weight:700;font-size:clamp(.62rem,2.9vw,.8rem);white-space:nowrap;min-width:0;max-width:32vw}
+.lb-chip .lb-name{overflow:hidden;text-overflow:ellipsis;max-width:16vw}
+.lb-chip .lb-score{color:var(--gold)}
+.lb-empty{color:var(--text-muted);font-weight:600;font-size:clamp(.62rem,2.9vw,.8rem)}
+#avatarZone{flex:0 0 auto;height:clamp(40px,7vh,64px);position:relative;background:transparent;overflow:visible}
+.mini-avatar{position:absolute;bottom:2px;display:flex;flex-direction:column;align-items:center;pointer-events:none;will-change:left}
+.mini-avatar .emoji{display:block;font-size:22px;line-height:1;animation:avatarBob .5s ease-in-out infinite alternate}
+.mini-avatar.facing-left .emoji{transform:scaleX(-1)}
+.mini-avatar .name-tag{font-weight:700;font-size:.6rem;color:var(--text-primary);background:rgba(26,15,46,.6);padding:.1rem .45rem;border-radius:50px;margin-bottom:.15rem;white-space:nowrap;max-width:76px;overflow:hidden;text-overflow:ellipsis;order:-1}
+.mini-avatar .comment-bubble{font-weight:600;font-size:.65rem;color:#0f0a1f;background:var(--text-primary);padding:.2rem .5rem;border-radius:10px;margin-bottom:.3rem;white-space:nowrap;max-width:130px;overflow:hidden;text-overflow:ellipsis;box-shadow:0 2px 6px rgba(0,0,0,.3);position:relative;order:-2}
+.mini-avatar .comment-bubble::after{content:'';position:absolute;bottom:-4px;left:50%;transform:translateX(-50%);border-width:4px 4px 0 4px;border-style:solid;border-color:var(--text-primary) transparent transparent transparent}
+@keyframes avatarBob{from{transform:translateY(0)}to{transform:translateY(-3px)}}
+/* Daftar kalimat: 4-6 kartu berbagi tinggi sama rata; ukuran huruf dicocokkan lewat JS (fitAll) */
+#itemList{flex:1 1 0;min-height:0;display:flex;flex-direction:column;gap:1vh}
+.q-card{flex:1 1 0;min-height:0;display:flex;align-items:center;gap:.6rem;padding:.25rem .7rem .25rem .5rem;background:var(--glass-bg);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border:1px solid var(--glass-border);border-radius:14px;box-shadow:0 4px 16px rgba(0,0,0,.25);transition:background .3s,border-color .3s;animation:fadeInUp .6s ease calc(var(--idx,0)*.07s) both}
+@keyframes fadeInUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+.q-card .num-badge{position:relative;flex:0 0 auto;width:clamp(22px,7vw,30px);height:clamp(22px,7vw,30px);border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:clamp(.7rem,3.2vw,.9rem);color:#fff;background:linear-gradient(135deg,var(--accent-purple),var(--accent-blue));box-shadow:0 2px 8px rgba(0,0,0,.35)}
+.q-body{flex:1 1 auto;min-width:0;height:100%;display:flex;flex-direction:column;justify-content:center}
+.q-text{flex:1 1 auto;min-height:0;overflow:hidden;display:flex;align-items:center}
+.q-line{font-weight:700;line-height:1.3;font-size:16px;overflow-wrap:anywhere}
+.blank{display:inline-block;min-width:3.2em;padding:0 .3em;margin:0 .15em;text-align:center;font-weight:800;color:var(--gold);border-bottom:.14em dashed var(--gold)}
+.q-by{display:none;flex:0 0 auto;font-size:clamp(.55rem,2.4vw,.7rem);color:var(--text-muted);font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.q-card.solved{background:rgba(16,185,129,.14);border-color:rgba(16,185,129,.55);box-shadow:0 4px 16px rgba(16,185,129,.18)}
+.q-card.solved .blank{color:var(--success);border-bottom:.14em solid var(--success);background:rgba(16,185,129,.14);border-radius:6px 6px 0 0;animation:popIn .3s ease}
+.q-card.solved .q-by{display:block}
+@keyframes popIn{from{transform:scale(.6);opacity:0}to{transform:scale(1);opacity:1}}
+.confetti-piece{position:absolute;left:50%;top:50%;width:8px;height:12px;border-radius:2px;pointer-events:none;z-index:20;animation:confettiFly .9s ease-out forwards}
+@keyframes confettiFly{0%{transform:translate(0,0) rotate(0);opacity:1}100%{transform:translate(var(--tx),var(--ty)) rotate(var(--rot));opacity:0}}
+#hint{flex:0 0 auto;text-align:center;font-size:clamp(.62rem,2.9vw,.8rem);color:var(--text-muted);font-weight:600}
+#hint b{color:var(--gold)}
+#toast{position:fixed;top:7vh;left:50%;background:linear-gradient(135deg,var(--accent-purple),var(--accent-blue));color:#fff;padding:.7rem 1.2rem;border-radius:50px;font-weight:800;font-size:clamp(.85rem,4vw,1.2rem);white-space:nowrap;max-width:94vw;overflow:hidden;text-overflow:ellipsis;box-shadow:0 8px 32px rgba(0,0,0,.4);opacity:0;pointer-events:none;z-index:50;transform:translate(-50%,-60%) scale(.5)}
+#toast.show{animation:toastPop .6s cubic-bezier(.34,1.56,.64,1) forwards}
+@keyframes toastPop{0%{transform:translate(-50%,-60%) scale(.4);opacity:0}60%{transform:translate(-50%,5%) scale(1.15);opacity:1}100%{transform:translate(-50%,0%) scale(1);opacity:1}}
+#banner{display:none;position:fixed;left:50%;bottom:6vh;transform:translateX(-50%);z-index:40;background:rgba(26,15,46,.92);border:1px solid var(--glass-border);color:var(--text-primary);padding:.6rem 1.1rem;border-radius:50px;font-weight:700;font-size:clamp(.8rem,3.6vw,1rem);text-align:center;max-width:92vw}
+#banner.show{display:block}
+</style>
+</head>
+<body>
+<div id="app">
+  <div id="headerBar">
+    <div class="title">✍️ Lengkapi Kalimat</div>
+    <span id="progress"></span>
+  </div>
+
+  <div id="voteHintInline"><div class="marquee-track">💬 Ketik kata yang pas buat isi bagian kosong di komentar &nbsp;•&nbsp; Komen <b>SKIP 10x</b> buat soal baru &nbsp;•&nbsp; Ketik <b>GANTI 10x</b> buat ganti game &nbsp;•&nbsp; Ketik <b>NYERAH 10x</b> buat lihat jawabannya</div></div>
+
+  <div id="lbStrip"><span class="lb-empty">🏆 Belum ada yang jawab</span></div>
+
+  <div id="avatarZone"></div>
+
+  <div id="itemList"></div>
+
+  <div id="hint">Ketik <b>nomor + kata</b> (contoh: <b>2 pasar</b>) atau langsung katanya</div>
+</div>
+
+<div id="toast"></div>
+<div id="banner"></div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script>
+  const socket = io();
+</script>
+<script src="/shared/v2-bootstrap.js"></script>
+<script src="/shared/game-switch-watcher.js"></script>
+<script src="/shared/vote-overlay.js"></script>
+<script>
+  const itemListEl = document.getElementById('itemList');
+  const progressEl = document.getElementById('progress');
+  const lbStrip = document.getElementById('lbStrip');
+  const toastEl = document.getElementById('toast');
+  const bannerEl = document.getElementById('banner');
+  const BLANK = '____';
+
+  let cardEls = {}; // number -> element, dibikin sekali biar nggak re-render dari nol tiap update
+
+  function ensureCard(number, idx) {
+    if (cardEls[number]) return cardEls[number];
+    const el = document.createElement('div');
+    el.className = 'q-card';
+    el.style.setProperty('--idx', idx);
+
+    const badge = document.createElement('div');
+    badge.className = 'num-badge';
+    badge.textContent = number;
+
+    const body = document.createElement('div');
+    body.className = 'q-body';
+    const box = document.createElement('div');
+    box.className = 'q-text';
+    const line = document.createElement('div');
+    line.className = 'q-line';
+    box.appendChild(line);
+    const by = document.createElement('div');
+    by.className = 'q-by';
+    body.append(box, by);
+
+    el.append(badge, body);
+    itemListEl.appendChild(el);
+    cardEls[number] = el;
+    return el;
+  }
+
+  // Kalimat dipecah di "____": [teks sebelum] [kotak isian] [teks sesudah]. Semua lewat textContent.
+  function renderSentence(el, item) {
+    const line = el.querySelector('.q-line');
+    const idx = item.sentence.indexOf(BLANK);
+    const before = idx >= 0 ? item.sentence.slice(0, idx) : item.sentence;
+    const after = idx >= 0 ? item.sentence.slice(idx + BLANK.length) : '';
+
+    let answer = '';
+    if (item.solved && item.answer) {
+      answer = String(item.answer);
+      if (!before.trim()) answer = answer.charAt(0).toUpperCase() + answer.slice(1); // blank di awal kalimat
+    }
+
+    const sig = [item.sentence, item.solved ? answer : ''].join('|');
+    if (line.dataset.sig === sig) return false;
+    line.dataset.sig = sig;
+
+    line.textContent = '';
+    const blank = document.createElement('span');
+    blank.className = 'blank';
+    if (answer) blank.textContent = answer; else blank.innerHTML = '&nbsp;';
+    line.append(document.createTextNode(before), blank, document.createTextNode(after));
+    return true;
+  }
+
+  // Cari ukuran huruf terbesar yang masih muat di tinggi kartu (biar semua kalimat muat di layar HP)
+  function fitText(card) {
+    const box = card.querySelector('.q-text');
+    const line = card.querySelector('.q-line');
+    let lo = 10, hi = Math.max(11, Math.min(window.innerWidth * 0.058, 26)), best = lo;
+    while (lo <= hi) {
+      const mid = Math.floor((lo + hi) / 2);
+      line.style.fontSize = mid + 'px';
+      if (line.offsetHeight <= box.clientHeight + 1) { best = mid; lo = mid + 1; } else { hi = mid - 1; }
+    }
+    line.style.fontSize = best + 'px';
+  }
+  function fitAll() { Object.values(cardEls).forEach(fitText); }
+
+  // Server ngirim { items: [{number, sentence, solved, solvedBy, answer}], totalSoal, solvedSoal }
+  function renderState(data) {
+    if (!data || !Array.isArray(data.items)) return;
+
+    // Buang kartu yang nomornya nggak ada lagi (ronde baru)
+    const liveNumbers = new Set(data.items.map(it => String(it.number)));
+    Object.keys(cardEls).forEach(n => {
+      if (!liveNumbers.has(n)) { cardEls[n].remove(); delete cardEls[n]; }
+    });
+
+    data.items.forEach((item, idx) => {
+      const el = ensureCard(item.number, idx);
+      renderSentence(el, item);
+      const byEl = el.querySelector('.q-by');
+      if (item.solved) {
+        el.classList.add('solved');
+        byEl.textContent = item.solvedBy ? `oleh ${item.solvedBy}` : '';
+      } else {
+        el.classList.remove('solved');
+        byEl.textContent = '';
+      }
+    });
+
+    // Urutkan sesuai nomor
+    data.items.forEach(item => itemListEl.appendChild(cardEls[item.number]));
+
+    progressEl.innerHTML = data.totalSoal ? `· <b>${data.solvedSoal || 0}/${data.totalSoal}</b> terjawab` : '';
+    requestAnimationFrame(fitAll);
+  }
+
+  function spawnConfetti(originEl, count = 16) {
+    const wrap = originEl || document.getElementById('app');
+    const colors = ['#f5b942', '#f472b6', '#5eead4', '#8b6ef5', '#4ade80'];
+    if (wrap !== document.getElementById('app')) wrap.style.position = 'relative';
+    for (let i = 0; i < count; i++) {
+      const piece = document.createElement('div');
+      piece.className = 'confetti-piece';
+      const angle = Math.random() * Math.PI * 2;
+      const dist = 50 + Math.random() * 80;
+      piece.style.setProperty('--tx', `${Math.cos(angle) * dist}px`);
+      piece.style.setProperty('--ty', `${Math.sin(angle) * dist}px`);
+      piece.style.setProperty('--rot', `${(Math.random() - 0.5) * 540}deg`);
+      piece.style.background = colors[i % colors.length];
+      piece.style.animationDelay = `${Math.random() * 0.08}s`;
+      wrap.appendChild(piece);
+      setTimeout(() => piece.remove(), 1000);
+    }
+  }
+
+  function showToast(data) {
+    toastEl.textContent = `🎉 ${data.player} BENAR! No.${data.number} +${data.points}`;
+    toastEl.classList.remove('show');
+    void toastEl.offsetWidth; // paksa reflow biar animasi bisa diputar ulang
+    toastEl.classList.add('show');
+    spawnConfetti(cardEls[data.number]);
+    clearTimeout(showToast._hideT);
+    showToast._hideT = setTimeout(() => toastEl.classList.remove('show'), 2400);
+  }
+
+  // Papan skor ringkas: top 3 dalam satu baris (nggak nutupin soal)
+  function renderLeaderboard(list) {
+    if (!list || list.length === 0) {
+      lbStrip.innerHTML = '<span class="lb-empty">🏆 Belum ada yang jawab</span>';
+      return;
+    }
+    const medals = ['🥇', '🥈', '🥉'];
+    lbStrip.innerHTML = list.slice(0, 3).map((row, i) =>
+      `<div class="lb-chip">${medals[i]}<span class="lb-name">${escapeHtml(row.player)}</span><span class="lb-score">${escapeHtml(row.score)}</span></div>`
+    ).join('');
+  }
+
+  function showBanner(msg) { bannerEl.textContent = msg; bannerEl.classList.add('show'); }
+  function hideBanner() { bannerEl.classList.remove('show'); }
+
+  socket.on('game:switched', () => window.location.reload());
+  socket.on('update', (data) => renderState(data));
+  socket.on('answer:correct', (data) => showToast(data));
+  socket.on('leaderboard:update', (list) => renderLeaderboard(list));
+  socket.on('puzzle:completed', () => showBanner('🎉 Semua kalimat terjawab! Menyiapkan soal baru...'));
+  socket.on('puzzle:new', () => hideBanner());
+  socket.on('puzzle:error', (data) => { showBanner('⚠️ ' + data.message); setTimeout(hideBanner, 4000); });
+
+  window.addEventListener('resize', fitAll);
+  if (window.visualViewport) window.visualViewport.addEventListener('resize', fitAll);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(fitAll);
+
+  // ===== Avatar viewer =====
+  const avatarZone = document.getElementById('avatarZone');
+  const activeAvatars = {};
+
+  function spawnAvatar(player, emoji, profileUrl, avatarType) {
+    if (activeAvatars[player]) return;
+    const el = document.createElement('div');
+    el.className = 'mini-avatar';
+    let avatarHtml = `<span class="emoji">${emoji}</span>`;
+    if (avatarType === 'tiktok' && profileUrl) {
+      avatarHtml = `<img src="${safeUrl(profileUrl)}" onerror="this.outerHTML='<span class=\\'emoji\\'>${emoji}</span>'" style="width:24px;height:24px;border-radius:50%;object-fit:cover;margin-right:2px;border:1px solid #fff;display:inline-block;vertical-align:middle;" />`;
+    }
+    el.innerHTML = `${avatarHtml}<span class="name-tag">${escapeHtml(player)}</span>`;
+    avatarZone.appendChild(el);
+    el.style.left = (Math.random() * Math.max(0, avatarZone.clientWidth - 40)) + 'px';
+    activeAvatars[player] = { el, timer: null };
+    walkRandomly(player);
+  }
+
+  function walkRandomly(player) {
+    const entry = activeAvatars[player];
+    if (!entry) return;
+    const zoneWidth = avatarZone.clientWidth || 300;
+    const avatarWidth = entry.el.offsetWidth || 40;
+    const maxLeft = Math.max(0, zoneWidth - avatarWidth);
+    const currentLeft = parseFloat(entry.el.style.left) || 0;
+    const targetLeft = Math.random() * maxLeft;
+    const duration = 2.5 + Math.random() * 3;
+    entry.el.classList.toggle('facing-left', targetLeft < currentLeft);
+    entry.el.style.transition = `left ${duration}s linear`;
+    entry.el.style.left = targetLeft + 'px';
+    entry.timer = setTimeout(() => walkRandomly(player), duration * 1000);
+  }
+
+  function showComment(player, text) {
+    const entry = activeAvatars[player];
+    if (!entry) return;
+    let bubble = entry.el.querySelector('.comment-bubble');
+    if (!bubble) {
+      bubble = document.createElement('span');
+      bubble.className = 'comment-bubble';
+      entry.el.appendChild(bubble);
+    }
+    bubble.textContent = text;
+    clearTimeout(entry.commentTimer);
+    entry.commentTimer = setTimeout(() => bubble.remove(), 4000);
+  }
+
+  function clearAllAvatars() {
+    Object.values(activeAvatars).forEach(({ el, timer, commentTimer }) => {
+      clearTimeout(timer); clearTimeout(commentTimer); el.remove();
+    });
+    for (const key in activeAvatars) delete activeAvatars[key];
+  }
+
+  function removeAvatar(player) {
+    const entry = activeAvatars[player];
+    if (!entry) return;
+    clearTimeout(entry.timer); clearTimeout(entry.commentTimer);
+    entry.el.remove(); delete activeAvatars[player];
+  }
+
+  socket.on('avatar:spawn', (data) => spawnAvatar(data.player, data.emoji, data.profileUrl, data.avatarType));
+  socket.on('avatar:sync', (list) => { clearAllAvatars(); list.forEach((d) => spawnAvatar(d.player, d.emoji, d.profileUrl, d.avatarType)); });
+  socket.on('avatar:reset', clearAllAvatars);
+  socket.on('avatar:remove', ({ player }) => removeAvatar(player));
+  socket.on('chat:comment', ({ player, text }) => showComment(player, text));
+
+  // ===== Visual viewport fix (Android WebView) =====
+  const appEl = document.getElementById('app');
+  function syncVisibleArea() {
+    if (window.visualViewport) {
+      appEl.style.height = window.visualViewport.height + 'px';
+      appEl.style.top = window.visualViewport.offsetTop + 'px';
+    } else {
+      appEl.style.height = window.innerHeight + 'px';
+    }
+  }
+  if (window.visualViewport) {
+    window.visualViewport.addEventListener('resize', syncVisibleArea);
+    window.visualViewport.addEventListener('scroll', syncVisibleArea);
+  }
+  window.addEventListener('resize', syncVisibleArea);
+  syncVisibleArea();
+
+  // ===== Wake lock =====
+  let wakeLock = null;
+  let noSleepStarted = false;
+
+  function startNoSleepFallback() {
+    if (noSleepStarted) return;
+    noSleepStarted = true;
+    try {
+      const canvas = document.createElement('canvas');
+      canvas.width = 2; canvas.height = 2;
+      canvas.getContext('2d').fillRect(0, 0, 2, 2);
+      const stream = canvas.captureStream(1);
+      const video = document.createElement('video');
+      video.muted = true;
+      video.setAttribute('muted', '');
+      video.setAttribute('playsinline', '');
+      video.setAttribute('autoplay', '');
+      video.style.cssText = 'position:fixed;bottom:0;right:0;width:1px;height:1px;opacity:0.01;pointer-events:none;';
+      video.srcObject = stream;
+      document.body.appendChild(video);
+      video.play().catch(() => {});
+    } catch (e) {}
+  }
+
+  async function requestWakeLock() {
+    if ('wakeLock' in navigator) {
+      try {
+        wakeLock = await navigator.wakeLock.request('screen');
+        wakeLock.addEventListener('release', () => { wakeLock = null; });
+        return;
+      } catch (e) {}
+    }
+    startNoSleepFallback();
+  }
+
+  document.addEventListener('visibilitychange', () => {
+    if (document.visibilityState === 'visible' && wakeLock === null) requestWakeLock();
+  });
+  requestWakeLock();
+
+  document.body.addEventListener('click', function goFullscreen() {
+    document.documentElement.requestFullscreen().catch(() => {});
+    requestWakeLock();
+    document.body.removeEventListener('click', goFullscreen);
+  }, { once: true });
+</script>
+</body>
+</html>
