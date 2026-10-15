@@ -1,0 +1,9 @@
+{
+  "name": "Huruf Hilang Live",
+  "short_name": "Huruf Hilang",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#14101f",
+  "theme_color": "#14101f",
+  "orientation": "portrait"
+}

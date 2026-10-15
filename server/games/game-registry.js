@@ -16,4 +16,5 @@ module.exports = {
   "sinonim-dan-bahasa-daerah": require("./sinonim-dan-bahasa-daerah"),
   "lengkapi-kalimat": require("./lengkapi-kalimat"),
   "tts-tema": require("./tts-tema"),
+  "huruf-hilang": require("./huruf-hilang"),
 };

@@ -38,7 +38,7 @@ module.exports = {
   ALLOW_REGISTER: process.env.ALLOW_REGISTER !== 'false',
   USERNAME_RE: /^[a-zA-Z0-9_-]{3,32}$/,
   TIKTOK_RE: /^[A-Za-z0-9._]{1,40}$/,
-  VALID_GAMES: ['tts', 'family100', 'susun-kata-acak', 'cari-kata', 'sambung-kata', 'susun-kalimat', 'hitung-cepat', 'spam-tap', 'memory-card', 'labirin', 'ular-tangga',  'sinonim-dan-bahasa-daerah', 'lengkapi-kalimat', 'tts-tema'],
+  VALID_GAMES: ['tts', 'family100', 'susun-kata-acak', 'cari-kata', 'sambung-kata', 'susun-kalimat', 'hitung-cepat', 'spam-tap', 'memory-card', 'labirin', 'ular-tangga',  'sinonim-dan-bahasa-daerah', 'lengkapi-kalimat', 'tts-tema', 'huruf-hilang'],
   // Phase 1 additions
   PLAN_PRICES,
   ALLOWED_ORIGINS,
