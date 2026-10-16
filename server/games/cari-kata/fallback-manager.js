@@ -58,6 +58,11 @@ function getAllFallbackGroups() {
 
 function saveFallbackGroup(group) {
   try {
+    // Penjaga kualitas: tolak aksara non-Latin / kata kurang dari 8.
+    const guarded = require('../../tools/bank-rules').sanitize('cari-kata', group);
+    if (!guarded) { console.log(`🛡 [Cari Kata] Skip (gagal cek kualitas): "${group && group.theme}"`); return false; }
+    group = guarded;
+
     const allExisting = getAllFallbackGroups();
     const dupe = allExisting.some(g => g.theme === group.theme);
     if (dupe) return false; // Tema ini udah ada, skip

@@ -49,11 +49,11 @@ const QUESTION_TEMPLATES = [
   'Sebutkan {lagu daerah/tarian tradisional/alat musik} dari {Jawa/Bali/Sunda}',
   'Sebutkan {seni lukis/pahat/ukir} tradisional Indonesia',
   'Sebutkan {bentuk rumah adat/nama gamelan/keris} Indonesia',
-  'Sebutkan {baju pengantin/pakaian adat/senior} dari berbagai daerah',
+  'Sebutkan {baju pengantin/pakaian adat/perhiasan adat} dari berbagai daerah',
 
   // === IPA & SAINS ===
   'Sebutkan {planet/satelit/benda langit} di tata surya',
-  'Sebutkan {jenis矿物质/tambang/logam} yang ditemukan di Indonesia',
+  'Sebutkan {jenis mineral/tambang/logam} yang ditemukan di Indonesia',
   'Sebutkan {gaya/fenomena alam/hukum fisika} yang kamu ketahui',
   'Sebutkan {jenis cuaca/cuaca ekstrem/fenomena alam} yang terjadi di Indonesia',
   'Sebutkan {tumbuhan berbunga/jenis bunga/tanaman obat} tradisional Indonesia',

@@ -13,7 +13,8 @@
 require('dotenv').config();
 const axios = require('axios');
 
-const AI_API_URL = 'http://192.168.100.99:20128/v1/chat/completions';
+// Bisa di-override lewat env (dipakai buat uji dengan server mock).
+const AI_API_URL = process.env.AI_API_URL || 'http://192.168.100.99:20128/v1/chat/completions';
 const API_KEY = process.env.OPENAI_API_KEY;
 
 // Urutan rotasi: dari yang paling diutamakan ke yang paling cadangan.

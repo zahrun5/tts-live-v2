@@ -22,3 +22,6 @@ daily-report-*.json
 # File temp editor/agen
 .hermes-tmp.*
 client/src/.hermes-tmp.*
+
+# Keluaran alat audit bank (laporan + cache AI)
+server/tools/out/

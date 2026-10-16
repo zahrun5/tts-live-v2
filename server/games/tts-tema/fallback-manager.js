@@ -57,6 +57,11 @@ function saveFallbackGroup(group) {
       return false;
     }
 
+    // Penjaga kualitas: tolak tema turunan-kata (mis. "Hari" -> CAHARI) & aksara non-Latin.
+    const guarded = require('../../tools/bank-rules').sanitize('tts-tema', group);
+    if (!guarded) { console.log(`🛡 [TTS Tema] Skip (gagal cek kualitas): "${group.theme}"`); return false; }
+    group = guarded;
+
     // Normalisasi tema: lowercase & trim untuk cek duplikat
     const themeKey = group.theme.trim().toLowerCase();
 

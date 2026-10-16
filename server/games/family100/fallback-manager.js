@@ -33,6 +33,12 @@ function getAllFallbackQuestions(forceRefresh = false) {
 
 function saveFallbackQuestion(question, answers) {
   try {
+    // Penjaga kualitas: rapikan kata pengisi, tolak aksara non-Latin / jawaban kurang.
+    const guarded = require('../../tools/bank-rules').sanitize('family100', { question, answers });
+    if (!guarded) { console.log(`🛡 Skip (gagal cek kualitas): "${String(question).slice(0, 50)}"`); return false; }
+    question = guarded.question;
+    answers = guarded.answers;
+
     const allExisting = getAllFallbackQuestions();
 
     // Exact duplicate check

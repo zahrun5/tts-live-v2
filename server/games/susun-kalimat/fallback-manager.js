@@ -33,6 +33,11 @@ function getAllFallbackSentences() {
 
 function saveFallbackSentence(item) {
   try {
+    // Penjaga kualitas: tolak aksara non-Latin / kalimat < 3 kata.
+    const guarded = require('../../tools/bank-rules').sanitize('susun-kalimat', item);
+    if (!guarded) { console.log(`🛡 Skip (gagal cek kualitas): "${item && item.sentence}"`); return false; }
+    item = guarded;
+
     const all = getAllFallbackSentences();
     const dupe = all.some(s => s.sentence === item.sentence);
     if (dupe) return false;
