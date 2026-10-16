@@ -1,6 +1,6 @@
 [
   {
-    "question": "Sebutkan jenis pasta atau mi",
+    "question": "Sebutkan pasta atau mi",
     "answers": [
       "SPAGHETTI",
       "MIE-GORENG",
@@ -16,7 +16,7 @@
     ]
   },
   {
-    "question": "Sebutkan nama bank di Indonesia",
+    "question": "Sebutkan bank di Indonesia",
     "answers": [
       "BCA",
       "MANDIRI",
@@ -32,7 +32,7 @@
     ]
   },
   {
-    "question": "Sebutkan jenis batu permata",
+    "question": "Sebutkan batu permata",
     "answers": [
       "BERLIAN",
       "RUBY",
@@ -79,7 +79,7 @@
     ]
   },
   {
-    "question": "Sebutkan jenis tanaman hias",
+    "question": "Sebutkan tanaman hias",
     "answers": [
       "ANGGREK",
       "KAKTUS",
@@ -95,7 +95,7 @@
     ]
   },
   {
-    "question": "Sebutkan nama stasiun televisi Indonesia",
+    "question": "Sebutkan stasiun televisi Indonesia",
     "answers": [
       "RCTI",
       "SCTV",
@@ -111,7 +111,7 @@
     ]
   },
   {
-    "question": "Sebutkan jenis sambal",
+    "question": "Sebutkan sambal",
     "answers": [
       "TERASI",
       "MATAH",
@@ -127,7 +127,7 @@
     ]
   },
   {
-    "question": "Sebutkan nama toko retail Indonesia",
+    "question": "Sebutkan toko retail Indonesia",
     "answers": [
       "INDOMARET",
       "ALFAMART",
@@ -159,7 +159,7 @@
     ]
   },
   {
-    "question": "Sebutkan jenis nasi",
+    "question": "Sebutkan nasi",
     "answers": [
       "GORENG",
       "PUTIH",
@@ -191,7 +191,7 @@
     ]
   },
   {
-    "question": "Sebutkan nama universitas di Indonesia",
+    "question": "Sebutkan universitas di Indonesia",
     "answers": [
       "UI",
       "ITB",
@@ -207,7 +207,7 @@
     ]
   },
   {
-    "question": "Sebutkan jenis keripik",
+    "question": "Sebutkan keripik",
     "answers": [
       "SINGKONG",
       "KENTANG",
@@ -255,7 +255,7 @@
     ]
   },
   {
-    "question": "Sebutkan jenis sup atau sop",
+    "question": "Sebutkan sup atau sop",
     "answers": [
       "AYAM",
       "IGA",
@@ -271,7 +271,7 @@
     ]
   },
   {
-    "question": "Sebutkan jenis film atau genre",
+    "question": "Sebutkan film atau genre",
     "answers": [
       "ACTION",
       "HOROR",
@@ -287,7 +287,7 @@
     ]
   },
   {
-    "question": "Sebutkan nama mall atau pusat perbelanjaan",
+    "question": "Sebutkan mall atau pusat perbelanjaan",
     "answers": [
       "GRAND-INDONESIA",
       "PLAZA-INDONESIA",
@@ -302,7 +302,7 @@
     ]
   },
   {
-    "question": "Sebutkan jenis cokelat atau merk cokelat",
+    "question": "Sebutkan cokelat atau merk cokelat",
     "answers": [
       "SILVERQUEEN",
       "TOBLERONE",
@@ -382,7 +382,7 @@
     ]
   },
   {
-    "question": "Sebutkan jenis transportasi laut",
+    "question": "Sebutkan transportasi laut",
     "answers": [
       "KAPAL",
       "PERAHU",
@@ -398,7 +398,7 @@
     ]
   },
   {
-    "question": "Sebutkan nama jenis sepeda motor",
+    "question": "Sebutkan sepeda motor",
     "answers": [
       "MATIC",
       "SPORT",
@@ -429,7 +429,7 @@
     ]
   },
   {
-    "question": "Sebutkan jenis olahan ayam",
+    "question": "Sebutkan olahan ayam",
     "answers": [
       "GORENG",
       "BAKAR",
@@ -442,23 +442,6 @@
       "SATE",
       "OPOR",
       "RENDANG"
-    ]
-  },
-  {
-    "question": "Sebutkan warna yang sering digunakan",
-    "answers": [
-      "MERAH",
-      "BIRU",
-      "KUNING",
-      "HIJAU",
-      "PUTIH",
-      "HITAM",
-      "ORANGE",
-      "UNGU",
-      "PINK",
-      "COKLAT",
-      "ABU",
-      "SILVER"
     ]
   },
   {
@@ -678,7 +661,7 @@
     ]
   },
   {
-    "question": "Sebutkan jenis kue tradisional Indonesia",
+    "question": "Sebutkan kue tradisional Indonesia",
     "answers": [
       "KLEPON",
       "ONDE",
@@ -698,7 +681,7 @@
     ]
   },
   {
-    "question": "Sebutkan aplikasi chat yang populer",
+    "question": "Sebutkan aplikasi chat",
     "answers": [
       "WHATSAPP",
       "TELEGRAM",
@@ -848,7 +831,7 @@
     ]
   },
   {
-    "question": "SEBUTKAN PERLENGKAPAN ALAT TULIS YANG BIASA DIBAWA SISWA KE SEKOLAH?",
+    "question": "SEBUTKAN PERLENGKAPAN ALAT TULIS YANG BIASA DIBAWA SISWA KE SEKOLAH",
     "answers": [
       "BUKU",
       "PULPEN",

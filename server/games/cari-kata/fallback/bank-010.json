@@ -62,19 +62,6 @@
     "level": 3
   },
   {
-    "theme": "jenis lagu daerah yang spesifik",
-    "words": [
-      "GAMELAN",
-      "JANGER",
-      "BAMBOO",
-      "CENDRAWASIH",
-      "CANGGUNG",
-      "KAMPUNG",
-      "GAMBYANG"
-    ],
-    "level": 3
-  },
-  {
     "theme": "macam-macam profesi yang lengkap",
     "words": [
       "KOKI",
@@ -249,19 +236,6 @@
     "level": 2
   },
   {
-    "theme": "contoh hewan langka yang tradisional",
-    "words": [
-      "MACAN",
-      "KANCIL",
-      "BERUANG",
-      "ORANGUTAN",
-      "HARIMAU",
-      "BADAK",
-      "KUKANG"
-    ],
-    "level": 3
-  },
-  {
     "theme": "macam-macam makanan yang alami",
     "words": [
       "ROTI",
@@ -354,19 +328,6 @@
       "BURUNG"
     ],
     "level": 3
-  },
-  {
-    "theme": "contoh hewan air yang spesifik",
-    "words": [
-      "KERANG",
-      "PENYU",
-      "GURITA",
-      "HIU",
-      "BIASA",
-      "SIPUT",
-      "UDANG"
-    ],
-    "level": 2
   },
   {
     "theme": "jenis lagu daerah yang lengkap",
@@ -1053,18 +1014,6 @@
     "level": 1
   },
   {
-    "theme": "contoh hewan langka yang indah",
-    "words": [
-      "KOMODO",
-      "BANTENG",
-      "KANCIL",
-      "CENDRAWASIH",
-      "ANOA",
-      "MACAN"
-    ],
-    "level": 3
-  },
-  {
     "theme": "macam-macam hewan unggas yang khas",
     "words": [
       "JALAK",
@@ -1140,18 +1089,6 @@
       "JAMBU"
     ],
     "level": 3
-  },
-  {
-    "theme": "macam-macam hewan air yang umum",
-    "words": [
-      "KERANG",
-      "KEPITING",
-      "UDANG",
-      "IKAN",
-      "SIPUT",
-      "GURITA"
-    ],
-    "level": 1
   },
   {
     "theme": "hewan serangga yang tradisional",
@@ -1519,18 +1456,6 @@
       "BUS"
     ],
     "level": 1
-  },
-  {
-    "theme": "contoh hewan air yang lengkap",
-    "words": [
-      "GURITA",
-      "KEPITING",
-      "UDANG",
-      "KERANG",
-      "IKAN",
-      "BIASA"
-    ],
-    "level": 3
   },
   {
     "theme": "hewan reptil yang alami",

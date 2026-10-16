@@ -1,0 +1,318 @@
+[
+  {
+    "reason": "isi words kurang dari 8",
+    "stage": "aturan",
+    "source": "cari-kata/fallback/bank-009.json",
+    "item": {
+      "theme": "hewan laut yang kamu ketahui",
+      "words": [
+        "IKAN",
+        "HIU",
+        "PAUS",
+        "PENYU",
+        "GURITA",
+        "KEPITING",
+        "UDANG"
+      ],
+      "level": 2
+    }
+  },
+  {
+    "reason": "isi words kurang dari 8",
+    "stage": "aturan",
+    "source": "cari-kata/fallback/bank-009.json",
+    "item": {
+      "theme": "macam-macam warna dasar",
+      "words": [
+        "MERAH",
+        "BIRU",
+        "HIJAU",
+        "KUNING",
+        "PUTIH",
+        "HITAM",
+        "COKLAT"
+      ],
+      "level": 2
+    }
+  },
+  {
+    "reason": "isi words kurang dari 8",
+    "stage": "aturan",
+    "source": "cari-kata/fallback/bank-009.json",
+    "item": {
+      "theme": "sebutkan jenis serangga",
+      "words": [
+        "NYAMUK",
+        "LALAT",
+        "SEMUT",
+        "LEBAH",
+        "CAPUNG",
+        "JANGKRIK",
+        "BELALANG"
+      ],
+      "level": 3
+    }
+  },
+  {
+    "reason": "isi words kurang dari 8",
+    "stage": "aturan",
+    "source": "cari-kata/fallback/bank-009.json",
+    "item": {
+      "theme": "sebutkan hewan langka",
+      "words": [
+        "BADAK",
+        "HARIMAU",
+        "ORANGUTAN",
+        "GAJAH",
+        "CENDRAWASIH",
+        "KOMODO",
+        "ANOA"
+      ],
+      "level": 2
+    }
+  },
+  {
+    "reason": "isi words kurang dari 8",
+    "stage": "aturan",
+    "source": "cari-kata/fallback/bank-009.json",
+    "item": {
+      "theme": "warna yang spesifik",
+      "words": [
+        "COKLAT",
+        "MERAH",
+        "KUNING",
+        "PINK",
+        "EMAS",
+        "HITAM",
+        "HIJAU"
+      ],
+      "level": 1
+    }
+  },
+  {
+    "reason": "isi words kurang dari 8",
+    "stage": "aturan",
+    "source": "cari-kata/fallback/bank-009.json",
+    "item": {
+      "theme": "hewan peliharaan yang khas",
+      "words": [
+        "MERPATI",
+        "KELINCI",
+        "KUDA",
+        "TIKUS",
+        "BEBEK",
+        "HAMSTER",
+        "AYAM"
+      ],
+      "level": 1
+    }
+  },
+  {
+    "reason": "isi words kurang dari 8",
+    "stage": "aturan",
+    "source": "cari-kata/fallback/bank-010.json",
+    "item": {
+      "theme": "jenis lagu daerah yang spesifik",
+      "words": [
+        "GAMELAN",
+        "JANGER",
+        "BAMBOO",
+        "CENDRAWASIH",
+        "CANGGUNG",
+        "KAMPUNG",
+        "GAMBYANG"
+      ],
+      "level": 3
+    }
+  },
+  {
+    "reason": "isi words kurang dari 8",
+    "stage": "aturan",
+    "source": "cari-kata/fallback/bank-010.json",
+    "item": {
+      "theme": "contoh hewan langka yang tradisional",
+      "words": [
+        "MACAN",
+        "KANCIL",
+        "BERUANG",
+        "ORANGUTAN",
+        "HARIMAU",
+        "BADAK",
+        "KUKANG"
+      ],
+      "level": 3
+    }
+  },
+  {
+    "reason": "isi words kurang dari 8",
+    "stage": "aturan",
+    "source": "cari-kata/fallback/bank-010.json",
+    "item": {
+      "theme": "contoh hewan air yang spesifik",
+      "words": [
+        "KERANG",
+        "PENYU",
+        "GURITA",
+        "HIU",
+        "BIASA",
+        "SIPUT",
+        "UDANG"
+      ],
+      "level": 2
+    }
+  },
+  {
+    "reason": "isi words kurang dari 8",
+    "stage": "aturan",
+    "source": "cari-kata/fallback/bank-010.json",
+    "item": {
+      "theme": "contoh hewan langka yang indah",
+      "words": [
+        "KOMODO",
+        "BANTENG",
+        "KANCIL",
+        "CENDRAWASIH",
+        "ANOA",
+        "MACAN"
+      ],
+      "level": 3
+    }
+  },
+  {
+    "reason": "isi words kurang dari 8",
+    "stage": "aturan",
+    "source": "cari-kata/fallback/bank-010.json",
+    "item": {
+      "theme": "macam-macam hewan air yang umum",
+      "words": [
+        "KERANG",
+        "KEPITING",
+        "UDANG",
+        "IKAN",
+        "SIPUT",
+        "GURITA"
+      ],
+      "level": 1
+    }
+  },
+  {
+    "reason": "isi words kurang dari 8",
+    "stage": "aturan",
+    "source": "cari-kata/fallback/bank-010.json",
+    "item": {
+      "theme": "contoh hewan air yang lengkap",
+      "words": [
+        "GURITA",
+        "KEPITING",
+        "UDANG",
+        "KERANG",
+        "IKAN",
+        "BIASA"
+      ],
+      "level": 3
+    }
+  },
+  {
+    "reason": "isi words kurang dari 8",
+    "stage": "aturan",
+    "source": "cari-kata/fallback/bank-011.json",
+    "item": {
+      "theme": "hewan peliharaan yang modern",
+      "words": [
+        "MERPATI",
+        "KUDA",
+        "IKAN",
+        "ULAR",
+        "HAMSTER",
+        "ANJING"
+      ],
+      "level": 2
+    }
+  },
+  {
+    "reason": "isi words kurang dari 8",
+    "stage": "aturan",
+    "source": "cari-kata/fallback/bank-011.json",
+    "item": {
+      "theme": "contoh hewan langka yang spesifik",
+      "words": [
+        "BANTENG",
+        "BERUANG",
+        "RUSA",
+        "MACAN",
+        "KANCIL",
+        "KUKANG",
+        "GAJAH"
+      ],
+      "level": 1
+    }
+  },
+  {
+    "reason": "isi words kurang dari 8",
+    "stage": "aturan",
+    "source": "cari-kata/fallback/bank-011.json",
+    "item": {
+      "theme": "hewan air yang khas",
+      "words": [
+        "PAUS",
+        "KERANG",
+        "UDANG",
+        "BIASA",
+        "KEPITING",
+        "GURITA",
+        "HIU"
+      ],
+      "level": 2
+    }
+  },
+  {
+    "reason": "isi words kurang dari 8",
+    "stage": "aturan",
+    "source": "cari-kata/fallback/bank-011.json",
+    "item": {
+      "theme": "jenis hewan air yang indah",
+      "words": [
+        "PENYU",
+        "KEPITING",
+        "UDANG",
+        "PAUS",
+        "BIASA"
+      ],
+      "level": 3
+    }
+  },
+  {
+    "reason": "isi words kurang dari 8",
+    "stage": "aturan",
+    "source": "cari-kata/fallback/bank-011.json",
+    "item": {
+      "theme": "hewan air yang tradisional",
+      "words": [
+        "GURITA",
+        "UDANG",
+        "KEPITING",
+        "BIASA",
+        "SIPUT",
+        "PENYU"
+      ],
+      "level": 3
+    }
+  },
+  {
+    "reason": "isi words kurang dari 8",
+    "stage": "aturan",
+    "source": "cari-kata/fallback/bank-011.json",
+    "item": {
+      "theme": "jenis hewan peliharaan yang alami",
+      "words": [
+        "KUCING",
+        "ULAR",
+        "BURUNG",
+        "BEBEK",
+        "KUDA",
+        "MERPATI"
+      ],
+      "level": 2
+    }
+  }
+]

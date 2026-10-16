@@ -1,0 +1,2346 @@
+[
+  {
+    "reason": "tema \"Adik\" hanya berisi turunan kata itu sendiri",
+    "stage": "aturan",
+    "source": "tts-tema/fallback-themes.json",
+    "item": {
+      "theme": "Adik",
+      "words": [
+        "ADIKA",
+        "CADIK",
+        "MADIK",
+        "SADIK",
+        "ADIKIA",
+        "RADIKS",
+        "ADIKARA",
+        "ADIKONG",
+        "ADIKTIF",
+        "BERADIK",
+        "JERADIK",
+        "MADIKSA",
+        "NOMADIK",
+        "RADIKAL",
+        "ADIKANDA"
+      ]
+    }
+  },
+  {
+    "reason": "tema \"Agama\" hanya berisi turunan kata itu sendiri",
+    "stage": "aturan",
+    "source": "tts-tema/fallback-themes.json",
+    "item": {
+      "theme": "Agama",
+      "words": [
+        "AGAMAIS",
+        "AGAMANI",
+        "AGAMAWI",
+        "SEAGAMA",
+        "AGAMAWAN",
+        "AWAAGAMA",
+        "BERAGAMA",
+        "NIRAGAMA",
+        "NONAGAMA",
+        "YUDAGAMA",
+        "AGAMAISME",
+        "ANTIAGAMA",
+        "KEAGAMAAN",
+        "KERAGAMAN",
+        "AGAMAISASI"
+      ]
+    }
+  },
+  {
+    "reason": "tema \"Akar\" hanya berisi turunan kata itu sendiri",
+    "stage": "aturan",
+    "source": "tts-tema/fallback-themes.json",
+    "item": {
+      "theme": "Akar",
+      "words": [
+        "BAKAR",
+        "CAKAR",
+        "DAKAR",
+        "KAKAR",
+        "MAKAR",
+        "PAKAR",
+        "SAKAR",
+        "TAKAR",
+        "GAKARI",
+        "LAKARA",
+        "MAKARA",
+        "NAKARA",
+        "SEAKAR",
+        "SYAKAR",
+        "AILAKAR"
+      ]
+    }
+  },
+  {
+    "reason": "tema \"Alat\" hanya berisi turunan kata itu sendiri",
+    "stage": "aturan",
+    "source": "tts-tema/fallback-themes.json",
+    "item": {
+      "theme": "Alat",
+      "words": [
+        "ALAT",
+        "BALAT",
+        "GALAT",
+        "PALAT",
+        "RALAT",
+        "WALAT",
+        "ALATUD",
+        "BALATO",
+        "CIALAT",
+        "FTALAT",
+        "RIALAT",
+        "SHALAT",
+        "BERALAT",
+        "JELALAT",
+        "KUWALAT"
+      ]
+    }
+  },
+  {
+    "reason": "tema \"Ambil\" hanya berisi turunan kata itu sendiri",
+    "stage": "aturan",
+    "source": "tts-tema/fallback-themes.json",
+    "item": {
+      "theme": "Ambil",
+      "words": [
+        "AMBIL",
+        "SAMBIL",
+        "AMBILAN",
+        "KERAMBIL",
+        "SAMBILAN",
+        "TERAMBIL",
+        "MENGAMBIL",
+        "MENYAMBIL",
+        "PENGAMBIL",
+        "TERSAMBIL",
+        "MENGAMBILI",
+        "AMBILINGUAL",
+        "PENGAMBILAN",
+        "MENGAMBILKAN",
+        "MENYAMBILKAN"
+      ]
+    }
+  },
+  {
+    "reason": "tema \"Anak\" hanya berisi turunan kata itu sendiri",
+    "stage": "aturan",
+    "source": "tts-tema/fallback-themes.json",
+    "item": {
+      "theme": "Anak",
+      "words": [
+        "ANAK",
+        "SANAK",
+        "TANAK",
+        "AKANAK",
+        "ANAKAN",
+        "ANAKDA",
+        "RANAKA",
+        "TANAKH",
+        "ALMANAK",
+        "BERANAK",
+        "JELANAK",
+        "KEKANAK",
+        "KEMANAK",
+        "MANAKAN",
+        "MENANAK"
+      ]
+    }
+  },
+  {
+    "reason": "tema \"Angin\" hanya berisi turunan kata itu sendiri",
+    "stage": "aturan",
+    "source": "tts-tema/fallback-themes.json",
+    "item": {
+      "theme": "Angin",
+      "words": [
+        "RANGIN",
+        "EMANGIN",
+        "RANGINA",
+        "SEANGIN",
+        "BERANGIN",
+        "MERANGIN",
+        "PERANGIN",
+        "RANGINAN",
+        "SENANGIN",
+        "TERANGIN",
+        "ANTIANGIN",
+        "KEANGINAN",
+        "MENGANGIN",
+        "SERMANGIN",
+        "ANTIANGINA"
+      ]
+    }
+  },
+  {
+    "reason": "tema \"Ayah\" hanya berisi turunan kata itu sendiri",
+    "stage": "aturan",
+    "source": "tts-tema/fallback-themes.json",
+    "item": {
+      "theme": "Ayah",
+      "words": [
+        "BAYAH",
+        "DAYAH",
+        "GAYAH",
+        "LAYAH",
+        "PAYAH",
+        "RAYAH",
+        "DIAYAH",
+        "SEAYAH",
+        "ULAYAH",
+        "BERAYAH",
+        "BINAYAH",
+        "GERAYAH",
+        "HIDAYAH",
+        "JENAYAH",
+        "KIFAYAH"
+      ]
+    }
+  },
+  {
+    "reason": "tema \"Ayam\" hanya berisi turunan kata itu sendiri",
+    "stage": "aturan",
+    "source": "tts-tema/fallback-themes.json",
+    "item": {
+      "theme": "Ayam",
+      "words": [
+        "GAYAM",
+        "MAYAM",
+        "NAYAM",
+        "AYAMARU",
+        "MELAYAM",
+        "SEMAYAM",
+        "BERLAYAM",
+        "CENDAYAM",
+        "KAYAMBANG",
+        "PRANAYAMA",
+        "BERSEMAYAM",
+        "BERTAYAMUM",
+        "WIJAYAMALA",
+        "AYAMURASAKI",
+        "WIJAYAMULIA"
+      ]
+    }
+  },
+  {
+    "reason": "tema \"Babi\" hanya berisi turunan kata itu sendiri",
+    "stage": "aturan",
+    "source": "tts-tema/fallback-themes.json",
+    "item": {
+      "theme": "Babi",
+      "words": [
+        "BABIL",
+        "ABABIL",
+        "BABINSA",
+        "MEMBABI",
+        "BABINKAM",
+        "BABINKUM",
+        "BABINMAS",
+        "BERBABIL",
+        "MEMBABIL",
+        "PEMBABIL",
+        "TERBABIT",
+        "BABILONIA",
+        "SERBABISA",
+        "BABINDESIR",
+        "KABABINKUM"
+      ]
+    }
+  },
+  {
+    "reason": "tema \"Barang\" hanya berisi turunan kata itu sendiri",
+    "stage": "aturan",
+    "source": "tts-tema/fallback-themes.json",
+    "item": {
+      "theme": "Barang",
+      "words": [
+        "BARANG",
+        "AMBARANG",
+        "BARANGAN",
+        "SEBARANG",
+        "SEMBARANG",
+        "BARANGKALI",
+        "PRAMUBARANG",
+        "SEMBARANGAN"
+      ]
+    }
+  },
+  {
+    "reason": "tema \"Batik\" hanya berisi turunan kata itu sendiri",
+    "stage": "aturan",
+    "source": "tts-tema/fallback-themes.json",
+    "item": {
+      "theme": "Batik",
+      "words": [
+        "BATIKAN",
+        "ANABATIK",
+        "BERBATIK",
+        "EKOBATIK",
+        "MEMBATIK",
+        "PEMBATIK",
+        "ADIABATIK",
+        "AEROBATIK",
+        "AKROBATIK",
+        "KATABATIK",
+        "SABATIKAL",
+        "PEMBATIKAN",
+        "PERBATIKAN",
+        "BERAEROBATIK"
+      ]
+    }
+  },
+  {
+    "reason": "tema \"Batu\" hanya berisi turunan kata itu sendiri",
+    "stage": "aturan",
+    "source": "tts-tema/fallback-themes.json",
+    "item": {
+      "theme": "Batu",
+      "words": [
+        "BATUI",
+        "BATUK",
+        "BATUNG",
+        "BATUTU",
+        "BATULEY",
+        "BATUMIN",
+        "BEBATUR",
+        "BERBATU",
+        "KEMBATU",
+        "KUBATUR",
+        "MEMBATU",
+        "TEMBATU",
+        "TOMBATU",
+        "BATUBARA",
+        "BATUTARA"
+      ]
+    }
+  },
+  {
+    "reason": "tema \"Beri\" hanya berisi turunan kata itu sendiri",
+    "stage": "aturan",
+    "source": "tts-tema/fallback-themes.json",
+    "item": {
+      "theme": "Beri",
+      "words": [
+        "BERI",
+        "BERIA",
+        "BERIK",
+        "BERIAK",
+        "BERIAN",
+        "BERIAS",
+        "BERIBA",
+        "BERIBU",
+        "BERIDA",
+        "BERIDE",
+        "BERILE",
+        "BERIMA",
+        "BERION",
+        "BERISI",
+        "IBERIA"
+      ]
+    }
+  },
+  {
+    "reason": "tema \"Besar\" hanya berisi turunan kata itu sendiri",
+    "stage": "aturan",
+    "source": "tts-tema/fallback-themes.json",
+    "item": {
+      "theme": "Besar",
+      "words": [
+        "BESARAN",
+        "SEBESAR",
+        "MABESART",
+        "MEMBESAR",
+        "PEMBESAR",
+        "TERBESAR",
+        "KEBESARAN",
+        "PEMBESARAN",
+        "PEMERBESAR",
+        "MEMBESARKAN",
+        "MEMPERBESAR"
+      ]
+    }
+  },
+  {
+    "reason": "tema \"Besi\" hanya berisi turunan kata itu sendiri",
+    "stage": "aturan",
+    "source": "tts-tema/fallback-themes.json",
+    "item": {
+      "theme": "Besi",
+      "words": [
+        "BESIT",
+        "BESING",
+        "MEMBESI",
+        "SEMBESI",
+        "MEMBESIT",
+        "OBESITAS",
+        "TERBESIT",
+        "TREMBESI",
+        "MEREMBESI",
+        "IMBESILITAS"
+      ]
+    }
+  },
+  {
+    "reason": "tema \"Bidan\" hanya berisi turunan kata itu sendiri",
+    "stage": "aturan",
+    "source": "tts-tema/fallback-themes.json",
+    "item": {
+      "theme": "Bidan",
+      "words": [
+        "BIDAN",
+        "BIDANG",
+        "BERBIDAN",
+        "KARBIDAN",
+        "SEBIDANG",
+        "BERBIDANG",
+        "KEBIDANAN",
+        "LEMBIDANG",
+        "MEMBIDANI",
+        "PEMBIDANG",
+        "SUBBIDANG",
+        "KEBIDANGAN",
+        "MEMBIDANGI",
+        "MULTIBIDANG",
+        "PEMBIDANGAN"
+      ]
+    }
+  },
+  {
+    "reason": "tema \"Bintang\" hanya berisi turunan kata itu sendiri",
+    "stage": "aturan",
+    "source": "tts-tema/fallback-themes.json",
+    "item": {
+      "theme": "Bintang",
+      "words": [
+        "BINTANGAN",
+        "BINTANGOR",
+        "SEBINTANG",
+        "ADIBINTANG",
+        "BERBINTANG",
+        "KEBINTANGAN",
+        "MAHABINTANG",
+        "MEGABINTANG",
+        "MEMBINTANGI",
+        "PERBINTANGAN"
+      ]
+    }
+  },
+  {
+    "reason": "tema \"Bola\" hanya berisi turunan kata itu sendiri",
+    "stage": "aturan",
+    "source": "tts-tema/fallback-themes.json",
+    "item": {
+      "theme": "Bola",
+      "words": [
+        "BOLAK",
+        "BOLAR",
+        "BOLAS",
+        "BOLANG",
+        "KABOLA",
+        "PEBOLA",
+        "BERBOLA",
+        "BOBOLAN",
+        "BOLATIK",
+        "JEBOLAN",
+        "MEMBOLA",
+        "TEMBOLA",
+        "TOMBOLA",
+        "GEMBOLAN",
+        "PARABOLA"
+      ]
+    }
+  },
+  {
+    "reason": "tema \"Buang\" hanya berisi turunan kata itu sendiri",
+    "stage": "aturan",
+    "source": "tts-tema/fallback-themes.json",
+    "item": {
+      "theme": "Buang",
+      "words": [
+        "BUANG",
+        "BUANGAN",
+        "KEBUANG",
+        "BUANGONG",
+        "MEMBUANG",
+        "PEMBUANG",
+        "SIMBUANG",
+        "TERBUANG",
+        "TOTOBUANG",
+        "PEMBUANGAN",
+        "MEMBUANGKAN",
+        "KETERBUANGAN"
+      ]
+    }
+  },
+  {
+    "reason": "tema \"Buka\" hanya berisi turunan kata itu sendiri",
+    "stage": "aturan",
+    "source": "tts-tema/fallback-themes.json",
+    "item": {
+      "theme": "Buka",
+      "words": [
+        "BUKA",
+        "BUKAL",
+        "BUKAN",
+        "BUKAT",
+        "BUKAU",
+        "BUKAAN",
+        "KEBUKA",
+        "BERBUKA",
+        "BUBUKAN",
+        "BUKARES",
+        "DARBUKA",
+        "GEBUKAN",
+        "LUBUKAN",
+        "MEMBUKA",
+        "PEMBUKA"
+      ]
+    }
+  },
+  {
+    "reason": "tema \"Buku\" hanya berisi turunan kata itu sendiri",
+    "stage": "aturan",
+    "source": "tts-tema/fallback-themes.json",
+    "item": {
+      "theme": "Buku",
+      "words": [
+        "BUKUR",
+        "BUKUT",
+        "BEBUKU",
+        "BUKUTE",
+        "BERBUKU",
+        "KRABUKU",
+        "LIABUKU",
+        "MEMBUKU",
+        "NONBUKU",
+        "TERBUKU",
+        "MEMBUKUT",
+        "PEMBUKUT",
+        "KADAMBUKU",
+        "PEMBUKUAN",
+        "PERBUKUAN"
+      ]
+    }
+  },
+  {
+    "reason": "tema \"Bulan\" hanya berisi turunan kata itu sendiri",
+    "stage": "aturan",
+    "source": "tts-tema/fallback-themes.json",
+    "item": {
+      "theme": "Bulan",
+      "words": [
+        "BULANG",
+        "AMBULAN",
+        "BEBULAN",
+        "BULANAN",
+        "KIBULAN",
+        "SEBULAN",
+        "AMBULANS",
+        "BERBULAN",
+        "MEMBULAN",
+        "TIMBULAN",
+        "TRIBULAN",
+        "BERBULANG",
+        "BULANSING",
+        "KECABULAN",
+        "MEMBULANG"
+      ]
+    }
+  },
+  {
+    "reason": "tema \"Bulat\" hanya berisi turunan kata itu sendiri",
+    "stage": "aturan",
+    "source": "tts-tema/fallback-themes.json",
+    "item": {
+      "theme": "Bulat",
+      "words": [
+        "BULATAN",
+        "MEMBULAT",
+        "TERBULAT",
+        "KEBULATAN",
+        "MEMBULATI",
+        "TABULATOR",
+        "TABULATUR",
+        "AMBULATORI",
+        "PEMBULATAN",
+        "MEMBULATKAN",
+        "MEMPERBULAT"
+      ]
+    }
+  },
+  {
+    "reason": "tema \"Bunga\" hanya berisi turunan kata itu sendiri",
+    "stage": "aturan",
+    "source": "tts-tema/fallback-themes.json",
+    "item": {
+      "theme": "Bunga",
+      "words": [
+        "BUNGAH",
+        "BEBUNGA",
+        "BUNGALO",
+        "BERBUNGA",
+        "BUBUNGAN",
+        "BUNGALAN",
+        "GABUNGAN",
+        "HUBUNGAN",
+        "MEMBUNGA",
+        "PEMBUNGA",
+        "SABUNGAN",
+        "TABUNGAN",
+        "BAMBUNGAN",
+        "BEBUNGAAN",
+        "CEMBUNGAN"
+      ]
+    }
+  },
+  {
+    "reason": "tema \"Cinta\" hanya berisi turunan kata itu sendiri",
+    "stage": "aturan",
+    "source": "tts-tema/fallback-themes.json",
+    "item": {
+      "theme": "Cinta",
+      "words": [
+        "PECINTA",
+        "BERCINTA",
+        "MENCINTA",
+        "PENCINTA",
+        "TAKCINTA",
+        "TERCINTA",
+        "CINTAMANI",
+        "KECINTAAN",
+        "MENCINTAI",
+        "BERCINTAAN",
+        "PERCINTAAN",
+        "BERCINTAKAN",
+        "MENCINTAKAN",
+        "KETAKCINTAAN"
+      ]
+    }
+  },
+  {
+    "reason": "tema \"Dam\" hanya berisi turunan kata itu sendiri",
+    "stage": "aturan",
+    "source": "tts-tema/fallback-themes.json",
+    "item": {
+      "theme": "Dam",
+      "words": [
+        "ADAM",
+        "DAMI",
+        "IDAM",
+        "PDAM",
+        "ANDAM",
+        "BADAM",
+        "DAMAI",
+        "DAMAK",
+        "DAMAL",
+        "DAMAR",
+        "DAMAS",
+        "DAMAT",
+        "DAMBA",
+        "DAMIR",
+        "DAMIU"
+      ]
+    }
+  },
+  {
+    "reason": "tema \"Desa\" hanya berisi turunan kata itu sendiri",
+    "stage": "aturan",
+    "source": "tts-tema/fallback-themes.json",
+    "item": {
+      "theme": "Desa",
+      "words": [
+        "DESA",
+        "DESAH",
+        "DESAK",
+        "DESAR",
+        "DESAU",
+        "DESAIN",
+        "DESARI",
+        "SEDESA",
+        "DESAHAN",
+        "DESAKAN",
+        "DESAUAN",
+        "MERDESA",
+        "PRADESA",
+        "BERDESAH",
+        "BERDESAK"
+      ]
+    }
+  },
+  {
+    "reason": "tema \"Detik\" hanya berisi turunan kata itu sendiri",
+    "stage": "aturan",
+    "source": "tts-tema/fallback-themes.json",
+    "item": {
+      "theme": "Detik",
+      "words": [
+        "DETIKAN",
+        "SEDETIK",
+        "BERDETIK",
+        "GEODETIK",
+        "MENDETIK",
+        "GEODETIKA",
+        "MILIDETIK",
+        "NANODETIK",
+        "FEMTODETIK",
+        "MIKRODETIK",
+        "ZEPTODETIK"
+      ]
+    }
+  },
+  {
+    "reason": "tema \"Dua\" hanya berisi turunan kata itu sendiri",
+    "stage": "aturan",
+    "source": "tts-tema/fallback-themes.json",
+    "item": {
+      "theme": "Dua",
+      "words": [
+        "DUAL",
+        "DUAR",
+        "ADUAN",
+        "DUAFA",
+        "DUANE",
+        "KEDUA",
+        "BERDUA",
+        "BIDUAN",
+        "JADUAL",
+        "MENDUA",
+        "PADUAN",
+        "PENDUA",
+        "PERDUA",
+        "BENDUAN",
+        "CENDUAI"
+      ]
+    }
+  },
+  {
+    "reason": "tema \"Emas\" hanya berisi turunan kata itu sendiri",
+    "stage": "aturan",
+    "source": "tts-tema/fallback-themes.json",
+    "item": {
+      "theme": "Emas",
+      "words": [
+        "CEMAS",
+        "GEMAS",
+        "KEMAS",
+        "LEMAS",
+        "REMAS",
+        "TEMAS",
+        "SEMASA",
+        "TEMASA",
+        "BEREMAS",
+        "KEMASAN",
+        "KREMASI",
+        "MEMASAM",
+        "MEMASAP",
+        "MEMASOK",
+        "MEMASUK"
+      ]
+    }
+  },
+  {
+    "reason": "tema \"Empat\" hanya berisi turunan kata itu sendiri",
+    "stage": "aturan",
+    "source": "tts-tema/fallback-themes.json",
+    "item": {
+      "theme": "Empat",
+      "words": [
+        "EMPAT",
+        "SEMPAT",
+        "TEMPAT",
+        "KEEMPAT",
+        "BEREMPAT",
+        "PENEMPAT",
+        "PEREMPAT",
+        "SETEMPAT",
+        "TEMPATAN",
+        "BEREMPATI",
+        "BERTEMPAT",
+        "MEMPATUHI",
+        "MENEMPATI",
+        "MENYEMPAT",
+        "NIREMPATI"
+      ]
+    }
+  },
+  {
+    "reason": "tema \"Enam\" hanya berisi turunan kata itu sendiri",
+    "stage": "aturan",
+    "source": "tts-tema/fallback-themes.json",
+    "item": {
+      "theme": "Enam",
+      "words": [
+        "ENAM",
+        "BENAM",
+        "SENAM",
+        "ENAMEL",
+        "JENAMA",
+        "KEENAM",
+        "MENAMU",
+        "SENAMA",
+        "BENAMAN",
+        "BERENAM",
+        "MENAMAI",
+        "MENAMPI",
+        "MENAMUI",
+        "PENAMAT",
+        "PENAMPI"
+      ]
+    }
+  },
+  {
+    "reason": "tema \"Foto\" hanya berisi turunan kata itu sendiri",
+    "stage": "aturan",
+    "source": "tts-tema/fallback-themes.json",
+    "item": {
+      "theme": "Foto",
+      "words": [
+        "FOTO",
+        "FOTON",
+        "BERFOTO",
+        "FOTONIK",
+        "FOTOPIA",
+        "MEMFOTO",
+        "NONFOTO",
+        "PASFOTO",
+        "SWAFOTO",
+        "FOTOGRAF",
+        "FOTOKOPI",
+        "FOTOSFER",
+        "FOTOSTAT",
+        "MEMFOTOI",
+        "ORTOFOTO"
+      ]
+    }
+  },
+  {
+    "reason": "tema \"Gunting\" hanya berisi turunan kata itu sendiri",
+    "stage": "aturan",
+    "source": "tts-tema/fallback-themes.json",
+    "item": {
+      "theme": "Gunting",
+      "words": [
+        "GUNTING",
+        "GUNTINGAN",
+        "BERGUNTING",
+        "MENGUNTING",
+        "TERGUNTING",
+        "MENGGUNTING",
+        "PENGGUNTING",
+        "SERIGUNTING",
+        "MENGGUNTINGI"
+      ]
+    }
+  },
+  {
+    "reason": "tema \"Gunung\" hanya berisi turunan kata itu sendiri",
+    "stage": "aturan",
+    "source": "tts-tema/fallback-themes.json",
+    "item": {
+      "theme": "Gunung",
+      "words": [
+        "GUNUNGAN",
+        "SEGUNUNG",
+        "BERGUNUNG",
+        "GUNUNGMAS",
+        "MENGGUNUNG",
+        "PEGUNUNGAN",
+        "GUNUNGKIDUL",
+        "PERGUNUNGAN",
+        "GUNUNGSITOLI",
+        "PENGGUNUNGAN"
+      ]
+    }
+  },
+  {
+    "reason": "tema \"Guru\" hanya berisi turunan kata itu sendiri",
+    "stage": "aturan",
+    "source": "tts-tema/fallback-themes.json",
+    "item": {
+      "theme": "Guru",
+      "words": [
+        "GURUK",
+        "GURUN",
+        "GURUNG",
+        "MAGURU",
+        "BERGURU",
+        "GURUNDA",
+        "KANGGURU",
+        "KEGURUAN",
+        "MAHAGURU",
+        "MENGURUK",
+        "MENGURUP",
+        "MENGURUS",
+        "MENGURUT",
+        "PENGURUN",
+        "PENGURUP"
+      ]
+    }
+  },
+  {
+    "reason": "tema \"Hari\" hanya berisi turunan kata itu sendiri",
+    "stage": "aturan",
+    "source": "tts-tema/fallback-themes.json",
+    "item": {
+      "theme": "Hari",
+      "words": [
+        "HARIS",
+        "BAHARI",
+        "BIHARI",
+        "CAHARI",
+        "GAHARI",
+        "HARIAN",
+        "HARING",
+        "HARINI",
+        "ISHARI",
+        "JOHARI",
+        "SEHARI",
+        "AMHARIK",
+        "BERHARI",
+        "HARISAH",
+        "JAUHARI"
+      ]
+    }
+  },
+  {
+    "reason": "tema \"Hujan\" hanya berisi turunan kata itu sendiri",
+    "stage": "aturan",
+    "source": "tts-tema/fallback-themes.json",
+    "item": {
+      "theme": "Hujan",
+      "words": [
+        "BERHUJAN",
+        "KEHUJANAN",
+        "MENGHUJAN",
+        "PENGHUJAN",
+        "MENGHUJANI",
+        "PASCAHUJAN",
+        "PENGHUJANAN",
+        "MENGHUJANKAN"
+      ]
+    }
+  },
+  {
+    "reason": "tema \"Hutan\" hanya berisi turunan kata itu sendiri",
+    "stage": "aturan",
+    "source": "tts-tema/fallback-themes.json",
+    "item": {
+      "theme": "Hutan",
+      "words": [
+        "BHUTAN",
+        "HUTANG",
+        "SAHUTAN",
+        "AWAHUTAN",
+        "BERHUTAN",
+        "NONHUTAN",
+        "BERHUTANG",
+        "KEHUTANAN",
+        "MENGHUTAN",
+        "PERHUTANI",
+        "BERSAHUTAN",
+        "PENYAHUTAN",
+        "PERHUTANAN",
+        "PENGHUTANAN",
+        "DEHUTANISASI"
+      ]
+    }
+  },
+  {
+    "reason": "tema \"Ibu\" hanya berisi turunan kata itu sendiri",
+    "stage": "aturan",
+    "source": "tts-tema/fallback-themes.json",
+    "item": {
+      "theme": "Ibu",
+      "words": [
+        "IBUK",
+        "IBUN",
+        "IBUS",
+        "RIBU",
+        "CIBUK",
+        "HIBUR",
+        "JIBUN",
+        "KIBUL",
+        "KIBUS",
+        "KIBUT",
+        "LIBUR",
+        "RIBUN",
+        "RIBUT",
+        "SIBUK",
+        "SIBUR"
+      ]
+    }
+  },
+  {
+    "reason": "tema \"Ikan\" hanya berisi turunan kata itu sendiri",
+    "stage": "aturan",
+    "source": "tts-tema/fallback-themes.json",
+    "item": {
+      "theme": "Ikan",
+      "words": [
+        "KIKAN",
+        "TIKAN",
+        "GLIKAN",
+        "IKANAN",
+        "KLIKAN",
+        "USIKAN",
+        "BALIKAN",
+        "BARIKAN",
+        "BELIKAN",
+        "BERIKAN",
+        "BIDIKAN",
+        "BISIKAN",
+        "CABIKAN",
+        "CARIKAN",
+        "CEKIKAN"
+      ]
+    }
+  },
+  {
+    "reason": "tema \"Islam\" hanya berisi turunan kata itu sendiri",
+    "stage": "aturan",
+    "source": "tts-tema/fallback-themes.json",
+    "item": {
+      "theme": "Islam",
+      "words": [
+        "ISLAM",
+        "ISLAMI",
+        "BISLAMA",
+        "ISLAMIS",
+        "BERISLAM",
+        "ISLAMIAH",
+        "ISTISLAM",
+        "ISLAMISME",
+        "ISLAMIYAH",
+        "ISLAMOLOG",
+        "KEISLAMAN",
+        "PENGISLAM",
+        "ISLAMISASI",
+        "ISLAMOLOGI",
+        "KEISLAMIAN"
+      ]
+    }
+  },
+  {
+    "reason": "tema \"Jalan\" hanya berisi turunan kata itu sendiri",
+    "stage": "aturan",
+    "source": "tts-tema/fallback-themes.json",
+    "item": {
+      "theme": "Jalan",
+      "words": [
+        "JALAN",
+        "JALANG",
+        "JALANAN",
+        "JEJALAN",
+        "PEJALAN",
+        "SEJALAN",
+        "GANJALAN",
+        "KEANJALAN",
+        "KEPEJALAN",
+        "MENJALANG",
+        "MENJALANI",
+        "PEMEJALAN",
+        "BERJEJALAN",
+        "GERONJALAN",
+        "JALANGKUNG"
+      ]
+    }
+  },
+  {
+    "reason": "tema \"Juta\" hanya berisi turunan kata itu sendiri",
+    "stage": "aturan",
+    "source": "tts-tema/fallback-themes.json",
+    "item": {
+      "theme": "Juta",
+      "words": [
+        "JUTA",
+        "JUTAAN",
+        "SEJUTA",
+        "JUTAWAN",
+        "KEJUTAN",
+        "RAJUTAN",
+        "LANJUTAN",
+        "BERJUTAAN",
+        "KEKEJUTAN",
+        "PERAJUTAN",
+        "BERKEJUTAN",
+        "KELANJUTAN",
+        "PELANJUTAN",
+        "BERLANJUTAN",
+        "PERLANJUTAN"
+      ]
+    }
+  },
+  {
+    "reason": "tema \"Kain\" hanya berisi turunan kata itu sendiri",
+    "stage": "aturan",
+    "source": "tts-tema/fallback-themes.json",
+    "item": {
+      "theme": "Kain",
+      "words": [
+        "KAIN",
+        "KAING",
+        "KAINIT",
+        "KOKAIN",
+        "BERKAIN",
+        "OBOKAIN",
+        "BERKAING",
+        "KOKAINISME"
+      ]
+    }
+  },
+  {
+    "reason": "tema \"Kamera\" hanya berisi turunan kata itu sendiri",
+    "stage": "aturan",
+    "source": "tts-tema/fallback-themes.json",
+    "item": {
+      "theme": "Kamera",
+      "words": [
+        "KAMERAD",
+        "BERKAMERA",
+        "BIKAMERAL",
+        "KAMERAMAN",
+        "KAMERAMEN",
+        "KAMERAWAN",
+        "TELEKAMERA",
+        "TRIKAMERAL",
+        "MIKROKAMERA",
+        "MULTIKAMERA"
+      ]
+    }
+  },
+  {
+    "reason": "tema \"Kayu\" hanya berisi turunan kata itu sendiri",
+    "stage": "aturan",
+    "source": "tts-tema/fallback-themes.json",
+    "item": {
+      "theme": "Kayu",
+      "words": [
+        "KAYUH",
+        "KAYUN",
+        "KAYUNG",
+        "SEKAYU",
+        "BERKAYU",
+        "NIRKAYU",
+        "BECAKAYU",
+        "BERKAYUH",
+        "KEKAYUAN",
+        "KAYUPULAU",
+        "PERKAYUAN",
+        "KAYUMWUNGAN",
+        "TERKAYUHKAN"
+      ]
+    }
+  },
+  {
+    "reason": "tema \"Kebun\" hanya berisi turunan kata itu sendiri",
+    "stage": "aturan",
+    "source": "tts-tema/fallback-themes.json",
+    "item": {
+      "theme": "Kebun",
+      "words": [
+        "KEBUN",
+        "PEKEBUN",
+        "SEKEBUN",
+        "BERKEBUN",
+        "KEBUNTUAN",
+        "KEBUNDARAN",
+        "PERKEBUNAN",
+        "KEBUNGKAMAN",
+        "KEBUNGKUKAN",
+        "KEBUNTINGAN",
+        "KEBUNTUNGAN",
+        "MEMPERKEBUNI"
+      ]
+    }
+  },
+  {
+    "reason": "tema \"Kelas\" hanya berisi turunan kata itu sendiri",
+    "stage": "aturan",
+    "source": "tts-tema/fallback-themes.json",
+    "item": {
+      "theme": "Kelas",
+      "words": [
+        "KELAS",
+        "KELASA",
+        "KELASI",
+        "KELASAH",
+        "KELASAK",
+        "KELASAN",
+        "SEKELAS",
+        "BERKELAS",
+        "SUBKELAS",
+        "INFRAKELAS",
+        "KELASKARAN",
+        "BERSUBKELAS"
+      ]
+    }
+  },
+  {
+    "reason": "tema \"Kota\" hanya berisi turunan kata itu sendiri",
+    "stage": "aturan",
+    "source": "tts-tema/fallback-themes.json",
+    "item": {
+      "theme": "Kota",
+      "words": [
+        "KOTA",
+        "KOTAB",
+        "KOTAI",
+        "KOTAM",
+        "MAKOTA",
+        "BERKOTA",
+        "IBUKOTA",
+        "SEKOTAH",
+        "SEKOTAK",
+        "DESAKOTA",
+        "KEKOTAAN",
+        "KOTABARU",
+        "KOTAGEDE",
+        "KOTAMARA",
+        "MEGAKOTA"
+      ]
+    }
+  },
+  {
+    "reason": "tema \"Kris\" hanya berisi turunan kata itu sendiri",
+    "stage": "aturan",
+    "source": "tts-tema/fallback-themes.json",
+    "item": {
+      "theme": "Kris",
+      "words": [
+        "KRISAN",
+        "KRISIS",
+        "KRISNA",
+        "KRISPI",
+        "JAMKRIS",
+        "KRISMON",
+        "KRISTAL",
+        "KRISTEN",
+        "KRISTIK",
+        "ROHKRIS",
+        "KRISALID",
+        "KRISALIS",
+        "KRISOFIL",
+        "KRISOTIL",
+        "HIPOKRISI"
+      ]
+    }
+  },
+  {
+    "reason": "tema \"Kue\" hanya berisi turunan kata itu sendiri",
+    "stage": "aturan",
+    "source": "tts-tema/fallback-themes.json",
+    "item": {
+      "theme": "Kue",
+      "words": [
+        "CAKUE",
+        "KUENI",
+        "SEKUEL",
+        "AKUEDUK",
+        "BARKUET",
+        "FREKUEN",
+        "KUETIAU",
+        "PREKUEL",
+        "SEKUENS",
+        "TANGKUE",
+        "INSEKUEN",
+        "BERSEKUEL",
+        "DELINKUEN",
+        "ELOKUENSI",
+        "FREKUENSI"
+      ]
+    }
+  },
+  {
+    "reason": "tema \"Lamp\" hanya berisi turunan kata itu sendiri",
+    "stage": "aturan",
+    "source": "tts-tema/fallback-themes.json",
+    "item": {
+      "theme": "Lamp",
+      "words": [
+        "LAMPAI",
+        "LAMPAS",
+        "LAMPAU",
+        "LAMPES",
+        "LAMPIK",
+        "LAMPIN",
+        "LAMPIT",
+        "LAMPANG",
+        "LAMPENI",
+        "LAMPIAS",
+        "LAMPION",
+        "LAMPONG",
+        "LAMPURA",
+        "SELAMPE",
+        "TOLAMPU"
+      ]
+    }
+  },
+  {
+    "reason": "tema \"Lari\" hanya berisi turunan kata itu sendiri",
+    "stage": "aturan",
+    "source": "tts-tema/fallback-themes.json",
+    "item": {
+      "theme": "Lari",
+      "words": [
+        "LARI",
+        "LARIS",
+        "KULARI",
+        "LARIAN",
+        "NALARI",
+        "PALARI",
+        "PELARI",
+        "SELARI",
+        "FILARIA",
+        "KLARINO",
+        "LARIKAN",
+        "MELARIH",
+        "MELARIK",
+        "PELARIK",
+        "PELARIS"
+      ]
+    }
+  },
+  {
+    "reason": "tema \"Layar\" hanya berisi turunan kata itu sendiri",
+    "stage": "aturan",
+    "source": "tts-tema/fallback-themes.json",
+    "item": {
+      "theme": "Layar",
+      "words": [
+        "PELAYAR",
+        "SELAYAR",
+        "BERLAYAR",
+        "MELAYARI",
+        "GELAYARAN",
+        "PELAYARAN",
+        "MELAYARKAN",
+        "MULTILAYAR",
+        "PERLAYARAN",
+        "BERLAYARKAN",
+        "BERPELAYARAN"
+      ]
+    }
+  },
+  {
+    "reason": "tema \"Lebar\" hanya berisi turunan kata itu sendiri",
+    "stage": "aturan",
+    "source": "tts-tema/fallback-themes.json",
+    "item": {
+      "theme": "Lebar",
+      "words": [
+        "GELEBAR",
+        "LEBARAN",
+        "MELEBAR",
+        "PELEBAR",
+        "SELEBAR",
+        "PERLEBAR",
+        "TERLEBAR",
+        "KELEBARAN",
+        "PELEBARAN",
+        "SELEBARAN",
+        "BERGELEBAR",
+        "BERLEBARAN",
+        "MELEBARKAN",
+        "PEMERLEBAR",
+        "TERGELEBAR"
+      ]
+    }
+  },
+  {
+    "reason": "tema \"Lima\" hanya berisi turunan kata itu sendiri",
+    "stage": "aturan",
+    "source": "tts-tema/fallback-themes.json",
+    "item": {
+      "theme": "Lima",
+      "words": [
+        "LIMA",
+        "LIMAI",
+        "LIMAU",
+        "ALIMAN",
+        "LIMANO",
+        "WALIMA",
+        "BERLIMA",
+        "KALIMAH",
+        "KALIMAT",
+        "KELIMAN",
+        "KLIMAKS",
+        "LIMASAN",
+        "POLIMAT",
+        "WALIMAT",
+        "AKLIMASI"
+      ]
+    }
+  },
+  {
+    "reason": "tema \"Luka\" hanya berisi turunan kata itu sendiri",
+    "stage": "aturan",
+    "source": "tts-tema/fallback-themes.json",
+    "item": {
+      "theme": "Luka",
+      "words": [
+        "LUKA",
+        "LUKAH",
+        "LUKAT",
+        "GLUKAN",
+        "BELUKAR",
+        "BERLUKA",
+        "BULUKAN",
+        "JULUKAN",
+        "MELUKAH",
+        "MELUKAI",
+        "MELUKAT",
+        "PELUKAN",
+        "SELUKAT",
+        "TERLUKA",
+        "BELUKANG"
+      ]
+    }
+  },
+  {
+    "reason": "tema \"Lukis\" hanya berisi turunan kata itu sendiri",
+    "stage": "aturan",
+    "source": "tts-tema/fallback-themes.json",
+    "item": {
+      "theme": "Lukis",
+      "words": [
+        "LUKIS",
+        "LUKISAN",
+        "MELUKIS",
+        "PELUKIS",
+        "TERLUKIS",
+        "PELUKISAN",
+        "BERLUKISAN",
+        "MELUKISKAN",
+        "TERLUKISKAN"
+      ]
+    }
+  },
+  {
+    "reason": "tema \"Makan\" hanya berisi turunan kata itu sendiri",
+    "stage": "aturan",
+    "source": "tts-tema/fallback-themes.json",
+    "item": {
+      "theme": "Makan",
+      "words": [
+        "DIMAKAN",
+        "KEMAKAN",
+        "MAKANAN",
+        "MAKANYA",
+        "MEMAKAN",
+        "PEMAKAN",
+        "SAMAKAN",
+        "SIMAKAN",
+        "MAKANIWE",
+        "MEMAKANI",
+        "PERMAKAN",
+        "TERMAKAN",
+        "KEJAMAKAN",
+        "KETAMAKAN",
+        "MENAMAKAN"
+      ]
+    }
+  },
+  {
+    "reason": "tema \"Mandi\" hanya berisi turunan kata itu sendiri",
+    "stage": "aturan",
+    "source": "tts-tema/fallback-themes.json",
+    "item": {
+      "theme": "Mandi",
+      "words": [
+        "MANDIR",
+        "MANDIRI",
+        "PEMANDI",
+        "ALMANDIN",
+        "BERMANDI",
+        "MANDIANG",
+        "MANDIBEL",
+        "MANDIGURI",
+        "PEMANDIAN",
+        "SUKAMANDI",
+        "KOMANDITER",
+        "MEMANDIKAN",
+        "PERMANDIAN",
+        "BERMANDIKAN",
+        "KEMANDIRIAN"
+      ]
+    }
+  },
+  {
+    "reason": "tema \"Marah\" hanya berisi turunan kata itu sendiri",
+    "stage": "aturan",
+    "source": "tts-tema/fallback-themes.json",
+    "item": {
+      "theme": "Marah",
+      "words": [
+        "AMARAH",
+        "IMARAH",
+        "SEMARAH",
+        "TIMARAH",
+        "MEMARAHI",
+        "KEMARAHAN",
+        "BERMARAHAN",
+        "MEMARAHKAN"
+      ]
+    }
+  },
+  {
+    "reason": "tema \"Meja\" hanya berisi turunan kata itu sendiri",
+    "stage": "aturan",
+    "source": "tts-tema/fallback-themes.json",
+    "item": {
+      "theme": "Meja",
+      "words": [
+        "MEJAM",
+        "MEJAN",
+        "SEMEJA",
+        "KEMEJAN",
+        "MEMEJAL",
+        "SEMEJAK",
+        "SEMEJANA",
+        "BERKEMEJA",
+        "PRAMUMEJA",
+        "MEMEJALKAN",
+        "MEMEJAMKAN",
+        "BERKEMEJAKAN"
+      ]
+    }
+  },
+  {
+    "reason": "tema \"Menit\" hanya berisi turunan kata itu sendiri",
+    "stage": "aturan",
+    "source": "tts-tema/fallback-themes.json",
+    "item": {
+      "theme": "Menit",
+      "words": [
+        "MENITI",
+        "MENITAH",
+        "MENITAN",
+        "MENITIK",
+        "MENITIP",
+        "MENITIR",
+        "MENITIS",
+        "SEMENIT",
+        "AMENITAS",
+        "MENITIKI",
+        "MENITIPI",
+        "MENITAHKAN",
+        "MENITIKKAN",
+        "MENITIPKAN",
+        "MENITISKAN"
+      ]
+    }
+  },
+  {
+    "reason": "tema \"Merah\" hanya berisi turunan kata itu sendiri",
+    "stage": "aturan",
+    "source": "tts-tema/fallback-themes.json",
+    "item": {
+      "theme": "Merah",
+      "words": [
+        "MEMERAH",
+        "MERAHAP",
+        "MERAHIM",
+        "PEMERAH",
+        "SEMERAH",
+        "JASMERAH",
+        "MEMERAHI",
+        "MEMERAHU",
+        "MERAHIMI",
+        "KEMERAHAN",
+        "MERAHASIA",
+        "MERAHMATI",
+        "PEMERAHAN",
+        "MEMERAHKAN",
+        "MERAHAPKAN"
+      ]
+    }
+  },
+  {
+    "reason": "tema \"Minum\" hanya berisi turunan kata itu sendiri",
+    "stage": "aturan",
+    "source": "tts-tema/fallback-themes.json",
+    "item": {
+      "theme": "Minum",
+      "words": [
+        "MINUM",
+        "INMINUM",
+        "KEMINUM",
+        "MEMINUM",
+        "MINUMAN",
+        "PEMINUM",
+        "ALUMINUM",
+        "JUKMINUM",
+        "MEMINUMI",
+        "TERMINUM",
+        "PEMINUMAN",
+        "MEMINUMKAN"
+      ]
+    }
+  },
+  {
+    "reason": "tema \"Mobil\" hanya berisi turunan kata itu sendiri",
+    "stage": "aturan",
+    "source": "tts-tema/fallback-themes.json",
+    "item": {
+      "theme": "Mobil",
+      "words": [
+        "MOBILET",
+        "PEMOBIL",
+        "SEMOBIL",
+        "BERMOBIL",
+        "OTOMOBIL",
+        "AUTOMOBIL",
+        "LOKOMOBIL",
+        "MOBILITAS",
+        "MOBILISASI",
+        "PERMOBILAN",
+        "AMOBILISASI",
+        "DEMOBILISAN",
+        "MOBILISATOR",
+        "DEMOBILISASI",
+        "MEMOBILISASI"
+      ]
+    }
+  },
+  {
+    "reason": "tema \"Motor\" hanya berisi turunan kata itu sendiri",
+    "stage": "aturan",
+    "source": "tts-tema/fallback-themes.json",
+    "item": {
+      "theme": "Motor",
+      "words": [
+        "MOTORIK",
+        "MOTORIS",
+        "PEMOTOR",
+        "BERMOTOR",
+        "BIOMOTOR",
+        "MEMOTORI",
+        "PROMOTOR",
+        "IDEOMOTOR",
+        "PARAMOTOR",
+        "PILOMOTOR",
+        "BIOMOTORIK",
+        "KOPROMOTOR",
+        "MOTORISASI",
+        "OKULOMOTOR",
+        "PERMOTORAN"
+      ]
+    }
+  },
+  {
+    "reason": "tema \"Musik\" hanya berisi turunan kata itu sendiri",
+    "stage": "aturan",
+    "source": "tts-tema/fallback-themes.json",
+    "item": {
+      "theme": "Musik",
+      "words": [
+        "MUSIKAL",
+        "MUSIKAN",
+        "MUSIKUS",
+        "PEMUSIK",
+        "BERMUSIK",
+        "MEMUSIKI",
+        "MUSIKOLOG",
+        "MEMUSIKKAN",
+        "MUSIKOLOGI",
+        "PERMUSIKAN",
+        "MUSIKALITAS",
+        "MUSIKOLOGIS",
+        "MUSIKALISASI"
+      ]
+    }
+  },
+  {
+    "reason": "tema \"Naik\" hanya berisi turunan kata itu sendiri",
+    "stage": "aturan",
+    "source": "tts-tema/fallback-themes.json",
+    "item": {
+      "theme": "Naik",
+      "words": [
+        "NAIK",
+        "MENAIK",
+        "MENAIKI",
+        "KENAIKAN",
+        "PENAIKAN",
+        "MENAIKKAN",
+        "MENUNAIKAN",
+        "MERINAIKAN"
+      ]
+    }
+  },
+  {
+    "reason": "tema \"Nasi\" hanya berisi turunan kata itu sendiri",
+    "stage": "aturan",
+    "source": "tts-tema/fallback-themes.json",
+    "item": {
+      "theme": "Nasi",
+      "words": [
+        "ANASI",
+        "NASIB",
+        "ANASIR",
+        "DONASI",
+        "KONASI",
+        "NASION",
+        "ZONASI",
+        "EMANASI",
+        "KLONASI",
+        "KRENASI",
+        "NASIHAT",
+        "OZONASI",
+        "PRONASI",
+        "SENASIB",
+        "URINASI"
+      ]
+    }
+  },
+  {
+    "reason": "tema \"Negara\" hanya berisi turunan kata itu sendiri",
+    "stage": "aturan",
+    "source": "tts-tema/fallback-themes.json",
+    "item": {
+      "theme": "Negara",
+      "words": [
+        "NEGARA",
+        "MENEGARA",
+        "BERNEGARA",
+        "NEGARAWAN",
+        "NONNEGARA",
+        "ANTINEGARA",
+        "KENEGARAAN",
+        "NEGARAWATI",
+        "ANTARNEGARA",
+        "KERTANEGARA",
+        "MANCANEGARA",
+        "MULTINEGARA",
+        "BANJARNEGARA",
+        "TARUMANEGARA"
+      ]
+    }
+  },
+  {
+    "reason": "tema \"Obat\" hanya berisi turunan kata itu sendiri",
+    "stage": "aturan",
+    "source": "tts-tema/fallback-themes.json",
+    "item": {
+      "theme": "Obat",
+      "words": [
+        "OBAT",
+        "BOBAT",
+        "NOBAT",
+        "SOBAT",
+        "TOBAT",
+        "BOBATO",
+        "TOBATI",
+        "AKROBAT",
+        "BEROBAT",
+        "PETOBAT",
+        "TEROBAT",
+        "BERSOBAT",
+        "BERTOBAT",
+        "MENYOBAT",
+        "PENGOBAT"
+      ]
+    }
+  },
+  {
+    "reason": "tema \"Paku\" hanya berisi turunan kata itu sendiri",
+    "stage": "aturan",
+    "source": "tts-tema/fallback-themes.json",
+    "item": {
+      "theme": "Paku",
+      "words": [
+        "PAKUH",
+        "PAKUS",
+        "PAKUAN",
+        "BERPAKU",
+        "MEMPAKU",
+        "TERPAKU",
+        "HIPAKUSIA",
+        "PAKUALAMAN",
+        "KETERPAKUAN"
+      ]
+    }
+  },
+  {
+    "reason": "tema \"Pasar\" hanya berisi turunan kata itu sendiri",
+    "stage": "aturan",
+    "source": "tts-tema/fallback-themes.json",
+    "item": {
+      "theme": "Pasar",
+      "words": [
+        "PASARA",
+        "PASARAN",
+        "ADIPASAR",
+        "BERPASAR",
+        "DENPASAR",
+        "NONPASAR",
+        "PASARAYA",
+        "PROPASAR",
+        "KEPASARAN",
+        "LOKAPASAR",
+        "PERPASARAN"
+      ]
+    }
+  },
+  {
+    "reason": "tema \"Pena\" hanya berisi turunan kata itu sendiri",
+    "stage": "aturan",
+    "source": "tts-tema/fallback-themes.json",
+    "item": {
+      "theme": "Pena",
+      "words": [
+        "PENA",
+        "PENAD",
+        "PENAK",
+        "PENAS",
+        "PENAT",
+        "PENAGA",
+        "PENAJA",
+        "PENAKA",
+        "PENALA",
+        "PENALI",
+        "PENANG",
+        "PENARI",
+        "PENATA",
+        "PENATO",
+        "PENATU"
+      ]
+    }
+  },
+  {
+    "reason": "tema \"Perak\" hanya berisi turunan kata itu sendiri",
+    "stage": "aturan",
+    "source": "tts-tema/fallback-themes.json",
+    "item": {
+      "theme": "Perak",
+      "words": [
+        "PERAKA",
+        "PERAKIT",
+        "PERAKSI",
+        "SEPERAK",
+        "PERAKUIK",
+        "KEPERAKAN",
+        "PERAKARAN",
+        "PERAKITAN",
+        "PERAKUNAN",
+        "HIPERAKTIF",
+        "PERAKYATAN",
+        "HIPERAKUSIS",
+        "HIPERAKUITAS",
+        "PERAKUNTANAN"
+      ]
+    }
+  },
+  {
+    "reason": "tema \"Polisi\" hanya berisi turunan kata itu sendiri",
+    "stage": "aturan",
+    "source": "tts-tema/fallback-themes.json",
+    "item": {
+      "theme": "Polisi",
+      "words": [
+        "LIPOLISIS",
+        "KEPOLISIAN",
+        "POLISIKLIK",
+        "POLISIKLIS",
+        "POLISIONAL",
+        "POLISIONIL",
+        "MEMPOLISIKAN",
+        "POLISINAPTIK"
+      ]
+    }
+  },
+  {
+    "reason": "tema \"Rabu\" hanya berisi turunan kata itu sendiri",
+    "stage": "aturan",
+    "source": "tts-tema/fallback-themes.json",
+    "item": {
+      "theme": "Rabu",
+      "words": [
+        "PRABU",
+        "RABUK",
+        "RABUN",
+        "RABUT",
+        "BERABU",
+        "KERABU",
+        "RABUNG",
+        "CERABUT",
+        "MERABUK",
+        "MERABUT",
+        "PERABUN",
+        "SERABUT",
+        "MERABUKI",
+        "MERABUNG",
+        "MERABUNI"
+      ]
+    }
+  },
+  {
+    "reason": "tema \"Racun\" hanya berisi turunan kata itu sendiri",
+    "stage": "aturan",
+    "source": "tts-tema/fallback-themes.json",
+    "item": {
+      "theme": "Racun",
+      "words": [
+        "MERACUN",
+        "PERACUN",
+        "RACUNAN",
+        "TERACUN",
+        "AWARACUN",
+        "MERACUNI",
+        "TERACUNI",
+        "KERACUNAN",
+        "PERACUNAN",
+        "MERACUNKAN"
+      ]
+    }
+  },
+  {
+    "reason": "tema \"Radang\" hanya berisi turunan kata itu sendiri",
+    "stage": "aturan",
+    "source": "tts-tema/fallback-themes.json",
+    "item": {
+      "theme": "Radang",
+      "words": [
+        "RADANG",
+        "MERADANG",
+        "PERADANG",
+        "MERADANGI",
+        "ANTIRADANG",
+        "KERADANGAN",
+        "PERADANGAN",
+        "MERADANGKAN"
+      ]
+    }
+  },
+  {
+    "reason": "tema \"Ratus\" hanya berisi turunan kata itu sendiri",
+    "stage": "aturan",
+    "source": "tts-tema/fallback-themes.json",
+    "item": {
+      "theme": "Ratus",
+      "words": [
+        "RATUS",
+        "MERATUS",
+        "PERATUS",
+        "RATUSAN",
+        "SERATUS",
+        "APARATUS",
+        "KESERATUS",
+        "KUADRATUS",
+        "SEPERATUS",
+        "SERATUSAN",
+        "MENYERATUS",
+        "PERSERATUS",
+        "SEPERSERATUS"
+      ]
+    }
+  },
+  {
+    "reason": "tema \"Ribu\" hanya berisi turunan kata itu sendiri",
+    "stage": "aturan",
+    "source": "tts-tema/fallback-themes.json",
+    "item": {
+      "theme": "Ribu",
+      "words": [
+        "RIBUAN",
+        "SERIBU",
+        "TRIBUN",
+        "ATRIBUT",
+        "BERIBUN",
+        "MERIBUT",
+        "PRIBUMI",
+        "TRIBUNE",
+        "TRIBUTA",
+        "ATRIBUSI",
+        "BERIBUAN",
+        "KESERIBU",
+        "PERIBUAN",
+        "PERIBUDI",
+        "SERIBUAN"
+      ]
+    }
+  },
+  {
+    "reason": "tema \"Roti\" hanya berisi turunan kata itu sendiri",
+    "stage": "aturan",
+    "source": "tts-tema/fallback-themes.json",
+    "item": {
+      "theme": "Roti",
+      "words": [
+        "BEROTI",
+        "EROTIK",
+        "EROTIS",
+        "KAROTID",
+        "KAROTIN",
+        "PAROTIA",
+        "EROTISME",
+        "MEMOROTI",
+        "NEFROTIK",
+        "NEKROTIK",
+        "PEROTIAN",
+        "MENYOROTI",
+        "SEROTINAL",
+        "SEROTINUS",
+        "TEREROTIS"
+      ]
+    }
+  },
+  {
+    "reason": "tema \"Rumput\" hanya berisi turunan kata itu sendiri",
+    "stage": "aturan",
+    "source": "tts-tema/fallback-themes.json",
+    "item": {
+      "theme": "Rumput",
+      "words": [
+        "RUMPUT",
+        "BERUMPUT",
+        "MERUMPUT",
+        "PERUMPUT",
+        "RUMPUTAN",
+        "MERUMPUTI",
+        "PERUMPUTAN",
+        "RERUMPUTAN"
+      ]
+    }
+  },
+  {
+    "reason": "tema \"Rusa\" hanya berisi turunan kata itu sendiri",
+    "stage": "aturan",
+    "source": "tts-tema/fallback-themes.json",
+    "item": {
+      "theme": "Rusa",
+      "words": [
+        "RUSAK",
+        "TRUSA",
+        "URUSAN",
+        "BARUSAN",
+        "BERUSAK",
+        "GERUSAN",
+        "JURUSAN",
+        "KURUSAN",
+        "MERUSAK",
+        "PERUSAK",
+        "RUSAKAN",
+        "SERUSAK",
+        "TERUSAK",
+        "TERUSAN",
+        "BERUSAHA"
+      ]
+    }
+  },
+  {
+    "reason": "tema \"Satu\" hanya berisi turunan kata itu sendiri",
+    "stage": "aturan",
+    "source": "tts-tema/fallback-themes.json",
+    "item": {
+      "theme": "Satu",
+      "words": [
+        "SATU",
+        "KESATU",
+        "SATUAN",
+        "BERSATU",
+        "KESATUAN",
+        "SATURASI",
+        "PEMERSATU",
+        "PERSATUAN",
+        "DESATURASE",
+        "DESATURASI",
+        "BERKESATUAN",
+        "BERSATURASI",
+        "KEBERSATUAN",
+        "MULTISATUAN",
+        "PEMERSATUAN"
+      ]
+    }
+  },
+  {
+    "reason": "tema \"Sepak\" hanya berisi turunan kata itu sendiri",
+    "stage": "aturan",
+    "source": "tts-tema/fallback-themes.json",
+    "item": {
+      "theme": "Sepak",
+      "words": [
+        "SEPAK",
+        "PESEPAK",
+        "SEPAKAN",
+        "SEPAKAT",
+        "SEPAKET",
+        "SEPAKBOR",
+        "TERSEPAK",
+        "BERSEPAKAT",
+        "KESEPAKATAN",
+        "TERSEPAKATI",
+        "PERSEPAKATAN"
+      ]
+    }
+  },
+  {
+    "reason": "tema \"Simpan\" hanya berisi turunan kata itu sendiri",
+    "stage": "aturan",
+    "source": "tts-tema/fallback-themes.json",
+    "item": {
+      "theme": "Simpan",
+      "words": [
+        "SIMPAN",
+        "SIMPANG",
+        "KESIMPAN",
+        "SIMPANAN",
+        "BERSIMPAN",
+        "SIMPANGAN",
+        "TERSIMPAN",
+        "BERSIMPANG",
+        "BERSIMPANGAN",
+        "PERSIMPANGAN"
+      ]
+    }
+  },
+  {
+    "reason": "tema \"Singa\" hanya berisi turunan kata itu sendiri",
+    "stage": "aturan",
+    "source": "tts-tema/fallback-themes.json",
+    "item": {
+      "theme": "Singa",
+      "words": [
+        "DESINGAN",
+        "PUSINGAN",
+        "KEASINGAN",
+        "SINGASARI",
+        "SISINGAAN",
+        "KEBISINGAN",
+        "KEPUSINGAN",
+        "PEMUSINGAN",
+        "PERASINGAN",
+        "SINGSINGAN",
+        "BERDESINGAN",
+        "PENGASINGAN",
+        "PERPUSINGAN",
+        "KELANGSINGAN",
+        "KETERASINGAN"
+      ]
+    }
+  },
+  {
+    "reason": "tema \"Taman\" hanya berisi turunan kata itu sendiri",
+    "stage": "aturan",
+    "source": "tts-tema/fallback-themes.json",
+    "item": {
+      "theme": "Taman",
+      "words": [
+        "TAMANU",
+        "BERTAMAN",
+        "DENTAMAN",
+        "HANTAMAN",
+        "KHATAMAN",
+        "KEHITAMAN",
+        "KINTAMANI",
+        "KELANTAMAN",
+        "PENGETAMAN",
+        "PERTAMANAN",
+        "BERDENTAMAN",
+        "KARTAMANTUL",
+        "PENGHITAMAN",
+        "PENGHANTAMAN",
+        "PENGKHATAMAN"
+      ]
+    }
+  },
+  {
+    "reason": "tema \"Tari\" hanya berisi turunan kata itu sendiri",
+    "stage": "aturan",
+    "source": "tts-tema/fallback-themes.json",
+    "item": {
+      "theme": "Tari",
+      "words": [
+        "TARI",
+        "TARIK",
+        "TARIM",
+        "TARIP",
+        "TARIS",
+        "ANTARI",
+        "BATARI",
+        "BETARI",
+        "METARI",
+        "TARIAN",
+        "TARIKH",
+        "TARING",
+        "BERTARI",
+        "BESTARI",
+        "CITARIK"
+      ]
+    }
+  },
+  {
+    "reason": "tema \"Tidur\" hanya berisi turunan kata itu sendiri",
+    "stage": "aturan",
+    "source": "tts-tema/fallback-themes.json",
+    "item": {
+      "theme": "Tidur",
+      "words": [
+        "TIDURAN",
+        "PRATIDUR",
+        "TERTIDUR",
+        "KETIDURAN",
+        "PETIDURAN",
+        "TERTIDURI",
+        "MIKROTIDUR",
+        "SEKETIDURAN"
+      ]
+    }
+  },
+  {
+    "reason": "tema \"Tiga\" hanya berisi turunan kata itu sendiri",
+    "stage": "aturan",
+    "source": "tts-tema/fallback-themes.json",
+    "item": {
+      "theme": "Tiga",
+      "words": [
+        "TIGA",
+        "TIGAS",
+        "KETIGA",
+        "TIGARI",
+        "BERTIGA",
+        "PERTIGA",
+        "LITIGASI",
+        "MITIGASI",
+        "MULTIGAS",
+        "SALATIGA",
+        "ANTIGAGAL",
+        "ANTIGALAU",
+        "ANTIGATAL",
+        "LITIGATOR",
+        "NIKTIGAMI"
+      ]
+    }
+  },
+  {
+    "reason": "tema \"Tinggi\" hanya berisi turunan kata itu sendiri",
+    "stage": "aturan",
+    "source": "tts-tema/fallback-themes.json",
+    "item": {
+      "theme": "Tinggi",
+      "words": [
+        "TINGGIR",
+        "PETINGGI",
+        "SETINGGI",
+        "SETINGGIL",
+        "TERTINGGI",
+        "KETINGGIAN",
+        "BUKITTINGGI",
+        "PEMERTINGGI",
+        "ULTRATINGGI",
+        "MEMPERTINGGI",
+        "TERTINGGIKAN"
+      ]
+    }
+  },
+  {
+    "reason": "tema \"Turun\" hanya berisi turunan kata itu sendiri",
+    "stage": "aturan",
+    "source": "tts-tema/fallback-themes.json",
+    "item": {
+      "theme": "Turun",
+      "words": [
+        "TURUN",
+        "PETURUN",
+        "TURUNAN",
+        "BERTURUN",
+        "BENTURUNG",
+        "KETURUNAN",
+        "MENTURUNG",
+        "BERKETURUNAN"
+      ]
+    }
+  },
+  {
+    "reason": "tema \"Ujian\" hanya berisi turunan kata itu sendiri",
+    "stage": "aturan",
+    "source": "tts-tema/fallback-themes.json",
+    "item": {
+      "theme": "Ujian",
+      "words": [
+        "UJIAN",
+        "PUJIAN",
+        "SUJIAN",
+        "KEPUJIAN",
+        "PEMUJIAN",
+        "PENGUJIAN",
+        "KETERUJIAN",
+        "KETERPUJIAN"
+      ]
+    }
+  },
+  {
+    "reason": "tema \"Ukir\" hanya berisi turunan kata itu sendiri",
+    "stage": "aturan",
+    "source": "tts-tema/fallback-themes.json",
+    "item": {
+      "theme": "Ukir",
+      "words": [
+        "UKIR",
+        "CUKIR",
+        "JUKIR",
+        "LUKIR",
+        "UKIRAN",
+        "BERUKIR",
+        "TERUKIR",
+        "MENGUKIR",
+        "PENGUKIR",
+        "MENGUKIRI",
+        "PENGUKIRAN",
+        "MENGUKIRKAN"
+      ]
+    }
+  },
+  {
+    "reason": "tema \"Ular\" hanya berisi turunan kata itu sendiri",
+    "stage": "aturan",
+    "source": "tts-tema/fallback-themes.json",
+    "item": {
+      "theme": "Ular",
+      "words": [
+        "BULAR",
+        "FIBULAR",
+        "MAKULAR",
+        "MENULAR",
+        "MODULAR",
+        "PENULAR",
+        "POPULAR",
+        "SELULAR",
+        "TABULAR",
+        "TUBULAR",
+        "ADULARIA",
+        "ASELULAR",
+        "GRANULAR",
+        "MENGULAR",
+        "MENULARI"
+      ]
+    }
+  },
+  {
+    "reason": "tema \"Ungu\" hanya berisi turunan kata itu sendiri",
+    "stage": "aturan",
+    "source": "tts-tema/fallback-themes.json",
+    "item": {
+      "theme": "Ungu",
+      "words": [
+        "BUNGU",
+        "DUNGU",
+        "RUNGU",
+        "TUNGU",
+        "WUNGU",
+        "CUNGUK",
+        "FUNGUS",
+        "JUNGUR",
+        "LUNGUN",
+        "PUNGUT",
+        "RUNGUS",
+        "RUNGUT",
+        "SUNGUT",
+        "SEDUNGU",
+        "BERUNGUT"
+      ]
+    }
+  }
+]

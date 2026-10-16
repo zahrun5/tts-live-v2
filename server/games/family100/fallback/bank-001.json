@@ -40,7 +40,7 @@
     ]
   },
   {
-    "question": "Sebutkan warna yang kamu ketahui",
+    "question": "Sebutkan warna",
     "answers": [
       "MERAH",
       "KUNING",
@@ -60,7 +60,7 @@
     ]
   },
   {
-    "question": "Sebutkan buah-buahan yang kamu tahu",
+    "question": "Sebutkan buah-buahan",
     "answers": [
       "APEL",
       "JERUK",
@@ -120,7 +120,7 @@
     ]
   },
   {
-    "question": "Sebutkan profesi atau pekerjaan yang kamu tahu",
+    "question": "Sebutkan profesi atau pekerjaan",
     "answers": [
       "DOKTER",
       "GURU",
@@ -140,7 +140,7 @@
     ]
   },
   {
-    "question": "Sebutkan makanan khas Indonesia yang kamu tahu",
+    "question": "Sebutkan makanan khas Indonesia",
     "answers": [
       "RENDANG",
       "SATE",
@@ -180,7 +180,7 @@
     ]
   },
   {
-    "question": "Sebutkan nama pulau di Indonesia",
+    "question": "Sebutkan pulau di Indonesia",
     "answers": [
       "JAWA",
       "SUMATERA",
@@ -200,7 +200,7 @@
     ]
   },
   {
-    "question": "Sebutkan jenis perasaan atau emosi manusia",
+    "question": "Sebutkan perasaan atau emosi manusia",
     "answers": [
       "SENANG",
       "SEDIH",
@@ -260,27 +260,7 @@
     ]
   },
   {
-    "question": "Sebutkan jenis warna",
-    "answers": [
-      "MERAH",
-      "KUNING",
-      "HIJAU",
-      "BIRU",
-      "HITAM",
-      "PUTIH",
-      "ORANYE",
-      "UNGU",
-      "COKELAT",
-      "ABU-ABU",
-      "MERAH-MUDA",
-      "EMAS",
-      "PERAK",
-      "NILA",
-      "TOSKA"
-    ]
-  },
-  {
-    "question": "Sebutkan alat pertukangan atau perkakas yang kamu tahu",
+    "question": "Sebutkan alat pertukangan atau perkakas",
     "answers": [
       "PALU",
       "GERGAJI",
@@ -320,7 +300,7 @@
     ]
   },
   {
-    "question": "Sebutkan jenis cuaca atau keadaan udara yang kamu tahu",
+    "question": "Sebutkan cuaca atau keadaan udara",
     "answers": [
       "HUJAN",
       "PANAS",
@@ -380,27 +360,7 @@
     ]
   },
   {
-    "question": "Sebutkan nama-nama warna",
-    "answers": [
-      "MERAH",
-      "BIRU",
-      "KUNING",
-      "HIJAU",
-      "HITAM",
-      "PUTIH",
-      "COKELAT",
-      "ABU-ABU",
-      "UNGU",
-      "ORANYE",
-      "PINK",
-      "EMAS",
-      "PERAK",
-      "NILA",
-      "TOSKA"
-    ]
-  },
-  {
-    "question": "Sebutkan nama negara yang ada di benua Afrika",
+    "question": "Sebutkan negara yang ada di benua Afrika",
     "answers": [
       "MESIR",
       "MADAGASKAR",
@@ -420,7 +380,7 @@
     ]
   },
   {
-    "question": "Sebutkan nama-nama alat musik",
+    "question": "Sebutkan alat musik",
     "answers": [
       "GITAR",
       "DRUM",
@@ -440,7 +400,7 @@
     ]
   },
   {
-    "question": "Sebutkan jenis atau kondisi cuaca",
+    "question": "Sebutkan atau kondisi cuaca",
     "answers": [
       "HUJAN",
       "CERAH",
@@ -460,7 +420,7 @@
     ]
   },
   {
-    "question": "Sebutkan jenis-jenis minuman",
+    "question": "Sebutkan minuman",
     "answers": [
       "AIR",
       "TEH",
@@ -480,7 +440,7 @@
     ]
   },
   {
-    "question": "Sebutkan jenis sayuran",
+    "question": "Sebutkan sayuran",
     "answers": [
       "BAYAM",
       "KANGKUNG",
@@ -560,7 +520,7 @@
     ]
   },
   {
-    "question": "Sebutkan jenis bumbu dapur",
+    "question": "Sebutkan bumbu dapur",
     "answers": [
       "GARAM",
       "GULA",
@@ -580,27 +540,7 @@
     ]
   },
   {
-    "question": "Sebutkan nama buah-buahan",
-    "answers": [
-      "PISANG",
-      "APEL",
-      "JERUK",
-      "MANGGA",
-      "SEMANGKA",
-      "PEPAYA",
-      "MELON",
-      "ANGGUR",
-      "NANAS",
-      "DURIAN",
-      "RAMBUTAN",
-      "STROBERI",
-      "SALAK",
-      "JAMBU",
-      "ALPUKAT"
-    ]
-  },
-  {
-    "question": "Sebutkan nama-nama buah",
+    "question": "Sebutkan buah",
     "answers": [
       "PISANG",
       "APEL",
@@ -680,26 +620,6 @@
     ]
   },
   {
-    "question": "Sebutkan jenis buah-buahan",
-    "answers": [
-      "PISANG",
-      "APEL",
-      "JERUK",
-      "MANGGA",
-      "SEMANGKA",
-      "MELON",
-      "ANGGUR",
-      "PEPAYA",
-      "DURIAN",
-      "RAMBUTAN",
-      "NANAS",
-      "STROBERI",
-      "ALPUKAT",
-      "SALAK",
-      "JAMBU"
-    ]
-  },
-  {
     "question": "Sebutkan bahan atau bumbu dapur yang biasa digunakan untuk memasak",
     "answers": [
       "GARAM",
@@ -740,7 +660,7 @@
     ]
   },
   {
-    "question": "Sebutkan jenis kendaraan",
+    "question": "Sebutkan kendaraan",
     "answers": [
       "MOBIL",
       "MOTOR",
@@ -760,7 +680,7 @@
     ]
   },
   {
-    "question": "Sebutkan nama-nama cabang olahraga",
+    "question": "Sebutkan cabang olahraga",
     "answers": [
       "SEPAK-BOLA",
       "BULU-TANGKIS",
@@ -780,7 +700,7 @@
     ]
   },
   {
-    "question": "Sebutkan jenis serangga",
+    "question": "Sebutkan serangga",
     "answers": [
       "NYAMUK",
       "SEMUT",
@@ -797,26 +717,6 @@
       "TAWON",
       "KUNANG-KUNANG",
       "NGENGAT"
-    ]
-  },
-  {
-    "question": "Sebutkan jenis profesi atau pekerjaan",
-    "answers": [
-      "GURU",
-      "DOKTER",
-      "POLISI",
-      "TENTARA",
-      "PILOT",
-      "PETANI",
-      "NELAYAN",
-      "PERAWAT",
-      "SOPIR",
-      "KOKI",
-      "MASINIS",
-      "PENGACARA",
-      "ARSITEK",
-      "WARTAWAN",
-      "NAKHODA"
     ]
   },
   {
@@ -840,7 +740,7 @@
     ]
   },
   {
-    "question": "Sebutkan nama gunung yang ada di Indonesia",
+    "question": "Sebutkan gunung yang ada di Indonesia",
     "answers": [
       "BROMO",
       "MERAPI",
@@ -860,47 +760,7 @@
     ]
   },
   {
-    "question": "Sebutkan jenis minuman",
-    "answers": [
-      "AIR",
-      "TEH",
-      "KOPI",
-      "SUSU",
-      "JUS",
-      "SIRUP",
-      "SODA",
-      "COKELAT",
-      "JAMU",
-      "YOGHURT",
-      "BANDREK",
-      "BAJIGUR",
-      "SEKOTENG",
-      "LIMUN",
-      "BIR"
-    ]
-  },
-  {
-    "question": "Sebutkan jenis-jenis kendaraan",
-    "answers": [
-      "MOBIL",
-      "MOTOR",
-      "SEPEDA",
-      "BUS",
-      "TRUK",
-      "KERETA",
-      "PESAWAT",
-      "KAPAL",
-      "HELIKOPTER",
-      "BECAK",
-      "BAJAJ",
-      "PERAHU",
-      "DELMAN",
-      "SKUTER",
-      "RAKIT"
-    ]
-  },
-  {
-    "question": "Sebutkan jenis-jenis burung",
+    "question": "Sebutkan burung",
     "answers": [
       "MERPATI",
       "ELANG",
@@ -917,26 +777,6 @@
       "WALET",
       "FLAMINGO",
       "PUYUH"
-    ]
-  },
-  {
-    "question": "Sebutkan jenis-jenis sayuran",
-    "answers": [
-      "BAYAM",
-      "KANGKUNG",
-      "WORTEL",
-      "KUBIS",
-      "BROKOLI",
-      "SAWI",
-      "TERONG",
-      "TOMAT",
-      "TIMUN",
-      "LABU",
-      "BUNCIS",
-      "SELADA",
-      "PARE",
-      "SELEDRI",
-      "KEMBANG-KOL"
     ]
   },
   {
@@ -960,27 +800,7 @@
     ]
   },
   {
-    "question": "Sebutkan jenis cabang olahraga yang kamu tahu",
-    "answers": [
-      "SEPAKBOLA",
-      "BULUTANGKIS",
-      "RENANG",
-      "BASKET",
-      "VOLI",
-      "LARI",
-      "TENIS",
-      "FUTSAL",
-      "TINJU",
-      "CATUR",
-      "SENAM",
-      "GOLF",
-      "PANAHAN",
-      "DAYUNG",
-      "JUDO"
-    ]
-  },
-  {
-    "question": "Sebutkan jenis buah yang memiliki rasa manis",
+    "question": "Sebutkan buah yang memiliki rasa manis",
     "answers": [
       "PISANG",
       "APEL",
@@ -1000,27 +820,7 @@
     ]
   },
   {
-    "question": "Sebutkan nama warna",
-    "answers": [
-      "MERAH",
-      "KUNING",
-      "HIJAU",
-      "BIRU",
-      "HITAM",
-      "PUTIH",
-      "ORANYE",
-      "UNGU",
-      "COKELAT",
-      "ABU-ABU",
-      "MERAH-MUDA",
-      "EMAS",
-      "PERAK",
-      "NILA",
-      "TOSKA"
-    ]
-  },
-  {
-    "question": "Sebutkan jenis-jenis cuaca atau fenomena atmosfer di bumi",
+    "question": "Sebutkan cuaca atau fenomena atmosfer di bumi",
     "answers": [
       "HUJAN",
       "PANAS",
@@ -1040,47 +840,7 @@
     ]
   },
   {
-    "question": "Sebutkan jenis-jenis warna",
-    "answers": [
-      "MERAH",
-      "KUNING",
-      "HIJAU",
-      "BIRU",
-      "HITAM",
-      "PUTIH",
-      "ORANYE",
-      "UNGU",
-      "COKELAT",
-      "ABU-ABU",
-      "MERAH-MUDA",
-      "EMAS",
-      "PERAK",
-      "NILA",
-      "TOSKA"
-    ]
-  },
-  {
-    "question": "Sebutkan jenis alat musik yang kamu ketahui",
-    "answers": [
-      "GITAR",
-      "PIANO",
-      "DRUM",
-      "BIOLA",
-      "SULING",
-      "TEROMPET",
-      "KEYBOARD",
-      "SAKSOFON",
-      "ANGKLUNG",
-      "HARPA",
-      "GAMELAN",
-      "TAMBORIN",
-      "KENDANG",
-      "UKULELE",
-      "AKORDEON"
-    ]
-  },
-  {
-    "question": "Sebutkan jenis-jenis buah berkulit tebal",
+    "question": "Sebutkan buah berkulit tebal",
     "answers": [
       "DURIAN",
       "SEMANGKA",
@@ -1120,7 +880,7 @@
     ]
   },
   {
-    "question": "Sebutkan jenis-jenis cuaca atau fenomena langit yang umum diketahui",
+    "question": "Sebutkan cuaca atau fenomena langit yang umum diketahui",
     "answers": [
       "HUJAN",
       "PANAS",
@@ -1160,7 +920,7 @@
     ]
   },
   {
-    "question": "Sebutkan nama-nama gunung di Indonesia",
+    "question": "Sebutkan gunung di Indonesia",
     "answers": [
       "MERAPI",
       "BROMO",
@@ -1220,7 +980,7 @@
     ]
   },
   {
-    "question": "Sebutkan jenis burung yang sering diketahui orang",
+    "question": "Sebutkan burung yang sering diketahui orang",
     "answers": [
       "MERPATI",
       "ELANG",
@@ -1240,7 +1000,7 @@
     ]
   },
   {
-    "question": "Sebutkan jenis-jenis cuaca atau keadaan langit yang sering terjadi",
+    "question": "Sebutkan cuaca atau keadaan langit yang sering terjadi",
     "answers": [
       "HUJAN",
       "PANAS",
@@ -1260,7 +1020,7 @@
     ]
   },
   {
-    "question": "Sebutkan nama buah yang berasa manis",
+    "question": "Sebutkan buah yang berasa manis",
     "answers": [
       "PISANG",
       "MANGGA",
@@ -1280,7 +1040,7 @@
     ]
   },
   {
-    "question": "Sebutkan jenis bahan makanan pokok berkarbohidrat yang biasa dimakan",
+    "question": "Sebutkan bahan makanan pokok berkarbohidrat yang biasa dimakan",
     "answers": [
       "BERAS",
       "NASI",
@@ -1300,7 +1060,7 @@
     ]
   },
   {
-    "question": "Sebutkan jenis burung yang sering kamu dengar atau lihat",
+    "question": "Sebutkan burung yang sering kamu dengar atau lihat",
     "answers": [
       "MERPATI",
       "GEREJA",
@@ -1320,7 +1080,7 @@
     ]
   },
   {
-    "question": "Sebutkan jenis cuaca atau fenomena cuaca yang ada di bumi",
+    "question": "Sebutkan cuaca atau fenomena cuaca yang ada di bumi",
     "answers": [
       "HUJAN",
       "PANAS",
@@ -1340,7 +1100,7 @@
     ]
   },
   {
-    "question": "Sebutkan nama buah yang berawalan huruf M",
+    "question": "Sebutkan buah yang berawalan huruf M",
     "answers": [
       "MANGGA",
       "MELON",
@@ -1380,27 +1140,7 @@
     ]
   },
   {
-    "question": "Sebutkan jenis-jenis buah-buahan",
-    "answers": [
-      "PISANG",
-      "APEL",
-      "MANGGA",
-      "JERUK",
-      "SEMANGKA",
-      "MELON",
-      "ANGGUR",
-      "PEPAYA",
-      "NANAS",
-      "DURIAN",
-      "RAMBUTAN",
-      "ALPUKAT",
-      "STROBERI",
-      "JAMBU",
-      "SALAK"
-    ]
-  },
-  {
-    "question": "Sebutkan jenis-jenis cuaca atau kondisi langit yang kamu tahu",
+    "question": "Sebutkan cuaca atau kondisi langit",
     "answers": [
       "HUJAN",
       "PANAS",
@@ -1420,7 +1160,7 @@
     ]
   },
   {
-    "question": "Sebutkan jenis-jenis buah yang banyak dijual di pasar",
+    "question": "Sebutkan buah yang banyak dijual di pasar",
     "answers": [
       "PISANG",
       "APEL",
@@ -1437,26 +1177,6 @@
       "ALPUKAT",
       "BELIMBING",
       "MANGGIS"
-    ]
-  },
-  {
-    "question": "Sebutkan cabang olahraga yang populer",
-    "answers": [
-      "SEPAKBOLA",
-      "BULUTANGKIS",
-      "BASKET",
-      "VOLI",
-      "RENANG",
-      "LARI",
-      "TENIS",
-      "TINJU",
-      "CATUR",
-      "GOLF",
-      "SENAM",
-      "FUTSAL",
-      "PANAHAN",
-      "KARATE",
-      "DAYUNG"
     ]
   },
   {
@@ -1520,7 +1240,7 @@
     ]
   },
   {
-    "question": "Sebutkan jenis cuaca atau fenomena alam di langit yang sering terlihat",
+    "question": "Sebutkan cuaca atau fenomena alam di langit yang sering terlihat",
     "answers": [
       "HUJAN",
       "PANAS",
@@ -1540,7 +1260,7 @@
     ]
   },
   {
-    "question": "Sebutkan alat masak yang umum ada",
+    "question": "Sebutkan alat masak",
     "answers": [
       "LEMARIES",
       "OVEN",
@@ -1560,7 +1280,7 @@
     ]
   },
   {
-    "question": "Sebutkan bagian rumah yang populer",
+    "question": "Sebutkan bagian rumah",
     "answers": [
       "KAMARPELAYAN",
       "GARASI",
@@ -1580,7 +1300,7 @@
     ]
   },
   {
-    "question": "Sebutkan nama-nama instrumen musik",
+    "question": "Sebutkan instrumen musik",
     "answers": [
       "GAMELAN",
       "REBAB",
@@ -1600,7 +1320,7 @@
     ]
   },
   {
-    "question": "Sebutkan jenis ruangan yang ada di Indonesia",
+    "question": "Sebutkan ruangan yang ada di Indonesia",
     "answers": [
       "KAMARTAMU",
       "GUDANG",
@@ -1640,7 +1360,7 @@
     ]
   },
   {
-    "question": "Sebutkan jenis-jenis hewan yang hidup di air",
+    "question": "Sebutkan hewan yang hidup di air",
     "answers": [
       "SIPUT",
       "BINTANGLAUT",
@@ -1680,26 +1400,6 @@
     ]
   },
   {
-    "question": "Sebutkan bagian rumah yang sering dijumpai",
-    "answers": [
-      "GARASI",
-      "KAMARTIDUR",
-      "PEMBATAS",
-      "TERAS",
-      "STUDI",
-      "ATAP",
-      "PEGANGAN",
-      "RUANGMAKAN",
-      "RUANGKERJA",
-      "JENDELA",
-      "HALAMAN",
-      "SUDUT",
-      "LOTENG",
-      "KAMARPELAYAN",
-      "DAPUR"
-    ]
-  },
-  {
     "question": "Sebutkan sayuran yang umum yang ada di Indonesia",
     "answers": [
       "KENTANG",
@@ -1720,7 +1420,7 @@
     ]
   },
   {
-    "question": "Sebutkan perlengkapan menulis yang sering kita jumpai",
+    "question": "Sebutkan perlengkapan menulis",
     "answers": [
       "BUSUR",
       "MAP",
@@ -1740,7 +1440,7 @@
     ]
   },
   {
-    "question": "Sebutkan kendaraan darat yang sering digunakan",
+    "question": "Sebutkan kendaraan darat",
     "answers": [
       "TRUK",
       "BMX",
@@ -1780,7 +1480,7 @@
     ]
   },
   {
-    "question": "Sebutkan beberapa kendaraan di jalan",
+    "question": "Sebutkan kendaraan di jalan",
     "answers": [
       "OFFROAD",
       "MOTOR",
@@ -1800,7 +1500,7 @@
     ]
   },
   {
-    "question": "Sebutkan binatang darat yang kita kenal",
+    "question": "Sebutkan binatang darat",
     "answers": [
       "ANJING",
       "DOMBA",
@@ -1820,7 +1520,7 @@
     ]
   },
   {
-    "question": "Sebutkan binatang air yang sering kita jumpai",
+    "question": "Sebutkan binatang air",
     "answers": [
       "TRENGGILING",
       "CUMI",
@@ -1840,7 +1540,7 @@
     ]
   },
   {
-    "question": "Sebutkan hewan yang terbang yang sering digunakan",
+    "question": "Sebutkan hewan yang terbang",
     "answers": [
       "JALAK",
       "BURUNG",
@@ -1860,7 +1560,7 @@
     ]
   },
   {
-    "question": "Sebutkan hewan yang biasa dipelihara yang sering digunakan",
+    "question": "Sebutkan hewan yang biasa dipelihara",
     "answers": [
       "KALAJENGKING",
       "KURA",
@@ -1880,7 +1580,7 @@
     ]
   },
   {
-    "question": "Sebutkan komponen rumah yang menarik",
+    "question": "Sebutkan komponen rumah",
     "answers": [
       "JEMURAN",
       "BALKON",
@@ -1900,7 +1600,7 @@
     ]
   },
   {
-    "question": "Sebutkan hewan darat yang populer",
+    "question": "Sebutkan hewan darat",
     "answers": [
       "KAMBING",
       "SIMPANSE",
@@ -1920,7 +1620,7 @@
     ]
   },
   {
-    "question": "Sebutkan geografi Indonesia yang kamu ketahui",
+    "question": "Sebutkan geografi Indonesia",
     "answers": [
       "PULAU",
       "BUKIT",
@@ -1940,7 +1640,7 @@
     ]
   },
   {
-    "question": "Sebutkan pekerjaan di bidang kesehatan yang sering kita jumpai",
+    "question": "Sebutkan pekerjaan di bidang kesehatan",
     "answers": [
       "PARAMEDIK",
       "DOKTER",
@@ -1960,7 +1660,7 @@
     ]
   },
   {
-    "question": "Sebutkan macam-macam sayur",
+    "question": "Sebutkan sayur",
     "answers": [
       "KACANGMERAH",
       "BAYAM",
@@ -1980,7 +1680,7 @@
     ]
   },
   {
-    "question": "Sebutkan jenis ruangan yang sering dijumpai",
+    "question": "Sebutkan ruangan",
     "answers": [
       "BALKON",
       "KAMARMANDI",

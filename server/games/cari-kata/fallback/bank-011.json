@@ -1,17 +1,5 @@
 [
   {
-    "theme": "hewan peliharaan yang modern",
-    "words": [
-      "MERPATI",
-      "KUDA",
-      "IKAN",
-      "ULAR",
-      "HAMSTER",
-      "ANJING"
-    ],
-    "level": 2
-  },
-  {
     "theme": "jenis hewan reptil yang khas",
     "words": [
       "BUNGKLON",
@@ -120,19 +108,6 @@
       "JARI"
     ],
     "level": 3
-  },
-  {
-    "theme": "contoh hewan langka yang spesifik",
-    "words": [
-      "BANTENG",
-      "BERUANG",
-      "RUSA",
-      "MACAN",
-      "KANCIL",
-      "KUKANG",
-      "GAJAH"
-    ],
-    "level": 1
   },
   {
     "theme": "contoh hewan serangga yang lengkap",
@@ -356,19 +331,6 @@
       "BECAK"
     ],
     "level": 1
-  },
-  {
-    "theme": "hewan air yang khas",
-    "words": [
-      "PAUS",
-      "KERANG",
-      "UDANG",
-      "BIASA",
-      "KEPITING",
-      "GURITA",
-      "HIU"
-    ],
-    "level": 2
   },
   {
     "theme": "contoh peralatan dapur yang spesifik",
@@ -803,17 +765,6 @@
     "level": 1
   },
   {
-    "theme": "jenis hewan air yang indah",
-    "words": [
-      "PENYU",
-      "KEPITING",
-      "UDANG",
-      "PAUS",
-      "BIASA"
-    ],
-    "level": 3
-  },
-  {
     "theme": "minuman yang lengkap",
     "words": [
       "LIMUN",
@@ -864,18 +815,6 @@
     "level": 1
   },
   {
-    "theme": "hewan air yang tradisional",
-    "words": [
-      "GURITA",
-      "UDANG",
-      "KEPITING",
-      "BIASA",
-      "SIPUT",
-      "PENYU"
-    ],
-    "level": 3
-  },
-  {
     "theme": "contoh bagian tubuh yang indah",
     "words": [
       "MATA",
@@ -919,18 +858,6 @@
       "TENTARA"
     ],
     "level": 1
-  },
-  {
-    "theme": "jenis hewan peliharaan yang alami",
-    "words": [
-      "KUCING",
-      "ULAR",
-      "BURUNG",
-      "BEBEK",
-      "KUDA",
-      "MERPATI"
-    ],
-    "level": 2
   },
   {
     "theme": "contoh lagu daerah yang khas",

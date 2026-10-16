@@ -139,7 +139,6 @@
     "word": "ANAK",
     "answers": [
       "ANA",
-      "ANAK",
       "ANEUK",
       "BOCAH",
       "BUDAK",
@@ -361,7 +360,6 @@
   {
     "word": "AYAM",
     "answers": [
-      "AYAM",
       "HAYAM",
       "PITIK"
     ]
@@ -502,7 +500,6 @@
     "word": "BANGUN",
     "answers": [
       "BANGKIT",
-      "BANGUN",
       "BONGKAR",
       "GUGAH",
       "HUDANG",
@@ -518,7 +515,6 @@
       "AYAH",
       "BABE",
       "BAPA",
-      "BAPAK",
       "BÂPÂ",
       "PAPA",
       "RAMA"
@@ -582,7 +578,6 @@
     "word": "BENCI",
     "answers": [
       "BANCI",
-      "BENCI",
       "BEUËNGEH",
       "BÂNCI",
       "PARANI",
@@ -624,7 +619,6 @@
     "answers": [
       "ABOT",
       "BARAIK",
-      "BERAT",
       "BEURAT"
     ]
   },
@@ -638,7 +632,6 @@
   {
     "word": "BERDIRI",
     "answers": [
-      "BERDIRI",
       "JEJEG",
       "JONGJON",
       "NANGTUNG",
@@ -914,7 +907,6 @@
   {
     "word": "BIBI",
     "answers": [
-      "BIBI",
       "BUDHE",
       "CÈËT",
       "NANTULANG",
@@ -1038,7 +1030,6 @@
       "BELOG",
       "BODHO",
       "BODO",
-      "BODOH",
       "BOEDEUËH",
       "BÂDHÂNGÂN"
     ]
@@ -1053,7 +1044,6 @@
   {
     "word": "BUAH",
     "answers": [
-      "BUAH",
       "WOHWOHAN"
     ]
   },
@@ -1061,7 +1051,6 @@
     "word": "BUKA",
     "answers": [
       "BONGKAR",
-      "BUKA",
       "BUKE",
       "MAMBUKAK",
       "MBUKAK",
@@ -1071,7 +1060,6 @@
   {
     "word": "BULAN",
     "answers": [
-      "BULAN",
       "LUNAR",
       "PURNAMA",
       "REMBULAN",
@@ -1137,8 +1125,7 @@
   {
     "word": "CAMPUR",
     "answers": [
-      "ADUK",
-      "CAMPUR"
+      "ADUK"
     ]
   },
   {
@@ -1146,7 +1133,6 @@
     "answers": [
       "AYU",
       "BAGUS",
-      "CANTIK",
       "GANJIL",
       "GEULIS",
       "JEGEG",
@@ -1230,7 +1216,6 @@
   {
     "word": "DADA",
     "answers": [
-      "DADA",
       "DADO",
       "DHADHA",
       "JAJA"
@@ -1263,7 +1248,6 @@
   {
     "word": "DATANG",
     "answers": [
-      "DATANG",
       "DATENG",
       "HADIR",
       "JAK",
@@ -1302,7 +1286,6 @@
       "ADEM",
       "ADHEM",
       "BEKU",
-      "DINGIN",
       "SAJUAK",
       "SEJUK",
       "TIIS"
@@ -1311,7 +1294,6 @@
   {
     "word": "DUA",
     "answers": [
-      "DUA",
       "DUO",
       "KALIH",
       "LORO"
@@ -1329,7 +1311,6 @@
     "answers": [
       "DIUK",
       "DUDUAK",
-      "DUDUK",
       "DUÉK",
       "LINGGIH",
       "LUNGGUH",
@@ -1429,7 +1410,6 @@
       "BAGUS",
       "BUJUR",
       "GAGAH",
-      "GANTENG",
       "KASEP",
       "LAGÈË",
       "MARANNU",
@@ -1448,7 +1428,6 @@
   {
     "word": "GARAM",
     "answers": [
-      "GARAM",
       "SIRA",
       "UYAH"
     ]
@@ -1508,7 +1487,6 @@
     "word": "GIGI",
     "answers": [
       "GHIGHI",
-      "GIGI",
       "GIGIH",
       "GIGÖË",
       "HUNTU",
@@ -1535,7 +1513,6 @@
     "word": "GULA",
     "answers": [
       "GENDHIS",
-      "GULA",
       "GULO"
     ]
   },
@@ -1567,8 +1544,7 @@
     "word": "HARI",
     "answers": [
       "DINA",
-      "DINTEN",
-      "HARI"
+      "DINTEN"
     ]
   },
   {
@@ -1577,7 +1553,6 @@
       "ATI",
       "ATÈ",
       "ATÉË",
-      "HATI",
       "HATÉ",
       "KENEH",
       "ROHA"
@@ -1609,7 +1584,6 @@
     "word": "HIDUNG",
     "answers": [
       "CUNGUH",
-      "HIDUNG",
       "IDUANG",
       "IDUNG",
       "IGUNG",
@@ -1656,7 +1630,6 @@
       "AMAK",
       "BUNDA",
       "EMAK",
-      "IBU",
       "INANG",
       "INDO",
       "INDUNG",
@@ -1671,7 +1644,6 @@
   {
     "word": "IKAN",
     "answers": [
-      "IKAN",
       "IWAK",
       "LAUK",
       "ULAM"
@@ -1716,7 +1688,6 @@
     "word": "ISTIRAHAT",
     "answers": [
       "BAGORAK",
-      "ISTIRAHAT",
       "LEREN",
       "NGASO"
     ]
@@ -1745,7 +1716,6 @@
     "answers": [
       "ALA",
       "GORENG",
-      "JAHAT",
       "JAPPA",
       "KOTOR",
       "ZÂLÂM"
@@ -1754,7 +1724,6 @@
   {
     "word": "JALAN",
     "answers": [
-      "JALAN",
       "JALUR",
       "LAMPAH",
       "LINTASAN",
@@ -1776,7 +1745,6 @@
     "word": "JARI",
     "answers": [
       "DRIJI",
-      "JARI",
       "RAMO",
       "RAOS"
     ]
@@ -1811,7 +1779,6 @@
       "ELEK",
       "GORENG",
       "JANGGA",
-      "JELEK",
       "JEUËT",
       "JOROK",
       "JÂLÂ"
@@ -1845,7 +1812,6 @@
       "BELI",
       "ENCING",
       "KAKA",
-      "KAKAK",
       "KANGMAS",
       "MBAKYU",
       "TULANG",
@@ -1863,7 +1829,6 @@
       "EYANG",
       "INYIAK",
       "KAI",
-      "KAKEK",
       "KAKÈ",
       "MBAH",
       "MBAH KAKUNG",
@@ -1878,7 +1843,6 @@
       "ADDENG",
       "BATIS",
       "HAE",
-      "KAKI",
       "KRUËNG",
       "SAMPEAN",
       "SAPPA",
@@ -1940,7 +1904,6 @@
       "CILIK",
       "KACIAK",
       "KCIL",
-      "KECIL",
       "KETEK",
       "KÈNI",
       "MIKRO",
@@ -1994,7 +1957,6 @@
       "ENDHAS",
       "HULU",
       "KAPALO",
-      "KEPALA",
       "SIRAH",
       "TANDO",
       "ULU",
@@ -2014,7 +1976,6 @@
     "answers": [
       "ATOS",
       "KAREH",
-      "KERAS",
       "TEGAS"
     ]
   },
@@ -2053,7 +2014,6 @@
     "word": "KOPI",
     "answers": [
       "KAWA",
-      "KOPI",
       "WARUNG"
     ]
   },
@@ -2098,8 +2058,7 @@
       "KODDE",
       "KORO",
       "KUCIANG",
-      "KURU",
-      "KURUS"
+      "KURU"
     ]
   },
   {
@@ -2142,7 +2101,6 @@
     "word": "LARI",
     "answers": [
       "KABUR",
-      "LARI",
       "LAUT",
       "LEUMPANG",
       "LUMBA",
@@ -2168,7 +2126,6 @@
       "AMBA",
       "JEBRAG",
       "LEBA",
-      "LEBAR",
       "TANGAR",
       "WERA",
       "WIYAR"
@@ -2245,7 +2202,6 @@
     "answers": [
       "BASA",
       "ILAT",
-      "LIDAH",
       "LISAN"
     ]
   },
@@ -2280,8 +2236,7 @@
   {
     "word": "LUTUT",
     "answers": [
-      "DENGKUL",
-      "LUTUT"
+      "DENGKUL"
     ]
   },
   {
@@ -2297,7 +2252,6 @@
     "word": "MAJU",
     "answers": [
       "BERKEMBANG",
-      "MAJU",
       "PROGRESS"
     ]
   },
@@ -2306,7 +2260,6 @@
     "answers": [
       "DAHAR",
       "KANDE",
-      "MAKAN",
       "MANGAN",
       "NAAR",
       "NGAKAN",
@@ -2327,7 +2280,6 @@
     "answers": [
       "BENGI",
       "DALU",
-      "MALAM",
       "MALEM"
     ]
   },
@@ -2336,7 +2288,6 @@
     "answers": [
       "BONTOR",
       "CALIAK",
-      "MALAS",
       "MALES",
       "MALEUËM",
       "MELAH",
@@ -2365,7 +2316,6 @@
       "GUSAR",
       "MALARA",
       "MANGIK",
-      "MARAH",
       "MURKA",
       "NESU",
       "PASUAM"
@@ -2375,7 +2325,6 @@
     "word": "MASAK",
     "answers": [
       "MAMASAK",
-      "MASAK",
       "NGASAK",
       "NGOLAH"
     ]
@@ -2391,7 +2340,6 @@
     "word": "MATA",
     "answers": [
       "MADA",
-      "MATA",
       "MATO",
       "MATÈË",
       "MRIPAT",
@@ -2492,8 +2440,7 @@
     "word": "MINGGU",
     "answers": [
       "AHAD",
-      "KLIWON",
-      "MINGGU"
+      "KLIWON"
     ]
   },
   {
@@ -2503,7 +2450,6 @@
       "INUM",
       "INÔM",
       "MAINUM",
-      "MINUM",
       "MINUN",
       "NGENOM",
       "NGINUM",
@@ -2522,7 +2468,6 @@
     "word": "MUAT",
     "answers": [
       "ISI",
-      "MUAT",
       "SIMPAN"
     ]
   },
@@ -2532,7 +2477,6 @@
       "BELIA",
       "BOBORU",
       "ENOM",
-      "MUDA",
       "REMAJA"
     ]
   },
@@ -2559,7 +2503,6 @@
       "MEULUËT",
       "MOLO",
       "MULUIK",
-      "MULUT",
       "MUNCUANG",
       "MÉNGNGO",
       "SUNGUT",
@@ -2576,7 +2519,6 @@
   {
     "word": "NASI",
     "answers": [
-      "NASI",
       "SANGU",
       "SEGA",
       "SEKUL"
@@ -2594,7 +2536,6 @@
       "INYIAK",
       "MBAH",
       "MBAH PUTRI",
-      "NENEK",
       "NINI",
       "NÈNÈ",
       "OMA",
@@ -2624,7 +2565,6 @@
     "answers": [
       "ENJING",
       "ESUK",
-      "PAGI",
       "PAGIAH"
     ]
   },
@@ -2635,7 +2575,6 @@
       "MAMAK",
       "OM",
       "PAKDHE",
-      "PAMAN",
       "PUANG",
       "TULANG"
     ]
@@ -2648,7 +2587,6 @@
       "BENTER",
       "GERAH",
       "HANGAT",
-      "PANAS",
       "TERIK"
     ]
   },
@@ -2658,7 +2596,6 @@
       "DAWA",
       "GEPA",
       "JANGJANG",
-      "PANJANG",
       "RANGA"
     ]
   },
@@ -2740,7 +2677,6 @@
       "CENDHEK",
       "KEUTÔË",
       "KODDE",
-      "PENDEK",
       "PODEK",
       "PONDOK",
       "PÈNDHÂ",
@@ -2857,7 +2793,6 @@
       "LUNGO",
       "NYIT",
       "PEGI",
-      "PERGI",
       "SIUH"
     ]
   },
@@ -2999,7 +2934,6 @@
       "PANDAI",
       "PATTAR",
       "PEUNEUGAH",
-      "PINTAR",
       "PINTER"
     ]
   },
@@ -3015,8 +2949,7 @@
     "answers": [
       "BUNGKIL",
       "CAU",
-      "GEDANG",
-      "PISANG"
+      "GEDANG"
     ]
   },
   {
@@ -3048,7 +2981,6 @@
       "MULANG",
       "MULIH",
       "POLE",
-      "PULANG",
       "WATÈË"
     ]
   },
@@ -3090,7 +3022,6 @@
       "GETOL",
       "GIAT",
       "GIGIH",
-      "RAJIN",
       "RESO",
       "SEKED",
       "SREGEP",
@@ -3125,7 +3056,6 @@
       "BUËK",
       "RAMBOT",
       "RAMBUIK",
-      "RAMBUT",
       "RIKMA"
     ]
   },
@@ -3156,8 +3086,7 @@
     "answers": [
       "ENDHEK",
       "HANDAP",
-      "RANDAH",
-      "RENDAH"
+      "RANDAH"
     ]
   },
   {
@@ -3167,7 +3096,6 @@
       "ENTHENG",
       "HAMPANG",
       "MUDAH",
-      "RINGAN",
       "SEDERHANA"
     ]
   },
@@ -3301,7 +3229,6 @@
       "HOLONG",
       "MAENNAI",
       "NYAAH",
-      "SAYANG",
       "TRESNA"
     ]
   },
@@ -3310,8 +3237,7 @@
     "answers": [
       "JANGAN",
       "LALAP",
-      "SAYUA",
-      "SAYUR"
+      "SAYUA"
     ]
   },
   {
@@ -3324,7 +3250,6 @@
       "PILU",
       "SADIAH",
       "SEDHIH",
-      "SEDIH",
       "SENDU",
       "SUSA",
       "SUSAH",
@@ -3365,7 +3290,6 @@
     "answers": [
       "CIUT",
       "HEPIT",
-      "SEMPIT",
       "SIKIK"
     ]
   },
@@ -3436,7 +3360,6 @@
     "word": "SIANG",
     "answers": [
       "AWAN",
-      "SIANG",
       "SIYANG"
     ]
   },
@@ -3453,7 +3376,6 @@
     "word": "SORE",
     "answers": [
       "SONTEN",
-      "SORE",
       "SOREE"
     ]
   },
@@ -3548,7 +3470,6 @@
       "SIEUN",
       "TAKOD",
       "TAKUIK",
-      "TAKUT",
       "WEDI"
     ]
   },
@@ -3567,7 +3488,6 @@
       "BULÉË",
       "LEUNGEUN",
       "LIMA",
-      "TANGAN",
       "TANGÂN"
     ]
   },
@@ -3733,7 +3653,6 @@
     "word": "TIGA",
     "answers": [
       "TELU",
-      "TIGA",
       "TIGO",
       "TILU"
     ]
@@ -3752,7 +3671,6 @@
       "TEGEH",
       "TENGGI",
       "TIGI",
-      "TINGGI",
       "TUNGGÉN"
     ]
   },
@@ -3763,8 +3681,7 @@
       "IPIS",
       "NIPIS",
       "RANYED",
-      "TIPIA",
-      "TIPIS"
+      "TIPIA"
     ]
   },
   {

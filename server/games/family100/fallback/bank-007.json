@@ -1,105 +1,5 @@
 [
   {
-    "question": "Sebutkan peralatan dapur yang umum",
-    "answers": [
-      "OVEN",
-      "PANCI",
-      "SENDOK",
-      "BLENDER",
-      "JUICER",
-      "PISAU",
-      "RICECOOKER",
-      "SUTIL",
-      "SERBET",
-      "ULEKAN",
-      "PIRING",
-      "GELAS",
-      "FREEZER",
-      "KULKAS",
-      "GARPU"
-    ]
-  },
-  {
-    "question": "Sebutkan alat tulis yang sering digunakan",
-    "answers": [
-      "PENAHAN",
-      "PENGGARIS",
-      "JANGKA",
-      "KERTAS",
-      "PENGOKOT",
-      "PENGHAPUS",
-      "BUSUR",
-      "STAPLER",
-      "AMPLOP",
-      "KAMUS",
-      "TINTA",
-      "PAPERCLIP",
-      "BUKU",
-      "MAP",
-      "STEMPEL"
-    ]
-  },
-  {
-    "question": "Sebutkan contoh bentang alam",
-    "answers": [
-      "JALAN",
-      "NEGARA",
-      "SUNGAI",
-      "PULAU",
-      "TANAH",
-      "DUSUN",
-      "TINGGI",
-      "PROVINSI",
-      "KECAMATAN",
-      "DESA",
-      "GUNUNG",
-      "KOTA",
-      "BENUA",
-      "PANTAI",
-      "GANG"
-    ]
-  },
-  {
-    "question": "Sebutkan peralatan kantor yang kamu ketahui",
-    "answers": [
-      "KOMPUTER",
-      "MOUSE",
-      "KAMERA",
-      "HEADSET",
-      "SCANNER",
-      "SPEAKER",
-      "MESINFAX",
-      "PAPAN",
-      "MESINKETIK",
-      "RAK",
-      "MEJA",
-      "KEYBOARD",
-      "WEBCAM",
-      "KALKULATOR",
-      "PRINTER"
-    ]
-  },
-  {
-    "question": "Sebutkan beberapa pekerjaan di bidang teknik",
-    "answers": [
-      "VIDEOGRAFER",
-      "MONTIR",
-      "PENATARIAS",
-      "PENASIHAT",
-      "PROGRAMMER",
-      "TEKNISI",
-      "FOTOGRAFER",
-      "SUTRADARA",
-      "PILOT",
-      "PEGAWAI",
-      "MEKANIK",
-      "PEJABAT",
-      "PENCIPTA",
-      "PEMIMPIN",
-      "PENATADRAMA"
-    ]
-  },
-  {
     "question": "Sebutkan alat musik yang ada",
     "answers": [
       "DEMUNG",
@@ -117,46 +17,6 @@
       "GENDANG",
       "KENDANG",
       "SULING"
-    ]
-  },
-  {
-    "question": "Sebutkan nama-nama anggota badan",
-    "answers": [
-      "PINGGUL",
-      "JARI",
-      "ALIS",
-      "MATA",
-      "HATI",
-      "LIDAH",
-      "BAHU",
-      "PAHA",
-      "KULIT",
-      "SIFU",
-      "LUTUT",
-      "KUKU",
-      "PARU",
-      "LIMPA",
-      "KEPALA"
-    ]
-  },
-  {
-    "question": "Sebutkan jenis pakaian yang terkenal",
-    "answers": [
-      "BAJU",
-      "SARUNG",
-      "CELANA",
-      "KAOS",
-      "TOPI",
-      "KACAMATA",
-      "JILBAB",
-      "SEPATU",
-      "SELENDANG",
-      "JAKET",
-      "HIJAB",
-      "TAS",
-      "SARUNGTANGAN",
-      "PAYUNG",
-      "KEMEJA"
     ]
   },
   {
@@ -180,86 +40,6 @@
     ]
   },
   {
-    "question": "Sebutkan contoh masakan Indonesia",
-    "answers": [
-      "OPOR",
-      "REBUS",
-      "PANCONG",
-      "BAKSO",
-      "GUDEG",
-      "MARTABAK",
-      "NASIGORENG",
-      "OPAK",
-      "TAHU",
-      "KUAH",
-      "AYAMGORENG",
-      "TUMIS",
-      "SAMBAL",
-      "MIREBUS",
-      "MIEAYAM"
-    ]
-  },
-  {
-    "question": "Sebutkan fenomena alam yang biasa",
-    "answers": [
-      "ARUS",
-      "CERAH",
-      "KABUT",
-      "KILAT",
-      "ANGINBADAI",
-      "TSUNAMI",
-      "PETIR",
-      "MENDUNG",
-      "HALILINTAR",
-      "TANAH",
-      "HUJAN",
-      "GELOMBANG",
-      "BERAWAN",
-      "SALJU",
-      "GEMPA"
-    ]
-  },
-  {
-    "question": "Sebutkan anggota badan yang biasa",
-    "answers": [
-      "RAMBUT",
-      "TELINGA",
-      "PERUT",
-      "DAHI",
-      "HIDUNG",
-      "PANTAT",
-      "PIPI",
-      "JARI",
-      "SIFU",
-      "LIDAH",
-      "LEHER",
-      "TANGAN",
-      "PINGGANG",
-      "BETIS",
-      "PAHA"
-    ]
-  },
-  {
-    "question": "Sebutkan makanan luar negeri yang kita kenal",
-    "answers": [
-      "YOGURT",
-      "NASIPADANG",
-      "KONRO",
-      "PERKEDEL",
-      "TEMPEGORENG",
-      "KERUPUK",
-      "NASIKUNING",
-      "TAHUGORENG",
-      "HOTDOG",
-      "PIZZA",
-      "BURGER",
-      "SUP",
-      "SANDWICH",
-      "KEJU",
-      "SPAGETI"
-    ]
-  },
-  {
     "question": "Sebutkan peralatan musik yang penting",
     "answers": [
       "GONG",
@@ -280,127 +60,7 @@
     ]
   },
   {
-    "question": "Sebutkan jenis pakaian yang kita kenal",
-    "answers": [
-      "KUPLUK",
-      "DASI",
-      "SANDAL",
-      "DOMPET",
-      "KACAMATA",
-      "JAM",
-      "JAS",
-      "PAYUNG",
-      "SARUNGTANGAN",
-      "CELANA",
-      "KAOSKAKI",
-      "HIJAB",
-      "TAS",
-      "SARUNG",
-      "KAOS"
-    ]
-  },
-  {
-    "question": "Sebutkan hewan yang terbang yang umum dikenal",
-    "answers": [
-      "KASUARI",
-      "BURUNG",
-      "BEBEK",
-      "HANTU",
-      "KALUNG",
-      "AYAM",
-      "KAKAKTUA",
-      "CIBLEK",
-      "CENDERAWASIH",
-      "GELATIK",
-      "ELANG",
-      "MERPATI",
-      "GOLDAH",
-      "EMPU",
-      "JALAK"
-    ]
-  },
-  {
-    "question": "Sebutkan contoh jenis olahraga",
-    "answers": [
-      "ZUMBA",
-      "SENAM",
-      "PENCAKSILAT",
-      "GOLF",
-      "PANAHAN",
-      "RENANG",
-      "FITNES",
-      "VOLI",
-      "CATUR",
-      "BELADIRI",
-      "BASKET",
-      "TINGGI",
-      "FUTSAL",
-      "KARATE",
-      "DAYUNG"
-    ]
-  },
-  {
-    "question": "Sebutkan tempat umum yang terkenal",
-    "answers": [
-      "BIOSKOP",
-      "MUSEUM",
-      "STADIUM",
-      "KANTIN",
-      "GALERI",
-      "HALTE",
-      "TAMAN",
-      "TOKO",
-      "PASAR",
-      "TERMINAL",
-      "PELABUHAN",
-      "SANGGAR",
-      "PURAPURA",
-      "KOLAMRENANG",
-      "TEATER"
-    ]
-  },
-  {
-    "question": "Sebutkan tempat umum yang sering dipakai",
-    "answers": [
-      "RUMAHSAKIT",
-      "KOLAMRENANG",
-      "BANDARA",
-      "GEREJA",
-      "HALTE",
-      "STADIUM",
-      "TEATER",
-      "MUSEUM",
-      "PURAPURA",
-      "KANTIN",
-      "TAMAN",
-      "TERMINAL",
-      "STASIUN",
-      "TOKO",
-      "GOR"
-    ]
-  },
-  {
-    "question": "Sebutkan jenis-jenis tenaga kesehatan",
-    "answers": [
-      "PERAWAT",
-      "DOKTERBEDAH",
-      "DOKTERUMUM",
-      "AUDIOLOGIS",
-      "AHLI",
-      "DOKTERHEWAN",
-      "DOKTERMATA",
-      "PARAMEDIK",
-      "DOKTERANAK",
-      "DOKTERTHT",
-      "DOKTERKULIT",
-      "DOKTER",
-      "KONSULTAN",
-      "DOKTERSARA",
-      "BIDAN"
-    ]
-  },
-  {
-    "question": "Pekerjaan yang umum di Indonesia",
+    "question": "Sebutkan pekerjaan yang umum di Indonesia",
     "answers": [
       "PEDAGANG",
       "HUKUM",
@@ -420,7 +80,7 @@
     ]
   },
   {
-    "question": "Profesi yang banyak dijumpai",
+    "question": "Sebutkan profesi",
     "answers": [
       "POLISI",
       "AKUNTAN",
@@ -439,26 +99,7 @@
     ]
   },
   {
-    "question": "Alat masak yang sering digunakan",
-    "answers": [
-      "MANGKUK",
-      "PISAU",
-      "PANCI",
-      "WOK",
-      "AYAKAN",
-      "GARPU",
-      "CANGKIR",
-      "GELAS",
-      "KOMPOR",
-      "COBEK",
-      "KUALI",
-      "PENGGORENGAN",
-      "PARUT",
-      "PRGOG"
-    ]
-  },
-  {
-    "question": "Macam-macam alat dapur",
+    "question": "Sebutkan alat dapur",
     "answers": [
       "SENDOK",
       "CANGKIR",
@@ -477,7 +118,7 @@
     ]
   },
   {
-    "question": "Hewan kecil yang sering dijumpai",
+    "question": "Sebutkan hewan kecil",
     "answers": [
       "KUPU-KUPU",
       "KUTU BUSUK",
@@ -510,21 +151,7 @@
     ]
   },
   {
-    "question": "Macam-macam alat tulis",
-    "answers": [
-      "KERTAS",
-      "KERTAS HVS",
-      "PENSIL WARNA",
-      "PENSIL",
-      "PEN",
-      "PENGGARIS",
-      "STAPLER",
-      "PENGHAPUS",
-      "PULPEN"
-    ]
-  },
-  {
-    "question": "Alat tulis untuk sekolah",
+    "question": "Sebutkan alat tulis untuk sekolah",
     "answers": [
       "BUKU",
       "PERFORATOR",
@@ -542,38 +169,7 @@
     ]
   },
   {
-    "question": "Sebutkan nama mata uang",
-    "answers": [
-      "GULDEN",
-      "PESO",
-      "KRONA",
-      "RINGGIT",
-      "RUPIAH",
-      "DIRHAM",
-      "TAKA",
-      "DINAR",
-      "FRANC",
-      "MARK",
-      "RUPIE",
-      "BAHT",
-      "DOLLAR"
-    ]
-  },
-  {
-    "question": "Macam-macam mata uang",
-    "answers": [
-      "MARK",
-      "DIRHAM",
-      "TAKA",
-      "DINAR",
-      "POUND",
-      "BAHT",
-      "YEN",
-      "GULDEN"
-    ]
-  },
-  {
-    "question": "Mata uang yang umum",
+    "question": "Sebutkan mata uang",
     "answers": [
       "POUND",
       "WON",
@@ -593,7 +189,7 @@
     ]
   },
   {
-    "question": "Mata uang berbagai negara",
+    "question": "Sebutkan mata uang berbagai negara",
     "answers": [
       "YEN",
       "YUAN",
@@ -610,7 +206,7 @@
     ]
   },
   {
-    "question": "Benda sehari-hari di kantor",
+    "question": "Sebutkan benda sehari-hari di kantor",
     "answers": [
       "BOLPOIN",
       "PENSIL",
@@ -625,7 +221,7 @@
     ]
   },
   {
-    "question": "Macam-macam alat kantor",
+    "question": "Sebutkan alat kantor",
     "answers": [
       "BOLPOIN",
       "KLIP",
@@ -656,7 +252,7 @@
     ]
   },
   {
-    "question": "Peralatan rumah tangga",
+    "question": "Sebutkan peralatan rumah tangga",
     "answers": [
       "SAPU",
       "JENDELA",
@@ -676,7 +272,7 @@
     ]
   },
   {
-    "question": "Benda sehari-hari di rumah",
+    "question": "Sebutkan benda sehari-hari di rumah",
     "answers": [
       "SAPU",
       "LEMARI",
@@ -695,7 +291,7 @@
     ]
   },
   {
-    "question": "Macam-macam perabot rumah",
+    "question": "Sebutkan perabot rumah",
     "answers": [
       "GULING",
       "KASUR",
@@ -711,7 +307,7 @@
     ]
   },
   {
-    "question": "Minuman yang sering diminum",
+    "question": "Sebutkan minuman yang sering diminum",
     "answers": [
       "LIMUN",
       "SUSU",
@@ -724,7 +320,7 @@
     ]
   },
   {
-    "question": "Macam-macam kondisi cuaca",
+    "question": "Sebutkan kondisi cuaca",
     "answers": [
       "DINGIN",
       "KILAT",
@@ -742,23 +338,7 @@
     ]
   },
   {
-    "question": "Sebutkan jenis rasa makanan",
-    "answers": [
-      "RASA GURIH",
-      "RASA ASAM",
-      "PAHIT",
-      "ASIN",
-      "MANIS",
-      "RASA BUAH",
-      "GURIH",
-      "RASA DAGING",
-      "HAMPIR",
-      "RASA IKAN",
-      "PEDAS"
-    ]
-  },
-  {
-    "question": "Macam-macam cita rasa",
+    "question": "Sebutkan cita rasa",
     "answers": [
       "ASAM",
       "RASA BUAH",
@@ -771,7 +351,7 @@
     ]
   },
   {
-    "question": "Rasa yang umum pada makanan",
+    "question": "Sebutkan rasa yang umum pada makanan",
     "answers": [
       "RASA IKAN",
       "RASA BUAH",
@@ -784,7 +364,7 @@
     ]
   },
   {
-    "question": "Rasa makanan yang sering dijumpai",
+    "question": "Sebutkan rasa makanan",
     "answers": [
       "ASAM",
       "RASA ASIN",
@@ -803,38 +383,7 @@
     ]
   },
   {
-    "question": "Macam-macam alat musik",
-    "answers": [
-      "KENDANG",
-      "TAMBORIN",
-      "SERULING",
-      "BIOLA",
-      "FLUTE",
-      "REBAB",
-      "BONANG",
-      "MANDOLIN",
-      "PIANO",
-      "SULING"
-    ]
-  },
-  {
-    "question": "Alat musik yang umum",
-    "answers": [
-      "HARPA",
-      "MANDOLIN",
-      "REBAB",
-      "ANGKLUNG",
-      "TRUMPET",
-      "FLUTE",
-      "GITAR",
-      "SAXOFON",
-      "KENDANG",
-      "BONANG",
-      "DRUM"
-    ]
-  },
-  {
-    "question": "Alat musik tradisional dan modern",
+    "question": "Sebutkan alat musik tradisional dan modern",
     "answers": [
       "HARPA",
       "TRUMPET",
@@ -868,7 +417,7 @@
     ]
   },
   {
-    "question": "Hewan yang dilindungi di Indonesia",
+    "question": "Sebutkan hewan yang dilindungi di Indonesia",
     "answers": [
       "ELANG JAWA",
       "KUKANG",
@@ -885,7 +434,7 @@
     ]
   },
   {
-    "question": "Macam-macam satwa langka",
+    "question": "Sebutkan satwa langka",
     "answers": [
       "JALAK BALI",
       "BERUANG",
@@ -900,7 +449,7 @@
     ]
   },
   {
-    "question": "Hewan terancam punah",
+    "question": "Sebutkan hewan terancam punah",
     "answers": [
       "CENDRAWASIH",
       "GAJAH SUMATERA",
@@ -914,20 +463,7 @@
     ]
   },
   {
-    "question": "Sebutkan bentuk geometri",
-    "answers": [
-      "PERSEGI",
-      "SPIRAL",
-      "SEGI TUJUH",
-      "BELAH KETUPAT",
-      "KOTAK",
-      "SEGI LIMA",
-      "BINTANG",
-      "PANAH"
-    ]
-  },
-  {
-    "question": "Macam-macam bentuk dasar",
+    "question": "Sebutkan bentuk dasar",
     "answers": [
       "OVAL",
       "KERUCUT",
@@ -943,7 +479,7 @@
     ]
   },
   {
-    "question": "Bentuk yang sering dijumpai",
+    "question": "Sebutkan bentuk",
     "answers": [
       "HATI",
       "KOTAK",
@@ -959,7 +495,7 @@
     ]
   },
   {
-    "question": "Bentuk-bentuk geometris",
+    "question": "Sebutkan bentuk-bentuk geometris",
     "answers": [
       "SPIRAL",
       "JAJAR GENJANG",
@@ -979,23 +515,7 @@
     ]
   },
   {
-    "question": "Sebutkan hewan mamalia yang kamu tahu",
-    "answers": [
-      "GAJAH",
-      "KAMBING",
-      "GORILA",
-      "SAPI",
-      "SINGA",
-      "RUSAK",
-      "BERUANG",
-      "MONYET",
-      "TIKUS",
-      "KUCING",
-      "KELINCI"
-    ]
-  },
-  {
-    "question": "Hewan mamalia apa yang kamu ketahui",
+    "question": "Sebutkan hewan mamalia apa",
     "answers": [
       "DOMBA",
       "BERUANG",
@@ -1013,7 +533,7 @@
     ]
   },
   {
-    "question": "Macam-macam mamalia",
+    "question": "Sebutkan mamalia",
     "answers": [
       "GORILA",
       "RUSAK",
@@ -1031,7 +551,7 @@
     ]
   },
   {
-    "question": "Hewan menyusui yang umum",
+    "question": "Sebutkan hewan menyusui",
     "answers": [
       "KERA",
       "TIKUS",
@@ -1045,7 +565,7 @@
     ]
   },
   {
-    "question": "Burung yang umum di Indonesia",
+    "question": "Sebutkan burung yang umum di Indonesia",
     "answers": [
       "GELATIK",
       "NURI",
@@ -1065,38 +585,7 @@
     ]
   },
   {
-    "question": "Macam-macam burung",
-    "answers": [
-      "BURUNG",
-      "ANGSA",
-      "KASUARI",
-      "PERKUTUT",
-      "MERPATI",
-      "CENDRAWASIH",
-      "JALAK",
-      "GELATIK",
-      "BEBEK",
-      "PEKAKAK"
-    ]
-  },
-  {
-    "question": "Hewan unggas yang kamu tahu",
-    "answers": [
-      "TEKUKUR",
-      "GAGAK",
-      "JALAK",
-      "PEKAKAK",
-      "KUTILANG",
-      "PERKUTUT",
-      "BANGKOK",
-      "MERAK",
-      "MERPATI",
-      "ELANG",
-      "KASUARI"
-    ]
-  },
-  {
-    "question": "Pekerjaan di dunia medis",
+    "question": "Sebutkan pekerjaan di dunia medis",
     "answers": [
       "APOTEKER",
       "BIDAN",
@@ -1111,22 +600,7 @@
     ]
   },
   {
-    "question": "Macam-macam tenaga kesehatan",
-    "answers": [
-      "DOKTER BEDAH",
-      "PARAMEDIS",
-      "PERAWAT",
-      "SPESIALIS",
-      "DOKTER HEWAN",
-      "FISIOTERAPIS",
-      "RESIDEN",
-      "APOTEKER",
-      "DOKTER GIGI",
-      "PSIKOLOG"
-    ]
-  },
-  {
-    "question": "Tenaga medis yang kamu tahu",
+    "question": "Sebutkan tenaga medis",
     "answers": [
       "DOKTER BEDAH",
       "AHLI GIZI",
@@ -1141,7 +615,7 @@
     ]
   },
   {
-    "question": "Sebutkan jenis-jenis bunga",
+    "question": "Sebutkan bunga",
     "answers": [
       "ASTER",
       "ANGGREK",
@@ -1161,7 +635,7 @@
     ]
   },
   {
-    "question": "Macam-macam bunga hias",
+    "question": "Sebutkan bunga hias",
     "answers": [
       "MELATI",
       "FLAMBOYAN",
@@ -1175,57 +649,7 @@
     ]
   },
   {
-    "question": "Bunga yang sering dijumpai",
-    "answers": [
-      "BUNGA MATAHARI",
-      "SEDAP MALAM",
-      "ASTER",
-      "MELATI",
-      "KRISAN",
-      "ANGGREK",
-      "BUNGA MAWAR",
-      "ANGGREK HITAM",
-      "TULIP",
-      "HIDRANGIA",
-      "BOUGENVIL",
-      "DAHLIA",
-      "MAWAR",
-      "SERUNI",
-      "MAWAR MERAH"
-    ]
-  },
-  {
-    "question": "Nama-nama bunga",
-    "answers": [
-      "KAMBOJA",
-      "FLAMBOYAN",
-      "ANGGREK HITAM",
-      "TERATAI",
-      "ANGGREK",
-      "KRISAN",
-      "TULIP",
-      "BOUGENVIL",
-      "MAWAR",
-      "MELATI"
-    ]
-  },
-  {
-    "question": "Sebutkan tarian daerah",
-    "answers": [
-      "SEKAR",
-      "JATHILAN",
-      "BAMBI",
-      "MERAK",
-      "BALIAN",
-      "LENGGO",
-      "TEMON",
-      "JANGER",
-      "REOG",
-      "PENDET"
-    ]
-  },
-  {
-    "question": "Tarian tradisional Indonesia",
+    "question": "Sebutkan tarian tradisional Indonesia",
     "answers": [
       "TEMON",
       "JANGER",
@@ -1240,7 +664,7 @@
     ]
   },
   {
-    "question": "Macam-macam tarian nusantara",
+    "question": "Sebutkan tarian nusantara",
     "answers": [
       "PENDET",
       "LENGGO",
@@ -1256,19 +680,6 @@
       "JANGER",
       "SEUDATI",
       "KARATAGAN"
-    ]
-  },
-  {
-    "question": "Tarian yang terkenal",
-    "answers": [
-      "BALIAN",
-      "REOG",
-      "PENDET",
-      "SEUDATI",
-      "KARATAGAN",
-      "LENGGO",
-      "MERAK",
-      "TEMON"
     ]
   },
   {
@@ -1290,7 +701,7 @@
     ]
   },
   {
-    "question": "Alat elektronik rumah tangga",
+    "question": "Sebutkan alat elektronik rumah tangga",
     "answers": [
       "KOMPOR",
       "LAMPU",
@@ -1306,20 +717,7 @@
     ]
   },
   {
-    "question": "Benda elektronik yang umum",
-    "answers": [
-      "KOMPUTER",
-      "KIPAS",
-      "MESIN CUCI",
-      "SETRIKA",
-      "HANDPHONE",
-      "KAMERA",
-      "MICROWAVE",
-      "TELEVISI"
-    ]
-  },
-  {
-    "question": "Macam-macam gadget",
+    "question": "Sebutkan gadget",
     "answers": [
       "KOMPOR",
       "SETRIKA",
@@ -1335,23 +733,7 @@
     ]
   },
   {
-    "question": "Sayuran hijau yang umum",
-    "answers": [
-      "GAMBAS",
-      "BAYAM",
-      "SAWI",
-      "PETSAI",
-      "BUNCIS",
-      "KATUK",
-      "KACANG PANJANG",
-      "SELADA",
-      "DAUN SINGKONG",
-      "KANGKUNG",
-      "OYONG"
-    ]
-  },
-  {
-    "question": "Macam-macam sayur hijau",
+    "question": "Sebutkan sayur hijau",
     "answers": [
       "OYONG",
       "KATUK",
@@ -1366,22 +748,7 @@
     ]
   },
   {
-    "question": "Nama-nama sayuran hijau",
-    "answers": [
-      "SAWI",
-      "BROKOLI",
-      "PETSAI",
-      "DAUN SINGKONG",
-      "OYONG",
-      "DAUN UBI",
-      "SELADA",
-      "BUNCIS",
-      "KANGKUNG",
-      "KACANG PANJANG"
-    ]
-  },
-  {
-    "question": "Sebutkan nama kota di Indonesia",
+    "question": "Sebutkan kota di Indonesia",
     "answers": [
       "DENPASAR",
       "YOGYAKARTA",
@@ -1401,7 +768,7 @@
     ]
   },
   {
-    "question": "Kota-kota besar di Indonesia",
+    "question": "Sebutkan kota-kota besar di Indonesia",
     "answers": [
       "BALIKPAPAN",
       "MAKASSAR",
@@ -1419,22 +786,7 @@
     ]
   },
   {
-    "question": "Macam-macam kota di Indonesia",
-    "answers": [
-      "MEDAN",
-      "MATARAM",
-      "KUPANG",
-      "BANDUNG",
-      "YOGYAKARTA",
-      "PADANG",
-      "PEKANBARU",
-      "PALEMBANG",
-      "SURABAYA",
-      "BALIKPAPAN"
-    ]
-  },
-  {
-    "question": "Kota yang terkenal",
+    "question": "Sebutkan kota",
     "answers": [
       "MAKASSAR",
       "JAYAPURA",
@@ -1451,7 +803,7 @@
     ]
   },
   {
-    "question": "Bumbu masak yang umum",
+    "question": "Sebutkan bumbu masak",
     "answers": [
       "BAWANG MERAH",
       "KETUMBAR",
@@ -1466,22 +818,7 @@
     ]
   },
   {
-    "question": "Macam-macam bumbu dapur",
-    "answers": [
-      "KETUMBAR",
-      "KEMIRI",
-      "CABAI",
-      "TERASI",
-      "KUNYIT",
-      "JAHE",
-      "MERICA",
-      "LENGKUAS",
-      "GARAM",
-      "LADA"
-    ]
-  },
-  {
-    "question": "Bumbu dapur Indonesia",
+    "question": "Sebutkan bumbu dapur Indonesia",
     "answers": [
       "KETUMBAR",
       "TERASI",
@@ -1516,21 +853,7 @@
     ]
   },
   {
-    "question": "Macam-macam suku di Indonesia",
-    "answers": [
-      "LAMPUNG",
-      "BIMA",
-      "DAYAK",
-      "MINANGKABAU",
-      "RIAU",
-      "MINAHASA",
-      "JAWA",
-      "BATAK",
-      "BUGIS"
-    ]
-  },
-  {
-    "question": "Suku yang ada di Indonesia",
+    "question": "Sebutkan suku yang ada di Indonesia",
     "answers": [
       "BUGIS",
       "RIAU",
@@ -1548,7 +871,7 @@
     ]
   },
   {
-    "question": "Suku bangsa nusantara",
+    "question": "Sebutkan suku bangsa nusantara",
     "answers": [
       "PAPUA",
       "FLORES",
@@ -1565,7 +888,7 @@
     ]
   },
   {
-    "question": "Anggota tubuh yang kamu ketahui",
+    "question": "Sebutkan anggota tubuh",
     "answers": [
       "LIDAH",
       "KAKI",
@@ -1584,25 +907,7 @@
     ]
   },
   {
-    "question": "Macam-macam bagian tubuh",
-    "answers": [
-      "PERUT",
-      "RAMBUT",
-      "KEPALA",
-      "OTAK",
-      "GINJAL",
-      "TANGAN",
-      "JANTUNG",
-      "HATI",
-      "HIDUNG",
-      "TULANG",
-      "MULUT",
-      "TELINGA",
-      "JARI"
-    ]
-  },
-  {
-    "question": "Bagian tubuh yang utama",
+    "question": "Sebutkan bagian tubuh yang utama",
     "answers": [
       "JANTUNG",
       "LIDAH",
@@ -1637,7 +942,7 @@
     ]
   },
   {
-    "question": "Lagu nusantara yang terkenal",
+    "question": "Sebutkan lagu nusantara",
     "answers": [
       "BAMBOO",
       "CUBLAK-CUBLAK SUENG",
@@ -1654,27 +959,7 @@
     ]
   },
   {
-    "question": "Macam-macam lagu daerah",
-    "answers": [
-      "KAMPUNG",
-      "ONDEL-ONDEL",
-      "SASANDO",
-      "GENDING",
-      "GAMELAN",
-      "CANGGUNG",
-      "KAMPUNG NANO",
-      "AMBAKAN",
-      "CENDRAWASIH",
-      "KARATAGAN",
-      "JANGER",
-      "JAIPONG",
-      "LIR-ILIR",
-      "CUBLAK-CUBLAK SUENG",
-      "KECAK"
-    ]
-  },
-  {
-    "question": "Lagu tradisional Indonesia",
+    "question": "Sebutkan lagu tradisional Indonesia",
     "answers": [
       "JAIPONG",
       "GENDING",
@@ -1711,7 +996,7 @@
     ]
   },
   {
-    "question": "Macam-macam energi",
+    "question": "Sebutkan energi",
     "answers": [
       "GAM",
       "AVTUR",

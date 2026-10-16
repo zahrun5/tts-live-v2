@@ -149,19 +149,6 @@
     "level": 2
   },
   {
-    "theme": "hewan laut yang kamu ketahui",
-    "words": [
-      "IKAN",
-      "HIU",
-      "PAUS",
-      "PENYU",
-      "GURITA",
-      "KEPITING",
-      "UDANG"
-    ],
-    "level": 2
-  },
-  {
     "theme": "sebutkan jenis-jenis burung",
     "words": [
       "AYAM",
@@ -319,19 +306,6 @@
       "PERAK"
     ],
     "level": 1
-  },
-  {
-    "theme": "macam-macam warna dasar",
-    "words": [
-      "MERAH",
-      "BIRU",
-      "HIJAU",
-      "KUNING",
-      "PUTIH",
-      "HITAM",
-      "COKLAT"
-    ],
-    "level": 2
   },
   {
     "theme": "sebutkan jenis-jenis kendaraan",
@@ -862,19 +836,6 @@
     "level": 3
   },
   {
-    "theme": "sebutkan jenis serangga",
-    "words": [
-      "NYAMUK",
-      "LALAT",
-      "SEMUT",
-      "LEBAH",
-      "CAPUNG",
-      "JANGKRIK",
-      "BELALANG"
-    ],
-    "level": 3
-  },
-  {
     "theme": "serangga yang sering dijumpai",
     "words": [
       "NYAMUK",
@@ -937,19 +898,6 @@
       "PAPAN",
       "KERTAS",
       "STAPLER"
-    ],
-    "level": 2
-  },
-  {
-    "theme": "sebutkan hewan langka",
-    "words": [
-      "BADAK",
-      "HARIMAU",
-      "ORANGUTAN",
-      "GAJAH",
-      "CENDRAWASIH",
-      "KOMODO",
-      "ANOA"
     ],
     "level": 2
   },
@@ -1466,19 +1414,6 @@
     "level": 2
   },
   {
-    "theme": "warna yang spesifik",
-    "words": [
-      "COKLAT",
-      "MERAH",
-      "KUNING",
-      "PINK",
-      "EMAS",
-      "HITAM",
-      "HIJAU"
-    ],
-    "level": 1
-  },
-  {
     "theme": "contoh buah-buahan yang modern",
     "words": [
       "MANGGA",
@@ -1510,19 +1445,6 @@
       "TIANG"
     ],
     "level": 3
-  },
-  {
-    "theme": "hewan peliharaan yang khas",
-    "words": [
-      "MERPATI",
-      "KELINCI",
-      "KUDA",
-      "TIKUS",
-      "BEBEK",
-      "HAMSTER",
-      "AYAM"
-    ],
-    "level": 1
   },
   {
     "theme": "macam-macam benda di rumah yang modern",

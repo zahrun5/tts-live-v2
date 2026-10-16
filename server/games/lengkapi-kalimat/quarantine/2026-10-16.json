@@ -1,0 +1,1124 @@
+[
+  {
+    "reason": "jawaban \"KUPU\" sudah ada di kalimat (berputar)",
+    "stage": "aturan",
+    "source": "lengkapi-kalimat/fallback/seed-001.json",
+    "item": {
+      "sentence": "____ adalah kupu-kupu yang memiliki sayap berwarna-warni.",
+      "answers": [
+        "KUPU"
+      ]
+    }
+  },
+  {
+    "reason": "jawaban \"CAPUNG\" sudah ada di kalimat (berputar)",
+    "stage": "aturan",
+    "source": "lengkapi-kalimat/fallback/seed-001.json",
+    "item": {
+      "sentence": "______ adalah capung yang memiliki sayap transparan.",
+      "answers": [
+        "CAPUNG"
+      ]
+    }
+  },
+  {
+    "reason": "jawaban \"KOPI\" sudah ada di kalimat (berputar)",
+    "stage": "aturan",
+    "source": "lengkapi-kalimat/fallback/seed-001.json",
+    "item": {
+      "sentence": "____ adalah tanaman yang menghasilkan kopi.",
+      "answers": [
+        "KOPI"
+      ]
+    }
+  },
+  {
+    "reason": "jawaban \"RUMPUT\" sudah ada di kalimat (berputar)",
+    "stage": "aturan",
+    "source": "lengkapi-kalimat/fallback/seed-001.json",
+    "item": {
+      "sentence": "______ adalah rumput yang tumbuh liar di padang.",
+      "answers": [
+        "RUMPUT"
+      ]
+    }
+  },
+  {
+    "reason": "jawaban \"KACANG\" sudah ada di kalimat (berputar)",
+    "stage": "aturan",
+    "source": "lengkapi-kalimat/fallback/seed-001.json",
+    "item": {
+      "sentence": "______ adalah kacang-kacangan yang kaya protein.",
+      "answers": [
+        "KACANG"
+      ]
+    }
+  },
+  {
+    "reason": "jawaban \"KUNING\" sudah ada di kalimat (berputar)",
+    "stage": "aturan",
+    "source": "lengkapi-kalimat/fallback/seed-001.json",
+    "item": {
+      "sentence": "______ adalah bumbu dapur yang berwarna kuning.",
+      "answers": [
+        "KUNING"
+      ]
+    }
+  },
+  {
+    "reason": "jawaban \"TAHU\" sudah ada di kalimat (berputar)",
+    "stage": "aturan",
+    "source": "lengkapi-kalimat/fallback/seed-001.json",
+    "item": {
+      "sentence": "____ adalah makanan yang terbuat dari tahu dan dibungkus.",
+      "answers": [
+        "TAHU"
+      ]
+    }
+  },
+  {
+    "reason": "jawaban \"KUACI\" sudah ada di kalimat (berputar)",
+    "stage": "aturan",
+    "source": "lengkapi-kalimat/fallback/seed-001.json",
+    "item": {
+      "sentence": "_____ adalah kuaci yang dibuat dari biji bunga matahari.",
+      "answers": [
+        "KUACI"
+      ]
+    }
+  },
+  {
+    "reason": "mengandung aksara non-Latin (kemungkinan teks rusak)",
+    "stage": "aturan",
+    "source": "lengkapi-kalimat/fallback/seed-001.json",
+    "item": {
+      "sentence": "____ adalah roti yang上面 ditaburi gula.",
+      "answers": [
+        "ROTI"
+      ]
+    }
+  },
+  {
+    "reason": "jawaban \"KOLAK\" sudah ada di kalimat (berputar)",
+    "stage": "aturan",
+    "source": "lengkapi-kalimat/fallback/seed-001.json",
+    "item": {
+      "sentence": "_____ adalah kolak yang biasa dimakan saat bulan Ramadhan.",
+      "answers": [
+        "KOLAK"
+      ]
+    }
+  },
+  {
+    "reason": "jawaban \"BATIK\" sudah ada di kalimat (berputar)",
+    "stage": "aturan",
+    "source": "lengkapi-kalimat/fallback/seed-001.json",
+    "item": {
+      "sentence": "_____ adalah kain batik yang dipakai sebagai pakaian.",
+      "answers": [
+        "BATIK"
+      ]
+    }
+  },
+  {
+    "reason": "jawaban \"GELANG\" sudah ada di kalimat (berputar)",
+    "stage": "aturan",
+    "source": "lengkapi-kalimat/fallback/seed-001.json",
+    "item": {
+      "sentence": "______ adalah gelang yang dipakai di pergelangan tangan.",
+      "answers": [
+        "GELANG"
+      ]
+    }
+  },
+  {
+    "reason": "jawaban \"SANDAL\" sudah ada di kalimat (berputar)",
+    "stage": "aturan",
+    "source": "lengkapi-kalimat/fallback/seed-001.json",
+    "item": {
+      "sentence": "______ adalah sandal yang casual dan nyaman.",
+      "answers": [
+        "SANDAL"
+      ]
+    }
+  },
+  {
+    "reason": "jawaban \"SELENDANG\" sudah ada di kalimat (berputar)",
+    "stage": "aturan",
+    "source": "lengkapi-kalimat/fallback/seed-001.json",
+    "item": {
+      "sentence": "_________ adalah selendang yang biasa dipakai wanita.",
+      "answers": [
+        "SELENDANG"
+      ]
+    }
+  },
+  {
+    "reason": "jawaban \"SARUNG\" sudah ada di kalimat (berputar)",
+    "stage": "aturan",
+    "source": "lengkapi-kalimat/fallback/seed-001.json",
+    "item": {
+      "sentence": "______ adalah sarung yang biasa dipakai pria.",
+      "answers": [
+        "SARUNG"
+      ]
+    }
+  },
+  {
+    "reason": "jawaban \"SERAGAM\" sudah ada di kalimat (berputar)",
+    "stage": "aturan",
+    "source": "lengkapi-kalimat/fallback/seed-001.json",
+    "item": {
+      "sentence": "_______ adalah seragam sekolah untuk SD.",
+      "answers": [
+        "SERAGAM"
+      ]
+    }
+  },
+  {
+    "reason": "jawaban \"JAKET\" sudah ada di kalimat (berputar)",
+    "stage": "aturan",
+    "source": "lengkapi-kalimat/fallback/seed-001.json",
+    "item": {
+      "sentence": "_____ adalah jaket yang hangat saat cuaca dingin.",
+      "answers": [
+        "JAKET"
+      ]
+    }
+  },
+  {
+    "reason": "jawaban \"PELABUHAN\" sudah ada di kalimat (berputar)",
+    "stage": "aturan",
+    "source": "lengkapi-kalimat/fallback/seed-001.json",
+    "item": {
+      "sentence": "_________ adalah tempat berlabuh kapal di pelabuhan.",
+      "answers": [
+        "PELABUHAN"
+      ]
+    }
+  },
+  {
+    "reason": "jawaban \"HELM\" sudah ada di kalimat (berputar)",
+    "stage": "aturan",
+    "source": "lengkapi-kalimat/fallback/seed-001.json",
+    "item": {
+      "sentence": "____ adalah helm yang wajib dipakai saat berkendara.",
+      "answers": [
+        "HELM"
+      ]
+    }
+  },
+  {
+    "reason": "jawaban \"BENSIN\" sudah ada di kalimat (berputar)",
+    "stage": "aturan",
+    "source": "lengkapi-kalimat/fallback/seed-001.json",
+    "item": {
+      "sentence": "______ adalah bahan bakar untuk mesin bensin.",
+      "answers": [
+        "BENSIN"
+      ]
+    }
+  },
+  {
+    "reason": "jawaban \"TENTARA\" sudah ada di kalimat (berputar)",
+    "stage": "aturan",
+    "source": "lengkapi-kalimat/fallback/seed-001.json",
+    "item": {
+      "sentence": "_______ adalah tentara yang mempertahankan negara.",
+      "answers": [
+        "TENTARA"
+      ]
+    }
+  },
+  {
+    "reason": "jawaban \"PENGACARA\" sudah ada di kalimat (berputar)",
+    "stage": "aturan",
+    "source": "lengkapi-kalimat/fallback/seed-001.json",
+    "item": {
+      "sentence": "_________ adalah pengacara yang mewakili klien di pengadilan.",
+      "answers": [
+        "PENGACARA"
+      ]
+    }
+  },
+  {
+    "reason": "jawaban \"PEDAGANG\" sudah ada di kalimat (berputar)",
+    "stage": "aturan",
+    "source": "lengkapi-kalimat/fallback/seed-001.json",
+    "item": {
+      "sentence": "________ adalah pedagang yang menjual barang di pasar.",
+      "answers": [
+        "PEDAGANG"
+      ]
+    }
+  },
+  {
+    "reason": "jawaban \"ARSITEK\" sudah ada di kalimat (berputar)",
+    "stage": "aturan",
+    "source": "lengkapi-kalimat/fallback/seed-001.json",
+    "item": {
+      "sentence": "_______ adalah arsitek yang merancang bangunan.",
+      "answers": [
+        "ARSITEK"
+      ]
+    }
+  },
+  {
+    "reason": "jawaban \"INSINYUR\" sudah ada di kalimat (berputar)",
+    "stage": "aturan",
+    "source": "lengkapi-kalimat/fallback/seed-001.json",
+    "item": {
+      "sentence": "________ adalah insinyur yang merancang infrastruktur.",
+      "answers": [
+        "INSINYUR"
+      ]
+    }
+  },
+  {
+    "reason": "jawaban \"KAPTEN\" sudah ada di kalimat (berputar)",
+    "stage": "aturan",
+    "source": "lengkapi-kalimat/fallback/seed-001.json",
+    "item": {
+      "sentence": "______ adalah kapten yang memimpin kapal.",
+      "answers": [
+        "KAPTEN"
+      ]
+    }
+  },
+  {
+    "reason": "jawaban \"KAPSTER\" sudah ada di kalimat (berputar)",
+    "stage": "aturan",
+    "source": "lengkapi-kalimat/fallback/seed-001.json",
+    "item": {
+      "sentence": "_______ adalah kapster yang memotong rambut.",
+      "answers": [
+        "KAPSTER"
+      ]
+    }
+  },
+  {
+    "reason": "jawaban \"PENULIS\" sudah ada di kalimat (berputar)",
+    "stage": "aturan",
+    "source": "lengkapi-kalimat/fallback/seed-001.json",
+    "item": {
+      "sentence": "_______ adalah penulis yang menulis artikel.",
+      "answers": [
+        "PENULIS"
+      ]
+    }
+  },
+  {
+    "reason": "jawaban \"JURNALIS\" sudah ada di kalimat (berputar)",
+    "stage": "aturan",
+    "source": "lengkapi-kalimat/fallback/seed-001.json",
+    "item": {
+      "sentence": "________ adalah jurnalis yang memberitakan berita.",
+      "answers": [
+        "JURNALIS"
+      ]
+    }
+  },
+  {
+    "reason": "jawaban \"FOTOGRAFER\" sudah ada di kalimat (berputar)",
+    "stage": "aturan",
+    "source": "lengkapi-kalimat/fallback/seed-001.json",
+    "item": {
+      "sentence": "__________ adalah fotografer yang mengambil foto.",
+      "answers": [
+        "FOTOGRAFER"
+      ]
+    }
+  },
+  {
+    "reason": "jawaban \"MONTIR\" sudah ada di kalimat (berputar)",
+    "stage": "aturan",
+    "source": "lengkapi-kalimat/fallback/seed-001.json",
+    "item": {
+      "sentence": "______ adalah montir yang memperbaiki kendaraan.",
+      "answers": [
+        "MONTIR"
+      ]
+    }
+  },
+  {
+    "reason": "jawaban \"TUKANG\" sudah ada di kalimat (berputar)",
+    "stage": "aturan",
+    "source": "lengkapi-kalimat/fallback/seed-001.json",
+    "item": {
+      "sentence": "______ adalah tukang yang memperbaiki rumah.",
+      "answers": [
+        "TUKANG"
+      ]
+    }
+  },
+  {
+    "reason": "jawaban \"PENGRAJIN\" sudah ada di kalimat (berputar)",
+    "stage": "aturan",
+    "source": "lengkapi-kalimat/fallback/seed-001.json",
+    "item": {
+      "sentence": "_________ adalah pengrajin yang membuat kerajinan tangan.",
+      "answers": [
+        "PENGRAJIN"
+      ]
+    }
+  },
+  {
+    "reason": "jawaban \"MASINIS\" sudah ada di kalimat (berputar)",
+    "stage": "aturan",
+    "source": "lengkapi-kalimat/fallback/seed-001.json",
+    "item": {
+      "sentence": "_______ adalah masinis yang mengoperasikan lokomotif.",
+      "answers": [
+        "MASINIS"
+      ]
+    }
+  },
+  {
+    "reason": "jawaban \"HAKIM\" sudah ada di kalimat (berputar)",
+    "stage": "aturan",
+    "source": "lengkapi-kalimat/fallback/seed-001.json",
+    "item": {
+      "sentence": "_____ adalah hakim yang memimpin persidangan.",
+      "answers": [
+        "HAKIM"
+      ]
+    }
+  },
+  {
+    "reason": "jawaban \"JAKSA\" sudah ada di kalimat (berputar)",
+    "stage": "aturan",
+    "source": "lengkapi-kalimat/fallback/seed-001.json",
+    "item": {
+      "sentence": "_____ adalah jaksa yang menuntut pidana.",
+      "answers": [
+        "JAKSA"
+      ]
+    }
+  },
+  {
+    "reason": "jawaban \"NOTARIS\" sudah ada di kalimat (berputar)",
+    "stage": "aturan",
+    "source": "lengkapi-kalimat/fallback/seed-001.json",
+    "item": {
+      "sentence": "_______ adalah notaris yang membuat akta legal.",
+      "answers": [
+        "NOTARIS"
+      ]
+    }
+  },
+  {
+    "reason": "jawaban \"APOTEKER\" sudah ada di kalimat (berputar)",
+    "stage": "aturan",
+    "source": "lengkapi-kalimat/fallback/seed-001.json",
+    "item": {
+      "sentence": "________ adalah apoteker yang meracik obat.",
+      "answers": [
+        "APOTEKER"
+      ]
+    }
+  },
+  {
+    "reason": "jawaban \"BIDAN\" sudah ada di kalimat (berputar)",
+    "stage": "aturan",
+    "source": "lengkapi-kalimat/fallback/seed-001.json",
+    "item": {
+      "sentence": "_____ adalah bidan yang membantu persalinan.",
+      "answers": [
+        "BIDAN"
+      ]
+    }
+  },
+  {
+    "reason": "jawaban \"PERAWAT\" sudah ada di kalimat (berputar)",
+    "stage": "aturan",
+    "source": "lengkapi-kalimat/fallback/seed-001.json",
+    "item": {
+      "sentence": "_______ adalah perawat yang merawat pasien.",
+      "answers": [
+        "PERAWAT"
+      ]
+    }
+  },
+  {
+    "reason": "jawaban \"SUSTER\" sudah ada di kalimat (berputar)",
+    "stage": "aturan",
+    "source": "lengkapi-kalimat/fallback/seed-001.json",
+    "item": {
+      "sentence": "______ adalah suster yang bekerja di rumah sakit.",
+      "answers": [
+        "SUSTER"
+      ]
+    }
+  },
+  {
+    "reason": "jawaban \"KASIR\" sudah ada di kalimat (berputar)",
+    "stage": "aturan",
+    "source": "lengkapi-kalimat/fallback/seed-001.json",
+    "item": {
+      "sentence": "_____ adalah kasir yang melayani pembayaran.",
+      "answers": [
+        "KASIR"
+      ]
+    }
+  },
+  {
+    "reason": "jawaban \"RESEPSIONIS\" sudah ada di kalimat (berputar)",
+    "stage": "aturan",
+    "source": "lengkapi-kalimat/fallback/seed-001.json",
+    "item": {
+      "sentence": "___________ adalah resepsionis yang menyambut tamu.",
+      "answers": [
+        "RESEPSIONIS"
+      ]
+    }
+  },
+  {
+    "reason": "jawaban \"SEKRETARIS\" sudah ada di kalimat (berputar)",
+    "stage": "aturan",
+    "source": "lengkapi-kalimat/fallback/seed-001.json",
+    "item": {
+      "sentence": "__________ adalah sekretaris yang mengelola administrasi.",
+      "answers": [
+        "SEKRETARIS"
+      ]
+    }
+  },
+  {
+    "reason": "jawaban \"MANAJER\" sudah ada di kalimat (berputar)",
+    "stage": "aturan",
+    "source": "lengkapi-kalimat/fallback/seed-001.json",
+    "item": {
+      "sentence": "_______ adalah manajer yang memimpin tim.",
+      "answers": [
+        "MANAJER"
+      ]
+    }
+  },
+  {
+    "reason": "jawaban \"DIREKTUR\" sudah ada di kalimat (berputar)",
+    "stage": "aturan",
+    "source": "lengkapi-kalimat/fallback/seed-001.json",
+    "item": {
+      "sentence": "________ adalah direktur yang memimpin perusahaan.",
+      "answers": [
+        "DIREKTUR"
+      ]
+    }
+  },
+  {
+    "reason": "mengandung aksara non-Latin (kemungkinan teks rusak)",
+    "stage": "aturan",
+    "source": "lengkapi-kalimat/fallback/seed-001.json",
+    "item": {
+      "sentence": "_______ adalah老板 yang memimpin usaha.",
+      "answers": [
+        "PEMILIK"
+      ]
+    }
+  },
+  {
+    "reason": "jawaban \"BELAJAR\" sudah ada di kalimat (berputar)",
+    "stage": "aturan",
+    "source": "lengkapi-kalimat/fallback/seed-001.json",
+    "item": {
+      "sentence": "_______ adalah proses kegiatan belajar mengajar.",
+      "answers": [
+        "BELAJAR"
+      ]
+    }
+  },
+  {
+    "reason": "jawaban \"SENI\" sudah ada di kalimat (berputar)",
+    "stage": "aturan",
+    "source": "lengkapi-kalimat/fallback/seed-001.json",
+    "item": {
+      "sentence": "____ adalah kegiatan seni tari di sekolah.",
+      "answers": [
+        "SENI"
+      ]
+    }
+  },
+  {
+    "reason": "jawaban \"BAHASA\" sudah ada di kalimat (berputar)",
+    "stage": "aturan",
+    "source": "lengkapi-kalimat/fallback/seed-001.json",
+    "item": {
+      "sentence": "______ adalah pelajaran bahasa Indonesia di sekolah.",
+      "answers": [
+        "BAHASA"
+      ]
+    }
+  },
+  {
+    "reason": "jawaban \"RAPOR\" sudah ada di kalimat (berputar)",
+    "stage": "aturan",
+    "source": "lengkapi-kalimat/fallback/seed-001.json",
+    "item": {
+      "sentence": "_____ adalah rapor yang menampilkan nilai siswa.",
+      "answers": [
+        "RAPOR"
+      ]
+    }
+  },
+  {
+    "reason": "jawaban \"SERAGAM\" sudah ada di kalimat (berputar)",
+    "stage": "aturan",
+    "source": "lengkapi-kalimat/fallback/seed-001.json",
+    "item": {
+      "sentence": "_______ adalah seragam yang dipakai siswa ke sekolah.",
+      "answers": [
+        "SERAGAM"
+      ]
+    }
+  },
+  {
+    "reason": "jawaban \"GLOBE\" sudah ada di kalimat (berputar)",
+    "stage": "aturan",
+    "source": "lengkapi-kalimat/fallback/seed-001.json",
+    "item": {
+      "sentence": "_____ adalah globe yang memperbesar bentuk bumi.",
+      "answers": [
+        "GLOBE"
+      ]
+    }
+  },
+  {
+    "reason": "jawaban \"LAYAR\" sudah ada di kalimat (berputar)",
+    "stage": "aturan",
+    "source": "lengkapi-kalimat/fallback/seed-001.json",
+    "item": {
+      "sentence": "_____ adalah layar yang menampilkan gambar.",
+      "answers": [
+        "LAYAR"
+      ]
+    }
+  },
+  {
+    "reason": "jawaban \"KAMERA\" sudah ada di kalimat (berputar)",
+    "stage": "aturan",
+    "source": "lengkapi-kalimat/fallback/seed-001.json",
+    "item": {
+      "sentence": "______ adalah kamera yang digunakan untuk foto.",
+      "answers": [
+        "KAMERA"
+      ]
+    }
+  },
+  {
+    "reason": "jawaban \"EMAIL\" sudah ada di kalimat (berputar)",
+    "stage": "aturan",
+    "source": "lengkapi-kalimat/fallback/seed-001.json",
+    "item": {
+      "sentence": "_____ adalah email untuk mengirim surat elektronik.",
+      "answers": [
+        "EMAIL"
+      ]
+    }
+  },
+  {
+    "reason": "jawaban \"PRINTER\" sudah ada di kalimat (berputar)",
+    "stage": "aturan",
+    "source": "lengkapi-kalimat/fallback/seed-001.json",
+    "item": {
+      "sentence": "_______ adalah printer yang mencetak dokumen.",
+      "answers": [
+        "PRINTER"
+      ]
+    }
+  },
+  {
+    "reason": "jawaban \"KLINIK\" sudah ada di kalimat (berputar)",
+    "stage": "aturan",
+    "source": "lengkapi-kalimat/fallback/seed-001.json",
+    "item": {
+      "sentence": "______ adalah klinik untuk pemeriksaan umum.",
+      "answers": [
+        "KLINIK"
+      ]
+    }
+  },
+  {
+    "reason": "jawaban \"APOTEK\" sudah ada di kalimat (berputar)",
+    "stage": "aturan",
+    "source": "lengkapi-kalimat/fallback/seed-001.json",
+    "item": {
+      "sentence": "______ adalah apotek tempat membeli obat.",
+      "answers": [
+        "APOTEK"
+      ]
+    }
+  },
+  {
+    "reason": "jawaban \"BOLA\" sudah ada di kalimat (berputar)",
+    "stage": "aturan",
+    "source": "lengkapi-kalimat/fallback/seed-001.json",
+    "item": {
+      "sentence": "____ adalah bola yang digunakan untuk sepak bola.",
+      "answers": [
+        "BOLA"
+      ]
+    }
+  },
+  {
+    "reason": "jawaban \"SARUNG\" sudah ada di kalimat (berputar)",
+    "stage": "aturan",
+    "source": "lengkapi-kalimat/fallback/seed-001.json",
+    "item": {
+      "sentence": "______ adalah sarung tangan untuk boxing.",
+      "answers": [
+        "SARUNG"
+      ]
+    }
+  },
+  {
+    "reason": "jawaban \"MATRAS\" sudah ada di kalimat (berputar)",
+    "stage": "aturan",
+    "source": "lengkapi-kalimat/fallback/seed-001.json",
+    "item": {
+      "sentence": "______ adalah matras untuk olahraga lantai.",
+      "answers": [
+        "MATRAS"
+      ]
+    }
+  },
+  {
+    "reason": "jawaban \"BATIK\" sudah ada di kalimat (berputar)",
+    "stage": "aturan",
+    "source": "lengkapi-kalimat/fallback/seed-001.json",
+    "item": {
+      "sentence": "_____ adalah batik tulis dari Yogyakarta.",
+      "answers": [
+        "BATIK"
+      ]
+    }
+  },
+  {
+    "reason": "jawaban \"PATUNG\" sudah ada di kalimat (berputar)",
+    "stage": "aturan",
+    "source": "lengkapi-kalimat/fallback/seed-001.json",
+    "item": {
+      "sentence": "______ adalah patung yang berdiri tegak.",
+      "answers": [
+        "PATUNG"
+      ]
+    }
+  },
+  {
+    "reason": "jawaban \"HOROR\" sudah ada di kalimat (berputar)",
+    "stage": "aturan",
+    "source": "lengkapi-kalimat/fallback/seed-001.json",
+    "item": {
+      "sentence": "_____ adalah film Indonesia yang Horor.",
+      "answers": [
+        "HOROR"
+      ]
+    }
+  },
+  {
+    "reason": "jawaban \"KOMEDI\" sudah ada di kalimat (berputar)",
+    "stage": "aturan",
+    "source": "lengkapi-kalimat/fallback/seed-001.json",
+    "item": {
+      "sentence": "______ adalah film komedi yang lucu.",
+      "answers": [
+        "KOMEDI"
+      ]
+    }
+  },
+  {
+    "reason": "jawaban \"DRAMA\" sudah ada di kalimat (berputar)",
+    "stage": "aturan",
+    "source": "lengkapi-kalimat/fallback/seed-001.json",
+    "item": {
+      "sentence": "_____ adalah drama yang mengharukan.",
+      "answers": [
+        "DRAMA"
+      ]
+    }
+  },
+  {
+    "reason": "jawaban \"AKSI\" sudah ada di kalimat (berputar)",
+    "stage": "aturan",
+    "source": "lengkapi-kalimat/fallback/seed-001.json",
+    "item": {
+      "sentence": "____ adalah film aksi yang penuh ketegangan.",
+      "answers": [
+        "AKSI"
+      ]
+    }
+  },
+  {
+    "reason": "jawaban \"ANIMASI\" sudah ada di kalimat (berputar)",
+    "stage": "aturan",
+    "source": "lengkapi-kalimat/fallback/seed-001.json",
+    "item": {
+      "sentence": "_______ adalah film animasi yang dibuat dengan komputer.",
+      "answers": [
+        "ANIMASI"
+      ]
+    }
+  },
+  {
+    "reason": "jawaban \"NENEK\" sudah ada di kalimat (berputar)",
+    "stage": "aturan",
+    "source": "lengkapi-kalimat/fallback/seed-001.json",
+    "item": {
+      "sentence": "_____ adalah kata untuk nenek dari pihak ayah.",
+      "answers": [
+        "NENEK"
+      ]
+    }
+  },
+  {
+    "reason": "jawaban \"BANTAL\" sudah ada di kalimat (berputar)",
+    "stage": "aturan",
+    "source": "lengkapi-kalimat/fallback/seed-001.json",
+    "item": {
+      "sentence": "______ adalah bantal yang dipakai saat tidur.",
+      "answers": [
+        "BANTAL"
+      ]
+    }
+  },
+  {
+    "reason": "jawaban \"CERMIN\" sudah ada di kalimat (berputar)",
+    "stage": "aturan",
+    "source": "lengkapi-kalimat/fallback/seed-001.json",
+    "item": {
+      "sentence": "______ adalah cermin yang besar di dinding.",
+      "answers": [
+        "CERMIN"
+      ]
+    }
+  },
+  {
+    "reason": "jawaban \"KUNCI\" sudah ada di kalimat (berputar)",
+    "stage": "aturan",
+    "source": "lengkapi-kalimat/fallback/seed-001.json",
+    "item": {
+      "sentence": "_____ adalah alat untuk membuka kunci.",
+      "answers": [
+        "KUNCI"
+      ]
+    }
+  },
+  {
+    "reason": "jawaban \"KOMPOR\" sudah ada di kalimat (berputar)",
+    "stage": "aturan",
+    "source": "lengkapi-kalimat/fallback/seed-001.json",
+    "item": {
+      "sentence": "______ adalah kompor yang menggunakan gas.",
+      "answers": [
+        "KOMPOR"
+      ]
+    }
+  },
+  {
+    "reason": "jawaban \"WAJAN\" sudah ada di kalimat (berputar)",
+    "stage": "aturan",
+    "source": "lengkapi-kalimat/fallback/seed-001.json",
+    "item": {
+      "sentence": "_____ adalah wajan untuk menggoreng.",
+      "answers": [
+        "WAJAN"
+      ]
+    }
+  },
+  {
+    "reason": "jawaban \"TALENAN\" sudah ada di kalimat (berputar)",
+    "stage": "aturan",
+    "source": "lengkapi-kalimat/fallback/seed-001.json",
+    "item": {
+      "sentence": "_______ adalah talenan untuk memotong.",
+      "answers": [
+        "TALENAN"
+      ]
+    }
+  },
+  {
+    "reason": "jawaban \"SARINGAN\" sudah ada di kalimat (berputar)",
+    "stage": "aturan",
+    "source": "lengkapi-kalimat/fallback/seed-001.json",
+    "item": {
+      "sentence": "________ adalah saringan untuk menyaring.",
+      "answers": [
+        "SARINGAN"
+      ]
+    }
+  },
+  {
+    "reason": "jawaban \"OVEN\" sudah ada di kalimat (berputar)",
+    "stage": "aturan",
+    "source": "lengkapi-kalimat/fallback/seed-001.json",
+    "item": {
+      "sentence": "____ adalah oven untuk memanggang.",
+      "answers": [
+        "OVEN"
+      ]
+    }
+  },
+  {
+    "reason": "mengandung aksara non-Latin (kemungkinan teks rusak)",
+    "stage": "aturan",
+    "source": "lengkapi-kalimat/fallback/seed-001.json",
+    "item": {
+      "sentence": "_______ adalah blender untuk menghaluskan食物.",
+      "answers": [
+        "BLENDER"
+      ]
+    }
+  },
+  {
+    "reason": "jawaban \"DISPENSER\" sudah ada di kalimat (berputar)",
+    "stage": "aturan",
+    "source": "lengkapi-kalimat/fallback/seed-001.json",
+    "item": {
+      "sentence": "_________ adalah dispenser untuk air minum.",
+      "answers": [
+        "DISPENSER"
+      ]
+    }
+  },
+  {
+    "reason": "jawaban \"SAPU\" sudah ada di kalimat (berputar)",
+    "stage": "aturan",
+    "source": "lengkapi-kalimat/fallback/seed-001.json",
+    "item": {
+      "sentence": "____ adalah sapu untuk membersihkan lantai.",
+      "answers": [
+        "SAPU"
+      ]
+    }
+  },
+  {
+    "reason": "jawaban \"TEMPAT\" sudah ada di kalimat (berputar)",
+    "stage": "aturan",
+    "source": "lengkapi-kalimat/fallback/seed-001.json",
+    "item": {
+      "sentence": "______ adalah tempat sampah untuk membuang sampah.",
+      "answers": [
+        "TEMPAT"
+      ]
+    }
+  },
+  {
+    "reason": "jawaban \"EMBER\" sudah ada di kalimat (berputar)",
+    "stage": "aturan",
+    "source": "lengkapi-kalimat/fallback/seed-001.json",
+    "item": {
+      "sentence": "_____ adalah ember untuk menyimpan air.",
+      "answers": [
+        "EMBER"
+      ]
+    }
+  },
+  {
+    "reason": "jawaban \"MENIT\" sudah ada di kalimat (berputar)",
+    "stage": "aturan",
+    "source": "lengkapi-kalimat/fallback/seed-001.json",
+    "item": {
+      "sentence": "_____ adalah menit yang terdiri dari 60 detik.",
+      "answers": [
+        "MENIT"
+      ]
+    }
+  },
+  {
+    "reason": "jawaban \"DETIK\" sudah ada di kalimat (berputar)",
+    "stage": "aturan",
+    "source": "lengkapi-kalimat/fallback/seed-001.json",
+    "item": {
+      "sentence": "_____ adalah detik yang paling kecil.",
+      "answers": [
+        "DETIK"
+      ]
+    }
+  },
+  {
+    "reason": "jawaban \"SATU\" sudah ada di kalimat (berputar)",
+    "stage": "aturan",
+    "source": "lengkapi-kalimat/fallback/seed-001.json",
+    "item": {
+      "sentence": "____ adalah angka pertama dari satu hingga sepuluh.",
+      "answers": [
+        "SATU"
+      ]
+    }
+  },
+  {
+    "reason": "jawaban \"MARAH\" sudah ada di kalimat (berputar)",
+    "stage": "aturan",
+    "source": "lengkapi-kalimat/fallback/seed-001.json",
+    "item": {
+      "sentence": "_____ adalah perasaan saat marah.",
+      "answers": [
+        "MARAH"
+      ]
+    }
+  },
+  {
+    "reason": "jawaban \"TAKUT\" sudah ada di kalimat (berputar)",
+    "stage": "aturan",
+    "source": "lengkapi-kalimat/fallback/seed-001.json",
+    "item": {
+      "sentence": "_____ adalah perasaan saat takut.",
+      "answers": [
+        "TAKUT"
+      ]
+    }
+  },
+  {
+    "reason": "jawaban \"RINDU\" sudah ada di kalimat (berputar)",
+    "stage": "aturan",
+    "source": "lengkapi-kalimat/fallback/seed-001.json",
+    "item": {
+      "sentence": "_____ adalah perasaan saat rindu.",
+      "answers": [
+        "RINDU"
+      ]
+    }
+  },
+  {
+    "reason": "jawaban \"MALU\" sudah ada di kalimat (berputar)",
+    "stage": "aturan",
+    "source": "lengkapi-kalimat/fallback/seed-001.json",
+    "item": {
+      "sentence": "____ adalah perasaan saat malu.",
+      "answers": [
+        "MALU"
+      ]
+    }
+  },
+  {
+    "reason": "jawaban \"BOSAN\" sudah ada di kalimat (berputar)",
+    "stage": "aturan",
+    "source": "lengkapi-kalimat/fallback/seed-001.json",
+    "item": {
+      "sentence": "_____ adalah perasaan saat bosan.",
+      "answers": [
+        "BOSAN"
+      ]
+    }
+  },
+  {
+    "reason": "jawaban \"BAHASA\" sudah ada di kalimat (berputar)",
+    "stage": "aturan",
+    "source": "lengkapi-kalimat/fallback/seed-001.json",
+    "item": {
+      "sentence": "______ adalah bahasa resmi Indonesia.",
+      "answers": [
+        "BAHASA"
+      ]
+    }
+  },
+  {
+    "reason": "jawaban \"JEPANG\" sudah ada di kalimat (berputar)",
+    "stage": "aturan",
+    "source": "lengkapi-kalimat/fallback/seed-001.json",
+    "item": {
+      "sentence": "______ adalah bahasa yang digunakan di Jepang.",
+      "answers": [
+        "JEPANG"
+      ]
+    }
+  },
+  {
+    "reason": "jawaban \"ARAB\" sudah ada di kalimat (berputar)",
+    "stage": "aturan",
+    "source": "lengkapi-kalimat/fallback/seed-001.json",
+    "item": {
+      "sentence": "____ adalah bahasa yang digunakan di Arab.",
+      "answers": [
+        "ARAB"
+      ]
+    }
+  },
+  {
+    "reason": "jawaban \"NPWP\" sudah ada di kalimat (berputar)",
+    "stage": "aturan",
+    "source": "lengkapi-kalimat/fallback/seed-001.json",
+    "item": {
+      "sentence": "____ adalah NPWP untuk perpajakan.",
+      "answers": [
+        "NPWP"
+      ]
+    }
+  },
+  {
+    "reason": "jawaban \"PUASA\" sudah ada di kalimat (berputar)",
+    "stage": "aturan",
+    "source": "lengkapi-kalimat/fallback/seed-001.json",
+    "item": {
+      "sentence": "_____ adalah puasa wajib bagi umat Islam.",
+      "answers": [
+        "PUASA"
+      ]
+    }
+  },
+  {
+    "reason": "jawaban \"ZAKAT\" sudah ada di kalimat (berputar)",
+    "stage": "aturan",
+    "source": "lengkapi-kalimat/fallback/seed-001.json",
+    "item": {
+      "sentence": "_____ adalah zakat yang wajib ditunaikan.",
+      "answers": [
+        "ZAKAT"
+      ]
+    }
+  },
+  {
+    "reason": "jawaban \"GARAM\" sudah ada di kalimat (berputar)",
+    "stage": "aturan",
+    "source": "lengkapi-kalimat/fallback/seed-001.json",
+    "item": {
+      "sentence": "_____ adalah garam dapur yang biasa dipakai.",
+      "answers": [
+        "GARAM"
+      ]
+    }
+  },
+  {
+    "reason": "jawaban \"GULA\" sudah ada di kalimat (berputar)",
+    "stage": "aturan",
+    "source": "lengkapi-kalimat/fallback/seed-001.json",
+    "item": {
+      "sentence": "____ adalah gula yang biasa dipakai untuk manis.",
+      "answers": [
+        "GULA"
+      ]
+    }
+  },
+  {
+    "reason": "jawaban \"MINYAK\" sudah ada di kalimat (berputar)",
+    "stage": "aturan",
+    "source": "lengkapi-kalimat/fallback/seed-001.json",
+    "item": {
+      "sentence": "______ adalah minyak goreng untuk menggoreng.",
+      "answers": [
+        "MINYAK"
+      ]
+    }
+  },
+  {
+    "reason": "jawaban \"TERASI\" sudah ada di kalimat (berputar)",
+    "stage": "aturan",
+    "source": "lengkapi-kalimat/fallback/seed-001.json",
+    "item": {
+      "sentence": "______ adalah terasi untuk bumbu masakan.",
+      "answers": [
+        "TERASI"
+      ]
+    }
+  },
+  {
+    "reason": "jawaban \"NIPIS\" sudah ada di kalimat (berputar)",
+    "stage": "aturan",
+    "source": "lengkapi-kalimat/fallback/seed-001.json",
+    "item": {
+      "sentence": "_____ adalah jeruk nipis yang asam.",
+      "answers": [
+        "NIPIS"
+      ]
+    }
+  }
+]
