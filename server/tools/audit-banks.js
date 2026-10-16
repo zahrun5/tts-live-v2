@@ -164,6 +164,11 @@ async function judgeBatch(ad, items) {
       ], { temperature: 0.1, max_tokens: 2500, timeout: 90000, difficulty: 'easy' });
       return parseFlags(content);
     } catch (e) {
+      // Kunci salah/tidak terbaca: percuma diulang, hentikan dengan pesan yang jelas.
+      if (/\b(401|403)\b|unauthori[sz]ed|forbidden|invalid.{0,12}(api.?key|token)|authenticat/i.test(e.message)) {
+        throw new Error('Gateway AI menolak permintaan (kunci tidak sah): kunci API tidak terbaca atau salah. ' +
+          'Pastikan server/.env berisi OPENAI_API_KEY yang benar.');
+      }
       const limited = /429|rate/i.test(e.message);
       console.warn(`   ⚠️  percobaan ${attempt}/3 gagal: ${e.message.slice(0, 140)}${limited ? ' (rate limit, tunggu 60 dtk)' : ''}`);
       await sleep(limited ? 60000 : 3000 * attempt);
@@ -218,10 +223,16 @@ async function auditGame(game) {
       if (!cache[id]) pending.push(s);
     }
     console.log(`   🤖 ${game}: ${survivors.length - pending.length} sudah di-cache, ${pending.length} perlu dinilai (${Math.ceil(pending.length / BATCH)} panggilan)`);
+    let failStreak = 0;
     for (let i = 0; i < pending.length; i += BATCH) {
       const chunk = pending.slice(i, i + BATCH);
       const flags = await judgeBatch(ad, chunk.map(c => c.item));
-      if (flags === null) { stats.unjudged += chunk.length; continue; }
+      if (flags === null) {
+        stats.unjudged += chunk.length;
+        if (++failStreak >= 3) throw new Error('3 batch berturut-turut gagal total, dihentikan. Periksa gateway AI / kunci API. Yang sudah dinilai tetap tersimpan di cache, jalankan ulang untuk melanjutkan.');
+        continue;
+      }
+      failStreak = 0;
       const byIdx = new Map(flags.filter(f => Number.isInteger(f.i) && f.i >= 0 && f.i < chunk.length).map(f => [f.i, f]));
       chunk.forEach((c, idx) => {
         const f = byIdx.get(idx);

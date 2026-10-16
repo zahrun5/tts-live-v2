@@ -10,7 +10,8 @@
  * berhasil atau semua abis.
  */
 
-require('dotenv').config();
+// Baca .env di folder server/ (bukan folder kerja), supaya skrip di tools/ juga jalan dari mana saja.
+require('dotenv').config({ path: require('path').join(__dirname, '.env') });
 const axios = require('axios');
 
 // Bisa di-override lewat env (dipakai buat uji dengan server mock).
