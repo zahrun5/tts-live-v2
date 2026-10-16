@@ -21,11 +21,18 @@ const API_KEY = process.env.OPENAI_API_KEY;
 // Urutan rotasi: dari yang paling diutamakan ke yang paling cadangan.
 // Model dari Kiro (prefix "kr/") SENGAJA tidak dimasukkan - kuotanya
 // mau disisakan buat project lain.
-const MODEL_ROTATION_HARD = ['gemini/gemini-3.7-flash'];
+// Model bisa diganti tanpa edit kode lewat env AI_MODELS (pisah koma = urutan rotasi),
+// mis. AI_MODELS=9router/claude-sonnet-4-6 saat model default kena limit.
+// Kalau env kosong, pakai default di bawah.
+const DEFAULT_MODELS = ['gemini/gemini-3.7-flash'];
+const ENV_MODELS = (process.env.AI_MODELS || '').split(',').map(m => m.trim()).filter(Boolean);
+const ACTIVE_MODELS = ENV_MODELS.length ? ENV_MODELS : DEFAULT_MODELS;
 
-const MODEL_ROTATION_MEDIUM = ['gemini/gemini-3.7-flash'];
+const MODEL_ROTATION_HARD = ACTIVE_MODELS;
 
-const MODEL_ROTATION_EASY = ['gemini/gemini-3.7-flash'];
+const MODEL_ROTATION_MEDIUM = ACTIVE_MODELS;
+
+const MODEL_ROTATION_EASY = ACTIVE_MODELS;
 
 const DEFAULT_ROTATION = MODEL_ROTATION_HARD;
 

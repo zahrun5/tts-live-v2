@@ -20,7 +20,8 @@
  *   node tools/audit-banks.js --apply               # tulis hasil aturan pasti
  *   node tools/audit-banks.js --ai                  # dry-run + juri AI
  *   node tools/audit-banks.js --ai --apply          # terapkan aturan pasti + juri AI
- *   opsi lain: --batch=20 (item per panggilan AI), --root=<folder games> (untuk uji)
+ *   opsi lain: --batch=20 (item per panggilan AI), --model=<nama model> (ganti model AI),
+ *              --root=<folder games> (untuk uji)
  *
  * Verdict AI di-cache di tools/out/ai-cache.json, jadi kalau terputus tinggal jalankan
  * ulang perintah yang sama: yang sudah dinilai tidak dipanggil lagi.
@@ -268,6 +269,8 @@ async function auditGame(game) {
 (async () => {
   const wanted = args.game ? String(args.game).split(',') : Object.keys(ADAPTERS);
   for (const g of wanted) if (!ADAPTERS[g]) { console.error(`Game tidak dikenal: ${g}. Pilihan: ${Object.keys(ADAPTERS).join(', ')}`); process.exit(1); }
+  // --model=<nama model gateway> untuk memakai model lain dari default (mis. saat kena limit).
+  if (args.model && args.model !== true) process.env.AI_MODELS = String(args.model);
   if (USE_AI) callAI = require('../ai-client').callAI;
 
   console.log(`\n🔎 Audit bank soal — ${APPLY ? 'MODE TERAPKAN (file akan diubah)' : 'DRY-RUN (tidak ada file yang diubah)'}${USE_AI ? ' + juri AI' : ''}\n   folder: ${ROOT}\n`);
