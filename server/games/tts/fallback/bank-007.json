@@ -300,66 +300,6 @@
     ]
   },
   {
-    "name": "merah-rumah-ayam",
-    "words": [
-      {
-        "answer": "MERAH",
-        "direction": "across",
-        "clue": "Warna buah cabai matang atau darah"
-      },
-      {
-        "answer": "RUMAH",
-        "direction": "down",
-        "clue": "Bangunan tempat tinggal bersama keluarga"
-      },
-      {
-        "answer": "AYAM",
-        "direction": "across",
-        "clue": "Unggas penghasil telur yang suka berkokok"
-      },
-      {
-        "answer": "MAKAN",
-        "direction": "down",
-        "clue": "Kegiatan memasukkan sarapan atau makan siang ke mulut"
-      },
-      {
-        "answer": "MATA",
-        "direction": "across",
-        "clue": "Bagian tubuh manusia yang berfungsi untuk melihat"
-      },
-      {
-        "answer": "TANGAN",
-        "direction": "down",
-        "clue": "Bagian tubuh yang dipakai untuk memegang sesuatu"
-      },
-      {
-        "answer": "LAMPU",
-        "direction": "down",
-        "clue": "Alat penerang ruangan yang dinyalakan dengan listrik"
-      },
-      {
-        "answer": "MEJA",
-        "direction": "across",
-        "clue": "Perabot berkaki empat tempat meletakkan barang"
-      },
-      {
-        "answer": "KUCING",
-        "direction": "across",
-        "clue": "Hewan peliharaan berbulu yang suka mengeong"
-      },
-      {
-        "answer": "HUJAN",
-        "direction": "down",
-        "clue": "Air yang turun rintik-rintik atau deras dari langit"
-      },
-      {
-        "answer": "PINTU",
-        "direction": "across",
-        "clue": "Bagian dinding rumah yang dibuka untuk keluar masuk"
-      }
-    ]
-  },
-  {
     "name": "kucing-gigi-ikan",
     "words": [
       {

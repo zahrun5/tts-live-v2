@@ -117,6 +117,40 @@ const ADAPTERS = {
       'tidak lengkap, atau gramatikanya rusak. Terima kalimat sederhana yang wajar.'
   },
 
+  'susun-kata-acak': {
+    glob: 'fallback/bank-*.json', list: null, minList: 0,
+    key: it => norm(it),
+    render: it => String(it),
+    det: rules.det['susun-kata-acak'],
+    rubric: 'Game "susun huruf acak": penonton menebak kata dari huruf teracak. Kata harus dikenal orang Indonesia umum. TOLAK kata langka/arkais/istilah teknis.'
+  },
+
+  tts: {
+    glob: 'fallback/bank-*.json', list: null, minList: 0,
+    key: it => (it.words || []).map(w => w.answer).sort().join('|'),
+    render: it => (it.words || []).map(w => `${w.answer}=${w.clue}`).join(' ; '),
+    det: rules.det.tts,
+    rubric: 'Teka-teki silang (TTS) bahasa Indonesia. Setiap petunjuk harus benar menjelaskan jawabannya dan singkat. TOLAK jika ada kata langka atau petunjuk yang salah/menyesatkan.'
+  },
+
+  'sambung-kata': {
+    glob: 'fallback/bank-*.json', list: null, minList: 0,
+    key: it => it.baseLetters || (it.words || []).map(w => w.answer).sort().join('|'),
+    render: it => `Huruf: ${it.baseLetters} | Kata: ${(it.words || []).map(w => w.answer).join(', ')}`,
+    det: it => {
+      const r = rules.det['sambung-kata'](it);
+      if (!r || !r.edit) return r;
+      // Kata langka dibuang: pastikan sisa kata masih bisa disusun jadi grid (sama seperti saat bermain).
+      try {
+        const gen = require(path.join(ROOT, 'sambung-kata', 'generator.js'));
+        const res = gen.generateTTS({ words: r.edit.words.map(w => ({ answer: w.answer, direction: w.direction, clue: w.clue || 'x' })) }, { validate: true, verbose: false });
+        if (!res.success) return { drop: 'sisa kata tidak bisa disusun ke grid: ' + String(res.error).slice(0, 60) };
+      } catch (e) { return { drop: 'cek grid gagal: ' + e.message.slice(0, 60) }; }
+      return r;
+    },
+    rubric: 'Game sambung kata: kata-kata dari huruf dasar. Kata harus dikenal orang Indonesia umum. TOLAK kata langka.'
+  },
+
   'cari-kata': {
     glob: 'fallback/bank-*.json', list: 'words', minList: 8,
     key: it => norm(it.theme),
@@ -285,7 +319,7 @@ async function auditGame(game) {
     const byReason = {};
     r.removed.forEach(x => { const k = x.reason.replace(/".*?"/g, '"…"'); (byReason[k] = byReason[k] || []).push(x); });
     Object.entries(byReason).sort((a, b) => b[1].length - a[1].length).slice(0, 4).forEach(([k, list]) => {
-      const ex = list[0].item; const sample = ex.question || ex.sentence || ex.theme || ex.word || '';
+      const ex = list[0].item; const sample = typeof ex === 'string' ? ex : (ex.question || ex.sentence || ex.theme || ex.word || ex.name || '');
       console.log(`     - ${list.length}× ${k}   contoh: ${String(sample).slice(0, 70)}`);
     });
   }

@@ -39,6 +39,8 @@ function saveFallbackWord(word) {
   try {
     const clean = String(word || '').trim().toUpperCase().replace(/[^A-Z]/g, '');
     if (clean.length < 3) return false;
+    // Penjaga kualitas: tolak kata langka / tidak dikenal penonton.
+    if (!require('../../tools/bank-rules').sanitize('susun-kata-acak', clean)) return false;
 
     const allExisting = getAllFallbackWords();
     if (allExisting.includes(clean)) return false; // udah ada, skip

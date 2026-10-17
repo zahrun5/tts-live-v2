@@ -1,0 +1,6242 @@
+[
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-001.json",
+    "item": "KELERENG"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-001.json",
+    "item": "GASING"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-001.json",
+    "item": "ENGSEL"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-001.json",
+    "item": "STOPKONTAK"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-002.json",
+    "item": "GAYUNG"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-002.json",
+    "item": "KESET"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-002.json",
+    "item": "GORDEN"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-002.json",
+    "item": "SELEDRI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-002.json",
+    "item": "KENCUR"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-002.json",
+    "item": "LENGKUAS"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-002.json",
+    "item": "SERAI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-002.json",
+    "item": "KECAPI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-002.json",
+    "item": "NOTASI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-002.json",
+    "item": "PARTITUR"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-003.json",
+    "item": "ULANGTAHUN"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-003.json",
+    "item": "BINGKISAN"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-003.json",
+    "item": "KEMBANGAPI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-003.json",
+    "item": "ESKRIM"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-003.json",
+    "item": "OPOR"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-003.json",
+    "item": "LALAPAN"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-003.json",
+    "item": "KLEPON"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-003.json",
+    "item": "ONDE"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-003.json",
+    "item": "SERABI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-003.json",
+    "item": "GADOGADO"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-003.json",
+    "item": "URAP"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-003.json",
+    "item": "NASGOR"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-003.json",
+    "item": "MIGORENG"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-003.json",
+    "item": "CAPCAY"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-003.json",
+    "item": "SPAGETI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-003.json",
+    "item": "NUGGET"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-003.json",
+    "item": "TEHMANIS"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-003.json",
+    "item": "KOPIHITAM"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-003.json",
+    "item": "LIMUN"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-003.json",
+    "item": "RUANGTAMU"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-003.json",
+    "item": "KAMARMANDI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-003.json",
+    "item": "KAMARTIDUR"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-003.json",
+    "item": "BASEMEN"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-003.json",
+    "item": "SAVANA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-003.json",
+    "item": "OASE"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-003.json",
+    "item": "GUNUNGAPI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-003.json",
+    "item": "LAHAR"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-004.json",
+    "item": "BATERE"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-004.json",
+    "item": "KABELDATA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-004.json",
+    "item": "CELENGAN"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-004.json",
+    "item": "RUMAHSAKIT"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-004.json",
+    "item": "KANTORPOS"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-004.json",
+    "item": "JALANRAYA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-004.json",
+    "item": "LAMPULALIN"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-004.json",
+    "item": "MARKA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-004.json",
+    "item": "POMBENSIN"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-005.json",
+    "item": "MARMUT"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-005.json",
+    "item": "BIAWAK"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-005.json",
+    "item": "IGUANA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-005.json",
+    "item": "PITON"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-005.json",
+    "item": "SANCA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-005.json",
+    "item": "GURAME"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-005.json",
+    "item": "CAKALANG"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-005.json",
+    "item": "TERIPANG"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-005.json",
+    "item": "LUMBALUMBA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-005.json",
+    "item": "RAJUNGAN"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-005.json",
+    "item": "KEPISCUS"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-005.json",
+    "item": "ANEMON"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-005.json",
+    "item": "ALGA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-005.json",
+    "item": "KAKATUA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-005.json",
+    "item": "PELIKAN"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-005.json",
+    "item": "FLAMINGO"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-005.json",
+    "item": "KUTILANG"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-005.json",
+    "item": "KOLIBRI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-005.json",
+    "item": "KUPUKUPU"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-005.json",
+    "item": "CAPUNG"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-005.json",
+    "item": "TUNGAU"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-005.json",
+    "item": "BEKICOT"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-005.json",
+    "item": "DENGKUL"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-005.json",
+    "item": "BULUMATA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-006.json",
+    "item": "ZATBESI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-006.json",
+    "item": "TERMOMETER"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-006.json",
+    "item": "STETOSKOP"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-006.json",
+    "item": "AMBULAN"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-006.json",
+    "item": "RONTGEN"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-006.json",
+    "item": "MERAHPUTIH"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-006.json",
+    "item": "SESAJI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-006.json",
+    "item": "KLENTENG"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-007.json",
+    "item": "GENTA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-007.json",
+    "item": "TASBIH"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-007.json",
+    "item": "WEDA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-007.json",
+    "item": "TRIPITAKA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-007.json",
+    "item": "BHIKKHU"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-007.json",
+    "item": "NYEPI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-007.json",
+    "item": "WAISAK"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-007.json",
+    "item": "GALUNGAN"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-007.json",
+    "item": "SEKATEN"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-007.json",
+    "item": "GREBEG"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-007.json",
+    "item": "KENDURI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-007.json",
+    "item": "SELAMATAN"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-007.json",
+    "item": "TAHLILAN"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-007.json",
+    "item": "MASKAWIN"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-007.json",
+    "item": "CICIT"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-007.json",
+    "item": "KERETAAPI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-007.json",
+    "item": "DOKAR"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-007.json",
+    "item": "ANDONG"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-007.json",
+    "item": "KERETAKUDA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-007.json",
+    "item": "SEGWAY"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-007.json",
+    "item": "KURSIRODA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-007.json",
+    "item": "KRUK"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-008.json",
+    "item": "KAOSKAKI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-008.json",
+    "item": "SORBAN"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-008.json",
+    "item": "CELEMEK"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-008.json",
+    "item": "SEPRAI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-008.json",
+    "item": "PERMADANI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-008.json",
+    "item": "DIPAN"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-008.json",
+    "item": "PENGGARIS"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-008.json",
+    "item": "RAUTAN"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-008.json",
+    "item": "KRAYON"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-008.json",
+    "item": "PALET"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-008.json",
+    "item": "STAPLES"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-008.json",
+    "item": "BUKUTULIS"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-008.json",
+    "item": "BUKUGAMBAR"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-008.json",
+    "item": "BUKUCERITA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-008.json",
+    "item": "PAPANTULIS"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-008.json",
+    "item": "KASTI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-008.json",
+    "item": "KATOK"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-008.json",
+    "item": "DAMDAMAN"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-008.json",
+    "item": "ULARTANGGA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-008.json",
+    "item": "BILIAR"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-008.json",
+    "item": "JUDO"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-008.json",
+    "item": "ANGGAR"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-008.json",
+    "item": "GYMNASTIK"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-008.json",
+    "item": "KANOING"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-008.json",
+    "item": "ARUNGJERAM"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-008.json",
+    "item": "PARALAYANG"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-008.json",
+    "item": "BUNGEE"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-009.json",
+    "item": "NAHKODA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-009.json",
+    "item": "ANAKBUAH"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-009.json",
+    "item": "FORKLIFT"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-009.json",
+    "item": "ANAKSUNGAI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-009.json",
+    "item": "AIRTERJUN"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-009.json",
+    "item": "EMBUNG"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-009.json",
+    "item": "MATAAIR"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-009.json",
+    "item": "SUMBERAIR"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-009.json",
+    "item": "EMPANG"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-009.json",
+    "item": "SAOS"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-009.json",
+    "item": "MARGARIN"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-009.json",
+    "item": "PANGGANGAN"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-009.json",
+    "item": "LOYANG"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-009.json",
+    "item": "TALENAN"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-009.json",
+    "item": "PARUTAN"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-009.json",
+    "item": "SPATULA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-009.json",
+    "item": "SUTIL"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-009.json",
+    "item": "CENTONG"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-009.json",
+    "item": "IRUS"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-009.json",
+    "item": "JUICER"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-009.json",
+    "item": "RICECOOKER"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-009.json",
+    "item": "FREEZER"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-009.json",
+    "item": "DISPENSER"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-009.json",
+    "item": "MESINCUCI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-009.json",
+    "item": "KIPASANGIN"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-009.json",
+    "item": "HEATER"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-009.json",
+    "item": "TRAFO"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-009.json",
+    "item": "SEKERING"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-009.json",
+    "item": "SOKET"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-009.json",
+    "item": "ADAPTOR"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-009.json",
+    "item": "KOREKAPI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-009.json",
+    "item": "TABUNGGAS"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-009.json",
+    "item": "KOMPORGAS"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-009.json",
+    "item": "KAYUBAKAR"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-009.json",
+    "item": "PEMANGGANG"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-009.json",
+    "item": "KEMATUS"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-009.json",
+    "item": "DARANTO"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-009.json",
+    "item": "SOPAK"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-009.json",
+    "item": "JIMAK"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-009.json",
+    "item": "SIRAUT"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-010.json",
+    "item": "ABER"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-010.json",
+    "item": "BERJAJA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-010.json",
+    "item": "UNDAE"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-010.json",
+    "item": "IRINI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-010.json",
+    "item": "AWASAN"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-010.json",
+    "item": "WALIAH"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-010.json",
+    "item": "DERIT"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-010.json",
+    "item": "CUILAN"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-010.json",
+    "item": "FOLI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-010.json",
+    "item": "TOREK"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-010.json",
+    "item": "TANAKH"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-010.json",
+    "item": "SULUK"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-010.json",
+    "item": "ENTOG"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-010.json",
+    "item": "LONA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-010.json",
+    "item": "CUBIT"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-010.json",
+    "item": "TOKI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-010.json",
+    "item": "CERUCUK"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-010.json",
+    "item": "COLONG"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-010.json",
+    "item": "CONGAK"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-010.json",
+    "item": "SIKLIS"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-010.json",
+    "item": "RUMPIAN"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-010.json",
+    "item": "PIJAR"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-010.json",
+    "item": "BIOPLUS"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-010.json",
+    "item": "JAYUS"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-010.json",
+    "item": "DAGE"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-010.json",
+    "item": "SELIDIK"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-010.json",
+    "item": "TERPAAN"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-010.json",
+    "item": "TADAHAN"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-010.json",
+    "item": "DAHES"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-010.json",
+    "item": "LENJEH"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-010.json",
+    "item": "PEHIJAB"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-010.json",
+    "item": "DOYAK"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-010.json",
+    "item": "DIDONG"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-010.json",
+    "item": "PADANAN"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-010.json",
+    "item": "INGUS"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-010.json",
+    "item": "RESILIN"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-010.json",
+    "item": "ESEL"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-010.json",
+    "item": "CUCING"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-010.json",
+    "item": "SABOTAN"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-010.json",
+    "item": "BIOFLOK"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-010.json",
+    "item": "SELABEL"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-010.json",
+    "item": "TABO"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-010.json",
+    "item": "KELAB"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-010.json",
+    "item": "ANTASAN"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-010.json",
+    "item": "PIKOLO"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-010.json",
+    "item": "KERISUT"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-010.json",
+    "item": "KISAI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-010.json",
+    "item": "GANEMO"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-010.json",
+    "item": "MELABUH"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-010.json",
+    "item": "MENUIL"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-010.json",
+    "item": "EDAFIT"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-010.json",
+    "item": "GEDIK"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-010.json",
+    "item": "MANCU"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-010.json",
+    "item": "PERIDOT"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-010.json",
+    "item": "KARIL"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-010.json",
+    "item": "LORBER"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-010.json",
+    "item": "MATLOW"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-010.json",
+    "item": "KIAR"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-010.json",
+    "item": "AKROMISITAS"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-010.json",
+    "item": "AGRESTAL"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-010.json",
+    "item": "ALANIN"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-010.json",
+    "item": "ALBION"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-010.json",
+    "item": "ABDIKASI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-010.json",
+    "item": "AGITASIONAL"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-010.json",
+    "item": "ABONE"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-010.json",
+    "item": "AKORDION"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-010.json",
+    "item": "ADZAB"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-010.json",
+    "item": "AGROEKOTEKNOLOGI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-010.json",
+    "item": "ADAKALA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-010.json",
+    "item": "AKSIONALITAS"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-010.json",
+    "item": "AFIRMASI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-010.json",
+    "item": "AISI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-010.json",
+    "item": "AKATISIA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-010.json",
+    "item": "AGREGATOR"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-010.json",
+    "item": "ABILITAS"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-010.json",
+    "item": "AKMAL"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-010.json",
+    "item": "ADULARIA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-010.json",
+    "item": "AGAMAIS"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-010.json",
+    "item": "ADVISOR"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-010.json",
+    "item": "AGER"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-010.json",
+    "item": "AIRUD"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-011.json",
+    "item": "AGUK"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-011.json",
+    "item": "AEROBIK"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-011.json",
+    "item": "AKROBATIS"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-011.json",
+    "item": "AJEKTIVA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-011.json",
+    "item": "ALEK"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-011.json",
+    "item": "ALBUMEN"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-011.json",
+    "item": "AERODINAMIS"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-011.json",
+    "item": "AIKIDO"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-011.json",
+    "item": "AKITA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-011.json",
+    "item": "ABIOGENIK"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-011.json",
+    "item": "AFLUKS"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-011.json",
+    "item": "ABIOTIK"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-011.json",
+    "item": "ADIPARWA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-011.json",
+    "item": "AKROLEIN"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-011.json",
+    "item": "ADAKTIL"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-011.json",
+    "item": "AGAU"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-011.json",
+    "item": "AKSELOFILTER"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-011.json",
+    "item": "ACOLI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-011.json",
+    "item": "ABUYA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-011.json",
+    "item": "ABSENSI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-011.json",
+    "item": "AFOREFE"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-011.json",
+    "item": "ALGAKA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-011.json",
+    "item": "ABALON"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-011.json",
+    "item": "ADAMAT"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-011.json",
+    "item": "AFILAUP"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-011.json",
+    "item": "AHUTU"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-011.json",
+    "item": "AKAK"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-011.json",
+    "item": "AKREDITOR"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-011.json",
+    "item": "ADESI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-011.json",
+    "item": "AHORI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-011.json",
+    "item": "ADJUDIKATIF"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-011.json",
+    "item": "AJIMAT"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-011.json",
+    "item": "AERONAUT"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-011.json",
+    "item": "AEROBATIK"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-011.json",
+    "item": "AKUSTIKA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-011.json",
+    "item": "ADUHAI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-011.json",
+    "item": "ABAKUS"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-011.json",
+    "item": "ADAR"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-011.json",
+    "item": "ABDU"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-011.json",
+    "item": "ADIWANGSA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-011.json",
+    "item": "ADIKANDA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-011.json",
+    "item": "AGRESOR"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-011.json",
+    "item": "ALANSARA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-011.json",
+    "item": "AKHTAJ"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-011.json",
+    "item": "ABNON"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-011.json",
+    "item": "AKSENTUATIF"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-011.json",
+    "item": "AGRI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-011.json",
+    "item": "ACUCI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-011.json",
+    "item": "AKUADESTILATA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-011.json",
+    "item": "AKRILAMIDA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-011.json",
+    "item": "ALBAHDIR"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-011.json",
+    "item": "ADIWICARA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-011.json",
+    "item": "AGRONOM"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-011.json",
+    "item": "ABAREMA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-011.json",
+    "item": "AKDANGANG"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-011.json",
+    "item": "ADEKUAT"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-011.json",
+    "item": "AFLATOKSIN"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-011.json",
+    "item": "AGROHIDROLOGI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-011.json",
+    "item": "ABDIKASIM"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-011.json",
+    "item": "ALCEMA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-011.json",
+    "item": "AFAL"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-011.json",
+    "item": "AIOLI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-011.json",
+    "item": "ADJEKTIF"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-011.json",
+    "item": "AKUALUNG"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-011.json",
+    "item": "AKALASIA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-011.json",
+    "item": "ADISISWA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-011.json",
+    "item": "ALEGORIS"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-011.json",
+    "item": "ALEMAN"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-011.json",
+    "item": "AINULBANAT"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-011.json",
+    "item": "ALFANUMERIK"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-011.json",
+    "item": "ALDOKSIKARB"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-011.json",
+    "item": "AKLORHIDRIA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-011.json",
+    "item": "ADITORIUM"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-011.json",
+    "item": "AGROGEOLOGI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-011.json",
+    "item": "AKSIOMATIS"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-011.json",
+    "item": "ADIB"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-011.json",
+    "item": "AFSEL"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-011.json",
+    "item": "ABATOAR"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-011.json",
+    "item": "AEROFISIOLOGI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-011.json",
+    "item": "AKTENTAS"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-011.json",
+    "item": "ADIGUNG"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-011.json",
+    "item": "ABUTAI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-011.json",
+    "item": "AGROBIS"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-011.json",
+    "item": "AFINITAS"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-011.json",
+    "item": "ADAPTOGEN"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-011.json",
+    "item": "AHOLA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-011.json",
+    "item": "ADRES"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-011.json",
+    "item": "AKTINOKIMIA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-011.json",
+    "item": "AKHB"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-011.json",
+    "item": "ALERGENISITAS"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-012.json",
+    "item": "AGROBIOLOGI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-012.json",
+    "item": "AKULTURISASI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-012.json",
+    "item": "AKTUASI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-012.json",
+    "item": "AENI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-012.json",
+    "item": "AKSELEROMETER"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-012.json",
+    "item": "ADAMANTIN"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-012.json",
+    "item": "AKSESIBILITAS"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-012.json",
+    "item": "ALBINO"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-012.json",
+    "item": "ALEL"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-012.json",
+    "item": "ADSORPTIF"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-012.json",
+    "item": "AKLAMASI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-012.json",
+    "item": "AETIOLOGI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-012.json",
+    "item": "AGATE"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-012.json",
+    "item": "AEROSTAT"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-012.json",
+    "item": "ADNEKSITIS"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-012.json",
+    "item": "AKASA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-012.json",
+    "item": "AKOMODATOR"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-012.json",
+    "item": "ALBINOID"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-012.json",
+    "item": "AGAROSE"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-012.json",
+    "item": "AGROEKONOMIS"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-012.json",
+    "item": "AJEN"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-012.json",
+    "item": "AGLUTINATIF"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-012.json",
+    "item": "AKOLIT"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-012.json",
+    "item": "ACANG"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-012.json",
+    "item": "AIRO"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-012.json",
+    "item": "AEROSOLISASI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-012.json",
+    "item": "ALGOID"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-012.json",
+    "item": "AKBID"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-012.json",
+    "item": "AEPI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-012.json",
+    "item": "AFDAL"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-012.json",
+    "item": "ABRA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-012.json",
+    "item": "ALBERZI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-012.json",
+    "item": "AGLONEMA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-012.json",
+    "item": "AGAMAISASI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-012.json",
+    "item": "ADIKODRATI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-012.json",
+    "item": "AJUR"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-012.json",
+    "item": "AKROBATIK"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-012.json",
+    "item": "ABSTRAKISME"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-012.json",
+    "item": "AJIK"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-012.json",
+    "item": "ALIFBATA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-012.json",
+    "item": "ADUNG"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-012.json",
+    "item": "ADMINISTRATUR"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-012.json",
+    "item": "ABUGIDA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-012.json",
+    "item": "ABORTIF"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-012.json",
+    "item": "ADRI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-012.json",
+    "item": "AGENSIFIKASI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-012.json",
+    "item": "AKUAPONIK"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-012.json",
+    "item": "AEROFOBIA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-012.json",
+    "item": "ABATESASI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-012.json",
+    "item": "ADVIS"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-012.json",
+    "item": "AIWO"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-012.json",
+    "item": "AKEIRIA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-012.json",
+    "item": "ABIMANA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-012.json",
+    "item": "AEROLOGI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-012.json",
+    "item": "ACOK"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-012.json",
+    "item": "ABUSIF"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-012.json",
+    "item": "AFIRMATIF"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-012.json",
+    "item": "ALFU"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-012.json",
+    "item": "ABUT"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-012.json",
+    "item": "ALGORITME"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-012.json",
+    "item": "AKROMATOPSIA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-012.json",
+    "item": "ADLIB"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-012.json",
+    "item": "AGROFARMASI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-012.json",
+    "item": "AKROMATIK"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-012.json",
+    "item": "ADIBANGKIT"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-012.json",
+    "item": "AGYA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-012.json",
+    "item": "AKUA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-012.json",
+    "item": "AGONAL"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-012.json",
+    "item": "ABSORBAN"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-012.json",
+    "item": "AGHT"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-012.json",
+    "item": "ABUR"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-012.json",
+    "item": "ABAU"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-012.json",
+    "item": "ALBANAT"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-012.json",
+    "item": "ABSORBSI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-012.json",
+    "item": "AINU"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-012.json",
+    "item": "ABITI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-012.json",
+    "item": "AKUPRESUR"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-012.json",
+    "item": "AHIR"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-012.json",
+    "item": "ALBUMINIMETER"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-012.json",
+    "item": "AJIR"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-012.json",
+    "item": "AFTUFIN"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-012.json",
+    "item": "AKLIMASI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-013.json",
+    "item": "ADAPTABEL"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-013.json",
+    "item": "AKPARNAS"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-013.json",
+    "item": "AHIN"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-013.json",
+    "item": "ABALA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-013.json",
+    "item": "AKOMODASIONIS"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-013.json",
+    "item": "ALBEDOGRAF"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-013.json",
+    "item": "AGRIKULTUR"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-013.json",
+    "item": "AHIRAT"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-013.json",
+    "item": "ABUJA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-013.json",
+    "item": "ADANG"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-013.json",
+    "item": "AAMAI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-013.json",
+    "item": "AFWAH"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-013.json",
+    "item": "ADENDUM"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-013.json",
+    "item": "ABIU"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-013.json",
+    "item": "ADANGANG"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-013.json",
+    "item": "AKADEMIKUS"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-013.json",
+    "item": "AJUDIKATOR"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-013.json",
+    "item": "AKSIS"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-013.json",
+    "item": "ADIBIBIT"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-013.json",
+    "item": "AKSEPTASI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-013.json",
+    "item": "AKATERE"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-013.json",
+    "item": "AKSIOLOGI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-013.json",
+    "item": "AGITASI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-013.json",
+    "item": "AEOLUS"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-013.json",
+    "item": "AKTUIL"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-013.json",
+    "item": "ADIDAYA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-013.json",
+    "item": "AJEG"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-013.json",
+    "item": "ALFABETIS"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-013.json",
+    "item": "AHMAK"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-013.json",
+    "item": "ADIPONEKTIN"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-013.json",
+    "item": "ADAPUS"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-013.json",
+    "item": "ABADIAT"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-013.json",
+    "item": "AFOGATO"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-013.json",
+    "item": "ADIGANG"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-013.json",
+    "item": "ABON"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-013.json",
+    "item": "AGROKIMIA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-013.json",
+    "item": "ACOAN"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-013.json",
+    "item": "ADIWACANA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-013.json",
+    "item": "AGITATOR"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-013.json",
+    "item": "ADRONITIS"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-013.json",
+    "item": "AKATOPI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-013.json",
+    "item": "ADOPTIF"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-013.json",
+    "item": "AGAMAWAN"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-013.json",
+    "item": "ADIKARYA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-013.json",
+    "item": "AKUAKAKTIN"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-013.json",
+    "item": "ADISENI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-013.json",
+    "item": "AGAMEN"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-013.json",
+    "item": "AKRAL"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-013.json",
+    "item": "AGROSISTEM"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-013.json",
+    "item": "ACUNGAN"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-013.json",
+    "item": "AJEK"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-013.json",
+    "item": "AFLATOKSIKOSIS"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-013.json",
+    "item": "AKUADUK"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-013.json",
+    "item": "ABABIL"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-013.json",
+    "item": "ADAPTOMETER"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-013.json",
+    "item": "AFLUEN"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-013.json",
+    "item": "AGROLOGI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-013.json",
+    "item": "ABBASIYAH"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-013.json",
+    "item": "AHLULBAIT"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-013.json",
+    "item": "AFEKTIF"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-013.json",
+    "item": "ADIRATNA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-013.json",
+    "item": "AFWAN"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-013.json",
+    "item": "AKRODERMATITIS"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-013.json",
+    "item": "AEROFIL"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-013.json",
+    "item": "AKKADIA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-013.json",
+    "item": "AFAR"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-013.json",
+    "item": "ABNORMALITAS"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-013.json",
+    "item": "AGROMETEOROLOGI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-013.json",
+    "item": "AHIT"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-013.json",
+    "item": "AGROSTOLOGI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-013.json",
+    "item": "AKHLAQ"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-013.json",
+    "item": "ABECE"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-013.json",
+    "item": "ALABIO"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-013.json",
+    "item": "AJENDAM"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-013.json",
+    "item": "ABUK"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-013.json",
+    "item": "AEROMOVEL"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-013.json",
+    "item": "AGAMIS"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-013.json",
+    "item": "ALDAKHURA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-013.json",
+    "item": "AKSONOMETRI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-013.json",
+    "item": "ABUL"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-013.json",
+    "item": "AKHIRUSANAH"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-013.json",
+    "item": "AGAMOGENESIS"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-013.json",
+    "item": "AKUPUNKTURIS"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-013.json",
+    "item": "ADRET"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-013.json",
+    "item": "ABSTINEN"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-013.json",
+    "item": "ABSURDISME"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-013.json",
+    "item": "AKTAN"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-013.json",
+    "item": "AFAIR"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-013.json",
+    "item": "ALBEDOMETER"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-013.json",
+    "item": "ADIMANUSIA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-014.json",
+    "item": "ACARAM"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-014.json",
+    "item": "ADMINDUK"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-014.json",
+    "item": "ADITOKOH"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-014.json",
+    "item": "AJRE"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-014.json",
+    "item": "ADYGEA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-014.json",
+    "item": "ABJADIAH"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-014.json",
+    "item": "AKARURIT"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-014.json",
+    "item": "AKTUALITAS"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-014.json",
+    "item": "AKAS"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-014.json",
+    "item": "AKIT"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-014.json",
+    "item": "ADIDINGIN"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-014.json",
+    "item": "ADIPASAR"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-014.json",
+    "item": "ABOTOI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-014.json",
+    "item": "AKTUARIS"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-014.json",
+    "item": "AKULTURASI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-014.json",
+    "item": "ABIOLOGI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-014.json",
+    "item": "AKABEKO"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-014.json",
+    "item": "ALELU"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-014.json",
+    "item": "AFEREN"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-014.json",
+    "item": "AEROKORI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-014.json",
+    "item": "ABSTEIN"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-014.json",
+    "item": "AGNOSTEROL"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-014.json",
+    "item": "AKSIAL"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-014.json",
+    "item": "ALARWALE"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-014.json",
+    "item": "AFOTIK"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-014.json",
+    "item": "ALENDRONAT"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-014.json",
+    "item": "AKHBAR"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-014.json",
+    "item": "ADIWIDIA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-014.json",
+    "item": "ADENDA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-014.json",
+    "item": "ALBIGENSIS"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-014.json",
+    "item": "ABDOMINOPLASTI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-014.json",
+    "item": "AKUISME"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-014.json",
+    "item": "ALAP"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-014.json",
+    "item": "ABSTENSI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-014.json",
+    "item": "ABAR"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-014.json",
+    "item": "ALGORITMIK"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-014.json",
+    "item": "ABSENTEISME"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-014.json",
+    "item": "AFRIT"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-014.json",
+    "item": "ALERGENITAS"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-014.json",
+    "item": "ABSORBANS"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-014.json",
+    "item": "AEROMETER"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-014.json",
+    "item": "ABID"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-014.json",
+    "item": "ACIR"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-014.json",
+    "item": "ADOPSIAN"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-014.json",
+    "item": "ADPOKAT"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-014.json",
+    "item": "AKUSTIKAN"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-014.json",
+    "item": "ADING"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-014.json",
+    "item": "ABURAGE"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-014.json",
+    "item": "AGRESIFITAS"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-014.json",
+    "item": "ABORIGIN"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-014.json",
+    "item": "AEROFOIL"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-014.json",
+    "item": "AGROINOVASI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-014.json",
+    "item": "ALIAH"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-014.json",
+    "item": "AKUAREL"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-014.json",
+    "item": "ADVENTISIUS"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-014.json",
+    "item": "AFDRUK"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-014.json",
+    "item": "ADHESIF"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-014.json",
+    "item": "AILUROFILI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-014.json",
+    "item": "ALBER"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-014.json",
+    "item": "ABROP"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-014.json",
+    "item": "AKUATIS"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-014.json",
+    "item": "ACAKADUT"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-014.json",
+    "item": "ADISI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-014.json",
+    "item": "ACAKADUL"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-014.json",
+    "item": "AHUM"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-014.json",
+    "item": "AKPRI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-014.json",
+    "item": "AEROMEDIS"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-014.json",
+    "item": "AJUFAN"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-014.json",
+    "item": "AKSIOMATIK"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-014.json",
+    "item": "AGROMEDIS"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-014.json",
+    "item": "AKNE"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-014.json",
+    "item": "AGUSTINIANISME"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-014.json",
+    "item": "AGROPOLITAN"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-014.json",
+    "item": "ALAH"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-014.json",
+    "item": "AKHLAS"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-014.json",
+    "item": "AGROINPUT"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-014.json",
+    "item": "ADIMANUSIAWI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-014.json",
+    "item": "AKUARIS"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-014.json",
+    "item": "ABITURIEN"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-014.json",
+    "item": "AFRIKANS"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-014.json",
+    "item": "ADUM"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-014.json",
+    "item": "AGRISILVIKULTUR"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-014.json",
+    "item": "AKOR"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-014.json",
+    "item": "AGLET"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-014.json",
+    "item": "AGROEKOWISATA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-014.json",
+    "item": "ALANA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-015.json",
+    "item": "ALEUT"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-015.json",
+    "item": "ADALAPUR"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-015.json",
+    "item": "AKAP"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-015.json",
+    "item": "ADUTAN"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-015.json",
+    "item": "AEROFON"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-015.json",
+    "item": "AERODINAMIK"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-015.json",
+    "item": "ADIPURNA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-015.json",
+    "item": "AKBK"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-015.json",
+    "item": "AKSARAWAN"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-015.json",
+    "item": "ALEG"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-015.json",
+    "item": "AGROKOMPLEKS"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-015.json",
+    "item": "ABANO"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-015.json",
+    "item": "AGROPANGAN"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-015.json",
+    "item": "ABRAP"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-015.json",
+    "item": "ADIWIRAWATI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-015.json",
+    "item": "ADAPTIF"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-015.json",
+    "item": "AKHIRULKALAM"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-015.json",
+    "item": "ADIMISME"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-015.json",
+    "item": "ADMISIBILITAS"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-015.json",
+    "item": "ALHAMBRA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-015.json",
+    "item": "AFDOL"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-015.json",
+    "item": "AGRONOMIK"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-015.json",
+    "item": "AKSEPTABEL"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-015.json",
+    "item": "AKTE"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-015.json",
+    "item": "AKROYOGA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-015.json",
+    "item": "AKPOL"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-015.json",
+    "item": "ADIWIYATA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-015.json",
+    "item": "ABPPTSI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-015.json",
+    "item": "AJUAN"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-015.json",
+    "item": "ABADIYAH"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-015.json",
+    "item": "AGILITAS"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-015.json",
+    "item": "ALIMBUBU"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-015.json",
+    "item": "AKUNTABEL"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-015.json",
+    "item": "AFRAMA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-015.json",
+    "item": "AKDP"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-015.json",
+    "item": "ADIMARGA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-015.json",
+    "item": "ADRIATIK"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-015.json",
+    "item": "ACUMAN"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-015.json",
+    "item": "AHANAWAN"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-015.json",
+    "item": "AESTETIKA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-015.json",
+    "item": "AGONI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-015.json",
+    "item": "ABDOMINAL"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-015.json",
+    "item": "AFUR"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-015.json",
+    "item": "ALBUMINOMETER"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-015.json",
+    "item": "AKADAMA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-015.json",
+    "item": "AJIB"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-015.json",
+    "item": "ABRAS"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-015.json",
+    "item": "ADULARISASI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-015.json",
+    "item": "ABADDON"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-015.json",
+    "item": "AKBACA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-015.json",
+    "item": "AGAH"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-015.json",
+    "item": "AFERITIF"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-015.json",
+    "item": "AKSOSTIL"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-015.json",
+    "item": "AEMONO"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-015.json",
+    "item": "AGIO"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-015.json",
+    "item": "ABDUKSI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-015.json",
+    "item": "AEROSKOP"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-015.json",
+    "item": "AKTUALISASI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-015.json",
+    "item": "AKSON"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-015.json",
+    "item": "ALFUR"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-015.json",
+    "item": "AFKIR"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-015.json",
+    "item": "ADUMLA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-015.json",
+    "item": "ADAGIUM"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-015.json",
+    "item": "ALIMEN"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-015.json",
+    "item": "AFKOFOR"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-015.json",
+    "item": "ALATUD"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-015.json",
+    "item": "AKUK"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-015.json",
+    "item": "AJUJAH"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-015.json",
+    "item": "AKOMODIR"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-015.json",
+    "item": "AKGI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-015.json",
+    "item": "ABRIPTU"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-015.json",
+    "item": "ALBINISME"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-015.json",
+    "item": "AJUN"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-015.json",
+    "item": "AEROBIKA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-015.json",
+    "item": "ALAU"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-015.json",
+    "item": "ADONARA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-015.json",
+    "item": "ABERASI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-015.json",
+    "item": "ABSTRAKSI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-015.json",
+    "item": "AFTUR"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-015.json",
+    "item": "AHUNI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-015.json",
+    "item": "ABDOMINIS"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-015.json",
+    "item": "ACAH"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-015.json",
+    "item": "AKARBOSA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-015.json",
+    "item": "ALFATOKSIN"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-015.json",
+    "item": "AIMARA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-015.json",
+    "item": "AFTA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-015.json",
+    "item": "AGAMAISME"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-015.json",
+    "item": "AKSELERATIF"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-015.json",
+    "item": "ADIPENJAHAT"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-015.json",
+    "item": "ABSURDITAS"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-015.json",
+    "item": "ADUN"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-016.json",
+    "item": "AKSIDENSI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-016.json",
+    "item": "ABIAN"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-016.json",
+    "item": "AJUNG"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-016.json",
+    "item": "ALERGENIK"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-016.json",
+    "item": "ABIOGENETIS"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-016.json",
+    "item": "ALGORITMIS"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-016.json",
+    "item": "AILANA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-016.json",
+    "item": "ADENINA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-016.json",
+    "item": "ADITYAWARMAN"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-016.json",
+    "item": "ADISATRIA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-016.json",
+    "item": "ALEWAR"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-016.json",
+    "item": "ABROSIA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-016.json",
+    "item": "ABSONAN"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-016.json",
+    "item": "ALEKSIA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-016.json",
+    "item": "ABUHAN"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-016.json",
+    "item": "ABROGASI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-016.json",
+    "item": "ALGONKIN"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-016.json",
+    "item": "AKTINOGRAF"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-016.json",
+    "item": "ADMISI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-016.json",
+    "item": "AGUNAN"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-016.json",
+    "item": "AKOMODATIF"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-016.json",
+    "item": "AJEP"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-016.json",
+    "item": "ADIWARNA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-016.json",
+    "item": "AEROGEN"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-016.json",
+    "item": "AJEKTIF"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-016.json",
+    "item": "AEKI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-016.json",
+    "item": "AKHLI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-016.json",
+    "item": "AJAB"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-016.json",
+    "item": "AGROEDUKASI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-016.json",
+    "item": "AGROTEKNOLOGI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-016.json",
+    "item": "ABMI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-016.json",
+    "item": "ABRIN"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-016.json",
+    "item": "AHLAK"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-016.json",
+    "item": "AKUEDUK"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-016.json",
+    "item": "ABAB"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-016.json",
+    "item": "ABLUR"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-016.json",
+    "item": "ALERGIS"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-016.json",
+    "item": "AGDAGA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-016.json",
+    "item": "ABTAR"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-016.json",
+    "item": "AKUISITOR"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-016.json",
+    "item": "ALABANGKA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-016.json",
+    "item": "ADIJANA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-016.json",
+    "item": "AJISAKA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-016.json",
+    "item": "ADEKUASI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-016.json",
+    "item": "ADIPATNI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-016.json",
+    "item": "AGROMARITIM"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-016.json",
+    "item": "AHLILKITAB"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-016.json",
+    "item": "AKUAFALFA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-016.json",
+    "item": "ALGOFILIA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-016.json",
+    "item": "ABOMASITIS"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-016.json",
+    "item": "AIPDA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-016.json",
+    "item": "AIDI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-016.json",
+    "item": "AKUASKAP"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-016.json",
+    "item": "AHMER"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-016.json",
+    "item": "ABSORPSI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-016.json",
+    "item": "AFIFAR"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-016.json",
+    "item": "ADIGUNA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-016.json",
+    "item": "AKKI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-016.json",
+    "item": "AIPI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-016.json",
+    "item": "AKRILIK"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-016.json",
+    "item": "ADAN"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-016.json",
+    "item": "ABOLISIONISME"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-016.json",
+    "item": "AGROEKOLOGI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-016.json",
+    "item": "AKSIOMA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-016.json",
+    "item": "AKSARAWATI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-016.json",
+    "item": "AGRITERORISME"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-016.json",
+    "item": "AGLOMERASI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-016.json",
+    "item": "AKUAKULTUR"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-016.json",
+    "item": "AKANTIT"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-016.json",
+    "item": "ABISAL"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-016.json",
+    "item": "ADPEL"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-016.json",
+    "item": "AKBOHONG"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-016.json",
+    "item": "AGUL"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-016.json",
+    "item": "AKTUATOR"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-016.json",
+    "item": "ADFLUVIAL"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-016.json",
+    "item": "AGREGASI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-016.json",
+    "item": "AHILOSO"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-016.json",
+    "item": "ALANTARO"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-016.json",
+    "item": "ADIWASTRA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-016.json",
+    "item": "AGATS"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-016.json",
+    "item": "ALIENASI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-016.json",
+    "item": "AFANTASIA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-016.json",
+    "item": "AAJI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-016.json",
+    "item": "ALAD"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-017.json",
+    "item": "AKKOPSI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-017.json",
+    "item": "ADENOMIOSIS"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-017.json",
+    "item": "AGNOSTIK"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-017.json",
+    "item": "AKPAR"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-017.json",
+    "item": "ACIOTE"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-017.json",
+    "item": "ADIHANTAR"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-017.json",
+    "item": "ALHANIK"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-017.json",
+    "item": "AGUARDIENTE"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-017.json",
+    "item": "ABING"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-017.json",
+    "item": "ALIENATIF"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-017.json",
+    "item": "AGAMANI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-017.json",
+    "item": "ADIKUASA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-017.json",
+    "item": "ALBAS"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-017.json",
+    "item": "AKING"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-017.json",
+    "item": "ABUNG"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-017.json",
+    "item": "ALGESIA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-017.json",
+    "item": "AKSOS"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-017.json",
+    "item": "ALBN"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-017.json",
+    "item": "ABSAH"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-017.json",
+    "item": "ADVERTENSI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-017.json",
+    "item": "AFIAT"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-017.json",
+    "item": "ABITUREN"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-017.json",
+    "item": "ABREVIASI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-017.json",
+    "item": "AKADEMIA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-017.json",
+    "item": "AKAMSI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-017.json",
+    "item": "AKBIDAK"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-017.json",
+    "item": "ABIOSFER"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-017.json",
+    "item": "AKPER"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-017.json",
+    "item": "AERASI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-017.json",
+    "item": "AFUAH"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-017.json",
+    "item": "AKAPELA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-017.json",
+    "item": "ALENGKA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-017.json",
+    "item": "ABRAKADABRA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-017.json",
+    "item": "ADAPTABILITAS"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-017.json",
+    "item": "AFILIATOR"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-017.json",
+    "item": "ADIKARA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-017.json",
+    "item": "AGITATIF"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-017.json",
+    "item": "AHWAL"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-017.json",
+    "item": "ABTI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-017.json",
+    "item": "AKPEM"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-017.json",
+    "item": "ADENOPATI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-017.json",
+    "item": "AKRILONITRIL"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-017.json",
+    "item": "ADITIF"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-017.json",
+    "item": "ADIINSANI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-017.json",
+    "item": "AGROFORESTRI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-017.json",
+    "item": "AKLIAH"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-017.json",
+    "item": "ADULTERASI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-017.json",
+    "item": "AKUPUNKTUR"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-017.json",
+    "item": "ABJAT"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-017.json",
+    "item": "AKUPUNTUR"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-017.json",
+    "item": "ABISINIA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-017.json",
+    "item": "AJUDIKASI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-017.json",
+    "item": "AKKM"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-017.json",
+    "item": "ABLASI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-017.json",
+    "item": "ALGILIK"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-017.json",
+    "item": "AKMI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-017.json",
+    "item": "ADIBUSANA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-017.json",
+    "item": "AHERAT"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-017.json",
+    "item": "AIMI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-017.json",
+    "item": "ABANGDA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-017.json",
+    "item": "ADVERSITAS"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-017.json",
+    "item": "ADIBAHASA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-017.json",
+    "item": "ADIKSIMBA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-017.json",
+    "item": "ABSORPTIF"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-017.json",
+    "item": "AGAS"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-017.json",
+    "item": "AGROINDUSTRI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-017.json",
+    "item": "AGAL"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-017.json",
+    "item": "ALGOLOGI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-017.json",
+    "item": "AKBENRONG"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-017.json",
+    "item": "AKUAFABA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-017.json",
+    "item": "ADORA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-017.json",
+    "item": "AKLIMATISASI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-017.json",
+    "item": "ADDIE"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-017.json",
+    "item": "ALEGASI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-017.json",
+    "item": "AKUMULATIF"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-017.json",
+    "item": "AFRIKANER"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-017.json",
+    "item": "AGRONOMIS"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-017.json",
+    "item": "AKUATIK"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-017.json",
+    "item": "ACINGARA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-017.json",
+    "item": "AGITPROP"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-017.json",
+    "item": "AKARAMBING"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-018.json",
+    "item": "AGROPRENEUR"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-018.json",
+    "item": "AGRARIS"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-018.json",
+    "item": "AKORD"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-018.json",
+    "item": "ALDOHEKSOSA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-018.json",
+    "item": "ADIKA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-018.json",
+    "item": "ABISEKA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-018.json",
+    "item": "ADOLESENS"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-018.json",
+    "item": "AEROELASTISITAS"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-018.json",
+    "item": "AKSIOMATISASI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-018.json",
+    "item": "ABANDONEMEN"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-018.json",
+    "item": "AGREGATIF"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-018.json",
+    "item": "ADSTRINGEN"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-018.json",
+    "item": "AIRORAN"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-018.json",
+    "item": "AABINOMIN"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-018.json",
+    "item": "AGROPOLIS"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-018.json",
+    "item": "AGROWISATA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-018.json",
+    "item": "AKSESIBEL"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-018.json",
+    "item": "AEROLOGIS"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-018.json",
+    "item": "AKTUARIA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-018.json",
+    "item": "ALGORISMA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-018.json",
+    "item": "AKSEPTOR"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-018.json",
+    "item": "ALIMENTER"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-018.json",
+    "item": "AJISAI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-018.json",
+    "item": "ABROSFER"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-018.json",
+    "item": "AGROEDUWISATA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-018.json",
+    "item": "AKSA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-018.json",
+    "item": "AGRIPRENEUR"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-018.json",
+    "item": "ALDABRA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-018.json",
+    "item": "AKOLADE"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-018.json",
+    "item": "ALDAK"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-018.json",
+    "item": "ALIMENTASI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-018.json",
+    "item": "AJWA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-018.json",
+    "item": "AKSELEROGRAF"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-018.json",
+    "item": "AKROBAT"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-018.json",
+    "item": "ALEATORI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-018.json",
+    "item": "AKELIT"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-018.json",
+    "item": "ABSOLUTISME"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-018.json",
+    "item": "ADILUHUNG"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-018.json",
+    "item": "AGRONURSING"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-018.json",
+    "item": "AGIH"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-018.json",
+    "item": "ALFUREN"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-018.json",
+    "item": "AEROSIL"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-018.json",
+    "item": "AEROTROPOLIS"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-018.json",
+    "item": "ABIYASA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-018.json",
+    "item": "AIPTU"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-018.json",
+    "item": "ALFABETIKAL"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-018.json",
+    "item": "AKSOLO"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-018.json",
+    "item": "ALFALFA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-018.json",
+    "item": "AJOENE"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-018.json",
+    "item": "ACALOLEPTA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-018.json",
+    "item": "ABILAWA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-018.json",
+    "item": "AKROLIT"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-018.json",
+    "item": "ABRAB"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-018.json",
+    "item": "AGRESIVITAS"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-018.json",
+    "item": "AGROEKONOMI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-018.json",
+    "item": "ABULHAYAT"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-018.json",
+    "item": "ALBUMIN"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-018.json",
+    "item": "AFESIS"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-018.json",
+    "item": "AIKWAKAI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-018.json",
+    "item": "AFTOVIRUS"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-018.json",
+    "item": "AILAKAR"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-018.json",
+    "item": "AKRESI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-018.json",
+    "item": "ADIPERAGAWAN"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-018.json",
+    "item": "AGROTERORISME"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-018.json",
+    "item": "ADIKONG"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-018.json",
+    "item": "ALIFURU"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-018.json",
+    "item": "ADIPOKIN"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-018.json",
+    "item": "ABUS"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-018.json",
+    "item": "AGEL"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-018.json",
+    "item": "AKABRI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-018.json",
+    "item": "AFEKTIFITAS"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-018.json",
+    "item": "AGRILUS"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-018.json",
+    "item": "AKANAK"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-018.json",
+    "item": "ADENOIDEKTOMI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-018.json",
+    "item": "ADPERTENSI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-018.json",
+    "item": "AKMIL"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-018.json",
+    "item": "AHMADI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-018.json",
+    "item": "ADENIUM"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-018.json",
+    "item": "AFGANI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-018.json",
+    "item": "ADPIS"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-018.json",
+    "item": "AKTINOMISET"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-018.json",
+    "item": "ALHIJAMAH"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-018.json",
+    "item": "AKUADES"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-019.json",
+    "item": "ADIBOGA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-019.json",
+    "item": "AKSEPTABILITAS"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-019.json",
+    "item": "AKSELERATOR"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-019.json",
+    "item": "AKULTURATIF"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-019.json",
+    "item": "ADHAN"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-019.json",
+    "item": "AHIMSA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-019.json",
+    "item": "AKHERAT"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-019.json",
+    "item": "AJUVAN"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-019.json",
+    "item": "ADIRATA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-019.json",
+    "item": "AERONAUTIKAL"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-019.json",
+    "item": "AGENDARIS"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-019.json",
+    "item": "ACEWEYAWUNA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-019.json",
+    "item": "ALILA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-019.json",
+    "item": "AKOMPANIMEN"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-019.json",
+    "item": "AGROSILVOPASTURA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-019.json",
+    "item": "AJAM"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-019.json",
+    "item": "ABLATIF"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-019.json",
+    "item": "AKADEMIKA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-019.json",
+    "item": "AKEW"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-019.json",
+    "item": "ALGOJO"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-019.json",
+    "item": "ADIPUISI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-019.json",
+    "item": "AKBASING"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-019.json",
+    "item": "ADENIN"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-019.json",
+    "item": "AERO"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-019.json",
+    "item": "AEROGRAM"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-019.json",
+    "item": "AEROFILATELI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-019.json",
+    "item": "AKUASTAT"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-019.json",
+    "item": "AJUK"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-019.json",
+    "item": "AGATOLOGI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-019.json",
+    "item": "ALERGEN"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-019.json",
+    "item": "ABRIP"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-019.json",
+    "item": "ALAF"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-019.json",
+    "item": "ALGRAFI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-019.json",
+    "item": "ABOLISIONIS"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-019.json",
+    "item": "ADIWISMA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-019.json",
+    "item": "AKSENTUASI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-019.json",
+    "item": "ADIBINTANG"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-019.json",
+    "item": "AKAROTA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-019.json",
+    "item": "ABIB"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-019.json",
+    "item": "ABKHAZ"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-019.json",
+    "item": "AKIYOWA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-019.json",
+    "item": "ADAPTER"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-019.json",
+    "item": "AERODINE"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-019.json",
+    "item": "AKUWU"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-019.json",
+    "item": "ALAWIYIN"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-019.json",
+    "item": "AJENREM"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-019.json",
+    "item": "AJOJING"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-019.json",
+    "item": "AKUAMARIN"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-019.json",
+    "item": "ADJUSTER"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-019.json",
+    "item": "AHARE"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-019.json",
+    "item": "ABOLISI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-019.json",
+    "item": "AERONAUTIKA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-019.json",
+    "item": "ABSTINENSIA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-019.json",
+    "item": "AGROTEK"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-019.json",
+    "item": "AGEM"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-019.json",
+    "item": "AKONA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-019.json",
+    "item": "ADIPERAGAWATI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-019.json",
+    "item": "AIYAO"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-019.json",
+    "item": "ADWI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-019.json",
+    "item": "AKUMULATOR"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-019.json",
+    "item": "AEROBIOLOGI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-019.json",
+    "item": "ABRASIVITAS"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-019.json",
+    "item": "AEROPOLIS"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-019.json",
+    "item": "ABRAHAMIK"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-019.json",
+    "item": "ADVEKSI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-019.json",
+    "item": "ADENOSIN"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-019.json",
+    "item": "ACAPKALI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-019.json",
+    "item": "ADVERTORIAL"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-019.json",
+    "item": "ALHUB"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-019.json",
+    "item": "AKHWAN"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-019.json",
+    "item": "ACAWI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-019.json",
+    "item": "AKTIP"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-019.json",
+    "item": "AKROSTIK"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-019.json",
+    "item": "AANAME"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-019.json",
+    "item": "AKTIVISME"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-019.json",
+    "item": "ADITAMA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-019.json",
+    "item": "AGAPISME"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-019.json",
+    "item": "ADHESI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-019.json",
+    "item": "AFORESTASI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-019.json",
+    "item": "AKIP"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-019.json",
+    "item": "AKMATOANG"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-019.json",
+    "item": "AHISTORIS"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-019.json",
+    "item": "ABATISASI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-019.json",
+    "item": "AISKI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-019.json",
+    "item": "AGROBISNIS"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-019.json",
+    "item": "ADIDUNIAWI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-019.json",
+    "item": "ABRAHAMISME"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-019.json",
+    "item": "ABAWI"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-020.json",
+    "item": "AINOID"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-020.json",
+    "item": "ABORTUS"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-020.json",
+    "item": "ALBATROS"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-020.json",
+    "item": "ABRIPDA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-020.json",
+    "item": "AKPEN"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-020.json",
+    "item": "ABUN"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-020.json",
+    "item": "ADIABATIK"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-020.json",
+    "item": "ADIKIA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-020.json",
+    "item": "ADISIONAL"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-020.json",
+    "item": "AKRA"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-020.json",
+    "item": "ABATE"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-020.json",
+    "item": "ABSENTE"
+  },
+  {
+    "reason": "kata terlalu langka / tidak dikenal penonton",
+    "stage": "aturan",
+    "source": "susun-kata-acak/fallback/bank-020.json",
+    "item": "AJUSTER"
+  }
+]

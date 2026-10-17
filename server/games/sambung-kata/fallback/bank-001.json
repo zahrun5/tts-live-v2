@@ -616,11 +616,6 @@
         "clue": "x"
       },
       {
-        "answer": "URAI",
-        "direction": "across",
-        "clue": "x"
-      },
-      {
         "answer": "DAUN",
         "direction": "down",
         "clue": "x"
@@ -710,52 +705,6 @@
     ]
   },
   {
-    "name": "larangi",
-    "baseLetters": "LARANGI",
-    "words": [
-      {
-        "answer": "RANGI",
-        "direction": "across",
-        "clue": "x"
-      },
-      {
-        "answer": "RINGA",
-        "direction": "down",
-        "clue": "x"
-      },
-      {
-        "answer": "RIANG",
-        "direction": "across",
-        "clue": "x"
-      },
-      {
-        "answer": "ANGRA",
-        "direction": "down",
-        "clue": "x"
-      },
-      {
-        "answer": "ARANG",
-        "direction": "across",
-        "clue": "x"
-      },
-      {
-        "answer": "GARIA",
-        "direction": "down",
-        "clue": "x"
-      },
-      {
-        "answer": "LARI",
-        "direction": "across",
-        "clue": "x"
-      },
-      {
-        "answer": "LANGA",
-        "direction": "down",
-        "clue": "x"
-      }
-    ]
-  },
-  {
     "name": "berkast",
     "baseLetters": "BERKAST",
     "words": [
@@ -787,11 +736,6 @@
       {
         "answer": "BERAS",
         "direction": "down",
-        "clue": "x"
-      },
-      {
-        "answer": "TEBAS",
-        "direction": "across",
         "clue": "x"
       },
       {
@@ -1391,11 +1335,6 @@
       {
         "answer": "AIR",
         "direction": "across",
-        "clue": "x"
-      },
-      {
-        "answer": "RAK",
-        "direction": "down",
         "clue": "x"
       },
       {
@@ -2228,11 +2167,6 @@
         "clue": "x"
       },
       {
-        "answer": "UBI",
-        "direction": "down",
-        "clue": "x"
-      },
-      {
         "answer": "KUE",
         "direction": "across",
         "clue": "x"
@@ -2302,11 +2236,6 @@
       {
         "answer": "BERAT",
         "direction": "across",
-        "clue": "x"
-      },
-      {
-        "answer": "TEBAR",
-        "direction": "down",
         "clue": "x"
       },
       {
@@ -2670,11 +2599,6 @@
         "clue": "x"
       },
       {
-        "answer": "RAK",
-        "direction": "down",
-        "clue": "x"
-      },
-      {
         "answer": "TAS",
         "direction": "across",
         "clue": "x"
@@ -2749,11 +2673,6 @@
       {
         "answer": "BERAT",
         "direction": "down",
-        "clue": "x"
-      },
-      {
-        "answer": "TEBAR",
-        "direction": "across",
         "clue": "x"
       },
       {
@@ -3133,11 +3052,6 @@
         "clue": "x"
       },
       {
-        "answer": "TEBAR",
-        "direction": "across",
-        "clue": "x"
-      },
-      {
         "answer": "TABU",
         "direction": "down",
         "clue": "x"
@@ -3303,11 +3217,6 @@
       {
         "answer": "BESAR",
         "direction": "across",
-        "clue": "x"
-      },
-      {
-        "answer": "TEBAR",
-        "direction": "down",
         "clue": "x"
       },
       {
@@ -3598,11 +3507,6 @@
       {
         "answer": "PASIR",
         "direction": "down",
-        "clue": "x"
-      },
-      {
-        "answer": "TAPIR",
-        "direction": "across",
         "clue": "x"
       },
       {
@@ -3901,11 +3805,6 @@
     "baseLetters": "BERATIS",
     "words": [
       {
-        "answer": "TERBIAS",
-        "direction": "across",
-        "clue": "x"
-      },
-      {
         "answer": "BARIS",
         "direction": "down",
         "clue": "x"
@@ -3918,11 +3817,6 @@
       {
         "answer": "BERAT",
         "direction": "down",
-        "clue": "x"
-      },
-      {
-        "answer": "TEBAR",
-        "direction": "across",
         "clue": "x"
       },
       {
@@ -4055,11 +3949,6 @@
       {
         "answer": "TIKAR",
         "direction": "down",
-        "clue": "x"
-      },
-      {
-        "answer": "NEKTAR",
-        "direction": "across",
         "clue": "x"
       },
       {
@@ -4424,11 +4313,6 @@
     "baseLetters": "TERBINA",
     "words": [
       {
-        "answer": "TERBINA",
-        "direction": "across",
-        "clue": "x"
-      },
-      {
         "answer": "BERANI",
         "direction": "down",
         "clue": "x"
@@ -4487,11 +4371,6 @@
       {
         "answer": "BERAT",
         "direction": "across",
-        "clue": "x"
-      },
-      {
-        "answer": "TEBAR",
-        "direction": "down",
         "clue": "x"
       },
       {
@@ -5212,11 +5091,6 @@
     "baseLetters": "AEIKLMT",
     "words": [
       {
-        "answer": "TIKAM",
-        "direction": "across",
-        "clue": "x"
-      },
-      {
         "answer": "MELATI",
         "direction": "down",
         "clue": "x"
@@ -5331,11 +5205,6 @@
         "answer": "TUA",
         "direction": "across",
         "clue": "x"
-      },
-      {
-        "answer": "RAK",
-        "direction": "down",
-        "clue": "x"
       }
     ]
   },
@@ -5382,16 +5251,6 @@
         "answer": "PETA",
         "direction": "down",
         "clue": "x"
-      },
-      {
-        "answer": "TERA",
-        "direction": "across",
-        "clue": "x"
-      },
-      {
-        "answer": "RAK",
-        "direction": "down",
-        "clue": "x"
       }
     ]
   },
@@ -5407,11 +5266,6 @@
       {
         "answer": "PARIT",
         "direction": "down",
-        "clue": "x"
-      },
-      {
-        "answer": "TAPIR",
-        "direction": "across",
         "clue": "x"
       },
       {
@@ -5547,11 +5401,6 @@
         "clue": "x"
       },
       {
-        "answer": "ONTA",
-        "direction": "down",
-        "clue": "x"
-      },
-      {
         "answer": "TARI",
         "direction": "across",
         "clue": "x"
@@ -5570,42 +5419,6 @@
         "answer": "ROTI",
         "direction": "down",
         "clue": "x"
-      }
-    ]
-  },
-  {
-    "name": "humita-hasut-ismat",
-    "baseLetters": "AHIMSTU",
-    "words": [
-      {
-        "answer": "HUMITA",
-        "direction": "across",
-        "clue": "penganan khas Ekuador, terbuat dari tepung jagung yang dibumbui bawang merah, telur, dan lemak babi, dibungkus daun jagung, dimasak dengan cara dikukus atau direbus"
-      },
-      {
-        "answer": "HASUT",
-        "direction": "down",
-        "clue": "dengki"
-      },
-      {
-        "answer": "ISMAT",
-        "direction": "across",
-        "clue": "kemampuan untuk menghindari maksiat"
-      },
-      {
-        "answer": "MASIH",
-        "direction": "down",
-        "clue": "sedang dalam keadaan belum selesai atau sedang berlangsung"
-      },
-      {
-        "answer": "MUTAS",
-        "direction": "across",
-        "clue": "menangkap ikan menggunakan jenu"
-      },
-      {
-        "answer": "SAHUT",
-        "direction": "down",
-        "clue": "jawab (apabila dipanggil atau ditanya)"
       }
     ]
   }

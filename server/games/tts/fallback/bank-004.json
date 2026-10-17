@@ -1915,66 +1915,6 @@
     ]
   },
   {
-    "name": "kucing-kikis-pintu",
-    "words": [
-      {
-        "answer": "KUCING",
-        "direction": "across",
-        "clue": "Hewan peliharaan yang suka mengeong"
-      },
-      {
-        "answer": "KIKIS",
-        "direction": "down",
-        "clue": "Menghilangkan lapisan sedikit demi sedikit"
-      },
-      {
-        "answer": "PINTU",
-        "direction": "down",
-        "clue": "Bagian rumah tempat keluar dan masuk ruangan"
-      },
-      {
-        "answer": "NASI",
-        "direction": "across",
-        "clue": "Makanan pokok orang Indonesia"
-      },
-      {
-        "answer": "IKAN",
-        "direction": "down",
-        "clue": "Hewan yang hidup di air dan berenang pakai sirip"
-      },
-      {
-        "answer": "KAPUR",
-        "direction": "across",
-        "clue": "Benda putih untuk menulis di papan tulis hitam"
-      },
-      {
-        "answer": "KASUR",
-        "direction": "down",
-        "clue": "Alas empuk di kamar untuk tempat tidur"
-      },
-      {
-        "answer": "KAKI",
-        "direction": "down",
-        "clue": "Anggota tubuh bagian bawah untuk berjalan"
-      },
-      {
-        "answer": "SAPU",
-        "direction": "across",
-        "clue": "Alat pembersih untuk membersihkan lantai kotor"
-      },
-      {
-        "answer": "SAPI",
-        "direction": "down",
-        "clue": "Hewan ternak penghasil susu dan daging"
-      },
-      {
-        "answer": "MATA",
-        "direction": "across",
-        "clue": "Anggota tubuh yang digunakan untuk melihat"
-      }
-    ]
-  },
-  {
     "name": "kucing-piring-gigi",
     "words": [
       {

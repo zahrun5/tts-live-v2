@@ -42,6 +42,8 @@ function getAllFallbackGroups() {
 
 function saveFallbackGroup(group) {
   try {
+    // Penjaga kualitas: tolak grup yang berisi kata langka.
+    if (!require('../../tools/bank-rules').sanitize('sambung-kata', group)) return false;
     const allExisting = getAllFallbackGroups();
     const dupe = allExisting.some(g => g.baseLetters === group.baseLetters);
     if (dupe) return false; // Set huruf ini udah ada, skip

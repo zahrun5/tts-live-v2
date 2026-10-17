@@ -165,6 +165,8 @@ class Room {
     // Penjaga kualitas bank (require('../../tools/bank-rules') dari games/<game>/) ikut disalin.
     fs.mkdirSync(path.join(this.roomDir, 'tools'), { recursive: true });
     fs.copyFileSync(path.join(__dirname, '../tools/bank-rules.js'), path.join(this.roomDir, 'tools', 'bank-rules.js'));
+    fs.mkdirSync(path.join(this.roomDir, 'tools', 'data'), { recursive: true });
+    fs.copyFileSync(path.join(__dirname, '../tools/data/id-common.txt'), path.join(this.roomDir, 'tools', 'data', 'id-common.txt'));
 
     this.games = require(path.join(this.roomDir, 'games', 'game-registry'));
     const allIds = Object.keys(this.games);

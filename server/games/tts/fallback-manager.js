@@ -62,6 +62,10 @@ function groupKey(group) {
 
 function saveFallbackGroup(group) {
   try {
+    // Penjaga kualitas: tolak kata langka, petunjuk yang membocorkan jawaban; rapikan petunjuk.
+    const guarded = require('../../tools/bank-rules').sanitize('tts', group);
+    if (!guarded) return false;
+    group = guarded;
     const key = groupKey(group);
     const allExisting = getAllFallbackGroups();
     const dupe = allExisting.some(g => groupKey(g) === key);

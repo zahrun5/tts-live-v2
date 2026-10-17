@@ -7,6 +7,22 @@
  */
 'use strict';
 
+const fs = require('fs');
+const path = require('path');
+
+// Daftar kata Indonesia umum (hasil frekuensi pemakaian, data/id-common.txt). Dipakai untuk
+// membuang kata KBBI yang terlalu langka (ABALA, ADUTAN, LECUH, ...) dari game tebak/susun
+// kata. Kalau berkasnya tidak ada, pengecekan dilewati (tidak pernah menolak karena itu).
+let _common;
+function commonWords() {
+  if (_common === undefined) {
+    try { _common = new Set(fs.readFileSync(path.join(__dirname, 'data', 'id-common.txt'), 'utf8').split(/\s+/).filter(Boolean)); }
+    catch (e) { _common = null; }
+  }
+  return _common;
+}
+const isCommon = w => { const c = commonWords(); return c ? c.has(String(w).toLowerCase()) : true; };
+
 const norm = s => String(s == null ? '' : s).trim().toLowerCase().replace(/\s+/g, ' ');
 const letters = s => String(s == null ? '' : s).toUpperCase().replace(/[^A-Z]/g, '');
 const escRe = s => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
@@ -81,8 +97,54 @@ const det = {
     return null;
   },
 
-  'cari-kata': () => null
+  'cari-kata': () => null,
+
+  // item = string kata
+  'susun-kata-acak'(w) {
+    const word = String(w || '').trim();
+    if (!/^[A-Za-z]{3,16}$/.test(word)) return { drop: 'bukan kata huruf biasa 3-16 huruf' };
+    if (!isCommon(word)) return { drop: 'kata terlalu langka / tidak dikenal penonton' };
+    return null;
+  },
+
+  // item = { name, words: [{answer, direction, clue}] }
+  tts(g) {
+    const words = g.words || [];
+    if (words.length < 4) return { drop: 'kurang dari 4 kata' };
+    const rare = words.filter(w => !isCommon(w.answer)).map(w => w.answer);
+    if (rare.length) return { drop: `berisi kata langka: ${rare.slice(0, 3).join(', ')}${rare.length > 3 ? '…' : ''}` };
+    let changed = false;
+    const out = [];
+    for (const w of words) {
+      const clue = cleanClue(w.clue);
+      if (clue.length < 5) return { drop: `petunjuk "${w.answer}" kosong/terlalu pendek` };
+      if (wholeWord(clue, String(w.answer))) return { drop: `petunjuk "${w.answer}" menyebut jawabannya` };
+      if (clue !== w.clue) changed = true;
+      out.push({ ...w, clue });
+    }
+    return changed ? { edit: { ...g, words: out }, why: 'petunjuk dirapikan' } : null;
+  },
+
+  // item = { name, baseLetters, words: [{answer, direction, clue}] }. Clue tidak ditampilkan di game ini.
+  'sambung-kata'(g) {
+    const words = g.words || [];
+    const kept = words.filter(w => isCommon(w.answer));
+    if (kept.length < 4) return { drop: `hanya ${kept.length} kata umum (min 4)` };
+    if (kept.length !== words.length) return { edit: { ...g, words: kept }, why: `${words.length - kept.length} kata langka dibuang` };
+    return null;
+  }
 };
+
+// Rapikan petunjuk hasil salin KBBI: buang tanda kurung & keterangan, ambil makna pertama, batasi panjang.
+function cleanClue(c) {
+  let t = String(c == null ? '' : c).replace(/\s*\([^)]*\)/g, '').split(/\s*[;:]\s*/)[0].replace(/\s+/g, ' ').trim();
+  if (t.length > 90) {
+    const cut = t.slice(0, 90);
+    const i = Math.max(cut.lastIndexOf(', '), -1);
+    t = i >= 30 ? cut.slice(0, i) : cut.replace(/\s+\S*$/, '');
+  }
+  return t.replace(/[\s,.-]+$/, '').trim();
+}
 
 // Field array yang bisa "diperbaiki" + minimal isinya setelah diperbaiki.
 const LIST_RULES = {
@@ -91,7 +153,10 @@ const LIST_RULES = {
   'sinonim-dan-bahasa-daerah': { list: 'answers', minList: 1 },
   'tts-tema': { list: 'words', minList: 4 },
   'susun-kalimat': { list: null, minList: 0 },
-  'cari-kata': { list: 'words', minList: 8 }
+  'cari-kata': { list: 'words', minList: 8 },
+  'susun-kata-acak': { list: null, minList: 0 },
+  tts: { list: null, minList: 0 },
+  'sambung-kata': { list: null, minList: 0 }
 };
 
 /**
@@ -107,6 +172,8 @@ function sanitize(game, item) {
     if (rule) {
       const r = rule(item);
       if (r && r.drop) return null;
+      // Sambung Kata: kata langka tidak dibuang diam-diam (grid bisa gagal disusun) -> tolak seluruh grup.
+      if (r && r.edit && game === 'sambung-kata') return null;
       if (r && r.edit) cur = r.edit;
     }
     const lr = LIST_RULES[game];
@@ -117,4 +184,4 @@ function sanitize(game, item) {
   }
 }
 
-module.exports = { NON_LATIN_RE, cleanFamilyQuestion, det, LIST_RULES, sanitize, norm, letters, wholeWord };
+module.exports = { isCommon, cleanClue, NON_LATIN_RE, cleanFamilyQuestion, det, LIST_RULES, sanitize, norm, letters, wholeWord };

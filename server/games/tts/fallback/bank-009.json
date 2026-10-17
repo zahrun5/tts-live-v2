@@ -1140,66 +1140,6 @@
     ]
   },
   {
-    "name": "sepatu-sapu-susu",
-    "words": [
-      {
-        "answer": "SEPATU",
-        "direction": "across",
-        "clue": "Alas kaki yang menutup seluruh kaki"
-      },
-      {
-        "answer": "SAPU",
-        "direction": "down",
-        "clue": "Alat pembersih lantai dari debu dan sampah"
-      },
-      {
-        "answer": "SUSU",
-        "direction": "across",
-        "clue": "Minuman bergizi yang dihasilkan oleh sapi"
-      },
-      {
-        "answer": "PINTU",
-        "direction": "down",
-        "clue": "Papan penutup jalan keluar masuk ruangan"
-      },
-      {
-        "answer": "GARPU",
-        "direction": "across",
-        "clue": "Alat makan dengan gerigi tajam pendamping sendok"
-      },
-      {
-        "answer": "LAMPU",
-        "direction": "down",
-        "clue": "Alat penerang ruangan yang dialiri listrik"
-      },
-      {
-        "answer": "BUKU",
-        "direction": "across",
-        "clue": "Lembaran kertas berjilid untuk dibaca atau ditulis"
-      },
-      {
-        "answer": "BAJU",
-        "direction": "down",
-        "clue": "Pakaian penutup badan bagian atas"
-      },
-      {
-        "answer": "HIJAU",
-        "direction": "across",
-        "clue": "Warna daun pohon pada umumnya"
-      },
-      {
-        "answer": "MATA",
-        "direction": "across",
-        "clue": "Bagian tubuh di wajah untuk melihat"
-      },
-      {
-        "answer": "TIDUR",
-        "direction": "down",
-        "clue": "Istirahat memejamkan mata di tempat tidur"
-      }
-    ]
-  },
-  {
     "name": "kucing-kuning-gigi",
     "words": [
       {

@@ -340,66 +340,6 @@
     ]
   },
   {
-    "name": "nasi-tangan-anjing",
-    "words": [
-      {
-        "answer": "NASI",
-        "direction": "across",
-        "clue": "Makanan pokok orang Indonesia"
-      },
-      {
-        "answer": "TANGAN",
-        "direction": "down",
-        "clue": "Anggota tubuh di ujung lengan"
-      },
-      {
-        "answer": "ANJING",
-        "direction": "down",
-        "clue": "Hewan peliharaan setia"
-      },
-      {
-        "answer": "MATA",
-        "direction": "across",
-        "clue": "Alat penglihatan"
-      },
-      {
-        "answer": "KUCING",
-        "direction": "across",
-        "clue": "Hewan peliharaan suka tidur"
-      },
-      {
-        "answer": "IKAN",
-        "direction": "down",
-        "clue": "Hewan air bersisik"
-      },
-      {
-        "answer": "MAMA",
-        "direction": "across",
-        "clue": "Sebutan ibu"
-      },
-      {
-        "answer": "TENGAH",
-        "direction": "down",
-        "clue": "Tengah-tengah"
-      },
-      {
-        "answer": "BATU",
-        "direction": "across",
-        "clue": "Batuan keras"
-      },
-      {
-        "answer": "RUMPUT",
-        "direction": "down",
-        "clue": "Makanan sapi"
-      },
-      {
-        "answer": "MERAH",
-        "direction": "across",
-        "clue": "Warna darah"
-      }
-    ]
-  },
-  {
     "name": "nasi-tangan-ikan",
     "words": [
       {
