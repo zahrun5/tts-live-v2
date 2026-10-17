@@ -56,6 +56,10 @@ function cleanFamilyQuestion(q) {
   return s.charAt(0).toUpperCase() + s.slice(1);
 }
 
+// Kata depan/penghubung yang harus diikuti kata isi (bukan kata depan lain atau keterangan waktu).
+const PREP = new Set(['di', 'ke', 'dari', 'dengan', 'untuk', 'pada', 'setiap', 'oleh', 'kepada']);
+const TIME_ADV = new Set(['kemarin', 'besok', 'nanti', 'tadi', 'sekarang', 'lusa']);
+
 // ───────────────────────── aturan per game ─────────────────────────
 // det(item) -> null | {drop: alasan} | {edit: itemBaru, why}
 const det = {
@@ -93,7 +97,19 @@ const det = {
   },
 
   'susun-kalimat'(it) {
-    if ((it.words || []).length < 3) return { drop: 'kurang dari 3 kata' };
+    const words = it.words || [];
+    if (words.length < 3) return { drop: 'kurang dari 3 kata' };
+    const lw = words.map(w => String(w).toLowerCase().replace(/[^a-z-]/g, ''));
+    const sent = String(it.sentence || '').toLowerCase().replace(/[^a-z\s-]/g, '').replace(/\s+/g, ' ').trim();
+    if (sent !== lw.join(' ')) return { drop: 'kata-kata tidak sama dengan kalimat' };
+    for (let i = 0; i < lw.length; i++) {
+      if (i > 0 && lw[i] === lw[i - 1]) return { drop: `kata dobel berurutan: "${lw[i]} ${lw[i]}"` };
+      if (PREP.has(lw[i])) {
+        if (i === 0) return { drop: `kalimat diawali kata depan "${lw[i]}"` };
+        if (i === lw.length - 1) return { drop: `kalimat diakhiri kata depan "${lw[i]}"` };
+        if (PREP.has(lw[i + 1]) || TIME_ADV.has(lw[i + 1])) return { drop: `urutan tidak wajar: "${lw[i]} ${lw[i + 1]}"` };
+      }
+    }
     return null;
   },
 

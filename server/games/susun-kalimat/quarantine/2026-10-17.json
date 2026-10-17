@@ -1,0 +1,6456 @@
+[
+  {
+    "reason": "kata dobel berurutan: \"menumpuk menumpuk\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-001.json",
+    "item": {
+      "sentence": "Pekerjaan kantornya sangat menumpuk menumpuk",
+      "words": [
+        "Pekerjaan",
+        "kantornya",
+        "sangat",
+        "menumpuk",
+        "menumpuk"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"untuk di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Kakek mengakhiri untuk di padang",
+      "words": [
+        "Kakek",
+        "mengakhiri",
+        "untuk",
+        "di",
+        "padang"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"untuk di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Nelayan menyapu untuk di sekolah",
+      "words": [
+        "Nelayan",
+        "menyapu",
+        "untuk",
+        "di",
+        "sekolah"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"ke di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Bayi menyiram ke di rumah sakit",
+      "words": [
+        "Bayi",
+        "menyiram",
+        "ke",
+        "di",
+        "rumah",
+        "sakit"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"ke tadi\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Paman mengepel kaos ke tadi pagi",
+      "words": [
+        "Paman",
+        "mengepel",
+        "kaos",
+        "ke",
+        "tadi",
+        "pagi"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"ke di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Petani menaruh sepatu ke di kampus",
+      "words": [
+        "Petani",
+        "menaruh",
+        "sepatu",
+        "ke",
+        "di",
+        "kampus"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"untuk pada\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Bapak menerima malam untuk pada musim hujan",
+      "words": [
+        "Bapak",
+        "menerima",
+        "malam",
+        "untuk",
+        "pada",
+        "musim",
+        "hujan"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"untuk di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Dia menjual ruang tamu untuk di ruang tamu",
+      "words": [
+        "Dia",
+        "menjual",
+        "ruang",
+        "tamu",
+        "untuk",
+        "di",
+        "ruang",
+        "tamu"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"dengan ke\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Mereka naik kaos dengan ke pasar",
+      "words": [
+        "Mereka",
+        "naik",
+        "kaos",
+        "dengan",
+        "ke",
+        "pasar"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"ke di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Ayahku menutup ke di hutan",
+      "words": [
+        "Ayahku",
+        "menutup",
+        "ke",
+        "di",
+        "hutan"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"di di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Adikku mengamati di di jalan",
+      "words": [
+        "Adikku",
+        "mengamati",
+        "di",
+        "di",
+        "jalan"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"untuk ke\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Bibi menulis untuk ke rumah",
+      "words": [
+        "Bibi",
+        "menulis",
+        "untuk",
+        "ke",
+        "rumah"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"ke di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Mahasiswa berhenti kursi ke di rumah",
+      "words": [
+        "Mahasiswa",
+        "berhenti",
+        "kursi",
+        "ke",
+        "di",
+        "rumah"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"di di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Polisi memijat di di sungai",
+      "words": [
+        "Polisi",
+        "memijat",
+        "di",
+        "di",
+        "sungai"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"untuk di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Dia mengepel untuk di jalan",
+      "words": [
+        "Dia",
+        "mengepel",
+        "untuk",
+        "di",
+        "jalan"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"di ke\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Polisi menarik di ke pasar",
+      "words": [
+        "Polisi",
+        "menarik",
+        "di",
+        "ke",
+        "pasar"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"ke di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Mereka membuka mei ke di rumah",
+      "words": [
+        "Mereka",
+        "membuka",
+        "mei",
+        "ke",
+        "di",
+        "rumah"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"dengan di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Mahasiswa mengamati sepeda dengan di ruang tamu",
+      "words": [
+        "Mahasiswa",
+        "mengamati",
+        "sepeda",
+        "dengan",
+        "di",
+        "ruang",
+        "tamu"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"dengan di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Mereka tidur anjing dengan di rumah",
+      "words": [
+        "Mereka",
+        "tidur",
+        "anjing",
+        "dengan",
+        "di",
+        "rumah"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"di di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Bibi mencabut di di ruang tamu",
+      "words": [
+        "Bibi",
+        "mencabut",
+        "di",
+        "di",
+        "ruang",
+        "tamu"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"ke di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Kita mengirim ke di kantor",
+      "words": [
+        "Kita",
+        "mengirim",
+        "ke",
+        "di",
+        "kantor"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"ke tadi\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Bayi menjauhi ke tadi malam",
+      "words": [
+        "Bayi",
+        "menjauhi",
+        "ke",
+        "tadi",
+        "malam"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"untuk di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Nenek menerima untuk di sekolah",
+      "words": [
+        "Nenek",
+        "menerima",
+        "untuk",
+        "di",
+        "sekolah"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"di di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Bayi berhenti di di kamar",
+      "words": [
+        "Bayi",
+        "berhenti",
+        "di",
+        "di",
+        "kamar"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"untuk tadi\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Kakek datang untuk tadi pagi",
+      "words": [
+        "Kakek",
+        "datang",
+        "untuk",
+        "tadi",
+        "pagi"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"ke di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Ayahku memperbaiki lemari ke di laut",
+      "words": [
+        "Ayahku",
+        "memperbaiki",
+        "lemari",
+        "ke",
+        "di",
+        "laut"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"setiap kemarin\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Nenek membuka minggu setiap kemarin",
+      "words": [
+        "Nenek",
+        "membuka",
+        "minggu",
+        "setiap",
+        "kemarin"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"ke ke\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Pedagang mengukur akar ke ke sekolah",
+      "words": [
+        "Pedagang",
+        "mengukur",
+        "akar",
+        "ke",
+        "ke",
+        "sekolah"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"ke di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Penjual memulai ke di padang",
+      "words": [
+        "Penjual",
+        "memulai",
+        "ke",
+        "di",
+        "padang"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"untuk di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Mahasiswa melepas untuk di waktu senggang",
+      "words": [
+        "Mahasiswa",
+        "melepas",
+        "untuk",
+        "di",
+        "waktu",
+        "senggang"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"di setiap\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Anak merawat di setiap hari",
+      "words": [
+        "Anak",
+        "merawat",
+        "di",
+        "setiap",
+        "hari"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"setiap besok\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Dokter mendarat rabu setiap besok",
+      "words": [
+        "Dokter",
+        "mendarat",
+        "rabu",
+        "setiap",
+        "besok"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"dengan di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Aku memijat kapal dengan di restoran",
+      "words": [
+        "Aku",
+        "memijat",
+        "kapal",
+        "dengan",
+        "di",
+        "restoran"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"di di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Saya memasak di di gunung",
+      "words": [
+        "Saya",
+        "memasak",
+        "di",
+        "di",
+        "gunung"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"untuk dengan\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Kamu membaca radio untuk dengan rajin",
+      "words": [
+        "Kamu",
+        "membaca",
+        "radio",
+        "untuk",
+        "dengan",
+        "rajin"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"untuk ke\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Ayah mengambil kebun untuk ke sekolah",
+      "words": [
+        "Ayah",
+        "mengambil",
+        "kebun",
+        "untuk",
+        "ke",
+        "sekolah"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"untuk dengan\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Nelayan pulang atasan untuk dengan rajin",
+      "words": [
+        "Nelayan",
+        "pulang",
+        "atasan",
+        "untuk",
+        "dengan",
+        "rajin"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"dengan tadi\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Adikku merasakan motor dengan tadi pagi",
+      "words": [
+        "Adikku",
+        "merasakan",
+        "motor",
+        "dengan",
+        "tadi",
+        "pagi"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"dengan di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Kakek memasak setrika dengan di sungai",
+      "words": [
+        "Kakek",
+        "memasak",
+        "setrika",
+        "dengan",
+        "di",
+        "sungai"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"untuk ke\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Bibi menjaga untuk ke rumah",
+      "words": [
+        "Bibi",
+        "menjaga",
+        "untuk",
+        "ke",
+        "rumah"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"dengan di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Bibi menangkap polisi dengan di pasar",
+      "words": [
+        "Bibi",
+        "menangkap",
+        "polisi",
+        "dengan",
+        "di",
+        "pasar"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"di tadi\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Mahasiswa kehilangan di tadi malam",
+      "words": [
+        "Mahasiswa",
+        "kehilangan",
+        "di",
+        "tadi",
+        "malam"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"dengan besok\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Aku memperbaiki mobil dengan besok",
+      "words": [
+        "Aku",
+        "memperbaiki",
+        "mobil",
+        "dengan",
+        "besok"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"di ke\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Ayahku memperbaiki di ke rumah",
+      "words": [
+        "Ayahku",
+        "memperbaiki",
+        "di",
+        "ke",
+        "rumah"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"di ke\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Kakak menonton di ke kantor",
+      "words": [
+        "Kakak",
+        "menonton",
+        "di",
+        "ke",
+        "kantor"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"dengan di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Ayah menggembala rumah sakit dengan di waktu senggang",
+      "words": [
+        "Ayah",
+        "menggembala",
+        "rumah",
+        "sakit",
+        "dengan",
+        "di",
+        "waktu",
+        "senggang"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"setiap kemarin\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Dokter menabung kamis setiap kemarin",
+      "words": [
+        "Dokter",
+        "menabung",
+        "kamis",
+        "setiap",
+        "kemarin"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"untuk setiap\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Ibuku memulai untuk setiap hari",
+      "words": [
+        "Ibuku",
+        "memulai",
+        "untuk",
+        "setiap",
+        "hari"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"setiap besok\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Kakak menari kamar mandi setiap besok",
+      "words": [
+        "Kakak",
+        "menari",
+        "kamar",
+        "mandi",
+        "setiap",
+        "besok"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"untuk di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Ayah bernyanyi stadion untuk di halaman",
+      "words": [
+        "Ayah",
+        "bernyanyi",
+        "stadion",
+        "untuk",
+        "di",
+        "halaman"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"ke ke\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Ayahku mengunci ke ke pasar",
+      "words": [
+        "Ayahku",
+        "mengunci",
+        "ke",
+        "ke",
+        "pasar"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"untuk ke\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Kakek menusuk untuk ke toko",
+      "words": [
+        "Kakek",
+        "menusuk",
+        "untuk",
+        "ke",
+        "toko"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"ke di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Ibu memperbaiki ke di kamar",
+      "words": [
+        "Ibu",
+        "memperbaiki",
+        "ke",
+        "di",
+        "kamar"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"di pada\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Ayahku mengikuti di pada musim kemarau",
+      "words": [
+        "Ayahku",
+        "mengikuti",
+        "di",
+        "pada",
+        "musim",
+        "kemarau"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"ke di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Pedagang mengepel ke di hutan",
+      "words": [
+        "Pedagang",
+        "mengepel",
+        "ke",
+        "di",
+        "hutan"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"di di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Adikku mendengar di di warung",
+      "words": [
+        "Adikku",
+        "mendengar",
+        "di",
+        "di",
+        "warung"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"untuk ke\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Sahabatku turun dinding untuk ke rumah",
+      "words": [
+        "Sahabatku",
+        "turun",
+        "dinding",
+        "untuk",
+        "ke",
+        "rumah"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"ke tadi\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Mereka menyimpan ke tadi malam",
+      "words": [
+        "Mereka",
+        "menyimpan",
+        "ke",
+        "tadi",
+        "malam"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"dengan di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Tukang mencabut air dengan di dapur",
+      "words": [
+        "Tukang",
+        "mencabut",
+        "air",
+        "dengan",
+        "di",
+        "dapur"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"untuk di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Dokter menarik basement untuk di jalan",
+      "words": [
+        "Dokter",
+        "menarik",
+        "basement",
+        "untuk",
+        "di",
+        "jalan"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"untuk di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Anak memegang pura untuk di lembah",
+      "words": [
+        "Anak",
+        "memegang",
+        "pura",
+        "untuk",
+        "di",
+        "lembah"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"di kemarin\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Guru kehilangan di kemarin",
+      "words": [
+        "Guru",
+        "kehilangan",
+        "di",
+        "kemarin"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"ke di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Ayahku meminjam keponakan ke di kampus",
+      "words": [
+        "Ayahku",
+        "meminjam",
+        "keponakan",
+        "ke",
+        "di",
+        "kampus"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"ke di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Kakek mengirim pedagang ke di taman",
+      "words": [
+        "Kakek",
+        "mengirim",
+        "pedagang",
+        "ke",
+        "di",
+        "taman"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"untuk di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Kamu menjebak minggu untuk di lembah",
+      "words": [
+        "Kamu",
+        "menjebak",
+        "minggu",
+        "untuk",
+        "di",
+        "lembah"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"ke tadi\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Petani membawa ke tadi siang",
+      "words": [
+        "Petani",
+        "membawa",
+        "ke",
+        "tadi",
+        "siang"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"dengan di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Dokter menurunkan bantal dengan di toko",
+      "words": [
+        "Dokter",
+        "menurunkan",
+        "bantal",
+        "dengan",
+        "di",
+        "toko"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"di di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Penjual menemukan di di halaman",
+      "words": [
+        "Penjual",
+        "menemukan",
+        "di",
+        "di",
+        "halaman"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"untuk di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Anak merusak bir untuk di pasar",
+      "words": [
+        "Anak",
+        "merusak",
+        "bir",
+        "untuk",
+        "di",
+        "pasar"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"ke di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Bibi mengirim dasi ke di hutan",
+      "words": [
+        "Bibi",
+        "mengirim",
+        "dasi",
+        "ke",
+        "di",
+        "hutan"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"ke di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Anak mengakhiri bibi ke di kamar",
+      "words": [
+        "Anak",
+        "mengakhiri",
+        "bibi",
+        "ke",
+        "di",
+        "kamar"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"di di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Petani menimbang di di lembah",
+      "words": [
+        "Petani",
+        "menimbang",
+        "di",
+        "di",
+        "lembah"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"di dengan\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Nenek bercerita di dengan tekun",
+      "words": [
+        "Nenek",
+        "bercerita",
+        "di",
+        "dengan",
+        "tekun"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"untuk di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Saya membawa toko untuk di kampus",
+      "words": [
+        "Saya",
+        "membawa",
+        "toko",
+        "untuk",
+        "di",
+        "kampus"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"setiap kemarin\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Dokter membuat malam setiap kemarin",
+      "words": [
+        "Dokter",
+        "membuat",
+        "malam",
+        "setiap",
+        "kemarin"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"ke di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Guru memulai ke di sekolah",
+      "words": [
+        "Guru",
+        "memulai",
+        "ke",
+        "di",
+        "sekolah"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"untuk di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Pembeli menyiram untuk di bukit",
+      "words": [
+        "Pembeli",
+        "menyiram",
+        "untuk",
+        "di",
+        "bukit"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"untuk di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Kita mencabut juni untuk di toko",
+      "words": [
+        "Kita",
+        "mencabut",
+        "juni",
+        "untuk",
+        "di",
+        "toko"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"di ke\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Penjual mengukur di ke kantor",
+      "words": [
+        "Penjual",
+        "mengukur",
+        "di",
+        "ke",
+        "kantor"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"untuk di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Kita menyentuh untuk di pasar",
+      "words": [
+        "Kita",
+        "menyentuh",
+        "untuk",
+        "di",
+        "pasar"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"untuk di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Kakakku menabung mei untuk di gunung",
+      "words": [
+        "Kakakku",
+        "menabung",
+        "mei",
+        "untuk",
+        "di",
+        "gunung"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"ke di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Siswa merasakan ke di pasar",
+      "words": [
+        "Siswa",
+        "merasakan",
+        "ke",
+        "di",
+        "pasar"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"untuk di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Temanku memasak untuk di kamar",
+      "words": [
+        "Temanku",
+        "memasak",
+        "untuk",
+        "di",
+        "kamar"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"setiap besok\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Dia menulis printer setiap besok",
+      "words": [
+        "Dia",
+        "menulis",
+        "printer",
+        "setiap",
+        "besok"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"di setiap\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Polisi datang di setiap minggu",
+      "words": [
+        "Polisi",
+        "datang",
+        "di",
+        "setiap",
+        "minggu"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"untuk setiap\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Kakak menjauhi untuk setiap malam",
+      "words": [
+        "Kakak",
+        "menjauhi",
+        "untuk",
+        "setiap",
+        "malam"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"di di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Karyawan memperbaiki di di padang",
+      "words": [
+        "Karyawan",
+        "memperbaiki",
+        "di",
+        "di",
+        "padang"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"setiap kemarin\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Temanku mendekati kopi setiap kemarin",
+      "words": [
+        "Temanku",
+        "mendekati",
+        "kopi",
+        "setiap",
+        "kemarin"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"dengan setiap\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Ibuku kehilangan kakek dengan setiap hari",
+      "words": [
+        "Ibuku",
+        "kehilangan",
+        "kakek",
+        "dengan",
+        "setiap",
+        "hari"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"setiap besok\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Petani menanam vihara setiap besok",
+      "words": [
+        "Petani",
+        "menanam",
+        "vihara",
+        "setiap",
+        "besok"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"untuk dengan\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Bayi bermain sirup untuk dengan hati-hati",
+      "words": [
+        "Bayi",
+        "bermain",
+        "sirup",
+        "untuk",
+        "dengan",
+        "hati-hati"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"dengan setiap\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Ibuku berangkat taman dengan setiap minggu",
+      "words": [
+        "Ibuku",
+        "berangkat",
+        "taman",
+        "dengan",
+        "setiap",
+        "minggu"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"ke di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Nelayan melempar juli ke di toko",
+      "words": [
+        "Nelayan",
+        "melempar",
+        "juli",
+        "ke",
+        "di",
+        "toko"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"dengan tadi\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Bapak menjauhi vihara dengan tadi siang",
+      "words": [
+        "Bapak",
+        "menjauhi",
+        "vihara",
+        "dengan",
+        "tadi",
+        "siang"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"ke dengan\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Nelayan menjauhi ke dengan senang",
+      "words": [
+        "Nelayan",
+        "menjauhi",
+        "ke",
+        "dengan",
+        "senang"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"untuk di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Mahasiswa memecah untuk di lembah",
+      "words": [
+        "Mahasiswa",
+        "memecah",
+        "untuk",
+        "di",
+        "lembah"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"di di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Ayahku turun di di laut",
+      "words": [
+        "Ayahku",
+        "turun",
+        "di",
+        "di",
+        "laut"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"di kemarin\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Kakek menjemput di kemarin",
+      "words": [
+        "Kakek",
+        "menjemput",
+        "di",
+        "kemarin"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"untuk ke\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Mahasiswa menjemput tahun untuk ke sekolah",
+      "words": [
+        "Mahasiswa",
+        "menjemput",
+        "tahun",
+        "untuk",
+        "ke",
+        "sekolah"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"dengan besok\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Kita menangkap halaman dengan besok",
+      "words": [
+        "Kita",
+        "menangkap",
+        "halaman",
+        "dengan",
+        "besok"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"ke ke\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Sahabatku menurunkan november ke ke pasar",
+      "words": [
+        "Sahabatku",
+        "menurunkan",
+        "november",
+        "ke",
+        "ke",
+        "pasar"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"untuk ke\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Sahabatku membuka untuk ke toko",
+      "words": [
+        "Sahabatku",
+        "membuka",
+        "untuk",
+        "ke",
+        "toko"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"setiap setiap\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Polisi meletakkan pelanggan setiap setiap hari",
+      "words": [
+        "Polisi",
+        "meletakkan",
+        "pelanggan",
+        "setiap",
+        "setiap",
+        "hari"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"ke di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Kamu memijat ayah ke di bukit",
+      "words": [
+        "Kamu",
+        "memijat",
+        "ayah",
+        "ke",
+        "di",
+        "bukit"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"dengan di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Dia menari petani dengan di jalan",
+      "words": [
+        "Dia",
+        "menari",
+        "petani",
+        "dengan",
+        "di",
+        "jalan"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"ke di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Temanku menyimpan ke di kantor",
+      "words": [
+        "Temanku",
+        "menyimpan",
+        "ke",
+        "di",
+        "kantor"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"ke di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Ibu mengirim ke di padang",
+      "words": [
+        "Ibu",
+        "mengirim",
+        "ke",
+        "di",
+        "padang"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"untuk di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Mereka memanen untuk di ruang tamu",
+      "words": [
+        "Mereka",
+        "memanen",
+        "untuk",
+        "di",
+        "ruang",
+        "tamu"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"untuk di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Petani mengikuti untuk di pasar",
+      "words": [
+        "Petani",
+        "mengikuti",
+        "untuk",
+        "di",
+        "pasar"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"untuk ke\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Ibuku pulang untuk ke kantor",
+      "words": [
+        "Ibuku",
+        "pulang",
+        "untuk",
+        "ke",
+        "kantor"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"dengan dengan\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Kamu datang kantin dengan dengan hati-hati",
+      "words": [
+        "Kamu",
+        "datang",
+        "kantin",
+        "dengan",
+        "dengan",
+        "hati-hati"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"di di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Ayahku bernyanyi di di padang",
+      "words": [
+        "Ayahku",
+        "bernyanyi",
+        "di",
+        "di",
+        "padang"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"untuk di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Ibu memperbaiki untuk di warung",
+      "words": [
+        "Ibu",
+        "memperbaiki",
+        "untuk",
+        "di",
+        "warung"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"untuk di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Sahabatku memotong bulan untuk di dapur",
+      "words": [
+        "Sahabatku",
+        "memotong",
+        "bulan",
+        "untuk",
+        "di",
+        "dapur"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"untuk di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Saya mencabut pagar untuk di kantor",
+      "words": [
+        "Saya",
+        "mencabut",
+        "pagar",
+        "untuk",
+        "di",
+        "kantor"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"ke ke\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Ibuku berenang nenek ke ke sekolah",
+      "words": [
+        "Ibuku",
+        "berenang",
+        "nenek",
+        "ke",
+        "ke",
+        "sekolah"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"dengan ke\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Paman menonton paman dengan ke kantor",
+      "words": [
+        "Paman",
+        "menonton",
+        "paman",
+        "dengan",
+        "ke",
+        "kantor"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"untuk di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Nelayan mendatangi september untuk di waktu senggang",
+      "words": [
+        "Nelayan",
+        "mendatangi",
+        "september",
+        "untuk",
+        "di",
+        "waktu",
+        "senggang"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"dengan dengan\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Ayah lanjutkan pelanggan dengan dengan tekun",
+      "words": [
+        "Ayah",
+        "lanjutkan",
+        "pelanggan",
+        "dengan",
+        "dengan",
+        "tekun"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"dengan di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Mahasiswa melihat tetangga dengan di taman",
+      "words": [
+        "Mahasiswa",
+        "melihat",
+        "tetangga",
+        "dengan",
+        "di",
+        "taman"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"untuk di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Siswa merasakan kapal untuk di kampus",
+      "words": [
+        "Siswa",
+        "merasakan",
+        "kapal",
+        "untuk",
+        "di",
+        "kampus"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"setiap setiap\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Kamu menanam kolega setiap setiap hari",
+      "words": [
+        "Kamu",
+        "menanam",
+        "kolega",
+        "setiap",
+        "setiap",
+        "hari"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"dengan dengan\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Adikku mengawasi keset dengan dengan rajin",
+      "words": [
+        "Adikku",
+        "mengawasi",
+        "keset",
+        "dengan",
+        "dengan",
+        "rajin"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"ke ke\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Dokter melempar atasan ke ke sekolah",
+      "words": [
+        "Dokter",
+        "melempar",
+        "atasan",
+        "ke",
+        "ke",
+        "sekolah"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"ke di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Bapak minum perahu ke di ruang tamu",
+      "words": [
+        "Bapak",
+        "minum",
+        "perahu",
+        "ke",
+        "di",
+        "ruang",
+        "tamu"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"dengan setiap\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Ayahku melihat selasa dengan setiap bulan",
+      "words": [
+        "Ayahku",
+        "melihat",
+        "selasa",
+        "dengan",
+        "setiap",
+        "bulan"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"di di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Kamu menurunkan di di jalan",
+      "words": [
+        "Kamu",
+        "menurunkan",
+        "di",
+        "di",
+        "jalan"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"ke tadi\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Ibuku membeli tembok ke tadi malam",
+      "words": [
+        "Ibuku",
+        "membeli",
+        "tembok",
+        "ke",
+        "tadi",
+        "malam"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"ke di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Ibu melempar ke di hutan",
+      "words": [
+        "Ibu",
+        "melempar",
+        "ke",
+        "di",
+        "hutan"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"dengan di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Kakek menurunkan menantu dengan di jalan",
+      "words": [
+        "Kakek",
+        "menurunkan",
+        "menantu",
+        "dengan",
+        "di",
+        "jalan"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"ke di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Ibu merawat pintu ke di ruang tamu",
+      "words": [
+        "Ibu",
+        "merawat",
+        "pintu",
+        "ke",
+        "di",
+        "ruang",
+        "tamu"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"untuk ke\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Petani mulai untuk ke sekolah",
+      "words": [
+        "Petani",
+        "mulai",
+        "untuk",
+        "ke",
+        "sekolah"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"ke setiap\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Penjual mulai bir ke setiap hari",
+      "words": [
+        "Penjual",
+        "mulai",
+        "bir",
+        "ke",
+        "setiap",
+        "hari"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"ke di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Nenek bernyanyi ke di gunung",
+      "words": [
+        "Nenek",
+        "bernyanyi",
+        "ke",
+        "di",
+        "gunung"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"ke di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Nelayan memasang celana ke di toko",
+      "words": [
+        "Nelayan",
+        "memasang",
+        "celana",
+        "ke",
+        "di",
+        "toko"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"di di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Anak berangkat di di toko",
+      "words": [
+        "Anak",
+        "berangkat",
+        "di",
+        "di",
+        "toko"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"dengan ke\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Aku berjalan kapal dengan ke pasar",
+      "words": [
+        "Aku",
+        "berjalan",
+        "kapal",
+        "dengan",
+        "ke",
+        "pasar"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"untuk di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Kakakku menutup untuk di kantor",
+      "words": [
+        "Kakakku",
+        "menutup",
+        "untuk",
+        "di",
+        "kantor"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"ke kemarin\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Kamu memasang ke kemarin",
+      "words": [
+        "Kamu",
+        "memasang",
+        "ke",
+        "kemarin"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"di tadi\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Dia menjemput di tadi siang",
+      "words": [
+        "Dia",
+        "menjemput",
+        "di",
+        "tadi",
+        "siang"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"di setiap\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Adikku memisahkan di setiap minggu",
+      "words": [
+        "Adikku",
+        "memisahkan",
+        "di",
+        "setiap",
+        "minggu"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"setiap besok\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Bayi memukul kamis setiap besok",
+      "words": [
+        "Bayi",
+        "memukul",
+        "kamis",
+        "setiap",
+        "besok"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"dengan pada\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Anak menggaruk pintu dengan pada musim hujan",
+      "words": [
+        "Anak",
+        "menggaruk",
+        "pintu",
+        "dengan",
+        "pada",
+        "musim",
+        "hujan"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"ke besok\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Petani melepaskan ke besok",
+      "words": [
+        "Petani",
+        "melepaskan",
+        "ke",
+        "besok"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"setiap kemarin\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Bayi mendengar komputer setiap kemarin",
+      "words": [
+        "Bayi",
+        "mendengar",
+        "komputer",
+        "setiap",
+        "kemarin"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"dengan tadi\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Saya kehilangan kereta dengan tadi malam",
+      "words": [
+        "Saya",
+        "kehilangan",
+        "kereta",
+        "dengan",
+        "tadi",
+        "malam"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"untuk di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Kakek mengirim untuk di kampus",
+      "words": [
+        "Kakek",
+        "mengirim",
+        "untuk",
+        "di",
+        "kampus"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"untuk di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Guru menulis baju untuk di jalan",
+      "words": [
+        "Guru",
+        "menulis",
+        "baju",
+        "untuk",
+        "di",
+        "jalan"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"ke ke\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Guru turun celana ke ke sekolah",
+      "words": [
+        "Guru",
+        "turun",
+        "celana",
+        "ke",
+        "ke",
+        "sekolah"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"ke ke\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Aku mengangkat rumah sakit ke ke toko",
+      "words": [
+        "Aku",
+        "mengangkat",
+        "rumah",
+        "sakit",
+        "ke",
+        "ke",
+        "toko"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"dengan setiap\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Mahasiswa menemukan lab dengan setiap malam",
+      "words": [
+        "Mahasiswa",
+        "menemukan",
+        "lab",
+        "dengan",
+        "setiap",
+        "malam"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"setiap kemarin\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Temanku membaca bapak setiap kemarin",
+      "words": [
+        "Temanku",
+        "membaca",
+        "bapak",
+        "setiap",
+        "kemarin"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"ke tadi\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Nelayan memasak ke tadi siang",
+      "words": [
+        "Nelayan",
+        "memasak",
+        "ke",
+        "tadi",
+        "siang"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"ke di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Mereka memasak ke di kamar",
+      "words": [
+        "Mereka",
+        "memasak",
+        "ke",
+        "di",
+        "kamar"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"dengan di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Bapak membersihkan meja dengan di bukit",
+      "words": [
+        "Bapak",
+        "membersihkan",
+        "meja",
+        "dengan",
+        "di",
+        "bukit"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"untuk setiap\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Ayahku lanjutkan dasi untuk setiap minggu",
+      "words": [
+        "Ayahku",
+        "lanjutkan",
+        "dasi",
+        "untuk",
+        "setiap",
+        "minggu"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"untuk di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Mereka menusuk laptop untuk di waktu senggang",
+      "words": [
+        "Mereka",
+        "menusuk",
+        "laptop",
+        "untuk",
+        "di",
+        "waktu",
+        "senggang"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"setiap setiap\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Guru menangkap ibu setiap setiap hari",
+      "words": [
+        "Guru",
+        "menangkap",
+        "ibu",
+        "setiap",
+        "setiap",
+        "hari"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"untuk di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Kakakku berangkat tas untuk di kantor",
+      "words": [
+        "Kakakku",
+        "berangkat",
+        "tas",
+        "untuk",
+        "di",
+        "kantor"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"di tadi\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Nenek mengunci di tadi siang",
+      "words": [
+        "Nenek",
+        "mengunci",
+        "di",
+        "tadi",
+        "siang"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"untuk di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Mahasiswa datang untuk di laut",
+      "words": [
+        "Mahasiswa",
+        "datang",
+        "untuk",
+        "di",
+        "laut"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"ke di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Ibu berjalan ke di sekolah",
+      "words": [
+        "Ibu",
+        "berjalan",
+        "ke",
+        "di",
+        "sekolah"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"dengan di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Bibi menurunkan pintu dengan di ruang tamu",
+      "words": [
+        "Bibi",
+        "menurunkan",
+        "pintu",
+        "dengan",
+        "di",
+        "ruang",
+        "tamu"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"untuk dengan\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Polisi pulang warung untuk dengan rajin",
+      "words": [
+        "Polisi",
+        "pulang",
+        "warung",
+        "untuk",
+        "dengan",
+        "rajin"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"dengan pada\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Kakek mencabut teater dengan pada musim hujan",
+      "words": [
+        "Kakek",
+        "mencabut",
+        "teater",
+        "dengan",
+        "pada",
+        "musim",
+        "hujan"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"untuk di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Tukang mencabut ibu untuk di jalan",
+      "words": [
+        "Tukang",
+        "mencabut",
+        "ibu",
+        "untuk",
+        "di",
+        "jalan"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"ke dengan\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Bapak naik buah ke dengan senang",
+      "words": [
+        "Bapak",
+        "naik",
+        "buah",
+        "ke",
+        "dengan",
+        "senang"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"di di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Bapak membuka di di padang",
+      "words": [
+        "Bapak",
+        "membuka",
+        "di",
+        "di",
+        "padang"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"di di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Tukang tidur di di taman",
+      "words": [
+        "Tukang",
+        "tidur",
+        "di",
+        "di",
+        "taman"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"ke ke\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Nelayan memperhatikan dokter ke ke toko",
+      "words": [
+        "Nelayan",
+        "memperhatikan",
+        "dokter",
+        "ke",
+        "ke",
+        "toko"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"untuk tadi\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Kakakku menabung untuk tadi malam",
+      "words": [
+        "Kakakku",
+        "menabung",
+        "untuk",
+        "tadi",
+        "malam"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"dengan besok\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Anak memotong pesawat dengan besok",
+      "words": [
+        "Anak",
+        "memotong",
+        "pesawat",
+        "dengan",
+        "besok"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"di di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Nenek menyelesaikan di di waktu senggang",
+      "words": [
+        "Nenek",
+        "menyelesaikan",
+        "di",
+        "di",
+        "waktu",
+        "senggang"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"untuk dengan\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Bapak memisahkan juli untuk dengan tekun",
+      "words": [
+        "Bapak",
+        "memisahkan",
+        "juli",
+        "untuk",
+        "dengan",
+        "tekun"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"ke di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Tukang menyimpan ke di halaman",
+      "words": [
+        "Tukang",
+        "menyimpan",
+        "ke",
+        "di",
+        "halaman"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"setiap besok\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Ayah memukul november setiap besok",
+      "words": [
+        "Ayah",
+        "memukul",
+        "november",
+        "setiap",
+        "besok"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"setiap besok\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Ayah mencari adik setiap besok",
+      "words": [
+        "Ayah",
+        "mencari",
+        "adik",
+        "setiap",
+        "besok"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"setiap setiap\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Mereka mencuci minuman setiap setiap hari",
+      "words": [
+        "Mereka",
+        "mencuci",
+        "minuman",
+        "setiap",
+        "setiap",
+        "hari"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"ke ke\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Bayi membawa dinding ke ke rumah",
+      "words": [
+        "Bayi",
+        "membawa",
+        "dinding",
+        "ke",
+        "ke",
+        "rumah"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"ke tadi\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Bapak menggembala kamar mandi ke tadi pagi",
+      "words": [
+        "Bapak",
+        "menggembala",
+        "kamar",
+        "mandi",
+        "ke",
+        "tadi",
+        "pagi"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"ke di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Petani memupuk teras ke di toko",
+      "words": [
+        "Petani",
+        "memupuk",
+        "teras",
+        "ke",
+        "di",
+        "toko"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"untuk di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Tukang mengukur adik untuk di kamar",
+      "words": [
+        "Tukang",
+        "mengukur",
+        "adik",
+        "untuk",
+        "di",
+        "kamar"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"untuk di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Pedagang menimbang untuk di rumah",
+      "words": [
+        "Pedagang",
+        "menimbang",
+        "untuk",
+        "di",
+        "rumah"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"untuk di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Ibu naik untuk di gunung",
+      "words": [
+        "Ibu",
+        "naik",
+        "untuk",
+        "di",
+        "gunung"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"dengan setiap\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Bapak menerima mobil dengan setiap minggu",
+      "words": [
+        "Bapak",
+        "menerima",
+        "mobil",
+        "dengan",
+        "setiap",
+        "minggu"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"ke di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Penjual menutup hari ke di warung",
+      "words": [
+        "Penjual",
+        "menutup",
+        "hari",
+        "ke",
+        "di",
+        "warung"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"dengan di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Bapak mendarat lantai dengan di laut",
+      "words": [
+        "Bapak",
+        "mendarat",
+        "lantai",
+        "dengan",
+        "di",
+        "laut"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"untuk setiap\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Kakak memelihara rabu untuk setiap malam",
+      "words": [
+        "Kakak",
+        "memelihara",
+        "rabu",
+        "untuk",
+        "setiap",
+        "malam"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"ke di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Guru memperhatikan ke di laut",
+      "words": [
+        "Guru",
+        "memperhatikan",
+        "ke",
+        "di",
+        "laut"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"dengan dengan\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Ibuku menulis akar dengan dengan tekun",
+      "words": [
+        "Ibuku",
+        "menulis",
+        "akar",
+        "dengan",
+        "dengan",
+        "tekun"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"ke setiap\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Temanku berangkat ke setiap pagi",
+      "words": [
+        "Temanku",
+        "berangkat",
+        "ke",
+        "setiap",
+        "pagi"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"ke setiap\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Ibu memasang menantu ke setiap hari",
+      "words": [
+        "Ibu",
+        "memasang",
+        "menantu",
+        "ke",
+        "setiap",
+        "hari"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"ke setiap\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Polisi menemukan ke setiap pagi",
+      "words": [
+        "Polisi",
+        "menemukan",
+        "ke",
+        "setiap",
+        "pagi"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"di setiap\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Pembeli belajar di setiap pagi",
+      "words": [
+        "Pembeli",
+        "belajar",
+        "di",
+        "setiap",
+        "pagi"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"dengan setiap\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Petani mencabut hari dengan setiap minggu",
+      "words": [
+        "Petani",
+        "mencabut",
+        "hari",
+        "dengan",
+        "setiap",
+        "minggu"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"ke setiap\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Bapak berangkat vihara ke setiap hari",
+      "words": [
+        "Bapak",
+        "berangkat",
+        "vihara",
+        "ke",
+        "setiap",
+        "hari"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"untuk pada\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Bapak menyimpan untuk pada musim hujan",
+      "words": [
+        "Bapak",
+        "menyimpan",
+        "untuk",
+        "pada",
+        "musim",
+        "hujan"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"untuk setiap\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Siswa mengumpulkan untuk setiap bulan",
+      "words": [
+        "Siswa",
+        "mengumpulkan",
+        "untuk",
+        "setiap",
+        "bulan"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"di di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Kakek membuka di di toko",
+      "words": [
+        "Kakek",
+        "membuka",
+        "di",
+        "di",
+        "toko"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"ke di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Kakakku naik teras ke di laut",
+      "words": [
+        "Kakakku",
+        "naik",
+        "teras",
+        "ke",
+        "di",
+        "laut"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"untuk ke\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Tukang mengawasi kapal untuk ke rumah",
+      "words": [
+        "Tukang",
+        "mengawasi",
+        "kapal",
+        "untuk",
+        "ke",
+        "rumah"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"untuk tadi\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Temanku membayar untuk tadi pagi",
+      "words": [
+        "Temanku",
+        "membayar",
+        "untuk",
+        "tadi",
+        "pagi"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"untuk setiap\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Bibi mengambil kamera untuk setiap hari",
+      "words": [
+        "Bibi",
+        "mengambil",
+        "kamera",
+        "untuk",
+        "setiap",
+        "hari"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"untuk di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Nelayan memijat atap untuk di jalan",
+      "words": [
+        "Nelayan",
+        "memijat",
+        "atap",
+        "untuk",
+        "di",
+        "jalan"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"untuk setiap\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Karyawan menggambar puskesmas untuk setiap hari",
+      "words": [
+        "Karyawan",
+        "menggambar",
+        "puskesmas",
+        "untuk",
+        "setiap",
+        "hari"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"di di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Saya mendatangi di di dapur",
+      "words": [
+        "Saya",
+        "mendatangi",
+        "di",
+        "di",
+        "dapur"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"untuk di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Pembeli memotong pura untuk di pasar",
+      "words": [
+        "Pembeli",
+        "memotong",
+        "pura",
+        "untuk",
+        "di",
+        "pasar"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"setiap setiap\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Tukang menembak loteng setiap setiap hari",
+      "words": [
+        "Tukang",
+        "menembak",
+        "loteng",
+        "setiap",
+        "setiap",
+        "hari"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"di setiap\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Petani makan di setiap bulan",
+      "words": [
+        "Petani",
+        "makan",
+        "di",
+        "setiap",
+        "bulan"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"untuk di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Ayahku menulis untuk di kantor",
+      "words": [
+        "Ayahku",
+        "menulis",
+        "untuk",
+        "di",
+        "kantor"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"ke pada\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Guru memelihara bunga ke pada musim hujan",
+      "words": [
+        "Guru",
+        "memelihara",
+        "bunga",
+        "ke",
+        "pada",
+        "musim",
+        "hujan"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"setiap kemarin\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Kakak memasang lab setiap kemarin",
+      "words": [
+        "Kakak",
+        "memasang",
+        "lab",
+        "setiap",
+        "kemarin"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"untuk setiap\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Adikku menabung untuk setiap hari",
+      "words": [
+        "Adikku",
+        "menabung",
+        "untuk",
+        "setiap",
+        "hari"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"untuk di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Kita memasak untuk di sekolah",
+      "words": [
+        "Kita",
+        "memasak",
+        "untuk",
+        "di",
+        "sekolah"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"untuk di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Paman melihat dasi untuk di laut",
+      "words": [
+        "Paman",
+        "melihat",
+        "dasi",
+        "untuk",
+        "di",
+        "laut"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"di setiap\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Bibi menjaga di setiap minggu",
+      "words": [
+        "Bibi",
+        "menjaga",
+        "di",
+        "setiap",
+        "minggu"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"untuk di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Kamu mengamati untuk di dapur",
+      "words": [
+        "Kamu",
+        "mengamati",
+        "untuk",
+        "di",
+        "dapur"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"di di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Kamu menyelesaikan di di bukit",
+      "words": [
+        "Kamu",
+        "menyelesaikan",
+        "di",
+        "di",
+        "bukit"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"untuk di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Ayah mendatangi lantai untuk di rumah",
+      "words": [
+        "Ayah",
+        "mendatangi",
+        "lantai",
+        "untuk",
+        "di",
+        "rumah"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"ke di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Karyawan mengepel ke di taman",
+      "words": [
+        "Karyawan",
+        "mengepel",
+        "ke",
+        "di",
+        "taman"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"untuk di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Pedagang mengukur untuk di sungai",
+      "words": [
+        "Pedagang",
+        "mengukur",
+        "untuk",
+        "di",
+        "sungai"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"di di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Petani mencari di di padang",
+      "words": [
+        "Petani",
+        "mencari",
+        "di",
+        "di",
+        "padang"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"ke di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Mahasiswa menyentuh ke di ruang tamu",
+      "words": [
+        "Mahasiswa",
+        "menyentuh",
+        "ke",
+        "di",
+        "ruang",
+        "tamu"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"ke tadi\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Penjual mencabut atap ke tadi malam",
+      "words": [
+        "Penjual",
+        "mencabut",
+        "atap",
+        "ke",
+        "tadi",
+        "malam"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"ke di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Pembeli mengambil lapangan ke di jalan",
+      "words": [
+        "Pembeli",
+        "mengambil",
+        "lapangan",
+        "ke",
+        "di",
+        "jalan"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"di di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Paman menjaga di di kampus",
+      "words": [
+        "Paman",
+        "menjaga",
+        "di",
+        "di",
+        "kampus"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"di tadi\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Sahabatku mencabut di tadi siang",
+      "words": [
+        "Sahabatku",
+        "mencabut",
+        "di",
+        "tadi",
+        "siang"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"ke di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Saya memperhatikan ke di pasar",
+      "words": [
+        "Saya",
+        "memperhatikan",
+        "ke",
+        "di",
+        "pasar"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"dengan di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Ibu mulai jus dengan di toko",
+      "words": [
+        "Ibu",
+        "mulai",
+        "jus",
+        "dengan",
+        "di",
+        "toko"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"ke di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Adikku menjaga ke di kamar",
+      "words": [
+        "Adikku",
+        "menjaga",
+        "ke",
+        "di",
+        "kamar"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"untuk di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Aku menggembala sayur untuk di rumah",
+      "words": [
+        "Aku",
+        "menggembala",
+        "sayur",
+        "untuk",
+        "di",
+        "rumah"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"untuk dengan\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Ibu membeli untuk dengan rajin",
+      "words": [
+        "Ibu",
+        "membeli",
+        "untuk",
+        "dengan",
+        "rajin"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"di setiap\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Aku bangun di setiap bulan",
+      "words": [
+        "Aku",
+        "bangun",
+        "di",
+        "setiap",
+        "bulan"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"untuk tadi\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Kita menurunkan untuk tadi siang",
+      "words": [
+        "Kita",
+        "menurunkan",
+        "untuk",
+        "tadi",
+        "siang"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"di di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Temanku memulai di di kantor",
+      "words": [
+        "Temanku",
+        "memulai",
+        "di",
+        "di",
+        "kantor"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"di setiap\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Pedagang mencari di setiap bulan",
+      "words": [
+        "Pedagang",
+        "mencari",
+        "di",
+        "setiap",
+        "bulan"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"setiap besok\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Sahabatku menarik teater setiap besok",
+      "words": [
+        "Sahabatku",
+        "menarik",
+        "teater",
+        "setiap",
+        "besok"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"ke ke\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Kakakku naik pelanggan ke ke kantor",
+      "words": [
+        "Kakakku",
+        "naik",
+        "pelanggan",
+        "ke",
+        "ke",
+        "kantor"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"untuk di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Dokter memantau april untuk di lembah",
+      "words": [
+        "Dokter",
+        "memantau",
+        "april",
+        "untuk",
+        "di",
+        "lembah"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"ke kemarin\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Nelayan mendekati oktober ke kemarin",
+      "words": [
+        "Nelayan",
+        "mendekati",
+        "oktober",
+        "ke",
+        "kemarin"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"di di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Penjual menabung di di toko",
+      "words": [
+        "Penjual",
+        "menabung",
+        "di",
+        "di",
+        "toko"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"ke di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Karyawan memasang ke di pasar",
+      "words": [
+        "Karyawan",
+        "memasang",
+        "ke",
+        "di",
+        "pasar"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"dengan di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Saya memotong minuman dengan di sungai",
+      "words": [
+        "Saya",
+        "memotong",
+        "minuman",
+        "dengan",
+        "di",
+        "sungai"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"dengan setiap\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Bayi makan oktober dengan setiap bulan",
+      "words": [
+        "Bayi",
+        "makan",
+        "oktober",
+        "dengan",
+        "setiap",
+        "bulan"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"ke tadi\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Sahabatku memijat ke tadi siang",
+      "words": [
+        "Sahabatku",
+        "memijat",
+        "ke",
+        "tadi",
+        "siang"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"di ke\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Kita belajar di ke toko",
+      "words": [
+        "Kita",
+        "belajar",
+        "di",
+        "ke",
+        "toko"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"setiap kemarin\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Dokter belajar bapak setiap kemarin",
+      "words": [
+        "Dokter",
+        "belajar",
+        "bapak",
+        "setiap",
+        "kemarin"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"ke di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Polisi memantau ke di jalan",
+      "words": [
+        "Polisi",
+        "memantau",
+        "ke",
+        "di",
+        "jalan"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"ke dengan\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Bayi menimbang bantal ke dengan tekun",
+      "words": [
+        "Bayi",
+        "menimbang",
+        "bantal",
+        "ke",
+        "dengan",
+        "tekun"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"ke di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Tukang membawa ke di jalan",
+      "words": [
+        "Tukang",
+        "membawa",
+        "ke",
+        "di",
+        "jalan"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"ke ke\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Ibu memijat atap ke ke kantor",
+      "words": [
+        "Ibu",
+        "memijat",
+        "atap",
+        "ke",
+        "ke",
+        "kantor"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"ke kemarin\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Dokter melepaskan ke kemarin",
+      "words": [
+        "Dokter",
+        "melepaskan",
+        "ke",
+        "kemarin"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"ke di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Adikku mencampur ibu ke di lembah",
+      "words": [
+        "Adikku",
+        "mencampur",
+        "ibu",
+        "ke",
+        "di",
+        "lembah"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"dengan di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Pembeli bercerita minggu dengan di ruang tamu",
+      "words": [
+        "Pembeli",
+        "bercerita",
+        "minggu",
+        "dengan",
+        "di",
+        "ruang",
+        "tamu"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"untuk tadi\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Sahabatku melempar untuk tadi siang",
+      "words": [
+        "Sahabatku",
+        "melempar",
+        "untuk",
+        "tadi",
+        "siang"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"ke di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Tukang memasang setrika ke di waktu senggang",
+      "words": [
+        "Tukang",
+        "memasang",
+        "setrika",
+        "ke",
+        "di",
+        "waktu",
+        "senggang"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"setiap kemarin\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Anak membuang restoran setiap kemarin",
+      "words": [
+        "Anak",
+        "membuang",
+        "restoran",
+        "setiap",
+        "kemarin"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"dengan dengan\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Kamu menyiram guru dengan dengan hati-hati",
+      "words": [
+        "Kamu",
+        "menyiram",
+        "guru",
+        "dengan",
+        "dengan",
+        "hati-hati"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"dengan di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Nenek menyelesaikan desember dengan di sekolah",
+      "words": [
+        "Nenek",
+        "menyelesaikan",
+        "desember",
+        "dengan",
+        "di",
+        "sekolah"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"ke di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Saya mendarat nelayan ke di pasar",
+      "words": [
+        "Saya",
+        "mendarat",
+        "nelayan",
+        "ke",
+        "di",
+        "pasar"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"dengan setiap\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Mereka belajar sahabat dengan setiap malam",
+      "words": [
+        "Mereka",
+        "belajar",
+        "sahabat",
+        "dengan",
+        "setiap",
+        "malam"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"ke di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Anak membayar halaman ke di warung",
+      "words": [
+        "Anak",
+        "membayar",
+        "halaman",
+        "ke",
+        "di",
+        "warung"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"dengan di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Ayah memupuk pedagang dengan di pasar",
+      "words": [
+        "Ayah",
+        "memupuk",
+        "pedagang",
+        "dengan",
+        "di",
+        "pasar"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"untuk besok\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Bayi mengantar galeri untuk besok",
+      "words": [
+        "Bayi",
+        "mengantar",
+        "galeri",
+        "untuk",
+        "besok"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"untuk dengan\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Dokter mengantar kamar tidur untuk dengan senang",
+      "words": [
+        "Dokter",
+        "mengantar",
+        "kamar",
+        "tidur",
+        "untuk",
+        "dengan",
+        "senang"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"di dengan\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Adikku memecah di dengan senang",
+      "words": [
+        "Adikku",
+        "memecah",
+        "di",
+        "dengan",
+        "senang"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"ke setiap\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Bayi memperbaiki kakek ke setiap malam",
+      "words": [
+        "Bayi",
+        "memperbaiki",
+        "kakek",
+        "ke",
+        "setiap",
+        "malam"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"ke di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Adik minum ke di waktu senggang",
+      "words": [
+        "Adik",
+        "minum",
+        "ke",
+        "di",
+        "waktu",
+        "senggang"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"setiap setiap\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Polisi kehilangan map setiap setiap hari",
+      "words": [
+        "Polisi",
+        "kehilangan",
+        "map",
+        "setiap",
+        "setiap",
+        "hari"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"di setiap\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Kita menurunkan di setiap minggu",
+      "words": [
+        "Kita",
+        "menurunkan",
+        "di",
+        "setiap",
+        "minggu"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"dengan di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Penjual mengikuti puskesmas dengan di warung",
+      "words": [
+        "Penjual",
+        "mengikuti",
+        "puskesmas",
+        "dengan",
+        "di",
+        "warung"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"dengan besok\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Adikku mencabut blender dengan besok",
+      "words": [
+        "Adikku",
+        "mencabut",
+        "blender",
+        "dengan",
+        "besok"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"untuk tadi\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Temanku memotong tetangga untuk tadi pagi",
+      "words": [
+        "Temanku",
+        "memotong",
+        "tetangga",
+        "untuk",
+        "tadi",
+        "pagi"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"untuk di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Anak menurunkan celana untuk di toko",
+      "words": [
+        "Anak",
+        "menurunkan",
+        "celana",
+        "untuk",
+        "di",
+        "toko"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"dengan ke\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Tukang menyelidiki januari dengan ke kantor",
+      "words": [
+        "Tukang",
+        "menyelidiki",
+        "januari",
+        "dengan",
+        "ke",
+        "kantor"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"ke di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Bibi belajar kebun ke di ruang tamu",
+      "words": [
+        "Bibi",
+        "belajar",
+        "kebun",
+        "ke",
+        "di",
+        "ruang",
+        "tamu"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"ke di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Adikku menarik ke di jalan",
+      "words": [
+        "Adikku",
+        "menarik",
+        "ke",
+        "di",
+        "jalan"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"di di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Ayahku memasak di di padang",
+      "words": [
+        "Ayahku",
+        "memasak",
+        "di",
+        "di",
+        "padang"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"untuk di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Mahasiswa mengangkat untuk di sungai",
+      "words": [
+        "Mahasiswa",
+        "mengangkat",
+        "untuk",
+        "di",
+        "sungai"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"setiap setiap\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Kakak mengikuti tablet setiap setiap hari",
+      "words": [
+        "Kakak",
+        "mengikuti",
+        "tablet",
+        "setiap",
+        "setiap",
+        "hari"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"untuk di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Saya mencampur mobil untuk di laut",
+      "words": [
+        "Saya",
+        "mencampur",
+        "mobil",
+        "untuk",
+        "di",
+        "laut"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"untuk di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Dokter mencabut untuk di gunung",
+      "words": [
+        "Dokter",
+        "mencabut",
+        "untuk",
+        "di",
+        "gunung"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"ke dengan\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Anak berhenti ke dengan hati-hati",
+      "words": [
+        "Anak",
+        "berhenti",
+        "ke",
+        "dengan",
+        "hati-hati"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"untuk di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Polisi mengirim handphone untuk di gunung",
+      "words": [
+        "Polisi",
+        "mengirim",
+        "handphone",
+        "untuk",
+        "di",
+        "gunung"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"dengan dengan\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Kakakku pulang bulan dengan dengan tekun",
+      "words": [
+        "Kakakku",
+        "pulang",
+        "bulan",
+        "dengan",
+        "dengan",
+        "tekun"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"di di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Ibuku mencium di di warung",
+      "words": [
+        "Ibuku",
+        "mencium",
+        "di",
+        "di",
+        "warung"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"untuk di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Kami menggambar kepala untuk di restoran",
+      "words": [
+        "Kami",
+        "menggambar",
+        "kepala",
+        "untuk",
+        "di",
+        "restoran"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"ke setiap\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Pembeli menanam kolega ke setiap hari",
+      "words": [
+        "Pembeli",
+        "menanam",
+        "kolega",
+        "ke",
+        "setiap",
+        "hari"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"untuk di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Kakakku datang penghapus untuk di warung",
+      "words": [
+        "Kakakku",
+        "datang",
+        "penghapus",
+        "untuk",
+        "di",
+        "warung"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"dengan setiap\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Kakek bangun siang dengan setiap pagi",
+      "words": [
+        "Kakek",
+        "bangun",
+        "siang",
+        "dengan",
+        "setiap",
+        "pagi"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"untuk tadi\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Ayahku menyentuh pena untuk tadi pagi",
+      "words": [
+        "Ayahku",
+        "menyentuh",
+        "pena",
+        "untuk",
+        "tadi",
+        "pagi"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"untuk di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Kakak menjaga atap untuk di kampus",
+      "words": [
+        "Kakak",
+        "menjaga",
+        "atap",
+        "untuk",
+        "di",
+        "kampus"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"ke dengan\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Kakakku menarik ke dengan hati-hati",
+      "words": [
+        "Kakakku",
+        "menarik",
+        "ke",
+        "dengan",
+        "hati-hati"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"untuk ke\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Kita membangun untuk ke toko",
+      "words": [
+        "Kita",
+        "membangun",
+        "untuk",
+        "ke",
+        "toko"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"setiap setiap\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Anak bermain sapi setiap setiap hari",
+      "words": [
+        "Anak",
+        "bermain",
+        "sapi",
+        "setiap",
+        "setiap",
+        "hari"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"dengan di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Bapak menonton motor dengan di gunung",
+      "words": [
+        "Bapak",
+        "menonton",
+        "motor",
+        "dengan",
+        "di",
+        "gunung"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"di di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Nenek mengakhiri di di pasar",
+      "words": [
+        "Nenek",
+        "mengakhiri",
+        "di",
+        "di",
+        "pasar"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"untuk dengan\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Guru menyimpan sirup untuk dengan senang",
+      "words": [
+        "Guru",
+        "menyimpan",
+        "sirup",
+        "untuk",
+        "dengan",
+        "senang"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"dengan pada\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Paman mengepel bawahan dengan pada musim kemarau",
+      "words": [
+        "Paman",
+        "mengepel",
+        "bawahan",
+        "dengan",
+        "pada",
+        "musim",
+        "kemarau"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"di ke\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Aku mendorong di ke toko",
+      "words": [
+        "Aku",
+        "mendorong",
+        "di",
+        "ke",
+        "toko"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"ke di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Nenek membagikan ke di rumah",
+      "words": [
+        "Nenek",
+        "membagikan",
+        "ke",
+        "di",
+        "rumah"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"untuk di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Saya lanjutkan galeri untuk di sekolah",
+      "words": [
+        "Saya",
+        "lanjutkan",
+        "galeri",
+        "untuk",
+        "di",
+        "sekolah"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"ke di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Ayahku memperbaiki kakak ke di dapur",
+      "words": [
+        "Ayahku",
+        "memperbaiki",
+        "kakak",
+        "ke",
+        "di",
+        "dapur"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"di di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Petani melepas di di halaman",
+      "words": [
+        "Petani",
+        "melepas",
+        "di",
+        "di",
+        "halaman"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"untuk kemarin\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Mereka menjaga untuk kemarin",
+      "words": [
+        "Mereka",
+        "menjaga",
+        "untuk",
+        "kemarin"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"dengan ke\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Tukang menendang kelinci dengan ke pasar",
+      "words": [
+        "Tukang",
+        "menendang",
+        "kelinci",
+        "dengan",
+        "ke",
+        "pasar"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"ke di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Pedagang mengirim teman ke di jalan",
+      "words": [
+        "Pedagang",
+        "mengirim",
+        "teman",
+        "ke",
+        "di",
+        "jalan"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"untuk ke\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Polisi menjebak untuk ke kantor",
+      "words": [
+        "Polisi",
+        "menjebak",
+        "untuk",
+        "ke",
+        "kantor"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"untuk di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Mahasiswa memupuk kantor untuk di bukit",
+      "words": [
+        "Mahasiswa",
+        "memupuk",
+        "kantor",
+        "untuk",
+        "di",
+        "bukit"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"ke di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Bayi menutup ke di waktu senggang",
+      "words": [
+        "Bayi",
+        "menutup",
+        "ke",
+        "di",
+        "waktu",
+        "senggang"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"ke tadi\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Mereka menarik halaman ke tadi siang",
+      "words": [
+        "Mereka",
+        "menarik",
+        "halaman",
+        "ke",
+        "tadi",
+        "siang"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"setiap setiap\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Dokter menjebak minggu setiap setiap hari",
+      "words": [
+        "Dokter",
+        "menjebak",
+        "minggu",
+        "setiap",
+        "setiap",
+        "hari"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"ke di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Bibi naik ke di lembah",
+      "words": [
+        "Bibi",
+        "naik",
+        "ke",
+        "di",
+        "lembah"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"ke di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Nelayan menjebak ke di ruang tamu",
+      "words": [
+        "Nelayan",
+        "menjebak",
+        "ke",
+        "di",
+        "ruang",
+        "tamu"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"untuk di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Polisi menendang toko untuk di halaman",
+      "words": [
+        "Polisi",
+        "menendang",
+        "toko",
+        "untuk",
+        "di",
+        "halaman"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"ke di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Paman menembak ke di sekolah",
+      "words": [
+        "Paman",
+        "menembak",
+        "ke",
+        "di",
+        "sekolah"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"ke di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Kakek berjalan ke di toko",
+      "words": [
+        "Kakek",
+        "berjalan",
+        "ke",
+        "di",
+        "toko"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"dengan ke\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Bapak mengirim kelas dengan ke rumah",
+      "words": [
+        "Bapak",
+        "mengirim",
+        "kelas",
+        "dengan",
+        "ke",
+        "rumah"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"dengan di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Siswa kehilangan november dengan di ruang tamu",
+      "words": [
+        "Siswa",
+        "kehilangan",
+        "november",
+        "dengan",
+        "di",
+        "ruang",
+        "tamu"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"setiap setiap\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Ayah melepas pesawat setiap setiap hari",
+      "words": [
+        "Ayah",
+        "melepas",
+        "pesawat",
+        "setiap",
+        "setiap",
+        "hari"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"untuk dengan\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Aku memperhatikan kaos untuk dengan senang",
+      "words": [
+        "Aku",
+        "memperhatikan",
+        "kaos",
+        "untuk",
+        "dengan",
+        "senang"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"dengan di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Kakek mengepel kampus dengan di restoran",
+      "words": [
+        "Kakek",
+        "mengepel",
+        "kampus",
+        "dengan",
+        "di",
+        "restoran"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"untuk setiap\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Nenek mencari untuk setiap minggu",
+      "words": [
+        "Nenek",
+        "mencari",
+        "untuk",
+        "setiap",
+        "minggu"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"untuk di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Dia menusuk untuk di laut",
+      "words": [
+        "Dia",
+        "menusuk",
+        "untuk",
+        "di",
+        "laut"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"di besok\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Dia mencari di besok",
+      "words": [
+        "Dia",
+        "mencari",
+        "di",
+        "besok"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"ke di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Ibuku menari ke di rumah",
+      "words": [
+        "Ibuku",
+        "menari",
+        "ke",
+        "di",
+        "rumah"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"untuk dengan\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Paman naik kursi untuk dengan hati-hati",
+      "words": [
+        "Paman",
+        "naik",
+        "kursi",
+        "untuk",
+        "dengan",
+        "hati-hati"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"ke di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Kakak mulai hari ke di sekolah",
+      "words": [
+        "Kakak",
+        "mulai",
+        "hari",
+        "ke",
+        "di",
+        "sekolah"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"dengan di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Siswa memulai telepon dengan di halaman",
+      "words": [
+        "Siswa",
+        "memulai",
+        "telepon",
+        "dengan",
+        "di",
+        "halaman"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"di di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Temanku menendang di di sungai",
+      "words": [
+        "Temanku",
+        "menendang",
+        "di",
+        "di",
+        "sungai"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"untuk setiap\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Guru menimbang untuk setiap malam",
+      "words": [
+        "Guru",
+        "menimbang",
+        "untuk",
+        "setiap",
+        "malam"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"dengan besok\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Nelayan menonton pintu dengan besok",
+      "words": [
+        "Nelayan",
+        "menonton",
+        "pintu",
+        "dengan",
+        "besok"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"dengan di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Bayi menyambung kambing dengan di warung",
+      "words": [
+        "Bayi",
+        "menyambung",
+        "kambing",
+        "dengan",
+        "di",
+        "warung"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"untuk setiap\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Pembeli menerima untuk setiap malam",
+      "words": [
+        "Pembeli",
+        "menerima",
+        "untuk",
+        "setiap",
+        "malam"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"ke setiap\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Polisi memukul pembeli ke setiap bulan",
+      "words": [
+        "Polisi",
+        "memukul",
+        "pembeli",
+        "ke",
+        "setiap",
+        "bulan"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"ke setiap\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Petani menjauhi ke setiap minggu",
+      "words": [
+        "Petani",
+        "menjauhi",
+        "ke",
+        "setiap",
+        "minggu"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"ke ke\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Pembeli menyebarkan ke ke kantor",
+      "words": [
+        "Pembeli",
+        "menyebarkan",
+        "ke",
+        "ke",
+        "kantor"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"di pada\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Aku bercerita di pada musim kemarau",
+      "words": [
+        "Aku",
+        "bercerita",
+        "di",
+        "pada",
+        "musim",
+        "kemarau"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"ke ke\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Pembeli menangkap ke ke rumah",
+      "words": [
+        "Pembeli",
+        "menangkap",
+        "ke",
+        "ke",
+        "rumah"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"ke di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Adik berlari pena ke di kampus",
+      "words": [
+        "Adik",
+        "berlari",
+        "pena",
+        "ke",
+        "di",
+        "kampus"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"ke tadi\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Ibuku menyimpan daun ke tadi pagi",
+      "words": [
+        "Ibuku",
+        "menyimpan",
+        "daun",
+        "ke",
+        "tadi",
+        "pagi"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"ke di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Ayah merasakan ke di taman",
+      "words": [
+        "Ayah",
+        "merasakan",
+        "ke",
+        "di",
+        "taman"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"ke di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Ibuku melempar es ke di toko",
+      "words": [
+        "Ibuku",
+        "melempar",
+        "es",
+        "ke",
+        "di",
+        "toko"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"untuk tadi\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Dokter menggembala untuk tadi pagi",
+      "words": [
+        "Dokter",
+        "menggembala",
+        "untuk",
+        "tadi",
+        "pagi"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"untuk dengan\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Kakek membeli untuk dengan senang",
+      "words": [
+        "Kakek",
+        "membeli",
+        "untuk",
+        "dengan",
+        "senang"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"dengan ke\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Saya menggaruk klinik dengan ke kantor",
+      "words": [
+        "Saya",
+        "menggaruk",
+        "klinik",
+        "dengan",
+        "ke",
+        "kantor"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"setiap kemarin\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Mahasiswa mencabut meja setiap kemarin",
+      "words": [
+        "Mahasiswa",
+        "mencabut",
+        "meja",
+        "setiap",
+        "kemarin"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"ke di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Nenek bicara ke di lembah",
+      "words": [
+        "Nenek",
+        "bicara",
+        "ke",
+        "di",
+        "lembah"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"untuk di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Temanku mencabut untuk di gunung",
+      "words": [
+        "Temanku",
+        "mencabut",
+        "untuk",
+        "di",
+        "gunung"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"setiap kemarin\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Anak menggambar mobil setiap kemarin",
+      "words": [
+        "Anak",
+        "menggambar",
+        "mobil",
+        "setiap",
+        "kemarin"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"dengan di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Kamu memberikan biji dengan di warung",
+      "words": [
+        "Kamu",
+        "memberikan",
+        "biji",
+        "dengan",
+        "di",
+        "warung"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"ke di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Dia mengantar ke di padang",
+      "words": [
+        "Dia",
+        "mengantar",
+        "ke",
+        "di",
+        "padang"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"untuk di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Temanku melepas restoran untuk di jalan",
+      "words": [
+        "Temanku",
+        "melepas",
+        "restoran",
+        "untuk",
+        "di",
+        "jalan"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"ke di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Adik merusak puskesmas ke di kantor",
+      "words": [
+        "Adik",
+        "merusak",
+        "puskesmas",
+        "ke",
+        "di",
+        "kantor"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"untuk di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Bayi turun lab untuk di halaman",
+      "words": [
+        "Bayi",
+        "turun",
+        "lab",
+        "untuk",
+        "di",
+        "halaman"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"ke di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Ibuku menjebak ketua ke di padang",
+      "words": [
+        "Ibuku",
+        "menjebak",
+        "ketua",
+        "ke",
+        "di",
+        "padang"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"untuk dengan\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Kakak membangun taman untuk dengan rajin",
+      "words": [
+        "Kakak",
+        "membangun",
+        "taman",
+        "untuk",
+        "dengan",
+        "rajin"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"dengan ke\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Adikku bangun anjing dengan ke toko",
+      "words": [
+        "Adikku",
+        "bangun",
+        "anjing",
+        "dengan",
+        "ke",
+        "toko"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"setiap kemarin\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Aku menyelidiki mesin cuci setiap kemarin",
+      "words": [
+        "Aku",
+        "menyelidiki",
+        "mesin",
+        "cuci",
+        "setiap",
+        "kemarin"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"untuk di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Ibuku memukul untuk di toko",
+      "words": [
+        "Ibuku",
+        "memukul",
+        "untuk",
+        "di",
+        "toko"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"ke di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Kakakku melempar ke di sungai",
+      "words": [
+        "Kakakku",
+        "melempar",
+        "ke",
+        "di",
+        "sungai"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"ke setiap\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Nenek mendengar ke setiap bulan",
+      "words": [
+        "Nenek",
+        "mendengar",
+        "ke",
+        "setiap",
+        "bulan"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"setiap kemarin\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Tukang membawa ayah setiap kemarin",
+      "words": [
+        "Tukang",
+        "membawa",
+        "ayah",
+        "setiap",
+        "kemarin"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"untuk di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Ibu berenang untuk di pasar",
+      "words": [
+        "Ibu",
+        "berenang",
+        "untuk",
+        "di",
+        "pasar"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"untuk ke\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Sahabatku mendengar untuk ke kantor",
+      "words": [
+        "Sahabatku",
+        "mendengar",
+        "untuk",
+        "ke",
+        "kantor"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"di di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Kamu mengirim di di kamar",
+      "words": [
+        "Kamu",
+        "mengirim",
+        "di",
+        "di",
+        "kamar"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"di di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Anak menangkap di di sungai",
+      "words": [
+        "Anak",
+        "menangkap",
+        "di",
+        "di",
+        "sungai"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"di di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Sahabatku memijat di di kamar",
+      "words": [
+        "Sahabatku",
+        "memijat",
+        "di",
+        "di",
+        "kamar"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"setiap setiap\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Dokter membersihkan pohon setiap setiap hari",
+      "words": [
+        "Dokter",
+        "membersihkan",
+        "pohon",
+        "setiap",
+        "setiap",
+        "hari"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"dengan besok\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Kami menangkap burung dengan besok",
+      "words": [
+        "Kami",
+        "menangkap",
+        "burung",
+        "dengan",
+        "besok"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"untuk tadi\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Kakek memecah untuk tadi pagi",
+      "words": [
+        "Kakek",
+        "memecah",
+        "untuk",
+        "tadi",
+        "pagi"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"dengan di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Ibu bangun anak dengan di sekolah",
+      "words": [
+        "Ibu",
+        "bangun",
+        "anak",
+        "dengan",
+        "di",
+        "sekolah"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"untuk di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Tukang menembak printer untuk di dapur",
+      "words": [
+        "Tukang",
+        "menembak",
+        "printer",
+        "untuk",
+        "di",
+        "dapur"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"untuk setiap\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Sahabatku menyambung kolega untuk setiap minggu",
+      "words": [
+        "Sahabatku",
+        "menyambung",
+        "kolega",
+        "untuk",
+        "setiap",
+        "minggu"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"untuk dengan\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Adikku memotong untuk dengan senang",
+      "words": [
+        "Adikku",
+        "memotong",
+        "untuk",
+        "dengan",
+        "senang"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"di di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Tukang memperbaiki di di sekolah",
+      "words": [
+        "Tukang",
+        "memperbaiki",
+        "di",
+        "di",
+        "sekolah"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"dengan setiap\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Kita menendang jendela dengan setiap malam",
+      "words": [
+        "Kita",
+        "menendang",
+        "jendela",
+        "dengan",
+        "setiap",
+        "malam"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"untuk di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Siswa datang kakek untuk di sungai",
+      "words": [
+        "Siswa",
+        "datang",
+        "kakek",
+        "untuk",
+        "di",
+        "sungai"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"dengan di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Nenek membuka sabtu dengan di bukit",
+      "words": [
+        "Nenek",
+        "membuka",
+        "sabtu",
+        "dengan",
+        "di",
+        "bukit"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"dengan di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Aku mendatangi polisi dengan di kamar",
+      "words": [
+        "Aku",
+        "mendatangi",
+        "polisi",
+        "dengan",
+        "di",
+        "kamar"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"di di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Bapak menutup di di restoran",
+      "words": [
+        "Bapak",
+        "menutup",
+        "di",
+        "di",
+        "restoran"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"untuk di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Kami menjemput untuk di laut",
+      "words": [
+        "Kami",
+        "menjemput",
+        "untuk",
+        "di",
+        "laut"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"untuk di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Tukang menabung meja untuk di gunung",
+      "words": [
+        "Tukang",
+        "menabung",
+        "meja",
+        "untuk",
+        "di",
+        "gunung"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"dengan pada\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Karyawan menyimpan kolega dengan pada musim kemarau",
+      "words": [
+        "Karyawan",
+        "menyimpan",
+        "kolega",
+        "dengan",
+        "pada",
+        "musim",
+        "kemarau"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"dengan tadi\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Mahasiswa menulis garasi dengan tadi pagi",
+      "words": [
+        "Mahasiswa",
+        "menulis",
+        "garasi",
+        "dengan",
+        "tadi",
+        "pagi"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"ke ke\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Kami membersihkan tv ke ke sekolah",
+      "words": [
+        "Kami",
+        "membersihkan",
+        "tv",
+        "ke",
+        "ke",
+        "sekolah"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"dengan kemarin\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Anak menjebak menantu dengan kemarin",
+      "words": [
+        "Anak",
+        "menjebak",
+        "menantu",
+        "dengan",
+        "kemarin"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"ke di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Tukang menyiram ke di halaman",
+      "words": [
+        "Tukang",
+        "menyiram",
+        "ke",
+        "di",
+        "halaman"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"untuk ke\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Ibuku menyebarkan stadion untuk ke sekolah",
+      "words": [
+        "Ibuku",
+        "menyebarkan",
+        "stadion",
+        "untuk",
+        "ke",
+        "sekolah"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"untuk setiap\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Pembeli menulis pensil untuk setiap minggu",
+      "words": [
+        "Pembeli",
+        "menulis",
+        "pensil",
+        "untuk",
+        "setiap",
+        "minggu"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"ke di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Pedagang meletakkan guling ke di sekolah",
+      "words": [
+        "Pedagang",
+        "meletakkan",
+        "guling",
+        "ke",
+        "di",
+        "sekolah"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"untuk di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Kakakku mengepel untuk di warung",
+      "words": [
+        "Kakakku",
+        "mengepel",
+        "untuk",
+        "di",
+        "warung"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"ke di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Ibu membersihkan sepupu ke di toko",
+      "words": [
+        "Ibu",
+        "membersihkan",
+        "sepupu",
+        "ke",
+        "di",
+        "toko"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"untuk di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Siswa menari untuk di hutan",
+      "words": [
+        "Siswa",
+        "menari",
+        "untuk",
+        "di",
+        "hutan"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"ke di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Anak membuka ke di sekolah",
+      "words": [
+        "Anak",
+        "membuka",
+        "ke",
+        "di",
+        "sekolah"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"untuk setiap\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Adikku memotong kampus untuk setiap malam",
+      "words": [
+        "Adikku",
+        "memotong",
+        "kampus",
+        "untuk",
+        "setiap",
+        "malam"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"ke ke\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Adikku memasang pasar ke ke toko",
+      "words": [
+        "Adikku",
+        "memasang",
+        "pasar",
+        "ke",
+        "ke",
+        "toko"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"setiap kemarin\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Sahabatku berangkat pagar setiap kemarin",
+      "words": [
+        "Sahabatku",
+        "berangkat",
+        "pagar",
+        "setiap",
+        "kemarin"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"ke di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Nelayan memantau galeri ke di kampus",
+      "words": [
+        "Nelayan",
+        "memantau",
+        "galeri",
+        "ke",
+        "di",
+        "kampus"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"dengan setiap\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Ibuku datang lapangan dengan setiap bulan",
+      "words": [
+        "Ibuku",
+        "datang",
+        "lapangan",
+        "dengan",
+        "setiap",
+        "bulan"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"ke dengan\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Bayi bermain ke dengan hati-hati",
+      "words": [
+        "Bayi",
+        "bermain",
+        "ke",
+        "dengan",
+        "hati-hati"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"untuk di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Sahabatku bermain untuk di pasar",
+      "words": [
+        "Sahabatku",
+        "bermain",
+        "untuk",
+        "di",
+        "pasar"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"untuk di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Dia menangkap september untuk di rumah",
+      "words": [
+        "Dia",
+        "menangkap",
+        "september",
+        "untuk",
+        "di",
+        "rumah"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"di di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Guru menendang di di taman",
+      "words": [
+        "Guru",
+        "menendang",
+        "di",
+        "di",
+        "taman"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"ke di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Ibu kehilangan ke di laut",
+      "words": [
+        "Ibu",
+        "kehilangan",
+        "ke",
+        "di",
+        "laut"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"ke di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Kami minum ke di jalan",
+      "words": [
+        "Kami",
+        "minum",
+        "ke",
+        "di",
+        "jalan"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"untuk dengan\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Kakak menggambar nenek untuk dengan senang",
+      "words": [
+        "Kakak",
+        "menggambar",
+        "nenek",
+        "untuk",
+        "dengan",
+        "senang"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"dengan di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Kami menggembala penggaris dengan di laut",
+      "words": [
+        "Kami",
+        "menggembala",
+        "penggaris",
+        "dengan",
+        "di",
+        "laut"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"di di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Bibi memecah di di rumah",
+      "words": [
+        "Bibi",
+        "memecah",
+        "di",
+        "di",
+        "rumah"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"setiap kemarin\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Dia memecah bioskop setiap kemarin",
+      "words": [
+        "Dia",
+        "memecah",
+        "bioskop",
+        "setiap",
+        "kemarin"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"ke besok\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Kakak memegang petani ke besok",
+      "words": [
+        "Kakak",
+        "memegang",
+        "petani",
+        "ke",
+        "besok"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"ke di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Ibu menendang ke di rumah",
+      "words": [
+        "Ibu",
+        "menendang",
+        "ke",
+        "di",
+        "rumah"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"untuk di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Karyawan menonton teh untuk di dapur",
+      "words": [
+        "Karyawan",
+        "menonton",
+        "teh",
+        "untuk",
+        "di",
+        "dapur"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"di di\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Kamu melihat di di taman",
+      "words": [
+        "Kamu",
+        "melihat",
+        "di",
+        "di",
+        "taman"
+      ]
+    }
+  },
+  {
+    "reason": "urutan tidak wajar: \"setiap kemarin\"",
+    "stage": "aturan",
+    "source": "susun-kalimat/fallback/bank-012.json",
+    "item": {
+      "sentence": "Guru mengawasi juni setiap kemarin",
+      "words": [
+        "Guru",
+        "mengawasi",
+        "juni",
+        "setiap",
+        "kemarin"
+      ]
+    }
+  }
+]

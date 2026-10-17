@@ -1031,16 +1031,6 @@
     ]
   },
   {
-    "sentence": "Kakek mengakhiri untuk di padang",
-    "words": [
-      "Kakek",
-      "mengakhiri",
-      "untuk",
-      "di",
-      "padang"
-    ]
-  },
-  {
     "sentence": "Aku memegang setiap hari",
     "words": [
       "Aku",
@@ -1059,33 +1049,12 @@
     ]
   },
   {
-    "sentence": "Nelayan menyapu untuk di sekolah",
-    "words": [
-      "Nelayan",
-      "menyapu",
-      "untuk",
-      "di",
-      "sekolah"
-    ]
-  },
-  {
     "sentence": "Kamu mencabut kereta besok",
     "words": [
       "Kamu",
       "mencabut",
       "kereta",
       "besok"
-    ]
-  },
-  {
-    "sentence": "Bayi menyiram ke di rumah sakit",
-    "words": [
-      "Bayi",
-      "menyiram",
-      "ke",
-      "di",
-      "rumah",
-      "sakit"
     ]
   },
   {
@@ -1096,28 +1065,6 @@
       "polisi",
       "hari",
       "ini"
-    ]
-  },
-  {
-    "sentence": "Paman mengepel kaos ke tadi pagi",
-    "words": [
-      "Paman",
-      "mengepel",
-      "kaos",
-      "ke",
-      "tadi",
-      "pagi"
-    ]
-  },
-  {
-    "sentence": "Petani menaruh sepatu ke di kampus",
-    "words": [
-      "Petani",
-      "menaruh",
-      "sepatu",
-      "ke",
-      "di",
-      "kampus"
     ]
   },
   {
@@ -1161,48 +1108,12 @@
     ]
   },
   {
-    "sentence": "Bapak menerima malam untuk pada musim hujan",
-    "words": [
-      "Bapak",
-      "menerima",
-      "malam",
-      "untuk",
-      "pada",
-      "musim",
-      "hujan"
-    ]
-  },
-  {
     "sentence": "Guru menusuk kompor kemarin",
     "words": [
       "Guru",
       "menusuk",
       "kompor",
       "kemarin"
-    ]
-  },
-  {
-    "sentence": "Dia menjual ruang tamu untuk di ruang tamu",
-    "words": [
-      "Dia",
-      "menjual",
-      "ruang",
-      "tamu",
-      "untuk",
-      "di",
-      "ruang",
-      "tamu"
-    ]
-  },
-  {
-    "sentence": "Mereka naik kaos dengan ke pasar",
-    "words": [
-      "Mereka",
-      "naik",
-      "kaos",
-      "dengan",
-      "ke",
-      "pasar"
     ]
   },
   {
@@ -1213,26 +1124,6 @@
       "penjual",
       "setiap",
       "hari"
-    ]
-  },
-  {
-    "sentence": "Ayahku menutup ke di hutan",
-    "words": [
-      "Ayahku",
-      "menutup",
-      "ke",
-      "di",
-      "hutan"
-    ]
-  },
-  {
-    "sentence": "Adikku mengamati di di jalan",
-    "words": [
-      "Adikku",
-      "mengamati",
-      "di",
-      "di",
-      "jalan"
     ]
   },
   {
@@ -1253,16 +1144,6 @@
       "november",
       "setelah",
       "itu"
-    ]
-  },
-  {
-    "sentence": "Bibi menulis untuk ke rumah",
-    "words": [
-      "Bibi",
-      "menulis",
-      "untuk",
-      "ke",
-      "rumah"
     ]
   },
   {
@@ -1326,64 +1207,12 @@
     ]
   },
   {
-    "sentence": "Mahasiswa berhenti kursi ke di rumah",
-    "words": [
-      "Mahasiswa",
-      "berhenti",
-      "kursi",
-      "ke",
-      "di",
-      "rumah"
-    ]
-  },
-  {
-    "sentence": "Polisi memijat di di sungai",
-    "words": [
-      "Polisi",
-      "memijat",
-      "di",
-      "di",
-      "sungai"
-    ]
-  },
-  {
-    "sentence": "Dia mengepel untuk di jalan",
-    "words": [
-      "Dia",
-      "mengepel",
-      "untuk",
-      "di",
-      "jalan"
-    ]
-  },
-  {
     "sentence": "Kita menerima di lemari",
     "words": [
       "Kita",
       "menerima",
       "di",
       "lemari"
-    ]
-  },
-  {
-    "sentence": "Polisi menarik di ke pasar",
-    "words": [
-      "Polisi",
-      "menarik",
-      "di",
-      "ke",
-      "pasar"
-    ]
-  },
-  {
-    "sentence": "Mereka membuka mei ke di rumah",
-    "words": [
-      "Mereka",
-      "membuka",
-      "mei",
-      "ke",
-      "di",
-      "rumah"
     ]
   },
   {
@@ -1426,18 +1255,6 @@
     ]
   },
   {
-    "sentence": "Mahasiswa mengamati sepeda dengan di ruang tamu",
-    "words": [
-      "Mahasiswa",
-      "mengamati",
-      "sepeda",
-      "dengan",
-      "di",
-      "ruang",
-      "tamu"
-    ]
-  },
-  {
     "sentence": "Kami membuka masjid malam",
     "words": [
       "Kami",
@@ -1466,17 +1283,6 @@
     ]
   },
   {
-    "sentence": "Mereka tidur anjing dengan di rumah",
-    "words": [
-      "Mereka",
-      "tidur",
-      "anjing",
-      "dengan",
-      "di",
-      "rumah"
-    ]
-  },
-  {
     "sentence": "Nenek memperhatikan tablet setiap hari",
     "words": [
       "Nenek",
@@ -1487,17 +1293,6 @@
     ]
   },
   {
-    "sentence": "Bibi mencabut di di ruang tamu",
-    "words": [
-      "Bibi",
-      "mencabut",
-      "di",
-      "di",
-      "ruang",
-      "tamu"
-    ]
-  },
-  {
     "sentence": "Anak menggembala menantu ke siang",
     "words": [
       "Anak",
@@ -1505,26 +1300,6 @@
       "menantu",
       "ke",
       "siang"
-    ]
-  },
-  {
-    "sentence": "Kita mengirim ke di kantor",
-    "words": [
-      "Kita",
-      "mengirim",
-      "ke",
-      "di",
-      "kantor"
-    ]
-  },
-  {
-    "sentence": "Bayi menjauhi ke tadi malam",
-    "words": [
-      "Bayi",
-      "menjauhi",
-      "ke",
-      "tadi",
-      "malam"
     ]
   },
   {
@@ -1565,26 +1340,6 @@
     ]
   },
   {
-    "sentence": "Nenek menerima untuk di sekolah",
-    "words": [
-      "Nenek",
-      "menerima",
-      "untuk",
-      "di",
-      "sekolah"
-    ]
-  },
-  {
-    "sentence": "Bayi berhenti di di kamar",
-    "words": [
-      "Bayi",
-      "berhenti",
-      "di",
-      "di",
-      "kamar"
-    ]
-  },
-  {
     "sentence": "Adik mendorong ke malam",
     "words": [
       "Adik",
@@ -1620,16 +1375,6 @@
       "pintu",
       "bersama",
       "adik"
-    ]
-  },
-  {
-    "sentence": "Kakek datang untuk tadi pagi",
-    "words": [
-      "Kakek",
-      "datang",
-      "untuk",
-      "tadi",
-      "pagi"
     ]
   },
   {
@@ -1703,44 +1448,12 @@
     ]
   },
   {
-    "sentence": "Ayahku memperbaiki lemari ke di laut",
-    "words": [
-      "Ayahku",
-      "memperbaiki",
-      "lemari",
-      "ke",
-      "di",
-      "laut"
-    ]
-  },
-  {
     "sentence": "Kakak menggembala hari ini",
     "words": [
       "Kakak",
       "menggembala",
       "hari",
       "ini"
-    ]
-  },
-  {
-    "sentence": "Nenek membuka minggu setiap kemarin",
-    "words": [
-      "Nenek",
-      "membuka",
-      "minggu",
-      "setiap",
-      "kemarin"
-    ]
-  },
-  {
-    "sentence": "Pedagang mengukur akar ke ke sekolah",
-    "words": [
-      "Pedagang",
-      "mengukur",
-      "akar",
-      "ke",
-      "ke",
-      "sekolah"
     ]
   },
   {
@@ -1812,27 +1525,6 @@
     ]
   },
   {
-    "sentence": "Penjual memulai ke di padang",
-    "words": [
-      "Penjual",
-      "memulai",
-      "ke",
-      "di",
-      "padang"
-    ]
-  },
-  {
-    "sentence": "Mahasiswa melepas untuk di waktu senggang",
-    "words": [
-      "Mahasiswa",
-      "melepas",
-      "untuk",
-      "di",
-      "waktu",
-      "senggang"
-    ]
-  },
-  {
     "sentence": "Pembeli menyelidiki adik setiap hari ini",
     "words": [
       "Pembeli",
@@ -1859,37 +1551,6 @@
       "menulis",
       "teras",
       "malam"
-    ]
-  },
-  {
-    "sentence": "Anak merawat di setiap hari",
-    "words": [
-      "Anak",
-      "merawat",
-      "di",
-      "setiap",
-      "hari"
-    ]
-  },
-  {
-    "sentence": "Dokter mendarat rabu setiap besok",
-    "words": [
-      "Dokter",
-      "mendarat",
-      "rabu",
-      "setiap",
-      "besok"
-    ]
-  },
-  {
-    "sentence": "Aku memijat kapal dengan di restoran",
-    "words": [
-      "Aku",
-      "memijat",
-      "kapal",
-      "dengan",
-      "di",
-      "restoran"
     ]
   },
   {
@@ -1923,16 +1584,6 @@
     ]
   },
   {
-    "sentence": "Saya memasak di di gunung",
-    "words": [
-      "Saya",
-      "memasak",
-      "di",
-      "di",
-      "gunung"
-    ]
-  },
-  {
     "sentence": "Dokter mengirim desember setiap minggu",
     "words": [
       "Dokter",
@@ -1953,45 +1604,12 @@
     ]
   },
   {
-    "sentence": "Kamu membaca radio untuk dengan rajin",
-    "words": [
-      "Kamu",
-      "membaca",
-      "radio",
-      "untuk",
-      "dengan",
-      "rajin"
-    ]
-  },
-  {
-    "sentence": "Ayah mengambil kebun untuk ke sekolah",
-    "words": [
-      "Ayah",
-      "mengambil",
-      "kebun",
-      "untuk",
-      "ke",
-      "sekolah"
-    ]
-  },
-  {
     "sentence": "Nenek merawat di sahabat",
     "words": [
       "Nenek",
       "merawat",
       "di",
       "sahabat"
-    ]
-  },
-  {
-    "sentence": "Nelayan pulang atasan untuk dengan rajin",
-    "words": [
-      "Nelayan",
-      "pulang",
-      "atasan",
-      "untuk",
-      "dengan",
-      "rajin"
     ]
   },
   {
@@ -2063,38 +1681,6 @@
     ]
   },
   {
-    "sentence": "Adikku merasakan motor dengan tadi pagi",
-    "words": [
-      "Adikku",
-      "merasakan",
-      "motor",
-      "dengan",
-      "tadi",
-      "pagi"
-    ]
-  },
-  {
-    "sentence": "Kakek memasak setrika dengan di sungai",
-    "words": [
-      "Kakek",
-      "memasak",
-      "setrika",
-      "dengan",
-      "di",
-      "sungai"
-    ]
-  },
-  {
-    "sentence": "Bibi menjaga untuk ke rumah",
-    "words": [
-      "Bibi",
-      "menjaga",
-      "untuk",
-      "ke",
-      "rumah"
-    ]
-  },
-  {
     "sentence": "Saya mencuci ke bersama teman",
     "words": [
       "Saya",
@@ -2102,17 +1688,6 @@
       "ke",
       "bersama",
       "teman"
-    ]
-  },
-  {
-    "sentence": "Bibi menangkap polisi dengan di pasar",
-    "words": [
-      "Bibi",
-      "menangkap",
-      "polisi",
-      "dengan",
-      "di",
-      "pasar"
     ]
   },
   {
@@ -2145,85 +1720,12 @@
     ]
   },
   {
-    "sentence": "Mahasiswa kehilangan di tadi malam",
-    "words": [
-      "Mahasiswa",
-      "kehilangan",
-      "di",
-      "tadi",
-      "malam"
-    ]
-  },
-  {
-    "sentence": "Aku memperbaiki mobil dengan besok",
-    "words": [
-      "Aku",
-      "memperbaiki",
-      "mobil",
-      "dengan",
-      "besok"
-    ]
-  },
-  {
-    "sentence": "Ayahku memperbaiki di ke rumah",
-    "words": [
-      "Ayahku",
-      "memperbaiki",
-      "di",
-      "ke",
-      "rumah"
-    ]
-  },
-  {
-    "sentence": "Kakak menonton di ke kantor",
-    "words": [
-      "Kakak",
-      "menonton",
-      "di",
-      "ke",
-      "kantor"
-    ]
-  },
-  {
     "sentence": "Mereka datang di bunga",
     "words": [
       "Mereka",
       "datang",
       "di",
       "bunga"
-    ]
-  },
-  {
-    "sentence": "Ayah menggembala rumah sakit dengan di waktu senggang",
-    "words": [
-      "Ayah",
-      "menggembala",
-      "rumah",
-      "sakit",
-      "dengan",
-      "di",
-      "waktu",
-      "senggang"
-    ]
-  },
-  {
-    "sentence": "Dokter menabung kamis setiap kemarin",
-    "words": [
-      "Dokter",
-      "menabung",
-      "kamis",
-      "setiap",
-      "kemarin"
-    ]
-  },
-  {
-    "sentence": "Ibuku memulai untuk setiap hari",
-    "words": [
-      "Ibuku",
-      "memulai",
-      "untuk",
-      "setiap",
-      "hari"
     ]
   },
   {
@@ -2234,17 +1736,6 @@
       "tablet",
       "setiap",
       "minggu"
-    ]
-  },
-  {
-    "sentence": "Kakak menari kamar mandi setiap besok",
-    "words": [
-      "Kakak",
-      "menari",
-      "kamar",
-      "mandi",
-      "setiap",
-      "besok"
     ]
   },
   {
@@ -2265,27 +1756,6 @@
       "untuk",
       "bersama",
       "adik"
-    ]
-  },
-  {
-    "sentence": "Ayah bernyanyi stadion untuk di halaman",
-    "words": [
-      "Ayah",
-      "bernyanyi",
-      "stadion",
-      "untuk",
-      "di",
-      "halaman"
-    ]
-  },
-  {
-    "sentence": "Ayahku mengunci ke ke pasar",
-    "words": [
-      "Ayahku",
-      "mengunci",
-      "ke",
-      "ke",
-      "pasar"
     ]
   },
   {
@@ -2367,16 +1837,6 @@
     ]
   },
   {
-    "sentence": "Kakek menusuk untuk ke toko",
-    "words": [
-      "Kakek",
-      "menusuk",
-      "untuk",
-      "ke",
-      "toko"
-    ]
-  },
-  {
     "sentence": "Dia memisahkan kamera setiap hari ini",
     "words": [
       "Dia",
@@ -2395,27 +1855,6 @@
       "pintu",
       "di",
       "sungai"
-    ]
-  },
-  {
-    "sentence": "Ibu memperbaiki ke di kamar",
-    "words": [
-      "Ibu",
-      "memperbaiki",
-      "ke",
-      "di",
-      "kamar"
-    ]
-  },
-  {
-    "sentence": "Ayahku mengikuti di pada musim kemarau",
-    "words": [
-      "Ayahku",
-      "mengikuti",
-      "di",
-      "pada",
-      "musim",
-      "kemarau"
     ]
   },
   {
@@ -2458,16 +1897,6 @@
     ]
   },
   {
-    "sentence": "Pedagang mengepel ke di hutan",
-    "words": [
-      "Pedagang",
-      "mengepel",
-      "ke",
-      "di",
-      "hutan"
-    ]
-  },
-  {
     "sentence": "Ayah berhenti dokter setiap siang",
     "words": [
       "Ayah",
@@ -2475,37 +1904,6 @@
       "dokter",
       "setiap",
       "siang"
-    ]
-  },
-  {
-    "sentence": "Adikku mendengar di di warung",
-    "words": [
-      "Adikku",
-      "mendengar",
-      "di",
-      "di",
-      "warung"
-    ]
-  },
-  {
-    "sentence": "Sahabatku turun dinding untuk ke rumah",
-    "words": [
-      "Sahabatku",
-      "turun",
-      "dinding",
-      "untuk",
-      "ke",
-      "rumah"
-    ]
-  },
-  {
-    "sentence": "Mereka menyimpan ke tadi malam",
-    "words": [
-      "Mereka",
-      "menyimpan",
-      "ke",
-      "tadi",
-      "malam"
     ]
   },
   {
@@ -2518,28 +1916,6 @@
     ]
   },
   {
-    "sentence": "Tukang mencabut air dengan di dapur",
-    "words": [
-      "Tukang",
-      "mencabut",
-      "air",
-      "dengan",
-      "di",
-      "dapur"
-    ]
-  },
-  {
-    "sentence": "Dokter menarik basement untuk di jalan",
-    "words": [
-      "Dokter",
-      "menarik",
-      "basement",
-      "untuk",
-      "di",
-      "jalan"
-    ]
-  },
-  {
     "sentence": "Nelayan mengambil pohon setiap malam",
     "words": [
       "Nelayan",
@@ -2547,17 +1923,6 @@
       "pohon",
       "setiap",
       "malam"
-    ]
-  },
-  {
-    "sentence": "Anak memegang pura untuk di lembah",
-    "words": [
-      "Anak",
-      "memegang",
-      "pura",
-      "untuk",
-      "di",
-      "lembah"
     ]
   },
   {
@@ -2591,79 +1956,6 @@
     ]
   },
   {
-    "sentence": "Guru kehilangan di kemarin",
-    "words": [
-      "Guru",
-      "kehilangan",
-      "di",
-      "kemarin"
-    ]
-  },
-  {
-    "sentence": "Ayahku meminjam keponakan ke di kampus",
-    "words": [
-      "Ayahku",
-      "meminjam",
-      "keponakan",
-      "ke",
-      "di",
-      "kampus"
-    ]
-  },
-  {
-    "sentence": "Kakek mengirim pedagang ke di taman",
-    "words": [
-      "Kakek",
-      "mengirim",
-      "pedagang",
-      "ke",
-      "di",
-      "taman"
-    ]
-  },
-  {
-    "sentence": "Kamu menjebak minggu untuk di lembah",
-    "words": [
-      "Kamu",
-      "menjebak",
-      "minggu",
-      "untuk",
-      "di",
-      "lembah"
-    ]
-  },
-  {
-    "sentence": "Petani membawa ke tadi siang",
-    "words": [
-      "Petani",
-      "membawa",
-      "ke",
-      "tadi",
-      "siang"
-    ]
-  },
-  {
-    "sentence": "Dokter menurunkan bantal dengan di toko",
-    "words": [
-      "Dokter",
-      "menurunkan",
-      "bantal",
-      "dengan",
-      "di",
-      "toko"
-    ]
-  },
-  {
-    "sentence": "Penjual menemukan di di halaman",
-    "words": [
-      "Penjual",
-      "menemukan",
-      "di",
-      "di",
-      "halaman"
-    ]
-  },
-  {
     "sentence": "Mahasiswa menyiram hari setiap siang",
     "words": [
       "Mahasiswa",
@@ -2681,17 +1973,6 @@
       "di",
       "bersama",
       "teman"
-    ]
-  },
-  {
-    "sentence": "Anak merusak bir untuk di pasar",
-    "words": [
-      "Anak",
-      "merusak",
-      "bir",
-      "untuk",
-      "di",
-      "pasar"
     ]
   },
   {
@@ -2734,28 +2015,6 @@
     ]
   },
   {
-    "sentence": "Bibi mengirim dasi ke di hutan",
-    "words": [
-      "Bibi",
-      "mengirim",
-      "dasi",
-      "ke",
-      "di",
-      "hutan"
-    ]
-  },
-  {
-    "sentence": "Anak mengakhiri bibi ke di kamar",
-    "words": [
-      "Anak",
-      "mengakhiri",
-      "bibi",
-      "ke",
-      "di",
-      "kamar"
-    ]
-  },
-  {
     "sentence": "Kita mencari ayah di sungai",
     "words": [
       "Kita",
@@ -2763,16 +2022,6 @@
       "ayah",
       "di",
       "sungai"
-    ]
-  },
-  {
-    "sentence": "Petani menimbang di di lembah",
-    "words": [
-      "Petani",
-      "menimbang",
-      "di",
-      "di",
-      "lembah"
     ]
   },
   {
@@ -2804,16 +2053,6 @@
     ]
   },
   {
-    "sentence": "Nenek bercerita di dengan tekun",
-    "words": [
-      "Nenek",
-      "bercerita",
-      "di",
-      "dengan",
-      "tekun"
-    ]
-  },
-  {
     "sentence": "Ayah membawa pesawat sore",
     "words": [
       "Ayah",
@@ -2823,33 +2062,12 @@
     ]
   },
   {
-    "sentence": "Saya membawa toko untuk di kampus",
-    "words": [
-      "Saya",
-      "membawa",
-      "toko",
-      "untuk",
-      "di",
-      "kampus"
-    ]
-  },
-  {
     "sentence": "Temanku berlari di atap",
     "words": [
       "Temanku",
       "berlari",
       "di",
       "atap"
-    ]
-  },
-  {
-    "sentence": "Dokter membuat malam setiap kemarin",
-    "words": [
-      "Dokter",
-      "membuat",
-      "malam",
-      "setiap",
-      "kemarin"
     ]
   },
   {
@@ -2873,16 +2091,6 @@
     ]
   },
   {
-    "sentence": "Guru memulai ke di sekolah",
-    "words": [
-      "Guru",
-      "memulai",
-      "ke",
-      "di",
-      "sekolah"
-    ]
-  },
-  {
     "sentence": "Pedagang bernyanyi klinik sore",
     "words": [
       "Pedagang",
@@ -2900,16 +2108,6 @@
       "untuk",
       "sesudah",
       "makan"
-    ]
-  },
-  {
-    "sentence": "Pembeli menyiram untuk di bukit",
-    "words": [
-      "Pembeli",
-      "menyiram",
-      "untuk",
-      "di",
-      "bukit"
     ]
   },
   {
@@ -2940,17 +2138,6 @@
     ]
   },
   {
-    "sentence": "Kita mencabut juni untuk di toko",
-    "words": [
-      "Kita",
-      "mencabut",
-      "juni",
-      "untuk",
-      "di",
-      "toko"
-    ]
-  },
-  {
     "sentence": "Polisi menonton bus setiap hari",
     "words": [
       "Polisi",
@@ -2958,37 +2145,6 @@
       "bus",
       "setiap",
       "hari"
-    ]
-  },
-  {
-    "sentence": "Penjual mengukur di ke kantor",
-    "words": [
-      "Penjual",
-      "mengukur",
-      "di",
-      "ke",
-      "kantor"
-    ]
-  },
-  {
-    "sentence": "Kita menyentuh untuk di pasar",
-    "words": [
-      "Kita",
-      "menyentuh",
-      "untuk",
-      "di",
-      "pasar"
-    ]
-  },
-  {
-    "sentence": "Kakakku menabung mei untuk di gunung",
-    "words": [
-      "Kakakku",
-      "menabung",
-      "mei",
-      "untuk",
-      "di",
-      "gunung"
     ]
   },
   {
@@ -3006,36 +2162,6 @@
       "Ayah",
       "membaca",
       "puskesmas",
-      "besok"
-    ]
-  },
-  {
-    "sentence": "Siswa merasakan ke di pasar",
-    "words": [
-      "Siswa",
-      "merasakan",
-      "ke",
-      "di",
-      "pasar"
-    ]
-  },
-  {
-    "sentence": "Temanku memasak untuk di kamar",
-    "words": [
-      "Temanku",
-      "memasak",
-      "untuk",
-      "di",
-      "kamar"
-    ]
-  },
-  {
-    "sentence": "Dia menulis printer setiap besok",
-    "words": [
-      "Dia",
-      "menulis",
-      "printer",
-      "setiap",
       "besok"
     ]
   },
@@ -3117,16 +2243,6 @@
     ]
   },
   {
-    "sentence": "Polisi datang di setiap minggu",
-    "words": [
-      "Polisi",
-      "datang",
-      "di",
-      "setiap",
-      "minggu"
-    ]
-  },
-  {
     "sentence": "Ibuku mendengar kompor sore",
     "words": [
       "Ibuku",
@@ -3146,47 +2262,6 @@
     ]
   },
   {
-    "sentence": "Kakak menjauhi untuk setiap malam",
-    "words": [
-      "Kakak",
-      "menjauhi",
-      "untuk",
-      "setiap",
-      "malam"
-    ]
-  },
-  {
-    "sentence": "Karyawan memperbaiki di di padang",
-    "words": [
-      "Karyawan",
-      "memperbaiki",
-      "di",
-      "di",
-      "padang"
-    ]
-  },
-  {
-    "sentence": "Temanku mendekati kopi setiap kemarin",
-    "words": [
-      "Temanku",
-      "mendekati",
-      "kopi",
-      "setiap",
-      "kemarin"
-    ]
-  },
-  {
-    "sentence": "Ibuku kehilangan kakek dengan setiap hari",
-    "words": [
-      "Ibuku",
-      "kehilangan",
-      "kakek",
-      "dengan",
-      "setiap",
-      "hari"
-    ]
-  },
-  {
     "sentence": "Mereka menjebak kucing di padang",
     "words": [
       "Mereka",
@@ -3194,27 +2269,6 @@
       "kucing",
       "di",
       "padang"
-    ]
-  },
-  {
-    "sentence": "Petani menanam vihara setiap besok",
-    "words": [
-      "Petani",
-      "menanam",
-      "vihara",
-      "setiap",
-      "besok"
-    ]
-  },
-  {
-    "sentence": "Bayi bermain sirup untuk dengan hati-hati",
-    "words": [
-      "Bayi",
-      "bermain",
-      "sirup",
-      "untuk",
-      "dengan",
-      "hati-hati"
     ]
   },
   {
@@ -3247,28 +2301,6 @@
     ]
   },
   {
-    "sentence": "Ibuku berangkat taman dengan setiap minggu",
-    "words": [
-      "Ibuku",
-      "berangkat",
-      "taman",
-      "dengan",
-      "setiap",
-      "minggu"
-    ]
-  },
-  {
-    "sentence": "Nelayan melempar juli ke di toko",
-    "words": [
-      "Nelayan",
-      "melempar",
-      "juli",
-      "ke",
-      "di",
-      "toko"
-    ]
-  },
-  {
     "sentence": "Polisi mengikuti setiap hari",
     "words": [
       "Polisi",
@@ -3288,17 +2320,6 @@
     ]
   },
   {
-    "sentence": "Bapak menjauhi vihara dengan tadi siang",
-    "words": [
-      "Bapak",
-      "menjauhi",
-      "vihara",
-      "dengan",
-      "tadi",
-      "siang"
-    ]
-  },
-  {
     "sentence": "Anak menggambar polisi untuk saat cerah",
     "words": [
       "Anak",
@@ -3307,16 +2328,6 @@
       "untuk",
       "saat",
       "cerah"
-    ]
-  },
-  {
-    "sentence": "Nelayan menjauhi ke dengan senang",
-    "words": [
-      "Nelayan",
-      "menjauhi",
-      "ke",
-      "dengan",
-      "senang"
     ]
   },
   {
@@ -3337,35 +2348,6 @@
       "untuk",
       "bersama",
       "kakak"
-    ]
-  },
-  {
-    "sentence": "Mahasiswa memecah untuk di lembah",
-    "words": [
-      "Mahasiswa",
-      "memecah",
-      "untuk",
-      "di",
-      "lembah"
-    ]
-  },
-  {
-    "sentence": "Ayahku turun di di laut",
-    "words": [
-      "Ayahku",
-      "turun",
-      "di",
-      "di",
-      "laut"
-    ]
-  },
-  {
-    "sentence": "Kakek menjemput di kemarin",
-    "words": [
-      "Kakek",
-      "menjemput",
-      "di",
-      "kemarin"
     ]
   },
   {
@@ -3423,17 +2405,6 @@
       "di",
       "hari",
       "ini"
-    ]
-  },
-  {
-    "sentence": "Mahasiswa menjemput tahun untuk ke sekolah",
-    "words": [
-      "Mahasiswa",
-      "menjemput",
-      "tahun",
-      "untuk",
-      "ke",
-      "sekolah"
     ]
   },
   {
@@ -3512,27 +2483,6 @@
     ]
   },
   {
-    "sentence": "Kita menangkap halaman dengan besok",
-    "words": [
-      "Kita",
-      "menangkap",
-      "halaman",
-      "dengan",
-      "besok"
-    ]
-  },
-  {
-    "sentence": "Sahabatku menurunkan november ke ke pasar",
-    "words": [
-      "Sahabatku",
-      "menurunkan",
-      "november",
-      "ke",
-      "ke",
-      "pasar"
-    ]
-  },
-  {
     "sentence": "Ibuku pulang juli ke sekolah",
     "words": [
       "Ibuku",
@@ -3558,16 +2508,6 @@
       "mencabut",
       "teh",
       "kemarin"
-    ]
-  },
-  {
-    "sentence": "Sahabatku membuka untuk ke toko",
-    "words": [
-      "Sahabatku",
-      "membuka",
-      "untuk",
-      "ke",
-      "toko"
     ]
   },
   {
@@ -3601,39 +2541,6 @@
     ]
   },
   {
-    "sentence": "Polisi meletakkan pelanggan setiap setiap hari",
-    "words": [
-      "Polisi",
-      "meletakkan",
-      "pelanggan",
-      "setiap",
-      "setiap",
-      "hari"
-    ]
-  },
-  {
-    "sentence": "Kamu memijat ayah ke di bukit",
-    "words": [
-      "Kamu",
-      "memijat",
-      "ayah",
-      "ke",
-      "di",
-      "bukit"
-    ]
-  },
-  {
-    "sentence": "Dia menari petani dengan di jalan",
-    "words": [
-      "Dia",
-      "menari",
-      "petani",
-      "dengan",
-      "di",
-      "jalan"
-    ]
-  },
-  {
     "sentence": "Adik membaca di garasi",
     "words": [
       "Adik",
@@ -3663,16 +2570,6 @@
     ]
   },
   {
-    "sentence": "Temanku menyimpan ke di kantor",
-    "words": [
-      "Temanku",
-      "menyimpan",
-      "ke",
-      "di",
-      "kantor"
-    ]
-  },
-  {
     "sentence": "Adikku memasang keset tadi malam",
     "words": [
       "Adikku",
@@ -3680,16 +2577,6 @@
       "keset",
       "tadi",
       "malam"
-    ]
-  },
-  {
-    "sentence": "Ibu mengirim ke di padang",
-    "words": [
-      "Ibu",
-      "mengirim",
-      "ke",
-      "di",
-      "padang"
     ]
   },
   {
@@ -3703,43 +2590,12 @@
     ]
   },
   {
-    "sentence": "Mereka memanen untuk di ruang tamu",
-    "words": [
-      "Mereka",
-      "memanen",
-      "untuk",
-      "di",
-      "ruang",
-      "tamu"
-    ]
-  },
-  {
-    "sentence": "Petani mengikuti untuk di pasar",
-    "words": [
-      "Petani",
-      "mengikuti",
-      "untuk",
-      "di",
-      "pasar"
-    ]
-  },
-  {
     "sentence": "Bayi mencabut burung siang",
     "words": [
       "Bayi",
       "mencabut",
       "burung",
       "siang"
-    ]
-  },
-  {
-    "sentence": "Ibuku pulang untuk ke kantor",
-    "words": [
-      "Ibuku",
-      "pulang",
-      "untuk",
-      "ke",
-      "kantor"
     ]
   },
   {
@@ -3908,48 +2764,6 @@
     ]
   },
   {
-    "sentence": "Kamu datang kantin dengan dengan hati-hati",
-    "words": [
-      "Kamu",
-      "datang",
-      "kantin",
-      "dengan",
-      "dengan",
-      "hati-hati"
-    ]
-  },
-  {
-    "sentence": "Ayahku bernyanyi di di padang",
-    "words": [
-      "Ayahku",
-      "bernyanyi",
-      "di",
-      "di",
-      "padang"
-    ]
-  },
-  {
-    "sentence": "Ibu memperbaiki untuk di warung",
-    "words": [
-      "Ibu",
-      "memperbaiki",
-      "untuk",
-      "di",
-      "warung"
-    ]
-  },
-  {
-    "sentence": "Sahabatku memotong bulan untuk di dapur",
-    "words": [
-      "Sahabatku",
-      "memotong",
-      "bulan",
-      "untuk",
-      "di",
-      "dapur"
-    ]
-  },
-  {
     "sentence": "Penjual datang daun besok",
     "words": [
       "Penjual",
@@ -3988,51 +2802,6 @@
     ]
   },
   {
-    "sentence": "Saya mencabut pagar untuk di kantor",
-    "words": [
-      "Saya",
-      "mencabut",
-      "pagar",
-      "untuk",
-      "di",
-      "kantor"
-    ]
-  },
-  {
-    "sentence": "Ibuku berenang nenek ke ke sekolah",
-    "words": [
-      "Ibuku",
-      "berenang",
-      "nenek",
-      "ke",
-      "ke",
-      "sekolah"
-    ]
-  },
-  {
-    "sentence": "Paman menonton paman dengan ke kantor",
-    "words": [
-      "Paman",
-      "menonton",
-      "paman",
-      "dengan",
-      "ke",
-      "kantor"
-    ]
-  },
-  {
-    "sentence": "Nelayan mendatangi september untuk di waktu senggang",
-    "words": [
-      "Nelayan",
-      "mendatangi",
-      "september",
-      "untuk",
-      "di",
-      "waktu",
-      "senggang"
-    ]
-  },
-  {
     "sentence": "Ibu menutup pasar setiap hari",
     "words": [
       "Ibu",
@@ -4043,45 +2812,12 @@
     ]
   },
   {
-    "sentence": "Ayah lanjutkan pelanggan dengan dengan tekun",
-    "words": [
-      "Ayah",
-      "lanjutkan",
-      "pelanggan",
-      "dengan",
-      "dengan",
-      "tekun"
-    ]
-  },
-  {
-    "sentence": "Mahasiswa melihat tetangga dengan di taman",
-    "words": [
-      "Mahasiswa",
-      "melihat",
-      "tetangga",
-      "dengan",
-      "di",
-      "taman"
-    ]
-  },
-  {
     "sentence": "Temanku mengawasi di motor",
     "words": [
       "Temanku",
       "mengawasi",
       "di",
       "motor"
-    ]
-  },
-  {
-    "sentence": "Siswa merasakan kapal untuk di kampus",
-    "words": [
-      "Siswa",
-      "merasakan",
-      "kapal",
-      "untuk",
-      "di",
-      "kampus"
     ]
   },
   {
@@ -4105,28 +2841,6 @@
     ]
   },
   {
-    "sentence": "Kamu menanam kolega setiap setiap hari",
-    "words": [
-      "Kamu",
-      "menanam",
-      "kolega",
-      "setiap",
-      "setiap",
-      "hari"
-    ]
-  },
-  {
-    "sentence": "Adikku mengawasi keset dengan dengan rajin",
-    "words": [
-      "Adikku",
-      "mengawasi",
-      "keset",
-      "dengan",
-      "dengan",
-      "rajin"
-    ]
-  },
-  {
     "sentence": "Kakakku menjemput warnet bersama kakak",
     "words": [
       "Kakakku",
@@ -4146,50 +2860,6 @@
     ]
   },
   {
-    "sentence": "Dokter melempar atasan ke ke sekolah",
-    "words": [
-      "Dokter",
-      "melempar",
-      "atasan",
-      "ke",
-      "ke",
-      "sekolah"
-    ]
-  },
-  {
-    "sentence": "Bapak minum perahu ke di ruang tamu",
-    "words": [
-      "Bapak",
-      "minum",
-      "perahu",
-      "ke",
-      "di",
-      "ruang",
-      "tamu"
-    ]
-  },
-  {
-    "sentence": "Ayahku melihat selasa dengan setiap bulan",
-    "words": [
-      "Ayahku",
-      "melihat",
-      "selasa",
-      "dengan",
-      "setiap",
-      "bulan"
-    ]
-  },
-  {
-    "sentence": "Kamu menurunkan di di jalan",
-    "words": [
-      "Kamu",
-      "menurunkan",
-      "di",
-      "di",
-      "jalan"
-    ]
-  },
-  {
     "sentence": "Guru menyelidiki meja tadi siang",
     "words": [
       "Guru",
@@ -4197,17 +2867,6 @@
       "meja",
       "tadi",
       "siang"
-    ]
-  },
-  {
-    "sentence": "Ibuku membeli tembok ke tadi malam",
-    "words": [
-      "Ibuku",
-      "membeli",
-      "tembok",
-      "ke",
-      "tadi",
-      "malam"
     ]
   },
   {
@@ -4221,16 +2880,6 @@
     ]
   },
   {
-    "sentence": "Ibu melempar ke di hutan",
-    "words": [
-      "Ibu",
-      "melempar",
-      "ke",
-      "di",
-      "hutan"
-    ]
-  },
-  {
     "sentence": "Kakak bangun siang untuk saat cerah",
     "words": [
       "Kakak",
@@ -4239,17 +2888,6 @@
       "untuk",
       "saat",
       "cerah"
-    ]
-  },
-  {
-    "sentence": "Kakek menurunkan menantu dengan di jalan",
-    "words": [
-      "Kakek",
-      "menurunkan",
-      "menantu",
-      "dengan",
-      "di",
-      "jalan"
     ]
   },
   {
@@ -4292,18 +2930,6 @@
     ]
   },
   {
-    "sentence": "Ibu merawat pintu ke di ruang tamu",
-    "words": [
-      "Ibu",
-      "merawat",
-      "pintu",
-      "ke",
-      "di",
-      "ruang",
-      "tamu"
-    ]
-  },
-  {
     "sentence": "Paman membayar halaman setiap sore",
     "words": [
       "Paman",
@@ -4311,16 +2937,6 @@
       "halaman",
       "setiap",
       "sore"
-    ]
-  },
-  {
-    "sentence": "Petani mulai untuk ke sekolah",
-    "words": [
-      "Petani",
-      "mulai",
-      "untuk",
-      "ke",
-      "sekolah"
     ]
   },
   {
@@ -4361,17 +2977,6 @@
     ]
   },
   {
-    "sentence": "Penjual mulai bir ke setiap hari",
-    "words": [
-      "Penjual",
-      "mulai",
-      "bir",
-      "ke",
-      "setiap",
-      "hari"
-    ]
-  },
-  {
     "sentence": "Ibuku berjalan ke saat liburan",
     "words": [
       "Ibuku",
@@ -4379,27 +2984,6 @@
       "ke",
       "saat",
       "liburan"
-    ]
-  },
-  {
-    "sentence": "Nenek bernyanyi ke di gunung",
-    "words": [
-      "Nenek",
-      "bernyanyi",
-      "ke",
-      "di",
-      "gunung"
-    ]
-  },
-  {
-    "sentence": "Nelayan memasang celana ke di toko",
-    "words": [
-      "Nelayan",
-      "memasang",
-      "celana",
-      "ke",
-      "di",
-      "toko"
     ]
   },
   {
@@ -4412,43 +2996,12 @@
     ]
   },
   {
-    "sentence": "Anak berangkat di di toko",
-    "words": [
-      "Anak",
-      "berangkat",
-      "di",
-      "di",
-      "toko"
-    ]
-  },
-  {
-    "sentence": "Aku berjalan kapal dengan ke pasar",
-    "words": [
-      "Aku",
-      "berjalan",
-      "kapal",
-      "dengan",
-      "ke",
-      "pasar"
-    ]
-  },
-  {
     "sentence": "Nelayan meminjam di radio",
     "words": [
       "Nelayan",
       "meminjam",
       "di",
       "radio"
-    ]
-  },
-  {
-    "sentence": "Kakakku menutup untuk di kantor",
-    "words": [
-      "Kakakku",
-      "menutup",
-      "untuk",
-      "di",
-      "kantor"
     ]
   },
   {
@@ -4461,15 +3014,6 @@
     ]
   },
   {
-    "sentence": "Kamu memasang ke kemarin",
-    "words": [
-      "Kamu",
-      "memasang",
-      "ke",
-      "kemarin"
-    ]
-  },
-  {
     "sentence": "Kamu datang untuk bersama adik",
     "words": [
       "Kamu",
@@ -4477,16 +3021,6 @@
       "untuk",
       "bersama",
       "adik"
-    ]
-  },
-  {
-    "sentence": "Dia menjemput di tadi siang",
-    "words": [
-      "Dia",
-      "menjemput",
-      "di",
-      "tadi",
-      "siang"
     ]
   },
   {
@@ -4561,16 +3095,6 @@
     ]
   },
   {
-    "sentence": "Adikku memisahkan di setiap minggu",
-    "words": [
-      "Adikku",
-      "memisahkan",
-      "di",
-      "setiap",
-      "minggu"
-    ]
-  },
-  {
     "sentence": "Nelayan bermain pura setiap malam",
     "words": [
       "Nelayan",
@@ -4600,28 +3124,6 @@
     ]
   },
   {
-    "sentence": "Bayi memukul kamis setiap besok",
-    "words": [
-      "Bayi",
-      "memukul",
-      "kamis",
-      "setiap",
-      "besok"
-    ]
-  },
-  {
-    "sentence": "Anak menggaruk pintu dengan pada musim hujan",
-    "words": [
-      "Anak",
-      "menggaruk",
-      "pintu",
-      "dengan",
-      "pada",
-      "musim",
-      "hujan"
-    ]
-  },
-  {
     "sentence": "Karyawan merawat pos ke sekolah",
     "words": [
       "Karyawan",
@@ -4629,15 +3131,6 @@
       "pos",
       "ke",
       "sekolah"
-    ]
-  },
-  {
-    "sentence": "Petani melepaskan ke besok",
-    "words": [
-      "Petani",
-      "melepaskan",
-      "ke",
-      "besok"
     ]
   },
   {
@@ -4657,16 +3150,6 @@
       "microwave",
       "setiap",
       "malam"
-    ]
-  },
-  {
-    "sentence": "Bayi mendengar komputer setiap kemarin",
-    "words": [
-      "Bayi",
-      "mendengar",
-      "komputer",
-      "setiap",
-      "kemarin"
     ]
   },
   {
@@ -4717,17 +3200,6 @@
     ]
   },
   {
-    "sentence": "Saya kehilangan kereta dengan tadi malam",
-    "words": [
-      "Saya",
-      "kehilangan",
-      "kereta",
-      "dengan",
-      "tadi",
-      "malam"
-    ]
-  },
-  {
     "sentence": "Polisi mendorong warnet di rumah",
     "words": [
       "Polisi",
@@ -4735,27 +3207,6 @@
       "warnet",
       "di",
       "rumah"
-    ]
-  },
-  {
-    "sentence": "Kakek mengirim untuk di kampus",
-    "words": [
-      "Kakek",
-      "mengirim",
-      "untuk",
-      "di",
-      "kampus"
-    ]
-  },
-  {
-    "sentence": "Guru menulis baju untuk di jalan",
-    "words": [
-      "Guru",
-      "menulis",
-      "baju",
-      "untuk",
-      "di",
-      "jalan"
     ]
   },
   {
@@ -4768,46 +3219,12 @@
     ]
   },
   {
-    "sentence": "Guru turun celana ke ke sekolah",
-    "words": [
-      "Guru",
-      "turun",
-      "celana",
-      "ke",
-      "ke",
-      "sekolah"
-    ]
-  },
-  {
-    "sentence": "Aku mengangkat rumah sakit ke ke toko",
-    "words": [
-      "Aku",
-      "mengangkat",
-      "rumah",
-      "sakit",
-      "ke",
-      "ke",
-      "toko"
-    ]
-  },
-  {
     "sentence": "Sahabatku menyapu sepeda besok",
     "words": [
       "Sahabatku",
       "menyapu",
       "sepeda",
       "besok"
-    ]
-  },
-  {
-    "sentence": "Mahasiswa menemukan lab dengan setiap malam",
-    "words": [
-      "Mahasiswa",
-      "menemukan",
-      "lab",
-      "dengan",
-      "setiap",
-      "malam"
     ]
   },
   {
@@ -4861,42 +3278,12 @@
     ]
   },
   {
-    "sentence": "Temanku membaca bapak setiap kemarin",
-    "words": [
-      "Temanku",
-      "membaca",
-      "bapak",
-      "setiap",
-      "kemarin"
-    ]
-  },
-  {
     "sentence": "Paman menggaruk di pintu",
     "words": [
       "Paman",
       "menggaruk",
       "di",
       "pintu"
-    ]
-  },
-  {
-    "sentence": "Nelayan memasak ke tadi siang",
-    "words": [
-      "Nelayan",
-      "memasak",
-      "ke",
-      "tadi",
-      "siang"
-    ]
-  },
-  {
-    "sentence": "Mereka memasak ke di kamar",
-    "words": [
-      "Mereka",
-      "memasak",
-      "ke",
-      "di",
-      "kamar"
     ]
   },
   {
@@ -4919,17 +3306,6 @@
     ]
   },
   {
-    "sentence": "Bapak membersihkan meja dengan di bukit",
-    "words": [
-      "Bapak",
-      "membersihkan",
-      "meja",
-      "dengan",
-      "di",
-      "bukit"
-    ]
-  },
-  {
     "sentence": "Bayi mencuci nenek sesudah makan",
     "words": [
       "Bayi",
@@ -4937,17 +3313,6 @@
       "nenek",
       "sesudah",
       "makan"
-    ]
-  },
-  {
-    "sentence": "Ayahku lanjutkan dasi untuk setiap minggu",
-    "words": [
-      "Ayahku",
-      "lanjutkan",
-      "dasi",
-      "untuk",
-      "setiap",
-      "minggu"
     ]
   },
   {
@@ -4980,18 +3345,6 @@
     ]
   },
   {
-    "sentence": "Mereka menusuk laptop untuk di waktu senggang",
-    "words": [
-      "Mereka",
-      "menusuk",
-      "laptop",
-      "untuk",
-      "di",
-      "waktu",
-      "senggang"
-    ]
-  },
-  {
     "sentence": "Kakek mencabut warnet di taman",
     "words": [
       "Kakek",
@@ -4999,17 +3352,6 @@
       "warnet",
       "di",
       "taman"
-    ]
-  },
-  {
-    "sentence": "Guru menangkap ibu setiap setiap hari",
-    "words": [
-      "Guru",
-      "menangkap",
-      "ibu",
-      "setiap",
-      "setiap",
-      "hari"
     ]
   },
   {
@@ -5023,33 +3365,12 @@
     ]
   },
   {
-    "sentence": "Kakakku berangkat tas untuk di kantor",
-    "words": [
-      "Kakakku",
-      "berangkat",
-      "tas",
-      "untuk",
-      "di",
-      "kantor"
-    ]
-  },
-  {
     "sentence": "Anak menarik ke malam",
     "words": [
       "Anak",
       "menarik",
       "ke",
       "malam"
-    ]
-  },
-  {
-    "sentence": "Nenek mengunci di tadi siang",
-    "words": [
-      "Nenek",
-      "mengunci",
-      "di",
-      "tadi",
-      "siang"
     ]
   },
   {
@@ -5060,16 +3381,6 @@
       "januari",
       "setiap",
       "siang"
-    ]
-  },
-  {
-    "sentence": "Mahasiswa datang untuk di laut",
-    "words": [
-      "Mahasiswa",
-      "datang",
-      "untuk",
-      "di",
-      "laut"
     ]
   },
   {
@@ -5150,28 +3461,6 @@
     ]
   },
   {
-    "sentence": "Ibu berjalan ke di sekolah",
-    "words": [
-      "Ibu",
-      "berjalan",
-      "ke",
-      "di",
-      "sekolah"
-    ]
-  },
-  {
-    "sentence": "Bibi menurunkan pintu dengan di ruang tamu",
-    "words": [
-      "Bibi",
-      "menurunkan",
-      "pintu",
-      "dengan",
-      "di",
-      "ruang",
-      "tamu"
-    ]
-  },
-  {
     "sentence": "Polisi memperbaiki di blender",
     "words": [
       "Polisi",
@@ -5181,88 +3470,12 @@
     ]
   },
   {
-    "sentence": "Polisi pulang warung untuk dengan rajin",
-    "words": [
-      "Polisi",
-      "pulang",
-      "warung",
-      "untuk",
-      "dengan",
-      "rajin"
-    ]
-  },
-  {
-    "sentence": "Kakek mencabut teater dengan pada musim hujan",
-    "words": [
-      "Kakek",
-      "mencabut",
-      "teater",
-      "dengan",
-      "pada",
-      "musim",
-      "hujan"
-    ]
-  },
-  {
-    "sentence": "Tukang mencabut ibu untuk di jalan",
-    "words": [
-      "Tukang",
-      "mencabut",
-      "ibu",
-      "untuk",
-      "di",
-      "jalan"
-    ]
-  },
-  {
     "sentence": "Ibu menarik baju besok",
     "words": [
       "Ibu",
       "menarik",
       "baju",
       "besok"
-    ]
-  },
-  {
-    "sentence": "Bapak naik buah ke dengan senang",
-    "words": [
-      "Bapak",
-      "naik",
-      "buah",
-      "ke",
-      "dengan",
-      "senang"
-    ]
-  },
-  {
-    "sentence": "Bapak membuka di di padang",
-    "words": [
-      "Bapak",
-      "membuka",
-      "di",
-      "di",
-      "padang"
-    ]
-  },
-  {
-    "sentence": "Tukang tidur di di taman",
-    "words": [
-      "Tukang",
-      "tidur",
-      "di",
-      "di",
-      "taman"
-    ]
-  },
-  {
-    "sentence": "Nelayan memperhatikan dokter ke ke toko",
-    "words": [
-      "Nelayan",
-      "memperhatikan",
-      "dokter",
-      "ke",
-      "ke",
-      "toko"
     ]
   },
   {
@@ -5285,37 +3498,6 @@
     ]
   },
   {
-    "sentence": "Kakakku menabung untuk tadi malam",
-    "words": [
-      "Kakakku",
-      "menabung",
-      "untuk",
-      "tadi",
-      "malam"
-    ]
-  },
-  {
-    "sentence": "Anak memotong pesawat dengan besok",
-    "words": [
-      "Anak",
-      "memotong",
-      "pesawat",
-      "dengan",
-      "besok"
-    ]
-  },
-  {
-    "sentence": "Nenek menyelesaikan di di waktu senggang",
-    "words": [
-      "Nenek",
-      "menyelesaikan",
-      "di",
-      "di",
-      "waktu",
-      "senggang"
-    ]
-  },
-  {
     "sentence": "Kamu melepas tablet setiap siang",
     "words": [
       "Kamu",
@@ -5332,27 +3514,6 @@
       "menyimpan",
       "di",
       "guling"
-    ]
-  },
-  {
-    "sentence": "Bapak memisahkan juli untuk dengan tekun",
-    "words": [
-      "Bapak",
-      "memisahkan",
-      "juli",
-      "untuk",
-      "dengan",
-      "tekun"
-    ]
-  },
-  {
-    "sentence": "Tukang menyimpan ke di halaman",
-    "words": [
-      "Tukang",
-      "menyimpan",
-      "ke",
-      "di",
-      "halaman"
     ]
   },
   {
@@ -5375,37 +3536,6 @@
     ]
   },
   {
-    "sentence": "Ayah memukul november setiap besok",
-    "words": [
-      "Ayah",
-      "memukul",
-      "november",
-      "setiap",
-      "besok"
-    ]
-  },
-  {
-    "sentence": "Ayah mencari adik setiap besok",
-    "words": [
-      "Ayah",
-      "mencari",
-      "adik",
-      "setiap",
-      "besok"
-    ]
-  },
-  {
-    "sentence": "Mereka mencuci minuman setiap setiap hari",
-    "words": [
-      "Mereka",
-      "mencuci",
-      "minuman",
-      "setiap",
-      "setiap",
-      "hari"
-    ]
-  },
-  {
     "sentence": "Karyawan menendang ke pagi",
     "words": [
       "Karyawan",
@@ -5424,17 +3554,6 @@
     ]
   },
   {
-    "sentence": "Bayi membawa dinding ke ke rumah",
-    "words": [
-      "Bayi",
-      "membawa",
-      "dinding",
-      "ke",
-      "ke",
-      "rumah"
-    ]
-  },
-  {
     "sentence": "Dia belajar pos pagi",
     "words": [
       "Dia",
@@ -5449,18 +3568,6 @@
       "Adik",
       "mengunci",
       "bir",
-      "pagi"
-    ]
-  },
-  {
-    "sentence": "Bapak menggembala kamar mandi ke tadi pagi",
-    "words": [
-      "Bapak",
-      "menggembala",
-      "kamar",
-      "mandi",
-      "ke",
-      "tadi",
       "pagi"
     ]
   },
@@ -5515,17 +3622,6 @@
     ]
   },
   {
-    "sentence": "Petani memupuk teras ke di toko",
-    "words": [
-      "Petani",
-      "memupuk",
-      "teras",
-      "ke",
-      "di",
-      "toko"
-    ]
-  },
-  {
     "sentence": "Ayah bercerita sepeda setiap sore",
     "words": [
       "Ayah",
@@ -5533,48 +3629,6 @@
       "sepeda",
       "setiap",
       "sore"
-    ]
-  },
-  {
-    "sentence": "Tukang mengukur adik untuk di kamar",
-    "words": [
-      "Tukang",
-      "mengukur",
-      "adik",
-      "untuk",
-      "di",
-      "kamar"
-    ]
-  },
-  {
-    "sentence": "Pedagang menimbang untuk di rumah",
-    "words": [
-      "Pedagang",
-      "menimbang",
-      "untuk",
-      "di",
-      "rumah"
-    ]
-  },
-  {
-    "sentence": "Ibu naik untuk di gunung",
-    "words": [
-      "Ibu",
-      "naik",
-      "untuk",
-      "di",
-      "gunung"
-    ]
-  },
-  {
-    "sentence": "Bapak menerima mobil dengan setiap minggu",
-    "words": [
-      "Bapak",
-      "menerima",
-      "mobil",
-      "dengan",
-      "setiap",
-      "minggu"
     ]
   },
   {
@@ -5589,17 +3643,6 @@
     ]
   },
   {
-    "sentence": "Penjual menutup hari ke di warung",
-    "words": [
-      "Penjual",
-      "menutup",
-      "hari",
-      "ke",
-      "di",
-      "warung"
-    ]
-  },
-  {
     "sentence": "Dia mengambil rumput di restoran",
     "words": [
       "Dia",
@@ -5607,28 +3650,6 @@
       "rumput",
       "di",
       "restoran"
-    ]
-  },
-  {
-    "sentence": "Bapak mendarat lantai dengan di laut",
-    "words": [
-      "Bapak",
-      "mendarat",
-      "lantai",
-      "dengan",
-      "di",
-      "laut"
-    ]
-  },
-  {
-    "sentence": "Kakak memelihara rabu untuk setiap malam",
-    "words": [
-      "Kakak",
-      "memelihara",
-      "rabu",
-      "untuk",
-      "setiap",
-      "malam"
     ]
   },
   {
@@ -5642,16 +3663,6 @@
     ]
   },
   {
-    "sentence": "Guru memperhatikan ke di laut",
-    "words": [
-      "Guru",
-      "memperhatikan",
-      "ke",
-      "di",
-      "laut"
-    ]
-  },
-  {
     "sentence": "Guru memasak paman hari ini",
     "words": [
       "Guru",
@@ -5659,27 +3670,6 @@
       "paman",
       "hari",
       "ini"
-    ]
-  },
-  {
-    "sentence": "Ibuku menulis akar dengan dengan tekun",
-    "words": [
-      "Ibuku",
-      "menulis",
-      "akar",
-      "dengan",
-      "dengan",
-      "tekun"
-    ]
-  },
-  {
-    "sentence": "Temanku berangkat ke setiap pagi",
-    "words": [
-      "Temanku",
-      "berangkat",
-      "ke",
-      "setiap",
-      "pagi"
     ]
   },
   {
@@ -5692,33 +3682,12 @@
     ]
   },
   {
-    "sentence": "Ibu memasang menantu ke setiap hari",
-    "words": [
-      "Ibu",
-      "memasang",
-      "menantu",
-      "ke",
-      "setiap",
-      "hari"
-    ]
-  },
-  {
     "sentence": "Kakak membangun di toko",
     "words": [
       "Kakak",
       "membangun",
       "di",
       "toko"
-    ]
-  },
-  {
-    "sentence": "Polisi menemukan ke setiap pagi",
-    "words": [
-      "Polisi",
-      "menemukan",
-      "ke",
-      "setiap",
-      "pagi"
     ]
   },
   {
@@ -5779,16 +3748,6 @@
       "mencabut",
       "museum",
       "kemarin"
-    ]
-  },
-  {
-    "sentence": "Pembeli belajar di setiap pagi",
-    "words": [
-      "Pembeli",
-      "belajar",
-      "di",
-      "setiap",
-      "pagi"
     ]
   },
   {
@@ -5861,39 +3820,6 @@
     ]
   },
   {
-    "sentence": "Petani mencabut hari dengan setiap minggu",
-    "words": [
-      "Petani",
-      "mencabut",
-      "hari",
-      "dengan",
-      "setiap",
-      "minggu"
-    ]
-  },
-  {
-    "sentence": "Bapak berangkat vihara ke setiap hari",
-    "words": [
-      "Bapak",
-      "berangkat",
-      "vihara",
-      "ke",
-      "setiap",
-      "hari"
-    ]
-  },
-  {
-    "sentence": "Bapak menyimpan untuk pada musim hujan",
-    "words": [
-      "Bapak",
-      "menyimpan",
-      "untuk",
-      "pada",
-      "musim",
-      "hujan"
-    ]
-  },
-  {
     "sentence": "Guru menendang dinding di padang",
     "words": [
       "Guru",
@@ -5919,16 +3845,6 @@
       "melepas",
       "burung",
       "besok"
-    ]
-  },
-  {
-    "sentence": "Siswa mengumpulkan untuk setiap bulan",
-    "words": [
-      "Siswa",
-      "mengumpulkan",
-      "untuk",
-      "setiap",
-      "bulan"
     ]
   },
   {
@@ -5978,16 +3894,6 @@
     ]
   },
   {
-    "sentence": "Kakek membuka di di toko",
-    "words": [
-      "Kakek",
-      "membuka",
-      "di",
-      "di",
-      "toko"
-    ]
-  },
-  {
     "sentence": "Sahabatku merusak di kelas",
     "words": [
       "Sahabatku",
@@ -6027,34 +3933,12 @@
     ]
   },
   {
-    "sentence": "Kakakku naik teras ke di laut",
-    "words": [
-      "Kakakku",
-      "naik",
-      "teras",
-      "ke",
-      "di",
-      "laut"
-    ]
-  },
-  {
     "sentence": "Pembeli menerima untuk sore",
     "words": [
       "Pembeli",
       "menerima",
       "untuk",
       "sore"
-    ]
-  },
-  {
-    "sentence": "Tukang mengawasi kapal untuk ke rumah",
-    "words": [
-      "Tukang",
-      "mengawasi",
-      "kapal",
-      "untuk",
-      "ke",
-      "rumah"
     ]
   },
   {
@@ -6069,44 +3953,12 @@
     ]
   },
   {
-    "sentence": "Temanku membayar untuk tadi pagi",
-    "words": [
-      "Temanku",
-      "membayar",
-      "untuk",
-      "tadi",
-      "pagi"
-    ]
-  },
-  {
     "sentence": "Mahasiswa menggaruk selasa sore",
     "words": [
       "Mahasiswa",
       "menggaruk",
       "selasa",
       "sore"
-    ]
-  },
-  {
-    "sentence": "Bibi mengambil kamera untuk setiap hari",
-    "words": [
-      "Bibi",
-      "mengambil",
-      "kamera",
-      "untuk",
-      "setiap",
-      "hari"
-    ]
-  },
-  {
-    "sentence": "Nelayan memijat atap untuk di jalan",
-    "words": [
-      "Nelayan",
-      "memijat",
-      "atap",
-      "untuk",
-      "di",
-      "jalan"
     ]
   },
   {
@@ -6129,17 +3981,6 @@
     ]
   },
   {
-    "sentence": "Karyawan menggambar puskesmas untuk setiap hari",
-    "words": [
-      "Karyawan",
-      "menggambar",
-      "puskesmas",
-      "untuk",
-      "setiap",
-      "hari"
-    ]
-  },
-  {
     "sentence": "Kakek membawa pensil di jalan",
     "words": [
       "Kakek",
@@ -6147,27 +3988,6 @@
       "pensil",
       "di",
       "jalan"
-    ]
-  },
-  {
-    "sentence": "Saya mendatangi di di dapur",
-    "words": [
-      "Saya",
-      "mendatangi",
-      "di",
-      "di",
-      "dapur"
-    ]
-  },
-  {
-    "sentence": "Pembeli memotong pura untuk di pasar",
-    "words": [
-      "Pembeli",
-      "memotong",
-      "pura",
-      "untuk",
-      "di",
-      "pasar"
     ]
   },
   {
@@ -6217,17 +4037,6 @@
       "garasi",
       "ketika",
       "hujan"
-    ]
-  },
-  {
-    "sentence": "Tukang menembak loteng setiap setiap hari",
-    "words": [
-      "Tukang",
-      "menembak",
-      "loteng",
-      "setiap",
-      "setiap",
-      "hari"
     ]
   },
   {
@@ -6315,16 +4124,6 @@
     ]
   },
   {
-    "sentence": "Petani makan di setiap bulan",
-    "words": [
-      "Petani",
-      "makan",
-      "di",
-      "setiap",
-      "bulan"
-    ]
-  },
-  {
     "sentence": "Mahasiswa mencampur di bank",
     "words": [
       "Mahasiswa",
@@ -6334,105 +4133,12 @@
     ]
   },
   {
-    "sentence": "Ayahku menulis untuk di kantor",
-    "words": [
-      "Ayahku",
-      "menulis",
-      "untuk",
-      "di",
-      "kantor"
-    ]
-  },
-  {
-    "sentence": "Guru memelihara bunga ke pada musim hujan",
-    "words": [
-      "Guru",
-      "memelihara",
-      "bunga",
-      "ke",
-      "pada",
-      "musim",
-      "hujan"
-    ]
-  },
-  {
-    "sentence": "Kakak memasang lab setiap kemarin",
-    "words": [
-      "Kakak",
-      "memasang",
-      "lab",
-      "setiap",
-      "kemarin"
-    ]
-  },
-  {
-    "sentence": "Adikku menabung untuk setiap hari",
-    "words": [
-      "Adikku",
-      "menabung",
-      "untuk",
-      "setiap",
-      "hari"
-    ]
-  },
-  {
-    "sentence": "Kita memasak untuk di sekolah",
-    "words": [
-      "Kita",
-      "memasak",
-      "untuk",
-      "di",
-      "sekolah"
-    ]
-  },
-  {
-    "sentence": "Paman melihat dasi untuk di laut",
-    "words": [
-      "Paman",
-      "melihat",
-      "dasi",
-      "untuk",
-      "di",
-      "laut"
-    ]
-  },
-  {
-    "sentence": "Bibi menjaga di setiap minggu",
-    "words": [
-      "Bibi",
-      "menjaga",
-      "di",
-      "setiap",
-      "minggu"
-    ]
-  },
-  {
-    "sentence": "Kamu mengamati untuk di dapur",
-    "words": [
-      "Kamu",
-      "mengamati",
-      "untuk",
-      "di",
-      "dapur"
-    ]
-  },
-  {
     "sentence": "Pedagang menurunkan di loteng",
     "words": [
       "Pedagang",
       "menurunkan",
       "di",
       "loteng"
-    ]
-  },
-  {
-    "sentence": "Kamu menyelesaikan di di bukit",
-    "words": [
-      "Kamu",
-      "menyelesaikan",
-      "di",
-      "di",
-      "bukit"
     ]
   },
   {
@@ -6465,17 +4171,6 @@
     ]
   },
   {
-    "sentence": "Ayah mendatangi lantai untuk di rumah",
-    "words": [
-      "Ayah",
-      "mendatangi",
-      "lantai",
-      "untuk",
-      "di",
-      "rumah"
-    ]
-  },
-  {
     "sentence": "Nelayan menyelidiki di tangga",
     "words": [
       "Nelayan",
@@ -6503,16 +4198,6 @@
     ]
   },
   {
-    "sentence": "Karyawan mengepel ke di taman",
-    "words": [
-      "Karyawan",
-      "mengepel",
-      "ke",
-      "di",
-      "taman"
-    ]
-  },
-  {
     "sentence": "Pedagang memukul kamera di laut",
     "words": [
       "Pedagang",
@@ -6520,16 +4205,6 @@
       "kamera",
       "di",
       "laut"
-    ]
-  },
-  {
-    "sentence": "Pedagang mengukur untuk di sungai",
-    "words": [
-      "Pedagang",
-      "mengukur",
-      "untuk",
-      "di",
-      "sungai"
     ]
   },
   {
@@ -6571,27 +4246,6 @@
     ]
   },
   {
-    "sentence": "Petani mencari di di padang",
-    "words": [
-      "Petani",
-      "mencari",
-      "di",
-      "di",
-      "padang"
-    ]
-  },
-  {
-    "sentence": "Mahasiswa menyentuh ke di ruang tamu",
-    "words": [
-      "Mahasiswa",
-      "menyentuh",
-      "ke",
-      "di",
-      "ruang",
-      "tamu"
-    ]
-  },
-  {
     "sentence": "Kami membuang di warung",
     "words": [
       "Kami",
@@ -6630,17 +4284,6 @@
     ]
   },
   {
-    "sentence": "Penjual mencabut atap ke tadi malam",
-    "words": [
-      "Penjual",
-      "mencabut",
-      "atap",
-      "ke",
-      "tadi",
-      "malam"
-    ]
-  },
-  {
     "sentence": "Kita memantau gereja ke saat cerah",
     "words": [
       "Kita",
@@ -6661,33 +4304,12 @@
     ]
   },
   {
-    "sentence": "Pembeli mengambil lapangan ke di jalan",
-    "words": [
-      "Pembeli",
-      "mengambil",
-      "lapangan",
-      "ke",
-      "di",
-      "jalan"
-    ]
-  },
-  {
     "sentence": "Bapak berenang hari ini",
     "words": [
       "Bapak",
       "berenang",
       "hari",
       "ini"
-    ]
-  },
-  {
-    "sentence": "Paman menjaga di di kampus",
-    "words": [
-      "Paman",
-      "menjaga",
-      "di",
-      "di",
-      "kampus"
     ]
   },
   {
@@ -6717,16 +4339,6 @@
       "untuk",
       "setelah",
       "itu"
-    ]
-  },
-  {
-    "sentence": "Sahabatku mencabut di tadi siang",
-    "words": [
-      "Sahabatku",
-      "mencabut",
-      "di",
-      "tadi",
-      "siang"
     ]
   },
   {
@@ -6866,16 +4478,6 @@
     ]
   },
   {
-    "sentence": "Saya memperhatikan ke di pasar",
-    "words": [
-      "Saya",
-      "memperhatikan",
-      "ke",
-      "di",
-      "pasar"
-    ]
-  },
-  {
     "sentence": "Kamu menaiki paman untuk saat liburan",
     "words": [
       "Kamu",
@@ -6893,48 +4495,6 @@
       "membeli",
       "ke",
       "sore"
-    ]
-  },
-  {
-    "sentence": "Ibu mulai jus dengan di toko",
-    "words": [
-      "Ibu",
-      "mulai",
-      "jus",
-      "dengan",
-      "di",
-      "toko"
-    ]
-  },
-  {
-    "sentence": "Adikku menjaga ke di kamar",
-    "words": [
-      "Adikku",
-      "menjaga",
-      "ke",
-      "di",
-      "kamar"
-    ]
-  },
-  {
-    "sentence": "Aku menggembala sayur untuk di rumah",
-    "words": [
-      "Aku",
-      "menggembala",
-      "sayur",
-      "untuk",
-      "di",
-      "rumah"
-    ]
-  },
-  {
-    "sentence": "Ibu membeli untuk dengan rajin",
-    "words": [
-      "Ibu",
-      "membeli",
-      "untuk",
-      "dengan",
-      "rajin"
     ]
   },
   {
@@ -6957,16 +4517,6 @@
     ]
   },
   {
-    "sentence": "Aku bangun di setiap bulan",
-    "words": [
-      "Aku",
-      "bangun",
-      "di",
-      "setiap",
-      "bulan"
-    ]
-  },
-  {
     "sentence": "Paman memasang pesawat pada musim hujan",
     "words": [
       "Paman",
@@ -6978,74 +4528,12 @@
     ]
   },
   {
-    "sentence": "Kita menurunkan untuk tadi siang",
-    "words": [
-      "Kita",
-      "menurunkan",
-      "untuk",
-      "tadi",
-      "siang"
-    ]
-  },
-  {
-    "sentence": "Temanku memulai di di kantor",
-    "words": [
-      "Temanku",
-      "memulai",
-      "di",
-      "di",
-      "kantor"
-    ]
-  },
-  {
-    "sentence": "Pedagang mencari di setiap bulan",
-    "words": [
-      "Pedagang",
-      "mencari",
-      "di",
-      "setiap",
-      "bulan"
-    ]
-  },
-  {
-    "sentence": "Sahabatku menarik teater setiap besok",
-    "words": [
-      "Sahabatku",
-      "menarik",
-      "teater",
-      "setiap",
-      "besok"
-    ]
-  },
-  {
-    "sentence": "Kakakku naik pelanggan ke ke kantor",
-    "words": [
-      "Kakakku",
-      "naik",
-      "pelanggan",
-      "ke",
-      "ke",
-      "kantor"
-    ]
-  },
-  {
     "sentence": "Adik menjual taman sore",
     "words": [
       "Adik",
       "menjual",
       "taman",
       "sore"
-    ]
-  },
-  {
-    "sentence": "Dokter memantau april untuk di lembah",
-    "words": [
-      "Dokter",
-      "memantau",
-      "april",
-      "untuk",
-      "di",
-      "lembah"
     ]
   },
   {
@@ -7079,16 +4567,6 @@
     ]
   },
   {
-    "sentence": "Nelayan mendekati oktober ke kemarin",
-    "words": [
-      "Nelayan",
-      "mendekati",
-      "oktober",
-      "ke",
-      "kemarin"
-    ]
-  },
-  {
     "sentence": "Adik memperhatikan ikan sore",
     "words": [
       "Adik",
@@ -7108,54 +4586,12 @@
     ]
   },
   {
-    "sentence": "Penjual menabung di di toko",
-    "words": [
-      "Penjual",
-      "menabung",
-      "di",
-      "di",
-      "toko"
-    ]
-  },
-  {
     "sentence": "Bibi menulis anjing kemarin",
     "words": [
       "Bibi",
       "menulis",
       "anjing",
       "kemarin"
-    ]
-  },
-  {
-    "sentence": "Karyawan memasang ke di pasar",
-    "words": [
-      "Karyawan",
-      "memasang",
-      "ke",
-      "di",
-      "pasar"
-    ]
-  },
-  {
-    "sentence": "Saya memotong minuman dengan di sungai",
-    "words": [
-      "Saya",
-      "memotong",
-      "minuman",
-      "dengan",
-      "di",
-      "sungai"
-    ]
-  },
-  {
-    "sentence": "Bayi makan oktober dengan setiap bulan",
-    "words": [
-      "Bayi",
-      "makan",
-      "oktober",
-      "dengan",
-      "setiap",
-      "bulan"
     ]
   },
   {
@@ -7179,26 +4615,6 @@
     ]
   },
   {
-    "sentence": "Sahabatku memijat ke tadi siang",
-    "words": [
-      "Sahabatku",
-      "memijat",
-      "ke",
-      "tadi",
-      "siang"
-    ]
-  },
-  {
-    "sentence": "Kita belajar di ke toko",
-    "words": [
-      "Kita",
-      "belajar",
-      "di",
-      "ke",
-      "toko"
-    ]
-  },
-  {
     "sentence": "Dokter membeli komputer malam",
     "words": [
       "Dokter",
@@ -7218,16 +4634,6 @@
     ]
   },
   {
-    "sentence": "Dokter belajar bapak setiap kemarin",
-    "words": [
-      "Dokter",
-      "belajar",
-      "bapak",
-      "setiap",
-      "kemarin"
-    ]
-  },
-  {
     "sentence": "Penjual mengirim pohon dengan pagi",
     "words": [
       "Penjual",
@@ -7235,16 +4641,6 @@
       "pohon",
       "dengan",
       "pagi"
-    ]
-  },
-  {
-    "sentence": "Polisi memantau ke di jalan",
-    "words": [
-      "Polisi",
-      "memantau",
-      "ke",
-      "di",
-      "jalan"
     ]
   },
   {
@@ -7275,38 +4671,6 @@
       "ke",
       "baru",
       "saja"
-    ]
-  },
-  {
-    "sentence": "Bayi menimbang bantal ke dengan tekun",
-    "words": [
-      "Bayi",
-      "menimbang",
-      "bantal",
-      "ke",
-      "dengan",
-      "tekun"
-    ]
-  },
-  {
-    "sentence": "Tukang membawa ke di jalan",
-    "words": [
-      "Tukang",
-      "membawa",
-      "ke",
-      "di",
-      "jalan"
-    ]
-  },
-  {
-    "sentence": "Ibu memijat atap ke ke kantor",
-    "words": [
-      "Ibu",
-      "memijat",
-      "atap",
-      "ke",
-      "ke",
-      "kantor"
     ]
   },
   {
@@ -7355,26 +4719,6 @@
       "menanam",
       "tamu",
       "besok"
-    ]
-  },
-  {
-    "sentence": "Dokter melepaskan ke kemarin",
-    "words": [
-      "Dokter",
-      "melepaskan",
-      "ke",
-      "kemarin"
-    ]
-  },
-  {
-    "sentence": "Adikku mencampur ibu ke di lembah",
-    "words": [
-      "Adikku",
-      "mencampur",
-      "ibu",
-      "ke",
-      "di",
-      "lembah"
     ]
   },
   {
@@ -7437,18 +4781,6 @@
     ]
   },
   {
-    "sentence": "Pembeli bercerita minggu dengan di ruang tamu",
-    "words": [
-      "Pembeli",
-      "bercerita",
-      "minggu",
-      "dengan",
-      "di",
-      "ruang",
-      "tamu"
-    ]
-  },
-  {
     "sentence": "Anak pergi puskesmas di sekolah",
     "words": [
       "Anak",
@@ -7456,16 +4788,6 @@
       "puskesmas",
       "di",
       "sekolah"
-    ]
-  },
-  {
-    "sentence": "Sahabatku melempar untuk tadi siang",
-    "words": [
-      "Sahabatku",
-      "melempar",
-      "untuk",
-      "tadi",
-      "siang"
     ]
   },
   {
@@ -7479,56 +4801,12 @@
     ]
   },
   {
-    "sentence": "Tukang memasang setrika ke di waktu senggang",
-    "words": [
-      "Tukang",
-      "memasang",
-      "setrika",
-      "ke",
-      "di",
-      "waktu",
-      "senggang"
-    ]
-  },
-  {
-    "sentence": "Anak membuang restoran setiap kemarin",
-    "words": [
-      "Anak",
-      "membuang",
-      "restoran",
-      "setiap",
-      "kemarin"
-    ]
-  },
-  {
-    "sentence": "Kamu menyiram guru dengan dengan hati-hati",
-    "words": [
-      "Kamu",
-      "menyiram",
-      "guru",
-      "dengan",
-      "dengan",
-      "hati-hati"
-    ]
-  },
-  {
     "sentence": "Kami menyapu loteng pagi",
     "words": [
       "Kami",
       "menyapu",
       "loteng",
       "pagi"
-    ]
-  },
-  {
-    "sentence": "Nenek menyelesaikan desember dengan di sekolah",
-    "words": [
-      "Nenek",
-      "menyelesaikan",
-      "desember",
-      "dengan",
-      "di",
-      "sekolah"
     ]
   },
   {
@@ -7561,66 +4839,12 @@
     ]
   },
   {
-    "sentence": "Saya mendarat nelayan ke di pasar",
-    "words": [
-      "Saya",
-      "mendarat",
-      "nelayan",
-      "ke",
-      "di",
-      "pasar"
-    ]
-  },
-  {
-    "sentence": "Mereka belajar sahabat dengan setiap malam",
-    "words": [
-      "Mereka",
-      "belajar",
-      "sahabat",
-      "dengan",
-      "setiap",
-      "malam"
-    ]
-  },
-  {
     "sentence": "Pedagang turun di kacamata",
     "words": [
       "Pedagang",
       "turun",
       "di",
       "kacamata"
-    ]
-  },
-  {
-    "sentence": "Anak membayar halaman ke di warung",
-    "words": [
-      "Anak",
-      "membayar",
-      "halaman",
-      "ke",
-      "di",
-      "warung"
-    ]
-  },
-  {
-    "sentence": "Ayah memupuk pedagang dengan di pasar",
-    "words": [
-      "Ayah",
-      "memupuk",
-      "pedagang",
-      "dengan",
-      "di",
-      "pasar"
-    ]
-  },
-  {
-    "sentence": "Bayi mengantar galeri untuk besok",
-    "words": [
-      "Bayi",
-      "mengantar",
-      "galeri",
-      "untuk",
-      "besok"
     ]
   },
   {
@@ -7634,66 +4858,11 @@
     ]
   },
   {
-    "sentence": "Dokter mengantar kamar tidur untuk dengan senang",
-    "words": [
-      "Dokter",
-      "mengantar",
-      "kamar",
-      "tidur",
-      "untuk",
-      "dengan",
-      "senang"
-    ]
-  },
-  {
-    "sentence": "Adikku memecah di dengan senang",
-    "words": [
-      "Adikku",
-      "memecah",
-      "di",
-      "dengan",
-      "senang"
-    ]
-  },
-  {
-    "sentence": "Bayi memperbaiki kakek ke setiap malam",
-    "words": [
-      "Bayi",
-      "memperbaiki",
-      "kakek",
-      "ke",
-      "setiap",
-      "malam"
-    ]
-  },
-  {
     "sentence": "Ibuku menjauhi dinding setiap hari",
     "words": [
       "Ibuku",
       "menjauhi",
       "dinding",
-      "setiap",
-      "hari"
-    ]
-  },
-  {
-    "sentence": "Adik minum ke di waktu senggang",
-    "words": [
-      "Adik",
-      "minum",
-      "ke",
-      "di",
-      "waktu",
-      "senggang"
-    ]
-  },
-  {
-    "sentence": "Polisi kehilangan map setiap setiap hari",
-    "words": [
-      "Polisi",
-      "kehilangan",
-      "map",
-      "setiap",
       "setiap",
       "hari"
     ]
@@ -7707,16 +4876,6 @@
       "dengan",
       "setelah",
       "itu"
-    ]
-  },
-  {
-    "sentence": "Kita menurunkan di setiap minggu",
-    "words": [
-      "Kita",
-      "menurunkan",
-      "di",
-      "setiap",
-      "minggu"
     ]
   },
   {
@@ -7750,17 +4909,6 @@
     ]
   },
   {
-    "sentence": "Penjual mengikuti puskesmas dengan di warung",
-    "words": [
-      "Penjual",
-      "mengikuti",
-      "puskesmas",
-      "dengan",
-      "di",
-      "warung"
-    ]
-  },
-  {
     "sentence": "Aku mengambil mei setiap sore",
     "words": [
       "Aku",
@@ -7780,16 +4928,6 @@
     ]
   },
   {
-    "sentence": "Adikku mencabut blender dengan besok",
-    "words": [
-      "Adikku",
-      "mencabut",
-      "blender",
-      "dengan",
-      "besok"
-    ]
-  },
-  {
     "sentence": "Petani mendarat ikan di hutan",
     "words": [
       "Petani",
@@ -7797,39 +4935,6 @@
       "ikan",
       "di",
       "hutan"
-    ]
-  },
-  {
-    "sentence": "Temanku memotong tetangga untuk tadi pagi",
-    "words": [
-      "Temanku",
-      "memotong",
-      "tetangga",
-      "untuk",
-      "tadi",
-      "pagi"
-    ]
-  },
-  {
-    "sentence": "Anak menurunkan celana untuk di toko",
-    "words": [
-      "Anak",
-      "menurunkan",
-      "celana",
-      "untuk",
-      "di",
-      "toko"
-    ]
-  },
-  {
-    "sentence": "Tukang menyelidiki januari dengan ke kantor",
-    "words": [
-      "Tukang",
-      "menyelidiki",
-      "januari",
-      "dengan",
-      "ke",
-      "kantor"
     ]
   },
   {
@@ -7865,18 +4970,6 @@
     ]
   },
   {
-    "sentence": "Bibi belajar kebun ke di ruang tamu",
-    "words": [
-      "Bibi",
-      "belajar",
-      "kebun",
-      "ke",
-      "di",
-      "ruang",
-      "tamu"
-    ]
-  },
-  {
     "sentence": "Penjual bermain di tangga",
     "words": [
       "Penjual",
@@ -7886,64 +4979,12 @@
     ]
   },
   {
-    "sentence": "Adikku menarik ke di jalan",
-    "words": [
-      "Adikku",
-      "menarik",
-      "ke",
-      "di",
-      "jalan"
-    ]
-  },
-  {
-    "sentence": "Ayahku memasak di di padang",
-    "words": [
-      "Ayahku",
-      "memasak",
-      "di",
-      "di",
-      "padang"
-    ]
-  },
-  {
-    "sentence": "Mahasiswa mengangkat untuk di sungai",
-    "words": [
-      "Mahasiswa",
-      "mengangkat",
-      "untuk",
-      "di",
-      "sungai"
-    ]
-  },
-  {
-    "sentence": "Kakak mengikuti tablet setiap setiap hari",
-    "words": [
-      "Kakak",
-      "mengikuti",
-      "tablet",
-      "setiap",
-      "setiap",
-      "hari"
-    ]
-  },
-  {
     "sentence": "Mereka meminjam celana sore",
     "words": [
       "Mereka",
       "meminjam",
       "celana",
       "sore"
-    ]
-  },
-  {
-    "sentence": "Saya mencampur mobil untuk di laut",
-    "words": [
-      "Saya",
-      "mencampur",
-      "mobil",
-      "untuk",
-      "di",
-      "laut"
     ]
   },
   {
@@ -7966,32 +5007,12 @@
     ]
   },
   {
-    "sentence": "Dokter mencabut untuk di gunung",
-    "words": [
-      "Dokter",
-      "mencabut",
-      "untuk",
-      "di",
-      "gunung"
-    ]
-  },
-  {
     "sentence": "Mahasiswa turun di penggaris",
     "words": [
       "Mahasiswa",
       "turun",
       "di",
       "penggaris"
-    ]
-  },
-  {
-    "sentence": "Anak berhenti ke dengan hati-hati",
-    "words": [
-      "Anak",
-      "berhenti",
-      "ke",
-      "dengan",
-      "hati-hati"
     ]
   },
   {
@@ -8011,38 +5032,6 @@
       "melepaskan",
       "di",
       "nasi"
-    ]
-  },
-  {
-    "sentence": "Polisi mengirim handphone untuk di gunung",
-    "words": [
-      "Polisi",
-      "mengirim",
-      "handphone",
-      "untuk",
-      "di",
-      "gunung"
-    ]
-  },
-  {
-    "sentence": "Kakakku pulang bulan dengan dengan tekun",
-    "words": [
-      "Kakakku",
-      "pulang",
-      "bulan",
-      "dengan",
-      "dengan",
-      "tekun"
-    ]
-  },
-  {
-    "sentence": "Ibuku mencium di di warung",
-    "words": [
-      "Ibuku",
-      "mencium",
-      "di",
-      "di",
-      "warung"
     ]
   },
   {
@@ -8076,28 +5065,6 @@
     ]
   },
   {
-    "sentence": "Kami menggambar kepala untuk di restoran",
-    "words": [
-      "Kami",
-      "menggambar",
-      "kepala",
-      "untuk",
-      "di",
-      "restoran"
-    ]
-  },
-  {
-    "sentence": "Pembeli menanam kolega ke setiap hari",
-    "words": [
-      "Pembeli",
-      "menanam",
-      "kolega",
-      "ke",
-      "setiap",
-      "hari"
-    ]
-  },
-  {
     "sentence": "Karyawan mengunci kantor dengan rajin",
     "words": [
       "Karyawan",
@@ -8125,39 +5092,6 @@
       "menusuk",
       "setrika",
       "sore"
-    ]
-  },
-  {
-    "sentence": "Kakakku datang penghapus untuk di warung",
-    "words": [
-      "Kakakku",
-      "datang",
-      "penghapus",
-      "untuk",
-      "di",
-      "warung"
-    ]
-  },
-  {
-    "sentence": "Kakek bangun siang dengan setiap pagi",
-    "words": [
-      "Kakek",
-      "bangun",
-      "siang",
-      "dengan",
-      "setiap",
-      "pagi"
-    ]
-  },
-  {
-    "sentence": "Ayahku menyentuh pena untuk tadi pagi",
-    "words": [
-      "Ayahku",
-      "menyentuh",
-      "pena",
-      "untuk",
-      "tadi",
-      "pagi"
     ]
   },
   {
@@ -8221,27 +5155,6 @@
     ]
   },
   {
-    "sentence": "Kakak menjaga atap untuk di kampus",
-    "words": [
-      "Kakak",
-      "menjaga",
-      "atap",
-      "untuk",
-      "di",
-      "kampus"
-    ]
-  },
-  {
-    "sentence": "Kakakku menarik ke dengan hati-hati",
-    "words": [
-      "Kakakku",
-      "menarik",
-      "ke",
-      "dengan",
-      "hati-hati"
-    ]
-  },
-  {
     "sentence": "Kakek menyimpan siang bersama kakak",
     "words": [
       "Kakek",
@@ -8261,27 +5174,6 @@
     ]
   },
   {
-    "sentence": "Kita membangun untuk ke toko",
-    "words": [
-      "Kita",
-      "membangun",
-      "untuk",
-      "ke",
-      "toko"
-    ]
-  },
-  {
-    "sentence": "Anak bermain sapi setiap setiap hari",
-    "words": [
-      "Anak",
-      "bermain",
-      "sapi",
-      "setiap",
-      "setiap",
-      "hari"
-    ]
-  },
-  {
     "sentence": "Kakakku mencari lantai tadi pagi",
     "words": [
       "Kakakku",
@@ -8289,17 +5181,6 @@
       "lantai",
       "tadi",
       "pagi"
-    ]
-  },
-  {
-    "sentence": "Bapak menonton motor dengan di gunung",
-    "words": [
-      "Bapak",
-      "menonton",
-      "motor",
-      "dengan",
-      "di",
-      "gunung"
     ]
   },
   {
@@ -8332,39 +5213,6 @@
     ]
   },
   {
-    "sentence": "Nenek mengakhiri di di pasar",
-    "words": [
-      "Nenek",
-      "mengakhiri",
-      "di",
-      "di",
-      "pasar"
-    ]
-  },
-  {
-    "sentence": "Guru menyimpan sirup untuk dengan senang",
-    "words": [
-      "Guru",
-      "menyimpan",
-      "sirup",
-      "untuk",
-      "dengan",
-      "senang"
-    ]
-  },
-  {
-    "sentence": "Paman mengepel bawahan dengan pada musim kemarau",
-    "words": [
-      "Paman",
-      "mengepel",
-      "bawahan",
-      "dengan",
-      "pada",
-      "musim",
-      "kemarau"
-    ]
-  },
-  {
     "sentence": "Polisi turun kasur setiap sore",
     "words": [
       "Polisi",
@@ -8372,16 +5220,6 @@
       "kasur",
       "setiap",
       "sore"
-    ]
-  },
-  {
-    "sentence": "Aku mendorong di ke toko",
-    "words": [
-      "Aku",
-      "mendorong",
-      "di",
-      "ke",
-      "toko"
     ]
   },
   {
@@ -8404,44 +5242,12 @@
     ]
   },
   {
-    "sentence": "Nenek membagikan ke di rumah",
-    "words": [
-      "Nenek",
-      "membagikan",
-      "ke",
-      "di",
-      "rumah"
-    ]
-  },
-  {
-    "sentence": "Saya lanjutkan galeri untuk di sekolah",
-    "words": [
-      "Saya",
-      "lanjutkan",
-      "galeri",
-      "untuk",
-      "di",
-      "sekolah"
-    ]
-  },
-  {
     "sentence": "Penjual menyelidiki kamis siang",
     "words": [
       "Penjual",
       "menyelidiki",
       "kamis",
       "siang"
-    ]
-  },
-  {
-    "sentence": "Ayahku memperbaiki kakak ke di dapur",
-    "words": [
-      "Ayahku",
-      "memperbaiki",
-      "kakak",
-      "ke",
-      "di",
-      "dapur"
     ]
   },
   {
@@ -8476,16 +5282,6 @@
     ]
   },
   {
-    "sentence": "Petani melepas di di halaman",
-    "words": [
-      "Petani",
-      "melepas",
-      "di",
-      "di",
-      "halaman"
-    ]
-  },
-  {
     "sentence": "Saya memperbaiki ke bersama kakak",
     "words": [
       "Saya",
@@ -8502,15 +5298,6 @@
       "menghitung",
       "loteng",
       "siang"
-    ]
-  },
-  {
-    "sentence": "Mereka menjaga untuk kemarin",
-    "words": [
-      "Mereka",
-      "menjaga",
-      "untuk",
-      "kemarin"
     ]
   },
   {
@@ -8544,38 +5331,6 @@
     ]
   },
   {
-    "sentence": "Tukang menendang kelinci dengan ke pasar",
-    "words": [
-      "Tukang",
-      "menendang",
-      "kelinci",
-      "dengan",
-      "ke",
-      "pasar"
-    ]
-  },
-  {
-    "sentence": "Pedagang mengirim teman ke di jalan",
-    "words": [
-      "Pedagang",
-      "mengirim",
-      "teman",
-      "ke",
-      "di",
-      "jalan"
-    ]
-  },
-  {
-    "sentence": "Polisi menjebak untuk ke kantor",
-    "words": [
-      "Polisi",
-      "menjebak",
-      "untuk",
-      "ke",
-      "kantor"
-    ]
-  },
-  {
     "sentence": "Ayahku memelihara untuk siang",
     "words": [
       "Ayahku",
@@ -8585,34 +5340,12 @@
     ]
   },
   {
-    "sentence": "Mahasiswa memupuk kantor untuk di bukit",
-    "words": [
-      "Mahasiswa",
-      "memupuk",
-      "kantor",
-      "untuk",
-      "di",
-      "bukit"
-    ]
-  },
-  {
     "sentence": "Paman minum perahu malam",
     "words": [
       "Paman",
       "minum",
       "perahu",
       "malam"
-    ]
-  },
-  {
-    "sentence": "Bayi menutup ke di waktu senggang",
-    "words": [
-      "Bayi",
-      "menutup",
-      "ke",
-      "di",
-      "waktu",
-      "senggang"
     ]
   },
   {
@@ -8636,17 +5369,6 @@
     ]
   },
   {
-    "sentence": "Mereka menarik halaman ke tadi siang",
-    "words": [
-      "Mereka",
-      "menarik",
-      "halaman",
-      "ke",
-      "tadi",
-      "siang"
-    ]
-  },
-  {
     "sentence": "Saya mendekati aula sore",
     "words": [
       "Saya",
@@ -8663,17 +5385,6 @@
       "kebun",
       "di",
       "lembah"
-    ]
-  },
-  {
-    "sentence": "Dokter menjebak minggu setiap setiap hari",
-    "words": [
-      "Dokter",
-      "menjebak",
-      "minggu",
-      "setiap",
-      "setiap",
-      "hari"
     ]
   },
   {
@@ -8696,16 +5407,6 @@
     ]
   },
   {
-    "sentence": "Bibi naik ke di lembah",
-    "words": [
-      "Bibi",
-      "naik",
-      "ke",
-      "di",
-      "lembah"
-    ]
-  },
-  {
     "sentence": "Kamu menyambung anjing setiap malam",
     "words": [
       "Kamu",
@@ -8713,17 +5414,6 @@
       "anjing",
       "setiap",
       "malam"
-    ]
-  },
-  {
-    "sentence": "Nelayan menjebak ke di ruang tamu",
-    "words": [
-      "Nelayan",
-      "menjebak",
-      "ke",
-      "di",
-      "ruang",
-      "tamu"
     ]
   },
   {
@@ -8744,17 +5434,6 @@
       "tentara",
       "bersama",
       "keluarga"
-    ]
-  },
-  {
-    "sentence": "Polisi menendang toko untuk di halaman",
-    "words": [
-      "Polisi",
-      "menendang",
-      "toko",
-      "untuk",
-      "di",
-      "halaman"
     ]
   },
   {
@@ -8798,71 +5477,6 @@
     ]
   },
   {
-    "sentence": "Paman menembak ke di sekolah",
-    "words": [
-      "Paman",
-      "menembak",
-      "ke",
-      "di",
-      "sekolah"
-    ]
-  },
-  {
-    "sentence": "Kakek berjalan ke di toko",
-    "words": [
-      "Kakek",
-      "berjalan",
-      "ke",
-      "di",
-      "toko"
-    ]
-  },
-  {
-    "sentence": "Bapak mengirim kelas dengan ke rumah",
-    "words": [
-      "Bapak",
-      "mengirim",
-      "kelas",
-      "dengan",
-      "ke",
-      "rumah"
-    ]
-  },
-  {
-    "sentence": "Siswa kehilangan november dengan di ruang tamu",
-    "words": [
-      "Siswa",
-      "kehilangan",
-      "november",
-      "dengan",
-      "di",
-      "ruang",
-      "tamu"
-    ]
-  },
-  {
-    "sentence": "Ayah melepas pesawat setiap setiap hari",
-    "words": [
-      "Ayah",
-      "melepas",
-      "pesawat",
-      "setiap",
-      "setiap",
-      "hari"
-    ]
-  },
-  {
-    "sentence": "Aku memperhatikan kaos untuk dengan senang",
-    "words": [
-      "Aku",
-      "memperhatikan",
-      "kaos",
-      "untuk",
-      "dengan",
-      "senang"
-    ]
-  },
-  {
     "sentence": "Petani mengambil lantai setiap pagi",
     "words": [
       "Petani",
@@ -8893,17 +5507,6 @@
     ]
   },
   {
-    "sentence": "Kakek mengepel kampus dengan di restoran",
-    "words": [
-      "Kakek",
-      "mengepel",
-      "kampus",
-      "dengan",
-      "di",
-      "restoran"
-    ]
-  },
-  {
     "sentence": "Adikku mengajar tas bersama teman",
     "words": [
       "Adikku",
@@ -8911,88 +5514,6 @@
       "tas",
       "bersama",
       "teman"
-    ]
-  },
-  {
-    "sentence": "Nenek mencari untuk setiap minggu",
-    "words": [
-      "Nenek",
-      "mencari",
-      "untuk",
-      "setiap",
-      "minggu"
-    ]
-  },
-  {
-    "sentence": "Dia menusuk untuk di laut",
-    "words": [
-      "Dia",
-      "menusuk",
-      "untuk",
-      "di",
-      "laut"
-    ]
-  },
-  {
-    "sentence": "Dia mencari di besok",
-    "words": [
-      "Dia",
-      "mencari",
-      "di",
-      "besok"
-    ]
-  },
-  {
-    "sentence": "Ibuku menari ke di rumah",
-    "words": [
-      "Ibuku",
-      "menari",
-      "ke",
-      "di",
-      "rumah"
-    ]
-  },
-  {
-    "sentence": "Paman naik kursi untuk dengan hati-hati",
-    "words": [
-      "Paman",
-      "naik",
-      "kursi",
-      "untuk",
-      "dengan",
-      "hati-hati"
-    ]
-  },
-  {
-    "sentence": "Kakak mulai hari ke di sekolah",
-    "words": [
-      "Kakak",
-      "mulai",
-      "hari",
-      "ke",
-      "di",
-      "sekolah"
-    ]
-  },
-  {
-    "sentence": "Siswa memulai telepon dengan di halaman",
-    "words": [
-      "Siswa",
-      "memulai",
-      "telepon",
-      "dengan",
-      "di",
-      "halaman"
-    ]
-  },
-  {
-    "sentence": "Temanku menendang di di sungai",
-    "words": [
-      "Temanku",
-      "menendang",
-      "di",
-      "di",
-      "sungai"
     ]
   },
   {
@@ -9055,16 +5576,6 @@
     ]
   },
   {
-    "sentence": "Guru menimbang untuk setiap malam",
-    "words": [
-      "Guru",
-      "menimbang",
-      "untuk",
-      "setiap",
-      "malam"
-    ]
-  },
-  {
     "sentence": "Mahasiswa menurunkan kambing di rumah",
     "words": [
       "Mahasiswa",
@@ -9083,16 +5594,6 @@
       "ke",
       "bersama",
       "adik"
-    ]
-  },
-  {
-    "sentence": "Nelayan menonton pintu dengan besok",
-    "words": [
-      "Nelayan",
-      "menonton",
-      "pintu",
-      "dengan",
-      "besok"
     ]
   },
   {
@@ -9145,54 +5646,12 @@
     ]
   },
   {
-    "sentence": "Bayi menyambung kambing dengan di warung",
-    "words": [
-      "Bayi",
-      "menyambung",
-      "kambing",
-      "dengan",
-      "di",
-      "warung"
-    ]
-  },
-  {
-    "sentence": "Pembeli menerima untuk setiap malam",
-    "words": [
-      "Pembeli",
-      "menerima",
-      "untuk",
-      "setiap",
-      "malam"
-    ]
-  },
-  {
-    "sentence": "Polisi memukul pembeli ke setiap bulan",
-    "words": [
-      "Polisi",
-      "memukul",
-      "pembeli",
-      "ke",
-      "setiap",
-      "bulan"
-    ]
-  },
-  {
     "sentence": "Pedagang mendatangi kopi besok",
     "words": [
       "Pedagang",
       "mendatangi",
       "kopi",
       "besok"
-    ]
-  },
-  {
-    "sentence": "Petani menjauhi ke setiap minggu",
-    "words": [
-      "Petani",
-      "menjauhi",
-      "ke",
-      "setiap",
-      "minggu"
     ]
   },
   {
@@ -9227,16 +5686,6 @@
     ]
   },
   {
-    "sentence": "Pembeli menyebarkan ke ke kantor",
-    "words": [
-      "Pembeli",
-      "menyebarkan",
-      "ke",
-      "ke",
-      "kantor"
-    ]
-  },
-  {
     "sentence": "Saya menaiki di paman",
     "words": [
       "Saya",
@@ -9253,17 +5702,6 @@
       "bantal",
       "setiap",
       "pagi"
-    ]
-  },
-  {
-    "sentence": "Aku bercerita di pada musim kemarau",
-    "words": [
-      "Aku",
-      "bercerita",
-      "di",
-      "pada",
-      "musim",
-      "kemarau"
     ]
   },
   {
@@ -9294,38 +5732,6 @@
     ]
   },
   {
-    "sentence": "Pembeli menangkap ke ke rumah",
-    "words": [
-      "Pembeli",
-      "menangkap",
-      "ke",
-      "ke",
-      "rumah"
-    ]
-  },
-  {
-    "sentence": "Adik berlari pena ke di kampus",
-    "words": [
-      "Adik",
-      "berlari",
-      "pena",
-      "ke",
-      "di",
-      "kampus"
-    ]
-  },
-  {
-    "sentence": "Ibuku menyimpan daun ke tadi pagi",
-    "words": [
-      "Ibuku",
-      "menyimpan",
-      "daun",
-      "ke",
-      "tadi",
-      "pagi"
-    ]
-  },
-  {
     "sentence": "Adikku mendarat juli malam",
     "words": [
       "Adikku",
@@ -9335,33 +5741,12 @@
     ]
   },
   {
-    "sentence": "Ayah merasakan ke di taman",
-    "words": [
-      "Ayah",
-      "merasakan",
-      "ke",
-      "di",
-      "taman"
-    ]
-  },
-  {
     "sentence": "Nelayan meminjam daging sore",
     "words": [
       "Nelayan",
       "meminjam",
       "daging",
       "sore"
-    ]
-  },
-  {
-    "sentence": "Ibuku melempar es ke di toko",
-    "words": [
-      "Ibuku",
-      "melempar",
-      "es",
-      "ke",
-      "di",
-      "toko"
     ]
   },
   {
@@ -9393,26 +5778,6 @@
     ]
   },
   {
-    "sentence": "Dokter menggembala untuk tadi pagi",
-    "words": [
-      "Dokter",
-      "menggembala",
-      "untuk",
-      "tadi",
-      "pagi"
-    ]
-  },
-  {
-    "sentence": "Kakek membeli untuk dengan senang",
-    "words": [
-      "Kakek",
-      "membeli",
-      "untuk",
-      "dengan",
-      "senang"
-    ]
-  },
-  {
     "sentence": "Kakakku mengembalikan nenek ke bersama adik",
     "words": [
       "Kakakku",
@@ -9421,27 +5786,6 @@
       "ke",
       "bersama",
       "adik"
-    ]
-  },
-  {
-    "sentence": "Saya menggaruk klinik dengan ke kantor",
-    "words": [
-      "Saya",
-      "menggaruk",
-      "klinik",
-      "dengan",
-      "ke",
-      "kantor"
-    ]
-  },
-  {
-    "sentence": "Mahasiswa mencabut meja setiap kemarin",
-    "words": [
-      "Mahasiswa",
-      "mencabut",
-      "meja",
-      "setiap",
-      "kemarin"
     ]
   },
   {
@@ -9464,26 +5808,6 @@
     ]
   },
   {
-    "sentence": "Nenek bicara ke di lembah",
-    "words": [
-      "Nenek",
-      "bicara",
-      "ke",
-      "di",
-      "lembah"
-    ]
-  },
-  {
-    "sentence": "Temanku mencabut untuk di gunung",
-    "words": [
-      "Temanku",
-      "mencabut",
-      "untuk",
-      "di",
-      "gunung"
-    ]
-  },
-  {
     "sentence": "Kamu turun bawahan untuk sebelum tidur",
     "words": [
       "Kamu",
@@ -9492,27 +5816,6 @@
       "untuk",
       "sebelum",
       "tidur"
-    ]
-  },
-  {
-    "sentence": "Anak menggambar mobil setiap kemarin",
-    "words": [
-      "Anak",
-      "menggambar",
-      "mobil",
-      "setiap",
-      "kemarin"
-    ]
-  },
-  {
-    "sentence": "Kamu memberikan biji dengan di warung",
-    "words": [
-      "Kamu",
-      "memberikan",
-      "biji",
-      "dengan",
-      "di",
-      "warung"
     ]
   },
   {
@@ -9525,33 +5828,12 @@
     ]
   },
   {
-    "sentence": "Dia mengantar ke di padang",
-    "words": [
-      "Dia",
-      "mengantar",
-      "ke",
-      "di",
-      "padang"
-    ]
-  },
-  {
     "sentence": "Penjual menjual lantai besok",
     "words": [
       "Penjual",
       "menjual",
       "lantai",
       "besok"
-    ]
-  },
-  {
-    "sentence": "Temanku melepas restoran untuk di jalan",
-    "words": [
-      "Temanku",
-      "melepas",
-      "restoran",
-      "untuk",
-      "di",
-      "jalan"
     ]
   },
   {
@@ -9565,17 +5847,6 @@
     ]
   },
   {
-    "sentence": "Adik merusak puskesmas ke di kantor",
-    "words": [
-      "Adik",
-      "merusak",
-      "puskesmas",
-      "ke",
-      "di",
-      "kantor"
-    ]
-  },
-  {
     "sentence": "Petani memasak motor sore",
     "words": [
       "Petani",
@@ -9585,67 +5856,12 @@
     ]
   },
   {
-    "sentence": "Bayi turun lab untuk di halaman",
-    "words": [
-      "Bayi",
-      "turun",
-      "lab",
-      "untuk",
-      "di",
-      "halaman"
-    ]
-  },
-  {
     "sentence": "Ayah menaruh kamar pagi",
     "words": [
       "Ayah",
       "menaruh",
       "kamar",
       "pagi"
-    ]
-  },
-  {
-    "sentence": "Ibuku menjebak ketua ke di padang",
-    "words": [
-      "Ibuku",
-      "menjebak",
-      "ketua",
-      "ke",
-      "di",
-      "padang"
-    ]
-  },
-  {
-    "sentence": "Kakak membangun taman untuk dengan rajin",
-    "words": [
-      "Kakak",
-      "membangun",
-      "taman",
-      "untuk",
-      "dengan",
-      "rajin"
-    ]
-  },
-  {
-    "sentence": "Adikku bangun anjing dengan ke toko",
-    "words": [
-      "Adikku",
-      "bangun",
-      "anjing",
-      "dengan",
-      "ke",
-      "toko"
-    ]
-  },
-  {
-    "sentence": "Aku menyelidiki mesin cuci setiap kemarin",
-    "words": [
-      "Aku",
-      "menyelidiki",
-      "mesin",
-      "cuci",
-      "setiap",
-      "kemarin"
     ]
   },
   {
@@ -9687,42 +5903,12 @@
     ]
   },
   {
-    "sentence": "Ibuku memukul untuk di toko",
-    "words": [
-      "Ibuku",
-      "memukul",
-      "untuk",
-      "di",
-      "toko"
-    ]
-  },
-  {
     "sentence": "Polisi bicara kereta sore",
     "words": [
       "Polisi",
       "bicara",
       "kereta",
       "sore"
-    ]
-  },
-  {
-    "sentence": "Kakakku melempar ke di sungai",
-    "words": [
-      "Kakakku",
-      "melempar",
-      "ke",
-      "di",
-      "sungai"
-    ]
-  },
-  {
-    "sentence": "Nenek mendengar ke setiap bulan",
-    "words": [
-      "Nenek",
-      "mendengar",
-      "ke",
-      "setiap",
-      "bulan"
     ]
   },
   {
@@ -9737,16 +5923,6 @@
     ]
   },
   {
-    "sentence": "Tukang membawa ayah setiap kemarin",
-    "words": [
-      "Tukang",
-      "membawa",
-      "ayah",
-      "setiap",
-      "kemarin"
-    ]
-  },
-  {
     "sentence": "Kakak mengembalikan rekan tadi siang",
     "words": [
       "Kakak",
@@ -9754,16 +5930,6 @@
       "rekan",
       "tadi",
       "siang"
-    ]
-  },
-  {
-    "sentence": "Ibu berenang untuk di pasar",
-    "words": [
-      "Ibu",
-      "berenang",
-      "untuk",
-      "di",
-      "pasar"
     ]
   },
   {
@@ -9805,36 +5971,6 @@
     ]
   },
   {
-    "sentence": "Sahabatku mendengar untuk ke kantor",
-    "words": [
-      "Sahabatku",
-      "mendengar",
-      "untuk",
-      "ke",
-      "kantor"
-    ]
-  },
-  {
-    "sentence": "Kamu mengirim di di kamar",
-    "words": [
-      "Kamu",
-      "mengirim",
-      "di",
-      "di",
-      "kamar"
-    ]
-  },
-  {
-    "sentence": "Anak menangkap di di sungai",
-    "words": [
-      "Anak",
-      "menangkap",
-      "di",
-      "di",
-      "sungai"
-    ]
-  },
-  {
     "sentence": "Pembeli memupuk dinding sebelum tidur",
     "words": [
       "Pembeli",
@@ -9845,33 +5981,12 @@
     ]
   },
   {
-    "sentence": "Sahabatku memijat di di kamar",
-    "words": [
-      "Sahabatku",
-      "memijat",
-      "di",
-      "di",
-      "kamar"
-    ]
-  },
-  {
     "sentence": "Saya mendengar di celana",
     "words": [
       "Saya",
       "mendengar",
       "di",
       "celana"
-    ]
-  },
-  {
-    "sentence": "Dokter membersihkan pohon setiap setiap hari",
-    "words": [
-      "Dokter",
-      "membersihkan",
-      "pohon",
-      "setiap",
-      "setiap",
-      "hari"
     ]
   },
   {
@@ -9933,48 +6048,6 @@
     ]
   },
   {
-    "sentence": "Kami menangkap burung dengan besok",
-    "words": [
-      "Kami",
-      "menangkap",
-      "burung",
-      "dengan",
-      "besok"
-    ]
-  },
-  {
-    "sentence": "Kakek memecah untuk tadi pagi",
-    "words": [
-      "Kakek",
-      "memecah",
-      "untuk",
-      "tadi",
-      "pagi"
-    ]
-  },
-  {
-    "sentence": "Ibu bangun anak dengan di sekolah",
-    "words": [
-      "Ibu",
-      "bangun",
-      "anak",
-      "dengan",
-      "di",
-      "sekolah"
-    ]
-  },
-  {
-    "sentence": "Tukang menembak printer untuk di dapur",
-    "words": [
-      "Tukang",
-      "menembak",
-      "printer",
-      "untuk",
-      "di",
-      "dapur"
-    ]
-  },
-  {
     "sentence": "Bibi mengangkat pura dengan setelah itu",
     "words": [
       "Bibi",
@@ -10014,17 +6087,6 @@
     ]
   },
   {
-    "sentence": "Sahabatku menyambung kolega untuk setiap minggu",
-    "words": [
-      "Sahabatku",
-      "menyambung",
-      "kolega",
-      "untuk",
-      "setiap",
-      "minggu"
-    ]
-  },
-  {
     "sentence": "Bapak mencuci juli setiap siang",
     "words": [
       "Bapak",
@@ -10044,16 +6106,6 @@
     ]
   },
   {
-    "sentence": "Adikku memotong untuk dengan senang",
-    "words": [
-      "Adikku",
-      "memotong",
-      "untuk",
-      "dengan",
-      "senang"
-    ]
-  },
-  {
     "sentence": "Temanku memasang kambing setiap siang",
     "words": [
       "Temanku",
@@ -10061,49 +6113,6 @@
       "kambing",
       "setiap",
       "siang"
-    ]
-  },
-  {
-    "sentence": "Tukang memperbaiki di di sekolah",
-    "words": [
-      "Tukang",
-      "memperbaiki",
-      "di",
-      "di",
-      "sekolah"
-    ]
-  },
-  {
-    "sentence": "Kita menendang jendela dengan setiap malam",
-    "words": [
-      "Kita",
-      "menendang",
-      "jendela",
-      "dengan",
-      "setiap",
-      "malam"
-    ]
-  },
-  {
-    "sentence": "Siswa datang kakek untuk di sungai",
-    "words": [
-      "Siswa",
-      "datang",
-      "kakek",
-      "untuk",
-      "di",
-      "sungai"
-    ]
-  },
-  {
-    "sentence": "Nenek membuka sabtu dengan di bukit",
-    "words": [
-      "Nenek",
-      "membuka",
-      "sabtu",
-      "dengan",
-      "di",
-      "bukit"
     ]
   },
   {
@@ -10133,17 +6142,6 @@
       "untuk",
       "bersama",
       "keluarga"
-    ]
-  },
-  {
-    "sentence": "Aku mendatangi polisi dengan di kamar",
-    "words": [
-      "Aku",
-      "mendatangi",
-      "polisi",
-      "dengan",
-      "di",
-      "kamar"
     ]
   },
   {
@@ -10215,16 +6213,6 @@
     ]
   },
   {
-    "sentence": "Bapak menutup di di restoran",
-    "words": [
-      "Bapak",
-      "menutup",
-      "di",
-      "di",
-      "restoran"
-    ]
-  },
-  {
     "sentence": "Dokter menjauhi bus di toko",
     "words": [
       "Dokter",
@@ -10244,45 +6232,12 @@
     ]
   },
   {
-    "sentence": "Kami menjemput untuk di laut",
-    "words": [
-      "Kami",
-      "menjemput",
-      "untuk",
-      "di",
-      "laut"
-    ]
-  },
-  {
     "sentence": "Polisi menarik bir kemarin",
     "words": [
       "Polisi",
       "menarik",
       "bir",
       "kemarin"
-    ]
-  },
-  {
-    "sentence": "Tukang menabung meja untuk di gunung",
-    "words": [
-      "Tukang",
-      "menabung",
-      "meja",
-      "untuk",
-      "di",
-      "gunung"
-    ]
-  },
-  {
-    "sentence": "Karyawan menyimpan kolega dengan pada musim kemarau",
-    "words": [
-      "Karyawan",
-      "menyimpan",
-      "kolega",
-      "dengan",
-      "pada",
-      "musim",
-      "kemarau"
     ]
   },
   {
@@ -10296,38 +6251,6 @@
     ]
   },
   {
-    "sentence": "Mahasiswa menulis garasi dengan tadi pagi",
-    "words": [
-      "Mahasiswa",
-      "menulis",
-      "garasi",
-      "dengan",
-      "tadi",
-      "pagi"
-    ]
-  },
-  {
-    "sentence": "Kami membersihkan tv ke ke sekolah",
-    "words": [
-      "Kami",
-      "membersihkan",
-      "tv",
-      "ke",
-      "ke",
-      "sekolah"
-    ]
-  },
-  {
-    "sentence": "Anak menjebak menantu dengan kemarin",
-    "words": [
-      "Anak",
-      "menjebak",
-      "menantu",
-      "dengan",
-      "kemarin"
-    ]
-  },
-  {
     "sentence": "Aku memelihara bir setiap hari",
     "words": [
       "Aku",
@@ -10335,27 +6258,6 @@
       "bir",
       "setiap",
       "hari"
-    ]
-  },
-  {
-    "sentence": "Tukang menyiram ke di halaman",
-    "words": [
-      "Tukang",
-      "menyiram",
-      "ke",
-      "di",
-      "halaman"
-    ]
-  },
-  {
-    "sentence": "Ibuku menyebarkan stadion untuk ke sekolah",
-    "words": [
-      "Ibuku",
-      "menyebarkan",
-      "stadion",
-      "untuk",
-      "ke",
-      "sekolah"
     ]
   },
   {
@@ -10398,17 +6300,6 @@
     ]
   },
   {
-    "sentence": "Pembeli menulis pensil untuk setiap minggu",
-    "words": [
-      "Pembeli",
-      "menulis",
-      "pensil",
-      "untuk",
-      "setiap",
-      "minggu"
-    ]
-  },
-  {
     "sentence": "Ayah menyelidiki minggu di sungai",
     "words": [
       "Ayah",
@@ -10416,17 +6307,6 @@
       "minggu",
       "di",
       "sungai"
-    ]
-  },
-  {
-    "sentence": "Pedagang meletakkan guling ke di sekolah",
-    "words": [
-      "Pedagang",
-      "meletakkan",
-      "guling",
-      "ke",
-      "di",
-      "sekolah"
     ]
   },
   {
@@ -10478,16 +6358,6 @@
     ]
   },
   {
-    "sentence": "Kakakku mengepel untuk di warung",
-    "words": [
-      "Kakakku",
-      "mengepel",
-      "untuk",
-      "di",
-      "warung"
-    ]
-  },
-  {
     "sentence": "Bayi tidur nelayan siang",
     "words": [
       "Bayi",
@@ -10517,33 +6387,12 @@
     ]
   },
   {
-    "sentence": "Ibu membersihkan sepupu ke di toko",
-    "words": [
-      "Ibu",
-      "membersihkan",
-      "sepupu",
-      "ke",
-      "di",
-      "toko"
-    ]
-  },
-  {
     "sentence": "Kakak menjual hari ini",
     "words": [
       "Kakak",
       "menjual",
       "hari",
       "ini"
-    ]
-  },
-  {
-    "sentence": "Siswa menari untuk di hutan",
-    "words": [
-      "Siswa",
-      "menari",
-      "untuk",
-      "di",
-      "hutan"
     ]
   },
   {
@@ -10566,54 +6415,12 @@
     ]
   },
   {
-    "sentence": "Anak membuka ke di sekolah",
-    "words": [
-      "Anak",
-      "membuka",
-      "ke",
-      "di",
-      "sekolah"
-    ]
-  },
-  {
-    "sentence": "Adikku memotong kampus untuk setiap malam",
-    "words": [
-      "Adikku",
-      "memotong",
-      "kampus",
-      "untuk",
-      "setiap",
-      "malam"
-    ]
-  },
-  {
-    "sentence": "Adikku memasang pasar ke ke toko",
-    "words": [
-      "Adikku",
-      "memasang",
-      "pasar",
-      "ke",
-      "ke",
-      "toko"
-    ]
-  },
-  {
     "sentence": "Aku menggambar di tentara",
     "words": [
       "Aku",
       "menggambar",
       "di",
       "tentara"
-    ]
-  },
-  {
-    "sentence": "Sahabatku berangkat pagar setiap kemarin",
-    "words": [
-      "Sahabatku",
-      "berangkat",
-      "pagar",
-      "setiap",
-      "kemarin"
     ]
   },
   {
@@ -10627,44 +6434,12 @@
     ]
   },
   {
-    "sentence": "Nelayan memantau galeri ke di kampus",
-    "words": [
-      "Nelayan",
-      "memantau",
-      "galeri",
-      "ke",
-      "di",
-      "kampus"
-    ]
-  },
-  {
-    "sentence": "Ibuku datang lapangan dengan setiap bulan",
-    "words": [
-      "Ibuku",
-      "datang",
-      "lapangan",
-      "dengan",
-      "setiap",
-      "bulan"
-    ]
-  },
-  {
     "sentence": "Sahabatku menulis di anjing",
     "words": [
       "Sahabatku",
       "menulis",
       "di",
       "anjing"
-    ]
-  },
-  {
-    "sentence": "Bayi bermain ke dengan hati-hati",
-    "words": [
-      "Bayi",
-      "bermain",
-      "ke",
-      "dengan",
-      "hati-hati"
     ]
   },
   {
@@ -10708,16 +6483,6 @@
     ]
   },
   {
-    "sentence": "Sahabatku bermain untuk di pasar",
-    "words": [
-      "Sahabatku",
-      "bermain",
-      "untuk",
-      "di",
-      "pasar"
-    ]
-  },
-  {
     "sentence": "Pembeli mencabut pedagang malam",
     "words": [
       "Pembeli",
@@ -10746,17 +6511,6 @@
     ]
   },
   {
-    "sentence": "Dia menangkap september untuk di rumah",
-    "words": [
-      "Dia",
-      "menangkap",
-      "september",
-      "untuk",
-      "di",
-      "rumah"
-    ]
-  },
-  {
     "sentence": "Adik bicara agustus setiap siang",
     "words": [
       "Adik",
@@ -10767,16 +6521,6 @@
     ]
   },
   {
-    "sentence": "Guru menendang di di taman",
-    "words": [
-      "Guru",
-      "menendang",
-      "di",
-      "di",
-      "taman"
-    ]
-  },
-  {
     "sentence": "Nenek belajar kakek setiap hari",
     "words": [
       "Nenek",
@@ -10784,16 +6528,6 @@
       "kakek",
       "setiap",
       "hari"
-    ]
-  },
-  {
-    "sentence": "Ibu kehilangan ke di laut",
-    "words": [
-      "Ibu",
-      "kehilangan",
-      "ke",
-      "di",
-      "laut"
     ]
   },
   {
@@ -10816,16 +6550,6 @@
     ]
   },
   {
-    "sentence": "Kami minum ke di jalan",
-    "words": [
-      "Kami",
-      "minum",
-      "ke",
-      "di",
-      "jalan"
-    ]
-  },
-  {
     "sentence": "Ayahku mulai tamu ke sekolah",
     "words": [
       "Ayahku",
@@ -10843,58 +6567,6 @@
       "mobil",
       "di",
       "padang"
-    ]
-  },
-  {
-    "sentence": "Kakak menggambar nenek untuk dengan senang",
-    "words": [
-      "Kakak",
-      "menggambar",
-      "nenek",
-      "untuk",
-      "dengan",
-      "senang"
-    ]
-  },
-  {
-    "sentence": "Kami menggembala penggaris dengan di laut",
-    "words": [
-      "Kami",
-      "menggembala",
-      "penggaris",
-      "dengan",
-      "di",
-      "laut"
-    ]
-  },
-  {
-    "sentence": "Bibi memecah di di rumah",
-    "words": [
-      "Bibi",
-      "memecah",
-      "di",
-      "di",
-      "rumah"
-    ]
-  },
-  {
-    "sentence": "Dia memecah bioskop setiap kemarin",
-    "words": [
-      "Dia",
-      "memecah",
-      "bioskop",
-      "setiap",
-      "kemarin"
-    ]
-  },
-  {
-    "sentence": "Kakak memegang petani ke besok",
-    "words": [
-      "Kakak",
-      "memegang",
-      "petani",
-      "ke",
-      "besok"
     ]
   },
   {
@@ -10927,16 +6599,6 @@
     ]
   },
   {
-    "sentence": "Ibu menendang ke di rumah",
-    "words": [
-      "Ibu",
-      "menendang",
-      "ke",
-      "di",
-      "rumah"
-    ]
-  },
-  {
     "sentence": "Dokter mencampur celana setiap siang",
     "words": [
       "Dokter",
@@ -10944,17 +6606,6 @@
       "celana",
       "setiap",
       "siang"
-    ]
-  },
-  {
-    "sentence": "Karyawan menonton teh untuk di dapur",
-    "words": [
-      "Karyawan",
-      "menonton",
-      "teh",
-      "untuk",
-      "di",
-      "dapur"
     ]
   },
   {
@@ -10974,16 +6625,6 @@
       "menggaruk",
       "di",
       "printer"
-    ]
-  },
-  {
-    "sentence": "Kamu melihat di di taman",
-    "words": [
-      "Kamu",
-      "melihat",
-      "di",
-      "di",
-      "taman"
     ]
   },
   {
@@ -11023,16 +6664,6 @@
       "dengan",
       "hari",
       "ini"
-    ]
-  },
-  {
-    "sentence": "Guru mengawasi juni setiap kemarin",
-    "words": [
-      "Guru",
-      "mengawasi",
-      "juni",
-      "setiap",
-      "kemarin"
     ]
   },
   {
