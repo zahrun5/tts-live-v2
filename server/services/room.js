@@ -76,6 +76,40 @@ function syncTemplate(srcDir, destDir) {
   }
 }
 
+// Bank soal (fallback/, fallback-themes.json) hanya disalin kalau belum ada, jadi
+// pembersihan bank di repo tidak pernah sampai ke room yang sudah berjalan.
+// Solusi: kalau isi games/BANK_VERSION di template berbeda dengan penanda di room,
+// bank room diganti dengan bank template (sekali). Naikkan BANK_VERSION setiap
+// kali bank di repo dibersihkan/diganti. File state (used-*, puzzle, question) aman.
+function refreshBanksIfNeeded(srcDir, destDir) {
+  let want = '';
+  try { want = fs.readFileSync(path.join(srcDir, 'BANK_VERSION'), 'utf8').trim(); } catch (e) { return; }
+  if (!want) return;
+  const markerFile = path.join(destDir, '.bank-version');
+  let have = '';
+  try { have = fs.readFileSync(markerFile, 'utf8').trim(); } catch (e) {}
+  if (have === want) return;
+
+  const replaceDir = (src, dest) => {
+    fs.rmSync(dest, { recursive: true, force: true });
+    fs.mkdirSync(dest, { recursive: true });
+    for (const e of fs.readdirSync(src, { withFileTypes: true })) {
+      if (e.isFile()) fs.copyFileSync(path.join(src, e.name), path.join(dest, e.name));
+    }
+  };
+  for (const g of fs.readdirSync(srcDir, { withFileTypes: true })) {
+    if (!g.isDirectory()) continue;
+    const gs = path.join(srcDir, g.name), gd = path.join(destDir, g.name);
+    for (const sub of ['fallback', 'quarantine']) {
+      if (fs.existsSync(path.join(gs, sub))) replaceDir(path.join(gs, sub), path.join(gd, sub));
+    }
+    const themes = path.join(gs, 'fallback-themes.json');
+    if (fs.existsSync(themes)) fs.copyFileSync(themes, path.join(gd, 'fallback-themes.json'));
+  }
+  fs.writeFileSync(markerFile, want);
+  console.log(`[Room] Bank soal diperbarui ke versi ${want}`);
+}
+
 // Game yang menerima event LIKE (tap layar) dari TikTok.
 const LIKE_GAMES = ['spam-tap', 'ular-tangga'];
 
@@ -126,7 +160,11 @@ class Room {
   async start() {
     fs.mkdirSync(this.roomDir, { recursive: true });
     syncTemplate(this.templateDir, path.join(this.roomDir, 'games'));
+    refreshBanksIfNeeded(this.templateDir, path.join(this.roomDir, 'games'));
     fs.copyFileSync(this.aiClientPath, path.join(this.roomDir, 'ai-client.js'));
+    // Penjaga kualitas bank (require('../../tools/bank-rules') dari games/<game>/) ikut disalin.
+    fs.mkdirSync(path.join(this.roomDir, 'tools'), { recursive: true });
+    fs.copyFileSync(path.join(__dirname, '../tools/bank-rules.js'), path.join(this.roomDir, 'tools', 'bank-rules.js'));
 
     this.games = require(path.join(this.roomDir, 'games', 'game-registry'));
     const allIds = Object.keys(this.games);
