@@ -104,6 +104,10 @@ function Dashboard() {
   const [randomGames, setRandomGames] = useState(['tts', 'susun-kata-acak', 'family100', 'cari-kata', 'sambung-kata', 'tts-tema', 'susun-kalimat']);
   const [avatarType, setAvatarType] = useState('emoji');
   const [isConnected, setIsConnected] = useState(false);
+  const [youtubeTarget, setYoutubeTarget] = useState(() => {
+    try { return localStorage.getItem('youtubeTarget') || ''; } catch (e) { return ''; }
+  });
+  const [isYoutubeConnected, setIsYoutubeConnected] = useState(false);
   const [activeSoal, setActiveSoal] = useState(null);
   const [gameStats, setGameStats] = useState({});
   const [statusMsg, setStatusMsg] = useState({ text: '', type: '' });
@@ -173,6 +177,7 @@ function Dashboard() {
         setRandomGames(res.data.user.randomGames || ['tts', 'susun-kata-acak', 'family100', 'cari-kata', 'sambung-kata', 'tts-tema', 'susun-kalimat']);
         setAvatarType(res.data.user.avatarType || 'emoji');
         setIsConnected(res.data.isConnected);
+        setIsYoutubeConnected(!!res.data.isYoutubeConnected);
         refreshActiveSoal(res.data.user.username);
       } catch (err) {
         navigate('/login');
@@ -201,10 +206,28 @@ function Dashboard() {
       const action = isConnected ? 'stop' : 'start';
       const res = await axios.post('/api/sys/tiktok/toggle', { action, tiktokUsername });
       setIsConnected(res.data.isConnected);
+      if (res.data.isConnected) setIsYoutubeConnected(false); // TikTok & YouTube eksklusif
       setStatusMsg({ text: res.data.message, type: 'success' });
       if (user) await refreshActiveSoal(user.username);
     } catch (err) {
       setStatusMsg({ text: err.response?.data?.error || 'Gagal tersambung', type: 'error' });
+    }
+  };
+
+  const toggleYoutube = async () => {
+    setStatusMsg({ text: 'Menyambung ke YouTube...', type: 'info' });
+    try {
+      const action = isYoutubeConnected ? 'stop' : 'start';
+      const res = await axios.post('/api/sys/youtube/toggle', { action, youtubeTarget });
+      setIsYoutubeConnected(res.data.isYoutubeConnected);
+      if (res.data.isYoutubeConnected) {
+        setIsConnected(false); // TikTok & YouTube eksklusif
+        try { localStorage.setItem('youtubeTarget', youtubeTarget); } catch (e) { /* abaikan */ }
+      }
+      setStatusMsg({ text: res.data.message, type: 'success' });
+      if (user) await refreshActiveSoal(user.username);
+    } catch (err) {
+      setStatusMsg({ text: err.response?.data?.error || 'Gagal tersambung ke YouTube', type: 'error' });
     }
   };
 
@@ -416,6 +439,37 @@ function Dashboard() {
                   🗑️ Reset Skor
                 </button>
               </div>
+            </div>
+
+            {/* YouTube Connection Card */}
+            <div className="p-6 backdrop-blur-xl bg-white/5 border border-white/10 rounded-2xl shadow-2xl hover:shadow-red-500/20 transition-all">
+              <div className="flex items-center gap-2 mb-5">
+                <span className="text-2xl">▶️</span>
+                <h2 className="text-lg font-bold text-white">Koneksi YouTube</h2>
+              </div>
+
+              <div className="mb-4">
+                <label className="block mb-2 text-sm font-medium text-slate-300">Link Live / @handle YouTube</label>
+                <input
+                  type="text"
+                  value={youtubeTarget}
+                  onChange={e => setYoutubeTarget(e.target.value)}
+                  className="w-full px-4 py-3 bg-white/5 border border-white/20 rounded-xl text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent transition-all"
+                  placeholder="https://youtube.com/live/... atau @channel"
+                />
+                <p className="mt-2 text-xs text-slate-400">Live harus sudah berjalan. Menyambung YouTube otomatis memutus TikTok.</p>
+              </div>
+
+              <button
+                onClick={toggleYoutube}
+                className={`w-full font-medium rounded-xl py-2.5 transition-all text-white ${
+                  isYoutubeConnected
+                    ? 'bg-gradient-to-r from-rose-600 to-red-600 hover:from-rose-500 hover:to-red-500 shadow-lg shadow-rose-500/30'
+                    : 'bg-gradient-to-r from-red-600 to-orange-600 hover:from-red-500 hover:to-orange-500 shadow-lg shadow-red-500/30'
+                }`}
+              >
+                {isYoutubeConnected ? '🔴 Putus YouTube' : '🟢 Sambungkan YouTube'}
+              </button>
             </div>
 
             {/* Test & Debug Card */}

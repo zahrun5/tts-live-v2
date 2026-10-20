@@ -5,6 +5,7 @@ const Subscription = require('../models/Subscription');
 const auth = require('../middleware/auth');
 const { requireActiveSubscription } = auth;
 const tiktokManager = require('../services/tiktokManager');
+const youtubeManager = require('../services/youtubeManager');
 const roomManager = require('../services/roomManager');
 const { TIKTOK_RE, VALID_GAMES } = require('../config');
 const { getActiveSubscription } = require('../services/subscriptionHelper');
@@ -29,6 +30,7 @@ router.get('/me', auth, wrap(async (req, res) => {
   res.json({
     user: user.toObject(),
     isConnected: tiktokManager.getStatus(user.username),
+    isYoutubeConnected: youtubeManager.getStatus(user.username),
     subscription
   });
 }));
@@ -90,6 +92,7 @@ router.post('/tiktok/toggle', auth, requireActiveSubscription('free'), wrap(asyn
     if (!user.tiktokUsername) {
       return res.status(400).json({ error: 'Isi username TikTok target terlebih dahulu' });
     }
+    youtubeManager.stopLive(user.username); // TikTok & YouTube eksklusif
     await tiktokManager.startLive(user.username, user.tiktokUsername);
     return res.json({ message: 'Terhubung ke TikTok Live!', isConnected: true });
   }
@@ -102,9 +105,35 @@ router.post('/tiktok/test-connect', auth, requireActiveSubscription('free'), wra
   if (!name || !TIKTOK_RE.test(name)) return res.status(400).json({ error: 'Username tidak valid' });
   const user = await currentUser(req);
   if (!user) return res.status(401).json({ error: 'User tidak ditemukan' });
+  youtubeManager.stopLive(user.username); // TikTok & YouTube eksklusif
   await tiktokManager.startLive(user.username, name);
   res.json({ message: 'Berhasil terhubung ke @' + name + '! Chat real-time akan muncul di overlay.' });
 }));
+
+// YouTube Live (tanpa API key). Target: liveId, URL live, channelId (UC...), atau @handle.
+router.post('/youtube/toggle', auth, requireActiveSubscription('free'), async (req, res) => {
+  try {
+    const { action } = req.body || {};
+    const user = await currentUser(req);
+    if (!user) return res.status(401).json({ error: 'User tidak ditemukan' });
+
+    if (action === 'start') {
+      const target = String((req.body || {}).youtubeTarget || '').trim().slice(0, 300);
+      if (!target) return res.status(400).json({ error: 'Isi link live / @handle YouTube terlebih dahulu' });
+      if (!youtubeManager.isValidTarget(target)) {
+        return res.status(400).json({ error: 'Format target YouTube tidak dikenali. Pakai link live, ID live, atau @handle.' });
+      }
+      await youtubeManager.startLive(user.username, target);
+      return res.json({ message: 'Terhubung ke YouTube Live!', isYoutubeConnected: true });
+    }
+
+    youtubeManager.stopLive(user.username);
+    res.json({ message: 'Terputus dari YouTube', isYoutubeConnected: false });
+  } catch (err) {
+    console.error('[API] youtube toggle error:', err.message);
+    res.status(400).json({ error: err.message || 'Gagal tersambung ke YouTube' });
+  }
+});
 
 router.post('/overlay/reload', auth, wrap(async (req, res) => {
   const room = await roomManager.getRoom(req.user.username);
