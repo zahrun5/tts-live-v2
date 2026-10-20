@@ -28,7 +28,8 @@
     "mongoose": "^9.10.2",
     "nodemailer": "^6.9.16",
     "socket.io": "^4.8.4",
-    "tiktok-live-connector": "^2.5.0"
+    "tiktok-live-connector": "^2.5.0",
+    "youtube-chat": "^2.2.0"
   },
   "devDependencies": {
     "socket.io-client": "^4.8.4"
